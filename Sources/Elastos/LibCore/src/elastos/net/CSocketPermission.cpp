@@ -24,7 +24,7 @@ using Elastos::Core::StringBuffer;
 namespace Elastos {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(CSocketPermission, Object, ISocketPermission, ISerializable)
+CAR_INTERFACE_IMPL(CSocketPermission, Object, ISocketPermission, ISerializable)
 
 CAR_OBJECT_IMPL(CSocketPermission)
 

@@ -45,7 +45,7 @@ namespace InputMethod {
 //========================================================================================
 const String CInputMethodSubtypeArray::TAG("InputMethodSubtypeArray");
 
-CAR_INTERFACE_IMPL_2(CInputMethodSubtypeArray, Object, IInputMethodSubtypeArray, IParcelable)
+CAR_INTERFACE_IMPL(CInputMethodSubtypeArray, Object, IInputMethodSubtypeArray, IParcelable)
 
 CAR_OBJECT_IMPL(CInputMethodSubtypeArray)
 

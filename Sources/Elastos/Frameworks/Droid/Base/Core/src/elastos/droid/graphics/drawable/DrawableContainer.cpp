@@ -39,7 +39,7 @@ const Boolean DrawableContainer::DEBUG = FALSE;
 const String DrawableContainer::TAG("DrawableContainer");
 const Boolean DrawableContainer::DEFAULT_DITHER;
 
-CAR_INTERFACE_IMPL_2(DrawableContainer, Drawable, IDrawableContainer, IDrawableCallback)
+CAR_INTERFACE_IMPL(DrawableContainer, Drawable, IDrawableContainer, IDrawableCallback)
 DrawableContainer::DrawableContainer()
     : mAlpha(0xFF)
     , mHasAlpha(FALSE)

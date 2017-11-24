@@ -29,7 +29,7 @@ using Elastosx::Crypto::Spec::CDHPublicKeySpec;
 namespace Org {
 namespace Conscrypt {
 
-CAR_INTERFACE_IMPL_2(OpenSSLDHKeyFactory, Object,
+CAR_INTERFACE_IMPL(OpenSSLDHKeyFactory, Object,
         IOpenSSLDHKeyFactory, IKeyFactorySpi)
 
 ECode OpenSSLDHKeyFactory::constructor()

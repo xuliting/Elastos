@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Security {
 
 CAR_OBJECT_IMPL(CTimestamp)
-CAR_INTERFACE_IMPL_2(CTimestamp, Object, ITimestamp, ISerializable)
+CAR_INTERFACE_IMPL(CTimestamp, Object, ITimestamp, ISerializable)
 ECode CTimestamp::constructor(
     /* [in] */ IDate* timestamp,
     /* [in] */ ICertPath* signerCertPath)

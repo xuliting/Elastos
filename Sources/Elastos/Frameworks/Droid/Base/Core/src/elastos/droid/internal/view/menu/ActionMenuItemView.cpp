@@ -43,7 +43,7 @@ namespace Internal {
 namespace View {
 namespace Menu {
 
-CAR_INTERFACE_IMPL_2(ActionMenuItemView::MyListener, Object, IViewOnClickListener, IViewOnLongClickListener)
+CAR_INTERFACE_IMPL(ActionMenuItemView::MyListener, Object, IViewOnClickListener, IViewOnLongClickListener)
 
 ActionMenuItemView::MyListener::MyListener(
     /* [in] */ ActionMenuItemView* owner)
@@ -108,7 +108,7 @@ Boolean ActionMenuItemView::ActionMenuItemForwardingListener::OnForwardingStoppe
 String ActionMenuItemView::TAG("ActionMenuItemView");
 const Int32 ActionMenuItemView::MAX_ICON_SIZE = 32; // dp
 
-CAR_INTERFACE_IMPL_5(ActionMenuItemView, TextView, IActionMenuItemView, IMenuItemView,
+CAR_INTERFACE_IMPL(ActionMenuItemView, TextView, IActionMenuItemView, IMenuItemView,
     IViewOnClickListener, IViewOnLongClickListener, IActionMenuChildView)
 
 ActionMenuItemView::ActionMenuItemView()

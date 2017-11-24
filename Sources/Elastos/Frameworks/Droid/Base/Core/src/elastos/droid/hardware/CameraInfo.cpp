@@ -20,7 +20,7 @@ namespace Elastos {
 namespace Droid {
 namespace Hardware {
 
-CAR_INTERFACE_IMPL_2(CameraInfo, Object, ICameraInfo, IParcelable)
+CAR_INTERFACE_IMPL(CameraInfo, Object, ICameraInfo, IParcelable)
 
 CameraInfo::CameraInfo()
 {

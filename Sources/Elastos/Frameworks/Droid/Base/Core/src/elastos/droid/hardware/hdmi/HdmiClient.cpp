@@ -25,7 +25,7 @@ namespace Droid {
 namespace Hardware {
 namespace Hdmi {
 
-CAR_INTERFACE_IMPL_2(HdmiClient::MyListener, Object, IIHdmiVendorCommandListener, IBinder)
+CAR_INTERFACE_IMPL(HdmiClient::MyListener, Object, IIHdmiVendorCommandListener, IBinder)
 
 HdmiClient::MyListener::MyListener(
     /* [in] */ IHdmiControlManagerVendorCommandListener* listener)

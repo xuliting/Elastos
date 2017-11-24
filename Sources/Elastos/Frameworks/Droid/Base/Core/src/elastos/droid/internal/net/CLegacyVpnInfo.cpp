@@ -33,7 +33,7 @@ namespace Net {
 
 const String CLegacyVpnInfo::TAG("LegacyVpnInfo");
 
-CAR_INTERFACE_IMPL_2(CLegacyVpnInfo, Object, ILegacyVpnInfo, IParcelable)
+CAR_INTERFACE_IMPL(CLegacyVpnInfo, Object, ILegacyVpnInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CLegacyVpnInfo)
 

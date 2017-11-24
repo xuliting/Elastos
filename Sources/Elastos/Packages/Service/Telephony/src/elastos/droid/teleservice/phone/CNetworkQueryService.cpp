@@ -84,7 +84,7 @@ ECode CNetworkQueryService::MyHandler::HandleMessage(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CNetworkQueryService::MyNetworkQueryService, Object, IINetworkQueryService,
+CAR_INTERFACE_IMPL(CNetworkQueryService::MyNetworkQueryService, Object, IINetworkQueryService,
         IBinder)
 
 ECode CNetworkQueryService::MyNetworkQueryService::constructor(

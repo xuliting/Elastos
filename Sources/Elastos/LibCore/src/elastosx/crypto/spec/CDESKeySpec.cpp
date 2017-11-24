@@ -21,7 +21,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CDESKeySpec)
-CAR_INTERFACE_IMPL_2(CDESKeySpec, Object, IDESKeySpec, IKeySpec)
+CAR_INTERFACE_IMPL(CDESKeySpec, Object, IDESKeySpec, IKeySpec)
 
 const Byte CDESKeySpec::sSEMIWEAKS[16][8] = {
     {(Byte) 0xE0, (Byte) 0x01, (Byte) 0xE0, (Byte) 0x01,

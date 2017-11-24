@@ -70,7 +70,7 @@ const String DatePickerDialog::YEAR("year");
 const String DatePickerDialog::MONTH("month");
 const String DatePickerDialog::DAY("day");
 
-CAR_INTERFACE_IMPL_3(DatePickerDialog, AlertDialog, IDatePickerDialog, \
+CAR_INTERFACE_IMPL(DatePickerDialog, AlertDialog, IDatePickerDialog, \
     IDialogInterfaceOnClickListener, IDatePickerOnDateChangedListener)
 
 DatePickerDialog::DatePickerDialog()

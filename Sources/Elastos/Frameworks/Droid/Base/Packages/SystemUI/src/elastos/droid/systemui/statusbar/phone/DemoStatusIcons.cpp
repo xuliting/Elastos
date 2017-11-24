@@ -46,7 +46,7 @@ namespace SystemUI {
 namespace StatusBar {
 namespace Phone {
 
-CAR_INTERFACE_IMPL_2(DemoStatusIcons, LinearLayout, IDemoStatusIcons, IDemoMode);
+CAR_INTERFACE_IMPL(DemoStatusIcons, LinearLayout, IDemoStatusIcons, IDemoMode);
 DemoStatusIcons::DemoStatusIcons(
     /* [in] */ ILinearLayout* statusIcons,
     /* [in] */ Int32 iconSize)

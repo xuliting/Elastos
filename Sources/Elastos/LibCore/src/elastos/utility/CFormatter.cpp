@@ -128,7 +128,7 @@ AutoPtr<ArrayOf<Char32> > InitZEROS()
 }
 const AutoPtr<ArrayOf<Char32> > CFormatter::ZEROS = InitZEROS(); //ZEROS[] = { '0', '0', '0', '0', '0', '0', '0', '0', '0' };
 
-CAR_INTERFACE_IMPL_3(CFormatter, Object, IFormatter, ICloseable, IFlushable)
+CAR_INTERFACE_IMPL(CFormatter, Object, IFormatter, ICloseable, IFlushable)
 
 CAR_OBJECT_IMPL(CFormatter)
 

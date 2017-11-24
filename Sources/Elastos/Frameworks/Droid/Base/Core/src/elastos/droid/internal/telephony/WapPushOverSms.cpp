@@ -92,7 +92,7 @@ const String WapPushOverSms::THREAD_ID_SELECTION =
 const String WapPushOverSms::LOCATION_SELECTION =
         ITelephonyBaseMmsColumns::MESSAGE_TYPE + "=? AND " + ITelephonyBaseMmsColumns::CONTENT_LOCATION + " =?";
 
-CAR_INTERFACE_IMPL_2(WapPushOverSms, Object, IServiceConnection, IWapPushOverSms)
+CAR_INTERFACE_IMPL(WapPushOverSms, Object, IServiceConnection, IWapPushOverSms)
 
 ECode WapPushOverSms::OnServiceConnected(
     /* [in] */ IComponentName* name,

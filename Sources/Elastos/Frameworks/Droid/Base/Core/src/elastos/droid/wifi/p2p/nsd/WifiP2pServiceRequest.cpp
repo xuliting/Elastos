@@ -26,7 +26,7 @@ namespace Wifi {
 namespace P2p {
 namespace Nsd {
 
-CAR_INTERFACE_IMPL_2(WifiP2pServiceRequest, Object, IWifiP2pServiceRequest, IParcelable)
+CAR_INTERFACE_IMPL(WifiP2pServiceRequest, Object, IWifiP2pServiceRequest, IParcelable)
 
 WifiP2pServiceRequest::WifiP2pServiceRequest()
     : mProtocolType(0)

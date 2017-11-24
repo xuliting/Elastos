@@ -31,7 +31,7 @@ namespace Droid {
 namespace Server {
 namespace Am {
 
-CAR_INTERFACE_IMPL_2(CActivityRecordToken, Object, IApplicationToken, IBinder)
+CAR_INTERFACE_IMPL(CActivityRecordToken, Object, IApplicationToken, IBinder)
 CAR_OBJECT_IMPL(CActivityRecordToken)
 
 CActivityRecordToken::CActivityRecordToken()

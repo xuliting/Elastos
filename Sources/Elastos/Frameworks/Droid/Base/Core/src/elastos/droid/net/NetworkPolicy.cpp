@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_3(NetworkPolicy, Object, IParcelable, IComparable, INetworkPolicy)
+CAR_INTERFACE_IMPL(NetworkPolicy, Object, IParcelable, IComparable, INetworkPolicy)
 
 const Int64 NetworkPolicy::DEFAULT_MTU = 1500;
 

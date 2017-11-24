@@ -29,7 +29,7 @@ namespace Dom {
 
 CAR_OBJECT_IMPL(CCommentImpl);
 
-CAR_INTERFACE_IMPL_2(CCommentImpl, CharacterDataImpl, IComment, ICommentImpl);
+CAR_INTERFACE_IMPL(CCommentImpl, CharacterDataImpl, IComment, ICommentImpl);
 
 CCommentImpl::CCommentImpl()
 {

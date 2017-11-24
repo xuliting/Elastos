@@ -87,7 +87,7 @@ ECode MapCollections::ArrayIterator::Remove()
 // MapCollections::MapIterator
 //=================================================================
 
-CAR_INTERFACE_IMPL_2(MapCollections::MapIterator, Object, IIterator, IMapEntry)
+CAR_INTERFACE_IMPL(MapCollections::MapIterator, Object, IIterator, IMapEntry)
 
 MapCollections::MapIterator::MapIterator(
     /* [in] */ MapCollections* mc)
@@ -254,7 +254,7 @@ ECode MapCollections::MapIterator::ToString(
 //=================================================================
 // MapCollections::EntrySet
 //=================================================================
-CAR_INTERFACE_IMPL_3(MapCollections::EntrySet, Object, ISet, ICollection, IIterable)
+CAR_INTERFACE_IMPL(MapCollections::EntrySet, Object, ISet, ICollection, IIterable)
 
 ECode MapCollections::EntrySet::Add(
     /* [in] */ IMapEntry* obj,
@@ -462,7 +462,7 @@ ECode MapCollections::EntrySet::GetHashCode(
 //=================================================================
 // MapCollections::KeySet
 //=================================================================
-CAR_INTERFACE_IMPL_3(MapCollections::KeySet, Object, ISet, ICollection, IIterable)
+CAR_INTERFACE_IMPL(MapCollections::KeySet, Object, ISet, ICollection, IIterable)
 
 ECode MapCollections::KeySet::Add(
     /* [in] */ IInterface* obj,
@@ -643,7 +643,7 @@ ECode MapCollections::KeySet::GetHashCode(
 //=================================================================
 // MapCollections::ValuesCollection
 //=================================================================
-CAR_INTERFACE_IMPL_2(MapCollections::ValuesCollection, Object, ICollection, IIterable)
+CAR_INTERFACE_IMPL(MapCollections::ValuesCollection, Object, ICollection, IIterable)
 
 ECode MapCollections::ValuesCollection::Add(
     /* [in] */ IInterface* obj,

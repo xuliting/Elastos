@@ -65,7 +65,7 @@ static const String TAG("CStatusBarHeaderView");
 //====================================================================================
 // CStatusBarHeaderView::InnerCallback
 //====================================================================================
-CAR_INTERFACE_IMPL_2(CStatusBarHeaderView::InnerCallback, Object, \
+CAR_INTERFACE_IMPL(CStatusBarHeaderView::InnerCallback, Object, \
     IBatteryStateChangeCallback, INextAlarmChangeCallback)
 
 CStatusBarHeaderView::InnerCallback::InnerCallback(

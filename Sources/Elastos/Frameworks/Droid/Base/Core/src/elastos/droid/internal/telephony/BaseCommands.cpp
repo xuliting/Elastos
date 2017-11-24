@@ -33,7 +33,7 @@ namespace Droid {
 namespace Internal {
 namespace Telephony {
 
-CAR_INTERFACE_IMPL_2(BaseCommands, Object, IBaseCommands, ICommandsInterface)
+CAR_INTERFACE_IMPL(BaseCommands, Object, IBaseCommands, ICommandsInterface)
 
 BaseCommands::BaseCommands()
     : mState(RADIO_UNAVAILABLE)

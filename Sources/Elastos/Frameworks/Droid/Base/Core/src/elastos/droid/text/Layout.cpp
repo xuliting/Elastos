@@ -75,7 +75,7 @@ const Char32 Layout::ELLIPSIS_TWO_DOTS[] = { 0x2025 }; // this is ".."
 //========================================================================
 //          Layout::Ellipsizer
 //========================================================================
-CAR_INTERFACE_IMPL_2(Layout::Ellipsizer, Object, IGetChars, ICharSequence)
+CAR_INTERFACE_IMPL(Layout::Ellipsizer, Object, IGetChars, ICharSequence)
 
 Layout::Ellipsizer::Ellipsizer(
     /* [in] */ ICharSequence* s)

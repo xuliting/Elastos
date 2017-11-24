@@ -26,7 +26,7 @@ namespace Droid {
 namespace Hardware {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(GeofenceHardwareRequestParcelable, Object, IGeofenceHardwareRequestParcelable, IParcelable)
+CAR_INTERFACE_IMPL(GeofenceHardwareRequestParcelable, Object, IGeofenceHardwareRequestParcelable, IParcelable)
 
 GeofenceHardwareRequestParcelable::GeofenceHardwareRequestParcelable()
     : mId(0)

@@ -63,7 +63,7 @@ namespace Res {
 //                  ThemeConfig::AppTheme
 //==============================================================================
 
-CAR_INTERFACE_IMPL_3(ThemeConfig::AppTheme, Object, IAppTheme, ICloneable, IComparable)
+CAR_INTERFACE_IMPL(ThemeConfig::AppTheme, Object, IAppTheme, ICloneable, IComparable)
 
 ECode ThemeConfig::AppTheme::constructor(
     /* [in] */ const String& overlayPkgName,
@@ -390,7 +390,7 @@ const String ThemeConfig::KEY_DEFAULT_PKG("default");
 AutoPtr<IThemeConfig> ThemeConfig::sSystemConfig;
 AutoPtr<IAppTheme> ThemeConfig::sSystemAppTheme;
 
-CAR_INTERFACE_IMPL_4(ThemeConfig, Object, IThemeConfig, ICloneable, IParcelable, IComparable)
+CAR_INTERFACE_IMPL(ThemeConfig, Object, IThemeConfig, ICloneable, IParcelable, IComparable)
 
 ThemeConfig::ThemeConfig()
     : mLastThemeChangeRequestType(RequestType_USER_REQUEST)

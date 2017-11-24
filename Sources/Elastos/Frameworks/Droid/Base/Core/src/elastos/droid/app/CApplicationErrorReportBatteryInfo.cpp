@@ -24,7 +24,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CApplicationErrorReportBatteryInfo, Object, IApplicationErrorReportBatteryInfo, IParcelable)
+CAR_INTERFACE_IMPL(CApplicationErrorReportBatteryInfo, Object, IApplicationErrorReportBatteryInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CApplicationErrorReportBatteryInfo)
 

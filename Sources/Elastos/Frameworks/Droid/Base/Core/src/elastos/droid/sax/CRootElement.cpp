@@ -21,7 +21,7 @@ namespace Elastos {
 namespace Droid {
 namespace Sax {
 
-CAR_INTERFACE_IMPL_4(CRootElement::Handler, Object, IEntityResolver, \
+CAR_INTERFACE_IMPL(CRootElement::Handler, Object, IEntityResolver, \
     IDTDHandler, IContentHandler, IErrorHandler);
 
 CAR_INTERFACE_IMPL(CRootElement, Object, IRootElement);

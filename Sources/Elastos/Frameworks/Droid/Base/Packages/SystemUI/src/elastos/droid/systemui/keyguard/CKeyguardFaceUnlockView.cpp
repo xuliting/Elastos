@@ -124,7 +124,7 @@ const Boolean CKeyguardFaceUnlockView::DEBUG = IKeyguardConstants::DEBUG;
 
 CAR_OBJECT_IMPL(CKeyguardFaceUnlockView)
 
-CAR_INTERFACE_IMPL_2(CKeyguardFaceUnlockView, LinearLayout, IKeyguardSecurityView,
+CAR_INTERFACE_IMPL(CKeyguardFaceUnlockView, LinearLayout, IKeyguardSecurityView,
         IKeyguardFaceUnlockView)
 
 CKeyguardFaceUnlockView::CKeyguardFaceUnlockView()

@@ -39,7 +39,7 @@ Object InputEvent::sNextSeqLock;
 
 const Boolean InputEvent::TRACK_RECYCLED_LOCATION;
 
-CAR_INTERFACE_IMPL_2(InputEvent, Object, IInputEvent, IParcelable)
+CAR_INTERFACE_IMPL(InputEvent, Object, IInputEvent, IParcelable)
 
 InputEvent::InputEvent()
     : mRecycled(FALSE)

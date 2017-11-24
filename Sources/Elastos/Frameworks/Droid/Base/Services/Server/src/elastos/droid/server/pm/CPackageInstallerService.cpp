@@ -501,7 +501,7 @@ AutoPtr<IFilenameFilter> CPackageInstallerService::InitStageFilter()
 }
 AutoPtr<IFilenameFilter> CPackageInstallerService::sStageFilter = InitStageFilter();
 
-CAR_INTERFACE_IMPL_2(CPackageInstallerService, Object, IIPackageInstaller, IBinder)
+CAR_INTERFACE_IMPL(CPackageInstallerService, Object, IIPackageInstaller, IBinder)
 
 CAR_OBJECT_IMPL(CPackageInstallerService)
 

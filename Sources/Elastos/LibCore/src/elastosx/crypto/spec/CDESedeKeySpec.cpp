@@ -21,7 +21,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CDESedeKeySpec)
-CAR_INTERFACE_IMPL_2(CDESedeKeySpec, Object, IDESedeKeySpec, IKeySpec)
+CAR_INTERFACE_IMPL(CDESedeKeySpec, Object, IDESedeKeySpec, IKeySpec)
 
 CDESedeKeySpec::CDESedeKeySpec()
 {

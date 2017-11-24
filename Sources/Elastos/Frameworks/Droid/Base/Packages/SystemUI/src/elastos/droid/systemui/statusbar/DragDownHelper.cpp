@@ -82,7 +82,7 @@ const Float DragDownHelper::RUBBERBAND_FACTOR_EXPANDABLE = 0.5f;
 const Float DragDownHelper::RUBBERBAND_FACTOR_STATIC = 0.15f;
 const Int32 DragDownHelper::SPRING_BACK_ANIMATION_LENGTH_MS = 375;
 
-CAR_INTERFACE_IMPL_2(DragDownHelper, Object, IDragDownHelper, IGefingerpoken);
+CAR_INTERFACE_IMPL(DragDownHelper, Object, IDragDownHelper, IGefingerpoken);
 
 DragDownHelper::DragDownHelper(
     /* [in] */ IContext* context,

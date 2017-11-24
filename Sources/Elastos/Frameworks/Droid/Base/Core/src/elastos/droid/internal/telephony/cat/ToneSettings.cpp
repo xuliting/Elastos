@@ -60,7 +60,7 @@ namespace Cat {
 ////                             ToneSettings
 ////=====================================================================
 //const AutoPtr<IParcelable> AutoPtr< ::Creator<ToneSettings> > ToneSettings::CREATOR = new InnerParcelableCreator(this);
-CAR_INTERFACE_IMPL_2(ToneSettings, Object, IToneSettings, IParcelable);
+CAR_INTERFACE_IMPL(ToneSettings, Object, IToneSettings, IParcelable);
 
 ToneSettings::ToneSettings()
 {

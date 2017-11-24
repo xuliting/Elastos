@@ -154,7 +154,7 @@ ECode ListMenuPresenter::OnItemClickListener::OnItemClick(
     return mOwner->OnItemClick(parent, v, position, id);
 }
 
-CAR_INTERFACE_IMPL_2(ListMenuPresenter, Object, IListMenuPresenter, IMenuPresenter)
+CAR_INTERFACE_IMPL(ListMenuPresenter, Object, IListMenuPresenter, IMenuPresenter)
 
 ListMenuPresenter::ListMenuPresenter()
     : mContext(NULL)

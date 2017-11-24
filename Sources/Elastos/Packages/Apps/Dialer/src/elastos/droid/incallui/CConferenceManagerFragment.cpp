@@ -66,7 +66,7 @@ ECode CConferenceManagerFragment::SeparateButtonClickListener::OnClick(
 //================================================================
 // CConferenceManagerFragment
 //================================================================
-CAR_INTERFACE_IMPL_3(CConferenceManagerFragment, BaseFragment, IConferenceManagerFragment, IConferenceManagerUi, IUi);
+CAR_INTERFACE_IMPL(CConferenceManagerFragment, BaseFragment, IConferenceManagerFragment, IConferenceManagerUi, IUi);
 
 CAR_OBJECT_IMPL(CConferenceManagerFragment);
 

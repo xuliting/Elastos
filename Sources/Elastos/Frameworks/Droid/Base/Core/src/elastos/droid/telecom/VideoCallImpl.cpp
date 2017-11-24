@@ -149,7 +149,7 @@ ECode VideoCallImpl::MyHandler::HandleMessage(
 //===============================================================
 // VideoCallImpl::
 //===============================================================
-CAR_INTERFACE_IMPL_2(VideoCallImpl, Object, IInCallServiceVideoCall, IVideoCallImpl)
+CAR_INTERFACE_IMPL(VideoCallImpl, Object, IInCallServiceVideoCall, IVideoCallImpl)
 
 VideoCallImpl::VideoCallImpl()
 {

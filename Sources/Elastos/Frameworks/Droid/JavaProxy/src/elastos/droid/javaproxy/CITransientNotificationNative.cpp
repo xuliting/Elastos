@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CITransientNotificationNative::TAG("CITransientNotificationNative");
 
-CAR_INTERFACE_IMPL_2(CITransientNotificationNative, Object, IITransientNotification, IBinder)
+CAR_INTERFACE_IMPL(CITransientNotificationNative, Object, IITransientNotification, IBinder)
 
 CAR_OBJECT_IMPL(CITransientNotificationNative)
 

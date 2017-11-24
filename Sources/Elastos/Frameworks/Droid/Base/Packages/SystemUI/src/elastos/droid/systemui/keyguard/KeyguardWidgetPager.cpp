@@ -68,7 +68,7 @@ namespace Droid {
 namespace SystemUI {
 namespace Keyguard {
 
-CAR_INTERFACE_IMPL_2(KeyguardWidgetPager::InnerListener, Object,
+CAR_INTERFACE_IMPL(KeyguardWidgetPager::InnerListener, Object,
     IPagedViewPageSwitchListener, IViewOnLongClickListener)
 
 KeyguardWidgetPager::InnerListener::InnerListener(
@@ -184,7 +184,7 @@ const Int32 KeyguardWidgetPager::FLAG_HAS_LOCAL_MINUTE = 0x2;
 const Int64 KeyguardWidgetPager::CUSTOM_WIDGET_USER_ACTIVITY_TIMEOUT = 30000;
 const String KeyguardWidgetPager::TAG("KeyguardWidgetPager");
 
-CAR_INTERFACE_IMPL_2(KeyguardWidgetPager, PagedView, IKeyguardWidgetPager,
+CAR_INTERFACE_IMPL(KeyguardWidgetPager, PagedView, IKeyguardWidgetPager,
     IChallengeLayoutOnBouncerStateChangedListener)
 
 KeyguardWidgetPager::KeyguardWidgetPager()

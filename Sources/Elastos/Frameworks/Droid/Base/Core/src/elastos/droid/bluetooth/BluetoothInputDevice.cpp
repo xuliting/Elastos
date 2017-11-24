@@ -103,7 +103,7 @@ const String BluetoothInputDevice::TAG("BluetoothInputDevice");
 const Boolean BluetoothInputDevice::DBG = TRUE;
 const Boolean BluetoothInputDevice::VDBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(BluetoothInputDevice, Object, IBluetoothInputDevice, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothInputDevice, Object, IBluetoothInputDevice, IBluetoothProfile);
 
 BluetoothInputDevice::BluetoothInputDevice(
     /* [in] */ IContext* context,

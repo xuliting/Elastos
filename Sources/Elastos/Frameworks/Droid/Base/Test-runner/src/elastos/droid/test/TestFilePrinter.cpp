@@ -70,7 +70,7 @@ TestFilePrinter::~TestFilePrinter()
     }
 }
 
-CAR_INTERFACE_IMPL_2(TestFilePrinter, Object, ITestListener, ITestRunnerListener)
+CAR_INTERFACE_IMPL(TestFilePrinter, Object, ITestListener, ITestRunnerListener)
 
 ECode TestFilePrinter::Started(
     /* [in] */ const String& className)

@@ -24,7 +24,7 @@ namespace Droid {
 namespace Service {
 namespace Gesture {
 
-CAR_INTERFACE_IMPL_2(CEdgeGestureActivationListenerDelegator, Object, IIEdgeGestureActivationListener, IBinder)
+CAR_INTERFACE_IMPL(CEdgeGestureActivationListenerDelegator, Object, IIEdgeGestureActivationListener, IBinder)
 
 CAR_OBJECT_IMPL(CEdgeGestureActivationListenerDelegator)
 

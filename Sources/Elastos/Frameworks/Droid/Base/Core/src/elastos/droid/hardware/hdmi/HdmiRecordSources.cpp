@@ -94,7 +94,7 @@ HdmiRecordSources::OwnSource::OwnSource()
             EXTRA_DATA_SIZE);
 }
 
-CAR_INTERFACE_IMPL_2(HdmiRecordSources::AribData, Object, IHdmiRecordSourcesAribData,
+CAR_INTERFACE_IMPL(HdmiRecordSources::AribData, Object, IHdmiRecordSourcesAribData,
         IHdmiRecordSourcesDigitalServiceIdentification)
 
 HdmiRecordSources::AribData::AribData(
@@ -119,7 +119,7 @@ ECode HdmiRecordSources::AribData::ToByteArray(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(HdmiRecordSources::AtscData, Object, IHdmiRecordSourcesAtscData,
+CAR_INTERFACE_IMPL(HdmiRecordSources::AtscData, Object, IHdmiRecordSourcesAtscData,
         IHdmiRecordSourcesDigitalServiceIdentification)
 
 HdmiRecordSources::AtscData::AtscData(
@@ -142,7 +142,7 @@ ECode HdmiRecordSources::AtscData::ToByteArray(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(HdmiRecordSources::DvbData, Object, IHdmiRecordSourcesDvbData,
+CAR_INTERFACE_IMPL(HdmiRecordSources::DvbData, Object, IHdmiRecordSourcesDvbData,
         IHdmiRecordSourcesDigitalServiceIdentification)
 
 HdmiRecordSources::DvbData::DvbData(
@@ -194,7 +194,7 @@ ECode HdmiRecordSources::ChannelIdentifier::ToByteArray(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(HdmiRecordSources::DigitalChannelData, Object, IHdmiRecordSourcesDigitalChannelData,
+CAR_INTERFACE_IMPL(HdmiRecordSources::DigitalChannelData, Object, IHdmiRecordSourcesDigitalChannelData,
         IHdmiRecordSourcesDigitalServiceIdentification)
 
 

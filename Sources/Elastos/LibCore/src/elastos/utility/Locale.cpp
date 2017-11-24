@@ -141,7 +141,7 @@ INIT_PROI_3 AutoPtr< StringMap > Locale::GRANDFATHERED_LOCALES = InitGRANDFATHER
 INIT_PROI_3 AutoPtr<ILocale> Locale::sDefaultLocale = Locale::US;
 Boolean Locale::sIsInited = FALSE;
 
-CAR_INTERFACE_IMPL_3(Locale, Object, ILocale, ICloneable, ISerializable)
+CAR_INTERFACE_IMPL(Locale, Object, ILocale, ICloneable, ISerializable)
 
 Locale::~Locale()
 {}

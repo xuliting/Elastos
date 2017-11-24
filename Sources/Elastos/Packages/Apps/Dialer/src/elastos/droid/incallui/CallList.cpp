@@ -111,7 +111,7 @@ CallList::CallList()
     mHandler = new MyHandler(this);
 }
 
-CAR_INTERFACE_IMPL_2(CallList, Object, ICallList, IInCallPhoneListener);
+CAR_INTERFACE_IMPL(CallList, Object, ICallList, IInCallPhoneListener);
 
 AutoPtr<CallList> CallList::GetInstance()
 {

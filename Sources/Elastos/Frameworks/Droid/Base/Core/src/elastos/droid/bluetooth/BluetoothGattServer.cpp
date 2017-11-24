@@ -36,7 +36,7 @@ namespace Bluetooth {
 //      BluetoothGattServer::BluetoothGattServerCallbackStub
 //=====================================================================
 
-CAR_INTERFACE_IMPL_2(BluetoothGattServer::BluetoothGattServerCallbackStub, Object, IIBluetoothGattServerCallback, IBinder);
+CAR_INTERFACE_IMPL(BluetoothGattServer::BluetoothGattServerCallbackStub, Object, IIBluetoothGattServerCallback, IBinder);
 
 BluetoothGattServer::BluetoothGattServerCallbackStub::BluetoothGattServerCallbackStub()
 {
@@ -338,7 +338,7 @@ const Boolean BluetoothGattServer::DBG = TRUE;
 const Boolean BluetoothGattServer::VDBG = FALSE;
 const Int32 BluetoothGattServer::CALLBACK_REG_TIMEOUT;
 
-CAR_INTERFACE_IMPL_2(BluetoothGattServer, Object, IBluetoothGattServer, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothGattServer, Object, IBluetoothGattServer, IBluetoothProfile);
 
 BluetoothGattServer::BluetoothGattServer()
 {

@@ -30,7 +30,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_3(CNotificationAction, Object, INotificationAction, IParcelable, ICloneable)
+CAR_INTERFACE_IMPL(CNotificationAction, Object, INotificationAction, IParcelable, ICloneable)
 
 CAR_OBJECT_IMPL(CNotificationAction)
 

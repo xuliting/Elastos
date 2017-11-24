@@ -33,7 +33,7 @@ namespace Server {
 namespace Media {
 namespace Projection {
 
-CAR_INTERFACE_IMPL_2(CMediaProjectionManager, Object, IIMediaProjectionManager, IBinder)
+CAR_INTERFACE_IMPL(CMediaProjectionManager, Object, IIMediaProjectionManager, IBinder)
 
 CAR_OBJECT_IMPL(CMediaProjectionManager)
 

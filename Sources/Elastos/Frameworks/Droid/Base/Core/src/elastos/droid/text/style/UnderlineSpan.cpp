@@ -24,7 +24,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_4(UnderlineSpan, CharacterStyle, IUnderlineSpan, IUpdateAppearance, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(UnderlineSpan, CharacterStyle, IUnderlineSpan, IUpdateAppearance, IParcelableSpan, IParcelable)
 
 UnderlineSpan::UnderlineSpan()
 {

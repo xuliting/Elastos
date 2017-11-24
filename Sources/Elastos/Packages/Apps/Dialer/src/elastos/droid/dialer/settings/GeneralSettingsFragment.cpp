@@ -106,7 +106,7 @@ const String GeneralSettingsFragment::BUTTON_RESPOND_VIA_SMS_KEY("button_respond
 
 const Int32 GeneralSettingsFragment::MSG_UPDATE_RINGTONE_SUMMARY = 1;
 
-CAR_INTERFACE_IMPL_2(GeneralSettingsFragment, PreferenceFragment, IGeneralSettingsFragment, IPreferenceOnPreferenceChangeListener);
+CAR_INTERFACE_IMPL(GeneralSettingsFragment, PreferenceFragment, IGeneralSettingsFragment, IPreferenceOnPreferenceChangeListener);
 
 GeneralSettingsFragment::GeneralSettingsFragment()
 {

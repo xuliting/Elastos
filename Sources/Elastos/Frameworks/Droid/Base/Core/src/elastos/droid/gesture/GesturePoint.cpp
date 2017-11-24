@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Gesture {
 
-CAR_INTERFACE_IMPL_2(GesturePoint, Object, IGesturePoint, IGesturePointHelper);
+CAR_INTERFACE_IMPL(GesturePoint, Object, IGesturePoint, IGesturePointHelper);
 
 GesturePoint::GesturePoint()
 {}

@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIObbActionListenerNative::TAG("CIObbActionListenerNative");
 
-CAR_INTERFACE_IMPL_2(CIObbActionListenerNative, Object, IIObbActionListener, IBinder)
+CAR_INTERFACE_IMPL(CIObbActionListenerNative, Object, IIObbActionListener, IBinder)
 
 CAR_OBJECT_IMPL(CIObbActionListenerNative)
 

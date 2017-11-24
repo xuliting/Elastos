@@ -50,7 +50,7 @@ INIT_PROI_2 AutoPtr<IBigInteger> CBigInteger::MINUS_ONE = CreateBigInteger(-1, 1
 
 CAR_OBJECT_IMPL(CBigInteger)
 
-CAR_INTERFACE_IMPL_3(CBigInteger, Object, IBigInteger, INumber, IComparable)
+CAR_INTERFACE_IMPL(CBigInteger, Object, IBigInteger, INumber, IComparable)
 
 CBigInteger::CBigInteger()
     : mNativeIsValid(FALSE)

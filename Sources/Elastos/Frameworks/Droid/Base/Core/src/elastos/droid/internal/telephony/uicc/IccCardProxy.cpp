@@ -80,7 +80,7 @@ namespace Uicc {
 //=====================================================================
 //                             IccCardProxy
 //=====================================================================
-CAR_INTERFACE_IMPL_2(IccCardProxy, Handler, IIccCard, IIccCardProxy);
+CAR_INTERFACE_IMPL(IccCardProxy, Handler, IIccCard, IIccCardProxy);
 
 const Boolean IccCardProxy::DBG = TRUE;
 const String IccCardProxy::LOGTAG("IccCardProxy");

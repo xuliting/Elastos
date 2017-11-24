@@ -221,7 +221,7 @@ const Int32 SettingsActivity::MSG_BUILD_CATEGORIES;
 //===============================================================================
 //                  SettingsActivity::InnerListener
 //===============================================================================
-CAR_INTERFACE_IMPL_5(SettingsActivity::InnerListener, Object, \
+CAR_INTERFACE_IMPL(SettingsActivity::InnerListener, Object, \
     IFragmentManagerOnBackStackChangedListener, \
     ISearchViewOnQueryTextListener, \
     ISearchViewOnCloseListener, \
@@ -405,7 +405,7 @@ ECode SettingsActivity::OnResumeOnSharedPreferenceChangeListener::OnSharedPrefer
 //                  SettingsActivity
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(SettingsActivity, Activity, ISettingsActivity,
+CAR_INTERFACE_IMPL(SettingsActivity, Activity, ISettingsActivity,
     IButtonBarHandler, IPreferenceFragmentOnPreferenceStartFragmentCallback)
 
 SettingsActivity::SettingsActivity()

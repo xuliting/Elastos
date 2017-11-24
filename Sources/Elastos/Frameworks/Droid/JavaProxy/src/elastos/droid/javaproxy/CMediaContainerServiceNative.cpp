@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CMediaContainerServiceNative::TAG("CMediaContainerServiceNative");
 
-CAR_INTERFACE_IMPL_2(CMediaContainerServiceNative, Object, IIMediaContainerService, IBinder)
+CAR_INTERFACE_IMPL(CMediaContainerServiceNative, Object, IIMediaContainerService, IBinder)
 
 CAR_OBJECT_IMPL(CMediaContainerServiceNative)
 

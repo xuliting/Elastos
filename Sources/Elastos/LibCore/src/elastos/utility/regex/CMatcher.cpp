@@ -156,7 +156,7 @@ private:
     void operator=(const MatcherAccessor&);
 };
 
-CAR_INTERFACE_IMPL_2(CMatcher, Object, IMatcher, IMatchResult)
+CAR_INTERFACE_IMPL(CMatcher, Object, IMatcher, IMatchResult)
 
 CAR_OBJECT_IMPL(CMatcher)
 

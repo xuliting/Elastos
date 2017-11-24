@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(Criteria, Object, ICriteria, IParcelable)
+CAR_INTERFACE_IMPL(Criteria, Object, ICriteria, IParcelable)
 
 Criteria::Criteria()
     : mHorizontalAccuracy(Criteria_NO_REQUIREMENT)

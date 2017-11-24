@@ -58,7 +58,7 @@ AutoPtr< ArrayOf<Int32> > CSwitchBar::MARGIN_ATTRIBUTES = InitMARGIN_ATTRIBUTES(
 //                  CSwitchBar::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CSwitchBar::InnerListener, Object, IViewOnClickListener, ICompoundButtonOnCheckedChangeListener)
+CAR_INTERFACE_IMPL(CSwitchBar::InnerListener, Object, IViewOnClickListener, ICompoundButtonOnCheckedChangeListener)
 
 CSwitchBar::InnerListener::InnerListener(
     /* [in] */ CSwitchBar* host)

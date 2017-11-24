@@ -83,7 +83,7 @@ const String CCalendarContractEvents::DEFAULT_SORT_ORDER = String("");
 
 CAR_SINGLETON_IMPL(CCalendarContractEvents)
 
-CAR_INTERFACE_IMPL_6(CCalendarContractEvents, Singleton
+CAR_INTERFACE_IMPL(CCalendarContractEvents, Singleton
     , ICalendarContractEvents
     , IBaseColumns
     , ICalendarContractSyncColumns

@@ -56,7 +56,7 @@ const Boolean CJDBCResultSet::nullrepl =
 
 CAR_OBJECT_IMPL(CJDBCResultSet)
 
-CAR_INTERFACE_IMPL_3(CJDBCResultSet, Object, IJDBCResultSet, IResultSet, IWrapper)
+CAR_INTERFACE_IMPL(CJDBCResultSet, Object, IJDBCResultSet, IResultSet, IWrapper)
 
 ECode CJDBCResultSet::Absolute(
     /* [in] */ Int32 row,

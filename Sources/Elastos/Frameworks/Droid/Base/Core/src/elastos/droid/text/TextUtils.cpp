@@ -107,7 +107,7 @@ const String TextUtils::TAG("TextUtils");
 // TextUtils::Reverser
 //===========================================================================
 
-CAR_INTERFACE_IMPL_2(TextUtils::Reverser, Object, ICharSequence, IGetChars)
+CAR_INTERFACE_IMPL(TextUtils::Reverser, Object, ICharSequence, IGetChars)
 
 TextUtils::Reverser::Reverser(
     /* [in] */ ICharSequence* source,

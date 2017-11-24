@@ -35,7 +35,7 @@ namespace Telecom {
 //===============================================================
 // GatewayInfo::
 //===============================================================
-CAR_INTERFACE_IMPL_2(GatewayInfo, Object, IGatewayInfo, IParcelable)
+CAR_INTERFACE_IMPL(GatewayInfo, Object, IGatewayInfo, IParcelable)
 
 ECode GatewayInfo::constructor()
 {

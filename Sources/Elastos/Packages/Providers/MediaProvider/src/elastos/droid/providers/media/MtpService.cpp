@@ -178,7 +178,7 @@ ECode MtpService::MyBroadcastReceiver::OnReceive(
 // MtpService::MyIMtpService
 //===========================================================
 
-CAR_INTERFACE_IMPL_2(MtpService::MyIMtpService, Object, IIMtpService, IBinder)
+CAR_INTERFACE_IMPL(MtpService::MyIMtpService, Object, IIMtpService, IBinder)
 
 MtpService::MyIMtpService::MyIMtpService()
 {}

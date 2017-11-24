@@ -113,7 +113,7 @@ Boolean ConditionProviderService::IsBound()
 // ConditionProviderService::Provider
 //====================================
 
-CAR_INTERFACE_IMPL_2(ConditionProviderService::Provider, Object, IIConditionProvider, IBinder)
+CAR_INTERFACE_IMPL(ConditionProviderService::Provider, Object, IIConditionProvider, IBinder)
 
 ConditionProviderService::Provider::Provider()
 {

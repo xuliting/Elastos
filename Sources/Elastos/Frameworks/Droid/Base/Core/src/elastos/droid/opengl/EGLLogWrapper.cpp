@@ -34,7 +34,7 @@ namespace Elastos {
 namespace Droid {
 namespace Opengl {
 
-CAR_INTERFACE_IMPL_3(EGLLogWrapper, Object, IEGL, IEGL10, IEGL11)
+CAR_INTERFACE_IMPL(EGLLogWrapper, Object, IEGL, IEGL10, IEGL11)
 
 EGLLogWrapper::EGLLogWrapper(
     /* [in] */ IEGL* egl,

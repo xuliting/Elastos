@@ -73,7 +73,7 @@ const AutoPtr<IName> CManifest::NAME_ATTRIBUTE = InitNAME_ATTRIBUTE();
 const AutoPtr<ArrayOf<Byte> > CManifest::LINE_SEPARATOR = InitLINE_SEPARATOR();
 const AutoPtr<ArrayOf<Byte> > CManifest::VALUE_SEPARATOR = InitVALUE_SEPARATOR();
 
-CAR_INTERFACE_IMPL_2(CManifest, Object, IManifest, ICloneable)
+CAR_INTERFACE_IMPL(CManifest, Object, IManifest, ICloneable)
 
 CAR_OBJECT_IMPL(CManifest)
 

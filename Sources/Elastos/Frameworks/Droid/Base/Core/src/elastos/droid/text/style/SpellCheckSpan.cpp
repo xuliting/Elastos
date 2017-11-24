@@ -21,7 +21,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_3(SpellCheckSpan, Object, ISpellCheckSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(SpellCheckSpan, Object, ISpellCheckSpan, IParcelableSpan, IParcelable)
 
 SpellCheckSpan::SpellCheckSpan()
     : mSpellCheckInProgress(FALSE)

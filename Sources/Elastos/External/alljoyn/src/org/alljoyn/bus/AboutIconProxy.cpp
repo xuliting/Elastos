@@ -24,7 +24,7 @@ namespace Org {
 namespace Alljoyn {
 namespace Bus {
 
-CAR_INTERFACE_IMPL_2(AboutIconProxy, Object, IAboutIconProxy, IIcon)
+CAR_INTERFACE_IMPL(AboutIconProxy, Object, IAboutIconProxy, IIcon)
 
 ECode AboutIconProxy::constructor(
     /* [in] */ IBusAttachment* bus,

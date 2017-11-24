@@ -562,7 +562,7 @@ ECode UrlQuerySanitizerParameterValuePair::SetValue(
 // UrlQuerySanitizerIllegalCharacterValueSanitizer
 //=============================================================
 
-CAR_INTERFACE_IMPL_2(UrlQuerySanitizerIllegalCharacterValueSanitizer, Object, IUrlQuerySanitizerValueSanitizer, IUrlQuerySanitizerIllegalCharacterValueSanitizer)
+CAR_INTERFACE_IMPL(UrlQuerySanitizerIllegalCharacterValueSanitizer, Object, IUrlQuerySanitizerValueSanitizer, IUrlQuerySanitizerIllegalCharacterValueSanitizer)
 
 const String UrlQuerySanitizerIllegalCharacterValueSanitizer::JAVASCRIPT_PREFIX("javascript:");
 const String UrlQuerySanitizerIllegalCharacterValueSanitizer::VBSCRIPT_PREFIX("vbscript:");

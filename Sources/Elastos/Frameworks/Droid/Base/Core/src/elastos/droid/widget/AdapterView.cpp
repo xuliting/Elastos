@@ -49,7 +49,7 @@ const Int32 AdapterView::SYNC_MAX_DURATION_MILLIS;
 //==============================================================================
 //              AdapterView::AdapterContextMenuInfo
 //==============================================================================
-CAR_INTERFACE_IMPL_2(AdapterView::AdapterContextMenuInfo, Object, IContextMenuInfo, IAdapterContextMenuInfo)
+CAR_INTERFACE_IMPL(AdapterView::AdapterContextMenuInfo, Object, IContextMenuInfo, IAdapterContextMenuInfo)
 
 AdapterView::AdapterContextMenuInfo::AdapterContextMenuInfo(
     /* [in] */ IView* targetView,

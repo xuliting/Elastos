@@ -29,7 +29,7 @@ using Elastos::IO::EIID_ISerializable;
 namespace Elastos {
 namespace Core {
 
-CAR_INTERFACE_IMPL_3(AbstractStringBuilder, Object, IAppendable, ISerializable, ICharSequence)
+CAR_INTERFACE_IMPL(AbstractStringBuilder, Object, IAppendable, ISerializable, ICharSequence)
 
 AbstractStringBuilder::AbstractStringBuilder()
     :mByteCount(0)

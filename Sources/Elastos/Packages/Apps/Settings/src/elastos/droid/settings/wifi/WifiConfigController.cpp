@@ -122,7 +122,7 @@ const Int32 WifiConfigController::unspecifiedCertIndex = 0;
 //                  WifiConfigController::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(WifiConfigController::InnerListener, Object, ITextWatcher, IAdapterViewOnItemSelectedListener, ICompoundButtonOnCheckedChangeListener)
+CAR_INTERFACE_IMPL(WifiConfigController::InnerListener, Object, ITextWatcher, IAdapterViewOnItemSelectedListener, ICompoundButtonOnCheckedChangeListener)
 
 WifiConfigController::InnerListener::InnerListener(
     /* [in] */ WifiConfigController* host)
@@ -197,7 +197,7 @@ ECode WifiConfigController::AfterTextChangedRunnable::Run()
 //                  WifiConfigController
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(WifiConfigController, Object, IWifiConfigController, INoCopySpan);
+CAR_INTERFACE_IMPL(WifiConfigController, Object, IWifiConfigController, INoCopySpan);
 
 WifiConfigController::WifiConfigController(
     /* [in] */ IWifiConfigUiBase* parent,

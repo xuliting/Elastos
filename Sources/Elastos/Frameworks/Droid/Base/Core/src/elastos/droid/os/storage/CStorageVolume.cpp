@@ -29,7 +29,7 @@ namespace Storage {
 
 const String CStorageVolume::EXTRA_STORAGE_VOLUME = String("storage_volume");
 
-CAR_INTERFACE_IMPL_2(CStorageVolume, Object, IStorageVolume, IParcelable)
+CAR_INTERFACE_IMPL(CStorageVolume, Object, IStorageVolume, IParcelable)
 
 CAR_OBJECT_IMPL(CStorageVolume)
 

@@ -74,7 +74,7 @@ const String CSchedulingPolicyService::TAG("CSchedulingPolicyService");
 const Int32 CSchedulingPolicyService::PRIORITY_MIN = 1;
 const Int32 CSchedulingPolicyService::PRIORITY_MAX = 3;
 
-CAR_INTERFACE_IMPL_2(CSchedulingPolicyService, Object, IISchedulingPolicyService, IBinder)
+CAR_INTERFACE_IMPL(CSchedulingPolicyService, Object, IISchedulingPolicyService, IBinder)
 
 CAR_OBJECT_IMPL(CSchedulingPolicyService)
 

@@ -136,7 +136,7 @@ ECode Pm::LocalPackageInstallObserver::OnPackageInstalled(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(Pm::ClearDataObserver, Object, IIPackageDataObserver, IBinder)
+CAR_INTERFACE_IMPL(Pm::ClearDataObserver, Object, IIPackageDataObserver, IBinder)
 
 ECode Pm::ClearDataObserver::OnRemoveCompleted(
     /* [in] */ const String& packageName,
@@ -155,7 +155,7 @@ ECode Pm::ClearDataObserver::ToString(
     return Object::ToString(str);
 }
 
-CAR_INTERFACE_IMPL_2(Pm::ClearCacheObserver, Object, IIPackageDataObserver, IBinder)
+CAR_INTERFACE_IMPL(Pm::ClearCacheObserver, Object, IIPackageDataObserver, IBinder)
 
 ECode Pm::ClearCacheObserver::OnRemoveCompleted(
     /* [in] */ const String& packageName,

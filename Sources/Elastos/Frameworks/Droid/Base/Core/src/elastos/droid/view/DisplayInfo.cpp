@@ -38,7 +38,7 @@ namespace Elastos {
 namespace Droid {
 namespace View {
 
-CAR_INTERFACE_IMPL_2(DisplayInfo, Object, IDisplayInfo, IParcelable)
+CAR_INTERFACE_IMPL(DisplayInfo, Object, IDisplayInfo, IParcelable)
 
 DisplayInfo::DisplayInfo()
     : mLayerStack(0)

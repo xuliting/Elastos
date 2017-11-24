@@ -29,7 +29,7 @@ namespace Telephony {
 const String CCellIdentityLte::TAG("CCellIdentityLte");
 const Boolean CCellIdentityLte::DBG;
 
-CAR_INTERFACE_IMPL_2(CCellIdentityLte, Object, ICellIdentityLte, IParcelable)
+CAR_INTERFACE_IMPL(CCellIdentityLte, Object, ICellIdentityLte, IParcelable)
 
 CAR_OBJECT_IMPL(CCellIdentityLte)
 

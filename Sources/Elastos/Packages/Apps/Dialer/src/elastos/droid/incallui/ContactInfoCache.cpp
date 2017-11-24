@@ -82,7 +82,7 @@ ContactInfoCache::PhoneNumberServiceListener::PhoneNumberServiceListener(
     , mHost(host)
 {}
 
-CAR_INTERFACE_IMPL_2(ContactInfoCache::PhoneNumberServiceListener, Object, INumberLookupListener, IImageLookupListener)
+CAR_INTERFACE_IMPL(ContactInfoCache::PhoneNumberServiceListener, Object, INumberLookupListener, IImageLookupListener)
 
 ECode ContactInfoCache::PhoneNumberServiceListener::OnPhoneNumberInfoComplete(
     /* [in] */ IPhoneNumberInfo* info)

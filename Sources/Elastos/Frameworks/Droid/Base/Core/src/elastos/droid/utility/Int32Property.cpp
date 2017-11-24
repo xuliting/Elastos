@@ -30,7 +30,7 @@ namespace Elastos {
 namespace Droid {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(Int32Property, Object, IInt32Property, IProperty)
+CAR_INTERFACE_IMPL(Int32Property, Object, IInt32Property, IProperty)
 
 Int32Property::Int32Property(
     /* [in] */ const String& name)

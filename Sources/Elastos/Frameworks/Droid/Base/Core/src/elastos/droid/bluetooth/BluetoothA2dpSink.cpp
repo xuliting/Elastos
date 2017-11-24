@@ -42,7 +42,7 @@ namespace Bluetooth {
 //=====================================================================
 //      BluetoothA2dpSink::BluetoothStateChangeCallbackStub
 //=====================================================================
-CAR_INTERFACE_IMPL_2(BluetoothA2dpSink::BluetoothStateChangeCallbackStub, Object, IIBluetoothStateChangeCallback, IBinder);
+CAR_INTERFACE_IMPL(BluetoothA2dpSink::BluetoothStateChangeCallbackStub, Object, IIBluetoothStateChangeCallback, IBinder);
 
 BluetoothA2dpSink::BluetoothStateChangeCallbackStub::BluetoothStateChangeCallbackStub()
 {
@@ -134,7 +134,7 @@ const String BluetoothA2dpSink::TAG("BluetoothA2dpSink");
 const Boolean BluetoothA2dpSink::DBG = TRUE;
 const Boolean BluetoothA2dpSink::VDBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(BluetoothA2dpSink, Object, IBluetoothA2dpSink, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothA2dpSink, Object, IBluetoothA2dpSink, IBluetoothProfile);
 
 BluetoothA2dpSink::BluetoothA2dpSink()
 {

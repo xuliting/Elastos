@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CProfilerInfo, Object, IProfilerInfo, IParcelable)
+CAR_INTERFACE_IMPL(CProfilerInfo, Object, IProfilerInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CProfilerInfo)
 

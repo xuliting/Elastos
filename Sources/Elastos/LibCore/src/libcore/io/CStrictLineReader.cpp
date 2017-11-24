@@ -53,7 +53,7 @@ ECode CStrictLineReader::MyOutputStream::ToString(
 
 CAR_OBJECT_IMPL(CStrictLineReader)
 
-CAR_INTERFACE_IMPL_2(CStrictLineReader, Object, IStrictLineReader, ICloseable)
+CAR_INTERFACE_IMPL(CStrictLineReader, Object, IStrictLineReader, ICloseable)
 
 ECode CStrictLineReader::constructor(
     /* [in] */ IInputStream* in)

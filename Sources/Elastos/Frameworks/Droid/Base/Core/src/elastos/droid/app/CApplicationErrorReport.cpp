@@ -51,7 +51,7 @@ const String SYSTEM_APPS_ERROR_RECEIVER_PROPERTY("ro.error.receiver.system.apps"
 // System property defining default error report receiver
 const String DEFAULT_ERROR_RECEIVER_PROPERTY("ro.error.receiver.default");
 
-CAR_INTERFACE_IMPL_2(CApplicationErrorReport, Object, IApplicationErrorReport, IParcelable)
+CAR_INTERFACE_IMPL(CApplicationErrorReport, Object, IApplicationErrorReport, IParcelable)
 
 CAR_OBJECT_IMPL(CApplicationErrorReport)
 

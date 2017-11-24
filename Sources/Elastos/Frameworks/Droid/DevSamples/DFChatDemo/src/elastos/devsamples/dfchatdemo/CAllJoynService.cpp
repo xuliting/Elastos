@@ -350,7 +350,7 @@ ECode CAllJoynService::ChatBusListener::LostAdvertisedName(
 // CAllJoynService::ChatService
 //===================================================================
 
-CAR_INTERFACE_IMPL_2(CAllJoynService::ChatService, Object, IChatInterface, IBusObject)
+CAR_INTERFACE_IMPL(CAllJoynService::ChatService, Object, IChatInterface, IBusObject)
 
 ECode CAllJoynService::ChatService::constructor()
 {
@@ -396,7 +396,7 @@ const String CAllJoynService::NAME_PREFIX("org.alljoyn.bus.samples.chat");
 const Int16 CAllJoynService::CONTACT_PORT = 27;
 const String CAllJoynService::OBJECT_PATH("/chatService");
 
-CAR_INTERFACE_IMPL_2(CAllJoynService, Service, IAllJoynService, IObserver)
+CAR_INTERFACE_IMPL(CAllJoynService, Service, IAllJoynService, IObserver)
 
 CAR_OBJECT_IMPL(CAllJoynService)
 

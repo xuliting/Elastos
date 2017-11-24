@@ -30,7 +30,7 @@ BasicListHeaderIterator::BasicListHeaderIterator()
     , mLastIndex(-1)
 {}
 
-CAR_INTERFACE_IMPL_3(BasicListHeaderIterator, Object, IBasicListHeaderIterator, IHeaderIterator, IIterator)
+CAR_INTERFACE_IMPL(BasicListHeaderIterator, Object, IBasicListHeaderIterator, IHeaderIterator, IIterator)
 
 ECode BasicListHeaderIterator::Init(
     /* [in] */ IList* headers,

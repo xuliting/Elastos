@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIRingtonePlayer::TAG("CIRingtonePlayer");
 
-CAR_INTERFACE_IMPL_2(CIRingtonePlayer, Object, IIRingtonePlayer, IBinder)
+CAR_INTERFACE_IMPL(CIRingtonePlayer, Object, IIRingtonePlayer, IBinder)
 
 CAR_OBJECT_IMPL(CIRingtonePlayer)
 

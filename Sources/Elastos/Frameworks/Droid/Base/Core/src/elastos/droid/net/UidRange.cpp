@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(UidRange, Object, IParcelable, IUidRange)
+CAR_INTERFACE_IMPL(UidRange, Object, IParcelable, IUidRange)
 
 ECode UidRange::constructor()
 {

@@ -52,7 +52,7 @@ ECode ExpandedMenuView::OnItemClickListener::OnItemClick(
 //                  ExpandedMenuView
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(ExpandedMenuView, ListView, IExpandedMenuView, IMenuBuilderItemInvoker, IMenuView)
+CAR_INTERFACE_IMPL(ExpandedMenuView, ListView, IExpandedMenuView, IMenuBuilderItemInvoker, IMenuView)
 
 ExpandedMenuView::ExpandedMenuView()
     : mAnimations(0)

@@ -72,7 +72,7 @@ namespace Settings {
 //                  CDisplaySettings::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CDisplaySettings::InnerListener, Object, IPreferenceOnPreferenceChangeListener, IPreferenceOnPreferenceClickListener)
+CAR_INTERFACE_IMPL(CDisplaySettings::InnerListener, Object, IPreferenceOnPreferenceChangeListener, IPreferenceOnPreferenceClickListener)
 
 CDisplaySettings::InnerListener::InnerListener(
     /* [in] */ CDisplaySettings* host)

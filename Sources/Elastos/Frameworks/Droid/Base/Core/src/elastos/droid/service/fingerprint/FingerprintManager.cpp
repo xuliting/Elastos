@@ -98,7 +98,7 @@ ECode FingerprintManager::MHandler::HandleMessage(
 
 ////////////////////////////////FingerprintManager::MServiceReceiver///////////////////////////////
 
-CAR_INTERFACE_IMPL_2(FingerprintManager::MServiceReceiver, Object, IIFingerprintServiceReceiver, IBinder)
+CAR_INTERFACE_IMPL(FingerprintManager::MServiceReceiver, Object, IIFingerprintServiceReceiver, IBinder)
 
 FingerprintManager::MServiceReceiver::MServiceReceiver(
     /* [in] */ FingerprintManager* host)

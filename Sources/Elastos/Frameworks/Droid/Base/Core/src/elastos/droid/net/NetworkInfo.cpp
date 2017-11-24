@@ -37,7 +37,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(NetworkInfo, Object, IParcelable, INetworkInfo)
+CAR_INTERFACE_IMPL(NetworkInfo, Object, IParcelable, INetworkInfo)
 
 HashMap<NetworkInfoDetailedState, NetworkInfoState> NetworkInfo::mStateMap;
 const Int32 NetworkInfo::mInitFlag = InternalInit();

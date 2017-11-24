@@ -78,7 +78,7 @@ namespace DefContainer {
 //      DefaultContainerService::MediaContainerService
 //////////////////////////////////////////////////////////////////
 
-CAR_INTERFACE_IMPL_2(DefaultContainerService::MediaContainerService, Object, IIMediaContainerService, IBinder)
+CAR_INTERFACE_IMPL(DefaultContainerService::MediaContainerService, Object, IIMediaContainerService, IBinder)
 
 DefaultContainerService::MediaContainerService::MediaContainerService()
 {}

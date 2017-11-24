@@ -236,7 +236,7 @@ ECode TrustManagerService::InnerSub_ITrustManager::InnerSub_Runnable::Run()
 //=============================================================================
 // TrustManagerService::InnerSub_ITrustManager
 //=============================================================================
-CAR_INTERFACE_IMPL_2(TrustManagerService::InnerSub_ITrustManager, Object, IITrustManager, IBinder)
+CAR_INTERFACE_IMPL(TrustManagerService::InnerSub_ITrustManager, Object, IITrustManager, IBinder)
 
 TrustManagerService::InnerSub_ITrustManager::InnerSub_ITrustManager(
     /* [in] */ TrustManagerService* host)

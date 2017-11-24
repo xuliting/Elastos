@@ -43,7 +43,7 @@ const Int32 IAccessibilityServiceClientWrapper::DO_ON_GESTURE = 4;
 const Int32 IAccessibilityServiceClientWrapper::DO_CLEAR_ACCESSIBILITY_CACHE = 5;
 const Int32 IAccessibilityServiceClientWrapper::DO_ON_KEY_EVENT = 6;
 
-CAR_INTERFACE_IMPL_3(IAccessibilityServiceClientWrapper, Object, IIAccessibilityServiceClient,
+CAR_INTERFACE_IMPL(IAccessibilityServiceClientWrapper, Object, IIAccessibilityServiceClient,
         IBinder, IHandlerCallerCallback)
 
 IAccessibilityServiceClientWrapper::IAccessibilityServiceClientWrapper()

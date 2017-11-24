@@ -112,7 +112,7 @@ static inline Boolean EglBoolToJBool(EGLBoolean eglBool) {
     return eglBool == EGL_TRUE ? TRUE : FALSE;
 }
 
-CAR_INTERFACE_IMPL_2(CEGLImpl, Object, IEGL10, IEGL)
+CAR_INTERFACE_IMPL(CEGLImpl, Object, IEGL10, IEGL)
 
 CAR_OBJECT_IMPL(CEGLImpl)
 

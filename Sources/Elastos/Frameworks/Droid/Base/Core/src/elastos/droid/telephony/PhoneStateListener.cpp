@@ -45,7 +45,7 @@ CAR_INTERFACE_IMPL(PhoneStateListener, Object, IPhoneStateListener)
 // PhoneStateListener::PhoneStateListenerCallback
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(PhoneStateListener::PhoneStateListenerCallback,
+CAR_INTERFACE_IMPL(PhoneStateListener::PhoneStateListenerCallback,
         Object, IIPhoneStateListener, IBinder);
 
 ECode PhoneStateListener::PhoneStateListenerCallback::constructor(

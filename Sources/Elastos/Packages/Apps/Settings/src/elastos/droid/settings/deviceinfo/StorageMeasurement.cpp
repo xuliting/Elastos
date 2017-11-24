@@ -87,7 +87,7 @@ StorageMeasurement::MeasurementDetails::MeasurementDetails()
 //                  StorageMeasurement::StatsObserver
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(StorageMeasurement::StatsObserver, Object, IIPackageStatsObserver, IBinder)
+CAR_INTERFACE_IMPL(StorageMeasurement::StatsObserver, Object, IIPackageStatsObserver, IBinder)
 
 StorageMeasurement::StatsObserver::StatsObserver()
     : mIsInternal(FALSE)

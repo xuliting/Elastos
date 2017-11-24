@@ -23,7 +23,7 @@ namespace Xml {
 namespace Sax {
 namespace Helpers {
 
-CAR_INTERFACE_IMPL_2(CXMLReaderAdapter, Object, IParser, IContentHandler)
+CAR_INTERFACE_IMPL(CXMLReaderAdapter, Object, IParser, IContentHandler)
 
 CAR_OBJECT_IMPL(CXMLReaderAdapter)
 

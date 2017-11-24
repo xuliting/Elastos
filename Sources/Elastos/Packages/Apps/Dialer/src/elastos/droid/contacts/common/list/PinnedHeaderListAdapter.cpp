@@ -29,7 +29,7 @@ namespace Contacts {
 namespace Common {
 namespace List {
 
-CAR_INTERFACE_IMPL_2(PinnedHeaderListAdapter, CompositeCursorAdapter, IPinnedHeaderListAdapter, IPinnedHeaderAdapter)
+CAR_INTERFACE_IMPL(PinnedHeaderListAdapter, CompositeCursorAdapter, IPinnedHeaderListAdapter, IPinnedHeaderAdapter)
 
 ECode PinnedHeaderListAdapter::constructor(
     /* [in] */ IContext* context)

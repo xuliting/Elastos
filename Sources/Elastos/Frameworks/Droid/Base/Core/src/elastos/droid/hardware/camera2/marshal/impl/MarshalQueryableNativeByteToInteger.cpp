@@ -76,7 +76,7 @@ ECode MarshalQueryableNativeByteToInteger::MarshalerNativeByteToInteger::GetNati
 
 const Int32 MarshalQueryableNativeByteToInteger::UINT8_MASK = (1 << Elastos::Core::Math::BYTE_SIZE) - 1;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableNativeByteToInteger, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableNativeByteToInteger, Object,
         IMarshalQueryableNativeByteToInteger, IMarshalQueryable)
 
 ECode MarshalQueryableNativeByteToInteger::CreateMarshaler(

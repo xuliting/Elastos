@@ -287,7 +287,7 @@ const Int32 COutgoingCallBroadcaster::EVENT_DELAYED_FINISH = 102;
 const Int32 COutgoingCallBroadcaster::OUTGOING_CALL_TIMEOUT_THRESHOLD = 2000; // msec
 const Int32 COutgoingCallBroadcaster::DELAYED_FINISH_TIME = 2000; // msec
 
-CAR_INTERFACE_IMPL_3(COutgoingCallBroadcaster, Activity, IOutgoingCallBroadcaster,
+CAR_INTERFACE_IMPL(COutgoingCallBroadcaster, Activity, IOutgoingCallBroadcaster,
         IDialogInterfaceOnClickListener, IDialogInterfaceOnCancelListener)
 
 CAR_OBJECT_IMPL(COutgoingCallBroadcaster)

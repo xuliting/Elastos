@@ -69,7 +69,7 @@ ECode CSlidingChallengeLayout::MyProperty::Get(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CSlidingChallengeLayout::MyInterpolator, Object, IInterpolator,
+CAR_INTERFACE_IMPL(CSlidingChallengeLayout::MyInterpolator, Object, IInterpolator,
         ITimeInterpolator)
 
 ECode CSlidingChallengeLayout::MyInterpolator::GetInterpolation(
@@ -92,7 +92,7 @@ ECode CSlidingChallengeLayout::MyInterpolator::HasNativeInterpolator(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CSlidingChallengeLayout::MyInterpolator2, Object, IInterpolator,
+CAR_INTERFACE_IMPL(CSlidingChallengeLayout::MyInterpolator2, Object, IInterpolator,
         ITimeInterpolator)
 
 ECode CSlidingChallengeLayout::MyInterpolator2::GetInterpolation(
@@ -250,7 +250,7 @@ AutoPtr<IInterpolator> CSlidingChallengeLayout::sHandleFadeInterpolator = new My
 
 CAR_OBJECT_IMPL(CSlidingChallengeLayout)
 
-CAR_INTERFACE_IMPL_2(CSlidingChallengeLayout, ViewGroup, IChallengeLayout, ISlidingChallengeLayout)
+CAR_INTERFACE_IMPL(CSlidingChallengeLayout, ViewGroup, IChallengeLayout, ISlidingChallengeLayout)
 
 CSlidingChallengeLayout::CSlidingChallengeLayout()
     : mEdgeCaptured(FALSE)

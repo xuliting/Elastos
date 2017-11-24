@@ -35,7 +35,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Utils {
 
-CAR_INTERFACE_IMPL_2(UtilsSizeAreaComparator, Object, IUtilsSizeAreaComparator, IComparator)
+CAR_INTERFACE_IMPL(UtilsSizeAreaComparator, Object, IUtilsSizeAreaComparator, IComparator)
 
 ECode UtilsSizeAreaComparator::Compare(
     /* [in] */ IInterface* lhs,

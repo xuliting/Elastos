@@ -1008,7 +1008,7 @@ AutoPtr<ArrayOf<String> > CNsdService::sCmdToString = InitSCmdToString();
 
 CAR_OBJECT_IMPL(CNsdService)
 
-CAR_INTERFACE_IMPL_2(CNsdService, Object, IBinder, IINsdManager)
+CAR_INTERFACE_IMPL(CNsdService, Object, IBinder, IINsdManager)
 
 CNsdService::CNsdService()
     : INVALID_ID(0)

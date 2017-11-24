@@ -66,7 +66,7 @@ CLinkedList::LinkIterator::LinkIterator(
     }
 }
 
-CAR_INTERFACE_IMPL_2(CLinkedList::LinkIterator, Object, IListIterator, IIterator)
+CAR_INTERFACE_IMPL(CLinkedList::LinkIterator, Object, IListIterator, IIterator)
 
 ECode CLinkedList::LinkIterator::Add(
     /* [in] */ IInterface* object)
@@ -290,7 +290,7 @@ ECode CLinkedList::ReverseLinkIterator::Remove()
 //============================================================
 CAR_OBJECT_IMPL(CLinkedList)
 
-CAR_INTERFACE_IMPL_5(CLinkedList, AbstractSequentialList, ILinkedList, IDeque, IQueue, ICloneable, ISerializable)
+CAR_INTERFACE_IMPL(CLinkedList, AbstractSequentialList, ILinkedList, IDeque, IQueue, ICloneable, ISerializable)
 
 CLinkedList::CLinkedList()
     : mSize(0)

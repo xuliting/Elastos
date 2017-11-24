@@ -245,7 +245,7 @@ ECode WirelessSettings::MyBaseSearchIndexProvider::GetNonIndexableKeys(
 //                  WirelessSettings
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(WirelessSettings, SettingsPreferenceFragment,
+CAR_INTERFACE_IMPL(WirelessSettings, SettingsPreferenceFragment,
         IPreferenceOnPreferenceChangeListener, IIndexable);
 
 WirelessSettings::WirelessSettings()

@@ -43,7 +43,7 @@ const String CContactListFilter::KEY_DATA_SET("filter.dataSet");
 
 CAR_OBJECT_IMPL(CContactListFilter)
 
-CAR_INTERFACE_IMPL_3(CContactListFilter, Object, IContactListFilter, IComparable, IParcelable)
+CAR_INTERFACE_IMPL(CContactListFilter, Object, IContactListFilter, IComparable, IParcelable)
 
 ECode CContactListFilter::constructor()
 {

@@ -26,7 +26,7 @@ using Elastosx::Microedition::Khronos::Opengles::EIID_IGL11ExtensionPack;
 namespace Elastos {
 namespace Droid {
 namespace Opengl {
-CAR_INTERFACE_IMPL_6(GLWrapperBase, Object, IGL, IGL10, IGL10Ext, IGL11, IGL11Ext, IGL11ExtensionPack)
+CAR_INTERFACE_IMPL(GLWrapperBase, Object, IGL, IGL10, IGL10Ext, IGL11, IGL11Ext, IGL11ExtensionPack)
 
 GLWrapperBase::GLWrapperBase(
     /* [in] */ IGL* gl)

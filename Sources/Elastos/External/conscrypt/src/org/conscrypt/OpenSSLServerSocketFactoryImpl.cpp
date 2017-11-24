@@ -28,7 +28,7 @@ namespace Conscrypt {
 //=========================================
 // OpenSSLServerSocketFactoryImpl::
 //=========================================
-CAR_INTERFACE_IMPL_2(OpenSSLServerSocketFactoryImpl, Object, ISSLServerSocketFactory, IOpenSSLServerSocketFactoryImpl)
+CAR_INTERFACE_IMPL(OpenSSLServerSocketFactoryImpl, Object, ISSLServerSocketFactory, IOpenSSLServerSocketFactoryImpl)
 
 ECode OpenSSLServerSocketFactoryImpl::constructor()
 {

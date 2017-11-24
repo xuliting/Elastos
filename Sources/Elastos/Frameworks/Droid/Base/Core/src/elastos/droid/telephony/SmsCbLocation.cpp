@@ -26,7 +26,7 @@ namespace Telephony {
 //=====================================================================
 //                            SmsCbLocation
 //=====================================================================
-CAR_INTERFACE_IMPL_2(SmsCbLocation, Object, ISmsCbLocation, IParcelable);
+CAR_INTERFACE_IMPL(SmsCbLocation, Object, ISmsCbLocation, IParcelable);
 
 SmsCbLocation::SmsCbLocation()
     : mLac(-1)

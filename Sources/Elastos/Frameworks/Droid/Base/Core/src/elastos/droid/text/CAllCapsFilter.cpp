@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Text {
 
-CAR_INTERFACE_IMPL_2(CAllCapsFilter, Object, IAllCapsFilter, IAllCapsFilter)
+CAR_INTERFACE_IMPL(CAllCapsFilter, Object, IAllCapsFilter, IAllCapsFilter)
 
 CAR_OBJECT_IMPL(CAllCapsFilter)
 

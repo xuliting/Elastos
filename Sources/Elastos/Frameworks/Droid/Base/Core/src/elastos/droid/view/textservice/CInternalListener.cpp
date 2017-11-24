@@ -32,7 +32,7 @@ namespace TextService {
 const String CInternalListener::TAG("SpellCheckerSession");
 const Boolean CInternalListener::DBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(CInternalListener, Object, IInternalListener, IITextServicesSessionListener)
+CAR_INTERFACE_IMPL(CInternalListener, Object, IInternalListener, IITextServicesSessionListener)
 
 CAR_OBJECT_IMPL(CInternalListener)
 

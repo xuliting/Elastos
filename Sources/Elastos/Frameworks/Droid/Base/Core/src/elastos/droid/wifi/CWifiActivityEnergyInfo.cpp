@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Wifi {
 
-CAR_INTERFACE_IMPL_2(CWifiActivityEnergyInfo, Object, IParcelable, IWifiActivityEnergyInfo)
+CAR_INTERFACE_IMPL(CWifiActivityEnergyInfo, Object, IParcelable, IWifiActivityEnergyInfo)
 
 CAR_OBJECT_IMPL(CWifiActivityEnergyInfo)
 

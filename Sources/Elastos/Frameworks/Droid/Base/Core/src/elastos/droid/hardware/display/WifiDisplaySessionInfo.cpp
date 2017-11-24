@@ -26,7 +26,7 @@ namespace Droid {
 namespace Hardware {
 namespace Display {
 
-CAR_INTERFACE_IMPL_2(WifiDisplaySessionInfo, Object, IWifiDisplaySessionInfo, IParcelable)
+CAR_INTERFACE_IMPL(WifiDisplaySessionInfo, Object, IWifiDisplaySessionInfo, IParcelable)
 
 WifiDisplaySessionInfo::WifiDisplaySessionInfo()
     : mClient(FALSE)

@@ -395,7 +395,7 @@ const AutoPtr<AlarmManagerService::BatchTimeOrder> AlarmManagerService::sBatchOr
 // AlarmManagerService::BinderService
 //=======================================================================================
 
-CAR_INTERFACE_IMPL_2(AlarmManagerService::BinderService, Object, IIAlarmManager, IBinder)
+CAR_INTERFACE_IMPL(AlarmManagerService::BinderService, Object, IIAlarmManager, IBinder)
 
 ECode AlarmManagerService::BinderService::constructor(
     /* [in] */ ISystemService* alarmManagerService)

@@ -28,7 +28,7 @@ namespace Apache {
 namespace Http {
 namespace Message {
 
-CAR_INTERFACE_IMPL_2(BasicNameValuePair, Object, INameValuePair, ICloneable)
+CAR_INTERFACE_IMPL(BasicNameValuePair, Object, INameValuePair, ICloneable)
 
 ECode BasicNameValuePair::GetName(
     /* [out] */ String* name)

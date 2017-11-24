@@ -40,7 +40,7 @@ HashMap<AutoPtr<ILocale>, AutoPtr<ICurrency> > Currency::sLocalesToCurrencies;
 Object Currency::sCodesLock;
 Object Currency::sLocalesLock;
 
-CAR_INTERFACE_IMPL_2(Currency, Object, ICurrency, ISerializable)
+CAR_INTERFACE_IMPL(Currency, Object, ICurrency, ISerializable)
 
 Currency::Currency()
 {

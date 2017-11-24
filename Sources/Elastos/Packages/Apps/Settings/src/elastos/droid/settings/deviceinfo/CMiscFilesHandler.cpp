@@ -276,7 +276,7 @@ ECode CMiscFilesHandler::MemoryMearurementAdapter::GetView(
 //                  CMiscFilesHandler::ModeCallback
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CMiscFilesHandler::ModeCallback, Object, IMultiChoiceModeListener, IActionModeCallback)
+CAR_INTERFACE_IMPL(CMiscFilesHandler::ModeCallback, Object, IMultiChoiceModeListener, IActionModeCallback)
 
 CMiscFilesHandler::ModeCallback::ModeCallback(
     /* [in] */ IContext* context,

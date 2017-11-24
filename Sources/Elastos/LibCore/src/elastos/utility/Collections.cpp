@@ -320,7 +320,7 @@ ECode Collections::CopiesList::GetIterator(
 //====================================================================
 // Collections::EmptyList::
 //====================================================================
-CAR_INTERFACE_IMPL_2(Collections::EmptyList, AbstractList, IRandomAccess, ISerializable)
+CAR_INTERFACE_IMPL(Collections::EmptyList, AbstractList, IRandomAccess, ISerializable)
 
 ECode Collections::EmptyList::Contains(
     /* [in] */ IInterface* object,
@@ -755,7 +755,7 @@ INIT_PROI_1 const AutoPtr<IMap> Collections::EMPTY_MAP = new Collections::EmptyM
 //====================================================================
 // Collections::ReverseComparator::
 //====================================================================
-CAR_INTERFACE_IMPL_3(Collections::ReverseComparator, Object,
+CAR_INTERFACE_IMPL(Collections::ReverseComparator, Object,
     IComparator, IReverseComparator, ISerializable)
 
 const AutoPtr<Collections::ReverseComparator> Collections::ReverseComparator::INSTANCE = new Collections::ReverseComparator();
@@ -782,7 +782,7 @@ AutoPtr<IInterface> Collections::ReverseComparator::ReadResolve()
 //====================================================================
 // Collections::ReverseComparator2::
 //====================================================================
-CAR_INTERFACE_IMPL_3(Collections::ReverseComparator2, Object,
+CAR_INTERFACE_IMPL(Collections::ReverseComparator2, Object,
     IComparator, IReverseComparator2, ISerializable)
 
 Collections::ReverseComparator2::ReverseComparator2(
@@ -1509,7 +1509,7 @@ ECode Collections::_SingletonMap::GetValues(
 //====================================================================
 // Collections::_SynchronizedCollection::
 //====================================================================
-CAR_INTERFACE_IMPL_3(Collections::_SynchronizedCollection, Object, ICollection, IIterable, ISerializable)
+CAR_INTERFACE_IMPL(Collections::_SynchronizedCollection, Object, ICollection, IIterable, ISerializable)
 
 Collections::_SynchronizedCollection::_SynchronizedCollection(
     /* [in] */ ICollection* collection)
@@ -2176,7 +2176,7 @@ AutoPtr<IInterface> Collections::_SynchronizedList::ReadResolve()
 //====================================================================
 // Collections::_SynchronizedMap::
 //====================================================================
-CAR_INTERFACE_IMPL_2(Collections::_SynchronizedMap, Object, IMap, ISerializable)
+CAR_INTERFACE_IMPL(Collections::_SynchronizedMap, Object, IMap, ISerializable)
 
 Collections::_SynchronizedMap::_SynchronizedMap(
     /* [in] */ IMap* map)
@@ -3067,7 +3067,7 @@ ECode Collections::_UnmodifiableCollection::Iterator::Remove()
 //====================================================================
 // Collections::_UnmodifiableCollection::
 //====================================================================
-CAR_INTERFACE_IMPL_2(Collections::_UnmodifiableCollection, Object, ICollection, ISerializable)
+CAR_INTERFACE_IMPL(Collections::_UnmodifiableCollection, Object, ICollection, ISerializable)
 
 Collections::_UnmodifiableCollection::_UnmodifiableCollection(
     /* [in] */ ICollection* collection)
@@ -3263,7 +3263,7 @@ AutoPtr<IInterface> Collections::UnmodifiableRandomAccessList::WriteReplace()
 //====================================================================
 // Collections::_UnmodifiableList::ListIterator::
 //====================================================================
-CAR_INTERFACE_IMPL_2(Collections::_UnmodifiableList::ListIterator, Object, IListIterator, IIterator)
+CAR_INTERFACE_IMPL(Collections::_UnmodifiableList::ListIterator, Object, IListIterator, IIterator)
 
 Collections::_UnmodifiableList::ListIterator::ListIterator(
     /* [in] */ _UnmodifiableList* owner,
@@ -3761,7 +3761,7 @@ ECode Collections::_UnmodifiableMap::UnmodifiableEntrySet::ToArray(
 //====================================================================
 // Collections::_UnmodifiableMap::
 //====================================================================
-CAR_INTERFACE_IMPL_2(Collections::_UnmodifiableMap, Object, IMap, ISerializable)
+CAR_INTERFACE_IMPL(Collections::_UnmodifiableMap, Object, IMap, ISerializable)
 
 Collections::_UnmodifiableMap::_UnmodifiableMap(
     /* [in] */ IMap* map)
@@ -6018,7 +6018,7 @@ ECode Collections::_AsLIFOQueue::GetHashCode(
 //====================================================================
 // Collections::_CheckedCollection::
 //====================================================================
-CAR_INTERFACE_IMPL_2(Collections::_CheckedCollection, Object, ICollection, ISerializable)
+CAR_INTERFACE_IMPL(Collections::_CheckedCollection, Object, ICollection, ISerializable)
 
 Collections::_CheckedCollection::_CheckedCollection(
     /* [in] */ ICollection* c,
@@ -6220,7 +6220,7 @@ ECode Collections::_CheckedCollection::GetHashCode(
 //====================================================================
 // Collections::CheckedListIterator::
 //====================================================================
-CAR_INTERFACE_IMPL_2(Collections::CheckedListIterator, Object, IListIterator, IIterator)
+CAR_INTERFACE_IMPL(Collections::CheckedListIterator, Object, IListIterator, IIterator)
 
 Collections::CheckedListIterator::CheckedListIterator(
     /* [in] */ IListIterator* i,
@@ -6997,7 +6997,7 @@ ECode Collections::_CheckedMap::CheckedEntrySet::RetainAll(
 //====================================================================
 // Collections::_CheckedMap::
 //====================================================================
-CAR_INTERFACE_IMPL_2(Collections::_CheckedMap, Object, IMap, ISerializable)
+CAR_INTERFACE_IMPL(Collections::_CheckedMap, Object, IMap, ISerializable)
 
 Collections::_CheckedMap::_CheckedMap(
     /* [in] */ IMap* m,

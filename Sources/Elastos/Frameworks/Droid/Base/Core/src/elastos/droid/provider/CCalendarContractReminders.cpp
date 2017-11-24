@@ -23,7 +23,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CCalendarContractReminders)
 
-CAR_INTERFACE_IMPL_4(CCalendarContractReminders, Singleton
+CAR_INTERFACE_IMPL(CCalendarContractReminders, Singleton
     , ICalendarContractReminders
     , IBaseColumns
     , ICalendarContractRemindersColumns

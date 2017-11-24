@@ -22,7 +22,7 @@ using Elastos::Core::StringBuilder;
 namespace Elastos {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(AbstractCollection, Object, ICollection, IIterable)
+CAR_INTERFACE_IMPL(AbstractCollection, Object, ICollection, IIterable)
 
 AbstractCollection::AbstractCollection()
 {

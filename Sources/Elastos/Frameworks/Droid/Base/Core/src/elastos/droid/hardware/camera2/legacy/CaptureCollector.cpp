@@ -40,7 +40,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Legacy {
 
-CAR_INTERFACE_IMPL_2(CaptureCollector::CaptureHolder, Object,
+CAR_INTERFACE_IMPL(CaptureCollector::CaptureHolder, Object,
         ICaptureCollectorCaptureHolder, IComparable)
 
 CaptureCollector::CaptureHolder::CaptureHolder(

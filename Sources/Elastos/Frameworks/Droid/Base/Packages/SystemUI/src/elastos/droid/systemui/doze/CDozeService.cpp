@@ -260,7 +260,7 @@ const Int32 CDozeService::ProximityCheck::RESULT_NEAR = 1;
 const Int32 CDozeService::ProximityCheck::RESULT_FAR = 2;
 const Int32 CDozeService::ProximityCheck::TIMEOUT_DELAY_MS = 500;
 
-CAR_INTERFACE_IMPL_2(CDozeService::ProximityCheck, Object, ISensorEventListener, IRunnable);
+CAR_INTERFACE_IMPL(CDozeService::ProximityCheck, Object, ISensorEventListener, IRunnable);
 
 CDozeService::ProximityCheck::ProximityCheck(
     /* [in] */ CDozeService* host)

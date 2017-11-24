@@ -28,7 +28,7 @@ namespace Keyguard {
 
 CAR_OBJECT_IMPL(CKeyguardFaceUnlockViewRotationWatcher)
 
-CAR_INTERFACE_IMPL_2(CKeyguardFaceUnlockViewRotationWatcher, Object, IBinder,
+CAR_INTERFACE_IMPL(CKeyguardFaceUnlockViewRotationWatcher, Object, IBinder,
         IRotationWatcher)
 
 ECode CKeyguardFaceUnlockViewRotationWatcher::constructor(

@@ -36,7 +36,7 @@ using Elastos::IO::Charset::CCharsetHelper;
 namespace Elastos {
 namespace IO {
 
-CAR_INTERFACE_IMPL_2(PrintStream, FilterOutputStream, IPrintStream, IAppendable)
+CAR_INTERFACE_IMPL(PrintStream, FilterOutputStream, IPrintStream, IAppendable)
 
 const String PrintStream::sLineSeparator("\n");
 

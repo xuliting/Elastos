@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace Media {
 
-CAR_INTERFACE_IMPL_2(CMediaDescription, Object, IMediaDescription, IParcelable)
+CAR_INTERFACE_IMPL(CMediaDescription, Object, IMediaDescription, IParcelable)
 
 CAR_OBJECT_IMPL(CMediaDescription)
 

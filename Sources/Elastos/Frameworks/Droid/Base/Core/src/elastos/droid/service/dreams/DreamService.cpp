@@ -93,7 +93,7 @@ ECode DreamService::DreamServiceWrapper::WakeUpRunnable::Run()
 
 ///////////////////////////DreamService::DreamServiceWrapper////////////////////////////////////
 
-CAR_INTERFACE_IMPL_2(DreamService::DreamServiceWrapper, Object, IIDreamService, IBinder)
+CAR_INTERFACE_IMPL(DreamService::DreamServiceWrapper, Object, IIDreamService, IBinder)
 
 DreamService::DreamServiceWrapper::DreamServiceWrapper()
     : mCanDoze(FALSE)
@@ -153,7 +153,7 @@ ECode DreamService::DreamService_Attach_Runnable::Run()
 
 const String DreamService::TAG("DreamService");/*DreamService.class.getSimpleName() + "[" + getClass().getSimpleName() + "]";*/
 
-CAR_INTERFACE_IMPL_2(DreamService, Service, IDreamService, IWindowCallback)
+CAR_INTERFACE_IMPL(DreamService, Service, IDreamService, IWindowCallback)
 
 DreamService::DreamService()
     : mInteractive(FALSE)

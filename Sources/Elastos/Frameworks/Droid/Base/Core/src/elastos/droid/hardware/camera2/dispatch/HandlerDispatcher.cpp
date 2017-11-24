@@ -44,7 +44,7 @@ ECode HandlerDispatcher::MyRunnable::Run()
 
 const String HandlerDispatcher::TAG("HandlerDispatcher");
 
-CAR_INTERFACE_IMPL_2(HandlerDispatcher, Object, IHandlerDispatcher, IDispatchable)
+CAR_INTERFACE_IMPL(HandlerDispatcher, Object, IHandlerDispatcher, IDispatchable)
 
 HandlerDispatcher::HandlerDispatcher()
 {

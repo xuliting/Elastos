@@ -48,7 +48,7 @@ const String CDriver::VALIDATION_FEATURE("http://xml.org/sax/features/validation
 const String CDriver::APACHE_SCHEMA_VALIDATION_FEATURE("http://apache.org/xml/features/validation/schema");
 const String CDriver::APACHE_DYNAMIC_VALIDATION_FEATURE("http://apache.org/xml/features/validation/dynamic");
 
-CAR_INTERFACE_IMPL_3(CDriver, Object, ILocator, IXMLReader, IAttributes)
+CAR_INTERFACE_IMPL(CDriver, Object, ILocator, IXMLReader, IAttributes)
 
 CAR_OBJECT_IMPL(CDriver)
 

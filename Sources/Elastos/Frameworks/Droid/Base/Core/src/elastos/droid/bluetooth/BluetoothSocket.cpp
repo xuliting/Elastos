@@ -57,7 +57,7 @@ const Boolean BluetoothSocket::VDBG = Logger::IsLoggable(TAG, Logger::VERBOSE);
 Int32 BluetoothSocket::PROXY_CONNECTION_TIMEOUT = 5000;
 Int32 BluetoothSocket::SOCK_SIGNAL_SIZE = 16;
 
-CAR_INTERFACE_IMPL_2(BluetoothSocket, Object, IBluetoothSocket, ICloseable)
+CAR_INTERFACE_IMPL(BluetoothSocket, Object, IBluetoothSocket, ICloseable)
 
 BluetoothSocket::BluetoothSocket()
 {

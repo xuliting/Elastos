@@ -28,7 +28,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractCommonDataKindsSipAddress)
 
-CAR_INTERFACE_IMPL_3(CContactsContractCommonDataKindsSipAddress, Singleton
+CAR_INTERFACE_IMPL(CContactsContractCommonDataKindsSipAddress, Singleton
     , IContactsContractCommonDataKindsSipAddress
     , IContactsContractDataColumnsWithJoins
     , IContactsContractCommonDataKindsCommonColumns)

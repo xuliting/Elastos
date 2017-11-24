@@ -125,7 +125,7 @@ AutoPtr<CChooseLockPassword::ChooseLockPasswordFragment::Stage> CChooseLockPassw
 //                  CChooseLockPassword::ChooseLockPasswordFragment::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(CChooseLockPassword::ChooseLockPasswordFragment::InnerListener, Object, IViewOnClickListener, IOnEditorActionListener, ITextWatcher)
+CAR_INTERFACE_IMPL(CChooseLockPassword::ChooseLockPasswordFragment::InnerListener, Object, IViewOnClickListener, IOnEditorActionListener, ITextWatcher)
 
 CChooseLockPassword::ChooseLockPasswordFragment::InnerListener::InnerListener(
     /* [in] */ ChooseLockPasswordFragment* host)

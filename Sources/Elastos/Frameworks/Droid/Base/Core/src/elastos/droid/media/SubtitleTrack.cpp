@@ -552,7 +552,7 @@ ECode SubtitleTrack::SubTrackRunnable::Run()
 //===============================================================
 const String SubtitleTrack::TAG("SubtitleTrack");
 
-CAR_INTERFACE_IMPL_2(SubtitleTrack, Object, ISubtitleTrack, IMediaTimeProviderOnMediaTimeListener)
+CAR_INTERFACE_IMPL(SubtitleTrack, Object, ISubtitleTrack, IMediaTimeProviderOnMediaTimeListener)
 
 SubtitleTrack::SubtitleTrack()
     : DEBUG(FALSE)

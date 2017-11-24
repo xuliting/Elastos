@@ -155,7 +155,7 @@ const Boolean CKeyguardSecurityContainer::DEBUG = FALSE;
 
 CAR_OBJECT_IMPL(CKeyguardSecurityContainer)
 
-CAR_INTERFACE_IMPL_2(CKeyguardSecurityContainer, FrameLayout, IKeyguardSecurityContainer, IKeyguardSecurityView)
+CAR_INTERFACE_IMPL(CKeyguardSecurityContainer, FrameLayout, IKeyguardSecurityContainer, IKeyguardSecurityView)
 
 CKeyguardSecurityContainer::CKeyguardSecurityContainer()
     : mEnableFallback(FALSE)

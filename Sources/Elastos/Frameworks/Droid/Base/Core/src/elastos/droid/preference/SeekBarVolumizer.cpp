@@ -185,7 +185,7 @@ const Int32 SeekBarVolumizer::MSG_STOP_SAMPLE;
 const Int32 SeekBarVolumizer::MSG_INIT_SAMPLE;
 const Int32 SeekBarVolumizer::CHECK_RINGTONE_PLAYBACK_DELAY_MS;
 
-CAR_INTERFACE_IMPL_2(SeekBarVolumizer, Object, ISeekBarVolumizer, IHandlerCallback)
+CAR_INTERFACE_IMPL(SeekBarVolumizer, Object, ISeekBarVolumizer, IHandlerCallback)
 
 SeekBarVolumizer::SeekBarVolumizer()
     : mStreamType(0)

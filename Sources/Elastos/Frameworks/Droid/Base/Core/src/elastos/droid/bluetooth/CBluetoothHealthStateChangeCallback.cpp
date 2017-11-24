@@ -28,7 +28,7 @@ using Elastos::Utility::Logging::Logger;
 namespace Elastos {
 namespace Droid {
 namespace Bluetooth {
-CAR_INTERFACE_IMPL_2(CBluetoothHealthStateChangeCallback, Object, IIBluetoothStateChangeCallback, IBinder);
+CAR_INTERFACE_IMPL(CBluetoothHealthStateChangeCallback, Object, IIBluetoothStateChangeCallback, IBinder);
 
 CAR_OBJECT_IMPL(CBluetoothHealthStateChangeCallback);
 

@@ -43,7 +43,7 @@ namespace Uicc {
 //=====================================================================
 //                              AdnRecord
 //=====================================================================
-CAR_INTERFACE_IMPL_2(AdnRecord, Object, IAdnRecord, IParcelable);
+CAR_INTERFACE_IMPL(AdnRecord, Object, IAdnRecord, IParcelable);
 
 const String AdnRecord::LOGTAG("AdnRecord");
 const Int32 AdnRecord::FOOTER_SIZE_BYTES;

@@ -45,7 +45,7 @@ namespace Cdma {
 //=====================================================================
 //                             CdmaMmiCode
 //=====================================================================
-CAR_INTERFACE_IMPL_2(CdmaMmiCode, Handler, IMmiCode, ICdmaMmiCode);
+CAR_INTERFACE_IMPL(CdmaMmiCode, Handler, IMmiCode, ICdmaMmiCode);
 
 const String CdmaMmiCode::LOGTAG("CdmaMmiCode");
 const String CdmaMmiCode::ACTION_REGISTER("**");

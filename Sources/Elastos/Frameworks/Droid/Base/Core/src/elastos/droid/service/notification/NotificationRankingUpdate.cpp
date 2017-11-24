@@ -21,7 +21,7 @@ namespace Droid {
 namespace Service {
 namespace Notification {
 
-CAR_INTERFACE_IMPL_2(NotificationRankingUpdate, Object, INotificationRankingUpdate, IParcelable)
+CAR_INTERFACE_IMPL(NotificationRankingUpdate, Object, INotificationRankingUpdate, IParcelable)
 
 NotificationRankingUpdate::NotificationRankingUpdate()
     : mFirstAmbientIndex(0)

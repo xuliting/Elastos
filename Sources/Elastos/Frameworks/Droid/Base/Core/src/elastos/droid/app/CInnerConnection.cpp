@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CInnerConnection, Object, IIServiceConnection, IBinder)
+CAR_INTERFACE_IMPL(CInnerConnection, Object, IIServiceConnection, IBinder)
 
 CAR_OBJECT_IMPL(CInnerConnection)
 

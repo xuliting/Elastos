@@ -24,7 +24,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CRC5ParameterSpec)
-CAR_INTERFACE_IMPL_2(CRC5ParameterSpec, Object, IRC5ParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(CRC5ParameterSpec, Object, IRC5ParameterSpec, IAlgorithmParameterSpec)
 
 CRC5ParameterSpec::CRC5ParameterSpec()
     : mVersion(0)

@@ -31,7 +31,7 @@ namespace Elastos {
 namespace Security {
 namespace Cert {
 
-CAR_INTERFACE_IMPL_2(X509CRLEntry, Object, IX509CRLEntry, IX509Extension)
+CAR_INTERFACE_IMPL(X509CRLEntry, Object, IX509CRLEntry, IX509Extension)
 
 X509CRLEntry::X509CRLEntry()
 {}

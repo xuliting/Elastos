@@ -27,7 +27,7 @@ namespace Bluetooth {
 //=====================================================================
 //                         BluetoothAudioConfig
 //=====================================================================
-CAR_INTERFACE_IMPL_2(BluetoothAudioConfig, Object, IBluetoothAudioConfig, IParcelable);
+CAR_INTERFACE_IMPL(BluetoothAudioConfig, Object, IBluetoothAudioConfig, IParcelable);
 
 BluetoothAudioConfig::BluetoothAudioConfig()
 {

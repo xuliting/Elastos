@@ -112,7 +112,7 @@ const Boolean CKeyguardSecurityViewFlipper::DEBUG = FALSE;
 
 CAR_OBJECT_IMPL(CKeyguardSecurityViewFlipper)
 
-CAR_INTERFACE_IMPL_2(CKeyguardSecurityViewFlipper, ViewFlipper, IKeyguardSecurityViewFlipper, IKeyguardSecurityView)
+CAR_INTERFACE_IMPL(CKeyguardSecurityViewFlipper, ViewFlipper, IKeyguardSecurityViewFlipper, IKeyguardSecurityView)
 
 CKeyguardSecurityViewFlipper::CKeyguardSecurityViewFlipper()
 {

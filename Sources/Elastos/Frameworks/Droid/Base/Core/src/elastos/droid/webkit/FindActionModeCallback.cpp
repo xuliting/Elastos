@@ -95,7 +95,7 @@ ECode FindActionModeCallback::NoAction::ToString(
 //===============================================================
 //                   FindActionModeCallback::InnerListener
 //===============================================================
-CAR_INTERFACE_IMPL_2(FindActionModeCallback::InnerListener, Object, \
+CAR_INTERFACE_IMPL(FindActionModeCallback::InnerListener, Object, \
     IViewOnClickListener, IWebViewFindListener);
 
 FindActionModeCallback::InnerListener::InnerListener(
@@ -121,7 +121,7 @@ ECode FindActionModeCallback::InnerListener::OnFindResultReceived(
 //                   FindActionModeCallback
 //===============================================================
 
-CAR_INTERFACE_IMPL_2(FindActionModeCallback, Object, IActionModeCallback, ITextWatcher);
+CAR_INTERFACE_IMPL(FindActionModeCallback, Object, IActionModeCallback, ITextWatcher);
 
 FindActionModeCallback::FindActionModeCallback()
     : mMatchesFound(FALSE)

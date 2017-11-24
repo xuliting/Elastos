@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CRemoteViewsFactoryNative::TAG("CRemoteViewsFactoryNative");
 
-CAR_INTERFACE_IMPL_2(CRemoteViewsFactoryNative, Object, IIRemoteViewsFactory, IBinder)
+CAR_INTERFACE_IMPL(CRemoteViewsFactoryNative, Object, IIRemoteViewsFactory, IBinder)
 
 CAR_OBJECT_IMPL(CRemoteViewsFactoryNative)
 

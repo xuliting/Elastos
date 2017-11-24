@@ -69,7 +69,7 @@ INIT_PROI_4 AutoPtr<ITimeZone> TimeZone::sDefaultTimeZone;
 INIT_PROI_4 AutoPtr<IPattern> TimeZone::CUSTOM_ZONE_ID_PATTERN = CreatePattern("^GMT[-+](\\d{1,2})(:?(\\d\\d))?$");
 INIT_PROI_4 Object TimeZone::sLock;
 
-CAR_INTERFACE_IMPL_3(TimeZone, Object, ITimeZone, ISerializable, ICloneable)
+CAR_INTERFACE_IMPL(TimeZone, Object, ITimeZone, ISerializable, ICloneable)
 
 ECode TimeZone::CloneImpl(
     /* [out] */ ITimeZone * other)

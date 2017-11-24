@@ -315,7 +315,7 @@ const Int64 ListsFragment::OLDEST_RECENTS_DATE = 1000LL * 60 * 60 * 24 * 14;
 
 const String ListsFragment::KEY_LAST_DISMISSED_CALL_SHORTCUT_DATE("key_last_dismissed_call_shortcut_date");
 
-CAR_INTERFACE_IMPL_3(ListsFragment, AnalyticsFragment, IListsFragment, ICallLogQueryHandlerListener, ICallFetcher)
+CAR_INTERFACE_IMPL(ListsFragment, AnalyticsFragment, IListsFragment, ICallLogQueryHandlerListener, ICallFetcher)
 
 ListsFragment::ListsFragment()
     : mIsPanelOpen(TRUE)

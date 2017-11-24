@@ -77,7 +77,7 @@ AutoPtr<IAtomicInteger32> Gesture::InitGestureCount()
     return temp;
 }
 
-CAR_INTERFACE_IMPL_2(Gesture, Object, IGesture, IParcelable);
+CAR_INTERFACE_IMPL(Gesture, Object, IGesture, IParcelable);
 
 Gesture::Gesture()
     : mGestureID(0)

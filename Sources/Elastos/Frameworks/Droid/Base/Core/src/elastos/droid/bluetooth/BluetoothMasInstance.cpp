@@ -26,7 +26,7 @@ namespace Bluetooth {
 //=====================================================================
 //                         BluetoothMasInstance
 //=====================================================================
-CAR_INTERFACE_IMPL_2(BluetoothMasInstance, Object, IBluetoothMasInstance, IParcelable);
+CAR_INTERFACE_IMPL(BluetoothMasInstance, Object, IBluetoothMasInstance, IParcelable);
 
 BluetoothMasInstance::BluetoothMasInstance()
 {

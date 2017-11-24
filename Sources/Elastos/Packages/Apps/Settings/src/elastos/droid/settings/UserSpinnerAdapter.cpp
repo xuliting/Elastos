@@ -93,7 +93,7 @@ UserSpinnerAdapter::UserDetails::~UserDetails()
 //                  UserSpinnerAdapter
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(UserSpinnerAdapter, Object, ISpinnerAdapter, IAdapter);
+CAR_INTERFACE_IMPL(UserSpinnerAdapter, Object, ISpinnerAdapter, IAdapter);
 
 UserSpinnerAdapter::UserSpinnerAdapter()
 {}

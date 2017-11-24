@@ -32,7 +32,7 @@ namespace Internal {
 namespace Content {
 
 CAR_OBJECT_IMPL(CNativeLibraryHelperHandle);
-CAR_INTERFACE_IMPL_2(CNativeLibraryHelperHandle, Object, INativeLibraryHelperHandle, ICloseable);
+CAR_INTERFACE_IMPL(CNativeLibraryHelperHandle, Object, INativeLibraryHelperHandle, ICloseable);
 
 ECode CNativeLibraryHelperHandle::Create(
     /* [in] */ IFile* packageFile,

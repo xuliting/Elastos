@@ -122,7 +122,7 @@ ECode ClipboardService::MyBroadcastReceiver::OnReceive(
 //          ClipboardService
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(ClipboardService, Object, IIClipboard, IBinder);
+CAR_INTERFACE_IMPL(ClipboardService, Object, IIClipboard, IBinder);
 
 ClipboardService::ClipboardService()
 {}

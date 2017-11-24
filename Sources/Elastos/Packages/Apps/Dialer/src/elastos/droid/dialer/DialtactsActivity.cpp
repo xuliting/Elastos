@@ -367,7 +367,7 @@ ECode DialtactsActivity::MyOnTouchListener::OnTouch(
 //================================================================
 // DialtactsActivity
 //================================================================
-CAR_INTERFACE_IMPL_4(DialtactsActivity::InnerListener, Object,
+CAR_INTERFACE_IMPL(DialtactsActivity::InnerListener, Object,
     IViewOnClickListener, IOnPhoneNumberPickerActionListener,
     IPopupMenuOnMenuItemClickListener, IViewPagerOnPageChangeListener)
 
@@ -462,7 +462,7 @@ const String DialtactsActivity::ACTION_TOUCH_DIALER("com.android.phone.action.TO
 
 const Int32 DialtactsActivity::ACTIVITY_REQUEST_CODE_VOICE_SEARCH = 1;
 
-CAR_INTERFACE_IMPL_7(DialtactsActivity, TransactionSafeActivity, IDialtactsActivity,
+CAR_INTERFACE_IMPL(DialtactsActivity, TransactionSafeActivity, IDialtactsActivity,
         IOnDialpadQueryChangedListener, IListsFragmentHostInterface,
         ISpeedDialFragmentHostInterface, ISearchFragmentHostInterface, IOnDragDropListener,
         IActionBarControllerActivityUi);

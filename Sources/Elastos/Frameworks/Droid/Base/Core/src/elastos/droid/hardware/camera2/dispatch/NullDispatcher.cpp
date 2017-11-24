@@ -22,7 +22,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Dispatch {
 
-CAR_INTERFACE_IMPL_2(NullDispatcher, Object, INullDispatcher, IDispatchable)
+CAR_INTERFACE_IMPL(NullDispatcher, Object, INullDispatcher, IDispatchable)
 
 NullDispatcher::NullDispatcher()
 {

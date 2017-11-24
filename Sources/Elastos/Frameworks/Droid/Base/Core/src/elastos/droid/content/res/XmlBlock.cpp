@@ -43,7 +43,7 @@ namespace Res {
 //=================================================================================
 // XmlBlock::Parser
 //=================================================================================
-CAR_INTERFACE_IMPL_4(XmlBlock::Parser, Object, IXmlResourceParser, IXmlPullParser, IAttributeSet, ICloseable)
+CAR_INTERFACE_IMPL(XmlBlock::Parser, Object, IXmlResourceParser, IXmlPullParser, IAttributeSet, ICloseable)
 
 XmlBlock::Parser::Parser(
     /* [in] */ Int64 parseState,

@@ -141,7 +141,7 @@ ECode CSparseRectFArray::SparseRectFArrayBuilder::Reset()
 //========================================================================================
 //              CSparseRectFArray::
 //========================================================================================
-CAR_INTERFACE_IMPL_2(CSparseRectFArray, Object, ISparseRectFArray, IParcelable)
+CAR_INTERFACE_IMPL(CSparseRectFArray, Object, ISparseRectFArray, IParcelable)
 
 CAR_OBJECT_IMPL(CSparseRectFArray)
 

@@ -24,7 +24,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CGCMParameterSpec)
-CAR_INTERFACE_IMPL_2(CGCMParameterSpec, Object, IGCMParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(CGCMParameterSpec, Object, IGCMParameterSpec, IAlgorithmParameterSpec)
 
 CGCMParameterSpec::CGCMParameterSpec()
     : mTagLen(0)

@@ -32,7 +32,7 @@ namespace Droid {
 namespace Net {
 namespace Http {
 
-CAR_INTERFACE_IMPL_2(LoggingEventHandler, Object, ILoggingEventHandler, IEventHandler)
+CAR_INTERFACE_IMPL(LoggingEventHandler, Object, ILoggingEventHandler, IEventHandler)
 
 ECode LoggingEventHandler::constructor()
 {

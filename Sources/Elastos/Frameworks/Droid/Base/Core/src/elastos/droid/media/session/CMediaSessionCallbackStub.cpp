@@ -28,7 +28,7 @@ namespace Session {
 
 const String CMediaSessionCallbackStub::TAG("CMediaSessionCallbackStub");
 
-CAR_INTERFACE_IMPL_2(CMediaSessionCallbackStub, Object, IISessionCallback, IBinder)
+CAR_INTERFACE_IMPL(CMediaSessionCallbackStub, Object, IISessionCallback, IBinder)
 
 CAR_OBJECT_IMPL(CMediaSessionCallbackStub)
 

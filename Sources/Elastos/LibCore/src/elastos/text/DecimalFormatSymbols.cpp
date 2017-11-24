@@ -36,7 +36,7 @@ using Libcore::ICU::CLocaleDataHelper;
 namespace Elastos {
 namespace Text {
 
-CAR_INTERFACE_IMPL_2(DecimalFormatSymbols, Object, IDecimalFormatSymbols, ICloneable)
+CAR_INTERFACE_IMPL(DecimalFormatSymbols, Object, IDecimalFormatSymbols, ICloneable)
 
 ECode DecimalFormatSymbols::constructor()
 {

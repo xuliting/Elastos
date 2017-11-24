@@ -232,7 +232,7 @@ ECode AbstractList::FullListIterator::Remove()
 // SubAbstractList::SubAbstractListIterator
 ////////////////////////////////////////////
 
-CAR_INTERFACE_IMPL_2(SubAbstractList::SubAbstractListIterator, Object, IListIterator, IIterator)
+CAR_INTERFACE_IMPL(SubAbstractList::SubAbstractListIterator, Object, IListIterator, IIterator)
 
 SubAbstractList::SubAbstractListIterator::SubAbstractListIterator()
     : mStart(0)

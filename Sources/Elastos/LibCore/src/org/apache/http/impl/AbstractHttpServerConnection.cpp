@@ -42,7 +42,7 @@ AbstractHttpServerConnection::AbstractHttpServerConnection()
     mEntitydeserializer = CreateEntityDeserializer();
 }
 
-CAR_INTERFACE_IMPL_2(AbstractHttpServerConnection, Object, IHttpServerConnection, IHttpConnection)
+CAR_INTERFACE_IMPL(AbstractHttpServerConnection, Object, IHttpServerConnection, IHttpConnection)
 
 AutoPtr<EntityDeserializer> AbstractHttpServerConnection::CreateEntityDeserializer()
 {

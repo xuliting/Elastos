@@ -31,7 +31,7 @@ BasicStatusLine::BasicStatusLine()
     : mStatusCode(0)
 {}
 
-CAR_INTERFACE_IMPL_2(BasicStatusLine, Object, IStatusLine, ICloneable)
+CAR_INTERFACE_IMPL(BasicStatusLine, Object, IStatusLine, ICloneable)
 
 ECode BasicStatusLine::Init(
     /* [in] */ IProtocolVersion* version,

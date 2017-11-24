@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(NotificationActionWearableExtender, Object, INotificationActionExtender, INotificationActionWearableExtender)
+CAR_INTERFACE_IMPL(NotificationActionWearableExtender, Object, INotificationActionExtender, INotificationActionWearableExtender)
 
 const String NotificationActionWearableExtender::EXTRA_WEARABLE_EXTENSIONS("android.wearable.EXTENSIONS");
 const String NotificationActionWearableExtender::KEY_FLAGS("flags");

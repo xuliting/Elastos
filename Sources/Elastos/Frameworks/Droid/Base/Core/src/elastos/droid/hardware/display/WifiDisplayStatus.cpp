@@ -29,7 +29,7 @@ namespace Droid {
 namespace Hardware {
 namespace Display {
 
-CAR_INTERFACE_IMPL_2(WifiDisplayStatus, Object, IWifiDisplayStatus, IParcelable)
+CAR_INTERFACE_IMPL(WifiDisplayStatus, Object, IWifiDisplayStatus, IParcelable)
 
 WifiDisplayStatus::WifiDisplayStatus()
     : mFeatureState(0)

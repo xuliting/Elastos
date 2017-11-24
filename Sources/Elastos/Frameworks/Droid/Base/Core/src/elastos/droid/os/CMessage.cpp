@@ -43,7 +43,7 @@ Int32 CMessage::sPoolSize = 0;
 const Int32 CMessage::MAX_POOL_SIZE;
 Boolean CMessage::gCheckRecycle = TRUE;
 
-CAR_INTERFACE_IMPL_2(CMessage, Object, IMessage, IParcelable)
+CAR_INTERFACE_IMPL(CMessage, Object, IMessage, IParcelable)
 
 CAR_OBJECT_IMPL(CMessage)
 

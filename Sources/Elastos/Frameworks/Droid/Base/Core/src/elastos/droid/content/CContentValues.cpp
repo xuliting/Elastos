@@ -61,7 +61,7 @@ const Int32 CContentValues::VAL_ARRAYLIST;
 
 const String CContentValues::TAG("CContentValues");
 
-CAR_INTERFACE_IMPL_2(CContentValues, Object, IContentValues, IParcelable)
+CAR_INTERFACE_IMPL(CContentValues, Object, IContentValues, IParcelable)
 
 CAR_OBJECT_IMPL(CContentValues)
 

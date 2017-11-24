@@ -648,7 +648,7 @@ ECode CActivityThread::StopInfo::Run()
 //==============================================================================
 // CActivityThread::ConfigurationChangedCallbacks
 //==============================================================================
-CAR_INTERFACE_IMPL_2(CActivityThread::ConfigurationChangedCallbacks, Object, IComponentCallbacks, IComponentCallbacks2)
+CAR_INTERFACE_IMPL(CActivityThread::ConfigurationChangedCallbacks, Object, IComponentCallbacks, IComponentCallbacks2)
 
 CActivityThread::ConfigurationChangedCallbacks::ConfigurationChangedCallbacks(
     /* [in] */ IWeakReference* activityThread)

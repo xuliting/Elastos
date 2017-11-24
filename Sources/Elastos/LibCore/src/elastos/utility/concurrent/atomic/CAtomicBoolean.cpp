@@ -31,7 +31,7 @@ Int64 CAtomicBoolean::mSerialVersionUID = 4654671469794556979L;
 
 Int64 CAtomicBoolean::mValueOffset = 0;
 
-CAR_INTERFACE_IMPL_2(CAtomicBoolean, Object, IAtomicBoolean, ISerializable)
+CAR_INTERFACE_IMPL(CAtomicBoolean, Object, IAtomicBoolean, ISerializable)
 
 CAR_OBJECT_IMPL(CAtomicBoolean)
 

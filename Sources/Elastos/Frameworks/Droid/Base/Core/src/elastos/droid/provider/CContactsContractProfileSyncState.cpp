@@ -29,7 +29,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractProfileSyncState)
 
-CAR_INTERFACE_IMPL_2(CContactsContractProfileSyncState, Singleton
+CAR_INTERFACE_IMPL(CContactsContractProfileSyncState, Singleton
     , IContactsContractProfileSyncState
     , ISyncStateContractColumns)
 

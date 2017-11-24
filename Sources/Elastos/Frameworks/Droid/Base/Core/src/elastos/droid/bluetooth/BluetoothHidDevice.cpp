@@ -37,7 +37,7 @@ const String BluetoothHidDevice::TAG("BluetoothHidDevice");
 
 CAR_INTERFACE_IMPL(BluetoothHidDevice::HidDeviceServiceConnection, Object, IServiceConnection)
 
-CAR_INTERFACE_IMPL_2(BluetoothHidDevice, Object, IBluetoothHidDevice, IBluetoothProfile)
+CAR_INTERFACE_IMPL(BluetoothHidDevice, Object, IBluetoothHidDevice, IBluetoothProfile)
 
 BluetoothHidDevice::HidDeviceServiceConnection::HidDeviceServiceConnection(
     /* [in] */ BluetoothHidDevice* owner)

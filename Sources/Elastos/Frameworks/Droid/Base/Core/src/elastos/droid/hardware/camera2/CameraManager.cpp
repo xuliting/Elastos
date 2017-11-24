@@ -111,7 +111,7 @@ void CameraManager::CameraServiceDeathRecipient::binderDied(
     }
 }
 
-CAR_INTERFACE_IMPL_2(CameraManager::CameraServiceWrapper, Object, IBinder, IICameraService)
+CAR_INTERFACE_IMPL(CameraManager::CameraServiceWrapper, Object, IBinder, IICameraService)
 
 CameraManager::CameraServiceWrapper::~CameraServiceWrapper()
 {
@@ -359,7 +359,7 @@ ECode CameraManager::MyRunnableUnavailable::MyRunnableUnavailable::Run()
     return mCallback->OnCameraUnavailable(mId);
 }
 
-CAR_INTERFACE_IMPL_2(CameraManager::CameraServiceListener, Object, IICameraServiceListener, IBinder)
+CAR_INTERFACE_IMPL(CameraManager::CameraServiceListener, Object, IICameraServiceListener, IBinder)
 
 const Int32 CameraManager::CameraServiceListener::STATUS_NOT_PRESENT = 0;
 const Int32 CameraManager::CameraServiceListener::STATUS_PRESENT = 1;

@@ -24,7 +24,7 @@ namespace Security {
 namespace Cert {
 
 CAR_OBJECT_IMPL(CPKIXCertPathBuilderResult)
-CAR_INTERFACE_IMPL_2(CPKIXCertPathBuilderResult, PKIXCertPathValidatorResult, \
+CAR_INTERFACE_IMPL(CPKIXCertPathBuilderResult, PKIXCertPathValidatorResult, \
         IPKIXCertPathBuilderResult,ICertPathBuilderResult)
 ECode CPKIXCertPathBuilderResult::ToString(
     /* [out] */ String *str)

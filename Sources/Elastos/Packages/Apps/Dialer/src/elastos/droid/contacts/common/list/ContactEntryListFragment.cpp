@@ -118,7 +118,7 @@ ECode ContactEntryListFragment::PreferencesChangeListener::OnChange()
 // ContactEntryListFragment
 //=================================================================
 
-CAR_INTERFACE_IMPL_4(ContactEntryListFragment::InnerListener, Object
+CAR_INTERFACE_IMPL(ContactEntryListFragment::InnerListener, Object
     , IAdapterViewOnItemClickListener
     , IAbsListViewOnScrollListener
     , IViewOnFocusChangeListener
@@ -200,7 +200,7 @@ const Int32 ContactEntryListFragment::STATUS_LOADING;
 const Int32 ContactEntryListFragment::STATUS_LOADED;
 
 
-CAR_INTERFACE_IMPL_2(ContactEntryListFragment, AnalyticsFragment,
+CAR_INTERFACE_IMPL(ContactEntryListFragment, AnalyticsFragment,
     IContactEntryListFragment, ILoaderManagerLoaderCallbacks)
 
 ContactEntryListFragment::ContactEntryListFragment()

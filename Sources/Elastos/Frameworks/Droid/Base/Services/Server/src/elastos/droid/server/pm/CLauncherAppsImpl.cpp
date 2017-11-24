@@ -286,7 +286,7 @@ CLauncherAppsImpl::CLauncherAppsImpl()
     mPackageMonitor = new MyPackageMonitor(this);
 }
 
-CAR_INTERFACE_IMPL_2(CLauncherAppsImpl, Object, IILauncherApps, IBinder)
+CAR_INTERFACE_IMPL(CLauncherAppsImpl, Object, IILauncherApps, IBinder)
 
 CAR_OBJECT_IMPL(CLauncherAppsImpl)
 

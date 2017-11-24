@@ -20,7 +20,7 @@ namespace Elastos {
 namespace Droid {
 namespace Wifi {
 
-CAR_INTERFACE_IMPL_2(CWifiScannerScanSettings, Object, IWifiScannerScanSettings, IParcelable)
+CAR_INTERFACE_IMPL(CWifiScannerScanSettings, Object, IWifiScannerScanSettings, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiScannerScanSettings)
 

@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CDisplayManagerCallbackNative::TAG("CDisplayManagerCallbackNative");
 
-CAR_INTERFACE_IMPL_2(CDisplayManagerCallbackNative, Object, IIDisplayManagerCallback, IBinder)
+CAR_INTERFACE_IMPL(CDisplayManagerCallbackNative, Object, IIDisplayManagerCallback, IBinder)
 
 CAR_OBJECT_IMPL(CDisplayManagerCallbackNative)
 

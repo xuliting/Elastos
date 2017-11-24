@@ -37,7 +37,7 @@ namespace Net {
 
 const String CVpnProfile::TAG("VpnProfile");
 
-CAR_INTERFACE_IMPL_3(CVpnProfile, Object, IVpnProfile, ICloneable, IParcelable)
+CAR_INTERFACE_IMPL(CVpnProfile, Object, IVpnProfile, ICloneable, IParcelable)
 
 CAR_OBJECT_IMPL(CVpnProfile)
 

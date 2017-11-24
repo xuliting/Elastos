@@ -21,7 +21,7 @@ namespace Xml {
 namespace Sax {
 namespace Helpers {
 
-CAR_INTERFACE_IMPL_2(LocatorImpl, Object, ILocator, ILocatorImpl)
+CAR_INTERFACE_IMPL(LocatorImpl, Object, ILocator, ILocatorImpl)
 
 LocatorImpl::LocatorImpl()
     : mLineNumber(0)

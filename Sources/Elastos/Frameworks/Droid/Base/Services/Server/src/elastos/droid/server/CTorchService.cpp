@@ -118,7 +118,7 @@ ECode CTorchService::KillRunnable::Run()
 //==========================================================================================
 // CTorchService::CameraDeviceStateListener::
 //==========================================================================================
-CAR_INTERFACE_IMPL_2(CTorchService::CameraDeviceStateListener, Object,
+CAR_INTERFACE_IMPL(CTorchService::CameraDeviceStateListener, Object,
     ICameraDeviceStateListener, ICameraDeviceStateCallback)
 
 CTorchService::CameraDeviceStateListener::CameraDeviceStateListener(
@@ -164,7 +164,7 @@ ECode CTorchService::CameraDeviceStateListener::OnError(
 //==========================================================================================
 // CTorchService::CameraCaptureSessionStateListener::
 //==========================================================================================
-CAR_INTERFACE_IMPL_2(CTorchService::CameraCaptureSessionStateListener,
+CAR_INTERFACE_IMPL(CTorchService::CameraCaptureSessionStateListener,
     Object, ICameraCaptureSessionStateListener, ICameraCaptureSessionStateCallback)
 
 CTorchService::CameraCaptureSessionStateListener::CameraCaptureSessionStateListener(

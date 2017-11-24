@@ -40,7 +40,7 @@ AutoPtr<QBluetoothAdapter> QBluetoothAdapter::sAdapter;
 AutoPtr<IBluetoothAdapter> QBluetoothAdapter::mAdapter;
 
 
-CAR_INTERFACE_IMPL_3(QBluetoothAdapter::LeLppClientWrapper, Object, ILeLppClientWrapper, IIQBluetoothAdapterCallback, IBinder)
+CAR_INTERFACE_IMPL(QBluetoothAdapter::LeLppClientWrapper, Object, ILeLppClientWrapper, IIQBluetoothAdapterCallback, IBinder)
 
 ECode QBluetoothAdapter::LeLppClientWrapper::constructor(
     /* [in] */ IQBluetoothAdapter* adapter,
@@ -224,7 +224,7 @@ ECode QBluetoothAdapter::LeLppClientWrapper::ToString(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(QBluetoothAdapter::BluetoothManagerCallback, Object, IIBluetoothManagerCallback, IBinder)
+CAR_INTERFACE_IMPL(QBluetoothAdapter::BluetoothManagerCallback, Object, IIBluetoothManagerCallback, IBinder)
 
 ECode QBluetoothAdapter::BluetoothManagerCallback::constructor(
         /* [in] */ IQBluetoothAdapter* host)
@@ -288,7 +288,7 @@ ECode QBluetoothAdapter::BluetoothManagerCallback::ToString(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(QBluetoothAdapter::QBluetoothManagerCallback, Object, IIQBluetoothManagerCallback, IBinder)
+CAR_INTERFACE_IMPL(QBluetoothAdapter::QBluetoothManagerCallback, Object, IIQBluetoothManagerCallback, IBinder)
 
 ECode QBluetoothAdapter::QBluetoothManagerCallback::constructor(
     /* [in] */ IQBluetoothAdapter* host)

@@ -271,7 +271,7 @@ ECode DialpadFragment::StopDtmfRunnable::Run()
 //==========================================================
 // DialpadFragment
 //==========================================================
-CAR_INTERFACE_IMPL_4(DialpadFragment::InnerListener, Object
+CAR_INTERFACE_IMPL(DialpadFragment::InnerListener, Object
     , IViewOnTouchListener
     , IViewOnKeyListener
     , IViewOnHoverListener
@@ -328,7 +328,7 @@ static AutoPtr<IHandler> InitHandler()
 }
 const AutoPtr<IHandler> DialpadFragment::sHandler = InitHandler();
 
-CAR_INTERFACE_IMPL_2(DialpadFragment, BaseFragment, IUi, IDialpadUi)
+CAR_INTERFACE_IMPL(DialpadFragment, BaseFragment, IUi, IDialpadUi)
 
 DialpadFragment::DialpadFragment()
 {

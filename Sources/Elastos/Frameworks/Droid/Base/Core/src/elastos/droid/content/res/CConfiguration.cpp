@@ -107,7 +107,7 @@ const String CConfiguration::XML_ATTR_SCREEN_HEIGHT("height");
 const String CConfiguration::XML_ATTR_SMALLEST_WIDTH("sw");
 const String CConfiguration::XML_ATTR_DENSITY("density");
 
-CAR_INTERFACE_IMPL_3(CConfiguration, Object, IConfiguration, IParcelable, IComparable)
+CAR_INTERFACE_IMPL(CConfiguration, Object, IConfiguration, IParcelable, IComparable)
 
 CAR_OBJECT_IMPL(CConfiguration)
 

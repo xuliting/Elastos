@@ -35,7 +35,7 @@ public:
 
     CAR_OBJECT_DECL()
 
-    constructor();
+    CARAPI constructor();
 
     CARAPI OnCreate();
 

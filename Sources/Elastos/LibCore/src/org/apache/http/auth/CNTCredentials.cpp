@@ -32,7 +32,7 @@ namespace Apache {
 namespace Http {
 namespace Auth {
 
-CAR_INTERFACE_IMPL_2(CNTCredentials, Object, INTCredentials, ICredentials)
+CAR_INTERFACE_IMPL(CNTCredentials, Object, INTCredentials, ICredentials)
 
 CAR_OBJECT_IMPL(CNTCredentials)
 

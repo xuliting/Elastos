@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Droid {
 namespace Os {
 
-CAR_INTERFACE_IMPL_2(CBatteryProperty, Object, IBatteryProperty, IParcelable)
+CAR_INTERFACE_IMPL(CBatteryProperty, Object, IBatteryProperty, IParcelable)
 
 CAR_OBJECT_IMPL(CBatteryProperty)
 

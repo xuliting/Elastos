@@ -36,7 +36,7 @@ namespace Utility {
 namespace Zip {
 
 
-CAR_INTERFACE_IMPL_2(ZipEntry, Object, IZipEntry, ICloneable)
+CAR_INTERFACE_IMPL(ZipEntry, Object, IZipEntry, ICloneable)
 
 ZipEntry::ZipEntry()
     : mCrc(-1)

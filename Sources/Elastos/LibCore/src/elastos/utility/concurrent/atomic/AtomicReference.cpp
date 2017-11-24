@@ -40,7 +40,7 @@ const Int64 AtomicReference::mSerialVersionUID = -1848883965231344442L;
 
 const Int64 AtomicReference::mValueOffset = 0; //unsafe.objectFieldOffset(AtomicReference.class.getDeclaredField("value"));
 
-CAR_INTERFACE_IMPL_2(AtomicReference, Object, IAtomicReference, ISerializable)
+CAR_INTERFACE_IMPL(AtomicReference, Object, IAtomicReference, ISerializable)
 
 ECode AtomicReference::constructor(
     /* [in] */ IInterface* initialValue)

@@ -21,7 +21,7 @@ namespace Droid {
 namespace Internal {
 namespace Telephony {
 
-CAR_INTERFACE_IMPL_2(PhoneSubInfoProxy, Object, IIPhoneSubInfo, IPhoneSubInfoProxy)
+CAR_INTERFACE_IMPL(PhoneSubInfoProxy, Object, IIPhoneSubInfo, IPhoneSubInfoProxy)
 
 ECode PhoneSubInfoProxy::constructor(
     /* [in] */ IPhoneSubInfo* phoneSubInfo)

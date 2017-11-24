@@ -29,7 +29,7 @@ namespace Elastos {
 namespace Droid {
 namespace Content {
 
-CAR_INTERFACE_IMPL_2(CPeriodicSync, Object, IPeriodicSync, IParcelable)
+CAR_INTERFACE_IMPL(CPeriodicSync, Object, IPeriodicSync, IParcelable)
 
 CAR_OBJECT_IMPL(CPeriodicSync)
 

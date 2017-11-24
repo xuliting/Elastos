@@ -827,7 +827,7 @@ ECode ApplicationsState::BackgroundHandler::HandleMessage(
 //                  ApplicationsState::ApplicationsStatePackageStatsObserver
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(ApplicationsState::ApplicationsStatePackageStatsObserver, Object, IIPackageStatsObserver, IBinder)
+CAR_INTERFACE_IMPL(ApplicationsState::ApplicationsStatePackageStatsObserver, Object, IIPackageStatsObserver, IBinder)
 
 ApplicationsState::ApplicationsStatePackageStatsObserver::ApplicationsStatePackageStatsObserver()
 {}

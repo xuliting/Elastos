@@ -63,7 +63,7 @@ BasicClientCookie::BasicClientCookie(
     mValue = value;
 }
 
-CAR_INTERFACE_IMPL_4(BasicClientCookie, Object, ISetCookie, IClientCookie, ICookie, ICloneable)
+CAR_INTERFACE_IMPL(BasicClientCookie, Object, ISetCookie, IClientCookie, ICookie, ICloneable)
 
 ECode BasicClientCookie::GetName(
     /* [out] */ String* name)

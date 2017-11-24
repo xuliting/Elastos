@@ -31,7 +31,7 @@ using Elastos::Text::CParsePosition;
 namespace Elastos {
 namespace Text {
 
-CAR_INTERFACE_IMPL_3(FormatBase, Object, IFormat, ISerializable, ICloneable)
+CAR_INTERFACE_IMPL(FormatBase, Object, IFormat, ISerializable, ICloneable)
 
 FormatBase::FormatBase()
 {}

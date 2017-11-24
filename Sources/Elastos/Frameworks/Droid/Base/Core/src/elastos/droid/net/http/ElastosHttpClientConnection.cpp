@@ -87,7 +87,7 @@ namespace Droid {
 namespace Net {
 namespace Http {
 
-CAR_INTERFACE_IMPL_3(ElastosHttpClientConnection, Object, IHttpInetConnection, IHttpConnection, IElastosHttpClientConnection)
+CAR_INTERFACE_IMPL(ElastosHttpClientConnection, Object, IHttpInetConnection, IHttpConnection, IElastosHttpClientConnection)
 
 ElastosHttpClientConnection::ElastosHttpClientConnection()
     : mMaxHeaderCount(0)

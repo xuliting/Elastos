@@ -27,7 +27,7 @@ namespace Text {
 namespace Style {
 
 
-CAR_INTERFACE_IMPL_3(LocaleSpan, MetricAffectingSpan, ILocaleSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(LocaleSpan, MetricAffectingSpan, ILocaleSpan, IParcelableSpan, IParcelable)
 
 LocaleSpan::LocaleSpan()
 {}

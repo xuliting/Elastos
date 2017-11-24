@@ -232,7 +232,7 @@ ECode AdapterViewAnimator::AdapterViewAnimatorSavedState::ToString(
 //=====================================================================
 //                      AdapterViewAnimator
 //=====================================================================
-CAR_INTERFACE_IMPL_3(AdapterViewAnimator, AdapterView, IAdapterViewAnimator, IRemoteAdapterConnectionCallback, IAdvanceable)
+CAR_INTERFACE_IMPL(AdapterViewAnimator, AdapterView, IAdapterViewAnimator, IRemoteAdapterConnectionCallback, IAdvanceable)
 
 AdapterViewAnimator::AdapterViewAnimator()
     : mWhichChild(0)

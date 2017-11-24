@@ -45,7 +45,7 @@ namespace Utility {
 
 const AutoPtr<Object> SparseArray::DELETED = new Object();
 
-CAR_INTERFACE_IMPL_2(SparseArray, Object, ISparseArray, ICloneable);
+CAR_INTERFACE_IMPL(SparseArray, Object, ISparseArray, ICloneable);
 
 SparseArray::SparseArray()
     : mGarbage(FALSE)

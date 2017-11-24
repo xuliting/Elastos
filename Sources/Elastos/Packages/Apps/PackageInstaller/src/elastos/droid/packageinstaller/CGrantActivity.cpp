@@ -46,7 +46,7 @@ ECode CGrantActivity::ViewOnClickListener::OnClick(
     return mHost->OnClick(v);
 }
 
-CAR_INTERFACE_IMPL_2(CGrantActivity, Activity, IViewOnClickListener, IGrantActivity)
+CAR_INTERFACE_IMPL(CGrantActivity, Activity, IViewOnClickListener, IGrantActivity)
 
 CAR_OBJECT_IMPL(CGrantActivity)
 

@@ -80,7 +80,7 @@ static AutoPtr<IPattern> InitPATTERN()
 AutoPtr<IPattern> CGsmMmiCode::sPatternSuppService = InitPATTERN();
 AutoPtr<ArrayOf<String> > CGsmMmiCode::sTwoDigitNumberPattern;
 
-CAR_INTERFACE_IMPL_2(CGsmMmiCode, Handler, IGsmMmiCode, IMmiCode)
+CAR_INTERFACE_IMPL(CGsmMmiCode, Handler, IGsmMmiCode, IMmiCode)
 
 CAR_OBJECT_IMPL(CGsmMmiCode)
 

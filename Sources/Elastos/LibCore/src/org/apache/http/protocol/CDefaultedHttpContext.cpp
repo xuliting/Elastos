@@ -27,7 +27,7 @@ namespace Apache {
 namespace Http {
 namespace Protocol {
 
-CAR_INTERFACE_IMPL_2(CDefaultedHttpContext, Object, IDefaultedHttpContext, IHttpContext)
+CAR_INTERFACE_IMPL(CDefaultedHttpContext, Object, IDefaultedHttpContext, IHttpContext)
 
 CAR_OBJECT_IMPL(CDefaultedHttpContext)
 

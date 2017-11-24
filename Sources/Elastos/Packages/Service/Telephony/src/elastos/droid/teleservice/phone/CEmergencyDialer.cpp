@@ -79,7 +79,7 @@ namespace Droid {
 namespace TeleService {
 namespace Phone {
 
-CAR_INTERFACE_IMPL_5(CEmergencyDialer::InnerListener, Object, IViewOnClickListener, \
+CAR_INTERFACE_IMPL(CEmergencyDialer::InnerListener, Object, IViewOnClickListener, \
     IViewOnLongClickListener, IViewOnKeyListener, \
     ITextWatcher, IDialpadKeyButtonOnPressedListener)
 

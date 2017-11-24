@@ -25,7 +25,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_3(RelativeSizeSpan, MetricAffectingSpan, IRelativeSizeSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(RelativeSizeSpan, MetricAffectingSpan, IRelativeSizeSpan, IParcelableSpan, IParcelable)
 
 RelativeSizeSpan::RelativeSizeSpan()
     : mProportion(0)

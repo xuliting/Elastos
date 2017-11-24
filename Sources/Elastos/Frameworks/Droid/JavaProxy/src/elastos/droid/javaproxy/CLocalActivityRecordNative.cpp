@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CLocalActivityRecordNative::TAG("CIntentReceiverNative");
 
-CAR_INTERFACE_IMPL_2(CLocalActivityRecordNative, Object, ILocalActivityRecord, IBinder)
+CAR_INTERFACE_IMPL(CLocalActivityRecordNative, Object, ILocalActivityRecord, IBinder)
 
 CAR_OBJECT_IMPL(CLocalActivityRecordNative)
 

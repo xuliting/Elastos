@@ -126,7 +126,7 @@ void CArrayMap::InnerMapCollections::ColClear()
 //======================================================================
 //
 //======================================================================
-CAR_INTERFACE_IMPL_2(CArrayMap, Object, IArrayMap, IMap)
+CAR_INTERFACE_IMPL(CArrayMap, Object, IArrayMap, IMap)
 
 CAR_OBJECT_IMPL(CArrayMap)
 

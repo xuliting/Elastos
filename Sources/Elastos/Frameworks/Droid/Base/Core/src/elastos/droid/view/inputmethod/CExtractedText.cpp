@@ -37,7 +37,7 @@ namespace InputMethod {
 const Int32 CExtractedText::FLAG_SINGLE_LINE = 0x0001;
 const Int32 CExtractedText::FLAG_SELECTING = 0x0002;
 
-CAR_INTERFACE_IMPL_2(CExtractedText, Object, IExtractedText, IParcelable)
+CAR_INTERFACE_IMPL(CExtractedText, Object, IExtractedText, IParcelable)
 
 CAR_OBJECT_IMPL(CExtractedText)
 

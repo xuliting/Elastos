@@ -924,7 +924,7 @@ ECode CPhoneInterfaceManager::UnlockSim::MyUnlockSim(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CPhoneInterfaceManager, Object, IITelephony, IBinder)
+CAR_INTERFACE_IMPL(CPhoneInterfaceManager, Object, IITelephony, IBinder)
 CAR_OBJECT_IMPL(CPhoneInterfaceManager)
 
 AutoPtr<CPhoneInterfaceManager> CPhoneInterfaceManager::sInstance;

@@ -38,7 +38,7 @@ ECode Int16Buffer::constructor(
     return Buffer::constructor(1, capacity, effectiveDirectAddress);
 }
 
-CAR_INTERFACE_IMPL_2(Int16Buffer, Object, IInt16Buffer, IBuffer)
+CAR_INTERFACE_IMPL(Int16Buffer, Object, IInt16Buffer, IBuffer)
 
 ECode Int16Buffer::Allocate(
     /* [in] */ Int32 capacity,

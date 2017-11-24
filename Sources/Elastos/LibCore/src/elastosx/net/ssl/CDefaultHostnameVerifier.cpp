@@ -42,7 +42,7 @@ namespace Ssl {
 const Int32 CDefaultHostnameVerifier::ALT_DNS_NAME = 2;
 const Int32 CDefaultHostnameVerifier::ALT_IPA_NAME = 7;
 
-CAR_INTERFACE_IMPL_2(CDefaultHostnameVerifier, Object, IDefaultHostnameVerifier, IHostnameVerifier)
+CAR_INTERFACE_IMPL(CDefaultHostnameVerifier, Object, IDefaultHostnameVerifier, IHostnameVerifier)
 
 CAR_OBJECT_IMPL(CDefaultHostnameVerifier)
 

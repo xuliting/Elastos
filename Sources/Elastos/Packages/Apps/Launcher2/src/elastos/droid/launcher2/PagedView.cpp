@@ -69,7 +69,7 @@ ECode PagedView::OnHierarchyChangeListener::OnChildViewRemoved(
     return mHost->OnChildViewRemoved(parent, child);
 }
 
-CAR_INTERFACE_IMPL_2(PagedView::ScrollInterpolator, Object, IInterpolator, ITimeInterpolator)
+CAR_INTERFACE_IMPL(PagedView::ScrollInterpolator, Object, IInterpolator, ITimeInterpolator)
 
 PagedView::ScrollInterpolator::ScrollInterpolator()
 {
@@ -166,7 +166,7 @@ const Int32 PagedView::FLING_THRESHOLD_VELOCITY;
 const Int32 PagedView::MIN_SNAP_VELOCITY;
 const Int32 PagedView::MIN_FLING_VELOCITY;
 
-CAR_INTERFACE_IMPL_2(PagedView, ViewGroup, IPagedView, IViewGroupOnHierarchyChangeListenerHolder)
+CAR_INTERFACE_IMPL(PagedView, ViewGroup, IPagedView, IViewGroupOnHierarchyChangeListenerHolder)
 
 PagedView::PagedView()
     : mFlingThresholdVelocity(0)

@@ -33,7 +33,7 @@ namespace Concurrent {
 //==========================================================
 const AutoPtr< ArrayOf<IInterface*> > CopyOnWriteArrayList::sEmptyArray = ArrayOf<IInterface*>::Alloc(0);
 
-CAR_INTERFACE_IMPL_7(CopyOnWriteArrayList, Object, \
+CAR_INTERFACE_IMPL(CopyOnWriteArrayList, Object, \
     ICopyOnWriteArrayList, IList, ICollection, IIterable, IRandomAccess, ICloneable, ISerializable)
 
 ECode CopyOnWriteArrayList::constructor()
@@ -1125,7 +1125,7 @@ ECode CopyOnWriteArrayList::CowSubList::GetSubList(
 //==========================================================
 //       CopyOnWriteArrayList::CowIterator
 //==========================================================
-CAR_INTERFACE_IMPL_2(CopyOnWriteArrayList::CowIterator, Object, IListIterator, IIterator)
+CAR_INTERFACE_IMPL(CopyOnWriteArrayList::CowIterator, Object, IListIterator, IIterator)
 
 CopyOnWriteArrayList::CowIterator::CowIterator(
     /* [in] */ ArrayOf<IInterface*>* snapshot,

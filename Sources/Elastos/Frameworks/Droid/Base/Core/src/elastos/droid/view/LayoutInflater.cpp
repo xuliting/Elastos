@@ -292,7 +292,7 @@ void LayoutInflater::BlinkLayout::MakeBlink()
 // LayoutInflater::FactoryMerger
 //=======================================================================================
 
-CAR_INTERFACE_IMPL_2(LayoutInflater::FactoryMerger, Object, ILayoutInflaterFactory, ILayoutInflaterFactory2)
+CAR_INTERFACE_IMPL(LayoutInflater::FactoryMerger, Object, ILayoutInflaterFactory, ILayoutInflaterFactory2)
 
 LayoutInflater::FactoryMerger::FactoryMerger(
     /* [in] */ ILayoutInflaterFactory* f1,

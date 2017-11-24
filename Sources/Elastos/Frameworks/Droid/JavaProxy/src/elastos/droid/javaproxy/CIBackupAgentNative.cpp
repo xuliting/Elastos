@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIBackupAgentNative::TAG("CIBackupAgentNative");
 
-CAR_INTERFACE_IMPL_2(CIBackupAgentNative, Object, IIBackupAgent, IBinder)
+CAR_INTERFACE_IMPL(CIBackupAgentNative, Object, IIBackupAgent, IBinder)
 
 CAR_OBJECT_IMPL(CIBackupAgentNative)
 

@@ -38,7 +38,7 @@ namespace Auth {
 namespace X500 {
 
 CAR_OBJECT_IMPL(CX500Principal)
-CAR_INTERFACE_IMPL_2(CX500Principal, Object, IX500Principal, IPrincipal)
+CAR_INTERFACE_IMPL(CX500Principal, Object, IX500Principal, IPrincipal)
 
 const Int64 CX500Principal::mSerialVersionUID = -500463348111345721LL;
 

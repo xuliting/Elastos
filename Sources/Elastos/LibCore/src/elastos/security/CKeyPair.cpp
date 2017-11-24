@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Security {
 
 CAR_OBJECT_IMPL(CKeyPair)
-CAR_INTERFACE_IMPL_2(CKeyPair, Object, IKeyPair, ISerializable)
+CAR_INTERFACE_IMPL(CKeyPair, Object, IKeyPair, ISerializable)
 ECode CKeyPair::constructor(
     /* [in] */ IPublicKey* publicKey,
     /* [in] */ IPrivateKey* privateKey)

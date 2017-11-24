@@ -20,7 +20,7 @@ namespace Elastosx {
 namespace Net {
 namespace Ssl {
 
-CAR_INTERFACE_IMPL_3(X509ExtendedKeyManager, Object, IX509ExtendedKeyManager, IX509KeyManager, IKeyManager)
+CAR_INTERFACE_IMPL(X509ExtendedKeyManager, Object, IX509ExtendedKeyManager, IX509KeyManager, IKeyManager)
 
 X509ExtendedKeyManager::X509ExtendedKeyManager()
 {}

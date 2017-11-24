@@ -43,7 +43,7 @@ const String COpenSSLECPublicKey::ALGORITHM("EC");
 
 CAR_OBJECT_IMPL(COpenSSLECPublicKey)
 
-CAR_INTERFACE_IMPL_6(COpenSSLECPublicKey, Object, IKey, IPublicKey, IECKey, IOpenSSLECPublicKey,
+CAR_INTERFACE_IMPL(COpenSSLECPublicKey, Object, IKey, IPublicKey, IECKey, IOpenSSLECPublicKey,
     IECPublicKey, IOpenSSLKeyHolder)
 
 ECode COpenSSLECPublicKey::constructor()

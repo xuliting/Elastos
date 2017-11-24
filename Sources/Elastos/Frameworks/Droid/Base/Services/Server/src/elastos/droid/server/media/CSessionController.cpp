@@ -34,7 +34,7 @@ namespace Droid {
 namespace Server {
 namespace Media {
 
-CAR_INTERFACE_IMPL_2(CSessionController, Object, IISessionController, IBinder)
+CAR_INTERFACE_IMPL(CSessionController, Object, IISessionController, IBinder)
 
 CAR_OBJECT_IMPL(CSessionController)
 

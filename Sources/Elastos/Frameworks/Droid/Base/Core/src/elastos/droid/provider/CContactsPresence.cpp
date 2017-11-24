@@ -28,7 +28,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsPresence)
 
-CAR_INTERFACE_IMPL_4(CContactsPresence, Singleton, IContactsPresence, IBaseColumns, IContactsPresenceColumns, IContactsPeopleColumns)
+CAR_INTERFACE_IMPL(CContactsPresence, Singleton, IContactsPresence, IBaseColumns, IContactsPresenceColumns, IContactsPeopleColumns)
 
 ECode CContactsPresence::constructor()
 {

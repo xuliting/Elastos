@@ -27,7 +27,7 @@ namespace Droid {
 namespace Hardware {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(ActivityChangedEvent, Object, IActivityChangedEvent, IParcelable)
+CAR_INTERFACE_IMPL(ActivityChangedEvent, Object, IActivityChangedEvent, IParcelable)
 
 ActivityChangedEvent::ActivityChangedEvent()
     : mActivityRecognitionEvents(NULL)

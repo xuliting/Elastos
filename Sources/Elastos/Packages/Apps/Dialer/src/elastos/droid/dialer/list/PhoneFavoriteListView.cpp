@@ -92,7 +92,7 @@ const Int32 PhoneFavoriteListView::DRAG_SCROLL_PX_UNIT;
 const Float PhoneFavoriteListView::DRAG_SHADOW_ALPHA;
 const Float PhoneFavoriteListView::BOUND_GAP_RATIO;
 
-CAR_INTERFACE_IMPL_2(PhoneFavoriteListView, GridView
+CAR_INTERFACE_IMPL(PhoneFavoriteListView, GridView
         , IPhoneFavoriteListView
         , IOnDragDropListener);
 

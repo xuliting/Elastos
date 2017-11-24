@@ -129,7 +129,7 @@ const Int32 CInstalledAppDetails::DLG_SPECIAL_DISABLE = DLG_BASE + 9;
 //                  CInstalledAppDetails::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(CInstalledAppDetails::InnerListener, Object, IViewOnClickListener, ICompoundButtonOnCheckedChangeListener, IApplicationsStateCallbacks)
+CAR_INTERFACE_IMPL(CInstalledAppDetails::InnerListener, Object, IViewOnClickListener, ICompoundButtonOnCheckedChangeListener, IApplicationsStateCallbacks)
 
 CInstalledAppDetails::InnerListener::InnerListener(
     /* [in] */ CInstalledAppDetails* host)
@@ -402,7 +402,7 @@ ECode CInstalledAppDetails::MyAlertDialogFragment::OnCreateDialog(
 //                  CInstalledAppDetails::ClearUserDataObserver
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CInstalledAppDetails::ClearUserDataObserver, Object, IIPackageDataObserver, IBinder)
+CAR_INTERFACE_IMPL(CInstalledAppDetails::ClearUserDataObserver, Object, IIPackageDataObserver, IBinder)
 
 CInstalledAppDetails::ClearUserDataObserver::ClearUserDataObserver()
 {}
@@ -433,7 +433,7 @@ ECode CInstalledAppDetails::ClearUserDataObserver::OnRemoveCompleted(
 //                  CInstalledAppDetails::ClearCacheObserver
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CInstalledAppDetails::ClearCacheObserver, Object, IIPackageDataObserver, IBinder)
+CAR_INTERFACE_IMPL(CInstalledAppDetails::ClearCacheObserver, Object, IIPackageDataObserver, IBinder)
 
 CInstalledAppDetails::ClearCacheObserver::ClearCacheObserver()
 {}
@@ -464,7 +464,7 @@ ECode CInstalledAppDetails::ClearCacheObserver::OnRemoveCompleted(
 //                  CInstalledAppDetails::PackageMoveObserver
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CInstalledAppDetails::PackageMoveObserver, Object, IIPackageMoveObserver, IBinder)
+CAR_INTERFACE_IMPL(CInstalledAppDetails::PackageMoveObserver, Object, IIPackageMoveObserver, IBinder)
 
 CInstalledAppDetails::PackageMoveObserver::PackageMoveObserver()
 {}

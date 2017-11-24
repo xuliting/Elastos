@@ -321,7 +321,7 @@ ECode CAppOpsService::Callback::ProxyDied()
 // CAppOpsService::ClientState
 //================================================================================
 
-CAR_INTERFACE_IMPL_2(CAppOpsService::ClientState, Object, IProxyDeathRecipient, IBinder)
+CAR_INTERFACE_IMPL(CAppOpsService::ClientState, Object, IProxyDeathRecipient, IBinder)
 
 ECode CAppOpsService::ClientState::constructor(
     /* [in] */ IBinder* appToken,
@@ -634,7 +634,7 @@ static AutoPtr<ArrayOf<Int32> > InitPRIVACY_GUARD_OP_STATES()
 
 AutoPtr<ArrayOf<Int32> > CAppOpsService::PRIVACY_GUARD_OP_STATES = InitPRIVACY_GUARD_OP_STATES();
 
-CAR_INTERFACE_IMPL_2(CAppOpsService, Object, IIAppOpsService, IBinder)
+CAR_INTERFACE_IMPL(CAppOpsService, Object, IIAppOpsService, IBinder)
 
 CAR_OBJECT_IMPL(CAppOpsService)
 

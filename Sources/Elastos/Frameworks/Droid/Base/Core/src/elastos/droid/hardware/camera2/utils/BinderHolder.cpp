@@ -26,7 +26,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Utils {
 
-CAR_INTERFACE_IMPL_2(BinderHolder, Object, IBinderHolder, IParcelable)
+CAR_INTERFACE_IMPL(BinderHolder, Object, IBinderHolder, IParcelable)
 
 ECode BinderHolder::constructor()
 {

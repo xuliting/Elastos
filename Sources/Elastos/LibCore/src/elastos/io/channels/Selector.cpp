@@ -20,7 +20,7 @@ namespace Elastos {
 namespace IO {
 namespace Channels {
 
-CAR_INTERFACE_IMPL_2(Selector, Object, ISelector, ICloseable)
+CAR_INTERFACE_IMPL(Selector, Object, ISelector, ICloseable)
 
 Selector::Selector()
 {}

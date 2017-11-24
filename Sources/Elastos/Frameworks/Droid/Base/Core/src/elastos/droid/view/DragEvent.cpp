@@ -43,7 +43,7 @@ Object DragEvent::sRecyclerLock;
 Int32 DragEvent::sRecyclerUsed = 0;
 AutoPtr<IDragEvent> DragEvent::sRecyclerTop;
 
-CAR_INTERFACE_IMPL_2(DragEvent, Object, IDragEvent, IParcelable)
+CAR_INTERFACE_IMPL(DragEvent, Object, IDragEvent, IParcelable)
 
 ECode DragEvent::GetAction(
     /* [out] */ Int32* action)

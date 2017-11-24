@@ -35,7 +35,7 @@ const Int32 CCellSignalStrengthGsm::GSM_SIGNAL_STRENGTH_GREAT = 12;
 const Int32 CCellSignalStrengthGsm::GSM_SIGNAL_STRENGTH_GOOD = 8;
 const Int32 CCellSignalStrengthGsm::GSM_SIGNAL_STRENGTH_MODERATE = 5;
 
-CAR_INTERFACE_IMPL_2(CCellSignalStrengthGsm, CellSignalStrength, ICellSignalStrengthGsm, IParcelable)
+CAR_INTERFACE_IMPL(CCellSignalStrengthGsm, CellSignalStrength, ICellSignalStrengthGsm, IParcelable)
 
 CAR_OBJECT_IMPL(CCellSignalStrengthGsm)
 

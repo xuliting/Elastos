@@ -40,7 +40,7 @@ namespace Bluetooth {
 //=====================================================================
 //         BluetoothMap::BluetoothStateChangeCallbackStub
 //=====================================================================
-CAR_INTERFACE_IMPL_2(BluetoothMap::BluetoothStateChangeCallbackStub, Object, IIBluetoothStateChangeCallback, IBinder);
+CAR_INTERFACE_IMPL(BluetoothMap::BluetoothStateChangeCallbackStub, Object, IIBluetoothStateChangeCallback, IBinder);
 
 BluetoothMap::BluetoothStateChangeCallbackStub::BluetoothStateChangeCallbackStub()
 {
@@ -126,7 +126,7 @@ const String BluetoothMap::TAG("BluetoothMap");
 const Boolean BluetoothMap::DBG = TRUE;
 const Boolean BluetoothMap::VDBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(BluetoothMap, Object, IBluetoothMap, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothMap, Object, IBluetoothMap, IBluetoothProfile);
 
 BluetoothMap::BluetoothMap(
     /* [in] */ IContext* context,

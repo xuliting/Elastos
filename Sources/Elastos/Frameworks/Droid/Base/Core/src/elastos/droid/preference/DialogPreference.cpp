@@ -58,7 +58,7 @@ ECode DialogPreference::InnerListener::OnActivityDestroy()
     return mHost->OnActivityDestroy();
 }
 
-CAR_INTERFACE_IMPL_3(DialogPreference, Preference, IDialogPreference, \
+CAR_INTERFACE_IMPL(DialogPreference, Preference, IDialogPreference, \
     IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener)
 
 DialogPreference::DialogPreference()

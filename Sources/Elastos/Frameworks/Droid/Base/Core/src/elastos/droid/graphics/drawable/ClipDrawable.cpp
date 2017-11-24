@@ -108,7 +108,7 @@ Boolean ClipDrawable::ClipState::CanConstantState()
     return mCanConstantState;
 }
 
-CAR_INTERFACE_IMPL_2(ClipDrawable, Drawable, IClipDrawable, IDrawableCallback)
+CAR_INTERFACE_IMPL(ClipDrawable, Drawable, IClipDrawable, IDrawableCallback)
 ClipDrawable::ClipDrawable()
 {
     CRect::New((IRect**)&mTmpRect);

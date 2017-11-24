@@ -62,7 +62,7 @@ namespace SystemUI {
 namespace Usb {
 
 
-CAR_INTERFACE_IMPL_2(UsbConfirmActivity::InnerListener, Object,
+CAR_INTERFACE_IMPL(UsbConfirmActivity::InnerListener, Object,
     IDialogInterfaceOnClickListener, ICompoundButtonOnCheckedChangeListener)
 
 UsbConfirmActivity::InnerListener::InnerListener(

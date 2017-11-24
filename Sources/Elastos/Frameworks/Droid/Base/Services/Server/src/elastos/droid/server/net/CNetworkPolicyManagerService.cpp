@@ -541,7 +541,7 @@ ECode CNetworkPolicyManagerService::InnerSub_LowPowerModeListener::OnLowPowerMod
 //==============================================================================
 //              CNetworkPolicyManagerService::InnerSub_IProcessObserver
 //==============================================================================
-CAR_INTERFACE_IMPL_2(CNetworkPolicyManagerService::InnerSub_IProcessObserver, Object, IIProcessObserver, IBinder)
+CAR_INTERFACE_IMPL(CNetworkPolicyManagerService::InnerSub_IProcessObserver, Object, IIProcessObserver, IBinder)
 
 CNetworkPolicyManagerService::InnerSub_IProcessObserver::InnerSub_IProcessObserver(
     /* [in] */ CNetworkPolicyManagerService* host,
@@ -701,7 +701,7 @@ const Int64 CNetworkPolicyManagerService::TIME_CACHE_MAX_AGE = IDateUtils::DAY_I
 
 CAR_OBJECT_IMPL(CNetworkPolicyManagerService)
 
-CAR_INTERFACE_IMPL_2(CNetworkPolicyManagerService, Object, IBinder, IINetworkPolicyManager)
+CAR_INTERFACE_IMPL(CNetworkPolicyManagerService, Object, IBinder, IINetworkPolicyManager)
 
 CNetworkPolicyManagerService::CNetworkPolicyManagerService()
     : mScreenOn(FALSE)

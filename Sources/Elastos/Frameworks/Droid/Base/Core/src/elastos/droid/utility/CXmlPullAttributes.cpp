@@ -28,7 +28,7 @@ namespace Elastos {
 namespace Droid {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(CXmlPullAttributes, Object, IXmlPullAttributes, IAttributeSet)
+CAR_INTERFACE_IMPL(CXmlPullAttributes, Object, IXmlPullAttributes, IAttributeSet)
 
 CAR_OBJECT_IMPL(CXmlPullAttributes)
 

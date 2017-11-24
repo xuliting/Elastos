@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIGpsNavigationMessageListenerNative::TAG("CIGpsNavigationMessageListenerNative");
 
-CAR_INTERFACE_IMPL_2(CIGpsNavigationMessageListenerNative, Object, IIGpsNavigationMessageListener, IBinder)
+CAR_INTERFACE_IMPL(CIGpsNavigationMessageListenerNative, Object, IIGpsNavigationMessageListener, IBinder)
 
 CAR_OBJECT_IMPL(CIGpsNavigationMessageListenerNative)
 

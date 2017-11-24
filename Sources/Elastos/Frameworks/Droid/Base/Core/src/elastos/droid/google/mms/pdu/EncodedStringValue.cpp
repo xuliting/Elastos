@@ -42,7 +42,7 @@ namespace Pdu {
 //=====================================================================
 //                          EncodedStringValue
 //=====================================================================
-CAR_INTERFACE_IMPL_2(EncodedStringValue, Object, IEncodedStringValue, ICloneable);
+CAR_INTERFACE_IMPL(EncodedStringValue, Object, IEncodedStringValue, ICloneable);
 
 const String EncodedStringValue::TAG("EncodedStringValue");
 const Boolean EncodedStringValue::DEBUG = FALSE;

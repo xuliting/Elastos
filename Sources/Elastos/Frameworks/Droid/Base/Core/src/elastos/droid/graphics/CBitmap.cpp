@@ -63,7 +63,7 @@ Object CBitmap::sClassLock;
 
 CAR_OBJECT_IMPL(CBitmap)
 
-CAR_INTERFACE_IMPL_2(CBitmap, Object, IBitmap, IParcelable)
+CAR_INTERFACE_IMPL(CBitmap, Object, IBitmap, IParcelable)
 
 CBitmap::CBitmap()
     : mNativeBitmap(0)

@@ -27,7 +27,7 @@ namespace Apache {
 namespace Http {
 namespace Message {
 
-CAR_INTERFACE_IMPL_2(BasicRequestLine, Object, IRequestLine, ICloneable)
+CAR_INTERFACE_IMPL(BasicRequestLine, Object, IRequestLine, ICloneable)
 
 ECode BasicRequestLine::Init(
     /* [in] */ const String& method,

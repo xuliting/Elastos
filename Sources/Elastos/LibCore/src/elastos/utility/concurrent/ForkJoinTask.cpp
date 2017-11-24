@@ -45,7 +45,7 @@ Int32 ForkJoinTask::EXCEPTIONAL = 0x80000000;
 Int32 ForkJoinTask::SIGNAL      = 0x00010000;
 Int32 ForkJoinTask::SMASK       = 0x0000ffff;
 
-CAR_INTERFACE_IMPL_3(ForkJoinTask, Object, IForkJoinTask, IFuture, ISerializable)
+CAR_INTERFACE_IMPL(ForkJoinTask, Object, IForkJoinTask, IFuture, ISerializable)
 
 Int32 ForkJoinTask::SetCompletion(
     /* [in] */ const Int32& completion)

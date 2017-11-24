@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Security {
 
 CAR_OBJECT_IMPL(CCodeSigner)
-CAR_INTERFACE_IMPL_2(CCodeSigner, Object, ICodeSigner, ISerializable)
+CAR_INTERFACE_IMPL(CCodeSigner, Object, ICodeSigner, ISerializable)
 CCodeSigner::CCodeSigner()
     : mHash(0)
 {}

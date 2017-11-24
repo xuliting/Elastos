@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIActivityControllerNative::TAG("CIActivityControllerNative");
 
-CAR_INTERFACE_IMPL_2(CIActivityControllerNative, Object, IIActivityController, IBinder)
+CAR_INTERFACE_IMPL(CIActivityControllerNative, Object, IIActivityController, IBinder)
 
 CAR_OBJECT_IMPL(CIActivityControllerNative)
 

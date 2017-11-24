@@ -29,7 +29,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Dispatch {
 
-CAR_INTERFACE_IMPL_2(InvokeDispatcher, Object, IInvokeDispatcher, IDispatchable)
+CAR_INTERFACE_IMPL(InvokeDispatcher, Object, IInvokeDispatcher, IDispatchable)
 
 const String InvokeDispatcher::TAG("InvokeDispatcher");
 static const Boolean DEBUG = FALSE;

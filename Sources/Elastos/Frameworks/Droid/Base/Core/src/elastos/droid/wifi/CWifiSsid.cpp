@@ -46,7 +46,7 @@ namespace Wifi {
 static String TAG("WifiSsid");
 static Int32 HEX_RADIX = 16;
 
-CAR_INTERFACE_IMPL_2(CWifiSsid, Object, IWifiSsid, IParcelable)
+CAR_INTERFACE_IMPL(CWifiSsid, Object, IWifiSsid, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiSsid)
 

@@ -1398,7 +1398,7 @@ ECode GLSurfaceView::LogWriter::FlushBuilder()
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_7(GLSurfaceView, SurfaceView, IGLSurfaceView, ISurfaceView, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource, ISurfaceHolderCallback)
+CAR_INTERFACE_IMPL(GLSurfaceView, SurfaceView, IGLSurfaceView, ISurfaceView, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource, ISurfaceHolderCallback)
 GLSurfaceView::GLSurfaceView()
     : mDetached(FALSE)
     , mDebugFlags(0)

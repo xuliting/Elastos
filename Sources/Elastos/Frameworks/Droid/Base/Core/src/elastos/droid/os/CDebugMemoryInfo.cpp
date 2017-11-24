@@ -21,7 +21,7 @@ namespace Elastos {
 namespace Droid {
 namespace Os {
 
-CAR_INTERFACE_IMPL_2(CDebugMemoryInfo, Object, IDebugMemoryInfo, IParcelable)
+CAR_INTERFACE_IMPL(CDebugMemoryInfo, Object, IDebugMemoryInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CDebugMemoryInfo)
 

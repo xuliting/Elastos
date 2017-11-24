@@ -21,7 +21,7 @@ namespace Elastosx {
 namespace Xml {
 namespace Validation {
 
-CAR_INTERFACE_IMPL_2(ValidatorHandler, Object, IValidatorHandler, IContentHandler)
+CAR_INTERFACE_IMPL(ValidatorHandler, Object, IValidatorHandler, IContentHandler)
 
 ECode ValidatorHandler::GetFeature(
     /* [in] */ const String& name,

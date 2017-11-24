@@ -321,7 +321,7 @@ const AutoPtr<IUri> ContactPhotoManager::DEFAULT_IMAGE_URI = ContactPhotoManager
 AutoPtr<IDrawable> ContactPhotoManager::sDefaultLetterAvatar;
 Object ContactPhotoManager::sLock;
 
-CAR_INTERFACE_IMPL_2(ContactPhotoManager, Object, IContactPhotoManager, IComponentCallbacks2);
+CAR_INTERFACE_IMPL(ContactPhotoManager, Object, IContactPhotoManager, IComponentCallbacks2);
 
 AutoPtr<IDrawable> ContactPhotoManager::GetDefaultAvatarDrawableForContact(
     /* [in] */ IResources* resources,

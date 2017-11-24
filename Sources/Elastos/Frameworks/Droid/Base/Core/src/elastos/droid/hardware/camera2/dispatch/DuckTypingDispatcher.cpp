@@ -28,7 +28,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Dispatch {
 
-CAR_INTERFACE_IMPL_2(DuckTypingDispatcher, Object, IDuckTypingDispatcher, IDispatchable)
+CAR_INTERFACE_IMPL(DuckTypingDispatcher, Object, IDuckTypingDispatcher, IDispatchable)
 
 DuckTypingDispatcher::DuckTypingDispatcher()
 {

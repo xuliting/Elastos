@@ -22,7 +22,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(CPackageCleanItem, Object, IPackageCleanItem, IParcelable)
+CAR_INTERFACE_IMPL(CPackageCleanItem, Object, IPackageCleanItem, IParcelable)
 
 CAR_OBJECT_IMPL(CPackageCleanItem)
 

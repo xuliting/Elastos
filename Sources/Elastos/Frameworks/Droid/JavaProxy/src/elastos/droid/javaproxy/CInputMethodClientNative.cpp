@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CInputMethodClientNative::TAG("CInputMethodClientNative");
 
-CAR_INTERFACE_IMPL_2(CInputMethodClientNative, Object, IInputMethodClient, IBinder)
+CAR_INTERFACE_IMPL(CInputMethodClientNative, Object, IInputMethodClient, IBinder)
 
 CAR_OBJECT_IMPL(CInputMethodClientNative)
 

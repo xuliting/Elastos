@@ -26,7 +26,7 @@ const Int32 CAudioRoutesInfo::MAIN_HEADPHONES = 1 << 1;
 const Int32 CAudioRoutesInfo::MAIN_DOCK_SPEAKERS = 1 << 2;
 const Int32 CAudioRoutesInfo::MAIN_HDMI = 1 << 3;
 
-CAR_INTERFACE_IMPL_2(CAudioRoutesInfo, Object, IAudioRoutesInfo, IParcelable)
+CAR_INTERFACE_IMPL(CAudioRoutesInfo, Object, IAudioRoutesInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CAudioRoutesInfo)
 

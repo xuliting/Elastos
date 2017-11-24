@@ -55,7 +55,7 @@ AutoPtr<IMultihomePlainSocketFactory> MultihomePlainSocketFactory::InitSocketFac
 
 const AutoPtr<IMultihomePlainSocketFactory> MultihomePlainSocketFactory::DEFAULT_FACTORY = MultihomePlainSocketFactory::InitSocketFactory();
 
-CAR_INTERFACE_IMPL_2(MultihomePlainSocketFactory, Object, IMultihomePlainSocketFactory, ISocketFactory)
+CAR_INTERFACE_IMPL(MultihomePlainSocketFactory, Object, IMultihomePlainSocketFactory, ISocketFactory)
 
 AutoPtr<IMultihomePlainSocketFactory> MultihomePlainSocketFactory::GetSocketFactory()
 {

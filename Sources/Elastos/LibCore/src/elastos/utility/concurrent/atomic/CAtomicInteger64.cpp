@@ -25,7 +25,7 @@ namespace Utility {
 namespace Concurrent {
 namespace Atomic {
 
-CAR_INTERFACE_IMPL_2(CAtomicInteger64, Object, IAtomicInteger64, ISerializable)
+CAR_INTERFACE_IMPL(CAtomicInteger64, Object, IAtomicInteger64, ISerializable)
 
 CAR_OBJECT_IMPL(CAtomicInteger64)
 /**

@@ -31,7 +31,7 @@ namespace Display {
 
 const AutoPtr<ArrayOf<IWifiDisplay*> > WifiDisplay::EMPTY_ARRAY = ArrayOf<IWifiDisplay*>::Alloc(0);
 
-CAR_INTERFACE_IMPL_2(WifiDisplay, Object, IWifiDisplay, IParcelable);
+CAR_INTERFACE_IMPL(WifiDisplay, Object, IWifiDisplay, IParcelable);
 
 WifiDisplay::WifiDisplay()
     : mDeviceAddress(NULL)

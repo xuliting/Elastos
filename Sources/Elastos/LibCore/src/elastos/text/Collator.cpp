@@ -31,7 +31,7 @@ using Elastos::Core::EIID_ICharSequence;
 namespace Elastos {
 namespace Text {
 
-CAR_INTERFACE_IMPL_3(Collator, Object, ICollator, IComparator, ICloneable)
+CAR_INTERFACE_IMPL(Collator, Object, ICollator, IComparator, ICloneable)
 
 ECode Collator::CloneImpl(
     /* [in] */ ICollator* object)

@@ -38,7 +38,7 @@ const String TrustManager::DATA_INITIATED_BY_USER("initiatedByUser");
 //======================================================================================
 // TrustManager::TrustManagerTrustListener
 //======================================================================================
-CAR_INTERFACE_IMPL_2(TrustManager::TrustManagerTrustListener, Object, IITrustListener, IBinder)
+CAR_INTERFACE_IMPL(TrustManager::TrustManagerTrustListener, Object, IITrustListener, IBinder)
 
 ECode TrustManager::TrustManagerTrustListener::constructor(
     /* [in] */ ITrustListener* trustListener,

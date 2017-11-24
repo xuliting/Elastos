@@ -31,7 +31,7 @@ namespace Elastos {
 namespace Droid {
 namespace Wifi {
 
-CAR_INTERFACE_IMPL_2(CBatchedScanSettings, Object, IBatchedScanSettings, IParcelable)
+CAR_INTERFACE_IMPL(CBatchedScanSettings, Object, IBatchedScanSettings, IParcelable)
 
 CAR_OBJECT_IMPL(CBatchedScanSettings)
 

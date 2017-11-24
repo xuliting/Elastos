@@ -209,7 +209,7 @@ ECode PhoneBase::ImsIntentReceiver::OnReceive(
 }
 
 const String PhoneBase::TAG("PhoneBase");
-CAR_INTERFACE_IMPL_2(PhoneBase, Handler, IPhone, IPhoneBase)
+CAR_INTERFACE_IMPL(PhoneBase, Handler, IPhone, IPhoneBase)
 PhoneBase::PhoneBase()
     : mIsTheCurrentActivePhone(TRUE)
     , mDnsCheckDisabled(FALSE)

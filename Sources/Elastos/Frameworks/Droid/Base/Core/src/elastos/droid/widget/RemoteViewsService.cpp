@@ -32,7 +32,7 @@ namespace Elastos {
 namespace Droid {
 namespace Widget {
 
-CAR_INTERFACE_IMPL_2(RemoteViewsService::RemoteViewsFactoryAdapter,Object, IIRemoteViewsFactory, IBinder)
+CAR_INTERFACE_IMPL(RemoteViewsService::RemoteViewsFactoryAdapter,Object, IIRemoteViewsFactory, IBinder)
 
 RemoteViewsService::RemoteViewsFactoryAdapter::RemoteViewsFactoryAdapter()
     : mIsCreated(FALSE)

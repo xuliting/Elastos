@@ -43,7 +43,7 @@ namespace Droid {
 namespace Hardware {
 namespace Location {
 
-CAR_INTERFACE_IMPL_3(ActivityRecognitionHardware, Object, IActivityRecognitionHardware,
+CAR_INTERFACE_IMPL(ActivityRecognitionHardware, Object, IActivityRecognitionHardware,
         IIActivityRecognitionHardware, IBinder)
 
 const String ActivityRecognitionHardware::TAG("ActivityRecognitionHardware");

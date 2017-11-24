@@ -67,7 +67,7 @@ const Int32 CITvInputSessionWrapper::DO_RELAYOUT_OVERLAY_VIEW = 11;
 const Int32 CITvInputSessionWrapper::DO_REMOVE_OVERLAY_VIEW = 12;
 const Int32 CITvInputSessionWrapper::DO_REQUEST_UNBLOCK_CONTENT = 13;
 
-CAR_INTERFACE_IMPL_2(CITvInputSessionWrapper, Object, IITvInputSession, IHandlerCallerCallback)
+CAR_INTERFACE_IMPL(CITvInputSessionWrapper, Object, IITvInputSession, IHandlerCallerCallback)
 
 CAR_OBJECT_IMPL(CITvInputSessionWrapper)
 

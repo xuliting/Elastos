@@ -34,7 +34,7 @@ namespace Widget {
 //========================================================================================
 //              AlphabetIndexer::
 //========================================================================================
-CAR_INTERFACE_IMPL_2(AlphabetIndexer, DataSetObserver, ISectionIndexer, IAlphabetIndexer)
+CAR_INTERFACE_IMPL(AlphabetIndexer, DataSetObserver, ISectionIndexer, IAlphabetIndexer)
 
 AlphabetIndexer::AlphabetIndexer()
     : mColumnIndex(0)

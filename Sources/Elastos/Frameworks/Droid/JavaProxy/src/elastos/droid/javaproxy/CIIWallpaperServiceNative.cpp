@@ -29,7 +29,7 @@ namespace JavaProxy {
 
 const String CIIWallpaperServiceNative::TAG("CIIWallpaperServiceNative");
 
-CAR_INTERFACE_IMPL_2(CIIWallpaperServiceNative, Object, IIWallpaperService, IBinder)
+CAR_INTERFACE_IMPL(CIIWallpaperServiceNative, Object, IIWallpaperService, IBinder)
 
 CAR_OBJECT_IMPL(CIIWallpaperServiceNative)
 

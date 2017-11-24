@@ -47,7 +47,7 @@ const Int32 CAccessibilityWindowInfo::MAX_POOL_SIZE = 10;
 AutoPtr<Pools::SynchronizedPool<IAccessibilityWindowInfo> > CAccessibilityWindowInfo::sPool =
         new Pools::SynchronizedPool<IAccessibilityWindowInfo>(MAX_POOL_SIZE);
 
-CAR_INTERFACE_IMPL_2(CAccessibilityWindowInfo, Object, IAccessibilityWindowInfo, IParcelable)
+CAR_INTERFACE_IMPL(CAccessibilityWindowInfo, Object, IAccessibilityWindowInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CAccessibilityWindowInfo)
 

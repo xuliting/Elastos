@@ -172,7 +172,7 @@ CInstrumentationTestRunner::WatcherResultPrinter::WatcherResultPrinter(
     mResultTemplate->PutInt32(IInstrumentationTestRunner::REPORT_KEY_NUM_TOTAL, numTests);
 }
 
-CAR_INTERFACE_IMPL_2(CInstrumentationTestRunner::WatcherResultPrinter, Object, ITestListener, IPerformanceResultsWriter)
+CAR_INTERFACE_IMPL(CInstrumentationTestRunner::WatcherResultPrinter, Object, ITestListener, IPerformanceResultsWriter)
 
 ECode CInstrumentationTestRunner::WatcherResultPrinter::StartTest(
     /* [in] */ ITest* test)
@@ -470,7 +470,7 @@ CInstrumentationTestRunner::CInstrumentationTestRunner()
     CBundle::New((IBundle**)&mResults);
 }
 
-CAR_INTERFACE_IMPL_2(CInstrumentationTestRunner, Instrumentation, IInstrumentationTestRunner, ITestSuiteProvider)
+CAR_INTERFACE_IMPL(CInstrumentationTestRunner, Instrumentation, IInstrumentationTestRunner, ITestSuiteProvider)
 
 ECode CInstrumentationTestRunner::GetClassID(
     /* [out] */ ClassID *pCLSID)

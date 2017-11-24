@@ -101,7 +101,7 @@ CAR_INTERFACE_IMPL(FragmentContainerLocal, Object, IFragmentContainer)
 // FragmentState
 //===================================================================
 
-CAR_INTERFACE_IMPL_2(FragmentState, Object, IFragmentState, IParcelable)
+CAR_INTERFACE_IMPL(FragmentState, Object, IFragmentState, IParcelable)
 
 FragmentState::FragmentState()
     : mIndex(0)
@@ -348,7 +348,7 @@ const AutoPtr<ITransition> Fragment::USE_DEFAULT_TRANSITION = InitUSE_DEFAULT_TR
 
 HashMap<String, AutoPtr<IClassInfo> > Fragment::sClassMap;
 
-CAR_INTERFACE_IMPL_4(Fragment, Object, IFragment, IComponentCallbacks, IComponentCallbacks2, IViewOnCreateContextMenuListener)
+CAR_INTERFACE_IMPL(Fragment, Object, IFragment, IComponentCallbacks, IComponentCallbacks2, IViewOnCreateContextMenuListener)
 
 Fragment::Fragment()
     : mState(INITIALIZING)

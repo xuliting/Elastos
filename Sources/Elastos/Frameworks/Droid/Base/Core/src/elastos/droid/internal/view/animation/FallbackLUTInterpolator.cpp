@@ -30,7 +30,7 @@ namespace Internal {
 namespace View {
 namespace Animation {
 
-CAR_INTERFACE_IMPL_3(FallbackLUTInterpolator, Object, IFallbackLUTInterpolator, \
+CAR_INTERFACE_IMPL(FallbackLUTInterpolator, Object, IFallbackLUTInterpolator, \
     INativeInterpolatorFactory, ITimeInterpolator)
 
 ECode FallbackLUTInterpolator::constructor(

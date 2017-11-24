@@ -162,7 +162,7 @@ Boolean CGLImpl::SupportsExtension(
     return rst;
 }
 
-CAR_INTERFACE_IMPL_5(CGLImpl, Object, IGL10, IGL10Ext, IGL11, IGL11Ext, IGL11ExtensionPack)
+CAR_INTERFACE_IMPL(CGLImpl, Object, IGL10, IGL10Ext, IGL11, IGL11Ext, IGL11ExtensionPack)
 CAR_OBJECT_IMPL(CGLImpl)
 
 ECode CGLImpl::constructor()

@@ -22,7 +22,7 @@ using Elastos::IO::EIID_ISerializable;
 namespace Elastos {
 namespace Core {
 
-CAR_INTERFACE_IMPL_3(CBoolean, Object, IBoolean, ISerializable, IComparable)
+CAR_INTERFACE_IMPL(CBoolean, Object, IBoolean, ISerializable, IComparable)
 
 CAR_OBJECT_IMPL(CBoolean)
 

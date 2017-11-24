@@ -34,7 +34,7 @@ const Int32 HdmiDeviceInfo::ID_OFFSET_CEC = 0x0;
 const Int32 HdmiDeviceInfo::ID_OFFSET_MHL = 0x80;
 const Int32 HdmiDeviceInfo::ID_OFFSET_HARDWARE = 0xC0;
 
-CAR_INTERFACE_IMPL_2(HdmiDeviceInfo, Object, IHdmiDeviceInfo, IParcelable)
+CAR_INTERFACE_IMPL(HdmiDeviceInfo, Object, IHdmiDeviceInfo, IParcelable)
 
 HdmiDeviceInfo::HdmiDeviceInfo()
     : mId(0)

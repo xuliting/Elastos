@@ -229,7 +229,7 @@ Int32 AutoScrollHelper::ClampedScroller::GetDeltaY()
 //          AutoScrollHelper
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(AutoScrollHelper, Object, IAutoScrollHelper, IViewOnTouchListener);
+CAR_INTERFACE_IMPL(AutoScrollHelper, Object, IAutoScrollHelper, IViewOnTouchListener);
 
 AutoScrollHelper::AutoScrollHelper()
 {

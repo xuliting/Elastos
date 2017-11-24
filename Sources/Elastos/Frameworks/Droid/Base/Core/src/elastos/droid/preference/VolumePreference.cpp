@@ -36,7 +36,7 @@ namespace Preference {
 
 
 /////////////////////////VolumePreference::InnerListener//////////////////////////////////////
-CAR_INTERFACE_IMPL_3(VolumePreference::InnerListener, Object, IPreferenceManagerOnActivityStopListener, \
+CAR_INTERFACE_IMPL(VolumePreference::InnerListener, Object, IPreferenceManagerOnActivityStopListener, \
     IViewOnKeyListener, ISeekBarVolumizerCallback)
 
 VolumePreference::InnerListener::InnerListener(

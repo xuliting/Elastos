@@ -41,7 +41,7 @@ const AutoPtr<IAttributedCharacterIteratorAttribute> AttributedCharacterIterator
 const AutoPtr<IAttributedCharacterIteratorAttribute> AttributedCharacterIteratorAttribute::READING =
         InitAttribute(String("reading"));
 
-CAR_INTERFACE_IMPL_2(AttributedCharacterIteratorAttribute, Object, IAttributedCharacterIteratorAttribute, ISerializable)
+CAR_INTERFACE_IMPL(AttributedCharacterIteratorAttribute, Object, IAttributedCharacterIteratorAttribute, ISerializable)
 
 ECode AttributedCharacterIteratorAttribute::GetClassID(
     /* [out] */ ClassID* clsid)

@@ -164,7 +164,7 @@ void LightImpl::SetLightLocked(
 //          LightsService::LegacyFlashlightHack
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(LightsService::LegacyFlashlightHack, Object, IIHardwareService, IBinder);
+CAR_INTERFACE_IMPL(LightsService::LegacyFlashlightHack, Object, IIHardwareService, IBinder);
 
 LightsService::LegacyFlashlightHack::LegacyFlashlightHack()
 {

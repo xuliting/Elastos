@@ -30,7 +30,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsPhones)
 
-CAR_INTERFACE_IMPL_4(CContactsPhones, Singleton, IContactsPhones, IBaseColumns, IContactsPhonesColumns, IContactsPeopleColumns)
+CAR_INTERFACE_IMPL(CContactsPhones, Singleton, IContactsPhones, IBaseColumns, IContactsPhonesColumns, IContactsPeopleColumns)
 
 ECode CContactsPhones::GetCONTENT_URI(
     /* [out] */ IUri** uri)

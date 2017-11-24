@@ -163,7 +163,7 @@ ECode CLauncherApps::CallbackMessageHandler::PostOnPackagesUnavailable(
 // CLauncherApps::MyOnAppsChangedListener
 //==========================================================================
 
-CAR_INTERFACE_IMPL_2(CLauncherApps::MyOnAppsChangedListener, Object, IOnAppsChangedListener, IBinder)
+CAR_INTERFACE_IMPL(CLauncherApps::MyOnAppsChangedListener, Object, IOnAppsChangedListener, IBinder)
 
 CLauncherApps::MyOnAppsChangedListener::MyOnAppsChangedListener()
 {

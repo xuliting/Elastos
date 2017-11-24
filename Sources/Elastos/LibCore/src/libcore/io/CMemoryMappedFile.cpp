@@ -37,7 +37,7 @@ namespace IO {
 
 CAR_OBJECT_IMPL(CMemoryMappedFile)
 
-CAR_INTERFACE_IMPL_2(CMemoryMappedFile, Object, IMemoryMappedFile, ICloseable)
+CAR_INTERFACE_IMPL(CMemoryMappedFile, Object, IMemoryMappedFile, ICloseable)
 
 ECode CMemoryMappedFile::constructor(
     /* [in] */ Int64 address,

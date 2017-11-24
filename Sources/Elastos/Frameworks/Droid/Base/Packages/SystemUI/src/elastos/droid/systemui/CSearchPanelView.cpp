@@ -110,7 +110,7 @@ Boolean CSearchPanelView::sInit = InitStatic();
 AutoPtr<IAudioAttributes> CSearchPanelView::VIBRATION_ATTRIBUTES;
 
 CAR_OBJECT_IMPL(CSearchPanelView)
-CAR_INTERFACE_IMPL_2(CSearchPanelView, FrameLayout, ISearchPanelView, IStatusBarPanel);
+CAR_INTERFACE_IMPL(CSearchPanelView, FrameLayout, ISearchPanelView, IStatusBarPanel);
 
 CSearchPanelView::CSearchPanelView()
     : mThreshold(0)

@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Droid {
 namespace Database {
 
-CAR_INTERFACE_IMPL_3(CCursorJoiner, Object, ICursorJoiner, IIterable, IIterator);
+CAR_INTERFACE_IMPL(CCursorJoiner, Object, ICursorJoiner, IIterable, IIterator);
 
 CAR_OBJECT_IMPL(CCursorJoiner)
 

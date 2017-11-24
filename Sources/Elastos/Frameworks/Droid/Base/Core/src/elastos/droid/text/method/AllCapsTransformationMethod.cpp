@@ -31,7 +31,7 @@ namespace Method {
 
 const String AllCapsTransformationMethod::TAG("AllCapsTransformationMethod");
 
-CAR_INTERFACE_IMPL_3(AllCapsTransformationMethod, Object, IAllCapsTransformationMethod, \
+CAR_INTERFACE_IMPL(AllCapsTransformationMethod, Object, IAllCapsTransformationMethod, \
     ITransformationMethod2, ITransformationMethod)
 
 AllCapsTransformationMethod::AllCapsTransformationMethod()

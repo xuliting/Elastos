@@ -46,7 +46,7 @@ namespace Elastosx {
 namespace Crypto {
 
 CAR_OBJECT_IMPL(CSealedObject)
-CAR_INTERFACE_IMPL_2(CSealedObject, Object, ISealedObject, ISerializable)
+CAR_INTERFACE_IMPL(CSealedObject, Object, ISealedObject, ISerializable)
 
 Int64 CSealedObject::mSerialVersionUID = 4482838265551344752;
 

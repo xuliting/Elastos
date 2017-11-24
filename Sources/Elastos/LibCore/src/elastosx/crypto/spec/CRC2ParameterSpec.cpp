@@ -24,7 +24,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CRC2ParameterSpec)
-CAR_INTERFACE_IMPL_2(CRC2ParameterSpec, Object, IRC2ParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(CRC2ParameterSpec, Object, IRC2ParameterSpec, IAlgorithmParameterSpec)
 
 CRC2ParameterSpec::CRC2ParameterSpec()
     : mEffectiveKeyBits(0)

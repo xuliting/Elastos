@@ -101,7 +101,7 @@ ECode AdvertiseSettings::Builder::Build(
 //=====================================================================
 const Int32 AdvertiseSettings::LIMITED_ADVERTISING_MAX_MILLIS;
 
-CAR_INTERFACE_IMPL_2(AdvertiseSettings, Object, IAdvertiseSettings, IParcelable);
+CAR_INTERFACE_IMPL(AdvertiseSettings, Object, IAdvertiseSettings, IParcelable);
 
 AdvertiseSettings::AdvertiseSettings()
 {

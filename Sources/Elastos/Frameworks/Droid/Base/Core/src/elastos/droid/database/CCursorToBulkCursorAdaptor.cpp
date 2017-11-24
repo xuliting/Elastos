@@ -84,7 +84,7 @@ ECode CCursorToBulkCursorAdaptor::ContentObserverProxy::OnChange(
 
 const String CCursorToBulkCursorAdaptor::TAG("CCursorToBulkCursorAdaptor");
 
-CAR_INTERFACE_IMPL_2(CCursorToBulkCursorAdaptor, BulkCursorNative, \
+CAR_INTERFACE_IMPL(CCursorToBulkCursorAdaptor, BulkCursorNative, \
     ICursorToBulkCursorAdaptor, IProxyDeathRecipient)
 
 CAR_OBJECT_IMPL(CCursorToBulkCursorAdaptor)

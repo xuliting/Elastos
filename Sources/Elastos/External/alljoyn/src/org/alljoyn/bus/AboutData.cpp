@@ -64,7 +64,7 @@ const Int32 AboutData::FieldDetails::LOCALIZED;
 
 AutoPtr<ArrayOf<Char32> > AboutData::sHexCharArray = String("0123456789ABCDEF").GetChars();
 
-CAR_INTERFACE_IMPL_3(AboutData, Object, IAboutData, IAboutDataListener, IAboutKeys)
+CAR_INTERFACE_IMPL(AboutData, Object, IAboutData, IAboutDataListener, IAboutKeys)
 
 /**
  * Create an AboutData class. The default language will will not be set.

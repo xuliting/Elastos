@@ -35,7 +35,7 @@ namespace Utility {
 // ArrayList::ArrayListIterator
 //====================================================================
 
-CAR_INTERFACE_IMPL_4(ArrayList, AbstractList, IArrayList, ICloneable, ISerializable, IRandomAccess)
+CAR_INTERFACE_IMPL(ArrayList, AbstractList, IArrayList, ICloneable, ISerializable, IRandomAccess)
 
 CAR_INTERFACE_IMPL(ArrayList::ArrayListIterator, Object, IIterator)
 

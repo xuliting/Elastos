@@ -54,7 +54,7 @@ ECode CMediaProjection::DeathEater::ProxyDied()
 //                  CMediaProjection
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CMediaProjection, Object, IIMediaProjection, IBinder)
+CAR_INTERFACE_IMPL(CMediaProjection, Object, IIMediaProjection, IBinder)
 
 CAR_OBJECT_IMPL(CMediaProjection)
 

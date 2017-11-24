@@ -27,7 +27,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CCalendarContractCalendars)
 
-CAR_INTERFACE_IMPL_4(CCalendarContractCalendars, Singleton
+CAR_INTERFACE_IMPL(CCalendarContractCalendars, Singleton
     , ICalendarContractCalendars
     , IBaseColumns
     , ICalendarContractSyncColumns

@@ -32,7 +32,7 @@ namespace Concurrent {
 //==========================================================
 // CScheduledThreadPoolExecutor::ScheduledFutureTask::
 //==========================================================
-CAR_INTERFACE_IMPL_2(CScheduledThreadPoolExecutor::ScheduledFutureTask, FutureTask, IRunnableScheduledFuture, IScheduledFutureTask)
+CAR_INTERFACE_IMPL(CScheduledThreadPoolExecutor::ScheduledFutureTask, FutureTask, IRunnableScheduledFuture, IScheduledFutureTask)
 
 CScheduledThreadPoolExecutor::ScheduledFutureTask::ScheduledFutureTask(
     /* [in] */ IRunnable* r,
@@ -181,7 +181,7 @@ static AutoPtr<IAtomicInteger64> InitmSequencer()
 
 const AutoPtr<IAtomicInteger64> CScheduledThreadPoolExecutor::mSequencer = InitmSequencer();
 
-CAR_INTERFACE_IMPL_2(CScheduledThreadPoolExecutor, ThreadPoolExecutor, IScheduledExecutorService, IScheduledThreadPoolExecutor)
+CAR_INTERFACE_IMPL(CScheduledThreadPoolExecutor, ThreadPoolExecutor, IScheduledExecutorService, IScheduledThreadPoolExecutor)
 
 CAR_OBJECT_IMPL(CScheduledThreadPoolExecutor)
 

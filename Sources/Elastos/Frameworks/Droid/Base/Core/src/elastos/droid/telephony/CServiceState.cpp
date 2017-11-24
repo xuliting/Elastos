@@ -28,7 +28,7 @@ namespace Telephony {
 const String CServiceState::TAG("PHONE");
 const Boolean CServiceState::DBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(CServiceState, Object, IServiceState, IParcelable)
+CAR_INTERFACE_IMPL(CServiceState, Object, IServiceState, IParcelable)
 
 CAR_OBJECT_IMPL(CServiceState)
 

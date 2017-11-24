@@ -33,7 +33,7 @@ const String CContainerEncryptionParams::TO_STRING_PREFIX("ContainerEncryptionPa
 const Int32 CContainerEncryptionParams::ENC_PARAMS_IV_PARAMETERS = 1;
 const Int32 CContainerEncryptionParams::MAC_PARAMS_NONE = 1;
 
-CAR_INTERFACE_IMPL_2(CContainerEncryptionParams, Object, IContainerEncryptionParams, IParcelable)
+CAR_INTERFACE_IMPL(CContainerEncryptionParams, Object, IContainerEncryptionParams, IParcelable)
 
 CAR_OBJECT_IMPL(CContainerEncryptionParams)
 

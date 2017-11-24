@@ -25,7 +25,7 @@ namespace Droid {
 namespace Hardware {
 namespace Input {
 
-CAR_INTERFACE_IMPL_3(KeyboardLayout, Object, IKeyboardLayout, IComparable, IParcelable)
+CAR_INTERFACE_IMPL(KeyboardLayout, Object, IKeyboardLayout, IComparable, IParcelable)
 
 KeyboardLayout::KeyboardLayout()
     : mPriority(0)

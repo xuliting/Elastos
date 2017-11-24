@@ -60,7 +60,7 @@ namespace Applications {
 //                  CRunningProcessesView::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(CRunningProcessesView::InnerListener, Object, IAdapterViewOnItemClickListener, IRecyclerListener, IRunningStateOnRefreshUiListener)
+CAR_INTERFACE_IMPL(CRunningProcessesView::InnerListener, Object, IAdapterViewOnItemClickListener, IRecyclerListener, IRunningStateOnRefreshUiListener)
 
 CRunningProcessesView::InnerListener::InnerListener(
     /* [in] */ CRunningProcessesView* host)

@@ -35,7 +35,7 @@ const Int32 CCellSignalStrengthWcdma::WCDMA_SIGNAL_STRENGTH_GREAT = 12;
 const Int32 CCellSignalStrengthWcdma::WCDMA_SIGNAL_STRENGTH_GOOD = 8;
 const Int32 CCellSignalStrengthWcdma::WCDMA_SIGNAL_STRENGTH_MODERATE = 5;
 
-CAR_INTERFACE_IMPL_2(CCellSignalStrengthWcdma, CellSignalStrength, ICellSignalStrengthWcdma, IParcelable)
+CAR_INTERFACE_IMPL(CCellSignalStrengthWcdma, CellSignalStrength, ICellSignalStrengthWcdma, IParcelable)
 
 CAR_OBJECT_IMPL(CCellSignalStrengthWcdma)
 

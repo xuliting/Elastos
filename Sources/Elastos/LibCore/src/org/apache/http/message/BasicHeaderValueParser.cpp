@@ -58,7 +58,7 @@ AutoPtr< ArrayOf<Char32> > BasicHeaderValueParser::InitDelimiters()
 }
 const AutoPtr< ArrayOf<Char32> > BasicHeaderValueParser::ALL_DELIMITERS = InitDelimiters();
 
-CAR_INTERFACE_IMPL_2(BasicHeaderValueParser, Object, IBasicHeaderValueParser, IHeaderValueParser)
+CAR_INTERFACE_IMPL(BasicHeaderValueParser, Object, IBasicHeaderValueParser, IHeaderValueParser)
 
 ECode BasicHeaderValueParser::ParseElements(
     /* [in] */ const String& value,

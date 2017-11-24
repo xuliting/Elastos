@@ -32,7 +32,7 @@ namespace Locks {
 //==========================================================
 const Int64 CReentrantReadWriteLock::sSerialVersionUID = -6992448646407690164L;
 
-CAR_INTERFACE_IMPL_3(CReentrantReadWriteLock, Object, IReentrantReadWriteLock, IReadWriteLock, ISerializable)
+CAR_INTERFACE_IMPL(CReentrantReadWriteLock, Object, IReentrantReadWriteLock, IReadWriteLock, ISerializable)
 
 CAR_OBJECT_IMPL(CReentrantReadWriteLock)
 
@@ -627,7 +627,7 @@ void CReentrantReadWriteLock::Sync::ReadObject(
 //==========================================================
 //       CReentrantReadWriteLock::CReadLock
 //==========================================================
-CAR_INTERFACE_IMPL_2(CReentrantReadWriteLock::CReadLock, Object, ILock, ISerializable)
+CAR_INTERFACE_IMPL(CReentrantReadWriteLock::CReadLock, Object, ILock, ISerializable)
 
 CReentrantReadWriteLock::CReadLock::CReadLock(
     /* [in] */ CReentrantReadWriteLock* lock)
@@ -690,7 +690,7 @@ ECode CReentrantReadWriteLock::CReadLock::ToString(
 //==========================================================
 //       CReentrantReadWriteLock::WriteLock
 //==========================================================
-CAR_INTERFACE_IMPL_2(CReentrantReadWriteLock::CWriteLock, Object, ILock, ISerializable)
+CAR_INTERFACE_IMPL(CReentrantReadWriteLock::CWriteLock, Object, ILock, ISerializable)
 
 CReentrantReadWriteLock::CWriteLock::CWriteLock(
     /* [in] */ CReentrantReadWriteLock* lock)

@@ -1130,7 +1130,7 @@ const Int64 CMediaRouterService::CONNECTED_TIMEOUT;
 const String CMediaRouterService::TAG("MediaRouterService");
 const Boolean CMediaRouterService::DEBUG;
 
-CAR_INTERFACE_IMPL_3(CMediaRouterService, Object, IIMediaRouterService, IWatchdogMonitor, IBinder)
+CAR_INTERFACE_IMPL(CMediaRouterService, Object, IIMediaRouterService, IWatchdogMonitor, IBinder)
 
 CAR_OBJECT_IMPL(CMediaRouterService)
 

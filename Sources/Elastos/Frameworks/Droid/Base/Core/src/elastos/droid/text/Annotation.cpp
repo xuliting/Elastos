@@ -21,7 +21,7 @@ namespace Elastos {
 namespace Droid {
 namespace Text {
 
-CAR_INTERFACE_IMPL_3(Annotation, Object, IAnnotation, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(Annotation, Object, IAnnotation, IParcelableSpan, IParcelable)
 
 Annotation::Annotation()
 {}

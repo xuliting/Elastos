@@ -183,7 +183,7 @@ namespace Elastos {
 namespace Droid {
 namespace Launcher2 {
 
-CAR_INTERFACE_IMPL_3(Launcher::InnerListener, Object, IViewOnClickListener,
+CAR_INTERFACE_IMPL(Launcher::InnerListener, Object, IViewOnClickListener,
     IViewOnLongClickListener, IViewOnTouchListener);
 
 Launcher::InnerListener::InnerListener(
@@ -1189,7 +1189,7 @@ Boolean Launcher::IsPropertyEnabled(
 
 Boolean Launcher::sForceEnableRotation = IsPropertyEnabled(FORCE_ENABLE_ROTATION_PROPERTY);
 
-CAR_INTERFACE_IMPL_2(Launcher, Activity, ILauncher, ILauncherModelCallbacks)
+CAR_INTERFACE_IMPL(Launcher, Activity, ILauncher, ILauncherModelCallbacks)
 
 Launcher::Launcher()
     : mState(Launcher_WORKSPACE)

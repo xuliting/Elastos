@@ -26,7 +26,7 @@ namespace Droid {
 namespace Hardware {
 namespace Hdmi {
 
-CAR_INTERFACE_IMPL_2(HdmiTvClient::MyCallback, Object, IIHdmiControlCallback, IBinder)
+CAR_INTERFACE_IMPL(HdmiTvClient::MyCallback, Object, IIHdmiControlCallback, IBinder)
 
 HdmiTvClient::MyCallback::MyCallback(
     /* [in] */ IHdmiTvClientSelectCallback* _callback)

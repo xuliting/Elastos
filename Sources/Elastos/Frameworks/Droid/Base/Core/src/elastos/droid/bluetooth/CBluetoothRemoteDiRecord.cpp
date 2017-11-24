@@ -25,7 +25,7 @@ namespace Bluetooth {
 
 CAR_OBJECT_IMPL(CBluetoothRemoteDiRecord)
 
-CAR_INTERFACE_IMPL_2(CBluetoothRemoteDiRecord, Object, IBluetoothRemoteDiRecord, IParcelable)
+CAR_INTERFACE_IMPL(CBluetoothRemoteDiRecord, Object, IBluetoothRemoteDiRecord, IParcelable)
 
 CBluetoothRemoteDiRecord::CBluetoothRemoteDiRecord()
     : mVendorId(0)

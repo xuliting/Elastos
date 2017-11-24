@@ -40,7 +40,7 @@ ECode IndexerListAdapter::Placement::Invalidate()
 //=================================================================
 // IndexerListAdapter
 //=================================================================
-CAR_INTERFACE_IMPL_2(IndexerListAdapter, PinnedHeaderListAdapter, IIndexerListAdapter, ISectionIndexer)
+CAR_INTERFACE_IMPL(IndexerListAdapter, PinnedHeaderListAdapter, IIndexerListAdapter, ISectionIndexer)
 
 CAR_OBJECT_IMPL(IndexerListAdapter)
 

@@ -46,7 +46,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractRawContacts)
 
-CAR_INTERFACE_IMPL_6(CContactsContractRawContacts, Singleton
+CAR_INTERFACE_IMPL(CContactsContractRawContacts, Singleton
     , IContactsContractRawContacts
     , IBaseColumns
     , IContactsContractRawContactsColumns
@@ -138,7 +138,7 @@ static AutoPtr<ArrayOf<String> > initDATAKEYS()
 
 const AutoPtr<ArrayOf<String> > CContactsContractRawContacts::EntityIteratorImpl::DATA_KEYS = initDATAKEYS();
 
-CAR_INTERFACE_IMPL_3(CContactsContractRawContacts::EntityIteratorImpl, Object, ICursorEntityIterator, IEntityIterator, IIterator)
+CAR_INTERFACE_IMPL(CContactsContractRawContacts::EntityIteratorImpl, Object, ICursorEntityIterator, IEntityIterator, IIterator)
 
 CContactsContractRawContacts::EntityIteratorImpl::EntityIteratorImpl()
 {}

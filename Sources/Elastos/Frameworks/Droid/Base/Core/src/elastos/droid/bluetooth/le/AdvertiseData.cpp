@@ -135,7 +135,7 @@ ECode AdvertiseData::Builder::Build(
 //=====================================================================
 //                            AdvertiseData
 //=====================================================================
-CAR_INTERFACE_IMPL_2(AdvertiseData, Object, IAdvertiseData, IParcelable);
+CAR_INTERFACE_IMPL(AdvertiseData, Object, IAdvertiseData, IParcelable);
 
 AdvertiseData::AdvertiseData()
 {

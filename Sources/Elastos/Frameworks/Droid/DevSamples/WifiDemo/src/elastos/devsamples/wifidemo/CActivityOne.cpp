@@ -90,7 +90,7 @@ static const String DBG_TAG("CActivityOne");
 // CActivityOne::MyListener
 //=======================================================================
 
-CAR_INTERFACE_IMPL_7(CActivityOne::MyListener, Object, IViewOnTouchListener, IViewOnKeyListener,
+CAR_INTERFACE_IMPL(CActivityOne::MyListener, Object, IViewOnTouchListener, IViewOnKeyListener,
         IViewOnClickListener, IAdapterViewOnItemClickListener, IAdapterViewOnItemLongClickListener,
         IDialogInterfaceOnClickListener, IRadioGroupOnCheckedChangeListener)
 

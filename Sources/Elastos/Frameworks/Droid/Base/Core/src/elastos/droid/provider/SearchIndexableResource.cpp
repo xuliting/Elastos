@@ -30,7 +30,7 @@ SearchIndexableResource::SearchIndexableResource()
 SearchIndexableResource::~SearchIndexableResource()
 {}
 
-CAR_INTERFACE_IMPL_2(SearchIndexableResource, Object, ISearchIndexableResource, ISearchIndexableData)
+CAR_INTERFACE_IMPL(SearchIndexableResource, Object, ISearchIndexableResource, ISearchIndexableData)
 
 ECode SearchIndexableResource::constructor(
     /* [in] */ IContext* context)

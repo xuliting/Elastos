@@ -414,7 +414,7 @@ ECode CAppsCustomizePagedView::MyRunnable5::Run()
     return mLayout->SetOnLayoutListener(NULL);
 }
 
-CAR_INTERFACE_IMPL_4(CAppsCustomizePagedView::InnerListener, Object,
+CAR_INTERFACE_IMPL(CAppsCustomizePagedView::InnerListener, Object,
     IViewOnClickListener, IViewOnKeyListener,
     IPagedViewIconPressedCallback,
     IPagedViewWidgetShortPressListener);
@@ -476,7 +476,7 @@ const Int32 CAppsCustomizePagedView::WIDGET_INFLATED = 2;
 const Int32 CAppsCustomizePagedView::sLookBehindPageCount = 2;
 const Int32 CAppsCustomizePagedView::sLookAheadPageCount = 2;
 
-CAR_INTERFACE_IMPL_3(CAppsCustomizePagedView, PagedViewWithDraggableItems,
+CAR_INTERFACE_IMPL(CAppsCustomizePagedView, PagedViewWithDraggableItems,
     IAppsCustomizePagedView, IDragSource, ILauncherTransitionable);
 
 CAR_OBJECT_IMPL(CAppsCustomizePagedView);

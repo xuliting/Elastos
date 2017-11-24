@@ -1037,7 +1037,7 @@ const Int32 CImageReader::ACQUIRE_SUCCESS = 0;
 const Int32 CImageReader::ACQUIRE_NO_BUFS = 1;
 const Int32 CImageReader::ACQUIRE_MAX_IMAGES = 2;
 
-CAR_INTERFACE_IMPL_2(CImageReader, Object, IImageReader, IAutoCloseable)
+CAR_INTERFACE_IMPL(CImageReader, Object, IImageReader, IAutoCloseable)
 
 CAR_OBJECT_IMPL(CImageReader)
 

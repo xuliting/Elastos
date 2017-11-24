@@ -93,7 +93,7 @@ ECode CUsbService::UserChangedReceiver::OnReceive(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CUsbService, Object, IIUsbManager, IBinder)
+CAR_INTERFACE_IMPL(CUsbService, Object, IIUsbManager, IBinder)
 
 CAR_OBJECT_IMPL(CUsbService)
 

@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIAudioFocusDispatcher::TAG("CIAudioFocusDispatcher");
 
-CAR_INTERFACE_IMPL_2(CIAudioFocusDispatcher, Object, IIAudioFocusDispatcher, IBinder)
+CAR_INTERFACE_IMPL(CIAudioFocusDispatcher, Object, IIAudioFocusDispatcher, IBinder)
 
 CAR_OBJECT_IMPL(CIAudioFocusDispatcher)
 

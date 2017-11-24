@@ -54,7 +54,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Legacy {
 
-CAR_INTERFACE_IMPL_3(CameraDeviceUserShim::CameraLooper, Object, ICameraDeviceUserShimCameraLooper,
+CAR_INTERFACE_IMPL(CameraDeviceUserShim::CameraLooper, Object, ICameraDeviceUserShimCameraLooper,
         IRunnable, ICloseable)
 
 CameraDeviceUserShim::CameraLooper::CameraLooper()
@@ -250,7 +250,7 @@ ECode CameraDeviceUserShim::CallbackHandler::HandleMessage(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CameraDeviceUserShim::CameraCallbackThread, Object,
+CAR_INTERFACE_IMPL(CameraDeviceUserShim::CameraCallbackThread, Object,
         ICameraDeviceUserShimCameraCallbackThread, IICameraDeviceCallbacks)
 
 const Int32 CameraDeviceUserShim::CameraCallbackThread::CAMERA_ERROR;
@@ -351,7 +351,7 @@ AutoPtr<IHandler> CameraDeviceUserShim::CameraCallbackThread::GetHandler()
     return mHandler;
 }
 
-CAR_INTERFACE_IMPL_2(CameraDeviceUserShim, Object, ICameraDeviceUserShim, IICameraDeviceUser)
+CAR_INTERFACE_IMPL(CameraDeviceUserShim, Object, ICameraDeviceUserShim, IICameraDeviceUser)
 
 const String CameraDeviceUserShim::TAG("CameraDeviceUserShim");
 const Boolean CameraDeviceUserShim::DEBUG = FALSE;//Log.isLoggable(LegacyCameraDevice.DEBUG_PROP, Log.DEBUG);

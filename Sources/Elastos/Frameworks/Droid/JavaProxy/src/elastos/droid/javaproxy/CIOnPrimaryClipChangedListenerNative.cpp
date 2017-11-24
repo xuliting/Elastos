@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIOnPrimaryClipChangedListenerNative::TAG("CIOnPrimaryClipChangedListenerNative");
 
-CAR_INTERFACE_IMPL_2(CIOnPrimaryClipChangedListenerNative, Object, IOnPrimaryClipChangedListener, IBinder)
+CAR_INTERFACE_IMPL(CIOnPrimaryClipChangedListenerNative, Object, IOnPrimaryClipChangedListener, IBinder)
 
 CAR_OBJECT_IMPL(CIOnPrimaryClipChangedListenerNative)
 

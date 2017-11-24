@@ -31,7 +31,7 @@ namespace Elastos {
 namespace Droid {
 namespace Widget {
 
-CAR_INTERFACE_IMPL_3(CursorTreeAdapter, BaseExpandableListAdapter, ICursorTreeAdapter, IFilterable, ICursorFilterClient);
+CAR_INTERFACE_IMPL(CursorTreeAdapter, BaseExpandableListAdapter, ICursorTreeAdapter, IFilterable, ICursorFilterClient);
 CursorTreeAdapter::CursorTreeAdapter()
     : mAutoRequery(FALSE)
 {}

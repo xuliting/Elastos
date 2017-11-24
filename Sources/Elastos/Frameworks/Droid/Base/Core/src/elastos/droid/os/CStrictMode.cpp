@@ -533,7 +533,7 @@ Boolean CStrictMode::TooManyViolationsThisLoop()
     return violations->GetSize() >= MAX_OFFENSES_PER_LOOP;
 }
 
-CAR_INTERFACE_IMPL_2(CStrictMode::AndroidBlockGuardPolicy, Object, IAndroidBlockGuardPolicy, IBlockGuardPolicy);
+CAR_INTERFACE_IMPL(CStrictMode::AndroidBlockGuardPolicy, Object, IAndroidBlockGuardPolicy, IBlockGuardPolicy);
 
 CStrictMode::AndroidBlockGuardPolicy::AndroidBlockGuardPolicy(
     /* [in] */ Int32 policyMask)

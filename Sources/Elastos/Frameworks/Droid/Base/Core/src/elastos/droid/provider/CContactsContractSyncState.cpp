@@ -28,7 +28,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractSyncState)
 
-CAR_INTERFACE_IMPL_2(CContactsContractSyncState, Singleton, IContactsContractSyncState, ISyncStateContractColumns)
+CAR_INTERFACE_IMPL(CContactsContractSyncState, Singleton, IContactsContractSyncState, ISyncStateContractColumns)
 
 ECode CContactsContractSyncState::GetCONTENT_URI(
     /* [out] */ IUri** uri)

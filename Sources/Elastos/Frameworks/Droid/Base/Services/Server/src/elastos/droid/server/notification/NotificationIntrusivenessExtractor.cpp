@@ -69,7 +69,7 @@ ECode NotificationIntrusivenessExtractor::MyRankingReconsideration::ApplyChanges
 //                  NotificationIntrusivenessExtractor
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(NotificationIntrusivenessExtractor, Object, INotificationIntrusivenessExtractor, INotificationSignalExtractor);
+CAR_INTERFACE_IMPL(NotificationIntrusivenessExtractor, Object, INotificationIntrusivenessExtractor, INotificationSignalExtractor);
 
 NotificationIntrusivenessExtractor::NotificationIntrusivenessExtractor()
 {

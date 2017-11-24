@@ -46,7 +46,7 @@ namespace Droid {
 namespace SystemUI {
 namespace Keyguard {
 
-CAR_INTERFACE_IMPL_2(CKeyguardPasswordView::PasswordListener, Object,
+CAR_INTERFACE_IMPL(CKeyguardPasswordView::PasswordListener, Object,
     IOnEditorActionListener, ITextWatcher)
 
 CKeyguardPasswordView::PasswordListener::PasswordListener(

@@ -30,7 +30,7 @@ namespace SQLite {
 
 CAR_OBJECT_IMPL(CShell)
 
-CAR_INTERFACE_IMPL_2(CShell, Object, IShell, ICallback)
+CAR_INTERFACE_IMPL(CShell, Object, IShell, ICallback)
 
 CShell::CShell()
     : mEcho(FALSE)

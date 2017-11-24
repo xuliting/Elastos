@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIInputContextCallbackNative::TAG("CIInputContextCallbackNative");
 
-CAR_INTERFACE_IMPL_2(CIInputContextCallbackNative, Object, IIInputContextCallback, IBinder)
+CAR_INTERFACE_IMPL(CIInputContextCallbackNative, Object, IIInputContextCallback, IBinder)
 
 CAR_OBJECT_IMPL(CIInputContextCallbackNative)
 

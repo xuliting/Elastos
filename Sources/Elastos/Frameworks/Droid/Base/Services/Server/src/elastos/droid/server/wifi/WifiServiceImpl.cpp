@@ -777,7 +777,7 @@ ECode WifiServiceImpl::Multicaster::GetUid(
 const String WifiServiceImpl::TAG("WifiService");
 const Boolean WifiServiceImpl::DBG = true;
 
-CAR_INTERFACE_IMPL_2(WifiServiceImpl, Object, IIWifiManager, IBinder);
+CAR_INTERFACE_IMPL(WifiServiceImpl, Object, IIWifiManager, IBinder);
 
 WifiServiceImpl::WifiServiceImpl()
 {

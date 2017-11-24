@@ -39,7 +39,7 @@ static const Boolean DEBUG = FALSE;
 //===============================================================================
 // CursorAdapter
 //===============================================================================
-CAR_INTERFACE_IMPL_3(CursorAdapter, BaseAdapter, ICursorAdapter, IFilterable, ICursorFilterClient);
+CAR_INTERFACE_IMPL(CursorAdapter, BaseAdapter, ICursorAdapter, IFilterable, ICursorFilterClient);
 
 CursorAdapter::CursorAdapter()
     : mDataValid(FALSE)

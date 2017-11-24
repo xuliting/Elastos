@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CDataSetObserverNative::TAG("CDataSetObserverNative");
 
-CAR_INTERFACE_IMPL_2(CDataSetObserverNative, Object, IDataSetObserver, IBinder)
+CAR_INTERFACE_IMPL(CDataSetObserverNative, Object, IDataSetObserver, IBinder)
 
 CAR_OBJECT_IMPL(CDataSetObserverNative)
 

@@ -21,7 +21,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CPBEParameterSpec)
-CAR_INTERFACE_IMPL_2(CPBEParameterSpec, Object, IPBEParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(CPBEParameterSpec, Object, IPBEParameterSpec, IAlgorithmParameterSpec)
 
 CPBEParameterSpec::CPBEParameterSpec()
     : mIterationCount(0)

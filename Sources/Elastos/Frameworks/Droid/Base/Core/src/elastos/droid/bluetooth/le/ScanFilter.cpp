@@ -199,7 +199,7 @@ ECode ScanFilter::Builder::Build(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(ScanFilter, Object, IScanFilter, IParcelable);
+CAR_INTERFACE_IMPL(ScanFilter, Object, IScanFilter, IParcelable);
 
 ScanFilter::ScanFilter()
 {

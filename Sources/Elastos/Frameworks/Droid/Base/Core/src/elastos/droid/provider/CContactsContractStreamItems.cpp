@@ -27,7 +27,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractStreamItems)
 
-CAR_INTERFACE_IMPL_3(CContactsContractStreamItems, Singleton
+CAR_INTERFACE_IMPL(CContactsContractStreamItems, Singleton
     , IContactsContractStreamItems
     , IBaseColumns
     , IContactsContractStreamItemsColumns)

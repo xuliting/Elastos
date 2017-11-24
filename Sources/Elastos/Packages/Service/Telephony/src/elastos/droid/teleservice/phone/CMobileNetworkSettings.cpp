@@ -72,7 +72,7 @@ namespace Droid {
 namespace TeleService {
 namespace Phone {
 
-CAR_INTERFACE_IMPL_3(CMobileNetworkSettings::InnerListener, Object,
+CAR_INTERFACE_IMPL(CMobileNetworkSettings::InnerListener, Object,
     IDialogInterfaceOnClickListener,
     IDialogInterfaceOnDismissListener,
     IPreferenceOnPreferenceChangeListener)

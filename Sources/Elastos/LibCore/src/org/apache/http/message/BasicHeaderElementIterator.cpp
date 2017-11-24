@@ -31,7 +31,7 @@ namespace Apache {
 namespace Http {
 namespace Message {
 
-CAR_INTERFACE_IMPL_2(BasicHeaderElementIterator, Object, IHeaderElementIterator, IIterator)
+CAR_INTERFACE_IMPL(BasicHeaderElementIterator, Object, IHeaderElementIterator, IIterator)
 
 ECode BasicHeaderElementIterator::Init(
     /* [in] */ IHeaderIterator* headerIterator,

@@ -48,7 +48,7 @@ namespace TextService {
 Int32 CTextInfo::DEFAULT_COOKIE = 0;
 Int32 CTextInfo::DEFAULT_SEQUENCE_NUMBER = 0;
 
-CAR_INTERFACE_IMPL_2(CTextInfo, Object, ITextInfo, IParcelable)
+CAR_INTERFACE_IMPL(CTextInfo, Object, ITextInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CTextInfo)
 

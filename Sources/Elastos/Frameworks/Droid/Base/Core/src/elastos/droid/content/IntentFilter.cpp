@@ -51,7 +51,7 @@ const String IntentFilter::CAT_STR("cat");
 const String IntentFilter::NAME_STR("name");
 const String IntentFilter::ACTION_STR("action");
 
-CAR_INTERFACE_IMPL_2(IntentFilter, Object, IIntentFilter, IParcelable)
+CAR_INTERFACE_IMPL(IntentFilter, Object, IIntentFilter, IParcelable)
 
 IntentFilter::IntentFilter()
     : mPriority(0)

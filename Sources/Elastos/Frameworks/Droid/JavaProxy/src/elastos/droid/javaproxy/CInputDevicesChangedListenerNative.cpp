@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CInputDevicesChangedListenerNative::TAG("CInputDevicesChangedListenerNative");
 
-CAR_INTERFACE_IMPL_2(CInputDevicesChangedListenerNative, Object, IInputDevicesChangedListener, IBinder)
+CAR_INTERFACE_IMPL(CInputDevicesChangedListenerNative, Object, IInputDevicesChangedListener, IBinder)
 
 CAR_OBJECT_IMPL(CInputDevicesChangedListenerNative)
 

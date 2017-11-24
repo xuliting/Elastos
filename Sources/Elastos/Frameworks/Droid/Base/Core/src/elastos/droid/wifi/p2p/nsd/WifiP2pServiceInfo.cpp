@@ -30,7 +30,7 @@ namespace Wifi {
 namespace P2p {
 namespace Nsd {
 
-CAR_INTERFACE_IMPL_2(WifiP2pServiceInfo, Object, IWifiP2pServiceInfo, IParcelable)
+CAR_INTERFACE_IMPL(WifiP2pServiceInfo, Object, IWifiP2pServiceInfo, IParcelable)
 
 ECode WifiP2pServiceInfo::constructor()
 {

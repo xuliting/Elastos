@@ -23,7 +23,7 @@ namespace Http {
 namespace Conn {
 namespace Params {
 
-CAR_INTERFACE_IMPL_2(CConnRouteParams, Singleton, IConnRouteParams, IConnRoutePNames)
+CAR_INTERFACE_IMPL(CConnRouteParams, Singleton, IConnRouteParams, IConnRoutePNames)
 
 CAR_SINGLETON_IMPL(CConnRouteParams)
 

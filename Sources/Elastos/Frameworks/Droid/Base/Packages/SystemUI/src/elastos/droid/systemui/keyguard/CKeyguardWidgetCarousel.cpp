@@ -42,7 +42,7 @@ namespace Droid {
 namespace SystemUI {
 namespace Keyguard {
 
-CAR_INTERFACE_IMPL_2(CKeyguardWidgetCarousel::MyInterpolator, Object, IInterpolator,
+CAR_INTERFACE_IMPL(CKeyguardWidgetCarousel::MyInterpolator, Object, IInterpolator,
         ITimeInterpolator)
 
 CKeyguardWidgetCarousel::MyInterpolator::MyInterpolator()
@@ -70,7 +70,7 @@ ECode CKeyguardWidgetCarousel::MyInterpolator::HasNativeInterpolator(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CKeyguardWidgetCarousel::MyInterpolator2, Object, IInterpolator,
+CAR_INTERFACE_IMPL(CKeyguardWidgetCarousel::MyInterpolator2, Object, IInterpolator,
         ITimeInterpolator)
 
 CKeyguardWidgetCarousel::MyInterpolator2::MyInterpolator2()

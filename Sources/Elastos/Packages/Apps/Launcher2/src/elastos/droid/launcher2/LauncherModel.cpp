@@ -2347,7 +2347,7 @@ const Int32 LauncherModel::PackageUpdatedTask::OP_UPDATE = 2;
 const Int32 LauncherModel::PackageUpdatedTask::OP_REMOVE = 3; // uninstlled
 const Int32 LauncherModel::PackageUpdatedTask::OP_UNAVAILABLE = 4; // external media unmounted
 
-CAR_INTERFACE_IMPL_2(LauncherModel::PackageUpdatedTask, Object,
+CAR_INTERFACE_IMPL(LauncherModel::PackageUpdatedTask, Object,
         ILauncherModelPackageUpdatedTask, IRunnable);
 
 LauncherModel::PackageUpdatedTask::PackageUpdatedTask(

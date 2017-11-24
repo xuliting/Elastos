@@ -52,7 +52,7 @@ static const String TAG("CKeyButtonRipple");
 //==========================================================
 // CKeyButtonRipple::LogInterpolator
 //==========================================================
-CAR_INTERFACE_IMPL_2(CKeyButtonRipple::LogInterpolator, Object, IInterpolator, ITimeInterpolator)
+CAR_INTERFACE_IMPL(CKeyButtonRipple::LogInterpolator, Object, IInterpolator, ITimeInterpolator)
 
 ECode CKeyButtonRipple::LogInterpolator::GetInterpolation(
     /* [in] */ Float input,

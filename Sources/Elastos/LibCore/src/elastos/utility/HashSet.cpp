@@ -26,7 +26,7 @@ using Elastos::IO::EIID_ISerializable;
 namespace Elastos {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_3(HashSet, AbstractSet, IHashSet, ICloneable, ISerializable)
+CAR_INTERFACE_IMPL(HashSet, AbstractSet, IHashSet, ICloneable, ISerializable)
 
 ECode HashSet::constructor()
 {

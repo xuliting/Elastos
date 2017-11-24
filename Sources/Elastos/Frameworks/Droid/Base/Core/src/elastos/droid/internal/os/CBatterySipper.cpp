@@ -25,7 +25,7 @@ namespace Droid {
 namespace Internal {
 namespace Os {
 
-CAR_INTERFACE_IMPL_2(CBatterySipper, Object, IBatterySipper, IComparable)
+CAR_INTERFACE_IMPL(CBatterySipper, Object, IBatterySipper, IComparable)
 
 CAR_OBJECT_IMPL(CBatterySipper)
 

@@ -1167,7 +1167,7 @@ ECode MediaProvider::DatabaseHelper::OnOpen(
 //================================================================================
 //                      MediaProvider::ScannerClient
 //================================================================================
-CAR_INTERFACE_IMPL_2(MediaProvider::ScannerClient, Object, IMediaScannerConnectionClient, IOnScanCompletedListener)//
+CAR_INTERFACE_IMPL(MediaProvider::ScannerClient, Object, IMediaScannerConnectionClient, IOnScanCompletedListener)//
 
 MediaProvider::ScannerClient::ScannerClient()
 {}

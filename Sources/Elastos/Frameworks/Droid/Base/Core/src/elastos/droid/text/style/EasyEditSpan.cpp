@@ -25,7 +25,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_3(EasyEditSpan, Object, IEasyEditSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(EasyEditSpan, Object, IEasyEditSpan, IParcelableSpan, IParcelable)
 
 EasyEditSpan::EasyEditSpan()
     : mDeleteEnabled(TRUE)

@@ -84,7 +84,7 @@ ECode PreferenceFragment::RequestFocus::Run()
 // PreferenceFragment::InnerListener
 /////////////////////////////////////////////////////
 
-CAR_INTERFACE_IMPL_2(PreferenceFragment::InnerListener, Object, \
+CAR_INTERFACE_IMPL(PreferenceFragment::InnerListener, Object, \
     IViewOnKeyListener, IPreferenceManagerOnPreferenceTreeClickListener)
 
 PreferenceFragment::InnerListener::InnerListener(

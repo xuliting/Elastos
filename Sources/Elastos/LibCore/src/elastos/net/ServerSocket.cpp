@@ -49,7 +49,7 @@ Object ServerSocket::sLock;
 
 const Int32 ServerSocket::DEFAULT_BACKLOG = 50;
 
-CAR_INTERFACE_IMPL_2(ServerSocket, Object, IServerSocket, ICloseable)
+CAR_INTERFACE_IMPL(ServerSocket, Object, IServerSocket, ICloseable)
 
 ServerSocket::ServerSocket()
     : mIsBound(FALSE)

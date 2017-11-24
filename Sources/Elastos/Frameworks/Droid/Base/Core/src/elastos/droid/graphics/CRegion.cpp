@@ -34,7 +34,7 @@ AutoPtr<Pools::SynchronizedPool<IRegion> > CRegion::sPool =
         new Pools::SynchronizedPool<IRegion>(MAX_POOL_SIZE);
 
 CAR_OBJECT_IMPL(CRegion);
-CAR_INTERFACE_IMPL_2(CRegion, Object, IRegion, IParcelable);
+CAR_INTERFACE_IMPL(CRegion, Object, IRegion, IParcelable);
 ECode CRegion::constructor()
 {
     mNativeRegion = NativeConstructor();

@@ -33,7 +33,7 @@ namespace InCallUI {
 
 const String ProximitySensor::TAG("ProximitySensor");
 
-CAR_INTERFACE_IMPL_3(ProximitySensor, Object
+CAR_INTERFACE_IMPL(ProximitySensor, Object
         , IOrientationListener
         , IInCallStateListener
         , IAudioModeListener)

@@ -127,7 +127,7 @@ const Int32 MarshalQueryableEnum::MARSHALQUERYABLEENUM_UINT8_MASK = UINT8_MAX;
 
 static AutoPtr<IHashMap> sEnumValues = initEnumValues();
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableEnum, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableEnum, Object,
         IMarshalQueryableEnum, IMarshalQueryable)
 
 ECode MarshalQueryableEnum::CreateMarshaler(

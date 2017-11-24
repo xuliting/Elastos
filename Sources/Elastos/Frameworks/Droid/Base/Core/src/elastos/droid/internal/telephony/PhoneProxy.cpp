@@ -73,7 +73,7 @@ const Int32 PhoneProxy::EVENT_SIM_RECORDS_LOADED = 6;
 
 const String PhoneProxy::LOGTAG("PhoneProxy");
 
-CAR_INTERFACE_IMPL_2(PhoneProxy, Handler, IPhone, IPhoneProxy)
+CAR_INTERFACE_IMPL(PhoneProxy, Handler, IPhone, IPhoneProxy)
 
 PhoneProxy::PhoneProxy()
     : mResetModemOnRadioTechnologyChange(FALSE)

@@ -34,7 +34,7 @@ namespace Utility {
 
 const Int32 CInt64Array::MIN_CAPACITY_INCREMENT = 12;
 
-CAR_INTERFACE_IMPL_2(CInt64Array, Object, IInt64Array, ICloneable)
+CAR_INTERFACE_IMPL(CInt64Array, Object, IInt64Array, ICloneable)
 
 CAR_OBJECT_IMPL(CInt64Array)
 

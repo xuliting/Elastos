@@ -64,7 +64,7 @@ namespace App {
 // CBackStackState
 //=====================================================================
 
-CAR_INTERFACE_IMPL_2(CBackStackState, Object, IBackStackState, IParcelable)
+CAR_INTERFACE_IMPL(CBackStackState, Object, IBackStackState, IParcelable)
 
 CAR_OBJECT_IMPL(CBackStackState)
 
@@ -256,7 +256,7 @@ ECode CBackStackState::ReadFromParcel(
 //===================================================================
 // BackStackRecord
 //===================================================================
-CAR_INTERFACE_IMPL_3(BackStackRecord, FragmentTransaction, IBackStackRecord, IRunnable, IFragmentManagerBackStackEntry)
+CAR_INTERFACE_IMPL(BackStackRecord, FragmentTransaction, IBackStackRecord, IRunnable, IFragmentManagerBackStackEntry)
 
 const String BackStackRecord::TAG("BackStackRecord");
 const Int32 BackStackRecord::OP_NULL = 0;

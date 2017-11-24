@@ -25,7 +25,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Utils {
 
-CAR_INTERFACE_IMPL_2(LongParcelable, Object, ILongParcelable, IParcelable)
+CAR_INTERFACE_IMPL(LongParcelable, Object, ILongParcelable, IParcelable)
 
 ECode LongParcelable::constructor()
 {

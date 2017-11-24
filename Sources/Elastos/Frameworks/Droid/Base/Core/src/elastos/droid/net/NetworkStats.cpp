@@ -49,7 +49,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(NetworkStats, Object, IParcelable, INetworkStats)
+CAR_INTERFACE_IMPL(NetworkStats, Object, IParcelable, INetworkStats)
 
 const String NetworkStats::IFACE_ALL(NULL);
 

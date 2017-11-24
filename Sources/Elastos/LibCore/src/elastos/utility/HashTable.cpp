@@ -791,7 +791,7 @@ ECode HashTable::_EntrySet::ToArray(
 //       HashTable
 //==========================================================
 
-CAR_INTERFACE_IMPL_5(HashTable, Object, IHashTable, IDictionary, IMap, ICloneable, ISerializable)
+CAR_INTERFACE_IMPL(HashTable, Object, IHashTable, IDictionary, IMap, ICloneable, ISerializable)
 
 const Int32 HashTable::MINIMUM_CAPACITY;
 

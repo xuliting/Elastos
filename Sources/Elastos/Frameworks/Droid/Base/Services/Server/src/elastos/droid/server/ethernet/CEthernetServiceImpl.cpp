@@ -39,7 +39,7 @@ namespace Ethernet {
 
 const String CEthernetServiceImpl::TAG("CEthernetServiceImpl");
 
-CAR_INTERFACE_IMPL_2(CEthernetServiceImpl, Object, IIEthernetManager, IBinder)
+CAR_INTERFACE_IMPL(CEthernetServiceImpl, Object, IIEthernetManager, IBinder)
 
 CAR_OBJECT_IMPL(CEthernetServiceImpl)
 

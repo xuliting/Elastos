@@ -20,7 +20,7 @@ namespace Elastos {
 namespace IO {
 namespace Channels {
 
-CAR_INTERFACE_IMPL_3(SinkChannel, AbstractSelectableChannel, ISinkChannel, IGatheringByteChannel, IWritableByteChannel)
+CAR_INTERFACE_IMPL(SinkChannel, AbstractSelectableChannel, ISinkChannel, IGatheringByteChannel, IWritableByteChannel)
 
 SinkChannel::SinkChannel()
 {}

@@ -120,7 +120,7 @@ ECode QSFooter::QSFooterClickListener::OnClick(
 
 
 const Boolean QSFooter::DEBUG = Logger::IsLoggable(TAG, Logger::___DEBUG);
-CAR_INTERFACE_IMPL_2(QSFooter, Object, IViewOnClickListener, IDialogInterfaceOnClickListener);
+CAR_INTERFACE_IMPL(QSFooter, Object, IViewOnClickListener, IDialogInterfaceOnClickListener);
 QSFooter::QSFooter(
     /* [in] */ IQSPanel* qsPanel,
     /* [in] */ IContext* context)

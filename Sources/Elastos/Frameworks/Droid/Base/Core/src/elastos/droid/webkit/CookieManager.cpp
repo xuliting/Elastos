@@ -27,7 +27,7 @@ namespace Webkit {
 
 Object CookieManager::sLock;
 
-CAR_INTERFACE_IMPL_2(CookieManager, Object, ICookieManager, ICloneable);
+CAR_INTERFACE_IMPL(CookieManager, Object, ICookieManager, ICloneable);
 
 /**
  * @hide Only for use by WebViewProvider implementations

@@ -73,7 +73,7 @@ ECode CUpdateLockService::LockWatcher::Released()
     return mOwner->SendLockChangedBroadcast(TRUE);
 }
 
-CAR_INTERFACE_IMPL_2(CUpdateLockService, Object, IIUpdateLock, IBinder)
+CAR_INTERFACE_IMPL(CUpdateLockService, Object, IIUpdateLock, IBinder)
 
 CAR_OBJECT_IMPL(CUpdateLockService)
 

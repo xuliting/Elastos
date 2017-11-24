@@ -159,7 +159,7 @@ const AutoPtr<ILocationRequest> CLocationManagerService::DEFAULT_LOCATION_REQUES
 // CLocationManagerService::AppOpsManagerOnOpChangedInternalListener
 //=================================================================
 
-CAR_INTERFACE_IMPL_2(CLocationManagerService::AppOpsManagerOnOpChangedInternalListener, Object,
+CAR_INTERFACE_IMPL(CLocationManagerService::AppOpsManagerOnOpChangedInternalListener, Object,
     IAppOpsManagerOnOpChangedInternalListener, IAppOpsManagerOnOpChangedListener)
 
 CLocationManagerService::AppOpsManagerOnOpChangedInternalListener::AppOpsManagerOnOpChangedInternalListener(
@@ -412,7 +412,7 @@ ECode CLocationManagerService::UpdateRecord::ToString(
 //=================================================================
 // CLocationManagerService::Receiver
 //=================================================================
-CAR_INTERFACE_IMPL_2(CLocationManagerService::Receiver, Object, IProxyDeathRecipient, IPendingIntentOnFinished)
+CAR_INTERFACE_IMPL(CLocationManagerService::Receiver, Object, IProxyDeathRecipient, IPendingIntentOnFinished)
 
 CLocationManagerService::Receiver::Receiver(
     /* [in] */ IILocationListener* listener,
@@ -813,7 +813,7 @@ void CLocationManagerService::Receiver::ClearPendingBroadcastsLocked()
 //=================================================================
 CAR_OBJECT_IMPL(CLocationManagerService)
 
-CAR_INTERFACE_IMPL_2(CLocationManagerService, Object, IILocationManager, IBinder)
+CAR_INTERFACE_IMPL(CLocationManagerService, Object, IILocationManager, IBinder)
 
 CLocationManagerService::CLocationManagerService()
     : mLocationFudger(NULL)

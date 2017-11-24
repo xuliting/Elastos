@@ -146,7 +146,7 @@ void CDownloadThread::DownloadInfoDelta::WriteToDatabase()
 
 CAR_OBJECT_IMPL(CNetworkPolicyListener)
 
-CAR_INTERFACE_IMPL_2(CDownloadThread::NetworkPolicyListener, Object, IINetworkPolicyListener, IBinder)
+CAR_INTERFACE_IMPL(CDownloadThread::NetworkPolicyListener, Object, IINetworkPolicyListener, IBinder)
 
 ECode CDownloadThread::NetworkPolicyListener::constructor(
     /* [in] */ IDownloadThread* host)
@@ -199,7 +199,7 @@ Int32 CDownloadThread::DEFAULT_TIMEOUT = (Int32) (20 * IDateUtils::SECOND_IN_MIL
 
 CAR_OBJECT_IMPL(CDownloadThread)
 
-CAR_INTERFACE_IMPL_2(CDownloadThread, Object, IRunnable, IDownloadThread)
+CAR_INTERFACE_IMPL(CDownloadThread, Object, IRunnable, IDownloadThread)
 
 CDownloadThread::CDownloadThread()
     : mMadeProgress(FALSE)

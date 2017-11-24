@@ -67,7 +67,7 @@ ECode CWifiP2pGroupList::GroupLruCache::EntryRemoved(
 
 const Int32 CWifiP2pGroupList::CREDENTIAL_MAX_NUM = 32;
 
-CAR_INTERFACE_IMPL_2(CWifiP2pGroupList, Object, IWifiP2pGroupList, IParcelable)
+CAR_INTERFACE_IMPL(CWifiP2pGroupList, Object, IWifiP2pGroupList, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiP2pGroupList)
 

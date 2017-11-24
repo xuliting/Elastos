@@ -37,7 +37,7 @@ namespace Elastos {
 namespace Droid {
 namespace AppWidget {
 
-CAR_INTERFACE_IMPL_2(AppWidgetProviderInfo, Object, IAppWidgetProviderInfo, IParcelable);
+CAR_INTERFACE_IMPL(AppWidgetProviderInfo, Object, IAppWidgetProviderInfo, IParcelable);
 
 AppWidgetProviderInfo::AppWidgetProviderInfo()
     : mMinWidth(0)

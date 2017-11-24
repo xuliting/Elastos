@@ -157,7 +157,7 @@ String CInputMethodSubtype::EXTRA_VALUE_PAIR_SEPARATOR(",");
 String CInputMethodSubtype::EXTRA_VALUE_KEY_VALUE_SEPARATOR("=");
 String CInputMethodSubtype::EXTRA_KEY_UNTRANSLATABLE_STRING_IN_SUBTYPE_NAME("UntranslatableReplacementStringInSubtypeName");
 
-CAR_INTERFACE_IMPL_2(CInputMethodSubtype, Object, IInputMethodSubtype, IParcelable)
+CAR_INTERFACE_IMPL(CInputMethodSubtype, Object, IInputMethodSubtype, IParcelable)
 
 CAR_OBJECT_IMPL(CInputMethodSubtype)
 

@@ -133,7 +133,7 @@ ECode VoiceInteractor::HandlerCallerCallback::ExecuteMessage(
 //=====================================================================================
 // VoiceInteractor::VoiceInteractorCallback
 //=====================================================================================
-CAR_INTERFACE_IMPL_2(VoiceInteractor::VoiceInteractorCallback, Object, IIVoiceInteractorCallback, IBinder);
+CAR_INTERFACE_IMPL(VoiceInteractor::VoiceInteractorCallback, Object, IIVoiceInteractorCallback, IBinder);
 
 VoiceInteractor::VoiceInteractorCallback::VoiceInteractorCallback()
 {}

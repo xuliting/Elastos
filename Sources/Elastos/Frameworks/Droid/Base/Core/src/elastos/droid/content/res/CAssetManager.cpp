@@ -263,7 +263,7 @@ const Boolean CAssetManager::LocalLOGV = FALSE;
 const Boolean CAssetManager::DEBUG_REFS = TRUE;
 INIT_PROI_3 Object CAssetManager::sSync;
 
-CAR_INTERFACE_IMPL_2(CAssetManager, Object, IAssetManager, ICloseable)
+CAR_INTERFACE_IMPL(CAssetManager, Object, IAssetManager, ICloseable)
 
 CAR_OBJECT_IMPL(CAssetManager)
 

@@ -361,7 +361,7 @@ ECode CDropBoxManagerService::MyContentObserver::OnChange(
 //====================================================================
 // CDropBoxManagerService
 //====================================================================
-CAR_INTERFACE_IMPL_2(CDropBoxManagerService, Object, IIDropBoxManagerService, IBinder)
+CAR_INTERFACE_IMPL(CDropBoxManagerService, Object, IIDropBoxManagerService, IBinder)
 
 CAR_OBJECT_IMPL(CDropBoxManagerService)
 

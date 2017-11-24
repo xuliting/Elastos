@@ -25,7 +25,7 @@ namespace Droid {
 namespace Internal {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(AlertActivity, Activity, IAlertActivity, IDialogInterface)
+CAR_INTERFACE_IMPL(AlertActivity, Activity, IAlertActivity, IDialogInterface)
 
 ECode AlertActivity::OnCreate(
     /* [in] */ IBundle* savedInstanceState)

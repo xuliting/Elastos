@@ -36,7 +36,7 @@ static AutoPtr<ISyncResult> InitALREADY_IN_PROGRESS()
 
 const AutoPtr<ISyncResult> CSyncResult::ALREADY_IN_PROGRESS = InitALREADY_IN_PROGRESS();
 
-CAR_INTERFACE_IMPL_2(CSyncResult, Object, ISyncResult, IParcelable)
+CAR_INTERFACE_IMPL(CSyncResult, Object, ISyncResult, IParcelable)
 
 CAR_OBJECT_IMPL(CSyncResult)
 

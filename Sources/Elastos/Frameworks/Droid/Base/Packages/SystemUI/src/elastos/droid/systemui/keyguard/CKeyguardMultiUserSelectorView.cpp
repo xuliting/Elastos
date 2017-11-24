@@ -82,7 +82,7 @@ const Int32 CKeyguardMultiUserSelectorView::FADE_OUT_ANIMATION_DURATION = 100;
 
 CAR_OBJECT_IMPL(CKeyguardMultiUserSelectorView)
 
-CAR_INTERFACE_IMPL_2(CKeyguardMultiUserSelectorView, FrameLayout,
+CAR_INTERFACE_IMPL(CKeyguardMultiUserSelectorView, FrameLayout,
         IKeyguardMultiUserSelectorView, IViewOnClickListener)
 
 CKeyguardMultiUserSelectorView::CKeyguardMultiUserSelectorView()

@@ -24,7 +24,7 @@ namespace Elastos {
 namespace IO {
 namespace Channels {
 
-CAR_INTERFACE_IMPL_4(DatagramChannel, Object, IDatagramChannel, IByteChannel, IScatteringByteChannel, IGatheringByteChannel)
+CAR_INTERFACE_IMPL(DatagramChannel, Object, IDatagramChannel, IByteChannel, IScatteringByteChannel, IGatheringByteChannel)
 
 DatagramChannel::DatagramChannel()
 {}

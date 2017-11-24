@@ -24,7 +24,7 @@ namespace Droid {
 namespace Server {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(BaseNetworkObserver, Object, IINetworkManagementEventObserver, IBinder)
+CAR_INTERFACE_IMPL(BaseNetworkObserver, Object, IINetworkManagementEventObserver, IBinder)
 
 BaseNetworkObserver::BaseNetworkObserver()
 {

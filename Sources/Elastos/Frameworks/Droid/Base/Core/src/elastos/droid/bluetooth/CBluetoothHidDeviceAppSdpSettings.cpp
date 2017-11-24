@@ -26,7 +26,7 @@ namespace Bluetooth {
 
 CAR_OBJECT_IMPL(CBluetoothHidDeviceAppSdpSettings)
 
-CAR_INTERFACE_IMPL_2(CBluetoothHidDeviceAppSdpSettings, Object, IBluetoothHidDeviceAppSdpSettings, IParcelable)
+CAR_INTERFACE_IMPL(CBluetoothHidDeviceAppSdpSettings, Object, IBluetoothHidDeviceAppSdpSettings, IParcelable)
 
 CBluetoothHidDeviceAppSdpSettings::CBluetoothHidDeviceAppSdpSettings()
 {}

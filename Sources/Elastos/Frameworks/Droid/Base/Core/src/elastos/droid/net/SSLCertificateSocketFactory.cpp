@@ -72,7 +72,7 @@ namespace Net {
 //==========================================================
 // SSLCertificateSocketFactory::InnerSub_TrustManager
 //==========================================================
-CAR_INTERFACE_IMPL_2(SSLCertificateSocketFactory::InnerSub_TrustManager, Object, ITrustManager, IX509TrustManager)
+CAR_INTERFACE_IMPL(SSLCertificateSocketFactory::InnerSub_TrustManager, Object, ITrustManager, IX509TrustManager)
 
 ECode SSLCertificateSocketFactory::InnerSub_TrustManager::GetAcceptedIssuers(
     /* [out, callee] */ ArrayOf<IX509Certificate*>** result)

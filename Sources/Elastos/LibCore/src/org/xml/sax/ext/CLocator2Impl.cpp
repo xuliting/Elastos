@@ -21,7 +21,7 @@ namespace Xml {
 namespace Sax {
 namespace Ext {
 
-CAR_INTERFACE_IMPL_2(CLocator2Impl, LocatorImpl, ILocator2, ILocator2Impl)
+CAR_INTERFACE_IMPL(CLocator2Impl, LocatorImpl, ILocator2, ILocator2Impl)
 CAR_OBJECT_IMPL(CLocator2Impl)
 
 ECode CLocator2Impl::constructor()

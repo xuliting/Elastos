@@ -227,7 +227,7 @@ ECode SyncManager::SyncAlarmIntentReceiver::OnReceive(
 // SyncManager::ActiveSyncContext
 //===============================================================================
 
-CAR_INTERFACE_IMPL_5(SyncManager::ActiveSyncContext, Object, IActiveSyncContext, \
+CAR_INTERFACE_IMPL(SyncManager::ActiveSyncContext, Object, IActiveSyncContext, \
     IISyncContext, IBinder, IServiceConnection, IProxyDeathRecipient)
 
 SyncManager::ActiveSyncContext::ActiveSyncContext()
@@ -2273,7 +2273,7 @@ ECode SyncManager::MyRegisteredServicesCacheListener::OnServiceChanged(
 //==========================================================================================
 // SyncManager::SyncStatusObserver
 //==========================================================================================
-CAR_INTERFACE_IMPL_2(SyncManager::SyncStatusObserver, Object, IISyncStatusObserver, IBinder)
+CAR_INTERFACE_IMPL(SyncManager::SyncStatusObserver, Object, IISyncStatusObserver, IBinder)
 
 ECode SyncManager::SyncStatusObserver::constructor(
     /* [in] */ ISyncManager* host)

@@ -28,7 +28,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(NetworkKey, Object, IParcelable, INetworkKey)
+CAR_INTERFACE_IMPL(NetworkKey, Object, IParcelable, INetworkKey)
 
 ECode NetworkKey::constructor()
 {

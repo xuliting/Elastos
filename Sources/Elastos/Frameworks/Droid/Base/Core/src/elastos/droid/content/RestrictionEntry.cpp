@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Droid {
 namespace Content {
 
-CAR_INTERFACE_IMPL_2(RestrictionEntry, Object, IRestrictionEntry, IParcelable)
+CAR_INTERFACE_IMPL(RestrictionEntry, Object, IRestrictionEntry, IParcelable)
 
 RestrictionEntry::RestrictionEntry()
     : mType(0)

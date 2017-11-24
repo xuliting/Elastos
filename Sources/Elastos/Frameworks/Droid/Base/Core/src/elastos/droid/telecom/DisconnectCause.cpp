@@ -31,7 +31,7 @@ namespace Telecom {
 //===============================================================
 // DisconnectCause::
 //===============================================================
-CAR_INTERFACE_IMPL_2(DisconnectCause, Object, IDisconnectCause, IParcelable)
+CAR_INTERFACE_IMPL(DisconnectCause, Object, IDisconnectCause, IParcelable)
 
 ECode DisconnectCause::constructor()
 {

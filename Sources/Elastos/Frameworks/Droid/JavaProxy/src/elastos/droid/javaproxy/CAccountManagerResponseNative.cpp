@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CAccountManagerResponseNative::TAG("CAccountManagerResponseNative");
 
-CAR_INTERFACE_IMPL_2(CAccountManagerResponseNative, Object, IAccountManagerResponse, IBinder)
+CAR_INTERFACE_IMPL(CAccountManagerResponseNative, Object, IAccountManagerResponse, IBinder)
 
 CAR_OBJECT_IMPL(CAccountManagerResponseNative)
 

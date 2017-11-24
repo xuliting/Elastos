@@ -60,7 +60,7 @@ const AutoPtr<ArrayOf<String> > CFastXmlSerializer::ESCAPE_TABLE = InitESCAPE_TA
 const Int32 CFastXmlSerializer::BUFFER_LEN = 8192;
 String CFastXmlSerializer::sSpace("                                                              ");
 
-CAR_INTERFACE_IMPL_2(CFastXmlSerializer, Object, IFastXmlSerializer, IXmlSerializer)
+CAR_INTERFACE_IMPL(CFastXmlSerializer, Object, IFastXmlSerializer, IXmlSerializer)
 
 CAR_OBJECT_IMPL(CFastXmlSerializer)
 

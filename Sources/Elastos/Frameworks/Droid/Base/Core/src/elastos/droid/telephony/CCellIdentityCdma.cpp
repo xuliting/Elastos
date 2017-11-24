@@ -29,7 +29,7 @@ namespace Telephony {
 const String CCellIdentityCdma::TAG("CCellIdentityCdma");
 const Boolean CCellIdentityCdma::DBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(CCellIdentityCdma, Object, ICellIdentityCdma, IParcelable)
+CAR_INTERFACE_IMPL(CCellIdentityCdma, Object, ICellIdentityCdma, IParcelable)
 
 CAR_OBJECT_IMPL(CCellIdentityCdma)
 

@@ -95,7 +95,7 @@ ECode WifiTile::WifiDetailAdapter::InnerCallback::OnDetailItemDisconnect(
     return mHost->OnDetailItemDisconnect(item);
 }
 
-CAR_INTERFACE_IMPL_2(WifiTile::WifiDetailAdapter, Object,
+CAR_INTERFACE_IMPL(WifiTile::WifiDetailAdapter, Object,
     IQSTileDetailAdapter, INetworkControllerAccessPointCallback);
 
 WifiTile::WifiDetailAdapter::WifiDetailAdapter(

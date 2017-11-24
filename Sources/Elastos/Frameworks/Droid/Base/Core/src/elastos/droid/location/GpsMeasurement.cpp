@@ -47,7 +47,7 @@ const Int32 GpsMeasurement::HAS_TIME_FROM_LAST_BIT = 1 << 14;
 const Int32 GpsMeasurement::HAS_DOPPLER_SHIFT = 1 << 15;
 const Int32 GpsMeasurement::HAS_DOPPLER_SHIFT_UNCERTAINTY = 1 << 16;
 
-CAR_INTERFACE_IMPL_2(GpsMeasurement, Object, IGpsMeasurement, IParcelable)
+CAR_INTERFACE_IMPL(GpsMeasurement, Object, IGpsMeasurement, IParcelable)
 
 GpsMeasurement::GpsMeasurement()
 {

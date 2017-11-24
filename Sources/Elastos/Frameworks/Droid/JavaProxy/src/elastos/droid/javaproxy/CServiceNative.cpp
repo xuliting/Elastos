@@ -29,7 +29,7 @@ namespace JavaProxy {
 
 const String CServiceNative::TAG("CServiceNative");
 
-CAR_INTERFACE_IMPL_2(CServiceNative, Object, IParcelable, IBinder)
+CAR_INTERFACE_IMPL(CServiceNative, Object, IParcelable, IBinder)
 
 CAR_OBJECT_IMPL(CServiceNative)
 

@@ -35,7 +35,7 @@ namespace Conscrypt {
 
 const Int64 OpenSSLDSAPrivateKey::serialVersionUID;
 
-CAR_INTERFACE_IMPL_7(OpenSSLDSAPrivateKey, Object, IOpenSSLDSAPrivateKey,
+CAR_INTERFACE_IMPL(OpenSSLDSAPrivateKey, Object, IOpenSSLDSAPrivateKey,
         IDSAPrivateKey, IDSAKey, IKey, IPrivateKey, IOpenSSLKeyHolder, ISerializable)
 
 OpenSSLDSAPrivateKey::OpenSSLDSAPrivateKey()

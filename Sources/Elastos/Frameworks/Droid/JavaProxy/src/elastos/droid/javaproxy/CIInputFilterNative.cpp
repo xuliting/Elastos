@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIInputFilterNative::TAG("CIInputFilterNative");
 
-CAR_INTERFACE_IMPL_2(CIInputFilterNative, Object, IIInputFilter, IBinder)
+CAR_INTERFACE_IMPL(CIInputFilterNative, Object, IIInputFilter, IBinder)
 
 CAR_OBJECT_IMPL(CIInputFilterNative)
 

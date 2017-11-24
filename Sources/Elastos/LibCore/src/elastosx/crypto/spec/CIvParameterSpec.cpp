@@ -24,7 +24,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CIvParameterSpec)
-CAR_INTERFACE_IMPL_2(CIvParameterSpec, Object, IIvParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(CIvParameterSpec, Object, IIvParameterSpec, IAlgorithmParameterSpec)
 
 CIvParameterSpec::CIvParameterSpec()
 {

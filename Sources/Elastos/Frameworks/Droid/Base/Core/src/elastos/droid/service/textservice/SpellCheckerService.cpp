@@ -208,7 +208,7 @@ ECode SpellCheckerService::Session::GetBundle(
 // SpellCheckerService::InternalISpellCheckerSession
 //===============================
 
-CAR_INTERFACE_IMPL_3(SpellCheckerService::InternalISpellCheckerSession, Object, IInternalISpellCheckerSession, IISpellCheckerSession, IBinder)
+CAR_INTERFACE_IMPL(SpellCheckerService::InternalISpellCheckerSession, Object, IInternalISpellCheckerSession, IISpellCheckerSession, IBinder)
 
 SpellCheckerService::InternalISpellCheckerSession::InternalISpellCheckerSession()
 {
@@ -306,7 +306,7 @@ ECode SpellCheckerService::InternalISpellCheckerSession::GetBundle(
 // SpellCheckerService::SpellCheckerServiceBinder
 //==============================
 
-CAR_INTERFACE_IMPL_3(SpellCheckerService::SpellCheckerServiceBinder, Object, ISpellCheckerServiceBinder, IISpellCheckerService, IBinder)
+CAR_INTERFACE_IMPL(SpellCheckerService::SpellCheckerServiceBinder, Object, ISpellCheckerServiceBinder, IISpellCheckerService, IBinder)
 
 SpellCheckerService::SpellCheckerServiceBinder::SpellCheckerServiceBinder()
 {

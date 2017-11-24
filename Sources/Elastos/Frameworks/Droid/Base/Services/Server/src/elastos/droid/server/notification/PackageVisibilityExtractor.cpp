@@ -28,7 +28,7 @@ namespace Notification {
 const String PackageVisibilityExtractor::TAG("PackageVisibilityExtractor");
 const Boolean PackageVisibilityExtractor::DBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(PackageVisibilityExtractor, Object, IPackageVisibilityExtractor, INotificationSignalExtractor);
+CAR_INTERFACE_IMPL(PackageVisibilityExtractor, Object, IPackageVisibilityExtractor, INotificationSignalExtractor);
 
 PackageVisibilityExtractor::PackageVisibilityExtractor()
 {

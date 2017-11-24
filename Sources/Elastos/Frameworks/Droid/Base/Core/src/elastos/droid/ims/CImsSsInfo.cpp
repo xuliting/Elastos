@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace Ims {
 
-CAR_INTERFACE_IMPL_2(CImsSsInfo, Object, IImsSsInfo, IParcelable)
+CAR_INTERFACE_IMPL(CImsSsInfo, Object, IImsSsInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CImsSsInfo)
 

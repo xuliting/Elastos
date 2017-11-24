@@ -60,7 +60,7 @@ ECode Image::Plane::GetBuffer(
 //  Image
 //================================================================================
 
-CAR_INTERFACE_IMPL_2(Image, Object, IImage, IAutoCloseable)
+CAR_INTERFACE_IMPL(Image, Object, IImage, IAutoCloseable)
 
 Image::Image()
 {

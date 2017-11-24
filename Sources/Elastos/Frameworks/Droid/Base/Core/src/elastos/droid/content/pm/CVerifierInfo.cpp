@@ -22,7 +22,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(CVerifierInfo, Object, IVerifierInfo, IParcelable)
+CAR_INTERFACE_IMPL(CVerifierInfo, Object, IVerifierInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CVerifierInfo)
 

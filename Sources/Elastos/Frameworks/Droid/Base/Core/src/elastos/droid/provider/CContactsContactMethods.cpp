@@ -45,7 +45,7 @@ namespace Provider {
 
 CAR_OBJECT_IMPL(CContactsContactMethods)
 
-CAR_INTERFACE_IMPL_4(CContactsContactMethods, Object, IContactsContactMethods, IBaseColumns, IContactsContactMethodsColumns, IContactsPeopleColumns)
+CAR_INTERFACE_IMPL(CContactsContactMethods, Object, IContactsContactMethods, IBaseColumns, IContactsContactMethodsColumns, IContactsPeopleColumns)
 
 ECode CContactsContactMethods::GetCONTENT_URI(
     /* [out] */ IUri** uri)

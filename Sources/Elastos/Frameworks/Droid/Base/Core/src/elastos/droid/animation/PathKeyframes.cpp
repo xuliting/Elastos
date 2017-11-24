@@ -32,7 +32,7 @@ namespace Elastos {
 namespace Droid {
 namespace Animation {
 
-CAR_INTERFACE_IMPL_2(PathKeyframes::SimpleKeyframes, Object, IKeyframes, ICloneable);
+CAR_INTERFACE_IMPL(PathKeyframes::SimpleKeyframes, Object, IKeyframes, ICloneable);
 PathKeyframes::SimpleKeyframes::~SimpleKeyframes()
 {
 }
@@ -171,7 +171,7 @@ const Int32 PathKeyframes::Y_OFFSET = 2;
 const Int32 PathKeyframes::NUM_COMPONENTS = 3;
 AutoPtr<ArrayOf<IKeyframe*> > PathKeyframes::EMPTY_KEYFRAMES = ArrayOf<IKeyframe*>::Alloc(0);
 
-CAR_INTERFACE_IMPL_3(PathKeyframes, Object, IKeyframes, IPathKeyframes, ICloneable);
+CAR_INTERFACE_IMPL(PathKeyframes, Object, IKeyframes, IPathKeyframes, ICloneable);
 PathKeyframes::PathKeyframes(
     /* [in] */ IPath* path)
 {

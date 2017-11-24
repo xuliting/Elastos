@@ -31,7 +31,7 @@ namespace Internal {
 namespace Http {
 namespace Multipart {
 
-CAR_INTERFACE_IMPL_2(FilePartSource, Object, IFilePartSource, IPartSource)
+CAR_INTERFACE_IMPL(FilePartSource, Object, IFilePartSource, IPartSource)
 
 ECode FilePartSource::constructor(
     /* [in] */ IFile* file)

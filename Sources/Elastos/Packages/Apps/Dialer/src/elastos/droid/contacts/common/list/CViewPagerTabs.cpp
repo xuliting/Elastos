@@ -147,7 +147,7 @@ CViewPagerTabs::CViewPagerTabs()
     , mSidePadding(0)
 {}
 
-CAR_INTERFACE_IMPL_2(CViewPagerTabs, HorizontalScrollView, IViewPagerTabs, IViewPagerOnPageChangeListener);
+CAR_INTERFACE_IMPL(CViewPagerTabs, HorizontalScrollView, IViewPagerTabs, IViewPagerOnPageChangeListener);
 
 CAR_OBJECT_IMPL(CViewPagerTabs);
 

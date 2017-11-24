@@ -73,7 +73,7 @@ const Boolean CCalendarContractCalendarAlerts::DEBUG = FALSE;
 
 CAR_SINGLETON_IMPL(CCalendarContractCalendarAlerts)
 
-CAR_INTERFACE_IMPL_5(CCalendarContractCalendarAlerts, Singleton
+CAR_INTERFACE_IMPL(CCalendarContractCalendarAlerts, Singleton
     , ICalendarContractCalendarAlerts
     , IBaseColumns
     , ICalendarContractCalendarAlertsColumns

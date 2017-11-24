@@ -25,7 +25,7 @@ namespace Droid {
 namespace Animation {
 
 CAR_OBJECT_IMPL(CInt32Evaluator)
-CAR_INTERFACE_IMPL_2(CInt32Evaluator, Object, IInt32Evaluator, ITypeEvaluator)
+CAR_INTERFACE_IMPL(CInt32Evaluator, Object, IInt32Evaluator, ITypeEvaluator)
 
 CInt32Evaluator::CInt32Evaluator()
 {}

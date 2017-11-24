@@ -57,7 +57,7 @@ static AutoPtr<ISparseArray> InitmUserHandles()
 
 AutoPtr<ISparseArray> UserHandle::mUserHandles = InitmUserHandles();
 
-CAR_INTERFACE_IMPL_2(UserHandle, Object, IUserHandle, IParcelable)
+CAR_INTERFACE_IMPL(UserHandle, Object, IUserHandle, IParcelable)
 
 UserHandle::UserHandle()
     : mHandle(0)

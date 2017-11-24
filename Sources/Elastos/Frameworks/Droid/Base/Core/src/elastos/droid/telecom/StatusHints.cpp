@@ -30,7 +30,7 @@ namespace Telecom {
 //===============================================================
 // StatusHints::
 //===============================================================
-CAR_INTERFACE_IMPL_2(StatusHints, Object, IStatusHints, IParcelable)
+CAR_INTERFACE_IMPL(StatusHints, Object, IStatusHints, IParcelable)
 
 ECode StatusHints::constructor()
 {

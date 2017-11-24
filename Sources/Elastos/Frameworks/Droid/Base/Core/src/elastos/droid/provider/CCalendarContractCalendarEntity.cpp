@@ -39,7 +39,7 @@ namespace Elastos {
 namespace Droid {
 namespace Provider {
 
-CAR_INTERFACE_IMPL_3(CCalendarContractCalendarEntity::EntityIteratorImpl, Object, ICursorEntityIterator, IEntityIterator, IIterator)
+CAR_INTERFACE_IMPL(CCalendarContractCalendarEntity::EntityIteratorImpl, Object, ICursorEntityIterator, IEntityIterator, IIterator)
 
 CCalendarContractCalendarEntity::EntityIteratorImpl::EntityIteratorImpl()
 {
@@ -121,7 +121,7 @@ ECode CCalendarContractCalendarEntity::EntityIteratorImpl::GetEntityAndIncrement
 
 CAR_SINGLETON_IMPL(CCalendarContractCalendarEntity)
 
-CAR_INTERFACE_IMPL_4(CCalendarContractCalendarEntity, Singleton
+CAR_INTERFACE_IMPL(CCalendarContractCalendarEntity, Singleton
     , ICalendarContractCalendarEntity
     , IBaseColumns
     , ICalendarContractSyncColumns

@@ -126,7 +126,7 @@ const Int32 KeyguardUpdateMonitor::MSG_FACE_UNLOCK_STATE_CHANGED = 325;
 // KeyguardUpdateMonitor::UserSwitchObserver
 //========================================================================
 
-CAR_INTERFACE_IMPL_2(KeyguardUpdateMonitor::UserSwitchObserver, Object, IIUserSwitchObserver, IBinder)
+CAR_INTERFACE_IMPL(KeyguardUpdateMonitor::UserSwitchObserver, Object, IIUserSwitchObserver, IBinder)
 
 ECode KeyguardUpdateMonitor::UserSwitchObserver::constructor(
     /* [in] */ IKeyguardUpdateMonitor* monitor)

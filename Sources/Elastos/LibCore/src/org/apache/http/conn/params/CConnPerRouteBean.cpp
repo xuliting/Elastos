@@ -35,7 +35,7 @@ CConnPerRouteBean::CConnPerRouteBean()
     : mDefaultMax(0)
 {}
 
-CAR_INTERFACE_IMPL_2(CConnPerRouteBean, Object, IConnPerRouteBean, IConnPerRoute)
+CAR_INTERFACE_IMPL(CConnPerRouteBean, Object, IConnPerRouteBean, IConnPerRoute)
 
 CAR_OBJECT_IMPL(CConnPerRouteBean)
 

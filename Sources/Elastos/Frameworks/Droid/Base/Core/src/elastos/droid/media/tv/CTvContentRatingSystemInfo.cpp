@@ -33,7 +33,7 @@ namespace Droid {
 namespace Media {
 namespace Tv {
 
-CAR_INTERFACE_IMPL_2(CTvContentRatingSystemInfo, Object, ITvContentRatingSystemInfo, IParcelable)
+CAR_INTERFACE_IMPL(CTvContentRatingSystemInfo, Object, ITvContentRatingSystemInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CTvContentRatingSystemInfo)
 

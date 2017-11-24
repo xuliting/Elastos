@@ -53,7 +53,7 @@ ValuesDelta::ValuesDelta()
     , mFromTemplate(FALSE)
 {}
 
-CAR_INTERFACE_IMPL_2(ValuesDelta, Object, IValuesDelta, IParcelable)
+CAR_INTERFACE_IMPL(ValuesDelta, Object, IValuesDelta, IParcelable)
 
 ECode ValuesDelta::constructor()
 {

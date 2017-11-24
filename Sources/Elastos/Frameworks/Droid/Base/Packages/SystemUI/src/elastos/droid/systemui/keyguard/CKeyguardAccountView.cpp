@@ -46,7 +46,7 @@ namespace Droid {
 namespace SystemUI {
 namespace Keyguard {
 
-CAR_INTERFACE_IMPL_2(CKeyguardAccountView::InnerListener, Object, IViewOnClickListener, ITextWatcher)
+CAR_INTERFACE_IMPL(CKeyguardAccountView::InnerListener, Object, IViewOnClickListener, ITextWatcher)
 
 CKeyguardAccountView::InnerListener::InnerListener(
     /* [in] */ CKeyguardAccountView* host)

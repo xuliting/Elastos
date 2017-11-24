@@ -23,7 +23,7 @@ namespace Callback {
 
 CAR_OBJECT_IMPL(CPasswordCallback)
 
-CAR_INTERFACE_IMPL_2(CPasswordCallback, Object, IPasswordCallback, ICallback)
+CAR_INTERFACE_IMPL(CPasswordCallback, Object, IPasswordCallback, ICallback)
 
 const Int64 CPasswordCallback::serialVersionUID = 2267422647454909926L;
 

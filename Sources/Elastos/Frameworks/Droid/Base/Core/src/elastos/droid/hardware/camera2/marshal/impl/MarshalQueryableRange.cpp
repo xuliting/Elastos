@@ -134,7 +134,7 @@ ECode MarshalQueryableRange::MarshalerRange::CalculateMarshalSize(
 
 const Int32 MarshalQueryableRange::RANGE_COUNT = 2;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableRange, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableRange, Object,
         IMarshalQueryableRange, IMarshalQueryable)
 
 ECode MarshalQueryableRange::CreateMarshaler(

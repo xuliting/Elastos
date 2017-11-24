@@ -26,7 +26,7 @@ namespace Http {
 namespace Client {
 namespace Protocol {
 
-CAR_INTERFACE_IMPL_2(CClientContextConfigurer, Object, IClientContextConfigurer, IClientContext)
+CAR_INTERFACE_IMPL(CClientContextConfigurer, Object, IClientContextConfigurer, IClientContext)
 
 CAR_OBJECT_IMPL(CClientContextConfigurer)
 

@@ -45,7 +45,7 @@ ECode AbstractInterruptibleChannel::ActionRunnable::Run()
 //       AbstractInterruptibleChannel
 //==========================================================
 
-CAR_INTERFACE_IMPL_4(AbstractInterruptibleChannel, Object, IChannel, ICloseable, IInterruptibleChannel, IAbstractInterruptibleChannel)
+CAR_INTERFACE_IMPL(AbstractInterruptibleChannel, Object, IChannel, ICloseable, IInterruptibleChannel, IAbstractInterruptibleChannel)
 
 AbstractInterruptibleChannel::AbstractInterruptibleChannel()
     : mClosed(FALSE)

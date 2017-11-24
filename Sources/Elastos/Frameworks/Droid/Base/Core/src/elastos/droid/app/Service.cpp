@@ -41,7 +41,7 @@ namespace App {
 
 static const String TAG("Service");
 
-CAR_INTERFACE_IMPL_3(Service, ContextWrapper, IService, IComponentCallbacks, IComponentCallbacks2)
+CAR_INTERFACE_IMPL(Service, ContextWrapper, IService, IComponentCallbacks, IComponentCallbacks2)
 
 Service::Service()
     : mStartCompatibility(FALSE)

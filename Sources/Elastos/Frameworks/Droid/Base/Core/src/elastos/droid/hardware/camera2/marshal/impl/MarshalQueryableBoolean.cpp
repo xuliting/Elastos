@@ -80,7 +80,7 @@ ECode MarshalQueryableBoolean::MarshalerBoolean::GetNativeSize(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableBoolean, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableBoolean, Object,
         IMarshalQueryableBoolean, IMarshalQueryable)
 
 ECode MarshalQueryableBoolean::CreateMarshaler(

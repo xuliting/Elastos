@@ -32,7 +32,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Legacy {
 
-CAR_INTERFACE_IMPL_2(LegacySizeAreaComparator, Object, ILegacySizeAreaComparator, IComparator)
+CAR_INTERFACE_IMPL(LegacySizeAreaComparator, Object, ILegacySizeAreaComparator, IComparator)
 
 ECode LegacySizeAreaComparator::Compare(
     /* [in] */ IInterface* lhs,

@@ -32,7 +32,7 @@ AutoPtr<IRestoreDescription> CRestoreDescription::NO_MORE_PACKAGES = NO_MORE_PAC
 
 const String CRestoreDescription::NO_MORE_PACKAGES_SENTINEL("");
 
-CAR_INTERFACE_IMPL_2(CRestoreDescription, Object, IRestoreDescription, IParcelable)
+CAR_INTERFACE_IMPL(CRestoreDescription, Object, IRestoreDescription, IParcelable)
 
 CAR_OBJECT_IMPL(CRestoreDescription)
 

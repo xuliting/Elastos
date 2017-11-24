@@ -38,7 +38,7 @@ namespace Elastos {
 namespace Security {
 namespace Cert {
 
-CAR_INTERFACE_IMPL_2(CertPath, Object, ICertPath, ISerializable)
+CAR_INTERFACE_IMPL(CertPath, Object, ICertPath, ISerializable)
 CertPath::CertPath(
     /* [in] */ const String& type)
     : mType(type)

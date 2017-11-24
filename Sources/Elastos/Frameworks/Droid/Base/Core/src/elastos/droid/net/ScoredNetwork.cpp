@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(ScoredNetwork, Object, IParcelable, IScoredNetwork)
+CAR_INTERFACE_IMPL(ScoredNetwork, Object, IParcelable, IScoredNetwork)
 
 ScoredNetwork::ScoredNetwork()
 {}

@@ -22,7 +22,7 @@ using Elastos::Core::EIID_ICloneable;
 namespace Elastos {
 namespace Text {
 
-CAR_INTERFACE_IMPL_3(StringCharacterIterator, Object, IStringCharacterIterator, ICharacterIterator, ICloneable)
+CAR_INTERFACE_IMPL(StringCharacterIterator, Object, IStringCharacterIterator, ICharacterIterator, ICloneable)
 
 StringCharacterIterator::StringCharacterIterator()
     : mStart(0)

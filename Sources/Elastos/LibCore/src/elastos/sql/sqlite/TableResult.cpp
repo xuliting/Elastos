@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Sql {
 namespace SQLite {
 
-CAR_INTERFACE_IMPL_2(TableResult, Object, ITableResult, ICallback)
+CAR_INTERFACE_IMPL(TableResult, Object, ITableResult, ICallback)
 
 ECode TableResult::Columns(
     /* [in] */ ArrayOf<String> * coldata)

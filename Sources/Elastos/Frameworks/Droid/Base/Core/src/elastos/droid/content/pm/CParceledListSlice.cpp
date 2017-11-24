@@ -37,7 +37,7 @@ Boolean CParceledListSlice::DEBUG = FALSE;
 const Int32 CParceledListSlice::MAX_IPC_SIZE = 256 * 1024;
 const Int32 CParceledListSlice::MAX_FIRST_IPC_SIZE = 256 * 1024 * 2;
 
-CAR_INTERFACE_IMPL_2(CParceledListSlice, Object, IParceledListSlice, IParcelable)
+CAR_INTERFACE_IMPL(CParceledListSlice, Object, IParceledListSlice, IParcelable)
 
 CAR_OBJECT_IMPL(CParceledListSlice)
 

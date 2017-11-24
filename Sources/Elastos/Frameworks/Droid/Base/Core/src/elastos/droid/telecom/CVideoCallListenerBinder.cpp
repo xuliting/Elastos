@@ -37,7 +37,7 @@ namespace Telecom {
 //===============================================================
 CAR_OBJECT_IMPL(CVideoCallListenerBinder)
 
-CAR_INTERFACE_IMPL_2(CVideoCallListenerBinder, Object, IVideoCallListenerBinder, IIVideoCallback)
+CAR_INTERFACE_IMPL(CVideoCallListenerBinder, Object, IVideoCallListenerBinder, IIVideoCallback)
 
 ECode CVideoCallListenerBinder::constructor(
     /* [in] */ IHandler* handler)

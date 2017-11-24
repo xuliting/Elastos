@@ -175,7 +175,7 @@ ECode CViewScaler::GetNaturalHeight(
 //              CExpandHelper
 //============================================================================
 CAR_OBJECT_IMPL(CExpandHelper)
-CAR_INTERFACE_IMPL_2(CExpandHelper, Object, IExpandHelper, IGefingerpoken);
+CAR_INTERFACE_IMPL(CExpandHelper, Object, IExpandHelper, IGefingerpoken);
 CExpandHelper::CExpandHelper()
     : mExpanding(FALSE)
     , mExpansionStyle(NONE)

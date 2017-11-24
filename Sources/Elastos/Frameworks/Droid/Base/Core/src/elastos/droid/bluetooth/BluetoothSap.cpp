@@ -43,7 +43,7 @@ const Boolean BluetoothSap::DBG;
 const Boolean BluetoothSap::VDBG;
 
 CAR_INTERFACE_IMPL(BluetoothSap::ServiceConnection, Object, IServiceConnection)
-CAR_INTERFACE_IMPL_2(BluetoothSap, Object, IBluetoothSap, IBluetoothProfile)
+CAR_INTERFACE_IMPL(BluetoothSap, Object, IBluetoothSap, IBluetoothProfile)
 
 BluetoothSap::ServiceConnection::ServiceConnection(
     /* [in] */ BluetoothSap* host)

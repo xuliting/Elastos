@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CICancellationSignalNative::TAG("CICancellationSignalNative");
 
-CAR_INTERFACE_IMPL_2(CICancellationSignalNative, Object, IICancellationSignal, IBinder)
+CAR_INTERFACE_IMPL(CICancellationSignalNative, Object, IICancellationSignal, IBinder)
 
 CAR_OBJECT_IMPL(CICancellationSignalNative)
 

@@ -23,7 +23,7 @@ namespace Droid {
 namespace Internal {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(CParcelableString, Object, IParcelableString, ICharSequence)
+CAR_INTERFACE_IMPL(CParcelableString, Object, IParcelableString, ICharSequence)
 
 CAR_OBJECT_IMPL(CParcelableString)
 

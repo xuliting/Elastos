@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIParcelFileDescriptorFactoryNative::TAG("CIParcelFileDescriptorFactoryNative");
 
-CAR_INTERFACE_IMPL_2(CIParcelFileDescriptorFactoryNative, Object, IIParcelFileDescriptorFactory, IBinder)
+CAR_INTERFACE_IMPL(CIParcelFileDescriptorFactoryNative, Object, IIParcelFileDescriptorFactory, IBinder)
 
 CAR_OBJECT_IMPL(CIParcelFileDescriptorFactoryNative)
 

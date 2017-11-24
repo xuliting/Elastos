@@ -91,7 +91,7 @@ const Int32 MarshalQueryableStreamConfigurationDuration::SIZE = IMarshalHelpers:
 
 const Int64 MarshalQueryableStreamConfigurationDuration::MASK_UNSIGNED_INT = 0x00000000ffffffffL;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableStreamConfigurationDuration, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableStreamConfigurationDuration, Object,
         IMarshalQueryableStreamConfigurationDuration, IMarshalQueryable)
 
 ECode MarshalQueryableStreamConfigurationDuration::CreateMarshaler(

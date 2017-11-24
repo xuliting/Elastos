@@ -1093,7 +1093,7 @@ ECode CInputMethodManagerService::InputMethodFileManager::ReadAdditionalInputMet
 // CInputMethodManagerService
 //============================================================================
 
-CAR_INTERFACE_IMPL_4(CInputMethodManagerService, Object, IIInputMethodManager, \
+CAR_INTERFACE_IMPL(CInputMethodManagerService, Object, IIInputMethodManager, \
     IBinder, IServiceConnection, IHandlerCallback)
 
 CAR_OBJECT_IMPL(CInputMethodManagerService)

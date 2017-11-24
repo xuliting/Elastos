@@ -118,7 +118,7 @@ Tokenizer::TagTokenizer::TagTokenizer()
 Tokenizer::TagTokenizer::~TagTokenizer()
 {}
 
-CAR_INTERFACE_IMPL_2(Tokenizer::TagTokenizer, Object, ITokenizerTagTokenizer, ITokenizerTokenizerPhase);
+CAR_INTERFACE_IMPL(Tokenizer::TagTokenizer, Object, ITokenizerTagTokenizer, ITokenizerTokenizerPhase);
 
 ECode Tokenizer::TagTokenizer::constructor(
     /* [in] */ ITokenizer* host)

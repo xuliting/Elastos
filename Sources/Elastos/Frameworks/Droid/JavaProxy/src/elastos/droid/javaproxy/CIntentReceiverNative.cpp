@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIntentReceiverNative::TAG("CIntentReceiverNative");
 
-CAR_INTERFACE_IMPL_2(CIntentReceiverNative, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CIntentReceiverNative, Object, IIntentReceiver, IBinder)
 
 CAR_OBJECT_IMPL(CIntentReceiverNative)
 

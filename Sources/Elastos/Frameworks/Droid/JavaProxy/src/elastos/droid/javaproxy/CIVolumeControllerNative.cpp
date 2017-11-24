@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIVolumeControllerNative::TAG("CIVolumeControllerNative");
 
-CAR_INTERFACE_IMPL_2(CIVolumeControllerNative, Object, IIVolumeController, IBinder)
+CAR_INTERFACE_IMPL(CIVolumeControllerNative, Object, IIVolumeController, IBinder)
 
 CAR_OBJECT_IMPL(CIVolumeControllerNative)
 

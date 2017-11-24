@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Droid {
 namespace Provider {
 
-CAR_INTERFACE_IMPL_2(CTelephonyThreads, Singleton, ITelephonyThreads, ITelephonyThreadsColumns);
+CAR_INTERFACE_IMPL(CTelephonyThreads, Singleton, ITelephonyThreads, ITelephonyThreadsColumns);
 CAR_SINGLETON_IMPL(CTelephonyThreads);
 
 ECode CTelephonyThreads::GetOrCreateThreadId(

@@ -41,7 +41,7 @@ CMtpServer::CMtpServer()
     : mNativeContext(0)
 {}
 
-CAR_INTERFACE_IMPL_2(CMtpServer, Object, IRunnable, IMtpServer)
+CAR_INTERFACE_IMPL(CMtpServer, Object, IRunnable, IMtpServer)
 
 CAR_OBJECT_IMPL(CMtpServer)
 

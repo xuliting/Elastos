@@ -89,7 +89,7 @@ const String Intent::ATTR_FLAGS("flags");
 
 const String Intent::TAG("Intent");
 
-CAR_INTERFACE_IMPL_3(Intent, Object, IIntent, IParcelable, ICloneable)
+CAR_INTERFACE_IMPL(Intent, Object, IIntent, IParcelable, ICloneable)
 
 Intent::Intent()
     : mFlags(0)

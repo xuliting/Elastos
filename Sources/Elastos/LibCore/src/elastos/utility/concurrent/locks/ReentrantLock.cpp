@@ -168,7 +168,7 @@ Boolean ReentrantLock::FairSync::TryAcquire(
 //===============================================================================
 // ReentrantLock
 //===============================================================================
-CAR_INTERFACE_IMPL_3(ReentrantLock, Object, IReentrantLock, ISerializable, ILock)
+CAR_INTERFACE_IMPL(ReentrantLock, Object, IReentrantLock, ISerializable, ILock)
 
 ECode ReentrantLock::constructor()
 {

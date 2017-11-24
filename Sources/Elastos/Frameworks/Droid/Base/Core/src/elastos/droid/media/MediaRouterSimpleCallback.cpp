@@ -31,7 +31,7 @@ ECode MediaRouterSimpleCallback::constructor()
    return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(MediaRouterSimpleCallback, Object, IMediaRouterCallback, IMediaRouterSimpleCallback)//
+CAR_INTERFACE_IMPL(MediaRouterSimpleCallback, Object, IMediaRouterCallback, IMediaRouterSimpleCallback)//
 
 ECode MediaRouterSimpleCallback::OnRouteSelected(
   /* [in] */ IMediaRouter* router,

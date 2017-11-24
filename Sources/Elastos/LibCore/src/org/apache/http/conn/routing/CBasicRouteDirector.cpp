@@ -28,7 +28,7 @@ namespace Http {
 namespace Conn {
 namespace Routing {
 
-CAR_INTERFACE_IMPL_2(CBasicRouteDirector, Object, IBasicRouteDirector, IHttpRouteDirector)
+CAR_INTERFACE_IMPL(CBasicRouteDirector, Object, IBasicRouteDirector, IHttpRouteDirector)
 
 CAR_OBJECT_IMPL(CBasicRouteDirector)
 

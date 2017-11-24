@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CPackageStatusObserverNative::TAG("CPackageStatusObserverNative");
 
-CAR_INTERFACE_IMPL_2(CPackageStatusObserverNative, Object, IIPackageStatsObserver, IBinder)
+CAR_INTERFACE_IMPL(CPackageStatusObserverNative, Object, IIPackageStatsObserver, IBinder)
 
 CAR_OBJECT_IMPL(CPackageStatusObserverNative)
 

@@ -59,7 +59,7 @@ const String InputMethodPreference::EMPTY_TEXT("");
 //                  InputMethodPreference::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(InputMethodPreference::InnerListener, Object,
+CAR_INTERFACE_IMPL(InputMethodPreference::InnerListener, Object,
         IPreferenceOnPreferenceClickListener, IPreferenceOnPreferenceChangeListener)
 
 InputMethodPreference::InnerListener::InnerListener(

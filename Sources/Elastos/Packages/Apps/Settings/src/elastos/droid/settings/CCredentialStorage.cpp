@@ -73,7 +73,7 @@ namespace Settings {
 //                  CCredentialStorage::ResetDialog
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CCredentialStorage::ResetDialog, Object, IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener)
+CAR_INTERFACE_IMPL(CCredentialStorage::ResetDialog, Object, IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener)
 
 CCredentialStorage::ResetDialog::ResetDialog(
     /* [in] */ CCredentialStorage* host)
@@ -194,7 +194,7 @@ ECode CCredentialStorage::ResetKeyStoreAndKeyChain::OnPostExecute(
 //                  CCredentialStorage::ConfigureKeyGuardDialog
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CCredentialStorage::ConfigureKeyGuardDialog, Object, IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener)
+CAR_INTERFACE_IMPL(CCredentialStorage::ConfigureKeyGuardDialog, Object, IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener)
 
 CCredentialStorage::ConfigureKeyGuardDialog::ConfigureKeyGuardDialog(
     /* [in] */ CCredentialStorage* host)
@@ -276,7 +276,7 @@ ECode CCredentialStorage::UnlockDialog::InnerListener::OnTextChanged(
 //                  CCredentialStorage::UnlockDialog
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CCredentialStorage::UnlockDialog, Object, IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener)
+CAR_INTERFACE_IMPL(CCredentialStorage::UnlockDialog, Object, IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener)
 
 CCredentialStorage::UnlockDialog::UnlockDialog(
     /* [in] */ CCredentialStorage* host)

@@ -50,7 +50,7 @@ namespace IO {
 
 CAR_OBJECT_IMPL(CRandomAccessFile)
 
-CAR_INTERFACE_IMPL_4(CRandomAccessFile, Object, IRandomAccessFile, IDataInput, IDataOutput, ICloseable)
+CAR_INTERFACE_IMPL(CRandomAccessFile, Object, IRandomAccessFile, IDataInput, IDataOutput, ICloseable)
 
 CRandomAccessFile::CRandomAccessFile()
     : mSyncMetadata(FALSE)

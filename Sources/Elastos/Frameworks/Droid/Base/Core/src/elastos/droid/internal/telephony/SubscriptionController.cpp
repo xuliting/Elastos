@@ -281,7 +281,7 @@ const Int32 SubscriptionController::EVENT_SET_DEFAULT_DATA_DONE = 1;
 const Int32 SubscriptionController::DUMMY_SUB_ID = -1;
 Object SubscriptionController::sLock;
 
-CAR_INTERFACE_IMPL_3(SubscriptionController, Object, ISubscriptionController, IISub, IBinder)
+CAR_INTERFACE_IMPL(SubscriptionController, Object, ISubscriptionController, IISub, IBinder)
 
 SubscriptionController::SubscriptionController()
 {

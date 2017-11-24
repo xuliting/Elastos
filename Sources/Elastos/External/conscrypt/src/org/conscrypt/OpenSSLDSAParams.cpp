@@ -26,7 +26,7 @@ using Elastos::Security::Spec::EIID_IAlgorithmParameterSpec;
 namespace Org {
 namespace Conscrypt {
 
-CAR_INTERFACE_IMPL_3(OpenSSLDSAParams, Object, IOpenSSLDSAParams,
+CAR_INTERFACE_IMPL(OpenSSLDSAParams, Object, IOpenSSLDSAParams,
         IDSAParams, IAlgorithmParameterSpec)
 
 OpenSSLDSAParams::OpenSSLDSAParams()

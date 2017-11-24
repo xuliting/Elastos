@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIMountShutdownObserverNative::TAG("CIMountShutdownObserverNative");
 
-CAR_INTERFACE_IMPL_2(CIMountShutdownObserverNative, Object, IIMountShutdownObserver, IBinder)
+CAR_INTERFACE_IMPL(CIMountShutdownObserverNative, Object, IIMountShutdownObserver, IBinder)
 
 CAR_OBJECT_IMPL(CIMountShutdownObserverNative)
 

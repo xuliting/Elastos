@@ -47,7 +47,7 @@ namespace Widget {
 //==========================================================================
 //                       Spinner::DropDownAdapter
 //==========================================================================
-CAR_INTERFACE_IMPL_3(Spinner::DropDownAdapter, Object, IListAdapter, IAdapter, ISpinnerAdapter);
+CAR_INTERFACE_IMPL(Spinner::DropDownAdapter, Object, IListAdapter, IAdapter, ISpinnerAdapter);
 Spinner::DropDownAdapter::DropDownAdapter(
     /* [in] */ ISpinnerAdapter* adapter)
     : mAdapter(adapter)
@@ -207,7 +207,7 @@ ECode Spinner::DropDownAdapter::IsEmpty(
 //==========================================================================
 //                       Spinner::DialogPopup
 //==========================================================================
-CAR_INTERFACE_IMPL_2(Spinner::DialogPopup, Object, ISpinnerPopup, IDialogInterfaceOnClickListener);
+CAR_INTERFACE_IMPL(Spinner::DialogPopup, Object, ISpinnerPopup, IDialogInterfaceOnClickListener);
 Spinner::DialogPopup::DialogPopup(
     /* [in] */ Spinner* host)
     : mHost(host)
@@ -455,7 +455,7 @@ ECode Spinner::DismissListener::OnDismiss()
 //==========================================================================
 //                       Spinner::DropdownPopup
 //==========================================================================
-CAR_INTERFACE_IMPL_2(Spinner::DropdownPopup, ListPopupWindow, IDropdownPopup, ISpinnerPopup);
+CAR_INTERFACE_IMPL(Spinner::DropdownPopup, ListPopupWindow, IDropdownPopup, ISpinnerPopup);
 Spinner::DropdownPopup::DropdownPopup(
     /* [in] */ IContext* context,
     /* [in] */ IAttributeSet* attrs,

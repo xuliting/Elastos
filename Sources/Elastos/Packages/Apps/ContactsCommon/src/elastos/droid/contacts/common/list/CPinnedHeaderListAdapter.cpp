@@ -22,7 +22,7 @@ namespace Contacts {
 namespace Common {
 namespace List {
 
-CAR_INTERFACE_IMPL_2(CPinnedHeaderListAdapter, Object, IPinnedHeaderListAdapter, IPinnedHeaderAdapter)
+CAR_INTERFACE_IMPL(CPinnedHeaderListAdapter, Object, IPinnedHeaderListAdapter, IPinnedHeaderAdapter)
 
 CAR_OBJECT_IMPL(CPinnedHeaderListAdapter)
 

@@ -25,7 +25,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(CConfigurationInfo, Object, IConfigurationInfo, IParcelable)
+CAR_INTERFACE_IMPL(CConfigurationInfo, Object, IConfigurationInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CConfigurationInfo)
 

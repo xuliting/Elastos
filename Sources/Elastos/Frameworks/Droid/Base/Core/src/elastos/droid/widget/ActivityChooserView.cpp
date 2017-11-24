@@ -212,7 +212,7 @@ ECode ActivityChooserView::InnerUpdateDataSetObserver::OnInvalidated()
 //=====================================================================
 //                    ActivityChooserView::Callbacks
 //=====================================================================
-CAR_INTERFACE_IMPL_4(ActivityChooserView::Callbacks, Object, IAdapterViewOnItemClickListener,
+CAR_INTERFACE_IMPL(ActivityChooserView::Callbacks, Object, IAdapterViewOnItemClickListener,
     IViewOnClickListener, IViewOnLongClickListener, IPopupWindowOnDismissListener)
 
 ActivityChooserView::Callbacks::Callbacks(
@@ -942,7 +942,7 @@ ECode ActivityChooserView::ActivityChooserViewAdapter::GetShowDefaultActivity(
 //=====================================================================
 const String ActivityChooserView::TAG("ActivityChooserView");
 
-CAR_INTERFACE_IMPL_2(ActivityChooserView, ViewGroup, IActivityChooserView, IActivityChooserModelClient)
+CAR_INTERFACE_IMPL(ActivityChooserView, ViewGroup, IActivityChooserView, IActivityChooserModelClient)
 
 ActivityChooserView::ActivityChooserView()
     : mListPopupMaxWidth(0)

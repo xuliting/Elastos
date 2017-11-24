@@ -1049,7 +1049,7 @@ ECode CAccountManagerService::GetAccountsByTypeAndFeatureSession::constructor(
 //=============================================================================
 // CAccountManagerService::Session
 //=============================================================================
-CAR_INTERFACE_IMPL_4(CAccountManagerService::Session, Object, IIAccountAuthenticatorResponse, IBinder, IProxyDeathRecipient, IServiceConnection)
+CAR_INTERFACE_IMPL(CAccountManagerService::Session, Object, IIAccountAuthenticatorResponse, IBinder, IProxyDeathRecipient, IServiceConnection)
 
 const String CAccountManagerService::Session::TAG("AccountManagerServiceSession");
 
@@ -1732,7 +1732,7 @@ AutoPtr<IAtomicReference> CAccountManagerService::sThis = InitAtomicRef();
 
 CAR_OBJECT_IMPL(CAccountManagerService)
 
-CAR_INTERFACE_IMPL_3(CAccountManagerService, Object, IBinder, IIAccountManager, IRegisteredServicesCacheListener)
+CAR_INTERFACE_IMPL(CAccountManagerService, Object, IBinder, IIAccountManager, IRegisteredServicesCacheListener)
 
 CAccountManagerService::CAccountManagerService()
 {

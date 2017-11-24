@@ -30,7 +30,7 @@ namespace Telecom {
 //===============================================================
 // PhoneAccountHandle::
 //===============================================================
-CAR_INTERFACE_IMPL_2(PhoneAccountHandle, Object, IPhoneAccountHandle, IParcelable)
+CAR_INTERFACE_IMPL(PhoneAccountHandle, Object, IPhoneAccountHandle, IParcelable)
 
 ECode PhoneAccountHandle::constructor()
 {

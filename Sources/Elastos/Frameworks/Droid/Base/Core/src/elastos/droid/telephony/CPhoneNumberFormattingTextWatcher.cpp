@@ -33,7 +33,7 @@ namespace Elastos {
 namespace Droid {
 namespace Telephony {
 
-CAR_INTERFACE_IMPL_3(CPhoneNumberFormattingTextWatcher, Object,
+CAR_INTERFACE_IMPL(CPhoneNumberFormattingTextWatcher, Object,
         IPhoneNumberFormattingTextWatcher,
         ITextWatcher, INoCopySpan)
 

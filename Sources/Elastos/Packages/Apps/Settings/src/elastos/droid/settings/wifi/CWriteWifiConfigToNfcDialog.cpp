@@ -69,7 +69,7 @@ const AutoPtr<ArrayOf<Char32> > CWriteWifiConfigToNfcDialog::hexArray = String("
 //                  CWriteWifiConfigToNfcDialog::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(CWriteWifiConfigToNfcDialog::InnerListener, Object, ITextWatcher,
+CAR_INTERFACE_IMPL(CWriteWifiConfigToNfcDialog::InnerListener, Object, ITextWatcher,
         IViewOnClickListener, ICompoundButtonOnCheckedChangeListener)
 
 CWriteWifiConfigToNfcDialog::InnerListener::InnerListener(

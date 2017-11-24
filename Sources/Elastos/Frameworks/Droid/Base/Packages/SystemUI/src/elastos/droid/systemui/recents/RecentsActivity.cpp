@@ -239,7 +239,7 @@ ECode RecentsActivity::AppWidgetHostCallbackRunnable::Run()
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_3(RecentsActivity::InnerCallback, Object, IRecentsViewCallbacks,
+CAR_INTERFACE_IMPL(RecentsActivity::InnerCallback, Object, IRecentsViewCallbacks,
     IDebugOverlayViewCallbacks, IRecentsAppWidgetHostCallbacks)
 
 RecentsActivity::InnerCallback::InnerCallback(

@@ -53,7 +53,7 @@ namespace Droid {
 namespace SystemUI {
 namespace Media {
 
-CAR_INTERFACE_IMPL_2(MediaProjectionPermissionActivity::InnerListener, Object,
+CAR_INTERFACE_IMPL(MediaProjectionPermissionActivity::InnerListener, Object,
     IDialogInterfaceOnClickListener, ICompoundButtonOnCheckedChangeListener)
 
 

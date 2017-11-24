@@ -468,7 +468,7 @@ const Int64 CThemeService::PURGED_ICON_CACHE_SIZE = 25165824; // 24 MB
 // Defines a min and max compatible api level for themes on this system.
 const Int32 CThemeService::MIN_COMPATIBLE_VERSION = 21;
 
-CAR_INTERFACE_IMPL_2(CThemeService, Object, IIThemeService, IBinder)
+CAR_INTERFACE_IMPL(CThemeService, Object, IIThemeService, IBinder)
 
 CAR_OBJECT_IMPL(CThemeService)
 

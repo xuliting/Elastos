@@ -93,7 +93,7 @@ const Int32 CDisplayManagerService::MSG_UPDATE_VIEWPORT;
 // CDisplayManagerService::BinderService
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CDisplayManagerService::BinderService, Object, IIDisplayManager, IBinder)
+CAR_INTERFACE_IMPL(CDisplayManagerService::BinderService, Object, IIDisplayManager, IBinder)
 
 ECode CDisplayManagerService::BinderService::constructor(
     /* [in] */ ISystemService* displayManagerService)

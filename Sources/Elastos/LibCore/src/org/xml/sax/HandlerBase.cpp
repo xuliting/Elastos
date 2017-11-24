@@ -20,7 +20,7 @@ namespace Org {
 namespace Xml {
 namespace Sax {
 
-CAR_INTERFACE_IMPL_4(HandlerBase, Object, IEntityResolver, IDTDHandler, IDocumentHandler, IErrorHandler)
+CAR_INTERFACE_IMPL(HandlerBase, Object, IEntityResolver, IDTDHandler, IDocumentHandler, IErrorHandler)
 
 ECode HandlerBase::ResolveEntity(
     /* [in] */ const String& publicId,

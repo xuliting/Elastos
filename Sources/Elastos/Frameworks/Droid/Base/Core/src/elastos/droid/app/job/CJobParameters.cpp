@@ -24,7 +24,7 @@ namespace Droid {
 namespace App {
 namespace Job {
 
-CAR_INTERFACE_IMPL_2(CJobParameters, Object, IJobParameters, IParcelable)
+CAR_INTERFACE_IMPL(CJobParameters, Object, IJobParameters, IParcelable)
 
 CAR_OBJECT_IMPL(CJobParameters)
 

@@ -33,7 +33,7 @@ namespace Launcher2 {
 
 const Float SmoothPagedView::OvershootInterpolator::DEFAULT_TENSION = 1.3f;
 
-CAR_INTERFACE_IMPL_2(SmoothPagedView::OvershootInterpolator, Object, IInterpolator,
+CAR_INTERFACE_IMPL(SmoothPagedView::OvershootInterpolator, Object, IInterpolator,
         ITimeInterpolator);
 
 SmoothPagedView::OvershootInterpolator::OvershootInterpolator()

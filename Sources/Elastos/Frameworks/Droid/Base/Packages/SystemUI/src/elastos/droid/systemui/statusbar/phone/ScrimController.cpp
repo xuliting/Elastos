@@ -174,7 +174,7 @@ ECode ScrimController::Runnable1::Run()
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(ScrimController, Object, IScrimController, IOnPreDrawListener);
+CAR_INTERFACE_IMPL(ScrimController, Object, IScrimController, IOnPreDrawListener);
 
 ScrimController::ScrimController(
     /* [in] */ IScrimView* scrimBehind,

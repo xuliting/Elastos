@@ -70,7 +70,7 @@ WebVttRenderingWidget::RegionLayout::RegionLayout(
 WebVttRenderingWidget::RegionLayout::~RegionLayout()
 {}
 
-CAR_INTERFACE_IMPL_8(WebVttRenderingWidget::RegionLayout, Object, ILinearLayout, IViewGroup, IViewParent, IViewManager, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource);
+CAR_INTERFACE_IMPL(WebVttRenderingWidget::RegionLayout, Object, ILinearLayout, IViewGroup, IViewParent, IViewManager, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource);
 
 ECode WebVttRenderingWidget::RegionLayout::SetCaptionStyle(
     /* [in] */ ICaptioningManagerCaptionStyle* captionStyle,
@@ -244,7 +244,7 @@ WebVttRenderingWidget::CueLayout::CueLayout(
 WebVttRenderingWidget::CueLayout::~CueLayout()
 {}
 
-CAR_INTERFACE_IMPL_8(WebVttRenderingWidget::CueLayout, Object, ILinearLayout, IViewGroup, IViewParent, IViewManager, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource);
+CAR_INTERFACE_IMPL(WebVttRenderingWidget::CueLayout, Object, ILinearLayout, IViewGroup, IViewParent, IViewManager, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource);
 
 ECode WebVttRenderingWidget::CueLayout::SetCaptionStyle(
     /* [in] */ ICaptioningManagerCaptionStyle* style,
@@ -405,7 +405,7 @@ WebVttRenderingWidget::SpanLayout::SpanLayout(
 WebVttRenderingWidget::SpanLayout::~SpanLayout()
 {}
 
-CAR_INTERFACE_IMPL_5(WebVttRenderingWidget::SpanLayout, Object, ISubtitleView, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource);
+CAR_INTERFACE_IMPL(WebVttRenderingWidget::SpanLayout, Object, ISubtitleView, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource);
 
 ECode WebVttRenderingWidget::SpanLayout::Update()
 {
@@ -471,7 +471,7 @@ WebVttRenderingWidget::WebVttRenderingWidget()
 WebVttRenderingWidget::~WebVttRenderingWidget()
 {}
 
-CAR_INTERFACE_IMPL_7(WebVttRenderingWidget, Object, IViewGroup, IViewParent, IViewManager, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource)
+CAR_INTERFACE_IMPL(WebVttRenderingWidget, Object, IViewGroup, IViewParent, IViewManager, IView, IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource)
 
 ECode WebVttRenderingWidget::constructor(
     /* [in] */ IContext* context)

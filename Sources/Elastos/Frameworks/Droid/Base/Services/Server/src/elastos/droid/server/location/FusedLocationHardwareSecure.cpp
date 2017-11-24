@@ -26,7 +26,7 @@ namespace Droid {
 namespace Server {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(FusedLocationHardwareSecure, Object, IIFusedLocationHardware, IBinder)
+CAR_INTERFACE_IMPL(FusedLocationHardwareSecure, Object, IIFusedLocationHardware, IBinder)
 
 FusedLocationHardwareSecure::FusedLocationHardwareSecure()
 {

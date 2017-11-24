@@ -31,7 +31,7 @@ const AutoPtr<IPSSParameterSpec> CPSSParameterSpec::InitStatic()
 }
 
 CAR_OBJECT_IMPL(CPSSParameterSpec)
-CAR_INTERFACE_IMPL_2(CPSSParameterSpec, Object, IPSSParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(CPSSParameterSpec, Object, IPSSParameterSpec, IAlgorithmParameterSpec)
 ECode CPSSParameterSpec::GetSaltLength(
     /* [out] */ Int32 *saltLength)
 {

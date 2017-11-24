@@ -58,7 +58,7 @@ namespace AccessibilityService {
 
 const String CAccessibilityServiceInfo::TAG_ACCESSIBILITY_SERVICE("accessibility-service");
 
-CAR_INTERFACE_IMPL_2(CAccessibilityServiceInfo, Object, IAccessibilityServiceInfo, IParcelable)
+CAR_INTERFACE_IMPL(CAccessibilityServiceInfo, Object, IAccessibilityServiceInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CAccessibilityServiceInfo)
 

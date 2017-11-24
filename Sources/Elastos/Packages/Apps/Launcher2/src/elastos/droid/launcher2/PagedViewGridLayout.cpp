@@ -31,7 +31,7 @@ PagedViewGridLayout::PagedViewGridLayoutLayoutParams::PagedViewGridLayoutLayoutP
 
 const String PagedViewGridLayout::TAG("PagedViewGridLayout");
 
-CAR_INTERFACE_IMPL_2(PagedViewGridLayout, GridLayout, IPagedViewGridLayout, IPage);
+CAR_INTERFACE_IMPL(PagedViewGridLayout, GridLayout, IPagedViewGridLayout, IPage);
 
 PagedViewGridLayout::PagedViewGridLayout(
     /* [in] */ IContext* context,

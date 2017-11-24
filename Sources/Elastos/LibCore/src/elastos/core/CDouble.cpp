@@ -24,7 +24,7 @@ using Elastos::Core::RealToString;
 namespace Elastos {
 namespace Core {
 
-CAR_INTERFACE_IMPL_4(CDouble, Object, IDouble, INumber, ISerializable, IComparable)
+CAR_INTERFACE_IMPL(CDouble, Object, IDouble, INumber, ISerializable, IComparable)
 
 CAR_OBJECT_IMPL(CDouble)
 

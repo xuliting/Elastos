@@ -380,7 +380,7 @@ const Int64 CallLogAdapter::NONE_EXPANDED;
 const Int32 CallLogAdapter::REDRAW;
 const Int32 CallLogAdapter::START_THREAD;
 
-CAR_INTERFACE_IMPL_3(CallLogAdapter, GroupingListAdapter, ICallLogAdapter, IOnPreDrawListener, ICallLogGroupBuilderGroupCreator)
+CAR_INTERFACE_IMPL(CallLogAdapter, GroupingListAdapter, ICallLogAdapter, IOnPreDrawListener, ICallLogGroupBuilderGroupCreator)
 
 CallLogAdapter::CallLogAdapter()
     : mPreviouslyExpanded(NONE_EXPANDED)

@@ -37,7 +37,7 @@ ProtocolVersion::ProtocolVersion()
     , mMinor(0)
 {}
 
-CAR_INTERFACE_IMPL_2(ProtocolVersion, Object, IProtocolVersion, ICloneable)
+CAR_INTERFACE_IMPL(ProtocolVersion, Object, IProtocolVersion, ICloneable)
 
 ECode ProtocolVersion::GetProtocol(
     /* [out] */ String* protocol)

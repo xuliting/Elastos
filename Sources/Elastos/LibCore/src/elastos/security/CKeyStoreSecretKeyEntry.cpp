@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Security {
 
 CAR_OBJECT_IMPL(CKeyStoreSecretKeyEntry)
-CAR_INTERFACE_IMPL_2(CKeyStoreSecretKeyEntry, Object, IKeyStoreSecretKeyEntry, IKeyStoreEntry)
+CAR_INTERFACE_IMPL(CKeyStoreSecretKeyEntry, Object, IKeyStoreSecretKeyEntry, IKeyStoreEntry)
 ECode CKeyStoreSecretKeyEntry::GetSecretKey(
     /* [out] */ ISecretKey **key)
 {

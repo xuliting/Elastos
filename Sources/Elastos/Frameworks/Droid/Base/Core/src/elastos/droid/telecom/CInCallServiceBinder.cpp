@@ -34,7 +34,7 @@ namespace Telecom {
 
 CAR_OBJECT_IMPL(CInCallServiceBinder)
 
-CAR_INTERFACE_IMPL_2(CInCallServiceBinder, Object, IIInCallService, IBinder)
+CAR_INTERFACE_IMPL(CInCallServiceBinder, Object, IIInCallService, IBinder)
 
 ECode CInCallServiceBinder::constructor(
     /* [in] */ IHandler* handler)

@@ -772,7 +772,7 @@ AutoPtr<IDateFormat> DngCreator::sExifGPSDateStamp = InitExifGPSDateStamp();
 
 AutoPtr<IDateFormat> DngCreator::sDateTimeStampFormat = InitDateTimeStampFormat();
 
-CAR_INTERFACE_IMPL_2(DngCreator, Object, IDngCreator, ICloseable)
+CAR_INTERFACE_IMPL(DngCreator, Object, IDngCreator, ICloseable)
 
 DngCreator::DngCreator()
 {

@@ -40,7 +40,7 @@ static AutoPtr<IASN1Type> InitValue()
 
 AutoPtr<IASN1Type> CReasonCode::ASN1 = InitValue();
 CAR_OBJECT_IMPL(CReasonCode)
-CAR_INTERFACE_IMPL_2(CReasonCode, Object, IReasonCode, IExtensionValue)
+CAR_INTERFACE_IMPL(CReasonCode, Object, IReasonCode, IExtensionValue)
 CReasonCode::CReasonCode()
     : mCode(0)
 {}

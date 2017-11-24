@@ -314,7 +314,7 @@ ECode BatteryStats::HistoryTag::GetHashCode(
 // BatteryStats::HistoryItem
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(BatteryStats::HistoryItem, Object, IBatteryStatsHistoryItem, IParcelable)
+CAR_INTERFACE_IMPL(BatteryStats::HistoryItem, Object, IBatteryStatsHistoryItem, IParcelable)
 
 BatteryStats::HistoryItem::HistoryItem()
     : mTime(0)

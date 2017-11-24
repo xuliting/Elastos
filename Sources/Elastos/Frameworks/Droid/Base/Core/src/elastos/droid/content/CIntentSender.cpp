@@ -59,7 +59,7 @@ ECode CIntentSender::FinishedDispatcher::MyRunnable::Run()
 //============================================================================
 //              CIntentSender::FinishedDispatcher
 //============================================================================
-CAR_INTERFACE_IMPL_2(CIntentSender::FinishedDispatcher, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CIntentSender::FinishedDispatcher, Object, IIntentReceiver, IBinder)
 
 CIntentSender::FinishedDispatcher::FinishedDispatcher()
     : mResultCode(0)
@@ -120,7 +120,7 @@ ECode CIntentSender::FinishedDispatcher::ToString(
 //              CIntentSender
 //============================================================================
 
-CAR_INTERFACE_IMPL_2(CIntentSender, Object, IIntentSender, IParcelable)
+CAR_INTERFACE_IMPL(CIntentSender, Object, IIntentSender, IParcelable)
 
 CAR_OBJECT_IMPL(CIntentSender)
 

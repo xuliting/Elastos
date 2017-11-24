@@ -125,7 +125,7 @@ const String AnimatedVectorDrawable::ANIMATED_VECTOR("animated-vector");
 const String AnimatedVectorDrawable::TARGET("target");
 const Boolean AnimatedVectorDrawable::DBG_ANIMATION_VECTOR_DRAWABLE = FALSE;
 
-CAR_INTERFACE_IMPL_2(AnimatedVectorDrawable, Drawable, IAnimatedVectorDrawable, IAnimatable);
+CAR_INTERFACE_IMPL(AnimatedVectorDrawable, Drawable, IAnimatedVectorDrawable, IAnimatable);
 
 AnimatedVectorDrawable::AnimatedVectorDrawable()
     : mMutated(FALSE)

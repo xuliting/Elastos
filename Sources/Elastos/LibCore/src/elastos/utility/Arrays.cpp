@@ -99,7 +99,7 @@ ECode Arrays::CheckOffsetAndCount(
 //====================================================================
 // Arrays::ArrayList
 //====================================================================
-// CAR_INTERFACE_IMPL_2(Arrays::ArrayList, AbstractList, ISerializable, IRandomAccess)
+// CAR_INTERFACE_IMPL(Arrays::ArrayList, AbstractList, ISerializable, IRandomAccess)
 
 // Arrays::ArrayList::ArrayList(
 //     /* [in] */ ArrayOf<IInterface *> * storage)

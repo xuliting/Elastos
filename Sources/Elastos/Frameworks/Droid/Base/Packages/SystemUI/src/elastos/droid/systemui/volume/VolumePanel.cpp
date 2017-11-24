@@ -240,7 +240,7 @@ ECode CVolumePanelCloseSystemDialogsReceiver::OnReceive(
 // VolumePanel::DialogInterfaceListener
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(VolumePanel::DialogInterfaceListener, Object, \
+CAR_INTERFACE_IMPL(VolumePanel::DialogInterfaceListener, Object, \
     IDialogInterfaceOnDismissListener, IDialogInterfaceOnClickListener)
 
 VolumePanel::DialogInterfaceListener::DialogInterfaceListener(

@@ -31,7 +31,7 @@ AbstractHttpEntity::AbstractHttpEntity()
     : mChunked(FALSE)
 {}
 
-CAR_INTERFACE_IMPL_2(AbstractHttpEntity, Object, IAbstractHttpEntity, IHttpEntity)
+CAR_INTERFACE_IMPL(AbstractHttpEntity, Object, IAbstractHttpEntity, IHttpEntity)
 
 ECode AbstractHttpEntity::GetContentType(
     /* [out] */ IHeader** type)

@@ -46,7 +46,7 @@ const Int32 GestureDetector::LONG_PRESS = 2;
 const Int32 GestureDetector::TAP = 3;
 
 /*GestureDetector::SimpleOnGestureListener*/
-CAR_INTERFACE_IMPL_2(GestureDetector::SimpleOnGestureListener, Object,
+CAR_INTERFACE_IMPL(GestureDetector::SimpleOnGestureListener, Object,
         IGestureDetectorOnGestureListener, IGestureDetectorOnDoubleTapListener);
 
 GestureDetector::SimpleOnGestureListener::SimpleOnGestureListener()

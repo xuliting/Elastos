@@ -96,7 +96,7 @@ const AutoPtr<IPattern> CScanner::ANY_PATTERN = InitPattern(String("(?s).*"));
 const Int32 CScanner::DEFAULT_RADIX;
 const Int32 CScanner::DEFAULT_TRUNK_SIZE;
 
-CAR_INTERFACE_IMPL_2(CScanner, Object, IScanner, IIterator)
+CAR_INTERFACE_IMPL(CScanner, Object, IScanner, IIterator)
 
 CAR_OBJECT_IMPL(CScanner)
 

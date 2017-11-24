@@ -24,7 +24,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_5(DrawableMarginSpan, Object, IDrawableMarginSpan, ILineHeightSpan, IParagraphStyle, IWrapTogetherSpan, ILeadingMarginSpan)
+CAR_INTERFACE_IMPL(DrawableMarginSpan, Object, IDrawableMarginSpan, ILineHeightSpan, IParagraphStyle, IWrapTogetherSpan, ILeadingMarginSpan)
 
 DrawableMarginSpan::DrawableMarginSpan()
     : mPad(0)

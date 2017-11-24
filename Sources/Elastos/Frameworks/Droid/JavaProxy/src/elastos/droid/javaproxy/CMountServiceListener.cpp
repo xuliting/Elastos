@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CMountServiceListener::TAG("CMountServiceListener");
 
-CAR_INTERFACE_IMPL_2(CMountServiceListener, Object, IIMountServiceListener, IBinder)
+CAR_INTERFACE_IMPL(CMountServiceListener, Object, IIMountServiceListener, IBinder)
 
 CAR_OBJECT_IMPL(CMountServiceListener)
 

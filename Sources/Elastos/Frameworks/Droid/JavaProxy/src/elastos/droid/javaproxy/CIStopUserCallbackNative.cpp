@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIStopUserCallbackNative::TAG("CIStopUserCallbackNative");
 
-CAR_INTERFACE_IMPL_2(CIStopUserCallbackNative, Object, IStopUserCallback, IBinder)
+CAR_INTERFACE_IMPL(CIStopUserCallbackNative, Object, IStopUserCallback, IBinder)
 
 CAR_OBJECT_IMPL(CIStopUserCallbackNative)
 

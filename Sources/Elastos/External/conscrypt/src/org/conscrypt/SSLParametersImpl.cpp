@@ -71,7 +71,7 @@ String SSLParametersImpl::KEY_TYPE_EC_EC("EC_EC");
 
 String SSLParametersImpl::KEY_TYPE_EC_RSA("EC_RSA");
 
-CAR_INTERFACE_IMPL_2(SSLParametersImpl, Object, ISSLParametersImpl, ICloneable)
+CAR_INTERFACE_IMPL(SSLParametersImpl, Object, ISSLParametersImpl, ICloneable)
 
 SSLParametersImpl::SSLParametersImpl()
     : mClient_mode(TRUE)

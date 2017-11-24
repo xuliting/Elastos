@@ -78,7 +78,7 @@ const String MediaScannerService::TAG("MediaScannerService");
 
 AutoPtr<ArrayOf<String> > MediaScannerService::mExternalStoragePaths;
 
-CAR_INTERFACE_IMPL_2(MediaScannerService, Service, IMediaScannerService, IRunnable)
+CAR_INTERFACE_IMPL(MediaScannerService, Service, IMediaScannerService, IRunnable)
 
 ECode MediaScannerService::constructor()
 {
@@ -329,7 +329,7 @@ ECode MediaScannerService::OnBind(
 //===========================================================
 // MediaScannerService::MyMediaScannerService
 //===========================================================
-CAR_INTERFACE_IMPL_2(MediaScannerService::MyMediaScannerService, Object, IIMediaScannerService, IBinder)
+CAR_INTERFACE_IMPL(MediaScannerService::MyMediaScannerService, Object, IIMediaScannerService, IBinder)
 
 MediaScannerService::MyMediaScannerService::MyMediaScannerService()
 {}

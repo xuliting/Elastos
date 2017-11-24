@@ -41,7 +41,7 @@ namespace Elastos {
 namespace Droid {
 namespace Preference {
 
-CAR_INTERFACE_IMPL_2(Preference, Object, IPreference, IComparable)
+CAR_INTERFACE_IMPL(Preference, Object, IPreference, IComparable)
 
 Preference::Preference()
     : mId(0)

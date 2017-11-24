@@ -82,7 +82,7 @@ const String CLockPatternUtilsCache::HAS_LOCK_PASSWORD_CACHE_KEY("LockPatternUti
 AutoPtr<ILockPatternUtilsCache> CLockPatternUtilsCache::sInstance;
 
 CAR_OBJECT_IMPL(CLockPatternUtilsCache)
-CAR_INTERFACE_IMPL_2(CLockPatternUtilsCache, Object, ILockPatternUtilsCache, IILockSettings);
+CAR_INTERFACE_IMPL(CLockPatternUtilsCache, Object, ILockPatternUtilsCache, IILockSettings);
 CLockPatternUtilsCache::CLockPatternUtilsCache()
 {
     CArrayMap::New((IArrayMap**)&mCache);

@@ -33,7 +33,7 @@ namespace Droid {
 namespace Text {
 namespace Method {
 
-CAR_INTERFACE_IMPL_2(BaseMovementMethod, Object, IBaseMovementMethod, IMovementMethod)
+CAR_INTERFACE_IMPL(BaseMovementMethod, Object, IBaseMovementMethod, IMovementMethod)
 
 BaseMovementMethod::BaseMovementMethod()
 {}

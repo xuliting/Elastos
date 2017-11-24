@@ -505,7 +505,7 @@ ECode SMSDispatcher::SmsTracker::OnSent(
  * Dialog listener for SMS confirmation dialog.
  */
 
-CAR_INTERFACE_IMPL_3(SMSDispatcher::ConfirmDialogListener, Object,
+CAR_INTERFACE_IMPL(SMSDispatcher::ConfirmDialogListener, Object,
         IDialogInterfaceOnClickListener, IDialogInterfaceOnCancelListener,
         ICompoundButtonOnCheckedChangeListener)
 

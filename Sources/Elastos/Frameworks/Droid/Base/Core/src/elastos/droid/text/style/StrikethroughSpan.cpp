@@ -25,7 +25,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_4(StrikethroughSpan, CharacterStyle, IStrikethroughSpan, IUpdateAppearance, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(StrikethroughSpan, CharacterStyle, IStrikethroughSpan, IUpdateAppearance, IParcelableSpan, IParcelable)
 
 StrikethroughSpan::StrikethroughSpan()
 {

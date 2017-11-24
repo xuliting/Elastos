@@ -26,7 +26,7 @@ namespace Internal {
 namespace Http {
 namespace Multipart {
 
-CAR_INTERFACE_IMPL_2(ByteArrayPartSource, Object, IByteArrayPartSource, IPartSource)
+CAR_INTERFACE_IMPL(ByteArrayPartSource, Object, IByteArrayPartSource, IPartSource)
 
 ECode ByteArrayPartSource::constructor(
     /* [in] */ const String& fileName,

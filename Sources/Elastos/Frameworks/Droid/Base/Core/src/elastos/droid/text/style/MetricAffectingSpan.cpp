@@ -26,7 +26,7 @@ namespace Style {
 // MetricAffectingSpan
 //==================================================================
 
-CAR_INTERFACE_IMPL_3(MetricAffectingSpan, CharacterStyle, IMetricAffectingSpan, IUpdateLayout, IUpdateAppearance)
+CAR_INTERFACE_IMPL(MetricAffectingSpan, CharacterStyle, IMetricAffectingSpan, IUpdateLayout, IUpdateAppearance)
 
 MetricAffectingSpan::MetricAffectingSpan()
 {

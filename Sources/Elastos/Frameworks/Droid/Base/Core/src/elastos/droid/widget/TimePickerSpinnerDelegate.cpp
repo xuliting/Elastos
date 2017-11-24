@@ -448,7 +448,7 @@ const Int32 TimePickerSpinnerDelegate::PM = 1;
 const Boolean TimePickerSpinnerDelegate::DEFAULT_ENABLED_STATE = TRUE;
 const Int32 TimePickerSpinnerDelegate::HOURS_IN_HALF_DAY = 12;
 
-CAR_INTERFACE_IMPL_2(TimePickerSpinnerDelegate, TimePicker::AbstractTimePickerDelegate, ITimePickerSpinnerDelegate, IOnValueSelectedListener)
+CAR_INTERFACE_IMPL(TimePickerSpinnerDelegate, TimePicker::AbstractTimePickerDelegate, ITimePickerSpinnerDelegate, IOnValueSelectedListener)
 
 TimePickerSpinnerDelegate::TimePickerSpinnerDelegate()
     : mIsEnabled(DEFAULT_ENABLED_STATE)

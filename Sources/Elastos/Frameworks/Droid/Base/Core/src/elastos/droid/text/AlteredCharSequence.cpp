@@ -88,7 +88,7 @@ ECode AlteredSpanned::ToString(
 }
 
 
-CAR_INTERFACE_IMPL_3(AlteredCharSequence, Object, IAlteredCharSequence, IGetChars, ICharSequence)
+CAR_INTERFACE_IMPL(AlteredCharSequence, Object, IAlteredCharSequence, IGetChars, ICharSequence)
 
 /**
  * Create an AlteredCharSequence whose text (and possibly spans)

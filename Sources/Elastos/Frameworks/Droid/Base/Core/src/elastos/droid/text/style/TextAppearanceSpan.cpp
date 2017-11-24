@@ -31,7 +31,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_3(TextAppearanceSpan, MetricAffectingSpan, ITextAppearanceSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(TextAppearanceSpan, MetricAffectingSpan, ITextAppearanceSpan, IParcelableSpan, IParcelable)
 
 TextAppearanceSpan::TextAppearanceSpan()
     : mStyle(0)

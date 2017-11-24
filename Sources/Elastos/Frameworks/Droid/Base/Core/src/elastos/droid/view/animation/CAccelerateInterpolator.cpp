@@ -39,7 +39,7 @@ namespace Animation {
 
 CAR_OBJECT_IMPL(CAccelerateInterpolator);
 
-CAR_INTERFACE_IMPL_4(CAccelerateInterpolator, Object, IAccelerateInterpolator,
+CAR_INTERFACE_IMPL(CAccelerateInterpolator, Object, IAccelerateInterpolator,
         INativeInterpolatorFactory, IInterpolator, ITimeInterpolator);
 
 CAccelerateInterpolator::CAccelerateInterpolator()

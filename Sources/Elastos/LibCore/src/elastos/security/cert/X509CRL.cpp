@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Security {
 namespace Cert {
 
-CAR_INTERFACE_IMPL_2(X509CRL, CRL, IX509CRL, IX509Extension)
+CAR_INTERFACE_IMPL(X509CRL, CRL, IX509CRL, IX509Extension)
 
 ECode X509CRL::Equals(
     /* [in] */ IInterface *other,

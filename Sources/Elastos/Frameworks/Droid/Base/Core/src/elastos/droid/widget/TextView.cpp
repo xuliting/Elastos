@@ -524,7 +524,7 @@ void Drawables::ApplyErrorDrawableIfNeeded(
 //          CharWrapper
 //==============================================================================
 
-CAR_INTERFACE_IMPL_4(CharWrapper, Object, ICharWrapper, ICharSequence, IGetChars, IGraphicsOperations)
+CAR_INTERFACE_IMPL(CharWrapper, Object, ICharWrapper, ICharSequence, IGetChars, IGraphicsOperations)
 
 CharWrapper::CharWrapper(
     /* [in] */ ArrayOf<Char32>* chars,
@@ -970,7 +970,7 @@ void Marquee::ResetScroll()
 //          ChangeWatcher
 //==============================================================================
 
-CAR_INTERFACE_IMPL_4(ChangeWatcher, Object, IChangeWatcher, ITextWatcher, ISpanWatcher, INoCopySpan)
+CAR_INTERFACE_IMPL(ChangeWatcher, Object, IChangeWatcher, ITextWatcher, ISpanWatcher, INoCopySpan)
 
 ChangeWatcher::ChangeWatcher(
     /* [in] */ TextView* host)
@@ -1196,7 +1196,7 @@ ECode TextView::OnRestoreInstanceStateRunnable::Run()
 //          TextView
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(TextView, View, ITextView, IOnPreDrawListener)
+CAR_INTERFACE_IMPL(TextView, View, ITextView, IOnPreDrawListener)
 
 static AutoPtr<IRectF> InitCRectF()
 {

@@ -31,7 +31,7 @@ namespace Concurrent {
 //====================================================================
 // CConcurrentSkipListSet::
 //====================================================================
-CAR_INTERFACE_IMPL_4(CConcurrentSkipListSet, AbstractSet, INavigableSet, ISortedSet, ISerializable, ICloneable)
+CAR_INTERFACE_IMPL(CConcurrentSkipListSet, AbstractSet, INavigableSet, ISortedSet, ISerializable, ICloneable)
 
 CAR_OBJECT_IMPL(CConcurrentSkipListSet)
 

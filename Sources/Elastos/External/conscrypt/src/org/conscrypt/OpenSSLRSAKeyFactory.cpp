@@ -53,7 +53,7 @@ namespace Conscrypt {
 //=========================================
 // OpenSSLRSAKeyFactory::
 //=========================================
-CAR_INTERFACE_IMPL_2(OpenSSLRSAKeyFactory, Object, IKeyFactorySpi, IOpenSSLRSAKeyFactory)
+CAR_INTERFACE_IMPL(OpenSSLRSAKeyFactory, Object, IKeyFactorySpi, IOpenSSLRSAKeyFactory)
 
 ECode OpenSSLRSAKeyFactory::EngineGeneratePublic(
     /* [in] */ IKeySpec* keySpec,

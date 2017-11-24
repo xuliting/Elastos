@@ -166,7 +166,7 @@ ECode Dialog::DismissAction::Run()
 // Dialog
 //==============================================================================
 
-CAR_INTERFACE_IMPL_6(Dialog, Object, IDialog, IDialogInterface, \
+CAR_INTERFACE_IMPL(Dialog, Object, IDialog, IDialogInterface, \
     IWindowCallback, IKeyEventCallback, \
     IViewOnCreateContextMenuListener, IOnWindowDismissedCallback)
 

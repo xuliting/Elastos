@@ -46,7 +46,7 @@ namespace Droid {
 namespace TeleService {
 namespace Phone {
 
-CAR_INTERFACE_IMPL_2(IccNetworkDepersonalizationPanel::MyTextWatcher, Object, ITextWatcher, INoCopySpan)
+CAR_INTERFACE_IMPL(IccNetworkDepersonalizationPanel::MyTextWatcher, Object, ITextWatcher, INoCopySpan)
 
 ECode IccNetworkDepersonalizationPanel::MyTextWatcher::AfterTextChanged(
     /* [in] */ IEditable* buffer)

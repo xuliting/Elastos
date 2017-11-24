@@ -98,7 +98,7 @@ AutoPtr<IHandler> CMediaRouter::Static::mHandler;
 AutoPtr<IIMediaRouterClient> CMediaRouter::Static::mClient;
 CMediaRouter* CMediaRouter::Static::mOwner;
 
-CAR_INTERFACE_IMPL_2(CMediaRouter::Static::MyAudioRoutesObserver, Object, IIAudioRoutesObserver, IBinder);
+CAR_INTERFACE_IMPL(CMediaRouter::Static::MyAudioRoutesObserver, Object, IIAudioRoutesObserver, IBinder);
 
 ECode CMediaRouter::Static::MyAudioRoutesObserver::constructor(
     /* [in] */ IMediaRouterStatic* owner)
@@ -146,7 +146,7 @@ ECode CMediaRouter::Static::MyRunnable::Run()
 //    CMediaRouter::Static::MyStaticClient
 //------------------------------------
 
-CAR_INTERFACE_IMPL_2(CMediaRouter::Static::MyStaticClient, Object, IIMediaRouterClient, IBinder);
+CAR_INTERFACE_IMPL(CMediaRouter::Static::MyStaticClient, Object, IIMediaRouterClient, IBinder);
 
 ECode CMediaRouter::Static::MyStaticClient::constructor(
     /* [in] */ IMediaRouterStatic* owner)
@@ -174,7 +174,7 @@ ECode CMediaRouter::Static::MyStaticClient::ToString(
 //    CMediaRouter::Static
 //------------------------
 
-CAR_INTERFACE_IMPL_2(CMediaRouter::Static, Object, IDisplayListener, IMediaRouterStatic);
+CAR_INTERFACE_IMPL(CMediaRouter::Static, Object, IDisplayListener, IMediaRouterStatic);
 
 CMediaRouter::Static::Static(
     /* [in] */ IContext* appContext,

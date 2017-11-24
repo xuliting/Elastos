@@ -36,7 +36,7 @@ const Boolean CloseableLock::VERBOSE = FALSE;
 pthread_key_t CloseableLock::sTlsKey;
 pthread_once_t CloseableLock::sKeyOnce = PTHREAD_ONCE_INIT;
 
-CAR_INTERFACE_IMPL_2(CloseableLock::ScopedLock, Object, ICloseableLockScopedLock, ICloseable)
+CAR_INTERFACE_IMPL(CloseableLock::ScopedLock, Object, ICloseableLockScopedLock, ICloseable)
 
 static void MakeKey()
 {
@@ -54,7 +54,7 @@ ECode CloseableLock::ScopedLock::Close()
     return mHost->ReleaseLock();
 }
 
-CAR_INTERFACE_IMPL_2(CloseableLock, Object, ICloseableLock, ICloseable)
+CAR_INTERFACE_IMPL(CloseableLock, Object, ICloseableLock, ICloseable)
 
 CloseableLock::CloseableLock()
     : TAG("CloseableLock")

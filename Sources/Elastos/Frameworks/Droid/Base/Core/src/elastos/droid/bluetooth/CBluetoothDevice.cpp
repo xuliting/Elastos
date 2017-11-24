@@ -37,7 +37,7 @@ const String CBluetoothDevice::TAG("BluetoothDevice");
 const Boolean CBluetoothDevice::DBG = FALSE;
 AutoPtr<IIBluetooth> CBluetoothDevice::sService;
 
-CAR_INTERFACE_IMPL_2(CBluetoothDevice, Object, IBluetoothDevice, IParcelable);
+CAR_INTERFACE_IMPL(CBluetoothDevice, Object, IBluetoothDevice, IParcelable);
 
 CAR_OBJECT_IMPL(CBluetoothDevice);
 

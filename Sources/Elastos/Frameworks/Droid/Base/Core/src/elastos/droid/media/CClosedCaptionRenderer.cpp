@@ -406,7 +406,7 @@ void CClosedCaptionRenderer::ClosedCaptionWidget::CCLineBox::SetBackgroundSpans(
 //  CClosedCaptionRenderer::ClosedCaptionWidget
 //================================================================================
 
-CAR_INTERFACE_IMPL_2(CClosedCaptionRenderer::ClosedCaptionWidget, ViewGroup,
+CAR_INTERFACE_IMPL(CClosedCaptionRenderer::ClosedCaptionWidget, ViewGroup,
         ISubtitleTrackRenderingWidget, IClosedCaptionRendererCCParserDisplayListener)
 
 String CClosedCaptionRenderer::ClosedCaptionWidget::TAG("ClosedCaptionWidget");
@@ -583,7 +583,7 @@ void CClosedCaptionRenderer::ClosedCaptionWidget::ManageChangeListener()
 //  CClosedCaptionRenderer::MutableBackgroundColorSpan
 //================================================================================
 
-CAR_INTERFACE_IMPL_3(CClosedCaptionRenderer::MutableBackgroundColorSpan,
+CAR_INTERFACE_IMPL(CClosedCaptionRenderer::MutableBackgroundColorSpan,
         CharacterStyle, IUpdateAppearance, IParcelableSpan, IParcelable)
 
 CClosedCaptionRenderer::MutableBackgroundColorSpan::MutableBackgroundColorSpan(
@@ -1985,7 +1985,7 @@ ECode CClosedCaptionRenderer::ClosedCaptionTrack::UpdateView(
 //  CClosedCaptionRenderer
 //================================================================================
 
-CAR_INTERFACE_IMPL_2(CClosedCaptionRenderer, Object, IClosedCaptionRenderer, ISubtitleControllerRenderer)
+CAR_INTERFACE_IMPL(CClosedCaptionRenderer, Object, IClosedCaptionRenderer, ISubtitleControllerRenderer)
 
 CAR_OBJECT_IMPL(CClosedCaptionRenderer)
 

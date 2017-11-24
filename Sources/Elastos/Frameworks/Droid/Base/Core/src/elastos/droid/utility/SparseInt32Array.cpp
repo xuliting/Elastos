@@ -39,7 +39,7 @@ namespace Elastos {
 namespace Droid {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(SparseInt32Array, Object, ISparseInt32Array, ICloneable);
+CAR_INTERFACE_IMPL(SparseInt32Array, Object, ISparseInt32Array, ICloneable);
 
 SparseInt32Array::SparseInt32Array()
     : mSize(0)

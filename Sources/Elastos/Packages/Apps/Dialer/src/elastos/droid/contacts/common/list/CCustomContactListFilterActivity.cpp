@@ -768,7 +768,7 @@ ECode CCustomContactListFilterActivity::AddSyncClickListener::OnMenuItemClick(
 }
 
 
-CAR_INTERFACE_IMPL_3(CCustomContactListFilterActivity::InnerListener, Object,
+CAR_INTERFACE_IMPL(CCustomContactListFilterActivity::InnerListener, Object,
     IViewOnClickListener, IExpandableListViewOnChildClickListener,
     IViewOnCreateContextMenuListener)
 
@@ -816,7 +816,7 @@ const Int32 CCustomContactListFilterActivity::SYNC_MODE_EVERYTHING;
 
 AutoPtr<IComparator> CCustomContactListFilterActivity::sIdComparator = new IdComparator();
 
-CAR_INTERFACE_IMPL_2(CCustomContactListFilterActivity, Activity,
+CAR_INTERFACE_IMPL(CCustomContactListFilterActivity, Activity,
     ICustomContactListFilterActivity,
     ILoaderManagerLoaderCallbacks)
 

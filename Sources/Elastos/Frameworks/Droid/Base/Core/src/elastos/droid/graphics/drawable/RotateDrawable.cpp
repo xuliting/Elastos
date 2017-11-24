@@ -115,7 +115,7 @@ Boolean RotateDrawable::RotateState::CanConstantState()
 
 const Float RotateDrawable::MAX_LEVEL = 10000.0f;
 
-CAR_INTERFACE_IMPL_2(RotateDrawable, Drawable, IRotateDrawable, IDrawableCallback);
+CAR_INTERFACE_IMPL(RotateDrawable, Drawable, IRotateDrawable, IDrawableCallback);
 RotateDrawable::RotateDrawable()
     : mMutated(FALSE)
 {

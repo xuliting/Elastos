@@ -451,7 +451,7 @@ INIT_PROI_3 const AutoPtr<ICaptureRequestKey> CaptureRequest::LED_TRANSMIT =
 INIT_PROI_3 const AutoPtr<ICaptureRequestKey> CaptureRequest::BLACK_LEVEL_LOCK =
     CreateKey("android.blackLevel.lock", ECLSID_CBoolean, EIID_IBoolean);
 
-CAR_INTERFACE_IMPL_2(CaptureRequest, CameraMetadata, ICaptureRequest, IParcelable)
+CAR_INTERFACE_IMPL(CaptureRequest, CameraMetadata, ICaptureRequest, IParcelable)
 
 CaptureRequest::CaptureRequest()
 {

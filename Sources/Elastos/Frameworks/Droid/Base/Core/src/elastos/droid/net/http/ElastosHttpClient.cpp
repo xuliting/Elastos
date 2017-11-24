@@ -211,7 +211,7 @@ ECode ElastosHttpClient::InnerSub_DefaultHttpClient::CreateHttpContext(
 //========================================================================
 // ElastosHttpClient
 //========================================================================
-CAR_INTERFACE_IMPL_2(ElastosHttpClient, Object, IHttpClient, IElastosHttpClient)
+CAR_INTERFACE_IMPL(ElastosHttpClient, Object, IHttpClient, IElastosHttpClient)
 
 Int64 ElastosHttpClient::DEFAULT_SYNC_MIN_GZIP_BYTES = 256;
 AutoPtr<ArrayOf<String> > ElastosHttpClient::sTextContentTypes = InitTextContentTypes();

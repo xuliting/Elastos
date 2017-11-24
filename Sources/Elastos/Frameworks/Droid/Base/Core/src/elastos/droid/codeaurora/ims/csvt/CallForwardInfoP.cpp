@@ -22,7 +22,7 @@ namespace CodeAurora {
 namespace Ims {
 namespace Csvt {
 
-CAR_INTERFACE_IMPL_2(CallForwardInfoP, Object, ICallForwardInfoP, IParcelable);
+CAR_INTERFACE_IMPL(CallForwardInfoP, Object, ICallForwardInfoP, IParcelable);
 
 CallForwardInfoP::CallForwardInfoP()
     : status(0)

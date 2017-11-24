@@ -507,7 +507,7 @@ const Int32 RttService::RttServiceImpl::CMD_DRIVER_UNLOADED;
 const Int32 RttService::RttServiceImpl::CMD_ISSUE_NEXT_REQUEST;
 const Int32 RttService::RttServiceImpl::CMD_RTT_RESPONSE;
 
-CAR_INTERFACE_IMPL_2(RttService::RttServiceImpl, Object, IIRttManager, IBinder);
+CAR_INTERFACE_IMPL(RttService::RttServiceImpl, Object, IIRttManager, IBinder);
 
 RttService::RttServiceImpl::RttServiceImpl()
 {

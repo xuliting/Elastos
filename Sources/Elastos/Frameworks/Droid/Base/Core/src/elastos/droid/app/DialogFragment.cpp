@@ -45,7 +45,7 @@ const String DialogFragment::SAVED_CANCELABLE("android:cancelable");
 const String DialogFragment::SAVED_SHOWS_DIALOG("android:showsDialog");
 const String DialogFragment::SAVED_BACK_STACK_ID("android:backStackId");
 
-CAR_INTERFACE_IMPL_3(DialogFragment, Fragment, IDialogFragment, \
+CAR_INTERFACE_IMPL(DialogFragment, Fragment, IDialogFragment, \
     IDialogInterfaceOnCancelListener, IDialogInterfaceOnDismissListener)
 
 DialogFragment::DialogFragment()

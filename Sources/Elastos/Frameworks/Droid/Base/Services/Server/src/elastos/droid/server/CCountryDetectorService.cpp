@@ -109,7 +109,7 @@ ECode CCountryDetectorService::LocationBasedDetectorListener::OnCountryDetected(
     return mHost->mHandler->Post(runnable, &result);
 }
 
-CAR_INTERFACE_IMPL_2(CCountryDetectorService, Object, IICountryDetector, IBinder)
+CAR_INTERFACE_IMPL(CCountryDetectorService, Object, IICountryDetector, IBinder)
 
 CAR_OBJECT_IMPL(CCountryDetectorService)
 

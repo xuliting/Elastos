@@ -23,7 +23,7 @@ namespace Elastos {
 namespace IO {
 namespace Channels {
 
-CAR_INTERFACE_IMPL_3(SocketChannel, Object, IByteChannel, IScatteringByteChannel, IGatheringByteChannel)
+CAR_INTERFACE_IMPL(SocketChannel, Object, IByteChannel, IScatteringByteChannel, IGatheringByteChannel)
 
 SocketChannel::SocketChannel()
 {}

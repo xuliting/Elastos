@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIILocationProviderNative::TAG("CIILocationProviderNative");
 
-CAR_INTERFACE_IMPL_2(CIILocationProviderNative, Object, IILocationProvider, IBinder)
+CAR_INTERFACE_IMPL(CIILocationProviderNative, Object, IILocationProvider, IBinder)
 
 CAR_OBJECT_IMPL(CIILocationProviderNative)
 

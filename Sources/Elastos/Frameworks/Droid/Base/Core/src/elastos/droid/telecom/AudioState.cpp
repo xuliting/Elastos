@@ -32,7 +32,7 @@ namespace Elastos {
 namespace Droid {
 namespace Telecom {
 
-CAR_INTERFACE_IMPL_2(AudioState, Object, IAudioState, IParcelable)
+CAR_INTERFACE_IMPL(AudioState, Object, IAudioState, IParcelable)
 
 AudioState::AudioState()
 {}

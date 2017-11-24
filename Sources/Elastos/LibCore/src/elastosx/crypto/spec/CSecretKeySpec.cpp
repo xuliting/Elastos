@@ -25,7 +25,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CSecretKeySpec)
-CAR_INTERFACE_IMPL_5(CSecretKeySpec, Object, ISecretKeySpec, ISecretKey, IKey, IKeySpec, ISerializable)
+CAR_INTERFACE_IMPL(CSecretKeySpec, Object, ISecretKeySpec, ISecretKey, IKey, IKeySpec, ISerializable)
 Int64 CSecretKeySpec::sSerialVersionUID = 6577238317307289933L;
 
 CSecretKeySpec::CSecretKeySpec()

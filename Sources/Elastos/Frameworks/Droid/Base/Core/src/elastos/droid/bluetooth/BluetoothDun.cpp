@@ -43,7 +43,7 @@ const Boolean BluetoothDun::DBG;
 const Boolean BluetoothDun::VDBG;
 
 CAR_INTERFACE_IMPL(BluetoothDun::ServiceConnection, Object, IServiceConnection)
-CAR_INTERFACE_IMPL_2(BluetoothDun, Object, IBluetoothDun, IBluetoothProfile)
+CAR_INTERFACE_IMPL(BluetoothDun, Object, IBluetoothDun, IBluetoothProfile)
 
 BluetoothDun::ServiceConnection::ServiceConnection(
     /* [in] */ BluetoothDun* host)

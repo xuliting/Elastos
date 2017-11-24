@@ -2000,7 +2000,7 @@ const Int32 AppWidgetServiceImpl::LOADED_PROFILE_ID;
 const Int32 AppWidgetServiceImpl::UNKNOWN_USER_ID;
 const Int32 AppWidgetServiceImpl::CURRENT_VERSION;
 
-CAR_INTERFACE_IMPL_3(AppWidgetServiceImpl, Object, IIAppWidgetService, IWidgetBackupProvider, IBinder)
+CAR_INTERFACE_IMPL(AppWidgetServiceImpl, Object, IIAppWidgetService, IWidgetBackupProvider, IBinder)
 
 AppWidgetServiceImpl::AppWidgetServiceImpl()
     : mSafeMode(FALSE)

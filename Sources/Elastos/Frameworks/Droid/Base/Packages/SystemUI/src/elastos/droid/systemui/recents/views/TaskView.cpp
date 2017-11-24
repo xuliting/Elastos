@@ -59,7 +59,7 @@ static const String TAG("TaskView");
 //======================================================================
 // TaskView::Wrapper
 //======================================================================
-CAR_INTERFACE_IMPL_4(TaskView::Wrapper, Object, ITaskCallbacks,
+CAR_INTERFACE_IMPL(TaskView::Wrapper, Object, ITaskCallbacks,
     ITaskFooterViewCallbacks, IViewOnClickListener, IViewOnLongClickListener)
 
 TaskView::Wrapper::Wrapper(

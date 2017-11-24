@@ -135,7 +135,7 @@ Int32 CLinkedTransferQueue::CHAINED_SPINS = FRONT_SPINS >> 1;
 
 Int32 CLinkedTransferQueue::SWEEP_THRESHOLD = 32;
 
-CAR_INTERFACE_IMPL_2(CLinkedTransferQueue, AbstractQueue, ITransferQueue, IBlockingQueue)
+CAR_INTERFACE_IMPL(CLinkedTransferQueue, AbstractQueue, ITransferQueue, IBlockingQueue)
 
 CAR_OBJECT_IMPL(CLinkedTransferQueue)
 

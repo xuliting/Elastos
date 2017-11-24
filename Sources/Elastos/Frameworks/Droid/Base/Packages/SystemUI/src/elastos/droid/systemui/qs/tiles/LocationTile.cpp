@@ -28,7 +28,7 @@ namespace SystemUI {
 namespace Qs {
 namespace Tiles {
 
-CAR_INTERFACE_IMPL_2(LocationTile::Callback, Object, ILocationSettingsChangeCallback, IKeyguardMonitorCallback);
+CAR_INTERFACE_IMPL(LocationTile::Callback, Object, ILocationSettingsChangeCallback, IKeyguardMonitorCallback);
 LocationTile::Callback::Callback(
     /* [in] */ LocationTile* host)
     : mHost(host)

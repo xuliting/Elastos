@@ -4237,7 +4237,7 @@ CPackageManagerService::CPackageManagerService()
     col->SynchronizedSet(set, (ISet**)&mPreLaunchCheckPackages);
 }
 
-CAR_INTERFACE_IMPL_2(CPackageManagerService, Object, IIPackageManager, IBinder)
+CAR_INTERFACE_IMPL(CPackageManagerService, Object, IIPackageManager, IBinder)
 
 CAR_OBJECT_IMPL(CPackageManagerService)
 

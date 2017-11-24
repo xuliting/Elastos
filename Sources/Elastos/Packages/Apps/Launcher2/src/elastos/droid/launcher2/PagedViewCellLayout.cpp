@@ -167,7 +167,7 @@ ECode PagedViewCellLayout::PagedViewCellLayoutLayoutParams::ToString(
 
 const String PagedViewCellLayout::TAG("PagedViewCellLayout");
 
-CAR_INTERFACE_IMPL_2(PagedViewCellLayout, ViewGroup, IPagedViewCellLayout, IPage);
+CAR_INTERFACE_IMPL(PagedViewCellLayout, ViewGroup, IPagedViewCellLayout, IPage);
 
 PagedViewCellLayout::PagedViewCellLayout()
     : mCellCountX(0)

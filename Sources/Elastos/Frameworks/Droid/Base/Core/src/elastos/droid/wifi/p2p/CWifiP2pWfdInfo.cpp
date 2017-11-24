@@ -40,7 +40,7 @@ const  Int32 CWifiP2pWfdInfo::SESSION_AVAILABLE;
 const  Int32 CWifiP2pWfdInfo::SESSION_AVAILABLE_BIT1;
 const  Int32 CWifiP2pWfdInfo::SESSION_AVAILABLE_BIT2;
 
-CAR_INTERFACE_IMPL_2(CWifiP2pWfdInfo, Object, IWifiP2pWfdInfo, IParcelable)
+CAR_INTERFACE_IMPL(CWifiP2pWfdInfo, Object, IWifiP2pWfdInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiP2pWfdInfo)
 

@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Launcher2 {
 
-CAR_INTERFACE_IMPL_2(LauncherSettings::Favorites, Object, ILauncherSettingsBaseLauncherColumns,
+CAR_INTERFACE_IMPL(LauncherSettings::Favorites, Object, ILauncherSettingsBaseLauncherColumns,
         IBaseColumns);
 
 static AutoPtr<IUri> InitCONTENT_URI()

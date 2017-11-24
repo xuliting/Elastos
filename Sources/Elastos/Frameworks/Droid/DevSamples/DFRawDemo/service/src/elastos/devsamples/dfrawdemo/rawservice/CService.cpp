@@ -116,7 +116,7 @@ ECode CService::MyHandler::HandleMessage(
 //======================================================================
 //  CService::RawService
 //======================================================================
-CAR_INTERFACE_IMPL_2(CService::RawService, Object, IRawInterface, IBusObject)
+CAR_INTERFACE_IMPL(CService::RawService, Object, IRawInterface, IBusObject)
 CAR_OBJECT_IMPL(CRawService)
 
 ECode CService::RawService::constructor(

@@ -43,7 +43,7 @@ namespace Elastos {
 namespace Droid {
 namespace InCallUI {
 
-CAR_INTERFACE_IMPL_4(CallButtonPresenter, Presenter
+CAR_INTERFACE_IMPL(CallButtonPresenter, Presenter
         , IInCallStateListener
         , IAudioModeListener
         , IIncomingCallListener

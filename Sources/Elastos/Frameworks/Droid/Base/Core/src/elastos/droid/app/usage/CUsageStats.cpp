@@ -25,7 +25,7 @@ namespace Droid {
 namespace App {
 namespace Usage {
 
-CAR_INTERFACE_IMPL_2(CUsageStats, Object, IUsageStats, IParcelable)
+CAR_INTERFACE_IMPL(CUsageStats, Object, IUsageStats, IParcelable)
 
 CAR_OBJECT_IMPL(CUsageStats)
 

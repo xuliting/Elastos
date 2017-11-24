@@ -2322,7 +2322,7 @@ ECode PhoneWindow::DecorView::GetWeakReference(
 //=====================================================================
 //              PhoneWindow::PanelFeatureState::SavedState
 //=====================================================================
-CAR_INTERFACE_IMPL_2(PhoneWindow::PanelFeatureState::SavedState, Object, IPhoneWindowSavedState, IParcelable)
+CAR_INTERFACE_IMPL(PhoneWindow::PanelFeatureState::SavedState, Object, IPhoneWindowSavedState, IParcelable)
 
 PhoneWindow::PanelFeatureState::SavedState::SavedState()
     : mFeatureId(0)
@@ -2577,7 +2577,7 @@ void PhoneWindow::PanelFeatureState::ApplyFrozenState()
     }
 }
 
-CAR_INTERFACE_IMPL_2(PhoneWindow::DialogMenuCallback, Object, IMenuBuilderCallback, IMenuPresenterCallback);
+CAR_INTERFACE_IMPL(PhoneWindow::DialogMenuCallback, Object, IMenuBuilderCallback, IMenuPresenterCallback);
 
 PhoneWindow::DialogMenuCallback::DialogMenuCallback(
     /* [in] */ Int32 featureId,
@@ -2587,7 +2587,7 @@ PhoneWindow::DialogMenuCallback::DialogMenuCallback(
     host->GetWeakReference((IWeakReference**)&mWeakHost);
 }
 
-//CAR_INTERFACE_IMPL_2(PhoneWindow::DialogMenuCallback, Object, IMenuBuilderCallback, IMenuPresenterCallback)
+//CAR_INTERFACE_IMPL(PhoneWindow::DialogMenuCallback, Object, IMenuBuilderCallback, IMenuPresenterCallback)
 
 ECode PhoneWindow::DialogMenuCallback::OnCloseMenu(
     /* [in] */ IMenuBuilder* menu,

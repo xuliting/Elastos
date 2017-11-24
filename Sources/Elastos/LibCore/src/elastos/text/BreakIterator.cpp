@@ -34,7 +34,7 @@ using Libcore::ICU::CNativeBreakIteratorHelper;
 namespace Elastos {
 namespace Text {
 
-CAR_INTERFACE_IMPL_2(BreakIterator, Object, IBreakIterator, ICloneable)
+CAR_INTERFACE_IMPL(BreakIterator, Object, IBreakIterator, ICloneable)
 
 BreakIterator::BreakIterator()
 {}

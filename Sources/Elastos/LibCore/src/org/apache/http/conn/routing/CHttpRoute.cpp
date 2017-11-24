@@ -32,7 +32,7 @@ CHttpRoute::CHttpRoute()
     : mSecure(FALSE)
 {}
 
-CAR_INTERFACE_IMPL_3(CHttpRoute, Object, IHttpRoute, IRouteInfo, ICloneable)
+CAR_INTERFACE_IMPL(CHttpRoute, Object, IHttpRoute, IRouteInfo, ICloneable)
 
 CAR_OBJECT_IMPL(CHttpRoute)
 

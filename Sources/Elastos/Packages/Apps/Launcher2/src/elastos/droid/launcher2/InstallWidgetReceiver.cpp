@@ -48,7 +48,7 @@ InstallWidgetReceiver::WidgetMimeTypeHandlerData::WidgetMimeTypeHandlerData(
 {
 }
 
-CAR_INTERFACE_IMPL_3(InstallWidgetReceiver::WidgetListAdapter, Object, IListAdapter
+CAR_INTERFACE_IMPL(InstallWidgetReceiver::WidgetListAdapter, Object, IListAdapter
         , IAdapter, IDialogInterfaceOnClickListener);
 
 InstallWidgetReceiver::WidgetListAdapter::WidgetListAdapter(

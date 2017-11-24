@@ -41,7 +41,7 @@ const String CActivityManagerTaskDescription::ATTR_TASKDESCRIPTIONLABEL("task_de
 const String CActivityManagerTaskDescription::ATTR_TASKDESCRIPTIONCOLOR("task_description_color");
 const String CActivityManagerTaskDescription::ATTR_TASKDESCRIPTIONICONFILENAME("task_description_icon_filename");
 
-CAR_INTERFACE_IMPL_2(CActivityManagerTaskDescription, Object, IActivityManagerTaskDescription, IParcelable)
+CAR_INTERFACE_IMPL(CActivityManagerTaskDescription, Object, IActivityManagerTaskDescription, IParcelable)
 
 CAR_OBJECT_IMPL(CActivityManagerTaskDescription)
 

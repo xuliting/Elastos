@@ -503,7 +503,7 @@ AutoPtr<ArrayOf<Int32> > CExtension::ISSUING_DISTR_POINTS = initISSUING_DISTR_PO
 
 CAR_OBJECT_IMPL(CExtension)
 
-CAR_INTERFACE_IMPL_2(CExtension, Object, IX509Extension, IExtension)
+CAR_INTERFACE_IMPL(CExtension, Object, IX509Extension, IExtension)
 
 ECode CExtension::GetId(
     /* [out] */ String* id)

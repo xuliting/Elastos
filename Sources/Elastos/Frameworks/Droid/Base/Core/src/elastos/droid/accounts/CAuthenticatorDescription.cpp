@@ -28,7 +28,7 @@ const String CAuthenticatorDescription::TAG("AuthenticatorDescription");
 
 CAR_OBJECT_IMPL(CAuthenticatorDescription)
 
-CAR_INTERFACE_IMPL_2(CAuthenticatorDescription, Object, IAuthenticatorDescription, IParcelable)
+CAR_INTERFACE_IMPL(CAuthenticatorDescription, Object, IAuthenticatorDescription, IParcelable)
 
 CAuthenticatorDescription::CAuthenticatorDescription()
     : mLabelId(0)

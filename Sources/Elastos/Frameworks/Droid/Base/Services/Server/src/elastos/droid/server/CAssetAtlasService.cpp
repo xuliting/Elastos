@@ -576,7 +576,7 @@ CARAPI CAssetAtlasService::WorkerResultComparator::Compare(
 // CAssetAtlasService
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CAssetAtlasService, Object, IIAssetAtlas, IBinder)
+CAR_INTERFACE_IMPL(CAssetAtlasService, Object, IIAssetAtlas, IBinder)
 
 CAR_OBJECT_IMPL(CAssetAtlasService)
 

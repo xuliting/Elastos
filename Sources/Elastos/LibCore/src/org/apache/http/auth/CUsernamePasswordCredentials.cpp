@@ -27,7 +27,7 @@ namespace Apache {
 namespace Http {
 namespace Auth {
 
-CAR_INTERFACE_IMPL_2(CUsernamePasswordCredentials, Object, IUsernamePasswordCredentials, ICredentials)
+CAR_INTERFACE_IMPL(CUsernamePasswordCredentials, Object, IUsernamePasswordCredentials, ICredentials)
 
 CAR_OBJECT_IMPL(CUsernamePasswordCredentials)
 

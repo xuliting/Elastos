@@ -26,7 +26,7 @@ namespace Droid {
 namespace Hardware {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(GeofenceHardwareMonitorEvent, Object, IGeofenceHardwareMonitorEvent, IParcelable)
+CAR_INTERFACE_IMPL(GeofenceHardwareMonitorEvent, Object, IGeofenceHardwareMonitorEvent, IParcelable)
 
 GeofenceHardwareMonitorEvent::GeofenceHardwareMonitorEvent()
     : mMonitoringType(0)

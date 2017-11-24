@@ -28,7 +28,7 @@ namespace IO {
 const Byte CObjectOutputStream::NOT_SC_BLOCK_DATA = (Byte) (ObjectStreamConstants::SC_BLOCK_DATA ^ 0xFF);
 
 CAR_OBJECT_IMPL(CObjectOutputStream)
-CAR_INTERFACE_IMPL_3(CObjectOutputStream, OutputStream, IObjectOutputStream, IObjectOutput, IDataOutput)
+CAR_INTERFACE_IMPL(CObjectOutputStream, OutputStream, IObjectOutputStream, IObjectOutput, IDataOutput)
 CObjectOutputStream::CObjectOutputStream()
     : mNestedLevels(0)
     , mEnableReplace(FALSE)

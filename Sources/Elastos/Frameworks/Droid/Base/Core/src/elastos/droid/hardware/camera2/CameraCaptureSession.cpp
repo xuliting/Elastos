@@ -122,7 +122,7 @@ ECode CameraCaptureSession::CaptureCallback::OnCaptureSequenceAborted(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CameraCaptureSession, Object, ICameraCaptureSession, ICloseable)
+CAR_INTERFACE_IMPL(CameraCaptureSession, Object, ICameraCaptureSession, ICloseable)
 
 } // namespace Camera2
 } // namespace Hardware

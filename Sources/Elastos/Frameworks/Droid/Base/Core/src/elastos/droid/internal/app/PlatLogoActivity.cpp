@@ -160,7 +160,7 @@ ECode PlatLogoActivity::LocalRunnable::Run()
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_3(PlatLogoActivity::LocalListener::LocalListener, Object,
+CAR_INTERFACE_IMPL(PlatLogoActivity::LocalListener::LocalListener, Object,
     IViewOnClickListener, IViewOnLongClickListener, IViewOnKeyListener)
 
 PlatLogoActivity::LocalListener::LocalListener(

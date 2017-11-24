@@ -86,7 +86,7 @@ const Int64 GeofenceManager::MAX_AGE_NANOS = 5L * 60L * 300000000000LL;
 const Int64 GeofenceManager::MIN_INTERVAL_MS = 1 * 60 * 1000;
 const Int64 GeofenceManager::MAX_INTERVAL_MS = 2 * 60 * 60 * 1000;
 
-CAR_INTERFACE_IMPL_2(GeofenceManager, Object, ILocationListener, IPendingIntentOnFinished)
+CAR_INTERFACE_IMPL(GeofenceManager, Object, ILocationListener, IPendingIntentOnFinished)
 
 GeofenceManager::GeofenceManager(
     /* [in] */ IContext* context,

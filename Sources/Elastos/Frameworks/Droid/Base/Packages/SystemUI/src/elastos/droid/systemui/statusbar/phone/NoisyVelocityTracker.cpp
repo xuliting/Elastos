@@ -46,7 +46,7 @@ AutoPtr<Pools::SynchronizedPool<INoisyVelocityTracker> > NoisyVelocityTracker::s
 const Float NoisyVelocityTracker::DECAY = 0.75f;
 const Boolean NoisyVelocityTracker::DEBUG = FALSE;
 
-CAR_INTERFACE_IMPL_2(NoisyVelocityTracker, Object, INoisyVelocityTracker, IVelocityTrackerInterface);
+CAR_INTERFACE_IMPL(NoisyVelocityTracker, Object, INoisyVelocityTracker, IVelocityTrackerInterface);
 AutoPtr<NoisyVelocityTracker> NoisyVelocityTracker::Obtain()
 {
     AutoPtr<NoisyVelocityTracker> instance = (NoisyVelocityTracker*)sNoisyPool->AcquireItem().Get();

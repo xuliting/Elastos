@@ -28,7 +28,7 @@ namespace Media {
 const String Rating::TAG(String("Rating"));
 const Float Rating::RATING_NOT_RATED = -1.0f;
 
-CAR_INTERFACE_IMPL_2(Rating, Object, IRating, IParcelable)
+CAR_INTERFACE_IMPL(Rating, Object, IRating, IParcelable)
 
 Rating::Rating()
 {}

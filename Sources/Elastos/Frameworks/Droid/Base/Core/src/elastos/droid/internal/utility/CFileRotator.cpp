@@ -108,7 +108,7 @@ Boolean CFileRotator::FileInfo::IsActive()
     return mEndMillis == Elastos::Core::Math::INT64_MAX_VALUE;
 }
 
-CAR_INTERFACE_IMPL_3(CFileRotator::CombineActiveRewriter, Object,
+CAR_INTERFACE_IMPL(CFileRotator::CombineActiveRewriter, Object,
     IFileRotatorReader, IFileRotatorWriter, IFileRotatorRewriter)
 
 CFileRotator::CombineActiveRewriter::CombineActiveRewriter(

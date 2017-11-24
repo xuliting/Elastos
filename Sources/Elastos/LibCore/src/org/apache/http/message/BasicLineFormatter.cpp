@@ -38,7 +38,7 @@ static AutoPtr<IBasicLineFormatter> InitDefault()
 }
 const AutoPtr<IBasicLineFormatter> BasicLineFormatter::DEFAULT = InitDefault();
 
-CAR_INTERFACE_IMPL_2(BasicLineFormatter, Object, IBasicLineFormatter, ILineFormatter)
+CAR_INTERFACE_IMPL(BasicLineFormatter, Object, IBasicLineFormatter, ILineFormatter)
 
 ECode BasicLineFormatter::InitBuffer(
     /* [in] */ ICharArrayBuffer* buffer,

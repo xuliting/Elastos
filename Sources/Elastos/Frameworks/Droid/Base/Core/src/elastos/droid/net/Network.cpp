@@ -45,7 +45,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(Network, Object, INetwork, IParcelable)
+CAR_INTERFACE_IMPL(Network, Object, INetwork, IParcelable)
 
 const Boolean Network::HTTP_KEEP_ALIVE = GetHTTP_KEEP_ALIVE();
 const Int32 Network::HTTP_MAX_CONNECTIONS = GetHTTP_MAX_CONNECTIONS();

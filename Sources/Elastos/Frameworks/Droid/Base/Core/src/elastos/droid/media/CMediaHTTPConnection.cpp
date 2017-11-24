@@ -123,7 +123,7 @@ Boolean CMediaHTTPConnection::VERBOSE = FALSE;
 Int32 CMediaHTTPConnection::HTTP_TEMP_REDIRECT = 307;
 Int32 CMediaHTTPConnection::MAX_REDIRECTS = 20;
 
-CAR_INTERFACE_IMPL_2(CMediaHTTPConnection, Object, IIMediaHTTPConnection, IBinder)
+CAR_INTERFACE_IMPL(CMediaHTTPConnection, Object, IIMediaHTTPConnection, IBinder)
 
 CAR_OBJECT_IMPL(CMediaHTTPConnection)
 

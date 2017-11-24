@@ -29,7 +29,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CInnerReceiver, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CInnerReceiver, Object, IIntentReceiver, IBinder)
 
 CAR_OBJECT_IMPL(CInnerReceiver)
 

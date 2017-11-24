@@ -46,7 +46,7 @@ namespace Voice {
 // VoiceInteractionService::MInterface
 //==================================
 
-CAR_INTERFACE_IMPL_2(VoiceInteractionService::MInterface, Object, IIVoiceInteractionService, IBinder)
+CAR_INTERFACE_IMPL(VoiceInteractionService::MInterface, Object, IIVoiceInteractionService, IBinder)
 
 VoiceInteractionService::MInterface::MInterface(
     /* [in] */ VoiceInteractionService* host)

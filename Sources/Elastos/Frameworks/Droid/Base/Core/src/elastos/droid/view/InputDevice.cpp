@@ -44,7 +44,7 @@ namespace Droid {
 namespace View {
 
 CAR_INTERFACE_IMPL(InputDevice::MotionRange, Object, IMotionRange)
-CAR_INTERFACE_IMPL_2(InputDevice, Object, IInputDevice, IParcelable)
+CAR_INTERFACE_IMPL(InputDevice, Object, IInputDevice, IParcelable)
 
 InputDevice::MotionRange::MotionRange(
     /* [in] */ Int32 axis,

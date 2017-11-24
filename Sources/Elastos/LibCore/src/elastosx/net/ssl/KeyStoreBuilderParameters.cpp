@@ -24,7 +24,7 @@ namespace Elastosx {
 namespace Net {
 namespace Ssl {
 
-CAR_INTERFACE_IMPL_2(KeyStoreBuilderParameters, Object, IKeyStoreBuilderParameters, IManagerFactoryParameters)
+CAR_INTERFACE_IMPL(KeyStoreBuilderParameters, Object, IKeyStoreBuilderParameters, IManagerFactoryParameters)
 
 ECode KeyStoreBuilderParameters::constructor(
     /* [in] */ IKeyStoreBuilder* builder)

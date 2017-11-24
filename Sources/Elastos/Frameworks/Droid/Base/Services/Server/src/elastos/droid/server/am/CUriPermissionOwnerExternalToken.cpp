@@ -25,7 +25,7 @@ namespace Droid {
 namespace Server {
 namespace Am {
 
-CAR_INTERFACE_IMPL_2(CUriPermissionOwnerExternalToken, Object, IUriPermissionOwnerExternalToken, IBinder)
+CAR_INTERFACE_IMPL(CUriPermissionOwnerExternalToken, Object, IUriPermissionOwnerExternalToken, IBinder)
 
 CAR_OBJECT_IMPL(CUriPermissionOwnerExternalToken)
 

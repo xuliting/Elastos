@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIOnKeyguardExitResultNative::TAG("CIOnKeyguardExitResultNative");
 
-CAR_INTERFACE_IMPL_2(CIOnKeyguardExitResultNative, Object, IOnKeyguardExitResult, IBinder)
+CAR_INTERFACE_IMPL(CIOnKeyguardExitResultNative, Object, IOnKeyguardExitResult, IBinder)
 
 CAR_OBJECT_IMPL(CIOnKeyguardExitResultNative)
 

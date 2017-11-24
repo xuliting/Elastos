@@ -41,7 +41,7 @@ namespace Elastos {
 namespace Droid {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(Address, Object, IAddress, IParcelable)
+CAR_INTERFACE_IMPL(Address, Object, IAddress, IParcelable)
 
 Address::Address()
     : mMaxAddressLineIndex(-1)

@@ -53,7 +53,7 @@ SRTTrack::SRTTrack()
 SRTTrack::~SRTTrack()
 {}
 
-CAR_INTERFACE_IMPL_4(SRTTrack, Object, IWebVttCueListener, ISRTTrack, IMediaTimeProviderOnMediaTimeListener, IMediaTimeProviderOnMediaTimeListener)
+CAR_INTERFACE_IMPL(SRTTrack, Object, IWebVttCueListener, ISRTTrack, IMediaTimeProviderOnMediaTimeListener, IMediaTimeProviderOnMediaTimeListener)
 
 ECode SRTTrack::constructor(
 	/* [in] */ IWebVttRenderingWidget* renderingWidget,

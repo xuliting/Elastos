@@ -42,7 +42,7 @@ namespace App {
 //==========================================================
 // LocalActivityManager::LocalActivityRecord
 //==========================================================
-CAR_INTERFACE_IMPL_2(LocalActivityManager::LocalActivityRecord, Object, ILocalActivityRecord, IBinder)
+CAR_INTERFACE_IMPL(LocalActivityManager::LocalActivityRecord, Object, ILocalActivityRecord, IBinder)
 
 LocalActivityManager::LocalActivityRecord::LocalActivityRecord()
     : mCurState(LocalActivityManager::RESTORED)

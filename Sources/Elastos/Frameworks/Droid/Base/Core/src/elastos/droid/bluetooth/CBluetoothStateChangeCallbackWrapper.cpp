@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Droid {
 namespace Bluetooth {
 
-CAR_INTERFACE_IMPL_2(CBluetoothStateChangeCallbackWrapper, Object, IIBluetoothStateChangeCallback, IBinder);
+CAR_INTERFACE_IMPL(CBluetoothStateChangeCallbackWrapper, Object, IIBluetoothStateChangeCallback, IBinder);
 
 CAR_OBJECT_IMPL(CBluetoothStateChangeCallbackWrapper);
 

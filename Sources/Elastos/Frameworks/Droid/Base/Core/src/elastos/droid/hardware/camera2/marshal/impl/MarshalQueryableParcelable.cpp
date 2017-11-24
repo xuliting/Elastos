@@ -245,7 +245,7 @@ const Boolean MarshalQueryableParcelable::VERBOSE = FALSE; //Log.isLoggable(TAG,
 
 const String MarshalQueryableParcelable::FIELD_CREATOR("CREATOR");
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableParcelable, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableParcelable, Object,
         IMarshalQueryableParcelable, IMarshalQueryable)
 
 ECode MarshalQueryableParcelable::CreateMarshaler(

@@ -24,7 +24,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CPSpecified)
-CAR_INTERFACE_IMPL_2(CPSpecified, Object, IPSpecified, IPSource)
+CAR_INTERFACE_IMPL(CPSpecified, Object, IPSpecified, IPSource)
 
 CPSpecified::CPSpecified()
 {

@@ -40,7 +40,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractGroups)
 
-CAR_INTERFACE_IMPL_4(CContactsContractGroups, Singleton
+CAR_INTERFACE_IMPL(CContactsContractGroups, Singleton
     , IContactsContractGroups
     , IBaseColumns
     , IContactsContractGroupsColumns
@@ -81,7 +81,7 @@ ECode CContactsContractGroups::EntityIteratorImpl::constructor(
     return CursorEntityIterator::constructor(cursor);
 }
 
-CAR_INTERFACE_IMPL_3(CContactsContractGroups::EntityIteratorImpl, Object, ICursorEntityIterator, IEntityIterator, IIterator)
+CAR_INTERFACE_IMPL(CContactsContractGroups::EntityIteratorImpl, Object, ICursorEntityIterator, IEntityIterator, IIterator)
 
 
 CContactsContractGroups::EntityIteratorImpl::EntityIteratorImpl()

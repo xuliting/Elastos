@@ -39,7 +39,7 @@ namespace Bluetooth {
 //=====================================================================
 //    BluetoothHeadsetClient::BluetoothStateChangeCallbackStub
 //=====================================================================
-CAR_INTERFACE_IMPL_2(BluetoothHeadsetClient::BluetoothStateChangeCallbackStub, Object, IIBluetoothStateChangeCallback, IBinder);
+CAR_INTERFACE_IMPL(BluetoothHeadsetClient::BluetoothStateChangeCallbackStub, Object, IIBluetoothStateChangeCallback, IBinder);
 
 BluetoothHeadsetClient::BluetoothStateChangeCallbackStub::BluetoothStateChangeCallbackStub()
 {
@@ -131,7 +131,7 @@ const Boolean BluetoothHeadsetClient::DBG = TRUE;
 const Boolean BluetoothHeadsetClient::VDBG = FALSE;
 
 
-CAR_INTERFACE_IMPL_2(BluetoothHeadsetClient, Object, IBluetoothHeadsetClient, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothHeadsetClient, Object, IBluetoothHeadsetClient, IBluetoothProfile);
 
 BluetoothHeadsetClient::BluetoothHeadsetClient()
 {

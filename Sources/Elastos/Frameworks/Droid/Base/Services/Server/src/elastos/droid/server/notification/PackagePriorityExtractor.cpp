@@ -29,7 +29,7 @@ const String PackagePriorityExtractor::TAG("ImportantPackageExtractor");
 const Boolean PackagePriorityExtractor::DBG = FALSE;
 
 
-CAR_INTERFACE_IMPL_2(PackagePriorityExtractor, Object, IPackagePriorityExtractor, INotificationSignalExtractor);
+CAR_INTERFACE_IMPL(PackagePriorityExtractor, Object, IPackagePriorityExtractor, INotificationSignalExtractor);
 
 PackagePriorityExtractor::PackagePriorityExtractor()
 {

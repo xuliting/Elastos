@@ -57,7 +57,7 @@ namespace Net {
 //====================================================================================
 //              LinkProperties
 //====================================================================================
-CAR_INTERFACE_IMPL_2(LinkProperties, Object, ILinkProperties, IParcelable)
+CAR_INTERFACE_IMPL(LinkProperties, Object, ILinkProperties, IParcelable)
 
 const Int32 LinkProperties::MIN_MTU = 68;
 const Int32 LinkProperties::MIN_MTU_V6 = 1280;

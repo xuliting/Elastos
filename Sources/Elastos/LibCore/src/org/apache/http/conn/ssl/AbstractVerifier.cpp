@@ -71,7 +71,7 @@ static AutoPtr< ArrayOf<ICharSequence*> > InitBadCountry2lds()
 }
 const AutoPtr< ArrayOf<ICharSequence*> > AbstractVerifier::BAD_COUNTRY_2LDS = InitBadCountry2lds();
 
-CAR_INTERFACE_IMPL_3(AbstractVerifier, Object, IAbstractVerifier, IX509HostnameVerifier, IHostnameVerifier)
+CAR_INTERFACE_IMPL(AbstractVerifier, Object, IAbstractVerifier, IX509HostnameVerifier, IHostnameVerifier)
 
 ECode AbstractVerifier::Verify(
     /* [in] */ const String& host,

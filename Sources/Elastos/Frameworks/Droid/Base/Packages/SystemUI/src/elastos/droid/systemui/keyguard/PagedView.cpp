@@ -191,7 +191,7 @@ ECode PagedView::MyRunnable2::Run()
     return mHost->HideScrollingIndicator(FALSE);
 }
 
-CAR_INTERFACE_IMPL_2(PagedView::ScrollInterpolator, Object, IInterpolator
+CAR_INTERFACE_IMPL(PagedView::ScrollInterpolator, Object, IInterpolator
         , ITimeInterpolator)
 
 ECode PagedView::ScrollInterpolator::GetInterpolation(

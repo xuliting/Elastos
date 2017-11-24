@@ -20,7 +20,7 @@ namespace Elastos {
 namespace Security {
 
 CAR_OBJECT_IMPL(CKeyStorePasswordProtection)
-CAR_INTERFACE_IMPL_3(CKeyStorePasswordProtection, Object, IKeyStorePasswordProtection, IKeyStoreProtectionParameter, IDestroyable)
+CAR_INTERFACE_IMPL(CKeyStorePasswordProtection, Object, IKeyStorePasswordProtection, IKeyStoreProtectionParameter, IDestroyable)
 CKeyStorePasswordProtection::CKeyStorePasswordProtection()
     : mIsDestroyed(FALSE)
 {}

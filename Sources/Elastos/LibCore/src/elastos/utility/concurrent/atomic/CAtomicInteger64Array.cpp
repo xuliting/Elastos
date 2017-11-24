@@ -31,7 +31,7 @@ const Int32 CAtomicInteger64Array::sBase = 0; // = unsafe.arrayBaseOffset(long[]
 
 const Int32 CAtomicInteger64Array::sShift = 0;
 
-CAR_INTERFACE_IMPL_2(CAtomicInteger64Array, Object, IAtomicInteger64Array, ISerializable)
+CAR_INTERFACE_IMPL(CAtomicInteger64Array, Object, IAtomicInteger64Array, ISerializable)
 
 CAR_OBJECT_IMPL(CAtomicInteger64Array)
 

@@ -211,7 +211,7 @@ const Int32 DatePickerCalendarDelegate::MONTH_INDEX = 0;
 const Int32 DatePickerCalendarDelegate::DAY_INDEX = 1;
 const Int32 DatePickerCalendarDelegate::YEAR_INDEX = 2;
 
-CAR_INTERFACE_IMPL_2(DatePickerCalendarDelegate, DatePicker::AbstractDatePickerDelegate,
+CAR_INTERFACE_IMPL(DatePickerCalendarDelegate, DatePicker::AbstractDatePickerDelegate,
     IDatePickerCalendarDelegate, IDatePickerController)
 
 DatePickerCalendarDelegate::DatePickerCalendarDelegate()

@@ -21,7 +21,7 @@ namespace Droid {
 namespace Internal {
 namespace Telephony {
 
-CAR_INTERFACE_IMPL_2(CSmsRawData, Object, ISmsRawData, IParcelable)
+CAR_INTERFACE_IMPL(CSmsRawData, Object, ISmsRawData, IParcelable)
 
 CAR_OBJECT_IMPL(CSmsRawData)
 

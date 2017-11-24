@@ -40,7 +40,7 @@ namespace Method {
 
 const Int32 WordIterator::WINDOW_WIDTH = 50;
 
-CAR_INTERFACE_IMPL_2(WordIterator, Object, IWordIterator, ISelectionPositionIterator)
+CAR_INTERFACE_IMPL(WordIterator, Object, IWordIterator, ISelectionPositionIterator)
 
 WordIterator::WordIterator()
     : mOffsetShift(0)

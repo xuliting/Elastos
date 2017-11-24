@@ -1643,7 +1643,7 @@ EXCEPTION:
 //==============================================================================
 // PhoneWindowManager
 //==============================================================================
-CAR_INTERFACE_IMPL_2(PhoneWindowManager, Object, IWindowManagerPolicy, IPhoneWindowManager)
+CAR_INTERFACE_IMPL(PhoneWindowManager, Object, IWindowManagerPolicy, IPhoneWindowManager)
 
 PhoneWindowManager::PhoneWindowManager()
     : mPreloadedRecentApps(FALSE)

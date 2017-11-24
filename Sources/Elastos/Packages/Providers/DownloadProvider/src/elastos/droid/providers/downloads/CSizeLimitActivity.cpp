@@ -53,7 +53,7 @@ namespace Providers {
 namespace Downloads {
 
 
-CAR_INTERFACE_IMPL_2(CSizeLimitActivity::InnerListener, Object,
+CAR_INTERFACE_IMPL(CSizeLimitActivity::InnerListener, Object,
     IDialogInterfaceOnCancelListener, IDialogInterfaceOnClickListener)
 
 CSizeLimitActivity::InnerListener::InnerListener(

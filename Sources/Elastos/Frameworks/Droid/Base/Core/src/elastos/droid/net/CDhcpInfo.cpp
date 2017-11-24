@@ -26,7 +26,7 @@ namespace Net {
 
 CAR_OBJECT_IMPL(CDhcpInfo)
 
-CAR_INTERFACE_IMPL_2(CDhcpInfo, Object, IDhcpInfo, IParcelable)
+CAR_INTERFACE_IMPL(CDhcpInfo, Object, IDhcpInfo, IParcelable)
 
 ECode CDhcpInfo::constructor()
 {

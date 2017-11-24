@@ -1511,7 +1511,7 @@ ECode CPhoneStatusBar::StartActivityRunnable::Run()
 
 CAR_OBJECT_IMPL(CPhoneStatusBar)
 
-CAR_INTERFACE_IMPL_4(CPhoneStatusBar, BaseStatusBar, IPhoneStatusBar, \
+CAR_INTERFACE_IMPL(CPhoneStatusBar, BaseStatusBar, IPhoneStatusBar, \
     IDemoMode, IDragDownCallback, IActivityStarter);
 
 CPhoneStatusBar::CPhoneStatusBar()

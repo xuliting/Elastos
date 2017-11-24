@@ -46,7 +46,7 @@ namespace Impl {
 //=====================================================================
 //                      PhoneFallbackEventHandler
 //=====================================================================
-CAR_INTERFACE_IMPL_2(PhoneFallbackEventHandler, Object, IPhoneFallbackEventHandler, IFallbackEventHandler)
+CAR_INTERFACE_IMPL(PhoneFallbackEventHandler, Object, IPhoneFallbackEventHandler, IFallbackEventHandler)
 
 String PhoneFallbackEventHandler::TAG("PhoneFallbackEventHandler");
 const Boolean PhoneFallbackEventHandler::DEBUG = FALSE;

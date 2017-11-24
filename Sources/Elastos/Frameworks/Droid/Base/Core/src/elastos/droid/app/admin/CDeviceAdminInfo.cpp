@@ -45,7 +45,7 @@ namespace Admin {
 
 const String TAG("CDeviceAdminInfo");
 
-CAR_INTERFACE_IMPL_2(CDeviceAdminInfo, Object, IDeviceAdminInfo, IParcelable)
+CAR_INTERFACE_IMPL(CDeviceAdminInfo, Object, IDeviceAdminInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CDeviceAdminInfo)
 

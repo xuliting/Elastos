@@ -1513,7 +1513,7 @@ const String CDevicePolicyManagerService::SYSTEM_PROP_DISABLE_CAMERA("sys.secpol
 
 CAR_OBJECT_IMPL(CDevicePolicyManagerService)
 
-CAR_INTERFACE_IMPL_2(CDevicePolicyManagerService, Object, IBinder, IIDevicePolicyManager)
+CAR_INTERFACE_IMPL(CDevicePolicyManagerService, Object, IBinder, IIDevicePolicyManager)
 
 CDevicePolicyManagerService::CDevicePolicyManagerService()
 {

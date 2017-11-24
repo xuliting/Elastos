@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Droid {
 namespace Telephony {
 
-CAR_INTERFACE_IMPL_2(CDataConnectionRealTimeInfo, Object, IDataConnectionRealTimeInfo, IParcelable)
+CAR_INTERFACE_IMPL(CDataConnectionRealTimeInfo, Object, IDataConnectionRealTimeInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CDataConnectionRealTimeInfo)
 

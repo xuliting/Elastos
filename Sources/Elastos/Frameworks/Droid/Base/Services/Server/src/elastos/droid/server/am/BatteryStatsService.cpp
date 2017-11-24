@@ -384,7 +384,7 @@ ECode BatteryStatsService::WakeupReasonThread::Run()
 const String BatteryStatsService::TAG("BatteryStatsService");
 AutoPtr<IIBatteryStats> BatteryStatsService::sService;
 
-CAR_INTERFACE_IMPL_3(BatteryStatsService, Object, IIBatteryStats, ILowPowerModeListener, IBinder)
+CAR_INTERFACE_IMPL(BatteryStatsService, Object, IIBatteryStats, ILowPowerModeListener, IBinder)
 
 BatteryStatsService::BatteryStatsService()
     : mBluetoothPendingStats(FALSE)

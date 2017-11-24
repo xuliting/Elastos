@@ -237,7 +237,7 @@ Int32 PointerLocationView::FasterStringBuilder::Reserve(
 }
 
 /*-----------------------------------PointerLocationView-----------------------------------*/
-CAR_INTERFACE_IMPL_3(PointerLocationView, View, IInputDeviceListener, IPointerEventListener, IPointerLocationView)
+CAR_INTERFACE_IMPL(PointerLocationView, View, IInputDeviceListener, IPointerEventListener, IPointerLocationView)
 
 PointerLocationView::PointerLocationView()
     : ESTIMATE_PAST_POINTS(4)

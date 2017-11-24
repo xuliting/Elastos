@@ -29,7 +29,7 @@ namespace Droid {
 namespace View {
 namespace Accessibility {
 
-CAR_INTERFACE_IMPL_2(CAccessibilityManagerClient, Object, IIAccessibilityManagerClient, IBinder)
+CAR_INTERFACE_IMPL(CAccessibilityManagerClient, Object, IIAccessibilityManagerClient, IBinder)
 
 CAR_OBJECT_IMPL(CAccessibilityManagerClient)
 

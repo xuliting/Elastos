@@ -24,7 +24,7 @@ namespace Droid {
 namespace Server {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(CResourcesChangedReceiver, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CResourcesChangedReceiver, Object, IIntentReceiver, IBinder)
 
 CAR_OBJECT_IMPL(CResourcesChangedReceiver)
 

@@ -191,7 +191,7 @@ ECode OpenSSLMessageDigestJDKSHA512::constructor()
 //=========================================
 // OpenSSLMessageDigestJDK::
 //=========================================
-CAR_INTERFACE_IMPL_2(OpenSSLMessageDigestJDK, MessageDigestSpi, IOpenSSLMessageDigestJDK, ICloneable)
+CAR_INTERFACE_IMPL(OpenSSLMessageDigestJDK, MessageDigestSpi, IOpenSSLMessageDigestJDK, ICloneable)
 
 ECode OpenSSLMessageDigestJDK::constructor(
     /* [in] */ Int64 evp_md,

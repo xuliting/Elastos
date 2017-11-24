@@ -415,7 +415,7 @@ const Boolean MediaSessionRecord::DEBUG;
 const Int32 MediaSessionRecord::ACTIVE_BUFFER;
 const Int32 MediaSessionRecord::OPTIMISTIC_VOLUME_TIMEOUT;
 
-CAR_INTERFACE_IMPL_2(MediaSessionRecord, Object, IMediaSessionRecord, IProxyDeathRecipient)
+CAR_INTERFACE_IMPL(MediaSessionRecord, Object, IMediaSessionRecord, IProxyDeathRecipient)
 
 MediaSessionRecord::MediaSessionRecord()
     : mOwnerPid(0)

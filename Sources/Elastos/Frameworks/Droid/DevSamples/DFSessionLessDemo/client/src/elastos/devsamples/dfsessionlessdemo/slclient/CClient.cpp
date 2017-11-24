@@ -155,7 +155,7 @@ ECode CClient::EditorListener::OnEditorAction(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CClient::SignalService, Object, ISimpleInterface, IBusObject)
+CAR_INTERFACE_IMPL(CClient::SignalService, Object, ISimpleInterface, IBusObject)
 CAR_OBJECT_IMPL(CSignalService)
 
 /**

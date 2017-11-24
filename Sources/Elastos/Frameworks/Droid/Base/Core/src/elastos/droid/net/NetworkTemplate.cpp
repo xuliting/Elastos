@@ -44,7 +44,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(NetworkTemplate, Object, IParcelable, INetworkTemplate)
+CAR_INTERFACE_IMPL(NetworkTemplate, Object, IParcelable, INetworkTemplate)
 
 Boolean NetworkTemplate::sForceAllNetworkTypes = FALSE;
 

@@ -29,7 +29,7 @@ namespace Droid {
 namespace SystemUI {
 namespace Keyguard {
 
-CAR_INTERFACE_IMPL_2(KeyguardPinBasedInputView::PasswordListener,
+CAR_INTERFACE_IMPL(KeyguardPinBasedInputView::PasswordListener,
         Object, IViewOnClickListener, IViewOnKeyListener)
 
 ECode KeyguardPinBasedInputView::PasswordListener::OnClick(

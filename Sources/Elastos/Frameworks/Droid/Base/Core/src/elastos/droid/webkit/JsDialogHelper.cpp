@@ -55,7 +55,7 @@ namespace Webkit {
 //                 JsDialogHelper::CancelListener
 //===============================================================
 
-CAR_INTERFACE_IMPL_2(JsDialogHelper::CancelListener, Object, IDialogInterfaceOnCancelListener, IDialogInterfaceOnClickListener);
+CAR_INTERFACE_IMPL(JsDialogHelper::CancelListener, Object, IDialogInterfaceOnCancelListener, IDialogInterfaceOnClickListener);
 
 JsDialogHelper::CancelListener::CancelListener(
     /* [in] */ JsDialogHelper* owner)

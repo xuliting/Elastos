@@ -25,7 +25,7 @@ namespace Media {
 
 const String CMediaHTTPService::TAG("MediaHTTPService");
 
-CAR_INTERFACE_IMPL_2(CMediaHTTPService, Object, IIMediaHTTPService, IBinder)
+CAR_INTERFACE_IMPL(CMediaHTTPService, Object, IIMediaHTTPService, IBinder)
 
 CAR_OBJECT_IMPL(CMediaHTTPService)
 

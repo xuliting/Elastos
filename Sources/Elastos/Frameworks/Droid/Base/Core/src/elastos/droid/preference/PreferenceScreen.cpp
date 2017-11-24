@@ -39,7 +39,7 @@ namespace Elastos {
 namespace Droid {
 namespace Preference {
 
-CAR_INTERFACE_IMPL_2(PreferenceScreen::InnerListener, Object, \
+CAR_INTERFACE_IMPL(PreferenceScreen::InnerListener, Object, \
     IAdapterViewOnItemClickListener, IDialogInterfaceOnDismissListener)
 
 PreferenceScreen::InnerListener::InnerListener(

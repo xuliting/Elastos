@@ -38,7 +38,7 @@ Int32 CAudioAttributes::FLAG_ALL = IAudioAttributes::IAudioAttributes::FLAG_AUDI
 Int32 CAudioAttributes::FLAG_ALL_PUBLIC = IAudioAttributes::FLAG_AUDIBILITY_ENFORCED | IAudioAttributes::FLAG_HW_AV_SYNC;
 Int32 CAudioAttributes::ALL_PARCEL_FLAGS = IAudioAttributes::FLATTEN_TAGS;
 
-CAR_INTERFACE_IMPL_2(CAudioAttributes, Object, IAudioAttributes, IParcelable)
+CAR_INTERFACE_IMPL(CAudioAttributes, Object, IAudioAttributes, IParcelable)
 
 CAR_OBJECT_IMPL(CAudioAttributes)
 

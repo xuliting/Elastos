@@ -144,7 +144,7 @@ ECode ProfileManagerService::MyBroadcastReceiver::OnReceive(
 //                ProfileManagerService
 //--------------------------------------------------------------------------------
 
-CAR_INTERFACE_IMPL_2(ProfileManagerService, Object, IIProfileManager, IBinder)
+CAR_INTERFACE_IMPL(ProfileManagerService, Object, IIProfileManager, IBinder)
 
 ProfileManagerService::ProfileManagerService()
     : mDirty(FALSE)

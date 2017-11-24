@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIPackageDeleteObserver2Native::TAG("CIPackageDeleteObserver2Native");
 
-CAR_INTERFACE_IMPL_2(CIPackageDeleteObserver2Native, Object, IIPackageDeleteObserver2, IBinder)
+CAR_INTERFACE_IMPL(CIPackageDeleteObserver2Native, Object, IIPackageDeleteObserver2, IBinder)
 
 CAR_OBJECT_IMPL(CIPackageDeleteObserver2Native)
 

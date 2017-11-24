@@ -30,7 +30,7 @@ const AutoPtr<ICollection> CCollectionCertStoreParameters::mDefaultCollection
         = ICollection::Probe(Collections::EMPTY_SET);
 
 CAR_OBJECT_IMPL(CCollectionCertStoreParameters)
-CAR_INTERFACE_IMPL_3(CCollectionCertStoreParameters, Object, \
+CAR_INTERFACE_IMPL(CCollectionCertStoreParameters, Object, \
     ICollectionCertStoreParameters, ICertStoreParameters, ICloneable)
 
 ECode CCollectionCertStoreParameters::Clone(

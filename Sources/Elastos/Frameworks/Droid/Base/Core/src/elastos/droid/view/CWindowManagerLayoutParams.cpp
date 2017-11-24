@@ -43,7 +43,7 @@ namespace Droid {
 namespace View {
 
 CAR_OBJECT_IMPL(CWindowManagerLayoutParams);
-CAR_INTERFACE_IMPL_2(CWindowManagerLayoutParams, ViewGroup::LayoutParams, IWindowManagerLayoutParams, IParcelable);
+CAR_INTERFACE_IMPL(CWindowManagerLayoutParams, ViewGroup::LayoutParams, IWindowManagerLayoutParams, IParcelable);
 CWindowManagerLayoutParams::CWindowManagerLayoutParams()
     : mX(0)
     , mY(0)

@@ -31,7 +31,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_2(URLSpan, ClickableSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(URLSpan, ClickableSpan, IParcelableSpan, IParcelable)
 
 URLSpan::URLSpan()
 {}

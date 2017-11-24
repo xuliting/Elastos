@@ -31,7 +31,7 @@ namespace InCallUI {
 
 const String AnswerPresenter::TAG("AnswerPresenter");
 
-CAR_INTERFACE_IMPL_2(AnswerPresenter, Presenter, ICallUpdateListener, ICallListListener);
+CAR_INTERFACE_IMPL(AnswerPresenter, Presenter, ICallUpdateListener, ICallListListener);
 
 AnswerPresenter::AnswerPresenter()
     : mHasTextMessages(FALSE)

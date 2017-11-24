@@ -79,7 +79,7 @@ const Int32 PersistentDataBlockService::MAX_DATA_BLOCK_SIZE = 1024 * 100;
 // PersistentDataBlockService::BinderService
 //===================================================================================
 
-CAR_INTERFACE_IMPL_2(PersistentDataBlockService::BinderService, Object, IIPersistentDataBlockService, IBinder)
+CAR_INTERFACE_IMPL(PersistentDataBlockService::BinderService, Object, IIPersistentDataBlockService, IBinder)
 
 
 ECode PersistentDataBlockService::BinderService::constructor(

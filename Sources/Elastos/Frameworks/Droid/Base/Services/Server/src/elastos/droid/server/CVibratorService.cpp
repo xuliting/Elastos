@@ -367,7 +367,7 @@ ECode CVibratorService::IntentReceiver::OnReceive(
 //====================================================================
 // CVibratorService
 //====================================================================
-CAR_INTERFACE_IMPL_3(CVibratorService, Object, IIVibratorService, IInputDeviceListener, IBinder)
+CAR_INTERFACE_IMPL(CVibratorService, Object, IIVibratorService, IInputDeviceListener, IBinder)
 
 CAR_OBJECT_IMPL(CVibratorService)
 

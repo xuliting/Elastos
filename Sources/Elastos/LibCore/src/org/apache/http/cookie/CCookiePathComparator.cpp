@@ -26,7 +26,7 @@ namespace Cookie {
 
 const Int64 CCookiePathComparator::serialVersionUID;
 
-CAR_INTERFACE_IMPL_2(CCookiePathComparator, Object, IComparator, ISerializable)
+CAR_INTERFACE_IMPL(CCookiePathComparator, Object, IComparator, ISerializable)
 
 CAR_OBJECT_IMPL(CCookiePathComparator)
 

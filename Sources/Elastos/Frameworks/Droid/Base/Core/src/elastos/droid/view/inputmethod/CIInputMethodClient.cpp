@@ -32,7 +32,7 @@ namespace InputMethod {
 //========================================================================================
 //              CIInputMethodClient::
 //========================================================================================
-CAR_INTERFACE_IMPL_2(CIInputMethodClient, Object, IInputMethodClient, IBinder)
+CAR_INTERFACE_IMPL(CIInputMethodClient, Object, IInputMethodClient, IBinder)
 
 CAR_OBJECT_IMPL(CIInputMethodClient)
 

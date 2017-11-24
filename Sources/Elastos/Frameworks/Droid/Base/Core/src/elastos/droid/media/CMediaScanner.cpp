@@ -352,7 +352,7 @@ Object CMediaScanner::mLock;
 HashMap<String, String> CMediaScanner::mNoMediaPaths;
 HashMap<String, String> CMediaScanner::mMediaPaths;
 
-CAR_INTERFACE_IMPL_3(CMediaScanner::ElementListener, Object, IElementListener, IStartElementListener, IEndElementListener)
+CAR_INTERFACE_IMPL(CMediaScanner::ElementListener, Object, IElementListener, IStartElementListener, IEndElementListener)
 
 CMediaScanner::ElementListener::ElementListener(
     /* [in] */ CMediaScanner* host,

@@ -31,7 +31,7 @@ namespace Internal {
 namespace Telephony {
 
 const String DriverCall::TAG("DriverCall");
-CAR_INTERFACE_IMPL_2(DriverCall, Object, IComparable, IDriverCall)
+CAR_INTERFACE_IMPL(DriverCall, Object, IComparable, IDriverCall)
 /** returns null on error */
 AutoPtr<DriverCall> DriverCall::FromCLCCLine(
     /* [in] */ const String& line)

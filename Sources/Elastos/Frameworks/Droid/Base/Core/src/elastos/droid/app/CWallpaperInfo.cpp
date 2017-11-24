@@ -45,7 +45,7 @@ namespace App {
 
 const String CWallpaperInfo::TAG("WallpaperInfo");
 
-CAR_INTERFACE_IMPL_2(CWallpaperInfo, Object, IWallpaperInfo, IParcelable)
+CAR_INTERFACE_IMPL(CWallpaperInfo, Object, IWallpaperInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CWallpaperInfo)
 

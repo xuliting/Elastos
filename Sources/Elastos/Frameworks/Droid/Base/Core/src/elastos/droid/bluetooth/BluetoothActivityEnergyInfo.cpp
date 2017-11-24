@@ -27,7 +27,7 @@ namespace Bluetooth {
 //=====================================================================
 //                     BluetoothActivityEnergyInfo
 //=====================================================================
-CAR_INTERFACE_IMPL_2(BluetoothActivityEnergyInfo, Object, IBluetoothActivityEnergyInfo, IParcelable);
+CAR_INTERFACE_IMPL(BluetoothActivityEnergyInfo, Object, IBluetoothActivityEnergyInfo, IParcelable);
 
 BluetoothActivityEnergyInfo::BluetoothActivityEnergyInfo()
 {

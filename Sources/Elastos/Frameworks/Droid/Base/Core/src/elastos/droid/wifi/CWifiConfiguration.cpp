@@ -127,7 +127,7 @@ ECode CWifiConfiguration::InnerComparator::Compare(
 //                      CWifiConfiguration
 //================================================================
 
-CAR_INTERFACE_IMPL_2(CWifiConfiguration, Object, IWifiConfiguration, IParcelable)
+CAR_INTERFACE_IMPL(CWifiConfiguration, Object, IWifiConfiguration, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiConfiguration)
 

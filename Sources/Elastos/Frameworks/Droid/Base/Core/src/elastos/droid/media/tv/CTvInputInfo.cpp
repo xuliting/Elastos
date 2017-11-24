@@ -83,7 +83,7 @@ String CTvInputInfo::PREFIX_HARDWARE_DEVICE("HW");
 Int32 CTvInputInfo::LENGTH_HDMI_PHYSICAL_ADDRESS = 4;
 Int32 CTvInputInfo::LENGTH_HDMI_DEVICE_ID = 2;
 
-CAR_INTERFACE_IMPL_2(CTvInputInfo, Object, ITvInputInfo, IParcelable)
+CAR_INTERFACE_IMPL(CTvInputInfo, Object, ITvInputInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CTvInputInfo)
 

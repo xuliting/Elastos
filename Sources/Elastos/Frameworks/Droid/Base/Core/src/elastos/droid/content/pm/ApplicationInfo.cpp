@@ -35,7 +35,7 @@ namespace Pm {
 
 static const String TAG("ApplicationInfo");
 
-CAR_INTERFACE_IMPL_2(ApplicationInfo, PackageItemInfo, IApplicationInfo, IParcelable)
+CAR_INTERFACE_IMPL(ApplicationInfo, PackageItemInfo, IApplicationInfo, IParcelable)
 
 ApplicationInfo::ApplicationInfo()
     : mDescriptionRes(0)

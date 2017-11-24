@@ -412,7 +412,7 @@ ECode CameraDeviceImpl::FrameNumberTracker::GetCompletedFrameNumber(
 //==============================================================================================
 // CameraDeviceImpl::CameraDeviceCallbacks
 //==============================================================================================
-CAR_INTERFACE_IMPL_3(CameraDeviceImpl::CameraDeviceCallbacks, Object,
+CAR_INTERFACE_IMPL(CameraDeviceImpl::CameraDeviceCallbacks, Object,
         ICameraDeviceImplCameraDeviceCallbacks, IICameraDeviceCallbacks, IBinder)
 
 CameraDeviceImpl::CameraDeviceCallbacks::CameraDeviceCallbacks()

@@ -26,7 +26,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsPhotos)
 
-CAR_INTERFACE_IMPL_4(CContactsPhotos, Singleton, IContactsPhotos, IBaseColumns, IContactsPhotosColumns, ISyncConstValue)
+CAR_INTERFACE_IMPL(CContactsPhotos, Singleton, IContactsPhotos, IBaseColumns, IContactsPhotosColumns, ISyncConstValue)
 
 ECode CContactsPhotos::constructor()
 {

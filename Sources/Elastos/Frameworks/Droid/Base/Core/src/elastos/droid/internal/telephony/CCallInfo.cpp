@@ -21,7 +21,7 @@ namespace Droid {
 namespace Internal {
 namespace Telephony {
 
-CAR_INTERFACE_IMPL_2(CCallInfo, Object, ICallInfo, IParcelable)
+CAR_INTERFACE_IMPL(CCallInfo, Object, ICallInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CCallInfo)
 

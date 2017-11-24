@@ -60,7 +60,7 @@ namespace Cat {
 //                               Duration
 //=====================================================================
 //const AutoPtr<IParcelable> AutoPtr< ::Creator<Duration> > Duration::CREATOR = new InnerParcelableCreator(this);
-CAR_INTERFACE_IMPL_2(Duration, Object, IDuration, IParcelable);
+CAR_INTERFACE_IMPL(Duration, Object, IDuration, IParcelable);
 
 
 Duration::Duration()

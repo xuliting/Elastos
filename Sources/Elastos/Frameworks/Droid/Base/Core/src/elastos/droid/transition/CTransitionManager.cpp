@@ -302,7 +302,7 @@ void CTransitionManager::BeginDelayedTransition(
 //===============================================================
 // CTransitionManager::MultiListener::
 //===============================================================
-CAR_INTERFACE_IMPL_2(CTransitionManager::MultiListener, Object, IOnPreDrawListener, IViewOnAttachStateChangeListener)
+CAR_INTERFACE_IMPL(CTransitionManager::MultiListener, Object, IOnPreDrawListener, IViewOnAttachStateChangeListener)
 
 CTransitionManager::MultiListener::MultiListener(
     /* [in] */ ITransition* transition,

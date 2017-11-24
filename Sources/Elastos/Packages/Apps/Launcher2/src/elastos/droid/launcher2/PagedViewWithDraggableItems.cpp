@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Launcher2 {
 
-CAR_INTERFACE_IMPL_2(PagedViewWithDraggableItems::LongClickAndTouchListener, Object,
+CAR_INTERFACE_IMPL(PagedViewWithDraggableItems::LongClickAndTouchListener, Object,
     IViewOnLongClickListener, IViewOnTouchListener);
 
 PagedViewWithDraggableItems::LongClickAndTouchListener::LongClickAndTouchListener(

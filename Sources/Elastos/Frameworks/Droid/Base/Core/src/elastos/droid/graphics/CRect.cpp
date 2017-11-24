@@ -51,7 +51,7 @@ AutoPtr<IPattern> CRect::UnflattenHelper::InitStatic()
 
 CAR_OBJECT_IMPL(CRect)
 
-CAR_INTERFACE_IMPL_2(CRect, Object, IRect, IParcelable)
+CAR_INTERFACE_IMPL(CRect, Object, IRect, IParcelable)
 
 ECode CRect::constructor()
 {

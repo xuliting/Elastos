@@ -29,7 +29,7 @@ AutoPtr<IProperties> BaseTestRunner::sPreferences;
 Int32 BaseTestRunner::sMaxMessageLength = 500;
 Boolean BaseTestRunner::sFilterStack = TRUE;
 
-CAR_INTERFACE_IMPL_2(BaseTestRunner, Object, ITestListener, IBaseTestRunner)
+CAR_INTERFACE_IMPL(BaseTestRunner, Object, ITestListener, IBaseTestRunner)
 
 ECode BaseTestRunner::StartTest(
     /* [in] */ ITest* test)

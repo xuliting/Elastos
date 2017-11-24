@@ -28,7 +28,7 @@ namespace Elastos {
 namespace Droid {
 namespace Os {
 
-CAR_INTERFACE_IMPL_2(BinderProxy, Object, IBinderProxy, IBinder)
+CAR_INTERFACE_IMPL(BinderProxy, Object, IBinderProxy, IBinder)
 
 BinderProxy::BinderProxy()
     : mObject(0)

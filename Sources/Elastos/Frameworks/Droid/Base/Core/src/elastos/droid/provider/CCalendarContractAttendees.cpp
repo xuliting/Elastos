@@ -22,7 +22,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CCalendarContractAttendees)
 
-CAR_INTERFACE_IMPL_4(CCalendarContractAttendees, Singleton
+CAR_INTERFACE_IMPL(CCalendarContractAttendees, Singleton
     , ICalendarContractAttendees
     , IBaseColumns
     , ICalendarContractAttendeesColumns

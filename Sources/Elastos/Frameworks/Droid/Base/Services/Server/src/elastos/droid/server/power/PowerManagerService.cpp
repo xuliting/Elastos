@@ -216,7 +216,7 @@ ECode PowerManagerService::BinderService::SensorEventListener::OnAccuracyChanged
 //          PowerManagerService::BinderService
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(PowerManagerService::BinderService, Object, IIPowerManager, IBinder);
+CAR_INTERFACE_IMPL(PowerManagerService::BinderService, Object, IIPowerManager, IBinder);
 
 PowerManagerService::BinderService::BinderService()
 {}

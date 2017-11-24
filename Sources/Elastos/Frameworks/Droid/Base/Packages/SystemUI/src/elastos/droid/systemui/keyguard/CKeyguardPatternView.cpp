@@ -190,7 +190,7 @@ const Int32 CKeyguardPatternView::MIN_PATTERN_BEFORE_POKE_WAKELOCK = 2;
 
 CAR_OBJECT_IMPL(CKeyguardPatternView)
 
-CAR_INTERFACE_IMPL_2(CKeyguardPatternView, LinearLayout,
+CAR_INTERFACE_IMPL(CKeyguardPatternView, LinearLayout,
         IKeyguardSecurityView, IAppearAnimationCreator)
 
 CKeyguardPatternView::CKeyguardPatternView()

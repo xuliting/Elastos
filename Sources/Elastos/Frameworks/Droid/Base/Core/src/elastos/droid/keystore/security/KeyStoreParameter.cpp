@@ -66,7 +66,7 @@ ECode KeyStoreParameter::Builder::Build(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(KeyStoreParameter, Object, IKeyStoreParameter, IKeyStoreProtectionParameter);
+CAR_INTERFACE_IMPL(KeyStoreParameter, Object, IKeyStoreParameter, IKeyStoreProtectionParameter);
 
 ECode KeyStoreParameter::constructor(
     /* [in] */ Int32 flags)

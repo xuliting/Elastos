@@ -563,7 +563,7 @@ const Int32 CCallDetailActivity::FEATURES;
 const Int32 CCallDetailActivity::DATA_USAGE;
 const Int32 CCallDetailActivity::TRANSCRIPTION_COLUMN_INDEX;
 
-CAR_INTERFACE_IMPL_2(CCallDetailActivity, AnalyticsActivity, IProximitySensorAware, ICallDetailActivity)
+CAR_INTERFACE_IMPL(CCallDetailActivity, AnalyticsActivity, IProximitySensorAware, ICallDetailActivity)
 
 CAR_OBJECT_IMPL(CCallDetailActivity)
 

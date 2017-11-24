@@ -39,7 +39,7 @@ namespace Animation {
 
 CAR_OBJECT_IMPL(CCycleInterpolator);
 
-CAR_INTERFACE_IMPL_4(CCycleInterpolator, Object, ICycleInterpolator,
+CAR_INTERFACE_IMPL(CCycleInterpolator, Object, ICycleInterpolator,
         INativeInterpolatorFactory, IInterpolator, ITimeInterpolator);
 
 CCycleInterpolator::CCycleInterpolator()

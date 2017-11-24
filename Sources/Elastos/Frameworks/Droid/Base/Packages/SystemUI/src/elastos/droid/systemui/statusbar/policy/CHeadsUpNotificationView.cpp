@@ -158,7 +158,7 @@ ECode CHeadsUpNotificationView::_ViewOutlineProvider::GetOutline(
 
 CAR_OBJECT_IMPL(CHeadsUpNotificationView)
 
-CAR_INTERFACE_IMPL_3(CHeadsUpNotificationView, FrameLayout, IHeadsUpNotificationView,
+CAR_INTERFACE_IMPL(CHeadsUpNotificationView, FrameLayout, IHeadsUpNotificationView,
     ISwipeHelperCallback, IExpandHelperCallback);
 
 CHeadsUpNotificationView::CHeadsUpNotificationView()

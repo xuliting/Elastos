@@ -135,7 +135,7 @@ ECode Surface::CompatibleCanvas::GetMatrix(
     return  mOrigMatrix->Set(m);
 }
 
-CAR_INTERFACE_IMPL_2(Surface, Object, ISurface, IParcelable)
+CAR_INTERFACE_IMPL(Surface, Object, ISurface, IParcelable)
 
 ECode Surface::NativeCreateFromSurfaceTexture(
     /* [in] */ ISurfaceTexture* surfaceTexture,

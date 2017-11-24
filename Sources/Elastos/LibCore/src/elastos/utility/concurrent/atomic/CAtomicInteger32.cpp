@@ -29,7 +29,7 @@ Int64 CAtomicInteger32::mSerialVersionUID = 6214790243416807050L;
 
 Int64 CAtomicInteger32::mValueOffset = 0;
 
-CAR_INTERFACE_IMPL_2(CAtomicInteger32, Object, IAtomicInteger32, ISerializable)
+CAR_INTERFACE_IMPL(CAtomicInteger32, Object, IAtomicInteger32, ISerializable)
 
 CAR_OBJECT_IMPL(CAtomicInteger32)
 

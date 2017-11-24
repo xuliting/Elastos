@@ -142,7 +142,7 @@ ECode CAnswerFragment::NegativeButtonClickListener::OnClick(
 //================================================================
 // CAnswerFragment::MyTextWatcher
 //================================================================
-CAR_INTERFACE_IMPL_2(CAnswerFragment::MyTextWatcher, Object, ITextWatcher, INoCopySpan);
+CAR_INTERFACE_IMPL(CAnswerFragment::MyTextWatcher, Object, ITextWatcher, INoCopySpan);
 
 ECode CAnswerFragment::MyTextWatcher::BeforeTextChanged(
     /* [in] */ ICharSequence* s,
@@ -203,7 +203,7 @@ const Int32 CAnswerFragment::TARGET_SET_FOR_VIDEO_WITHOUT_SMS;
 const Int32 CAnswerFragment::TARGET_SET_FOR_VIDEO_WITH_SMS;
 const Int32 CAnswerFragment::TARGET_SET_FOR_VIDEO_UPGRADE_REQUEST;
 
-CAR_INTERFACE_IMPL_3(CAnswerFragment, BaseFragment, IAnswerFragment, IAnswerUi, IUi);
+CAR_INTERFACE_IMPL(CAnswerFragment, BaseFragment, IAnswerFragment, IAnswerUi, IUi);
 
 CAR_OBJECT_IMPL(CAnswerFragment);
 

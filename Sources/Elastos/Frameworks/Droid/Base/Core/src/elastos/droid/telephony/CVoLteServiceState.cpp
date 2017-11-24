@@ -28,7 +28,7 @@ namespace Telephony {
 const String CVoLteServiceState::TAG("CVoLteServiceState");
 const Boolean CVoLteServiceState::DBG;
 
-CAR_INTERFACE_IMPL_2(CVoLteServiceState, Object, IVoLteServiceState, IParcelable)
+CAR_INTERFACE_IMPL(CVoLteServiceState, Object, IVoLteServiceState, IParcelable)
 
 CAR_OBJECT_IMPL(CVoLteServiceState)
 

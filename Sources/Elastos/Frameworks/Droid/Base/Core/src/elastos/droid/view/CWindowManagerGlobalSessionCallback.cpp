@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace View {
 
-CAR_INTERFACE_IMPL_2(CWindowManagerGlobalSessionCallback, Object, IIWindowSessionCallback, IBinder)
+CAR_INTERFACE_IMPL(CWindowManagerGlobalSessionCallback, Object, IIWindowSessionCallback, IBinder)
 
 CAR_OBJECT_IMPL(CWindowManagerGlobalSessionCallback)
 

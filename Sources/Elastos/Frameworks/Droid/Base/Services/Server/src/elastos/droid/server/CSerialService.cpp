@@ -41,7 +41,7 @@ namespace Elastos {
 namespace Droid {
 namespace Server {
 
-CAR_INTERFACE_IMPL_2(CSerialService, Object, IISerialManager, IBinder)
+CAR_INTERFACE_IMPL(CSerialService, Object, IISerialManager, IBinder)
 
 CAR_OBJECT_IMPL(CSerialService)
 

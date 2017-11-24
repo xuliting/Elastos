@@ -24,7 +24,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CAppOpsManagerAppOpsCallback, Object, IIAppOpsCallback, IBinder)
+CAR_INTERFACE_IMPL(CAppOpsManagerAppOpsCallback, Object, IIAppOpsCallback, IBinder)
 
 CAR_OBJECT_IMPL(CAppOpsManagerAppOpsCallback)
 

@@ -35,7 +35,7 @@ namespace Droid {
 namespace SystemUI {
 namespace StatusBar {
 
-CAR_INTERFACE_IMPL_2(FlingAnimationUtils::InterpolatorInterpolator, Object, IInterpolator, ITimeInterpolator);
+CAR_INTERFACE_IMPL(FlingAnimationUtils::InterpolatorInterpolator, Object, IInterpolator, ITimeInterpolator);
 FlingAnimationUtils::InterpolatorInterpolator::InterpolatorInterpolator(
     /* [in] */ IInterpolator* interpolator1,
     /* [in] */ IInterpolator* interpolator2,
@@ -69,7 +69,7 @@ ECode FlingAnimationUtils::InterpolatorInterpolator::HasNativeInterpolator(
 }
 
 
-CAR_INTERFACE_IMPL_2(FlingAnimationUtils::VelocityInterpolator, Object, IInterpolator, ITimeInterpolator);
+CAR_INTERFACE_IMPL(FlingAnimationUtils::VelocityInterpolator, Object, IInterpolator, ITimeInterpolator);
 FlingAnimationUtils::VelocityInterpolator::VelocityInterpolator(
     /* [in] */ Float durationSeconds,
     /* [in] */ Float velocity,

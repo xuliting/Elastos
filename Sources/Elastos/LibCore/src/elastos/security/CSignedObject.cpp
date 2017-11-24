@@ -35,7 +35,7 @@ namespace Elastos {
 namespace Security {
 
 CAR_OBJECT_IMPL(CSignedObject)
-CAR_INTERFACE_IMPL_2(CSignedObject, Object, ISignedObject, ISerializable)
+CAR_INTERFACE_IMPL(CSignedObject, Object, ISignedObject, ISerializable)
 ECode CSignedObject::constructor(
     /* [in] */ ISerializable* object,
     /* [in] */ IPrivateKey* signingKey,

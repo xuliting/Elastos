@@ -72,7 +72,7 @@ namespace Droid {
 namespace Launcher2 {
 
 
-CAR_INTERFACE_IMPL_5(Folder::InnerListener, Object, IViewOnClickListener,
+CAR_INTERFACE_IMPL(Folder::InnerListener, Object, IViewOnClickListener,
     IViewOnLongClickListener, IFolderListener,
     IOnEditorActionListener, IViewOnFocusChangeListener);
 
@@ -351,7 +351,7 @@ const Int32 Folder::ON_EXIT_CLOSE_DELAY = 800;
 String Folder::sDefaultFolderName;
 String Folder::sHintText;
 
-CAR_INTERFACE_IMPL_3(Folder, LinearLayout, IFolder, IDragSource, IDropTarget)
+CAR_INTERFACE_IMPL(Folder, LinearLayout, IFolder, IDragSource, IDropTarget)
 
 Folder::Folder()
     : mItemsInvalidated(FALSE)

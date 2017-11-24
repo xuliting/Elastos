@@ -21,7 +21,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CDHGenParameterSpec)
-CAR_INTERFACE_IMPL_2(CDHGenParameterSpec, Object, IDHGenParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(CDHGenParameterSpec, Object, IDHGenParameterSpec, IAlgorithmParameterSpec)
 
 CDHGenParameterSpec::CDHGenParameterSpec()
     : mPrimeSize(0)

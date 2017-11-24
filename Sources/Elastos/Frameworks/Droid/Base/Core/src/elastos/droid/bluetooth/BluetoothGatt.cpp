@@ -656,7 +656,7 @@ const Int32 BluetoothGatt::CONN_STATE_CONNECTED;
 const Int32 BluetoothGatt::CONN_STATE_DISCONNECTING;
 const Int32 BluetoothGatt::CONN_STATE_CLOSED;
 
-CAR_INTERFACE_IMPL_2(BluetoothGatt, Object, IBluetoothGatt, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothGatt, Object, IBluetoothGatt, IBluetoothProfile);
 
 BluetoothGatt::BluetoothGatt()
 {

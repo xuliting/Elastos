@@ -225,7 +225,7 @@ const Int32 AccessibilityManagerService::MainHandler::MSG_CLEAR_ACCESSIBILITY_FO
 //                  AccessibilityManagerService::Service
 //===============================================================================
 
-CAR_INTERFACE_IMPL_4(AccessibilityManagerService::Service, Object, IIAccessibilityServiceConnection,
+CAR_INTERFACE_IMPL(AccessibilityManagerService::Service, Object, IIAccessibilityServiceConnection,
         IBinder, IServiceConnection, IProxyDeathRecipient);
 
 AccessibilityManagerService::Service::Service()
@@ -3484,7 +3484,7 @@ ECode AccessibilityManagerService::OnDialogCancelListener::OnClick(
 //                  AccessibilityManagerService
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(AccessibilityManagerService, Object, IIAccessibilityManager, IBinder);
+CAR_INTERFACE_IMPL(AccessibilityManagerService, Object, IIAccessibilityManager, IBinder);
 
 AccessibilityManagerService::AccessibilityManagerService()
     : mHasInputFilter(FALSE)

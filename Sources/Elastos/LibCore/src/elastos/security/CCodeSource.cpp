@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Security {
 
 CAR_OBJECT_IMPL(CCodeSource)
-CAR_INTERFACE_IMPL_2(CCodeSource, Object, ICodeSource, ISerializable)
+CAR_INTERFACE_IMPL(CCodeSource, Object, ICodeSource, ISerializable)
 ECode CCodeSource::constructor(
     /* [in] */ IURL* location,
     /* [in] */ ArrayOf<ICertificate*>* certs)

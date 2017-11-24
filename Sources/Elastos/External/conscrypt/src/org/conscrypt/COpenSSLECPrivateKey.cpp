@@ -43,7 +43,7 @@ const String COpenSSLECPrivateKey::ALGORITHM("EC");
 
 CAR_OBJECT_IMPL(COpenSSLECPrivateKey)
 
-CAR_INTERFACE_IMPL_6(COpenSSLECPrivateKey, Object, IKey, IPrivateKey, IECKey, IOpenSSLECPrivateKey,
+CAR_INTERFACE_IMPL(COpenSSLECPrivateKey, Object, IKey, IPrivateKey, IECKey, IOpenSSLECPrivateKey,
     IECPrivateKey, IOpenSSLKeyHolder)
 
 ECode COpenSSLECPrivateKey::constructor()

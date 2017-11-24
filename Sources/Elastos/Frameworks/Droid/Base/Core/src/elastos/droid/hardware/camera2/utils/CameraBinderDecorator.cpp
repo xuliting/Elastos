@@ -25,7 +25,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Utils {
 
-CAR_INTERFACE_IMPL_2(CameraBinderDecorator::CameraBinderDecoratorListener, Object,
+CAR_INTERFACE_IMPL(CameraBinderDecorator::CameraBinderDecoratorListener, Object,
         ICameraBinderDecoratorListener, IDecoratorListener)
 
 ECode CameraBinderDecorator::CameraBinderDecoratorListener::OnBeforeInvocation(

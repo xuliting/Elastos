@@ -396,7 +396,7 @@ static ECode process_media_player_call(CMediaPlayer* thiz, android::status_t opS
 //                  CMediaPlayer::TimeProvider
 //===================================================================
 
-CAR_INTERFACE_IMPL_2(CMediaPlayer::TimeProvider, Object,
+CAR_INTERFACE_IMPL(CMediaPlayer::TimeProvider, Object,
         IMediaPlayerOnSeekCompleteListener, IMediaTimeProvider)
 
 const String CMediaPlayer::TimeProvider::TAG("MTP");

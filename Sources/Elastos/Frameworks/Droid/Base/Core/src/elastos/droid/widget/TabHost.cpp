@@ -263,7 +263,7 @@ ECode TabHost::LabelAndIconIndicatorStrategy::CreateIndicatorView(
 //==============================================================================
 //                  TabHost::ViewIndicatorStrategy
 //==============================================================================
-CAR_INTERFACE_IMPL_2(TabHost::ViewIndicatorStrategy, Object, ITabHostViewIndicatorStrategy, ITabHostIndicatorStrategy)
+CAR_INTERFACE_IMPL(TabHost::ViewIndicatorStrategy, Object, ITabHostViewIndicatorStrategy, ITabHostIndicatorStrategy)
 
 TabHost::ViewIndicatorStrategy::ViewIndicatorStrategy(
     /* [in] */ IView* view)
@@ -486,7 +486,7 @@ ECode TabHost::TabSelectionListener::OnTabSelectionChanged(
 //                  TabHost
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(TabHost, FrameLayout, ITabHost, IOnTouchModeChangeListener)
+CAR_INTERFACE_IMPL(TabHost, FrameLayout, ITabHost, IOnTouchModeChangeListener)
 
 const Int32 TabHost::TABWIDGET_LOCATION_LEFT;
 const Int32 TabHost::TABWIDGET_LOCATION_TOP;

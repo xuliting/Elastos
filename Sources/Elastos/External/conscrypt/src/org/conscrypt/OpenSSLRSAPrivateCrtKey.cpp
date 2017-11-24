@@ -29,7 +29,7 @@ namespace Conscrypt {
 //=========================================
 Int64 OpenSSLRSAPrivateCrtKey::mSerialVersionUID = 3785291944868707197L;
 
-CAR_INTERFACE_IMPL_2(OpenSSLRSAPrivateCrtKey, OpenSSLRSAPrivateKey, IRSAPrivateCrtKey, IOpenSSLRSAPrivateCrtKey)
+CAR_INTERFACE_IMPL(OpenSSLRSAPrivateCrtKey, OpenSSLRSAPrivateKey, IRSAPrivateCrtKey, IOpenSSLRSAPrivateCrtKey)
 
 ECode OpenSSLRSAPrivateCrtKey::constructor(
     /* [in] */ IOpenSSLKey* key)

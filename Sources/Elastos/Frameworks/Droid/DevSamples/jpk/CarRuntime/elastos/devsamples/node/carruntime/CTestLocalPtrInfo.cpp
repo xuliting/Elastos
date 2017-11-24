@@ -13,7 +13,7 @@ namespace DevSamples {
 namespace Node {
 namespace CarRuntime {
 
-CAR_INTERFACE_IMPL_2(CTestLocalPtrInfo, Object, ITestDataTypeInfo, ITestLocalPtrInfo)
+CAR_INTERFACE_IMPL(CTestLocalPtrInfo, Object, ITestDataTypeInfo, ITestLocalPtrInfo)
 
 CAR_OBJECT_IMPL(CTestLocalPtrInfo)
 

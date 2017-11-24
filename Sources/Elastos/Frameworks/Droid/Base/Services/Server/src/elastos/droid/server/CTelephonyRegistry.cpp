@@ -248,7 +248,7 @@ const Int32 CTelephonyRegistry::PRECISE_PHONE_STATE_PERMISSION_MASK =
 const Int32 CTelephonyRegistry::MSG_USER_SWITCHED;
 const Int32 CTelephonyRegistry::MSG_UPDATE_DEFAULT_SUB;
 
-CAR_INTERFACE_IMPL_2(CTelephonyRegistry, Object, IITelephonyRegistry, IBinder)
+CAR_INTERFACE_IMPL(CTelephonyRegistry, Object, IITelephonyRegistry, IBinder)
 
 CAR_OBJECT_IMPL(CTelephonyRegistry)
 

@@ -27,7 +27,7 @@ namespace Droid {
 namespace Media {
 namespace Session {
 
-CAR_INTERFACE_IMPL_2(CPlaybackStateCustomAction, Object, IPlaybackStateCustomAction, IParcelable)
+CAR_INTERFACE_IMPL(CPlaybackStateCustomAction, Object, IPlaybackStateCustomAction, IParcelable)
 
 CAR_OBJECT_IMPL(CPlaybackStateCustomAction)
 

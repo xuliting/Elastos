@@ -30,7 +30,7 @@ const Int32 CellInfo::TYPE_CDMA = 2;
 const Int32 CellInfo::TYPE_LTE = 3;
 const Int32 CellInfo::TYPE_WCDMA = 4;
 
-CAR_INTERFACE_IMPL_2(CellInfo, Object, ICellInfo, IParcelable)
+CAR_INTERFACE_IMPL(CellInfo, Object, ICellInfo, IParcelable)
 
 CellInfo::CellInfo()
     : mRegistered(FALSE)

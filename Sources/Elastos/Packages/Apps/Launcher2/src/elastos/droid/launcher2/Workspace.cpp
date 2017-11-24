@@ -871,7 +871,7 @@ const Int32 Workspace::DRAG_MODE_ADD_TO_FOLDER = 2;
 const Int32 Workspace::DRAG_MODE_REORDER = 3;
 
 
-CAR_INTERFACE_IMPL_2(Workspace::InnerListener, Object,
+CAR_INTERFACE_IMPL(Workspace::InnerListener, Object,
     IViewOnTouchListener, IDragControllerDragListener);
 
 Workspace::InnerListener::InnerListener(
@@ -902,7 +902,7 @@ ECode Workspace::InnerListener::OnDragEnd()
 }
 
 
-CAR_INTERFACE_IMPL_5(Workspace, SmoothPagedView, IWorkspace,
+CAR_INTERFACE_IMPL(Workspace, SmoothPagedView, IWorkspace,
     IDropTarget, IDragSource, IDragScroller, ILauncherTransitionable);
 
 Workspace::Workspace()

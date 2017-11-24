@@ -40,7 +40,7 @@ const String VisibilityPropagation::PROPNAME_VIEW_CENTER ("android:visibilityPro
 
 AutoPtr<ArrayOf<String> > VisibilityPropagation::VISIBILITY_PROPAGATION_VALUES = ArrayOf<String>::Alloc(2);
 
-CAR_INTERFACE_IMPL_2(VisibilityPropagation, Object, ITransitionPropagation, IVisibilityPropagation)
+CAR_INTERFACE_IMPL(VisibilityPropagation, Object, ITransitionPropagation, IVisibilityPropagation)
 
 VisibilityPropagation::VisibilityPropagation()
 {

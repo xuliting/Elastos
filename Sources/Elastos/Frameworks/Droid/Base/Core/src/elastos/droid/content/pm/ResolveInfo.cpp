@@ -40,7 +40,7 @@ namespace Pm {
 
 const String ResolveInfo::TAG("ResolveInfo");
 
-CAR_INTERFACE_IMPL_2(ResolveInfo, Object, IResolveInfo, IParcelable)
+CAR_INTERFACE_IMPL(ResolveInfo, Object, IResolveInfo, IParcelable)
 
 ResolveInfo::ResolveInfo()
     : mPriority(0)

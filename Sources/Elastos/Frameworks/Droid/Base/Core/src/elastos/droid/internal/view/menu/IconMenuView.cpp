@@ -218,7 +218,7 @@ ECode IconMenuView::IconMenuViewLayoutParams::GetMaxNumItemsOnRow(
 
 const Int32 IconMenuView::ITEM_CAPTION_CYCLE_DELAY;
 
-CAR_INTERFACE_IMPL_4(IconMenuView, ViewGroup, IIconMenuView,
+CAR_INTERFACE_IMPL(IconMenuView, ViewGroup, IIconMenuView,
         IMenuBuilderItemInvoker, IMenuView, IRunnable)
 
 IconMenuView::IconMenuView()

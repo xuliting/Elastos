@@ -65,7 +65,7 @@ const Int64 MmsServiceBroker::RETRY_DELAY_ON_DISCONNECTION_MS = 3 * 1000L; // 3 
 // MmsServiceBroker::BinderService
 //==========================================================================================
 
-CAR_INTERFACE_IMPL_2(MmsServiceBroker::BinderService, Object, IIMms, IBinder)
+CAR_INTERFACE_IMPL(MmsServiceBroker::BinderService, Object, IIMms, IBinder)
 
 ECode MmsServiceBroker::BinderService::constructor(
     /* [in] */ ISystemService* mmsServiceBroker)

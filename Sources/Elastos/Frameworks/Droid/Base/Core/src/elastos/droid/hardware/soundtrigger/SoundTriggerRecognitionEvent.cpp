@@ -32,7 +32,7 @@ namespace Droid {
 namespace Hardware {
 namespace Soundtrigger {
 
-CAR_INTERFACE_IMPL_2(SoundTriggerRecognitionEvent, Object, ISoundTriggerRecognitionEvent, IParcelable)
+CAR_INTERFACE_IMPL(SoundTriggerRecognitionEvent, Object, ISoundTriggerRecognitionEvent, IParcelable)
 
 SoundTriggerRecognitionEvent::SoundTriggerRecognitionEvent()
     : mStatus(0)

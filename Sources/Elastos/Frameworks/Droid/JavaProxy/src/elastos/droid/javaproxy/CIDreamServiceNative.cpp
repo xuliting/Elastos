@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIDreamServiceNative::TAG("CIDreamServiceNative");
 
-CAR_INTERFACE_IMPL_2(CIDreamServiceNative, Object, IIDreamService, IBinder)
+CAR_INTERFACE_IMPL(CIDreamServiceNative, Object, IIDreamService, IBinder)
 
 CAR_OBJECT_IMPL(CIDreamServiceNative)
 

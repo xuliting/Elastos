@@ -41,7 +41,7 @@ namespace Widget {
 //=====================================================================
 const Int32 ExpandableListConnector::GroupMetadata::REFRESH;
 
-CAR_INTERFACE_IMPL_3(ExpandableListConnector::GroupMetadata, Object,
+CAR_INTERFACE_IMPL(ExpandableListConnector::GroupMetadata, Object,
         IGroupMetadata, IParcelable, IComparable)
 
 ExpandableListConnector::GroupMetadata::GroupMetadata()
@@ -227,7 +227,7 @@ ECode ExpandableListConnector::MyDataSetObserver::OnInvalidated()
 //=====================================================================
 //                       ExpandableListConnector
 //=====================================================================
-CAR_INTERFACE_IMPL_2(ExpandableListConnector, BaseAdapter, IExpandableListConnector, IFilterable)
+CAR_INTERFACE_IMPL(ExpandableListConnector, BaseAdapter, IExpandableListConnector, IFilterable)
 
 ExpandableListConnector::ExpandableListConnector()
     : mExpandableListAdapter(NULL)

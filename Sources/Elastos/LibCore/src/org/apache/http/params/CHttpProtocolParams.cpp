@@ -22,7 +22,7 @@ namespace Apache {
 namespace Http {
 namespace Params {
 
-CAR_INTERFACE_IMPL_2(CHttpProtocolParams, Object, IHttpProtocolParams, ICoreProtocolPNames)
+CAR_INTERFACE_IMPL(CHttpProtocolParams, Object, IHttpProtocolParams, ICoreProtocolPNames)
 
 CAR_SINGLETON_IMPL(CHttpProtocolParams)
 

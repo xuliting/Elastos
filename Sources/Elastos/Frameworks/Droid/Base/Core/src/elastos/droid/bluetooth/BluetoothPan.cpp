@@ -90,7 +90,7 @@ const Boolean BluetoothPan::VDBG = FALSE;
 //const Int32 BluetoothPan::PAN_CONNECT_FAILED_ATTEMPT_FAILED;
 //const Int32 BluetoothPan::PAN_OPERATION_GENERIC_FAILURE;
 //const Int32 BluetoothPan::PAN_OPERATION_SUCCESS;
-CAR_INTERFACE_IMPL_2(BluetoothPan, Object, IBluetoothPan, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothPan, Object, IBluetoothPan, IBluetoothProfile);
 
 BluetoothPan::BluetoothPan()
 {

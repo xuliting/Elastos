@@ -81,7 +81,7 @@ const String BluetoothHealth::TAG("BluetoothHealth");
 const Boolean BluetoothHealth::DBG = TRUE;
 const Boolean BluetoothHealth::VDBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(BluetoothHealth, Object, IBluetoothHealth, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothHealth, Object, IBluetoothHealth, IBluetoothProfile);
 
 BluetoothHealth::BluetoothHealth()
 {

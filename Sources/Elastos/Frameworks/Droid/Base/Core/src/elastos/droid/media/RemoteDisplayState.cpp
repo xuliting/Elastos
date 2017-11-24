@@ -35,7 +35,7 @@ RemoteDisplayState::RemoteDisplayInfo::RemoteDisplayInfo()
 RemoteDisplayState::RemoteDisplayInfo::~RemoteDisplayInfo()
 {}
 
-CAR_INTERFACE_IMPL_2(RemoteDisplayState::RemoteDisplayInfo, Object, IParcelable, IRemoteDisplayStateRemoteDisplayInfo)
+CAR_INTERFACE_IMPL(RemoteDisplayState::RemoteDisplayInfo, Object, IParcelable, IRemoteDisplayStateRemoteDisplayInfo)
 
 ECode RemoteDisplayState::RemoteDisplayInfo::constructor()
 {
@@ -261,7 +261,7 @@ RemoteDisplayState::RemoteDisplayState()
 RemoteDisplayState::~RemoteDisplayState()
 {}
 
-CAR_INTERFACE_IMPL_2(RemoteDisplayState, Object, IRemoteDisplayState, IParcelable)
+CAR_INTERFACE_IMPL(RemoteDisplayState, Object, IRemoteDisplayState, IParcelable)
 
 ECode RemoteDisplayState::constructor()
 {

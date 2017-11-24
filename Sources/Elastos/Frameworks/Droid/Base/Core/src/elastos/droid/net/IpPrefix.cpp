@@ -34,7 +34,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(IpPrefix, Object, IIpPrefix, IParcelable)
+CAR_INTERFACE_IMPL(IpPrefix, Object, IIpPrefix, IParcelable)
 
 ECode IpPrefix::CheckAndMaskAddressAndPrefixLength()
 {

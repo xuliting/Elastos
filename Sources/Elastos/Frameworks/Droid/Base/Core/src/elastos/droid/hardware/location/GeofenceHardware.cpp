@@ -31,7 +31,7 @@ namespace Droid {
 namespace Hardware {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(GeofenceHardware::GeofenceHardwareMonitorCallbackWrapper,
+CAR_INTERFACE_IMPL(GeofenceHardware::GeofenceHardwareMonitorCallbackWrapper,
         Object, IIGeofenceHardwareMonitorCallback, IBinder)
 
 GeofenceHardware::GeofenceHardwareMonitorCallbackWrapper::GeofenceHardwareMonitorCallbackWrapper(
@@ -76,7 +76,7 @@ ECode GeofenceHardware::GeofenceHardwareMonitorCallbackWrapper::ToString(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(GeofenceHardware::GeofenceHardwareCallbackWrapper,
+CAR_INTERFACE_IMPL(GeofenceHardware::GeofenceHardwareCallbackWrapper,
         Object, IIGeofenceHardwareCallback, IBinder)
 
 GeofenceHardware::GeofenceHardwareCallbackWrapper::GeofenceHardwareCallbackWrapper(

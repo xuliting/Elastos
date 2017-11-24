@@ -40,7 +40,7 @@ namespace Droid {
 namespace Content {
 namespace Res {
 
-CAR_INTERFACE_IMPL_3(CAssetFileDescriptor, Object, IAssetFileDescriptor, ICloseable, IParcelable)
+CAR_INTERFACE_IMPL(CAssetFileDescriptor, Object, IAssetFileDescriptor, ICloseable, IParcelable)
 
 CAR_OBJECT_IMPL(CAssetFileDescriptor)
 

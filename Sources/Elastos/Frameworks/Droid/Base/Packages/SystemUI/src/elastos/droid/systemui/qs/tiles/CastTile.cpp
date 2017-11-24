@@ -43,7 +43,7 @@ namespace Tiles {
 
 static const String TAG("CastTile");
 
-CAR_INTERFACE_IMPL_2(CastTile::Callback, Object, ICastControllerCallback, IKeyguardMonitorCallback);
+CAR_INTERFACE_IMPL(CastTile::Callback, Object, ICastControllerCallback, IKeyguardMonitorCallback);
 
 CastTile::Callback::Callback(
     /* [in] */ CastTile* host)

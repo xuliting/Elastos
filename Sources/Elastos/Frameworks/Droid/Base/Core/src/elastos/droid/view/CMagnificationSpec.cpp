@@ -28,7 +28,7 @@ AutoPtr<Pools::SynchronizedPool<IMagnificationSpec> > CMagnificationSpec::sPool 
         new Pools::SynchronizedPool<IMagnificationSpec>(MAX_POOL_SIZE);
 
 CAR_OBJECT_IMPL(CMagnificationSpec);
-CAR_INTERFACE_IMPL_2(CMagnificationSpec, Object, IMagnificationSpec, IParcelable);
+CAR_INTERFACE_IMPL(CMagnificationSpec, Object, IMagnificationSpec, IParcelable);
 CMagnificationSpec::CMagnificationSpec()
     : mScale(1.0f)
     , mOffsetX(0)

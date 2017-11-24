@@ -94,7 +94,7 @@ ECode CVolumeUI::MyRunnable::Run()
 // CVolumeUI::VolumeController
 //==============================================================================
 
-CAR_INTERFACE_IMPL_3(CVolumeUI::VolumeController, Object, IIVolumeController, IBinder, IVolumeComponent)
+CAR_INTERFACE_IMPL(CVolumeUI::VolumeController, Object, IIVolumeController, IBinder, IVolumeComponent)
 
 CVolumeUI::VolumeController::VolumeController()
 {}
@@ -182,7 +182,7 @@ ECode CVolumeUI::VolumeController::ToString(
 // CVolumeUI::RemoteVolumeController
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CVolumeUI::RemoteVolumeController, Object, IIRemoteVolumeController, IBinder)
+CAR_INTERFACE_IMPL(CVolumeUI::RemoteVolumeController, Object, IIRemoteVolumeController, IBinder)
 
 CVolumeUI::RemoteVolumeController::RemoteVolumeController()
 {}

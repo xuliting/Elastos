@@ -23,7 +23,7 @@ namespace Location {
 
 CAR_OBJECT_IMPL(CProviderProperties);
 
-CAR_INTERFACE_IMPL_2(CProviderProperties, Object, IProviderProperties, IParcelable);
+CAR_INTERFACE_IMPL(CProviderProperties, Object, IProviderProperties, IParcelable);
 
 CProviderProperties::CProviderProperties()
      : mRequiresNetwork(FALSE)

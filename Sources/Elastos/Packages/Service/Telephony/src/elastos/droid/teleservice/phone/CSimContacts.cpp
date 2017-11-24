@@ -110,7 +110,7 @@ CSimContacts::NamePhoneTypePair::NamePhoneTypePair(
     }
 }
 
-CAR_INTERFACE_IMPL_2(CSimContacts::ImportAllSimContactsThread, Thread,
+CAR_INTERFACE_IMPL(CSimContacts::ImportAllSimContactsThread, Thread,
         IDialogInterfaceOnCancelListener, IDialogInterfaceOnClickListener)
 
 CSimContacts::ImportAllSimContactsThread::ImportAllSimContactsThread(

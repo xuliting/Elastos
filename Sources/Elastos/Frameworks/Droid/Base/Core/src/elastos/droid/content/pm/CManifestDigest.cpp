@@ -49,7 +49,7 @@ const String CManifestDigest::TO_STRING_PREFIX("ManifestDigest {mDigest=");
 
 const String CManifestDigest::DIGEST_ALGORITHM("SHA-256");
 
-CAR_INTERFACE_IMPL_2(CManifestDigest, Object, IManifestDigest, IParcelable)
+CAR_INTERFACE_IMPL(CManifestDigest, Object, IManifestDigest, IParcelable)
 
 CAR_OBJECT_IMPL(CManifestDigest)
 

@@ -49,7 +49,7 @@ AppImportanceMonitor::AppEntry::AppEntry(
 //=================================================================================
 // AppImportanceMonitor::ProcessObserver
 //=================================================================================
-CAR_INTERFACE_IMPL_2(AppImportanceMonitor::ProcessObserver, Object, IIProcessObserver, IBinder)
+CAR_INTERFACE_IMPL(AppImportanceMonitor::ProcessObserver, Object, IIProcessObserver, IBinder)
 
 AppImportanceMonitor::ProcessObserver::ProcessObserver()
 {}

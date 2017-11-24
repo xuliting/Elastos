@@ -37,7 +37,7 @@ namespace Telecom {
 //===============================================================
 // ConnectionRequest::
 //===============================================================
-CAR_INTERFACE_IMPL_2(ConnectionRequest, Object, IConnectionRequest, IParcelable)
+CAR_INTERFACE_IMPL(ConnectionRequest, Object, IConnectionRequest, IParcelable)
 
 ECode ConnectionRequest::constructor()
 {

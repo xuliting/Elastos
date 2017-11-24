@@ -34,7 +34,7 @@ namespace Inputmethod {
 
 const Int32 CUserDictionaryAddWordFragment::OPTIONS_MENU_DELETE = IMenu::FIRST;
 
-CAR_INTERFACE_IMPL_3(CUserDictionaryAddWordFragment, Fragment, IUserDictionaryAddWordFragment, IAdapterViewOnItemSelectedListener, ILocaleSelectionListener);
+CAR_INTERFACE_IMPL(CUserDictionaryAddWordFragment, Fragment, IUserDictionaryAddWordFragment, IAdapterViewOnItemSelectedListener, ILocaleSelectionListener);
 
 CAR_OBJECT_IMPL(CUserDictionaryAddWordFragment)
 

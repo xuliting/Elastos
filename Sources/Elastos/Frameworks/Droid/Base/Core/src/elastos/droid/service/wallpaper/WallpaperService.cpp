@@ -1268,7 +1268,7 @@ ECode WallpaperService::Engine::Detach() {
 //WallpaperService::IWallpaperEngineWrapper
 //===============================
 
-CAR_INTERFACE_IMPL_4(WallpaperService::IWallpaperEngineWrapper, Object, IIWallpaperEngine, IHandlerCallerCallback, IBinder, IIWallpaperEngineWrapper)
+CAR_INTERFACE_IMPL(WallpaperService::IWallpaperEngineWrapper, Object, IIWallpaperEngine, IHandlerCallerCallback, IBinder, IIWallpaperEngineWrapper)
 
 WallpaperService::IWallpaperEngineWrapper::IWallpaperEngineWrapper()
     : mWindowType(0)
@@ -1495,7 +1495,7 @@ ECode WallpaperService::IWallpaperEngineWrapper::ExecuteMessage(
 //WallpaperService::IWallpaperServiceWrapper
 //===============================
 
-CAR_INTERFACE_IMPL_3(WallpaperService::IWallpaperServiceWrapper, Object, IIWallpaperService, IBinder, IIWallpaperServiceWrapper)
+CAR_INTERFACE_IMPL(WallpaperService::IWallpaperServiceWrapper, Object, IIWallpaperService, IBinder, IIWallpaperServiceWrapper)
 
 WallpaperService::IWallpaperServiceWrapper::IWallpaperServiceWrapper()
 {

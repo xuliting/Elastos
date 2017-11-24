@@ -355,7 +355,7 @@ ECode RecentTasksLoader::ThumbnailLoaderAsyncTask::DoInBackground(
 // RecentTasksLoader
 //======================================================================
 
-CAR_INTERFACE_IMPL_2(RecentTasksLoader, Object, IViewOnTouchListener, IRecentTasksLoader)
+CAR_INTERFACE_IMPL(RecentTasksLoader, Object, IViewOnTouchListener, IRecentTasksLoader)
 
 RecentTasksLoader::RecentTasksLoader()
     : mFirstTaskLoaded(FALSE)

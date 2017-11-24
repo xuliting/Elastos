@@ -46,7 +46,7 @@ namespace Tv {
 // TvInputService::TvInputServiceStub
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(TvInputService::TvInputServiceStub, Object, IITvInputService, IBinder)
+CAR_INTERFACE_IMPL(TvInputService::TvInputServiceStub, Object, IITvInputService, IBinder)
 
 ECode TvInputService::TvInputServiceStub::RegisterCallback(
     /* [in] */ IITvInputServiceCallback* cb)

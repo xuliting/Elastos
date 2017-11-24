@@ -350,7 +350,7 @@ ECode CMemory::MyBroadcastReceiver::OnReceive(
 //                  CMemory::ClearCacheObserver
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CMemory::ClearCacheObserver, Object, IIPackageDataObserver, IBinder)
+CAR_INTERFACE_IMPL(CMemory::ClearCacheObserver, Object, IIPackageDataObserver, IBinder)
 
 CMemory::ClearCacheObserver::ClearCacheObserver()
 {}

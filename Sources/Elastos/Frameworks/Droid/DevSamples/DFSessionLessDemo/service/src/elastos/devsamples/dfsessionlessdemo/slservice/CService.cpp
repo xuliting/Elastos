@@ -97,7 +97,7 @@ ECode CService::MyHandler::HandleMessage(
 //======================================================================
 //  CService::SimpleService
 //======================================================================
-CAR_INTERFACE_IMPL_2(CService::SimpleService, Object, ISimpleInterface, IBusObject)
+CAR_INTERFACE_IMPL(CService::SimpleService, Object, ISimpleInterface, IBusObject)
 CAR_OBJECT_IMPL(CSimpleService)
 
 ECode CService::SimpleService::constructor(

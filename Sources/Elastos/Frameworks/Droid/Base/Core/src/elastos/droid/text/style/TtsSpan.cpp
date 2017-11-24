@@ -26,7 +26,7 @@ namespace Text {
 namespace Style {
 
 
-CAR_INTERFACE_IMPL_3(TtsSpan, Object, ITtsSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(TtsSpan, Object, ITtsSpan, IParcelableSpan, IParcelable)
 
 TtsSpan::TtsSpan()
 {}

@@ -29,7 +29,7 @@ namespace Elastos {
 namespace Droid {
 namespace InputMethodService {
 
-CAR_INTERFACE_IMPL_2(AbstractInputMethodImpl, Object, IAbstractInputMethodImpl, IInputMethod);
+CAR_INTERFACE_IMPL(AbstractInputMethodImpl, Object, IAbstractInputMethodImpl, IInputMethod);
 
 AbstractInputMethodImpl::AbstractInputMethodImpl(
     /* [in] */ AbstractInputMethodService* host)

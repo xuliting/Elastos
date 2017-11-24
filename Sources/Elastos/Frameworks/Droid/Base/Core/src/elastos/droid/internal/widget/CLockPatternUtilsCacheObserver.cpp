@@ -26,7 +26,7 @@ namespace Internal {
 namespace Widget {
 
 CAR_OBJECT_IMPL(CLockPatternUtilsCacheObserver)
-CAR_INTERFACE_IMPL_2(CLockPatternUtilsCacheObserver, Object, IILockSettingsObserver, IBinder);
+CAR_INTERFACE_IMPL(CLockPatternUtilsCacheObserver, Object, IILockSettingsObserver, IBinder);
 
 ECode CLockPatternUtilsCacheObserver::constructor()
 {

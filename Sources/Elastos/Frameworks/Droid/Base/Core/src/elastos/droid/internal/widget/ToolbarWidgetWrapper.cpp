@@ -131,7 +131,7 @@ ECode ToolbarWidgetWrapper::InnerAnimatorListenerAdapter2::OnAnimationStart(
 const String ToolbarWidgetWrapper::TAG("ToolbarWidgetWrapper");
 const Int32 ToolbarWidgetWrapper::AFFECTS_LOGO_MASK;
 
-CAR_INTERFACE_IMPL_2(ToolbarWidgetWrapper, Object, IDecorToolbar, IToolbarWidgetWrapper)
+CAR_INTERFACE_IMPL(ToolbarWidgetWrapper, Object, IDecorToolbar, IToolbarWidgetWrapper)
 
 ToolbarWidgetWrapper::ToolbarWidgetWrapper()
     : mDisplayOpts(0)

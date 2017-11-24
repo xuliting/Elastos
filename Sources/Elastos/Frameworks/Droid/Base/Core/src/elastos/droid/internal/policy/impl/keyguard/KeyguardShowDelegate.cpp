@@ -28,7 +28,7 @@ namespace Policy {
 namespace Impl {
 namespace Keyguard {
 
-CAR_INTERFACE_IMPL_2(KeyguardShowDelegate, Object, IBinder, IIKeyguardShowCallback)
+CAR_INTERFACE_IMPL(KeyguardShowDelegate, Object, IBinder, IIKeyguardShowCallback)
 
 const Boolean KeyguardShowDelegate::DEBUG = TRUE;
 

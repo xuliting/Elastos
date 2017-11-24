@@ -35,7 +35,7 @@ namespace Notification {
 
 const String Condition::TAG("Condition");
 
-CAR_INTERFACE_IMPL_2(Condition, Object, ICondition, IParcelable)
+CAR_INTERFACE_IMPL(Condition, Object, ICondition, IParcelable)
 
 Condition::Condition()
     : mIcon(0)

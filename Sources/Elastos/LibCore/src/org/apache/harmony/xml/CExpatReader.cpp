@@ -43,7 +43,7 @@ const String CExpatReader::Feature::EXTERNAL_GENERAL_ENTITIES = BASE_URI + Strin
 const String CExpatReader::Feature::EXTERNAL_PARAMETER_ENTITIES = BASE_URI + String("external-parameter-entities");
 
 
-CAR_INTERFACE_IMPL_2(CExpatReader, Object, IExpatReader, IXMLReader)
+CAR_INTERFACE_IMPL(CExpatReader, Object, IExpatReader, IXMLReader)
 
 const String CExpatReader::LEXICAL_HANDLER_PROPERTY("http://xml.org/sax/properties/lexical-handler");
 

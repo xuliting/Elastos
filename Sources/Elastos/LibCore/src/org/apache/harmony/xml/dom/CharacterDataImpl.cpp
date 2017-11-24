@@ -29,7 +29,7 @@ namespace Xml {
 namespace Dom {
 
 
-CAR_INTERFACE_IMPL_2(CharacterDataImpl, LeafNodeImpl, ICharacterData, ICharacterDataImpl);
+CAR_INTERFACE_IMPL(CharacterDataImpl, LeafNodeImpl, ICharacterData, ICharacterDataImpl);
 
 CharacterDataImpl::CharacterDataImpl()
 {

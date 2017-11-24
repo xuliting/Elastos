@@ -417,7 +417,7 @@ android::status_t NativeInputEventReceiver::consumeEvents(
 // InputEventReceiver
 //==========================================================================================
 
-CAR_INTERFACE_IMPL_2(InputEventReceiver, Object, IInputEventReceiver, IWeakReferenceSource);
+CAR_INTERFACE_IMPL(InputEventReceiver, Object, IInputEventReceiver, IWeakReferenceSource);
 
 InputEventReceiver::InputEventReceiver()
 {}

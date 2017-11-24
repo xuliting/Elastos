@@ -35,7 +35,7 @@ AutoPtr<Pools::SynchronizedPool<IWindowInfo> > CWindowInfo::sPool =
 
 CAR_OBJECT_IMPL(CWindowInfo);
 
-CAR_INTERFACE_IMPL_2(CWindowInfo, Object, IWindowInfo, IParcelable);
+CAR_INTERFACE_IMPL(CWindowInfo, Object, IWindowInfo, IParcelable);
 
 CWindowInfo::CWindowInfo()
     : mType(0)

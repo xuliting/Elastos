@@ -507,7 +507,7 @@ const Int32 CNetworkManagementService::DAEMON_MSG_MOBILE_CONN_REAL_TIME_INFO = 1
 
 CAR_OBJECT_IMPL(CNetworkManagementService)
 
-CAR_INTERFACE_IMPL_2(CNetworkManagementService, Object, IBinder, IINetworkManagementService)
+CAR_INTERFACE_IMPL(CNetworkManagementService, Object, IBinder, IINetworkManagementService)
 
 CNetworkManagementService::CNetworkManagementService()
     : mBandwidthControlEnabled(FALSE)

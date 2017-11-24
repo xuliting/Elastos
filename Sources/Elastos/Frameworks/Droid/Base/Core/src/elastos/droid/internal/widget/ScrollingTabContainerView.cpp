@@ -378,7 +378,7 @@ ECode ScrollingTabContainerView::TabAdapter::GetView(
 }
 
 
-CAR_INTERFACE_IMPL_2(ScrollingTabContainerView::InnerListener, Object, \
+CAR_INTERFACE_IMPL(ScrollingTabContainerView::InnerListener, Object, \
     IViewOnClickListener, IAdapterViewOnItemClickListener)
 
 ScrollingTabContainerView::InnerListener::InnerListener(

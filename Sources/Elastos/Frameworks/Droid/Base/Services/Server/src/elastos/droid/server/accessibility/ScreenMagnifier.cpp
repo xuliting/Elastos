@@ -1314,7 +1314,7 @@ ECode ScreenMagnifier::PersistScaleAsyncTask::DoInBackground(
 //                  ScreenMagnifier
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(ScreenMagnifier, Object, IMagnificationCallbacks, IEventStreamTransformation);
+CAR_INTERFACE_IMPL(ScreenMagnifier, Object, IMagnificationCallbacks, IEventStreamTransformation);
 
 ScreenMagnifier::ScreenMagnifier(
     /* [in] */ IContext* context,

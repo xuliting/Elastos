@@ -56,7 +56,7 @@ namespace Droid {
 namespace Text {
 namespace Method {
 
-CAR_INTERFACE_IMPL_2(CharacterPickerDialog::InnerListener, Object, \
+CAR_INTERFACE_IMPL(CharacterPickerDialog::InnerListener, Object, \
     IAdapterViewOnItemClickListener, IViewOnClickListener)
 
 CharacterPickerDialog::InnerListener::InnerListener(

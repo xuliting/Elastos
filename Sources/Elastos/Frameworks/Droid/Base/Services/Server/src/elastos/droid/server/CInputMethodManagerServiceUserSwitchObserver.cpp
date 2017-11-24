@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Server {
 
-CAR_INTERFACE_IMPL_2(CInputMethodManagerServiceUserSwitchObserver, Object, IIUserSwitchObserver, IBinder)
+CAR_INTERFACE_IMPL(CInputMethodManagerServiceUserSwitchObserver, Object, IIUserSwitchObserver, IBinder)
 
 CAR_OBJECT_IMPL(CInputMethodManagerServiceUserSwitchObserver)
 

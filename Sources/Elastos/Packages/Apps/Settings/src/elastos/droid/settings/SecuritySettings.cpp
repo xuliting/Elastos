@@ -384,7 +384,7 @@ ECode SecuritySettings::SecuritySearchIndexProvider::GetNonIndexableKeys(
 //                 SecuritySettings
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(SecuritySettings, SettingsPreferenceFragment, IDialogInterfaceOnClickListener, IIndexable);
+CAR_INTERFACE_IMPL(SecuritySettings, SettingsPreferenceFragment, IDialogInterfaceOnClickListener, IIndexable);
 
 SecuritySettings::SecuritySettings()
     : mIsPrimary(FALSE)

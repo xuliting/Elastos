@@ -35,7 +35,7 @@ BasicTokenIterator::BasicTokenIterator()
     : mSearchPos(0)
 {}
 
-CAR_INTERFACE_IMPL_3(BasicTokenIterator, Object, IBasicTokenIterator, ITokenIterator, IIterator)
+CAR_INTERFACE_IMPL(BasicTokenIterator, Object, IBasicTokenIterator, ITokenIterator, IIterator)
 
 ECode BasicTokenIterator::constructor(
     /* [in] */ IHeaderIterator* headerIterator)

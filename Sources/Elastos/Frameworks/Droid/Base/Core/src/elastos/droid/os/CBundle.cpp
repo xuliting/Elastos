@@ -42,7 +42,7 @@ static AutoPtr<IBundle> InitEMPTY()
 
 AutoPtr<IBundle> CBundle::EMPTY = InitEMPTY();
 
-CAR_INTERFACE_IMPL_3(CBundle, BaseBundle, IBundle, ICloneable, IParcelable)
+CAR_INTERFACE_IMPL(CBundle, BaseBundle, IBundle, ICloneable, IParcelable)
 
 CAR_OBJECT_IMPL(CBundle)
 

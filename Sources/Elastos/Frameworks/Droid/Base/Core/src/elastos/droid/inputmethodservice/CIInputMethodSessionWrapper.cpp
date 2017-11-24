@@ -118,7 +118,7 @@ const Int32 CIInputMethodSessionWrapper::DO_FINISH_SESSION = 110;
 const Int32 CIInputMethodSessionWrapper::DO_VIEW_CLICKED = 115;
 
 CAR_OBJECT_IMPL(CIInputMethodSessionWrapper);
-CAR_INTERFACE_IMPL_3(CIInputMethodSessionWrapper, Object, IIInputMethodSession, IBinder, IHandlerCallerCallback);
+CAR_INTERFACE_IMPL(CIInputMethodSessionWrapper, Object, IIInputMethodSession, IBinder, IHandlerCallerCallback);
 ECode CIInputMethodSessionWrapper::constructor(
     /* [in] */ IContext* context,
     /* [in] */ IInputMethodSession* inputMethodSession,

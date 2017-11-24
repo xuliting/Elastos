@@ -204,7 +204,7 @@ Int32 OpenSSLSocketImpl::STATE_READY = 4;
 
 Int32 OpenSSLSocketImpl::STATE_CLOSED = 5;
 
-CAR_INTERFACE_IMPL_4(OpenSSLSocketImpl, Object, ISSLHandshakeCallbacks, ISSLParametersImplAliasChooser, ISSLParametersImplPSKCallbacks, IOpenSSLSocketImpl)
+CAR_INTERFACE_IMPL(OpenSSLSocketImpl, Object, ISSLHandshakeCallbacks, ISSLParametersImplAliasChooser, ISSLParametersImplPSKCallbacks, IOpenSSLSocketImpl)
 
 OpenSSLSocketImpl::OpenSSLSocketImpl()
     : mState(STATE_NEW)

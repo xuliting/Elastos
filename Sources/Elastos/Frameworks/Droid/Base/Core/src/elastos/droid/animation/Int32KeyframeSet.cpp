@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Animation {
 
-CAR_INTERFACE_IMPL_2(Int32KeyframeSet, KeyframeSet, IInt32KeyframeSet, IInt32Keyframes)
+CAR_INTERFACE_IMPL(Int32KeyframeSet, KeyframeSet, IInt32KeyframeSet, IInt32Keyframes)
 Int32KeyframeSet::Int32KeyframeSet(
     /* [in] */ ArrayOf<IInt32Keyframe*>* keyframes)
     : mFirstValue(0)

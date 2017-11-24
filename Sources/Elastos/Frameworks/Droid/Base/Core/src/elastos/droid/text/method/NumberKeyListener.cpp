@@ -30,7 +30,7 @@ namespace Droid {
 namespace Text {
 namespace Method {
 
-CAR_INTERFACE_IMPL_2(NumberKeyListener, BaseKeyListener, INumberKeyListener, IInputFilter)
+CAR_INTERFACE_IMPL(NumberKeyListener, BaseKeyListener, INumberKeyListener, IInputFilter)
 
 NumberKeyListener::NumberKeyListener()
 {}

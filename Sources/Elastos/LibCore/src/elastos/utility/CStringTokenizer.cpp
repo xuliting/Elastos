@@ -25,7 +25,7 @@ using Elastos::Core::StringUtils;
 namespace Elastos {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(CStringTokenizer, Object, IStringTokenizer, IEnumeration)
+CAR_INTERFACE_IMPL(CStringTokenizer, Object, IStringTokenizer, IEnumeration)
 
 CAR_OBJECT_IMPL(CStringTokenizer)
 

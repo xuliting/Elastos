@@ -66,7 +66,7 @@ namespace Cat {
 ////                                 Menu
 ////=====================================================================
 //const AutoPtr<IParcelable> AutoPtr< ::Creator<Menu> > Menu::CREATOR = new InnerParcelableCreator(this);
-CAR_INTERFACE_IMPL_2(CatMenu, Object, IMenu, IParcelable);
+CAR_INTERFACE_IMPL(CatMenu, Object, IMenu, IParcelable);
 
 CatMenu::CatMenu()
 {

@@ -31,7 +31,7 @@ namespace Droid {
 namespace Text {
 namespace Method {
 /*****************************ReplacementTransformationMethod::ReplacementCharSequence*****************************/
-CAR_INTERFACE_IMPL_2(ReplacementTransformationMethod::ReplacementCharSequence, Object, \
+CAR_INTERFACE_IMPL(ReplacementTransformationMethod::ReplacementCharSequence, Object, \
     IGetChars, ICharSequence)
 
 ReplacementTransformationMethod::ReplacementCharSequence::ReplacementCharSequence()
@@ -222,7 +222,7 @@ ECode ReplacementTransformationMethod::SpannedReplacementCharSequence::construct
 }
 
 /*****************************ReplacementTransformationMethod*****************************/
-CAR_INTERFACE_IMPL_2(ReplacementTransformationMethod, Object, \
+CAR_INTERFACE_IMPL(ReplacementTransformationMethod, Object, \
     IReplacementTransformationMethod, ITransformationMethod)
 
 ReplacementTransformationMethod::ReplacementTransformationMethod()

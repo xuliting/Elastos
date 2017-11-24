@@ -33,7 +33,7 @@ namespace Internal {
 namespace View {
 namespace Menu {
 
-CAR_INTERFACE_IMPL_2(BaseMenuPresenter, Object, IBaseMenuPresenter, IMenuPresenter)
+CAR_INTERFACE_IMPL(BaseMenuPresenter, Object, IBaseMenuPresenter, IMenuPresenter)
 
 BaseMenuPresenter::BaseMenuPresenter()
     : mSystemContext(NULL)

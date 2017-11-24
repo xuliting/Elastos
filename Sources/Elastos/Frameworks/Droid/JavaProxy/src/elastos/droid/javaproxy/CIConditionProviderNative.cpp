@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIConditionProviderNative::TAG("CIConditionProviderNative");
 
-CAR_INTERFACE_IMPL_2(CIConditionProviderNative, Object, IIConditionProvider, IBinder)
+CAR_INTERFACE_IMPL(CIConditionProviderNative, Object, IIConditionProvider, IBinder)
 
 CAR_OBJECT_IMPL(CIConditionProviderNative)
 

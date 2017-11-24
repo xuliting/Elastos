@@ -62,7 +62,7 @@ ECode Vector::Enumeration::GetNextElement(
 // Vector::
 //====================================================================
 
-CAR_INTERFACE_IMPL_4(Vector, AbstractList, IVector, IRandomAccess, ICloneable, ISerializable)
+CAR_INTERFACE_IMPL(Vector, AbstractList, IVector, IRandomAccess, ICloneable, ISerializable)
 
 const Int32 Vector::DEFAULT_SIZE = 10;
 

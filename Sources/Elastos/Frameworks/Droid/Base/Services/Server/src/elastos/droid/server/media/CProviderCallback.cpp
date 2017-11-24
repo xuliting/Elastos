@@ -25,7 +25,7 @@ namespace Droid {
 namespace Server {
 namespace Media {
 
-CAR_INTERFACE_IMPL_2(CProviderCallback, Object, IIRemoteDisplayCallback, IBinder)
+CAR_INTERFACE_IMPL(CProviderCallback, Object, IIRemoteDisplayCallback, IBinder)
 
 CAR_OBJECT_IMPL(CProviderCallback)
 

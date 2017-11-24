@@ -36,7 +36,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(CSignature, Object, ISignature, IParcelable)
+CAR_INTERFACE_IMPL(CSignature, Object, ISignature, IParcelable)
 
 CAR_OBJECT_IMPL(CSignature)
 

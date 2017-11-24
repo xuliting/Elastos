@@ -24,7 +24,7 @@ namespace Droid {
 namespace Hardware {
 namespace Usb {
 
-CAR_INTERFACE_IMPL_2(UsbInterface, Object, IUsbInterface, IParcelable);
+CAR_INTERFACE_IMPL(UsbInterface, Object, IUsbInterface, IParcelable);
 
 ECode UsbInterface::constructor()
 {

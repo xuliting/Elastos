@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIRemoteCallbackNative::TAG("CIRemoteCallbackNative");
 
-CAR_INTERFACE_IMPL_2(CIRemoteCallbackNative, Object, IIRemoteCallback, IBinder)
+CAR_INTERFACE_IMPL(CIRemoteCallbackNative, Object, IIRemoteCallback, IBinder)
 
 CAR_OBJECT_IMPL(CIRemoteCallbackNative)
 

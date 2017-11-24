@@ -74,7 +74,7 @@ HashMap<SupplicantState, NetworkInfoDetailedState> CWifiInfo::sStateMap;
 String CWifiInfo::LINK_SPEED_UNITS("Mbps");
 const CWifiInfo::StaticInitializer CWifiInfo::sInitializer;
 
-CAR_INTERFACE_IMPL_2(CWifiInfo, Object, IWifiInfo, IParcelable)
+CAR_INTERFACE_IMPL(CWifiInfo, Object, IWifiInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiInfo)
 

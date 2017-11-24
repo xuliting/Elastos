@@ -51,7 +51,7 @@ ECode GpsMeasurementListenerTransport::ListenerTransport::Operation::Execute(
 //GpsMeasurementListenerTransport::ListenerTransport
 //==============================================
 
-CAR_INTERFACE_IMPL_2(GpsMeasurementListenerTransport::ListenerTransport, Object, IIGpsMeasurementsListener, IBinder)
+CAR_INTERFACE_IMPL(GpsMeasurementListenerTransport::ListenerTransport, Object, IIGpsMeasurementsListener, IBinder)
 
 GpsMeasurementListenerTransport::ListenerTransport::ListenerTransport()
 {

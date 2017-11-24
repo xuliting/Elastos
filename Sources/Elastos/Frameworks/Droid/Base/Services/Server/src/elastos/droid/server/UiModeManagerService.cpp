@@ -84,7 +84,7 @@ const Boolean UiModeManagerService::ENABLE_LAUNCH_DESK_DOCK_APP = TRUE;
 //==================================================================
 // UiModeManagerService::BinderService
 //==================================================================
-CAR_INTERFACE_IMPL_2(UiModeManagerService::BinderService, Object, IIUiModeManager, IBinder)
+CAR_INTERFACE_IMPL(UiModeManagerService::BinderService, Object, IIUiModeManager, IBinder)
 
 ECode UiModeManagerService::BinderService::constructor(
     /* [in] */ ISystemService* umm)

@@ -26,7 +26,7 @@ namespace Usage {
 
 CAR_OBJECT_IMPL(CConfigurationStats)
 
-CAR_INTERFACE_IMPL_2(CConfigurationStats, Object, IConfigurationStats, IParcelable)
+CAR_INTERFACE_IMPL(CConfigurationStats, Object, IConfigurationStats, IParcelable)
 
 CConfigurationStats::CConfigurationStats()
     : mBeginTimeStamp(0)

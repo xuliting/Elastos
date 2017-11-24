@@ -28,7 +28,7 @@ namespace Policy {
 namespace Impl {
 namespace Keyguard {
 
-CAR_INTERFACE_IMPL_2(KeyguardExitDelegate, Object, IBinder, IIKeyguardExitCallback)
+CAR_INTERFACE_IMPL(KeyguardExitDelegate, Object, IBinder, IIKeyguardExitCallback)
 
 const Boolean KeyguardExitDelegate::DEBUG = TRUE;
 

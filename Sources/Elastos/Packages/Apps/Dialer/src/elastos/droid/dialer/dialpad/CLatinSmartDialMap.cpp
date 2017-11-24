@@ -21,7 +21,7 @@ namespace Droid {
 namespace Dialer {
 namespace Dialpad {
 
-CAR_INTERFACE_IMPL_2(CLatinSmartDialMap, Object, ILatinSmartDialMap, ISmartDialMap);
+CAR_INTERFACE_IMPL(CLatinSmartDialMap, Object, ILatinSmartDialMap, ISmartDialMap);
 
 CAR_OBJECT_IMPL(CLatinSmartDialMap);
 

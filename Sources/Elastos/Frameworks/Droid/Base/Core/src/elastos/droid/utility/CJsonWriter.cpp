@@ -32,7 +32,7 @@ namespace Elastos {
 namespace Droid {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(CJsonWriter, Object, IJsonWriter, ICloseable)
+CAR_INTERFACE_IMPL(CJsonWriter, Object, IJsonWriter, ICloseable)
 
 CAR_OBJECT_IMPL(CJsonWriter)
 

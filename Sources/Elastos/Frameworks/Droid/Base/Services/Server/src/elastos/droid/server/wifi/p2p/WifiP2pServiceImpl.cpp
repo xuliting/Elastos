@@ -203,7 +203,7 @@ ECode WifiP2pServiceImpl::ClientInfo::SetMessenger(
 //==================================================================
 // WifiP2pServiceImpl
 //==================================================================
-CAR_INTERFACE_IMPL_2(WifiP2pServiceImpl, Object, IIWifiP2pManager, IBinder);
+CAR_INTERFACE_IMPL(WifiP2pServiceImpl, Object, IIWifiP2pManager, IBinder);
 
 WifiP2pServiceImpl::WifiP2pServiceImpl()
     : mP2pSupported(FALSE)

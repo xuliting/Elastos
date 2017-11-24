@@ -31,7 +31,7 @@ namespace Location {
 
 const Double LocationRequest::FASTEST_INTERVAL_FACTOR = 6.0;
 
-CAR_INTERFACE_IMPL_2(LocationRequest, Object, ILocationRequest, IParcelable)
+CAR_INTERFACE_IMPL(LocationRequest, Object, ILocationRequest, IParcelable)
 
 LocationRequest::LocationRequest()
     : mQuality(POWER_LOW)

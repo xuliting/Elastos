@@ -14,7 +14,7 @@ EXTERN NodeBridge** g_ppNodeBridge;
 
 EXTERN IHandler* myHandler;
 
-CAR_INTERFACE_IMPL_2(JSActName, ViewGroup, IViewPager, ICalculatorPadViewPager)
+CAR_INTERFACE_IMPL(JSActName, ViewGroup, IViewPager, ICalculatorPadViewPager)
 
 JS_CAR_OBJECT_IMPL(JSActName)
 

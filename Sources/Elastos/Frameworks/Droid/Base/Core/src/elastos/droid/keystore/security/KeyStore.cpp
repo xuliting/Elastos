@@ -35,7 +35,7 @@ namespace Droid {
 namespace KeyStore {
 namespace Security {
 
-CAR_INTERFACE_IMPL_2(KeyStore::KeystoreServiceWrapper, Object, IBinder, IIKeystoreService);
+CAR_INTERFACE_IMPL(KeyStore::KeystoreServiceWrapper, Object, IBinder, IIKeystoreService);
 ECode KeyStore::KeystoreServiceWrapper::Init()
 {
     android::sp<android::IServiceManager> sm = android::defaultServiceManager();

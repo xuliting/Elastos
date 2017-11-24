@@ -47,7 +47,7 @@ const String ReflectiveProperty::PREFIX_GET("Get");
 const String ReflectiveProperty::PREFIX_IS("Is");
 const String ReflectiveProperty::PREFIX_SET("Set");
 
-CAR_INTERFACE_IMPL_2(ReflectiveProperty, IProperty, IReflectiveProperty)
+CAR_INTERFACE_IMPL(ReflectiveProperty, IProperty, IReflectiveProperty)
 
 ReflectiveProperty::ReflectiveProperty(
     /* [in] */ ClassID clsId,

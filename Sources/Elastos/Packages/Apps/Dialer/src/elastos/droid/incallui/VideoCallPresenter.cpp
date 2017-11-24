@@ -73,7 +73,7 @@ ECode VideoCallPresenter::OnUpgradeToVideoFailRunnable::Run()
 //================================================================
 const Int64 VideoCallPresenter::SESSION_MODIFICATION_RESET_DELAY_MS;
 
-CAR_INTERFACE_IMPL_7(VideoCallPresenter, Presenter
+CAR_INTERFACE_IMPL(VideoCallPresenter, Presenter
         , IIncomingCallListener
         , IInCallOrientationListener
         , IInCallStateListener

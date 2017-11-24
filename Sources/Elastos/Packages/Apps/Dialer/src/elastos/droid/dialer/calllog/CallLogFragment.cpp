@@ -329,7 +329,7 @@ const String CallLogFragment::KEY_SHOW_FOOTER("show_footer");
 const String CallLogFragment::KEY_IS_REPORT_DIALOG_SHOWING("is_report_dialog_showing");
 const String CallLogFragment::KEY_REPORT_DIALOG_NUMBER("report_dialog_number");
 
-CAR_INTERFACE_IMPL_5(CallLogFragment, AnalyticsListFragment, ICallLogFragment, ICallLogQueryHandlerListener,
+CAR_INTERFACE_IMPL(CallLogFragment, AnalyticsListFragment, ICallLogFragment, ICallLogQueryHandlerListener,
         ICallLogAdapterOnReportButtonClickListener, ICallFetcher, ICallItemExpandedListener)
 
 CallLogFragment::CallLogFragment()

@@ -1615,7 +1615,7 @@ const String CTethering::mDhcpLocation("/data/misc/dhcp/dnsmasq.leases");
 const Int32 CTethering::DNSMASQ_POLLING_INTERVAL = 1000;
 const Int32 CTethering::DNSMASQ_POLLING_MAX_TIMES = 10;
 
-CAR_INTERFACE_IMPL_2(CTethering, BaseNetworkObserver, IINetworkManagementEventObserver, IBinder)
+CAR_INTERFACE_IMPL(CTethering, BaseNetworkObserver, IINetworkManagementEventObserver, IBinder)
 
 CAR_OBJECT_IMPL(CTethering)
 

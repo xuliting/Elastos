@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIProcessObserverNative::TAG("CIProcessObserverNative");
 
-CAR_INTERFACE_IMPL_2(CIProcessObserverNative, Object, IIProcessObserver, IBinder)
+CAR_INTERFACE_IMPL(CIProcessObserverNative, Object, IIProcessObserver, IBinder)
 
 CAR_OBJECT_IMPL(CIProcessObserverNative)
 

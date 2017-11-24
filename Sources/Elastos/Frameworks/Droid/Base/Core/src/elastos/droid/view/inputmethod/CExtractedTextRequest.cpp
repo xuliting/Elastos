@@ -31,7 +31,7 @@ namespace InputMethod {
 //========================================================================================
 //              CExtractedTextRequest::
 //========================================================================================
-CAR_INTERFACE_IMPL_2(CExtractedTextRequest, Object, IExtractedTextRequest, IParcelable)
+CAR_INTERFACE_IMPL(CExtractedTextRequest, Object, IExtractedTextRequest, IParcelable)
 
 CAR_OBJECT_IMPL(CExtractedTextRequest)
 

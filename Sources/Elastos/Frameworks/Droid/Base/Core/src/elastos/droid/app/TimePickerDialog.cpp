@@ -40,7 +40,7 @@ namespace App {
 //========================================================================================
 // TimePickerDialog::InnerListener
 //========================================================================================
-CAR_INTERFACE_IMPL_3(TimePickerDialog::InnerListener, Object, ITimePickerValidationCallback, \
+CAR_INTERFACE_IMPL(TimePickerDialog::InnerListener, Object, ITimePickerValidationCallback, \
     IDialogInterfaceOnClickListener, ITimePickerOnTimeChangedListener)
 
 TimePickerDialog::InnerListener::InnerListener(

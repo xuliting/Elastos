@@ -167,7 +167,7 @@ ECode RemoteViewsAdapter::MyRunnableEx2::Run()
 
 
 /*----------------------------------RemoteViewsAdapterServiceConnection----------------------------------*/
-CAR_INTERFACE_IMPL_3(RemoteViewsAdapter::RemoteViewsAdapterServiceConnection,
+CAR_INTERFACE_IMPL(RemoteViewsAdapter::RemoteViewsAdapterServiceConnection,
     Object, IRemoteViewsAdapterServiceConnection, IIRemoteViewsAdapterConnection, IBinder)
 
 RemoteViewsAdapter::RemoteViewsAdapterServiceConnection::RemoteViewsAdapterServiceConnection()
@@ -1064,7 +1064,7 @@ Object RemoteViewsAdapter::sCacheLock;
 AutoPtr<IHandlerThread> RemoteViewsAdapter::sCacheRemovalThread = NULL;
 AutoPtr<IHandler> RemoteViewsAdapter::sCacheRemovalQueue = NULL;
 
-CAR_INTERFACE_IMPL_2(RemoteViewsAdapter, BaseAdapter, IRemoteViewsAdapter, IHandlerCallback)
+CAR_INTERFACE_IMPL(RemoteViewsAdapter, BaseAdapter, IRemoteViewsAdapter, IHandlerCallback)
 
 RemoteViewsAdapter::RemoteViewsAdapter()
     : mAppWidgetId(0)

@@ -90,7 +90,7 @@ CSSLSocketFactory::CSSLSocketFactory()
     mHostnameVerifier = BROWSER_COMPATIBLE_HOSTNAME_VERIFIER;
 }
 
-CAR_INTERFACE_IMPL_3(CSSLSocketFactory, Object, ISSLSocketFactory, ILayeredSocketFactory, ISocketFactory)
+CAR_INTERFACE_IMPL(CSSLSocketFactory, Object, ISSLSocketFactory, ILayeredSocketFactory, ISocketFactory)
 
 CAR_OBJECT_IMPL(CSSLSocketFactory)
 

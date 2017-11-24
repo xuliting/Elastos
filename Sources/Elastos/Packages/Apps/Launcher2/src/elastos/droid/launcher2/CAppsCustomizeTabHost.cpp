@@ -246,7 +246,7 @@ const String CAppsCustomizeTabHost::TAG("AppsCustomizeTabHost");
 const String CAppsCustomizeTabHost::APPS_TAB_TAG("APPS");
 const String CAppsCustomizeTabHost::WIDGETS_TAB_TAG("WIDGETS");
 
-CAR_INTERFACE_IMPL_2(CAppsCustomizeTabHost, TabHost, IAppsCustomizeTabHost,
+CAR_INTERFACE_IMPL(CAppsCustomizeTabHost, TabHost, IAppsCustomizeTabHost,
         ILauncherTransitionable);
 
 CAR_OBJECT_IMPL(CAppsCustomizeTabHost);

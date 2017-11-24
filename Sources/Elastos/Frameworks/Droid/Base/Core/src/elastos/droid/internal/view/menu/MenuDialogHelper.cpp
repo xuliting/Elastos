@@ -42,7 +42,7 @@ namespace Internal {
 namespace View {
 namespace Menu {
 
-CAR_INTERFACE_IMPL_4(MenuDialogHelper::Listener, Object, IDialogInterfaceOnKeyListener,
+CAR_INTERFACE_IMPL(MenuDialogHelper::Listener, Object, IDialogInterfaceOnKeyListener,
     IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener, IMenuPresenterCallback)
 
 MenuDialogHelper::Listener::Listener(
@@ -117,7 +117,7 @@ ECode MenuDialogHelper::Listener::OnOpenSubMenu(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_5(MenuDialogHelper, Object, IMenuDialogHelper, IDialogInterfaceOnKeyListener,
+CAR_INTERFACE_IMPL(MenuDialogHelper, Object, IMenuDialogHelper, IDialogInterfaceOnKeyListener,
     IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener, IMenuPresenterCallback)
 
 ECode MenuDialogHelper::constructor(

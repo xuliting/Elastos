@@ -30,7 +30,7 @@ namespace Widget {
 
 const String SimpleMonthAdapter::TAG("SimpleMonthAdapter");
 
-CAR_INTERFACE_IMPL_2(SimpleMonthAdapter, BaseAdapter, ISimpleMonthAdapter, IOnDayClickListener);
+CAR_INTERFACE_IMPL(SimpleMonthAdapter, BaseAdapter, ISimpleMonthAdapter, IOnDayClickListener);
 ECode SimpleMonthAdapter::constructor(
     /* [in] */ IContext* context,
     /* [in] */ IDatePickerController* controller)

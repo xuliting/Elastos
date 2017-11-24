@@ -405,7 +405,7 @@ ECode CLockSettingsService::LockSettingsObserver::ProxyDied()
 // CLockSettingsService
 //===========================================================================
 
-CAR_INTERFACE_IMPL_2(CLockSettingsService, Object, IILockSettings, IBinder)
+CAR_INTERFACE_IMPL(CLockSettingsService, Object, IILockSettings, IBinder)
 
 CAR_OBJECT_IMPL(CLockSettingsService)
 

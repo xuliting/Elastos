@@ -266,7 +266,7 @@ ECode LLand::ViewOutlineProvider_Player::GetOutline(
 // LLand::Obstacle
 //=====================
 
-CAR_INTERFACE_IMPL_2(LLand::Obstacle, View, IGameView, IObstacle)
+CAR_INTERFACE_IMPL(LLand::Obstacle, View, IGameView, IObstacle)
 
 LLand::Obstacle::Obstacle(
     /* [in] */ IContext* context,
@@ -501,7 +501,7 @@ void LLand::Stem::OnDraw(
 // LLand::Scenery
 //=====================
 
-CAR_INTERFACE_IMPL_2(LLand::Scenery, FrameLayout, IGameView, IScenery)
+CAR_INTERFACE_IMPL(LLand::Scenery, FrameLayout, IGameView, IScenery)
 
 LLand::Scenery::Scenery(
     /* [in] */ IContext* context)

@@ -36,7 +36,7 @@ using Libcore::IO::Memory;
 namespace Elastos {
 namespace IO {
 
-CAR_INTERFACE_IMPL_2(ByteBuffer, Buffer, IByteBuffer, IComparable)
+CAR_INTERFACE_IMPL(ByteBuffer, Buffer, IByteBuffer, IComparable)
 
 ECode ByteBuffer::Allocate(
     /* [in] */ Int32 capacity,

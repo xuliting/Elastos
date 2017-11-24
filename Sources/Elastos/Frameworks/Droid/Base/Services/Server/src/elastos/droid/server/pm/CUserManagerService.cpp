@@ -274,7 +274,7 @@ CUserManagerService::CUserManagerService()
     CBundle::New((IBundle**)&mGuestRestrictions);
 }
 
-CAR_INTERFACE_IMPL_2(CUserManagerService, Object, IIUserManager, IBinder)
+CAR_INTERFACE_IMPL(CUserManagerService, Object, IIUserManager, IBinder)
 
 CAR_OBJECT_IMPL(CUserManagerService)
 

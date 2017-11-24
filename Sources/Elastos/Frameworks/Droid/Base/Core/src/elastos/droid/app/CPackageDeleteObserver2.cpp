@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CPackageDeleteObserver2, Object, IIPackageDeleteObserver2, IBinder)
+CAR_INTERFACE_IMPL(CPackageDeleteObserver2, Object, IIPackageDeleteObserver2, IBinder)
 
 CAR_OBJECT_IMPL(CPackageDeleteObserver2)
 

@@ -22,7 +22,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_3(SuggestionRangeSpan, CharacterStyle, ISuggestionRangeSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(SuggestionRangeSpan, CharacterStyle, ISuggestionRangeSpan, IParcelableSpan, IParcelable)
 
 SuggestionRangeSpan::SuggestionRangeSpan()
     : mBackgroundColor(0) // 0 is a fully transparent black. Has to be set using #setBackgroundColor

@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CContentResolverNative::TAG("CContentResolverNative");
 
-CAR_INTERFACE_IMPL_2(CContentResolverNative, Object, IContentResolver, IBinder)
+CAR_INTERFACE_IMPL(CContentResolverNative, Object, IContentResolver, IBinder)
 
 CAR_OBJECT_IMPL(CContentResolverNative)
 

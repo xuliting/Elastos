@@ -52,7 +52,7 @@ SelectorImpl::UnaddableSet::UnaddableSet(
     mSet = set;
 }
 
-CAR_INTERFACE_IMPL_3(SelectorImpl::UnaddableSet, Object, ISet, ICollection, IIterable)
+CAR_INTERFACE_IMPL(SelectorImpl::UnaddableSet, Object, ISet, ICollection, IIterable)
 
 ECode SelectorImpl::UnaddableSet::Equals(
     /* [in] */ IInterface* object,

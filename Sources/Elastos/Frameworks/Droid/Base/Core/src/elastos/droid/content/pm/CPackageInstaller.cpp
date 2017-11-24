@@ -46,7 +46,7 @@ const Int32 CPackageInstaller::SessionCallbackDelegate::MSG_SESSION_ACTIVE_CHANG
 const Int32 CPackageInstaller::SessionCallbackDelegate::MSG_SESSION_PROGRESS_CHANGED = 4;
 const Int32 CPackageInstaller::SessionCallbackDelegate::MSG_SESSION_FINISHED = 5;
 
-CAR_INTERFACE_IMPL_3(CPackageInstaller::SessionCallbackDelegate, Object, IPackageInstallerCallback, IHandlerCallback, IBinder)
+CAR_INTERFACE_IMPL(CPackageInstaller::SessionCallbackDelegate, Object, IPackageInstallerCallback, IHandlerCallback, IBinder)
 
 CPackageInstaller::SessionCallbackDelegate::SessionCallbackDelegate(
     /* [in] */ IPackageInstallerSessionCallback* callback,

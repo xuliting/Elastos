@@ -42,7 +42,7 @@ WebVttTrack::WebVttTrack()
 WebVttTrack::~WebVttTrack()
 {}
 
-CAR_INTERFACE_IMPL_3(WebVttTrack, Object, IWebVttTrack, ISubtitleTrack, IWebVttCueListener)
+CAR_INTERFACE_IMPL(WebVttTrack, Object, IWebVttTrack, ISubtitleTrack, IWebVttCueListener)
 
 ECode WebVttTrack::constructor(
     /* [in] */ IWebVttRenderingWidget* renderingWidget,

@@ -38,7 +38,7 @@ namespace Animation {
 
 CAR_OBJECT_IMPL(CAnticipateOvershootInterpolator);
 
-CAR_INTERFACE_IMPL_4(CAnticipateOvershootInterpolator, Object,
+CAR_INTERFACE_IMPL(CAnticipateOvershootInterpolator, Object,
         IAnticipateOvershootInterpolator, INativeInterpolatorFactory,
         IInterpolator, ITimeInterpolator);
 

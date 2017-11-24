@@ -42,7 +42,7 @@ namespace View {
 
 CAR_OBJECT_IMPL(CViewRootImplW)
 
-CAR_INTERFACE_IMPL_2(CViewRootImplW, Object, IIWindow, IBinder)
+CAR_INTERFACE_IMPL(CViewRootImplW, Object, IIWindow, IBinder)
 
 CViewRootImplW::~CViewRootImplW()
 {

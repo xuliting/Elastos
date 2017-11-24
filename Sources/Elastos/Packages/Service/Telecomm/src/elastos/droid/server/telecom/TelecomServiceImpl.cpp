@@ -142,7 +142,7 @@ ECode TelecomServiceImpl::MainThreadHandler::HandleMessage(
 //=============================================================================
 // TelecomServiceImpl
 //=============================================================================
-CAR_INTERFACE_IMPL_2(TelecomServiceImpl, Object, IITelecomService, IBinder)
+CAR_INTERFACE_IMPL(TelecomServiceImpl, Object, IITelecomService, IBinder)
 
 const String TelecomServiceImpl::REGISTER_PROVIDER_OR_SUBSCRIPTION("com.android.server.telecom.permission.REGISTER_PROVIDER_OR_SUBSCRIPTION");
 const String TelecomServiceImpl::REGISTER_CONNECTION_MANAGER("com.android.server.telecom.permission.REGISTER_CONNECTION_MANAGER");

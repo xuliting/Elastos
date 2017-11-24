@@ -1245,7 +1245,7 @@ static AutoPtr<IInterpolator> CreateInterpolator()
 
 AutoPtr<Elastos::Droid::View::Animation::IInterpolator> ViewRootImpl::mResizeInterpolator = CreateInterpolator();
 
-CAR_INTERFACE_IMPL_3(ViewRootImpl, Object, IViewRootImpl, IViewParent, IHardwareDrawCallbacks)
+CAR_INTERFACE_IMPL(ViewRootImpl, Object, IViewRootImpl, IViewParent, IHardwareDrawCallbacks)
 
 ViewRootImpl::ViewRootImpl()
     : mSeq(0)

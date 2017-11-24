@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Security {
 
 CAR_OBJECT_IMPL(CGuardedObject)
-CAR_INTERFACE_IMPL_2(CGuardedObject, Object, IGuardedObject, ISerializable)
+CAR_INTERFACE_IMPL(CGuardedObject, Object, IGuardedObject, ISerializable)
 ECode CGuardedObject::constructor(
     /* [in] */ IInterface* object,
     /* [in] */ IGuard* guard)

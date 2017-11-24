@@ -167,7 +167,7 @@ ECode PhoneNumberInteraction::PhoneItemAdapter::GetView(
 //=================================================================
 // PhoneNumberInteraction::PhoneDisambiguationDialogFragment
 //=================================================================
-CAR_INTERFACE_IMPL_2(PhoneNumberInteraction::PhoneDisambiguationDialogFragment, DialogFragment,
+CAR_INTERFACE_IMPL(PhoneNumberInteraction::PhoneDisambiguationDialogFragment, DialogFragment,
         IPhoneDisambiguationDialogFragment, IDialogInterfaceOnClickListener);
 
 const String PhoneNumberInteraction::PhoneDisambiguationDialogFragment::ARG_PHONE_LIST("phoneList");

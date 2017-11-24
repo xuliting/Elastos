@@ -20,7 +20,7 @@ namespace Elastos {
 namespace Droid {
 namespace Wifi {
 
-CAR_INTERFACE_IMPL_2(CWifiChannel, Object, IParcelable, IWifiChannel)
+CAR_INTERFACE_IMPL(CWifiChannel, Object, IParcelable, IWifiChannel)
 
 CAR_OBJECT_IMPL(CWifiChannel)
 

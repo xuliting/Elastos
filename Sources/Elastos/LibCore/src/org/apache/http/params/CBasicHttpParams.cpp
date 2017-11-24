@@ -34,7 +34,7 @@ namespace Params {
 
 const Int64 CBasicHttpParams::serialVersionUID;
 
-CAR_INTERFACE_IMPL_2(CBasicHttpParams, AbstractHttpParams, IBasicHttpParams, ICloneable)
+CAR_INTERFACE_IMPL(CBasicHttpParams, AbstractHttpParams, IBasicHttpParams, ICloneable)
 
 CAR_OBJECT_IMPL(CBasicHttpParams)
 

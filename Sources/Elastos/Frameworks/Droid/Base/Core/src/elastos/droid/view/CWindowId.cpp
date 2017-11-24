@@ -39,7 +39,7 @@ namespace View {
 
 CAR_OBJECT_IMPL(CWindowId);
 
-CAR_INTERFACE_IMPL_2(CWindowId, Object, IWindowId, IParcelable);
+CAR_INTERFACE_IMPL(CWindowId, Object, IWindowId, IParcelable);
 
 ECode CWindowId::constructor()
 {

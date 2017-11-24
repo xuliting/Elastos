@@ -322,7 +322,7 @@ ECode HdmiControlService::HdmiRecordListenerRecord::ProxyDied()
 //=============================================================================
 // HdmiControlService::BinderService
 //=============================================================================
-CAR_INTERFACE_IMPL_2(HdmiControlService::BinderService, Object, IIHdmiControlService, IBinder)
+CAR_INTERFACE_IMPL(HdmiControlService::BinderService, Object, IIHdmiControlService, IBinder)
 
 HdmiControlService::BinderService::BinderService()
 {}
@@ -1340,7 +1340,7 @@ ECode HdmiControlService::SetControlEnabledPendingActionClearedCallback::OnClear
 //=============================================================================
 // HdmiControlService::InnerSub_IHdmiControlCallbackStub
 //=============================================================================
-CAR_INTERFACE_IMPL_2(HdmiControlService::InnerSub_IHdmiControlCallbackStub, Object, IBinder, IIHdmiControlCallback)
+CAR_INTERFACE_IMPL(HdmiControlService::InnerSub_IHdmiControlCallbackStub, Object, IBinder, IIHdmiControlCallback)
 
 HdmiControlService::InnerSub_IHdmiControlCallbackStub::InnerSub_IHdmiControlCallbackStub(
     /* [in] */ HdmiControlService* host,

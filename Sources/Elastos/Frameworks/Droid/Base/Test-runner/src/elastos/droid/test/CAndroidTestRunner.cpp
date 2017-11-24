@@ -37,7 +37,7 @@ CAndroidTestRunner::CAndroidTestRunner()
     : mSkipExecution(FALSE)
 {}
 
-CAR_INTERFACE_IMPL_2(CAndroidTestRunner, Object, IBaseTestRunner, IAndroidTestRunner)
+CAR_INTERFACE_IMPL(CAndroidTestRunner, Object, IBaseTestRunner, IAndroidTestRunner)
 
 CAR_OBJECT_IMPL(CAndroidTestRunner)
 

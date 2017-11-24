@@ -549,7 +549,7 @@ INIT_PROI_3 const AutoPtr<ICameraCharacteristicsKey> CameraCharacteristics::INFO
 INIT_PROI_3 const AutoPtr<ICameraCharacteristicsKey> CameraCharacteristics::SYNC_MAX_LATENCY =
     CreateKey("android.sync.maxLatency", ECLSID_CInteger32, EIID_IInteger32);
 
-CAR_INTERFACE_IMPL_2(CameraCharacteristics, Object, ICameraCharacteristics, ICameraMetadata)
+CAR_INTERFACE_IMPL(CameraCharacteristics, Object, ICameraCharacteristics, ICameraMetadata)
 
 CameraCharacteristics::CameraCharacteristics()
 {

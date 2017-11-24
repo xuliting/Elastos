@@ -81,7 +81,7 @@ const Int32 CAccessibilityNodeInfo::MAX_POOL_SIZE = 50;
 AutoPtr<Pools::SynchronizedPool<IAccessibilityNodeInfo> > CAccessibilityNodeInfo::sPool =
         new Pools::SynchronizedPool<IAccessibilityNodeInfo>(MAX_POOL_SIZE);
 
-CAR_INTERFACE_IMPL_2(CAccessibilityNodeInfo, Object, IAccessibilityNodeInfo, IParcelable)
+CAR_INTERFACE_IMPL(CAccessibilityNodeInfo, Object, IAccessibilityNodeInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CAccessibilityNodeInfo)
 

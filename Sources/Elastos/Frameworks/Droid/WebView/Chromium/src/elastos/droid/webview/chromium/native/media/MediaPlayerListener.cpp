@@ -41,7 +41,7 @@ const Int32 MediaPlayerListener::MEDIA_ERROR_INVALID_CODE;
 const Int32 MediaPlayerListener::MEDIA_ERROR_MALFORMED;
 const Int32 MediaPlayerListener::MEDIA_ERROR_TIMED_OUT;
 
-CAR_INTERFACE_IMPL_7(MediaPlayerListener, Object, IMediaPlayerOnPreparedListener, IMediaPlayerOnCompletionListener,
+CAR_INTERFACE_IMPL(MediaPlayerListener, Object, IMediaPlayerOnPreparedListener, IMediaPlayerOnCompletionListener,
         IMediaPlayerOnBufferingUpdateListener, IMediaPlayerOnSeekCompleteListener,
         IMediaPlayerOnVideoSizeChangedListener,
         IMediaPlayerOnErrorListener, IAudioManagerOnAudioFocusChangeListener);

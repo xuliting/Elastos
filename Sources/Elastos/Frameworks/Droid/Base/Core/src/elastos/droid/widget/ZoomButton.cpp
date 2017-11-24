@@ -66,7 +66,7 @@ ECode ZoomButton::LongClickListener::OnLongClick(
 }
 
 
-CAR_INTERFACE_IMPL_2(ZoomButton, ImageButton, IZoomButton, IViewOnLongClickListener);
+CAR_INTERFACE_IMPL(ZoomButton, ImageButton, IZoomButton, IViewOnLongClickListener);
 ZoomButton::ZoomButton()
     : mZoomSpeed(1000)
     , mIsInLongpress(FALSE)

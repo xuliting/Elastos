@@ -38,7 +38,7 @@ const String CConsumerIrService::TAG("ConsumerIrService");
 
 const Int32 CConsumerIrService::MAX_XMIT_TIME = 2000000; /* in microseconds */
 
-CAR_INTERFACE_IMPL_2(CConsumerIrService, Object, IIConsumerIrService, IBinder)
+CAR_INTERFACE_IMPL(CConsumerIrService, Object, IIConsumerIrService, IBinder)
 
 CAR_OBJECT_IMPL(CConsumerIrService)
 

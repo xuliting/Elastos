@@ -25,7 +25,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Dispatch {
 
-CAR_INTERFACE_IMPL_2(ArgumentReplacingDispatcher, Object, IArgumentReplacingDispatcher, IDispatchable)
+CAR_INTERFACE_IMPL(ArgumentReplacingDispatcher, Object, IArgumentReplacingDispatcher, IDispatchable)
 
 ArgumentReplacingDispatcher::ArgumentReplacingDispatcher()
 {

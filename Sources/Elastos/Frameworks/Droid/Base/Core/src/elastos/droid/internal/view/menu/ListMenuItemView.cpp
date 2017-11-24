@@ -34,7 +34,7 @@ namespace Menu {
 
 const String ListMenuItemView::TAG("ListMenuItemView");
 
-CAR_INTERFACE_IMPL_2(ListMenuItemView, LinearLayout, IListMenuItemView, IMenuItemView)
+CAR_INTERFACE_IMPL(ListMenuItemView, LinearLayout, IListMenuItemView, IMenuItemView)
 
 ListMenuItemView::ListMenuItemView()
     : mTextAppearance(0)

@@ -60,7 +60,7 @@ using Libcore::Net::Url::UrlUtils;
 namespace Elastos {
 namespace IO {
 
-CAR_INTERFACE_IMPL_3(File, Object, IFile, IComparable, ISerializable)
+CAR_INTERFACE_IMPL(File, Object, IFile, IComparable, ISerializable)
 
 // static {
     // separatorChar = System.getProperty("file.separator", "/").charAt(0);

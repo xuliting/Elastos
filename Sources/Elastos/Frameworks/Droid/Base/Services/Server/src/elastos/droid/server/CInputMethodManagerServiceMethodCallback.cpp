@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Droid {
 namespace Server {
 
-CAR_INTERFACE_IMPL_2(CInputMethodManagerServiceMethodCallback, Object, IIInputSessionCallback, IBinder)
+CAR_INTERFACE_IMPL(CInputMethodManagerServiceMethodCallback, Object, IIInputSessionCallback, IBinder)
 
 CAR_OBJECT_IMPL(CInputMethodManagerServiceMethodCallback)
 

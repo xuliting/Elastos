@@ -27,7 +27,7 @@ namespace JavaProxy {
 
 const String CIParcelableNative::TAG("CIParcelableNative");
 
-CAR_INTERFACE_IMPL_2(CIParcelableNative, Object, IParcelable, IBinder)
+CAR_INTERFACE_IMPL(CIParcelableNative, Object, IParcelable, IBinder)
 
 CAR_OBJECT_IMPL(CIParcelableNative)
 

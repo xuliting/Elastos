@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIInstrumentationWatcherNative::TAG("CIInstrumentationWatcherNative");
 
-CAR_INTERFACE_IMPL_2(CIInstrumentationWatcherNative, Object, IInstrumentationWatcher, IBinder)
+CAR_INTERFACE_IMPL(CIInstrumentationWatcherNative, Object, IInstrumentationWatcher, IBinder)
 
 CAR_OBJECT_IMPL(CIInstrumentationWatcherNative)
 

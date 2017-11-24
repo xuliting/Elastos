@@ -79,7 +79,7 @@ namespace Settings {
 //                  CCryptKeeper::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_4(CCryptKeeper::InnerListener, Object, IOnEditorActionListener, IViewOnKeyListener, IViewOnTouchListener, ITextWatcher)
+CAR_INTERFACE_IMPL(CCryptKeeper::InnerListener, Object, IOnEditorActionListener, IViewOnKeyListener, IViewOnTouchListener, ITextWatcher)
 
 CCryptKeeper::InnerListener::InnerListener(
     /* [in] */ CCryptKeeper* host)

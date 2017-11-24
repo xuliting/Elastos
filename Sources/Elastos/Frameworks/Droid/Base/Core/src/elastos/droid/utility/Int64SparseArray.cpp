@@ -40,7 +40,7 @@ namespace Utility {
 
 const AutoPtr<Object> Int64SparseArray::DELETED = new Object();
 
-CAR_INTERFACE_IMPL_2(Int64SparseArray, Object, IInt64SparseArray, ICloneable);
+CAR_INTERFACE_IMPL(Int64SparseArray, Object, IInt64SparseArray, ICloneable);
 
 Int64SparseArray::Int64SparseArray()
     : mGarbage(FALSE)

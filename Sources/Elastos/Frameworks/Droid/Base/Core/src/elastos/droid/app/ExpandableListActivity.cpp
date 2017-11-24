@@ -36,7 +36,7 @@ namespace Droid {
 namespace App {
 
 
-CAR_INTERFACE_IMPL_3(ExpandableListActivity::InnerListener, Object, \
+CAR_INTERFACE_IMPL(ExpandableListActivity::InnerListener, Object, \
     IExpandableListViewOnChildClickListener, \
     IExpandableListViewOnGroupCollapseListener, \
     IExpandableListViewOnGroupExpandListener)

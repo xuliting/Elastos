@@ -153,7 +153,7 @@ Int32 CSemaphore::FairSync::TryAcquireShared(
 //====================================================================
 // CSemaphore::
 //====================================================================
-CAR_INTERFACE_IMPL_2(CSemaphore, Object, ISemaphore, ISerializable)
+CAR_INTERFACE_IMPL(CSemaphore, Object, ISemaphore, ISerializable)
 
 CAR_OBJECT_IMPL(CSemaphore)
 

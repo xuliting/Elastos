@@ -29,7 +29,7 @@ namespace Apache {
 namespace Http {
 namespace Protocol {
 
-CAR_INTERFACE_IMPL_6(CBasicHttpProcessor, Object, IBasicHttpProcessor, IHttpRequestInterceptor
+CAR_INTERFACE_IMPL(CBasicHttpProcessor, Object, IBasicHttpProcessor, IHttpRequestInterceptor
         , IHttpResponseInterceptor, IHttpRequestInterceptorList, IHttpResponseInterceptorList, ICloneable)
 
 CAR_OBJECT_IMPL(CBasicHttpProcessor)

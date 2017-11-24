@@ -21,7 +21,7 @@ namespace Droid {
 namespace Hardware {
 namespace Hdmi {
 
-CAR_INTERFACE_IMPL_2(HdmiPortInfo, Object, IHdmiPortInfo, IParcelable)
+CAR_INTERFACE_IMPL(HdmiPortInfo, Object, IHdmiPortInfo, IParcelable)
 
 HdmiPortInfo::HdmiPortInfo()
     : mId(0)

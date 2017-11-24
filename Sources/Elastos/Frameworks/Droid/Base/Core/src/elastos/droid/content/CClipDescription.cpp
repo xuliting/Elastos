@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Content {
 
-CAR_INTERFACE_IMPL_2(CClipDescription, Object, IClipDescription, IParcelable)
+CAR_INTERFACE_IMPL(CClipDescription, Object, IClipDescription, IParcelable)
 
 CAR_OBJECT_IMPL(CClipDescription)
 

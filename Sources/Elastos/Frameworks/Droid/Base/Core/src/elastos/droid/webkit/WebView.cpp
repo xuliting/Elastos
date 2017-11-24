@@ -342,7 +342,7 @@ volatile Boolean WebView::sEnforceThreadChecking = FALSE;
 
 Object WebView::sLock;
 
-CAR_INTERFACE_IMPL_3(WebView, Object, IWebView, IOnGlobalFocusChangeListener, IViewGroupOnHierarchyChangeListener);
+CAR_INTERFACE_IMPL(WebView, Object, IWebView, IOnGlobalFocusChangeListener, IViewGroupOnHierarchyChangeListener);
 
 WebView::WebView()
 {

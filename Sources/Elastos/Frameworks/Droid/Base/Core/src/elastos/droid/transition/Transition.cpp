@@ -100,7 +100,7 @@ AutoPtr<IPathMotion> Transition::STRAIGHT_PATH_MOTION = new PathMotionOverride()
 // Per-animator information used for later canceling when future transitions overlap
 //AutoPtr<IThreadLocal> Transition::sRunningAnimators = new ThreadLocal();
 
-CAR_INTERFACE_IMPL_2(Transition, Object, ITransition, ICloneable)
+CAR_INTERFACE_IMPL(Transition, Object, ITransition, ICloneable)
 
 Transition::Transition()
     : mStartDelay(-1)

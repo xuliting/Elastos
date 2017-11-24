@@ -24,7 +24,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(COAEPParameterSpec)
-CAR_INTERFACE_IMPL_2(COAEPParameterSpec, Object, IOAEPParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(COAEPParameterSpec, Object, IOAEPParameterSpec, IAlgorithmParameterSpec)
 
 COAEPParameterSpec::COAEPParameterSpec()
     : mMdName(String(NULL))

@@ -30,7 +30,7 @@ namespace Keyguard {
 
 CAR_OBJECT_IMPL(CFaceUnlockFaceLockCallback)
 
-CAR_INTERFACE_IMPL_2(CFaceUnlockFaceLockCallback, Object, IIFaceLockCallback, IBinder)
+CAR_INTERFACE_IMPL(CFaceUnlockFaceLockCallback, Object, IIFaceLockCallback, IBinder)
 
 ECode CFaceUnlockFaceLockCallback::constructor(
     /* [in] */ IHandlerCallback* face)

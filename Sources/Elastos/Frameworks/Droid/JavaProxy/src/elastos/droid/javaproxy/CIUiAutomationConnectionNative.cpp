@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIUiAutomationConnectionNative::TAG("CIUiAutomationConnectionNative");
 
-CAR_INTERFACE_IMPL_2(CIUiAutomationConnectionNative, Object, IIUiAutomationConnection, IBinder)
+CAR_INTERFACE_IMPL(CIUiAutomationConnectionNative, Object, IIUiAutomationConnection, IBinder)
 
 CAR_OBJECT_IMPL(CIUiAutomationConnectionNative)
 

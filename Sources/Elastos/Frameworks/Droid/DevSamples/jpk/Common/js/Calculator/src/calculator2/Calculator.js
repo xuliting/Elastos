@@ -624,7 +624,7 @@ module.exports = function(aoElastos, aoActivity){
 //     return Activity::constructor();
 // }
 
-// CAR_INTERFACE_IMPL_4(Calculator, Activity, IOnTextSizeChangeListener, IEvaluateCallback, IViewOnLongClickListener, ICalculator)
+// CAR_INTERFACE_IMPL(Calculator, Activity, IOnTextSizeChangeListener, IEvaluateCallback, IViewOnLongClickListener, ICalculator)
 
 // ECode Calculator::OnCreate(
 //     /* [in] */ IBundle* savedInstanceState)

@@ -29,7 +29,7 @@ BasicHeaderIterator::BasicHeaderIterator()
     : mCurrentIndex(-1)
 {}
 
-CAR_INTERFACE_IMPL_3(BasicHeaderIterator, Object, IBasicHeaderIterator, IHeaderIterator, IIterator)
+CAR_INTERFACE_IMPL(BasicHeaderIterator, Object, IBasicHeaderIterator, IHeaderIterator, IIterator)
 
 ECode BasicHeaderIterator::Init(
     /* [in] */ ArrayOf<IHeader*>* headers,

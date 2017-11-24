@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(LinkQualityInfo, Object, ILinkQualityInfo, IParcelable)
+CAR_INTERFACE_IMPL(LinkQualityInfo, Object, ILinkQualityInfo, IParcelable)
 
 const Int32 LinkQualityInfo::sOBJECT_TYPE_LINK_QUALITY_INFO = 1;
 const Int32 LinkQualityInfo::sOBJECT_TYPE_WIFI_LINK_QUALITY_INFO = 2;

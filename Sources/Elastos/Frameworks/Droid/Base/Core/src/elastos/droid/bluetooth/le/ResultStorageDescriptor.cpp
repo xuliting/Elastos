@@ -24,7 +24,7 @@ namespace LE {
 //=====================================================================
 //                       ResultStorageDescriptor
 //=====================================================================
-CAR_INTERFACE_IMPL_2(ResultStorageDescriptor, Object, IResultStorageDescriptor, IParcelable);
+CAR_INTERFACE_IMPL(ResultStorageDescriptor, Object, IResultStorageDescriptor, IParcelable);
 
 ResultStorageDescriptor::ResultStorageDescriptor()
 {

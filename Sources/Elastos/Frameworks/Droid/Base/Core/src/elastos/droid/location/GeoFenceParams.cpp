@@ -28,7 +28,7 @@ namespace Elastos {
 namespace Droid {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(GeoFenceParams, Object, IGeoFenceParams, IParcelable)
+CAR_INTERFACE_IMPL(GeoFenceParams, Object, IGeoFenceParams, IParcelable)
 
 ECode GeoFenceParams::constructor()
 {

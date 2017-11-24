@@ -257,7 +257,7 @@ ECode PreferenceActivity::HeaderAdapter::GetView(
 // PreferenceActivity::Header
 //====================================================
 
-CAR_INTERFACE_IMPL_2(PreferenceActivity::Header, Object, IPreferenceActivityHeader, IParcelable)
+CAR_INTERFACE_IMPL(PreferenceActivity::Header, Object, IPreferenceActivityHeader, IParcelable)
 
 PreferenceActivity::Header::Header()
     : mId(IPreferenceActivity::HEADER_ID_UNDEFINED)
@@ -666,7 +666,7 @@ ECode PreferenceActivity::NextButtonListener::OnClick(
 // PreferenceActivity
 //====================================================
 
-CAR_INTERFACE_IMPL_2(PreferenceActivity, ListActivity, IPreferenceActivity, IPreferenceFragmentOnPreferenceStartFragmentCallback)
+CAR_INTERFACE_IMPL(PreferenceActivity, ListActivity, IPreferenceActivity, IPreferenceFragmentOnPreferenceStartFragmentCallback)
 
 PreferenceActivity::PreferenceActivity()
     : mSinglePane(FALSE)

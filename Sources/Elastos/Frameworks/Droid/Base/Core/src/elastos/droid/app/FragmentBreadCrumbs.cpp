@@ -92,7 +92,7 @@ ECode FragmentBreadCrumbs::MyOnClickListener::OnClick(
 const String FragmentBreadCrumbs::TAG("FragmentBreadCrumbs");
 const Int32 FragmentBreadCrumbs::DEFAULT_GRAVITY = IGravity::START | IGravity::CENTER_VERTICAL;
 
-CAR_INTERFACE_IMPL_2(FragmentBreadCrumbs, ViewGroup, IFragmentBreadCrumbs, IFragmentManagerOnBackStackChangedListener)
+CAR_INTERFACE_IMPL(FragmentBreadCrumbs, ViewGroup, IFragmentBreadCrumbs, IFragmentManagerOnBackStackChangedListener)
 
 FragmentBreadCrumbs::FragmentBreadCrumbs()
     : mActivity(NULL)

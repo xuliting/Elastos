@@ -31,7 +31,7 @@ namespace Style {
 const Int32 BulletSpan::BULLET_RADIUS = 3;
 AutoPtr<IPath> BulletSpan::sBulletPath;
 
-CAR_INTERFACE_IMPL_5(BulletSpan, Object, IBulletSpan, ILeadingMarginSpan, IParagraphStyle, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(BulletSpan, Object, IBulletSpan, ILeadingMarginSpan, IParagraphStyle, IParcelableSpan, IParcelable)
 
 BulletSpan::BulletSpan()
     : mGapWidth(IBulletSpan::STANDARD_GAP_WIDTH)

@@ -23,7 +23,7 @@ namespace Http {
 namespace Conn {
 namespace Params {
 
-CAR_INTERFACE_IMPL_2(CConnManagerParams, Object, IConnManagerParams, IConnManagerPNames)
+CAR_INTERFACE_IMPL(CConnManagerParams, Object, IConnManagerParams, IConnManagerPNames)
 
 CAR_SINGLETON_IMPL(CConnManagerParams)
 

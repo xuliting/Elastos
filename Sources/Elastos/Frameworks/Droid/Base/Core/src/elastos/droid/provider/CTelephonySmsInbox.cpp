@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Droid {
 namespace Provider {
 
-CAR_INTERFACE_IMPL_3(CTelephonySmsInbox, Singleton, ITelephonySmsInbox, IBaseColumns, ITelephonyTextBasedSmsColumns);
+CAR_INTERFACE_IMPL(CTelephonySmsInbox, Singleton, ITelephonySmsInbox, IBaseColumns, ITelephonyTextBasedSmsColumns);
 CAR_SINGLETON_IMPL(CTelephonySmsInbox);
 
 ECode CTelephonySmsInbox::AddMessage(

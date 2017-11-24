@@ -329,7 +329,7 @@ const Int32 CPackageInstallerActivity::DLG_OUT_OF_SPACE;
 const Int32 CPackageInstallerActivity::DLG_INSTALL_ERROR;
 const Int32 CPackageInstallerActivity::DLG_ALLOW_SOURCE;
 
-CAR_INTERFACE_IMPL_3(CPackageInstallerActivity, Activity, IDialogInterfaceOnCancelListener, IViewOnClickListener, IPackageInstallerActivity)
+CAR_INTERFACE_IMPL(CPackageInstallerActivity, Activity, IDialogInterfaceOnCancelListener, IViewOnClickListener, IPackageInstallerActivity)
 
 CAR_OBJECT_IMPL(CPackageInstallerActivity)
 

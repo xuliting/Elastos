@@ -35,7 +35,7 @@ namespace Animation {
 
 CAR_OBJECT_IMPL(CLinearInterpolator);
 
-CAR_INTERFACE_IMPL_4(CLinearInterpolator, Object, ILinearInterpolator, \
+CAR_INTERFACE_IMPL(CLinearInterpolator, Object, ILinearInterpolator, \
         INativeInterpolatorFactory, IInterpolator, ITimeInterpolator);
 
 CLinearInterpolator::CLinearInterpolator()

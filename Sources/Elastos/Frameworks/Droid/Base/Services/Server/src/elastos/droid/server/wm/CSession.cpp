@@ -55,7 +55,7 @@ CSession::CSession()
     , mLastReportedAnimatorScale(0)
 {}
 
-CAR_INTERFACE_IMPL_2(CSession, Object, IWindowSession, IProxyDeathRecipient)
+CAR_INTERFACE_IMPL(CSession, Object, IWindowSession, IProxyDeathRecipient)
 
 CAR_OBJECT_IMPL(CSession)
 

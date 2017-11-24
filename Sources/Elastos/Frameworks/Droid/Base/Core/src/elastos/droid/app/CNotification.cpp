@@ -126,7 +126,7 @@ const Int32 CNotification::MAX_CHARSEQUENCE_LENGTH = 5120;//5 * 1024;
 
 const AutoPtr<IAudioAttributes> CNotification::AUDIO_ATTRIBUTES_DEFAULT = InitAUDIO_ATTRIBUTES_DEFAULT();
 
-CAR_INTERFACE_IMPL_3(CNotification, Object, INotification, IParcelable, ICloneable)
+CAR_INTERFACE_IMPL(CNotification, Object, INotification, IParcelable, ICloneable)
 
 CAR_OBJECT_IMPL(CNotification)
 

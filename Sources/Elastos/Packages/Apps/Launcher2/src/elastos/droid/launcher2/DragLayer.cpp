@@ -330,7 +330,7 @@ ECode DragLayer::HierarchyChangeListener::OnChildViewRemoved(
 }
 
 
-CAR_INTERFACE_IMPL_2(DragLayer, FrameLayout, IDragLayer, IViewGroupOnHierarchyChangeListenerHolder);
+CAR_INTERFACE_IMPL(DragLayer, FrameLayout, IDragLayer, IViewGroupOnHierarchyChangeListenerHolder);
 
 DragLayer::DragLayer()
 {

@@ -240,7 +240,7 @@ String CPendingIntentRecord::Key::TypeName()
     return StringUtils::ToString(mType);
 }
 
-CAR_INTERFACE_IMPL_3(CPendingIntentRecord, Object, IPendingIntentRecord, IIIntentSender, IBinder)
+CAR_INTERFACE_IMPL(CPendingIntentRecord, Object, IPendingIntentRecord, IIIntentSender, IBinder)
 CAR_OBJECT_IMPL(CPendingIntentRecord)
 
 CPendingIntentRecord::CPendingIntentRecord()

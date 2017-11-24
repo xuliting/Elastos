@@ -657,7 +657,7 @@ Boolean GlobalActions::SilentModeToggleAction::ShowBeforeProvisioning()
 //======================================================================
 // GlobalActions::SilentModeTriStateAction
 //======================================================================
-CAR_INTERFACE_IMPL_2(GlobalActions::SilentModeTriStateAction, GlobalActions::Action, \
+CAR_INTERFACE_IMPL(GlobalActions::SilentModeTriStateAction, GlobalActions::Action, \
     IViewOnClickListener, IGlobalActionsSilentModeTriStateAction)
 
 GlobalActions::SilentModeTriStateAction::SilentModeTriStateAction(
@@ -1680,7 +1680,7 @@ ECode GlobalActions::TakeScreenshotServiceConnection::OnServiceDisconnected(
 //==========================================================================
 // GlobalActions::DialogListener
 //==========================================================================
-CAR_INTERFACE_IMPL_2(GlobalActions::DialogListener, Object, \
+CAR_INTERFACE_IMPL(GlobalActions::DialogListener, Object, \
     IDialogInterfaceOnDismissListener, IDialogInterfaceOnClickListener)
 
 GlobalActions::DialogListener::DialogListener(

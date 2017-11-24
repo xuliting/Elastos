@@ -34,7 +34,7 @@ namespace Method {
 
 /*****************************Touch::DragState*****************************/
 
-CAR_INTERFACE_IMPL_2(Touch::DragState, Object, ITouchDragState, INoCopySpan)
+CAR_INTERFACE_IMPL(Touch::DragState, Object, ITouchDragState, INoCopySpan)
 
 Touch::DragState::DragState()
     : mFarEnough(FALSE)

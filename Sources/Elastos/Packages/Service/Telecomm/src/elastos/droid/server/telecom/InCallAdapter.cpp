@@ -238,7 +238,7 @@ ECode InCallAdapter::InCallAdapterHandler::HandleMessage(
 //=============================================================================
 // InCallAdapter
 //=============================================================================
-CAR_INTERFACE_IMPL_2(InCallAdapter, Object, IIInCallAdapter, IBinder)
+CAR_INTERFACE_IMPL(InCallAdapter, Object, IIInCallAdapter, IBinder)
 
 const Int32 InCallAdapter::MSG_ANSWER_CALL = 0;
 const Int32 InCallAdapter::MSG_REJECT_CALL = 1;

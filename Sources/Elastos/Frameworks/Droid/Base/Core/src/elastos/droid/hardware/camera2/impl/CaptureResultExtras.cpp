@@ -22,7 +22,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Impl {
 
-CAR_INTERFACE_IMPL_2(CaptureResultExtras, Object, ICaptureResultExtras, IParcelable)
+CAR_INTERFACE_IMPL(CaptureResultExtras, Object, ICaptureResultExtras, IParcelable)
 
 CaptureResultExtras::CaptureResultExtras()
     : mRequestId(0)

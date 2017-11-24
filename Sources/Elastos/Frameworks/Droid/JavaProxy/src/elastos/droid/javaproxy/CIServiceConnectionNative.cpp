@@ -33,7 +33,7 @@ namespace JavaProxy {
 
 const String CIServiceConnectionNative::TAG("CIServiceConnectionNative");
 
-CAR_INTERFACE_IMPL_2(CIServiceConnectionNative, Object, IIServiceConnection, IBinder)
+CAR_INTERFACE_IMPL(CIServiceConnectionNative, Object, IIServiceConnection, IBinder)
 
 CAR_OBJECT_IMPL(CIServiceConnectionNative)
 

@@ -334,7 +334,7 @@ ECode ValidateNotificationPeople::MyRunnable::Run()
 //                  ValidateNotificationPeople
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(ValidateNotificationPeople, Object, IValidateNotificationPeople, INotificationSignalExtractor);
+CAR_INTERFACE_IMPL(ValidateNotificationPeople, Object, IValidateNotificationPeople, INotificationSignalExtractor);
 
 ValidateNotificationPeople::ValidateNotificationPeople()
     : mEnabled(FALSE)

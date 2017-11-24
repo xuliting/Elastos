@@ -48,7 +48,7 @@ namespace Keyguard {
 // CIKeyguardService
 //--------------------------------------------------------------------------------------
 CAR_OBJECT_IMPL(CIKeyguardService)
-CAR_INTERFACE_IMPL_2(CIKeyguardService, Object, IIKeyguardService, IBinder);
+CAR_INTERFACE_IMPL(CIKeyguardService, Object, IIKeyguardService, IBinder);
 CIKeyguardService::CIKeyguardService()
     : mIsOccluded(FALSE)
 {}

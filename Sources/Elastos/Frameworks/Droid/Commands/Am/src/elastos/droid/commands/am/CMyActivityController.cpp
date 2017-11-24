@@ -24,7 +24,7 @@ namespace Droid {
 namespace Commands {
 namespace Am {
 
-CAR_INTERFACE_IMPL_2(CMyActivityController, Object, IIActivityController, IBinder);
+CAR_INTERFACE_IMPL(CMyActivityController, Object, IIActivityController, IBinder);
 
 CAR_OBJECT_IMPL(CMyActivityController)
 

@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIWindowSessionCallbackNative::TAG("CIWindowSessionCallbackNative");
 
-CAR_INTERFACE_IMPL_2(CIWindowSessionCallbackNative, Object, IIWindowSessionCallback, IBinder)
+CAR_INTERFACE_IMPL(CIWindowSessionCallbackNative, Object, IIWindowSessionCallback, IBinder)
 
 CAR_OBJECT_IMPL(CIWindowSessionCallbackNative)
 

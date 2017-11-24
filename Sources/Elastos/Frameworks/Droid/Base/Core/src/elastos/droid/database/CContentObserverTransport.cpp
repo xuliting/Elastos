@@ -29,7 +29,7 @@ namespace Elastos {
 namespace Droid {
 namespace Database {
 
-CAR_INTERFACE_IMPL_3(CContentObserverTransport, Object, IContentObserverTransport, IIContentObserver, IBinder);
+CAR_INTERFACE_IMPL(CContentObserverTransport, Object, IContentObserverTransport, IIContentObserver, IBinder);
 
 CAR_OBJECT_IMPL(CContentObserverTransport)
 

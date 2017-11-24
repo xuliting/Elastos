@@ -21,7 +21,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(InstrumentationInfo, PackageItemInfo, IInstrumentationInfo, IParcelable)
+CAR_INTERFACE_IMPL(InstrumentationInfo, PackageItemInfo, IInstrumentationInfo, IParcelable)
 
 InstrumentationInfo::InstrumentationInfo()
     : mHandleProfiling(FALSE)

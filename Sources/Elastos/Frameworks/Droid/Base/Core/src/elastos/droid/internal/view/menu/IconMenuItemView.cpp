@@ -39,7 +39,7 @@ namespace Menu {
 const Int32 IconMenuItemView::NO_ALPHA = 0xFF;
 String IconMenuItemView::sPrependShortcutLabel;
 
-CAR_INTERFACE_IMPL_2(IconMenuItemView, TextView, IIconMenuItemView, IMenuItemView)
+CAR_INTERFACE_IMPL(IconMenuItemView, TextView, IIconMenuItemView, IMenuItemView)
 
 IconMenuItemView::IconMenuItemView()
     : mTextAppearance(0)

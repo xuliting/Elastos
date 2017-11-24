@@ -27,7 +27,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(CPackageInstallerSessionParams, Object, IPackageInstallerSessionInfo, IParcelable)
+CAR_INTERFACE_IMPL(CPackageInstallerSessionParams, Object, IPackageInstallerSessionInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CPackageInstallerSessionParams)
 

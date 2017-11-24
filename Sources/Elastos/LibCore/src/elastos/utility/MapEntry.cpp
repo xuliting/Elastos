@@ -21,7 +21,7 @@ using Elastos::Core::EIID_ICloneable;
 namespace Elastos {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(MapEntry, Object, IMapEntry, ICloneable)
+CAR_INTERFACE_IMPL(MapEntry, Object, IMapEntry, ICloneable)
 
 ECode MapEntry::Clone(
     /* [out] */ IInterface** outface)

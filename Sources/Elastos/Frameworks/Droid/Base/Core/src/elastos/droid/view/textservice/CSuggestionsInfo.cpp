@@ -26,7 +26,7 @@ namespace TextService {
 //========================================================================================
 AutoPtr<ArrayOf<String> > CSuggestionsInfo::EMPTY;// = ArrayUtils.emptyArray(String.class);
 
-CAR_INTERFACE_IMPL_2(CSuggestionsInfo, Object, ISuggestionsInfo, IParcelable)
+CAR_INTERFACE_IMPL(CSuggestionsInfo, Object, ISuggestionsInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CSuggestionsInfo)
 

@@ -21,7 +21,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CDHPrivateKeySpec)
-CAR_INTERFACE_IMPL_2(CDHPrivateKeySpec, Object, IDHPrivateKeySpec, IKeySpec)
+CAR_INTERFACE_IMPL(CDHPrivateKeySpec, Object, IDHPrivateKeySpec, IKeySpec)
 
 CDHPrivateKeySpec::CDHPrivateKeySpec()
 {

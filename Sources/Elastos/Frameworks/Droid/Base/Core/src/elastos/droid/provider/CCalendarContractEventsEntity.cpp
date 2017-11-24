@@ -106,7 +106,7 @@ Int32 CCalendarContractEventsEntity::EntityIteratorImpl::COLUMN_VALUE = 2;
 
 String CCalendarContractEventsEntity::EntityIteratorImpl::WHERE_EVENT_ID = String("event_id=?");
 
-CAR_INTERFACE_IMPL_3(CCalendarContractEventsEntity::EntityIteratorImpl, Object, ICursorEntityIterator, IEntityIterator, IIterator)
+CAR_INTERFACE_IMPL(CCalendarContractEventsEntity::EntityIteratorImpl, Object, ICursorEntityIterator, IEntityIterator, IIterator)
 
 CCalendarContractEventsEntity::EntityIteratorImpl::EntityIteratorImpl()
 {}
@@ -326,7 +326,7 @@ ECode CCalendarContractEventsEntity::EntityIteratorImpl::GetEntityAndIncrementCu
 
 CAR_SINGLETON_IMPL(CCalendarContractEventsEntity)
 
-CAR_INTERFACE_IMPL_4(CCalendarContractEventsEntity, Singleton
+CAR_INTERFACE_IMPL(CCalendarContractEventsEntity, Singleton
     , ICalendarContractEventsEntity
     , IBaseColumns
     , ICalendarContractSyncColumns

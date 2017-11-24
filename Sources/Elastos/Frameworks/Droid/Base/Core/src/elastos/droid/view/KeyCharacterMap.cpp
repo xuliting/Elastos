@@ -386,7 +386,7 @@ private:
     android::sp<android::KeyCharacterMap> mMap;
 };
 
-CAR_INTERFACE_IMPL_2(KeyCharacterMap, Object, IKeyCharacterMap, IParcelable);
+CAR_INTERFACE_IMPL(KeyCharacterMap, Object, IKeyCharacterMap, IParcelable);
 
 KeyCharacterMap::KeyCharacterMap()
     : mPtr(0)

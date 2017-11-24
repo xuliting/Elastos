@@ -28,7 +28,7 @@ namespace Conscrypt {
 //=========================================
 Int64 OpenSSLRandom::mSerialVersionUID = 8506210602917522860L;
 
-CAR_INTERFACE_IMPL_3(OpenSSLRandom, Object, ISecureRandomSpi, ISerializable, IOpenSSLRandom)
+CAR_INTERFACE_IMPL(OpenSSLRandom, Object, ISecureRandomSpi, ISerializable, IOpenSSLRandom)
 
 ECode OpenSSLRandom::EngineSetSeed(
     /* [in] */ ArrayOf<Byte>* seed)

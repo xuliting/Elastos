@@ -42,7 +42,7 @@ static AutoPtr<IPlainSocketFactory> InitDefaultFactory()
 }
 const AutoPtr<IPlainSocketFactory> CPlainSocketFactory::DEFAULT_FACTORY = InitDefaultFactory();
 
-CAR_INTERFACE_IMPL_2(CPlainSocketFactory, Object, IPlainSocketFactory, ISocketFactory)
+CAR_INTERFACE_IMPL(CPlainSocketFactory, Object, IPlainSocketFactory, ISocketFactory)
 
 CAR_OBJECT_IMPL(CPlainSocketFactory)
 

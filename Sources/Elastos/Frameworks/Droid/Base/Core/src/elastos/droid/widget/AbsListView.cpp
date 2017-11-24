@@ -564,7 +564,7 @@ ECode AbsListView::AdapterDataSetObserver::OnInvalidated()
 //          AbsListView::MultiChoiceModeWrapper
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(AbsListView::MultiChoiceModeWrapper, Object, IMultiChoiceModeListener, IActionModeCallback);
+CAR_INTERFACE_IMPL(AbsListView::MultiChoiceModeWrapper, Object, IMultiChoiceModeListener, IActionModeCallback);
 
 AbsListView::MultiChoiceModeWrapper::MultiChoiceModeWrapper(
     /* [in] */ AbsListView* host)
@@ -2701,7 +2701,7 @@ ECode AbsListView::TouchModeResetRunnable::Run()
 //                  AbsListView
 //==============================================================================
 
-CAR_INTERFACE_IMPL_6(AbsListView, AdapterView, IAbsListView, ITextWatcher, IOnGlobalLayoutListener,
+CAR_INTERFACE_IMPL(AbsListView, AdapterView, IAbsListView, ITextWatcher, IOnGlobalLayoutListener,
         IFilterListener, IOnTouchModeChangeListener, IRemoteAdapterConnectionCallback);
 
 AutoPtr<IStrictMode> AbsListView::sStrictMode;

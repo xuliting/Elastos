@@ -35,7 +35,7 @@ namespace Org {
 namespace Apache {
 namespace Http {
 
-CAR_INTERFACE_IMPL_2(CHttpHost, Object, IHttpHost, ICloneable)
+CAR_INTERFACE_IMPL(CHttpHost, Object, IHttpHost, ICloneable)
 
 CAR_OBJECT_IMPL(CHttpHost)
 

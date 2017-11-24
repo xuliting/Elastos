@@ -64,7 +64,7 @@ namespace App {
 //========================================================================
 // NativeActivity::NativeContentView
 //========================================================================
-CAR_INTERFACE_IMPL_4(NativeActivity::InnerListener, Object, \
+CAR_INTERFACE_IMPL(NativeActivity::InnerListener, Object, \
     ISurfaceHolderCallback2, ISurfaceHolderCallback, \
     IInputQueueCallback, IOnGlobalLayoutListener)
 
@@ -167,7 +167,7 @@ ECode NativeActivity::NativeContentView::constructor(
 //========================================================================
 const String NativeActivity::KEY_NATIVE_SAVED_STATE("android:native_state");
 
-CAR_INTERFACE_IMPL_5(NativeActivity, Activity, INativeActivity, \
+CAR_INTERFACE_IMPL(NativeActivity, Activity, INativeActivity, \
     ISurfaceHolderCallback2, ISurfaceHolderCallback, \
     IInputQueueCallback, IOnGlobalLayoutListener)
 

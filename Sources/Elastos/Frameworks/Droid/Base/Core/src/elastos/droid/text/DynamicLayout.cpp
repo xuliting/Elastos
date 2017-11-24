@@ -34,7 +34,7 @@ namespace Elastos {
 namespace Droid {
 namespace Text {
 
-CAR_INTERFACE_IMPL_3(DynamicLayout::ChangeWatcher, Object, ITextWatcher, ISpanWatcher, INoCopySpan)
+CAR_INTERFACE_IMPL(DynamicLayout::ChangeWatcher, Object, ITextWatcher, ISpanWatcher, INoCopySpan)
 
 DynamicLayout::ChangeWatcher::ChangeWatcher(
     /* [in] */ IWeakReference* layout)

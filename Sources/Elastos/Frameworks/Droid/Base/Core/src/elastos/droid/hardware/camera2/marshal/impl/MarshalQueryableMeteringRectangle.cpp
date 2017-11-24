@@ -96,7 +96,7 @@ ECode MarshalQueryableMeteringRectangle::MarshalerMeteringRectangle::GetNativeSi
 
 const Int32 MarshalQueryableMeteringRectangle::SIZE = IMarshalHelpers::SIZEOF_INT32 * 5;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableMeteringRectangle, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableMeteringRectangle, Object,
         IMarshalQueryableMeteringRectangle, IMarshalQueryable)
 
 ECode MarshalQueryableMeteringRectangle::CreateMarshaler(

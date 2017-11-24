@@ -27,7 +27,7 @@ namespace Animation {
 AutoPtr<IArgbEvaluator> CArgbEvaluator::sInstance;
 
 CAR_OBJECT_IMPL(CArgbEvaluator)
-CAR_INTERFACE_IMPL_2(CArgbEvaluator, Object, IArgbEvaluator, ITypeEvaluator)
+CAR_INTERFACE_IMPL(CArgbEvaluator, Object, IArgbEvaluator, ITypeEvaluator)
 
 CArgbEvaluator::CArgbEvaluator()
 {}

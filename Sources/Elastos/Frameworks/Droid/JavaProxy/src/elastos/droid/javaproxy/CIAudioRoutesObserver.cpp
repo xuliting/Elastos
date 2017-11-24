@@ -26,7 +26,7 @@ namespace JavaProxy {
 
 const String CIAudioRoutesObserver::TAG("CIAudioRoutesObserver");
 
-CAR_INTERFACE_IMPL_2(CIAudioRoutesObserver, Object, IIAudioRoutesObserver, IBinder)
+CAR_INTERFACE_IMPL(CIAudioRoutesObserver, Object, IIAudioRoutesObserver, IBinder)
 
 CAR_OBJECT_IMPL(CIAudioRoutesObserver)
 

@@ -68,7 +68,7 @@ const Int32 AbstractQueuedSynchronizer::ConditionObject::REINTERRUPT =  1;
 
 const Int32 AbstractQueuedSynchronizer::ConditionObject::THROW_IE    = -1;
 
-CAR_INTERFACE_IMPL_3(AbstractQueuedSynchronizer::ConditionObject, Object, IConditionObject, ICondition, ISerializable)
+CAR_INTERFACE_IMPL(AbstractQueuedSynchronizer::ConditionObject, Object, IConditionObject, ICondition, ISerializable)
 
 AbstractQueuedSynchronizer::ConditionObject::ConditionObject(
     /* [in] */ AbstractQueuedSynchronizer* host)

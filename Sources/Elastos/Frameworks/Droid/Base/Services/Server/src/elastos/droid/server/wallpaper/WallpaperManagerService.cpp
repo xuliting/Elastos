@@ -254,7 +254,7 @@ WallpaperManagerService::KeyguardWallpaperData::KeyguardWallpaperData(
 // WallpaperManagerService::WallpaperConnection
 //==========================================
 
-CAR_INTERFACE_IMPL_4(WallpaperManagerService::WallpaperConnection, Object, IWallpaperConnection, IIWallpaperConnection, IBinder, IServiceConnection)
+CAR_INTERFACE_IMPL(WallpaperManagerService::WallpaperConnection, Object, IWallpaperConnection, IIWallpaperConnection, IBinder, IServiceConnection)
 
 WallpaperManagerService::WallpaperConnection::WallpaperConnection()
     : mDimensionsChanged(FALSE)
@@ -629,7 +629,7 @@ ECode WallpaperManagerService::SystemRunningBR::OnReceive(
 // WallpaperManagerService::SystemRunningObserver
 //==========================================
 
-CAR_INTERFACE_IMPL_2(WallpaperManagerService::SystemRunningObserver, Object, IIUserSwitchObserver, IBinder)
+CAR_INTERFACE_IMPL(WallpaperManagerService::SystemRunningObserver, Object, IIUserSwitchObserver, IBinder)
 
 WallpaperManagerService::SystemRunningObserver::SystemRunningObserver(
     /* [in] */ WallpaperManagerService* host)
@@ -663,7 +663,7 @@ const String WallpaperManagerService::WALLPAPER_INFO("wallpaper_info.xml");
 const String WallpaperManagerService::KEYGUARD_WALLPAPER("keyguard_wallpaper");
 const String WallpaperManagerService::KEYGUARD_WALLPAPER_INFO("keyguard_wallpaper_info.xml");
 
-CAR_INTERFACE_IMPL_3(WallpaperManagerService, Object, IWallpaperManagerService, IIWallpaperManager, IBinder)
+CAR_INTERFACE_IMPL(WallpaperManagerService, Object, IWallpaperManagerService, IIWallpaperManager, IBinder)
 
 WallpaperManagerService::WallpaperManagerService()
 {

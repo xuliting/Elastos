@@ -94,7 +94,7 @@ ECode VideoProfile::VideoState::HasState(
 //===============================================================
 // VideoProfile::
 //===============================================================
-CAR_INTERFACE_IMPL_2(VideoProfile, Object, IVideoProfile, IParcelable)
+CAR_INTERFACE_IMPL(VideoProfile, Object, IVideoProfile, IParcelable)
 
 ECode VideoProfile::constructor()
 {

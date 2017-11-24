@@ -24,7 +24,7 @@ namespace Apache {
 namespace Http {
 namespace Conn {
 
-CAR_INTERFACE_IMPL_2(CEofSensorInputStream, InputStream, IEofSensorInputStream, IConnectionReleaseTrigger)
+CAR_INTERFACE_IMPL(CEofSensorInputStream, InputStream, IEofSensorInputStream, IConnectionReleaseTrigger)
 
 CAR_OBJECT_IMPL(CEofSensorInputStream)
 

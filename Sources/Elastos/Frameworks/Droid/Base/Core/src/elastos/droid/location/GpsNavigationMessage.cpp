@@ -28,7 +28,7 @@ namespace Location {
 const String GpsNavigationMessage::TAG("GpsNavigationMessage");
 const AutoPtr<ArrayOf<Byte> > GpsNavigationMessage::EMPTY_ARRAY = ArrayOf<Byte>::Alloc(0);
 
-CAR_INTERFACE_IMPL_2(GpsNavigationMessage, Object, IGpsNavigationMessage, IParcelable)
+CAR_INTERFACE_IMPL(GpsNavigationMessage, Object, IGpsNavigationMessage, IParcelable)
 
 GpsNavigationMessage::GpsNavigationMessage()
 {

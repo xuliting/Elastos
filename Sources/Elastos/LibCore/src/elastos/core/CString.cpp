@@ -21,7 +21,7 @@
 namespace Elastos {
 namespace Core {
 
-CAR_INTERFACE_IMPL_3(CString, Object, ICharSequence, IString, IComparable)
+CAR_INTERFACE_IMPL(CString, Object, ICharSequence, IString, IComparable)
 
 CAR_OBJECT_IMPL(CString)
 

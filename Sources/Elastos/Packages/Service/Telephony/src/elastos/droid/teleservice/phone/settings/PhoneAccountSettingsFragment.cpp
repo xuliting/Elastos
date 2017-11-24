@@ -84,7 +84,7 @@ const String PhoneAccountSettingsFragment::SIP_SETTINGS_CATEGORY_PREF_KEY("phone
 const String PhoneAccountSettingsFragment::USE_SIP_PREF_KEY("use_sip_calling_options_key");
 const String PhoneAccountSettingsFragment::SIP_RECEIVE_CALLS_PREF_KEY("sip_receive_calls_key");
 
-CAR_INTERFACE_IMPL_3(PhoneAccountSettingsFragment::InnerListener, Object,
+CAR_INTERFACE_IMPL(PhoneAccountSettingsFragment::InnerListener, Object,
     IPreferenceOnPreferenceChangeListener,
     IPreferenceOnPreferenceClickListener,
     IAccountSelectionListener)

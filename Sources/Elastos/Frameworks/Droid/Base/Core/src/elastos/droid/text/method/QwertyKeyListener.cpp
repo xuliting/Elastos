@@ -50,7 +50,7 @@ AutoPtr<ArrayOf<IQwertyKeyListener*> > QwertyKeyListener::sInstance =
 
 AutoPtr<IQwertyKeyListener> QwertyKeyListener::sFullKeyboardInstance;
 
-CAR_INTERFACE_IMPL_2(QwertyKeyListener::Replaced, Object, IReplacedSpan, INoCopySpan)
+CAR_INTERFACE_IMPL(QwertyKeyListener::Replaced, Object, IReplacedSpan, INoCopySpan)
 
 QwertyKeyListener::Replaced::Replaced()
 {

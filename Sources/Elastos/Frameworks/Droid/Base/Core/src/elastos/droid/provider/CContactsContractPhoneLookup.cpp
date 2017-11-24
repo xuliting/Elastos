@@ -27,7 +27,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractPhoneLookup)
 
-CAR_INTERFACE_IMPL_5(CContactsContractPhoneLookup, Singleton
+CAR_INTERFACE_IMPL(CContactsContractPhoneLookup, Singleton
     , IContactsContractPhoneLookup
     , IBaseColumns
     , IContactsContractPhoneLookupColumns

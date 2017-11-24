@@ -39,7 +39,7 @@ const String CSignalStrength::TAG("CSignalStrength");
 const Boolean CSignalStrength::DBG = FALSE;
 const AutoPtr< ArrayOf<String> > CSignalStrength::SIGNAL_STRENGTH_NAMES = InitSIGNAL_STRENGTH_NAMES();
 
-CAR_INTERFACE_IMPL_2(CSignalStrength, Object, ISignalStrength, IParcelable)
+CAR_INTERFACE_IMPL(CSignalStrength, Object, ISignalStrength, IParcelable)
 
 CAR_OBJECT_IMPL(CSignalStrength)
 

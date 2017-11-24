@@ -88,7 +88,7 @@ ECode InputFilter::H::HandleMessage(
 //==========================================================================
 // InputFilter
 //==========================================================================
-CAR_INTERFACE_IMPL_3(InputFilter, Object, IInputFilter, IIInputFilter, IBinder)
+CAR_INTERFACE_IMPL(InputFilter, Object, IInputFilter, IIInputFilter, IBinder)
 
 InputFilter::InputFilter()
 {}

@@ -28,7 +28,7 @@ namespace ICU {
 
 CAR_OBJECT_IMPL(CRuleBasedCollatorICU)
 
-CAR_INTERFACE_IMPL_2(CRuleBasedCollatorICU, Object, IRuleBasedCollatorICU, ICloneable)
+CAR_INTERFACE_IMPL(CRuleBasedCollatorICU, Object, IRuleBasedCollatorICU, ICloneable)
 
 CRuleBasedCollatorICU::CRuleBasedCollatorICU()
 {}

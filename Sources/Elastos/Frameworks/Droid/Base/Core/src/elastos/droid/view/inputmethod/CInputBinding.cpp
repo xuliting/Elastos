@@ -34,7 +34,7 @@ namespace InputMethod {
 //========================================================================================
 //              CInputBinding::
 //========================================================================================
-CAR_INTERFACE_IMPL_2(CInputBinding, Object, IInputBinding, IParcelable)
+CAR_INTERFACE_IMPL(CInputBinding, Object, IInputBinding, IParcelable)
 
 CAR_OBJECT_IMPL(CInputBinding)
 

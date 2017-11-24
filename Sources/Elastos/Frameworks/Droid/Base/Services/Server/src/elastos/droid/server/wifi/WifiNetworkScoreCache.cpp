@@ -45,7 +45,7 @@ namespace Wifi {
 Int32 WifiNetworkScoreCache::INVALID_NETWORK_SCORE = 100000;
 String WifiNetworkScoreCache::TAG("WifiNetworkScoreCache");
 
-CAR_INTERFACE_IMPL_2(WifiNetworkScoreCache, Object, IINetworkScoreCache, IBinder);
+CAR_INTERFACE_IMPL(WifiNetworkScoreCache, Object, IINetworkScoreCache, IBinder);
 
 WifiNetworkScoreCache::WifiNetworkScoreCache()
 {

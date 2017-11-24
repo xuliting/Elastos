@@ -70,7 +70,7 @@ const Int32 CVerifierDeviceIdentity::GROUP_SIZE = 4;
 const AutoPtr<ArrayOf<Char32> > CVerifierDeviceIdentity::ENCODE = InitENCODE();
 
 
-CAR_INTERFACE_IMPL_2(CVerifierDeviceIdentity, Object, IVerifierDeviceIdentity, IParcelable)
+CAR_INTERFACE_IMPL(CVerifierDeviceIdentity, Object, IVerifierDeviceIdentity, IParcelable)
 
 CAR_OBJECT_IMPL(CVerifierDeviceIdentity)
 

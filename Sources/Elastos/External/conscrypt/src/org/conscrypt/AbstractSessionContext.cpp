@@ -146,7 +146,7 @@ Boolean AbstractSessionContext::CustomLinkedHashMap::RemoveEldestEntry(
 // AbstractSessionContext
 //=======================================================
 
-CAR_INTERFACE_IMPL_2(AbstractSessionContext, Object, ISSLSessionContext, IAbstractSessionContext)
+CAR_INTERFACE_IMPL(AbstractSessionContext, Object, ISSLSessionContext, IAbstractSessionContext)
 
 AbstractSessionContext::AbstractSessionContext()
     : mMaximumSize(0)

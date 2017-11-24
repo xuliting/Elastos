@@ -27,7 +27,7 @@ namespace Droid {
 namespace Graphics {
 
 CAR_OBJECT_IMPL(CPoint);
-CAR_INTERFACE_IMPL_2(CPoint, Object, IPoint, IParcelable);
+CAR_INTERFACE_IMPL(CPoint, Object, IPoint, IParcelable);
 ECode CPoint::constructor()
 {
     mX = 0;

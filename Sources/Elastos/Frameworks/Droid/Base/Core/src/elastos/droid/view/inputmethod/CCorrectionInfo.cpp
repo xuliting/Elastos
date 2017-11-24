@@ -38,7 +38,7 @@ namespace InputMethod {
 //========================================================================================
 //              CCorrectionInfo::
 //========================================================================================
-CAR_INTERFACE_IMPL_2(CCorrectionInfo, Object, ICorrectionInfo, IParcelable)
+CAR_INTERFACE_IMPL(CCorrectionInfo, Object, ICorrectionInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CCorrectionInfo)
 

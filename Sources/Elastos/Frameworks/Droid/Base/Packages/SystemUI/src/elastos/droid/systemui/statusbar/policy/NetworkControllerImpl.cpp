@@ -252,7 +252,7 @@ ECode NetworkControllerImpl::NCIAsyncTask::DoInBackground(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_3(NetworkControllerImpl, Object, INetworkControllerImpl, INetworkController, IDemoMode);
+CAR_INTERFACE_IMPL(NetworkControllerImpl, Object, INetworkControllerImpl, INetworkController, IDemoMode);
 NetworkControllerImpl::NetworkControllerImpl(
     /* [in] */ IContext* context)
     : mHspaDataDistinguishable(FALSE)

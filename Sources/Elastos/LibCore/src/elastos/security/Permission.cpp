@@ -22,7 +22,7 @@ using Elastos::IO::EIID_ISerializable;
 namespace Elastos {
 namespace Security {
 
-CAR_INTERFACE_IMPL_3(Permission, Object, IPermission, IGuard, ISerializable)
+CAR_INTERFACE_IMPL(Permission, Object, IPermission, IGuard, ISerializable)
 Permission::Permission()
 {}
 

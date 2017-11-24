@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Bluetooth {
 
-CAR_INTERFACE_IMPL_2(CBluetoothAdapterManagerCallback, Object, IIBluetoothManagerCallback, IBinder);
+CAR_INTERFACE_IMPL(CBluetoothAdapterManagerCallback, Object, IIBluetoothManagerCallback, IBinder);
 
 CAR_OBJECT_IMPL(CBluetoothAdapterManagerCallback);
 

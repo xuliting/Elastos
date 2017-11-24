@@ -26,7 +26,7 @@ namespace Droid {
 namespace Database {
 namespace Sqlite {
 
-CAR_INTERFACE_IMPL_2(SQLiteClosable, Object, ISQLiteClosable, ICloseable);
+CAR_INTERFACE_IMPL(SQLiteClosable, Object, ISQLiteClosable, ICloseable);
 
 SQLiteClosable::SQLiteClosable()
     : mReferenceCount(1)

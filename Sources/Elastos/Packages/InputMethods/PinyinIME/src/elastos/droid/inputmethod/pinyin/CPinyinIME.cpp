@@ -120,7 +120,7 @@ ECode CPinyinIME::PopupTimer::Run()
     return NOERROR;
 }
 
-// CAR_INTERFACE_IMPL_2(CPinyinIME::BuilderListener, IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener);
+// CAR_INTERFACE_IMPL(CPinyinIME::BuilderListener, IDialogInterfaceOnClickListener, IDialogInterfaceOnDismissListener);
 //
 // CPinyinIME::BuilderListener::BuilderListener(
 //     /* [in] */ CPinyinIME* ime)

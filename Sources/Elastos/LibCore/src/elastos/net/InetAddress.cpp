@@ -59,7 +59,7 @@ const Int32 InetAddress::NETID_UNSET = 0;
 AutoPtr<AddressCache> InetAddress::ADDRESS_CACHE = new AddressCache();
 AutoPtr<IInetAddress> InetAddress::UNSPECIFIED = new InetAddress(AF_UNSPEC, NULL, String(NULL));
 
-CAR_INTERFACE_IMPL_2(InetAddress, Object, IInetAddress, ISerializable)
+CAR_INTERFACE_IMPL(InetAddress, Object, IInetAddress, ISerializable)
 
 InetAddress::InetAddress()
     : mFamily(0)

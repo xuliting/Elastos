@@ -55,7 +55,7 @@ extern String UnicodeStringToString(const UnicodeString& us);
 
 CAR_OBJECT_IMPL(CNativeDecimalFormat)
 
-CAR_INTERFACE_IMPL_2(CNativeDecimalFormat, Object, INativeDecimalFormat, ICloneable)
+CAR_INTERFACE_IMPL(CNativeDecimalFormat, Object, INativeDecimalFormat, ICloneable)
 
 const Int32 CNativeDecimalFormat::UNUM_DECIMAL_SEPARATOR_SYMBOL = 0;
 const Int32 CNativeDecimalFormat::UNUM_GROUPING_SEPARATOR_SYMBOL = 1;

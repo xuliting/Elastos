@@ -59,7 +59,7 @@ const Int32 CNotificationWearableExtender::DEFAULT_FLAGS = FLAG_CONTENT_INTENT_A
 const Int32 CNotificationWearableExtender::DEFAULT_CONTENT_ICON_GRAVITY = IGravity::END;
 const Int32 CNotificationWearableExtender::DEFAULT_GRAVITY = IGravity::BOTTOM;
 
-CAR_INTERFACE_IMPL_3(CNotificationWearableExtender, Object, INotificationWearableExtender, INotificationExtender, ICloneable)
+CAR_INTERFACE_IMPL(CNotificationWearableExtender, Object, INotificationWearableExtender, INotificationExtender, ICloneable)
 
 CAR_OBJECT_IMPL(CNotificationWearableExtender)
 

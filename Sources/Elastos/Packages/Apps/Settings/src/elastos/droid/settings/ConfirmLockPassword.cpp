@@ -49,7 +49,7 @@ namespace Settings {
 //                  ConfirmLockPassword::ConfirmLockPasswordFragment::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(ConfirmLockPassword::ConfirmLockPasswordFragment::InnerListener, Object, IViewOnClickListener, IOnEditorActionListener, ITextWatcher)
+CAR_INTERFACE_IMPL(ConfirmLockPassword::ConfirmLockPasswordFragment::InnerListener, Object, IViewOnClickListener, IOnEditorActionListener, ITextWatcher)
 
 ConfirmLockPassword::ConfirmLockPasswordFragment::InnerListener::InnerListener(
     /* [in] */ ConfirmLockPasswordFragment* host)

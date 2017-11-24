@@ -132,7 +132,7 @@ ECode GlobalScreenshot::MyRunnable::Run()
 //         GlobalScreenshot::MyInterpolator1
 //--------------------------------------------------------------------------------------------------
 
-CAR_INTERFACE_IMPL_2(GlobalScreenshot::MyInterpolator1, Object, ITimeInterpolator, IInterpolator)
+CAR_INTERFACE_IMPL(GlobalScreenshot::MyInterpolator1, Object, ITimeInterpolator, IInterpolator)
 
 GlobalScreenshot::MyInterpolator1::MyInterpolator1(
     /* [in] */ Float flashDurationPct)
@@ -164,7 +164,7 @@ ECode GlobalScreenshot::MyInterpolator1::HasNativeInterpolator(
 //         GlobalScreenshot::MyInterpolator2
 //--------------------------------------------------------------------------------------------------
 
-CAR_INTERFACE_IMPL_2(GlobalScreenshot::MyInterpolator2, Object, ITimeInterpolator, IInterpolator)
+CAR_INTERFACE_IMPL(GlobalScreenshot::MyInterpolator2, Object, ITimeInterpolator, IInterpolator)
 
 GlobalScreenshot::MyInterpolator2::MyInterpolator2(
     /* [in] */ Float flashPeakDurationPct,
@@ -319,7 +319,7 @@ ECode GlobalScreenshot::MyAnimatorUpdateListener2::OnAnimationUpdate(
 //         GlobalScreenshot::MyInterpolator3
 //--------------------------------------------------------------------------------------------------
 
-CAR_INTERFACE_IMPL_2(GlobalScreenshot::MyInterpolator3, Object, ITimeInterpolator, IInterpolator)
+CAR_INTERFACE_IMPL(GlobalScreenshot::MyInterpolator3, Object, ITimeInterpolator, IInterpolator)
 
 GlobalScreenshot::MyInterpolator3::MyInterpolator3(
     /* [in] */ Float scaleDurationPct)

@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CContentObserverNative::TAG("CContentObserverNative");
 
-CAR_INTERFACE_IMPL_2(CContentObserverNative, Object, IContentObserver, IBinder)
+CAR_INTERFACE_IMPL(CContentObserverNative, Object, IContentObserver, IBinder)
 
 CAR_OBJECT_IMPL(CContentObserverNative)
 

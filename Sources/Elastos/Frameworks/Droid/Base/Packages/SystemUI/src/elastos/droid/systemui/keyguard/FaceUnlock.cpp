@@ -62,7 +62,7 @@ const Boolean FaceUnlock::DEBUG = IKeyguardConstants::DEBUG;
 const String FaceUnlock::TAG("FULLockscreen");
 const String FaceUnlock::FACE_LOCK_PACKAGE("com.android.facelock");
 
-CAR_INTERFACE_IMPL_2(FaceUnlock, Object, IBiometricSensorUnlock, IHandlerCallback)
+CAR_INTERFACE_IMPL(FaceUnlock, Object, IBiometricSensorUnlock, IHandlerCallback)
 
 FaceUnlock::FaceUnlock(
     /* [in] */ IContext* context)

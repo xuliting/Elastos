@@ -30,7 +30,7 @@ namespace JavaProxy {
 
 const String CRemoteViewsAdapterConnectionNative::TAG("CRemoteViewsAdapterConnectionNative");
 
-CAR_INTERFACE_IMPL_2(CRemoteViewsAdapterConnectionNative, Object, IIRemoteViewsAdapterConnection, IBinder)
+CAR_INTERFACE_IMPL(CRemoteViewsAdapterConnectionNative, Object, IIRemoteViewsAdapterConnection, IBinder)
 
 CAR_OBJECT_IMPL(CRemoteViewsAdapterConnectionNative)
 

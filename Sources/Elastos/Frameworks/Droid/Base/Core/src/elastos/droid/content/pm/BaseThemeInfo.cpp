@@ -22,7 +22,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(BaseThemeInfo, Object, IBaseThemeInfo, IParcelable)
+CAR_INTERFACE_IMPL(BaseThemeInfo, Object, IBaseThemeInfo, IParcelable)
 
 ECode BaseThemeInfo::constructor()
 {

@@ -32,7 +32,7 @@ TestPrinter::TestPrinter(
     , mOnlyFailures(onlyFailures)
 {}
 
-CAR_INTERFACE_IMPL_2(TestPrinter, Object, ITestListener, ITestRunnerListener)
+CAR_INTERFACE_IMPL(TestPrinter, Object, ITestListener, ITestRunnerListener)
 
 ECode TestPrinter::Started(
     /* [in] */ const String& className)

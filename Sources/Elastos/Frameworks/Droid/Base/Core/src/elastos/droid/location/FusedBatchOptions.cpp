@@ -41,7 +41,7 @@ Int32 FusedBatchOptions::BatchFlags::CALLBACK_ON_LOCATION_FIX = 0x0000002;
 //FusedBatchOptions
 //============
 
-CAR_INTERFACE_IMPL_2(FusedBatchOptions, Object, IFusedBatchOptions, IParcelable)
+CAR_INTERFACE_IMPL(FusedBatchOptions, Object, IFusedBatchOptions, IParcelable)
 
 FusedBatchOptions::FusedBatchOptions()
     : mPeriodInNS(0)

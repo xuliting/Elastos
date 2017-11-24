@@ -31,7 +31,7 @@ namespace Telephony {
 const String CCellSignalStrengthCdma::TAG("CellSignalStrengthCdma");
 const Boolean CCellSignalStrengthCdma::DBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(CCellSignalStrengthCdma, CellSignalStrength, ICellSignalStrengthCdma, IParcelable)
+CAR_INTERFACE_IMPL(CCellSignalStrengthCdma, CellSignalStrength, ICellSignalStrengthCdma, IParcelable)
 
 CAR_OBJECT_IMPL(CCellSignalStrengthCdma)
 

@@ -44,7 +44,7 @@ namespace Elastos {
 namespace Droid {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(Location, Object, ILocation, IParcelable)
+CAR_INTERFACE_IMPL(Location, Object, ILocation, IParcelable)
 
 Location::Location()
    : mTime(0)

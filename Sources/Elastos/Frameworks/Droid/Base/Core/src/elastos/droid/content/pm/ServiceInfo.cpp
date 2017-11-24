@@ -26,7 +26,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(ServiceInfo, ComponentInfo, IServiceInfo, IParcelable)
+CAR_INTERFACE_IMPL(ServiceInfo, ComponentInfo, IServiceInfo, IParcelable)
 
 ServiceInfo::ServiceInfo()
     : mFlags(0)

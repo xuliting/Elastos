@@ -452,7 +452,7 @@ const Int32 VideoView::STATE_PLAYBACK_COMPLETED = 5;
 const Int32 VideoView::STATE_SUSPENDED = 6;
 
 
-CAR_INTERFACE_IMPL_3(VideoView, SurfaceView, IVideoView, IMediaPlayerControl, ISubtitleControllerAnchor);
+CAR_INTERFACE_IMPL(VideoView, SurfaceView, IVideoView, IMediaPlayerControl, ISubtitleControllerAnchor);
 VideoView::VideoView()
     : mCurrentState(STATE_IDLE)
     , mTargetState(STATE_IDLE)

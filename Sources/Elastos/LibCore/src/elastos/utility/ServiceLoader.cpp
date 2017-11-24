@@ -168,7 +168,7 @@ ECode ServiceLoader::ServiceIterator::CheckValidJavaClassName(
 //          ServiceLoader
 ///////////////////////////////////////
 
-CAR_INTERFACE_IMPL_2(ServiceLoader, Object, IServiceLoader, IIterable)
+CAR_INTERFACE_IMPL(ServiceLoader, Object, IServiceLoader, IIterable)
 
 ServiceLoader::ServiceLoader(
     /* [in] */ InterfaceID service,

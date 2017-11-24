@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CINetworkPolicyListenerNative::TAG("CINetworkPolicyListenerNative");
 
-CAR_INTERFACE_IMPL_2(CINetworkPolicyListenerNative, Object, IINetworkPolicyListener, IBinder)
+CAR_INTERFACE_IMPL(CINetworkPolicyListenerNative, Object, IINetworkPolicyListener, IBinder)
 
 CAR_OBJECT_IMPL(CINetworkPolicyListenerNative)
 

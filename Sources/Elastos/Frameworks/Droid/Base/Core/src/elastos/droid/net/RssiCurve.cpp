@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(RssiCurve, Object, IParcelable, IRssiCurve)
+CAR_INTERFACE_IMPL(RssiCurve, Object, IParcelable, IRssiCurve)
 
 RssiCurve::RssiCurve()
     : mStart(0)

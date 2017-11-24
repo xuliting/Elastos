@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CActivityManagerTaskThumbnail, Object, IActivityManagerTaskThumbnail, IParcelable)
+CAR_INTERFACE_IMPL(CActivityManagerTaskThumbnail, Object, IActivityManagerTaskThumbnail, IParcelable)
 
 CAR_OBJECT_IMPL(CActivityManagerTaskThumbnail)
 

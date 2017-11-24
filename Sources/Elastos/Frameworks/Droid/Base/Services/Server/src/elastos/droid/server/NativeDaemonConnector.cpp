@@ -234,7 +234,7 @@ const Int32 NativeDaemonConnector::DEFAULT_TIMEOUT;
 const Int64 NativeDaemonConnector::WARN_EXECUTE_DELAY_MS;
 const Int32 NativeDaemonConnector::BUFFER_SIZE;
 
-CAR_INTERFACE_IMPL_2(NativeDaemonConnector, Object, IRunnable, IHandlerCallback)
+CAR_INTERFACE_IMPL(NativeDaemonConnector, Object, IRunnable, IHandlerCallback)
 
 NativeDaemonConnector::NativeDaemonConnector(
     /* [in] */ INativeDaemonConnectorCallbacks* callbacks,

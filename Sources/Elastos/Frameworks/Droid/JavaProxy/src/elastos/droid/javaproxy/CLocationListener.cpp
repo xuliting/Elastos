@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CLocationListener::TAG("CLocationListener");
 
-CAR_INTERFACE_IMPL_2(CLocationListener, Object, IILocationListener, IBinder)
+CAR_INTERFACE_IMPL(CLocationListener, Object, IILocationListener, IBinder)
 
 CAR_OBJECT_IMPL(CLocationListener)
 

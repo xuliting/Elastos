@@ -56,7 +56,7 @@ const String DateTimeSettingsSetupWizard::EXTRA_INITIAL_AUTO_DATETIME_VALUE("ext
 //                  DateTimeSettingsSetupWizard::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(DateTimeSettingsSetupWizard::InnerListener, Object, IViewOnClickListener,
+CAR_INTERFACE_IMPL(DateTimeSettingsSetupWizard::InnerListener, Object, IViewOnClickListener,
         IAdapterViewOnItemClickListener, ICompoundButtonOnCheckedChangeListener)
 
 DateTimeSettingsSetupWizard::InnerListener::InnerListener(

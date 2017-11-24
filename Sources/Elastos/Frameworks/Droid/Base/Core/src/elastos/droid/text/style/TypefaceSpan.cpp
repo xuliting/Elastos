@@ -26,7 +26,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_3(TypefaceSpan, MetricAffectingSpan, ITypefaceSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(TypefaceSpan, MetricAffectingSpan, ITypefaceSpan, IParcelableSpan, IParcelable)
 
 TypefaceSpan::TypefaceSpan()
 {}

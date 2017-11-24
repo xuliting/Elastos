@@ -331,7 +331,7 @@ ECode GpsLocationProvider::MyListenerHelper::UnregisterFromService()
 //GpsLocationProvider::GpsStatusProviderService
 //===========================================
 
-CAR_INTERFACE_IMPL_2(GpsLocationProvider::GpsStatusProviderService, Object, IIGpsStatusProvider, IBinder)
+CAR_INTERFACE_IMPL(GpsLocationProvider::GpsStatusProviderService, Object, IIGpsStatusProvider, IBinder)
 
 ECode GpsLocationProvider::GpsStatusProviderService::constructor(
     /* [in] */ ILocationProviderInterface* host)
@@ -502,7 +502,7 @@ ECode GpsLocationProvider::MyBroadcastReceiver::OnReceive(
 //GpsLocationProvider::GpsGeofenceHardwareService
 //===========================================
 
-CAR_INTERFACE_IMPL_2(GpsLocationProvider::GpsGeofenceHardwareService, Object, IIGpsGeofenceHardware, IBinder)
+CAR_INTERFACE_IMPL(GpsLocationProvider::GpsGeofenceHardwareService, Object, IIGpsGeofenceHardware, IBinder)
 
 ECode GpsLocationProvider::GpsGeofenceHardwareService::constructor(
     /* [in] */ ILocationProviderInterface* host)
@@ -568,7 +568,7 @@ ECode GpsLocationProvider::GpsGeofenceHardwareService::ResumeHardwareGeofence(
 //GpsLocationProvider::NetInitiatedListener
 //===========================================
 
-CAR_INTERFACE_IMPL_2(GpsLocationProvider::NetInitiatedListener, Object, IINetInitiatedListener, IBinder)
+CAR_INTERFACE_IMPL(GpsLocationProvider::NetInitiatedListener, Object, IINetInitiatedListener, IBinder)
 
 ECode GpsLocationProvider::NetInitiatedListener::constructor(
     /* [in] */ ILocationProviderInterface* host)

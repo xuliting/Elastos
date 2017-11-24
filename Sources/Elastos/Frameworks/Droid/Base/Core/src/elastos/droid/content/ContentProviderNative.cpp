@@ -38,7 +38,7 @@ namespace Content {
 //==================================================================================
 // ContentProviderProxy
 //==================================================================================
-CAR_INTERFACE_IMPL_2(ContentProviderProxy, Object, IIContentProvider, IContentProviderProxy)
+CAR_INTERFACE_IMPL(ContentProviderProxy, Object, IIContentProvider, IContentProviderProxy)
 
 ContentProviderProxy::ContentProviderProxy(
     /* [in] */ IBinder* binder)
@@ -247,7 +247,7 @@ ECode ContentProviderProxy::Uncanonicalize(
 //==================================================================================
 // ContentProviderNative
 //==================================================================================
-CAR_INTERFACE_IMPL_2(ContentProviderNative, Object, IIContentProvider, IBinder)
+CAR_INTERFACE_IMPL(ContentProviderNative, Object, IIContentProvider, IBinder)
 
 AutoPtr<IIContentProvider> ContentProviderNative::AsInterface(
     /* [in] */ IBinder* binder)

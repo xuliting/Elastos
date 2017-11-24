@@ -40,7 +40,7 @@ namespace Voice {
 //VoiceInteractionSessionService::MInterface
 //=========================================
 
-CAR_INTERFACE_IMPL_2(VoiceInteractionSessionService::MInterface, Object, IIVoiceInteractionSessionService, IBinder)
+CAR_INTERFACE_IMPL(VoiceInteractionSessionService::MInterface, Object, IIVoiceInteractionSessionService, IBinder)
 
 VoiceInteractionSessionService::MInterface::MInterface(
     /* [in] */ VoiceInteractionSessionService* host)

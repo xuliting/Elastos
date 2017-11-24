@@ -42,7 +42,7 @@ namespace InCallUI {
 //================================================================
 // CVideoCallFragment::VideoCallSurface
 //================================================================
-CAR_INTERFACE_IMPL_2(CVideoCallFragment::VideoCallSurface, Object, ISurfaceTextureListener, IViewOnClickListener);
+CAR_INTERFACE_IMPL(CVideoCallFragment::VideoCallSurface, Object, ISurfaceTextureListener, IViewOnClickListener);
 
 CVideoCallFragment::VideoCallSurface::VideoCallSurface(
     /* [in] */ Int32 surfaceId,
@@ -235,7 +235,7 @@ Boolean CVideoCallFragment::sVideoSurfacesInUse = FALSE;
 AutoPtr<CVideoCallFragment::VideoCallSurface> CVideoCallFragment::sPreviewSurface;
 AutoPtr<CVideoCallFragment::VideoCallSurface> CVideoCallFragment::sDisplaySurface;
 
-CAR_INTERFACE_IMPL_3(CVideoCallFragment, BaseFragment, IVideoCallFragment, IVideoCallUi, IUi);
+CAR_INTERFACE_IMPL(CVideoCallFragment, BaseFragment, IVideoCallFragment, IVideoCallUi, IUi);
 
 CAR_OBJECT_IMPL(CVideoCallFragment)
 

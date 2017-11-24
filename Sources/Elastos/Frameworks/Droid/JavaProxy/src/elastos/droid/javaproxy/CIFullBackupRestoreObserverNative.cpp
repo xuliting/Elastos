@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIFullBackupRestoreObserverNative::TAG("CIFullBackupRestoreObserverNative");
 
-CAR_INTERFACE_IMPL_2(CIFullBackupRestoreObserverNative, Object, IIFullBackupRestoreObserver, IBinder)
+CAR_INTERFACE_IMPL(CIFullBackupRestoreObserverNative, Object, IIFullBackupRestoreObserver, IBinder)
 
 CAR_OBJECT_IMPL(CIFullBackupRestoreObserverNative)
 

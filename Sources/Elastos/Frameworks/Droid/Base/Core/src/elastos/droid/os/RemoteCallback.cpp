@@ -50,7 +50,7 @@ ECode RemoteCallback::DeliverResult::Run()
 //================================================================
 // RemoteCallback::LocalCallback
 //================================================================
-CAR_INTERFACE_IMPL_2(RemoteCallback::LocalCallback, Object, IIRemoteCallback, IBinder)
+CAR_INTERFACE_IMPL(RemoteCallback::LocalCallback, Object, IIRemoteCallback, IBinder)
 
 RemoteCallback::LocalCallback::LocalCallback()
 {}
@@ -91,7 +91,7 @@ void RemoteCallbackProxy::OnResult(
 {
 }
 
-CAR_INTERFACE_IMPL_2(RemoteCallback, Object, IParcelable, IRemoteCallback)
+CAR_INTERFACE_IMPL(RemoteCallback, Object, IParcelable, IRemoteCallback)
 
 RemoteCallback::RemoteCallback()
 {}

@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Droid {
 namespace Provider {
 
-CAR_INTERFACE_IMPL_2(CTelephonyBlacklist, Singleton, ITelephonyBlacklist, IBaseColumns);
+CAR_INTERFACE_IMPL(CTelephonyBlacklist, Singleton, ITelephonyBlacklist, IBaseColumns);
 CAR_SINGLETON_IMPL(CTelephonyBlacklist);
 
 ECode CTelephonyBlacklist::GetCONTENT_URI(

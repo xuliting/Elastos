@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Bluetooth {
 
-CAR_INTERFACE_IMPL_2(BluetoothServerSocket, Object, IBluetoothServerSocket, ICloseable);
+CAR_INTERFACE_IMPL(BluetoothServerSocket, Object, IBluetoothServerSocket, ICloseable);
 
 BluetoothServerSocket::BluetoothServerSocket()
 {

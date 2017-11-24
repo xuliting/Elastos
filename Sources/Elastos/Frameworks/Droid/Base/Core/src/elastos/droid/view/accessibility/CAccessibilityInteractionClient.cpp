@@ -94,7 +94,7 @@ static AutoPtr<IAccessibilityCache> InitsAccessibilityCache()
 }
 const AutoPtr<IAccessibilityCache> CAccessibilityInteractionClient::sAccessibilityCache = InitsAccessibilityCache();
 
-CAR_INTERFACE_IMPL_3(CAccessibilityInteractionClient, Object, IAccessibilityInteractionClient, IIAccessibilityInteractionConnectionCallback, IBinder)
+CAR_INTERFACE_IMPL(CAccessibilityInteractionClient, Object, IAccessibilityInteractionClient, IIAccessibilityInteractionConnectionCallback, IBinder)
 
 CAR_OBJECT_IMPL(CAccessibilityInteractionClient)
 

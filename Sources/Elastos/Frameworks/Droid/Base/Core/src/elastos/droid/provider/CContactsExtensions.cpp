@@ -26,7 +26,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsExtensions)
 
-CAR_INTERFACE_IMPL_3(CContactsExtensions, Singleton, IContactsExtensions, IBaseColumns, IContactsExtensionsColumns)
+CAR_INTERFACE_IMPL(CContactsExtensions, Singleton, IContactsExtensions, IBaseColumns, IContactsExtensionsColumns)
 
 ECode CContactsExtensions::constructor()
 {

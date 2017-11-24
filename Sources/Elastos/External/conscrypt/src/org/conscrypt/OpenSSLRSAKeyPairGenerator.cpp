@@ -34,7 +34,7 @@ namespace Conscrypt {
 //=========================================
 // OpenSSLRSAKeyPairGenerator::
 //=========================================
-CAR_INTERFACE_IMPL_2(OpenSSLRSAKeyPairGenerator, Object, IKeyPairGeneratorSpi, IOpenSSLRSAKeyPairGenerator)
+CAR_INTERFACE_IMPL(OpenSSLRSAKeyPairGenerator, Object, IKeyPairGeneratorSpi, IOpenSSLRSAKeyPairGenerator)
 
 OpenSSLRSAKeyPairGenerator::OpenSSLRSAKeyPairGenerator()
     : mModulusBits(2048)

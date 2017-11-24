@@ -44,7 +44,7 @@ ECode CTestSuite::MyTestCase::GetTestAnnotation(
     return E_NOT_IMPLEMENTED;
 }
 
-CAR_INTERFACE_IMPL_2(CTestSuite, Object, ITest, ITestSuite)
+CAR_INTERFACE_IMPL(CTestSuite, Object, ITest, ITestSuite)
 
 CAR_OBJECT_IMPL(CTestSuite)
 

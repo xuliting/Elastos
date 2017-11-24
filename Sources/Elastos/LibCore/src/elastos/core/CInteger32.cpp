@@ -23,7 +23,7 @@ using Elastos::Core::IntegralToString;
 namespace Elastos {
 namespace Core {
 
-CAR_INTERFACE_IMPL_4(CInteger32, Object,IInteger32, INumber, ISerializable, IComparable)
+CAR_INTERFACE_IMPL(CInteger32, Object,IInteger32, INumber, ISerializable, IComparable)
 
 CAR_OBJECT_IMPL(CInteger32)
 

@@ -355,7 +355,7 @@ ECode SpellChecker::SpellCheckerRunnable::Run()
 //                SpellChecker
 //=====================================================================
 
-CAR_INTERFACE_IMPL_2(SpellChecker, Object, ISpellChecker, ISpellCheckerSessionListener)
+CAR_INTERFACE_IMPL(SpellChecker, Object, ISpellChecker, ISpellCheckerSessionListener)
 
 SpellChecker::SpellChecker ()
     : mIsSentenceSpellCheckSupported(FALSE)

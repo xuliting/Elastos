@@ -23,7 +23,7 @@ using Elastos::Core::StringUtils;
 namespace Elastos {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(SocketImpl, Object, ISocketImpl, ISocketOptions)
+CAR_INTERFACE_IMPL(SocketImpl, Object, ISocketImpl, ISocketOptions)
 
 SocketImpl::SocketImpl()
     : mStreaming(TRUE)

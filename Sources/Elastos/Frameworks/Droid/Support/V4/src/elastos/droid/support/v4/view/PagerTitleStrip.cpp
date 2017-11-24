@@ -119,7 +119,7 @@ ECode PagerTitleStrip::PagerTitleStripImplIcs::SetSingleLineAllCaps(
 //                  PagerTitleStrip::PageListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(PagerTitleStrip::PageListener, DataSetObserver, IViewPagerOnPageChangeListener, IViewPagerOnAdapterChangeListener)
+CAR_INTERFACE_IMPL(PagerTitleStrip::PageListener, DataSetObserver, IViewPagerOnPageChangeListener, IViewPagerOnAdapterChangeListener)
 
 PagerTitleStrip::PageListener::PageListener(
     /* [in] */ PagerTitleStrip* host)
@@ -192,7 +192,7 @@ ECode PagerTitleStrip::PageListener::OnChanged()
 //                  PagerTitleStrip
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(PagerTitleStrip, ViewGroup, IPagerTitleStrip, IViewPagerDecor)
+CAR_INTERFACE_IMPL(PagerTitleStrip, ViewGroup, IPagerTitleStrip, IViewPagerDecor)
 
 PagerTitleStrip::PagerTitleStrip()
     : mTextColor(0)

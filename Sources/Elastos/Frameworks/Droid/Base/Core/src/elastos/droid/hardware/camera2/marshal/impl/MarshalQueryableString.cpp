@@ -139,7 +139,7 @@ const Boolean MarshalQueryableString::VERBOSE = FALSE;// Log.isLoggable(TAG, Log
 const AutoPtr<ICharset> MarshalQueryableString::UTF8_CHARSET = initCharset();
 const Byte MarshalQueryableString::NUL = (Byte)'\0'; // used as string terminator
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableString, Object, IMarshalQueryableString, IMarshalQueryable)
+CAR_INTERFACE_IMPL(MarshalQueryableString, Object, IMarshalQueryableString, IMarshalQueryable)
 
 
 ECode MarshalQueryableString::CreateMarshaler(

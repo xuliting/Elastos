@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIVoiceInteractorNative::TAG("CIVoiceInteractorNative");
 
-CAR_INTERFACE_IMPL_2(CIVoiceInteractorNative, Object, IIVoiceInteractor, IBinder)
+CAR_INTERFACE_IMPL(CIVoiceInteractorNative, Object, IIVoiceInteractor, IBinder)
 
 CAR_OBJECT_IMPL(CIVoiceInteractorNative)
 

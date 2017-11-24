@@ -460,7 +460,7 @@ ECode CService::ECDHEKeyXListener::Completed(
 //======================================================================
 //  CService::SecureService
 //======================================================================
-CAR_INTERFACE_IMPL_2(CService::SecureService, Object, ISecureInterface, IBusObject)
+CAR_INTERFACE_IMPL(CService::SecureService, Object, ISecureInterface, IBusObject)
 CAR_OBJECT_IMPL(CSecureService)
 
 ECode CService::SecureService::constructor(

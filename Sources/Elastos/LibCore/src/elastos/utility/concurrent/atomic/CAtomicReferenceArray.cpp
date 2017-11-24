@@ -32,7 +32,7 @@ const Int32 CAtomicReferenceArray::sBase = 0;
 const Int32 CAtomicReferenceArray::sShift = 0;
 const Int64 CAtomicReferenceArray::sArrayFieldOffset = 0;
 
-CAR_INTERFACE_IMPL_2(CAtomicReferenceArray, Object, IAtomicReferenceArray, ISerializable)
+CAR_INTERFACE_IMPL(CAtomicReferenceArray, Object, IAtomicReferenceArray, ISerializable)
 
 CAR_OBJECT_IMPL(CAtomicReferenceArray)
 

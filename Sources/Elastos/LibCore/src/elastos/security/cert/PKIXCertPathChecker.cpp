@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Security {
 namespace Cert {
 
-CAR_INTERFACE_IMPL_2(PKIXCertPathChecker, Object, IPKIXCertPathChecker, ICloneable)
+CAR_INTERFACE_IMPL(PKIXCertPathChecker, Object, IPKIXCertPathChecker, ICloneable)
 
 PKIXCertPathChecker::PKIXCertPathChecker()
 {}

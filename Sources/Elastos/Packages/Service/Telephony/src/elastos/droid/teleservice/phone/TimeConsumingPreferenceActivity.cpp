@@ -72,7 +72,7 @@ const Int32 TimeConsumingPreferenceActivity::RESPONSE_ERROR = 400;
 const Int32 TimeConsumingPreferenceActivity::RADIO_OFF_ERROR = 500;
 const Int32 TimeConsumingPreferenceActivity::FDN_CHECK_FAILURE = 600;
 
-CAR_INTERFACE_IMPL_2(TimeConsumingPreferenceActivity, PreferenceActivity,
+CAR_INTERFACE_IMPL(TimeConsumingPreferenceActivity, PreferenceActivity,
         ITimeConsumingPreferenceListener, IDialogInterfaceOnCancelListener)
 
 TimeConsumingPreferenceActivity::TimeConsumingPreferenceActivity()

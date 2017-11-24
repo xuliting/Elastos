@@ -53,7 +53,7 @@ namespace Droid {
 namespace SystemUI {
 namespace Usb {
 
-CAR_INTERFACE_IMPL_2(UsbPermissionActivity::InnerListener, Object,
+CAR_INTERFACE_IMPL(UsbPermissionActivity::InnerListener, Object,
     IDialogInterfaceOnClickListener, ICompoundButtonOnCheckedChangeListener)
 
 UsbPermissionActivity::InnerListener::InnerListener(

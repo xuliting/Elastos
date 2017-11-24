@@ -143,7 +143,7 @@ ECode ArrayAdapter::ArrayFilter::PublishResults(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(ArrayAdapter, BaseAdapter, IArrayAdapter, IFilterable);
+CAR_INTERFACE_IMPL(ArrayAdapter, BaseAdapter, IArrayAdapter, IFilterable);
 ArrayAdapter::ArrayAdapter()
     : mResource(0)
     , mDropDownResource(0)

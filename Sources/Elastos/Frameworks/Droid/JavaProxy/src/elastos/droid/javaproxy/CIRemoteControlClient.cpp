@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIRemoteControlClient::TAG("CIRemoteControlClient");
 
-CAR_INTERFACE_IMPL_2(CIRemoteControlClient, Object, IIRemoteControlClient, IBinder)
+CAR_INTERFACE_IMPL(CIRemoteControlClient, Object, IIRemoteControlClient, IBinder)
 
 CAR_OBJECT_IMPL(CIRemoteControlClient)
 

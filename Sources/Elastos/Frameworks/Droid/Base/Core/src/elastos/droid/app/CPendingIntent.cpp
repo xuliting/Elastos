@@ -48,7 +48,7 @@ namespace App {
 //============================================================================
 //              CPendingIntent
 //============================================================================
-CAR_INTERFACE_IMPL_2(CPendingIntent, Object, IPendingIntent, IParcelable)
+CAR_INTERFACE_IMPL(CPendingIntent, Object, IPendingIntent, IParcelable)
 
 CAR_OBJECT_IMPL(CPendingIntent)
 

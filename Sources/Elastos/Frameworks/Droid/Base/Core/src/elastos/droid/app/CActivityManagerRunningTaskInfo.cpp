@@ -29,7 +29,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CActivityManagerRunningTaskInfo, Object, IActivityManagerRunningTaskInfo, IParcelable)
+CAR_INTERFACE_IMPL(CActivityManagerRunningTaskInfo, Object, IActivityManagerRunningTaskInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CActivityManagerRunningTaskInfo)
 

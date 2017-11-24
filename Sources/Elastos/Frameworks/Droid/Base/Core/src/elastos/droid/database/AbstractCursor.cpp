@@ -76,7 +76,7 @@ ECode AbstractCursor::SelfContentObserver::OnChange(
 // AbstractCursor
 //=========================================================================================
 
-CAR_INTERFACE_IMPL_4(AbstractCursor, Object, IAbstractCursor, ICrossProcessCursor, ICursor, ICloseable);
+CAR_INTERFACE_IMPL(AbstractCursor, Object, IAbstractCursor, ICrossProcessCursor, ICursor, ICloseable);
 
 AbstractCursor::AbstractCursor()
     : mPos(-1)

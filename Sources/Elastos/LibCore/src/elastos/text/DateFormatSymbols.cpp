@@ -51,7 +51,7 @@ using Libcore::ICU::TimeZoneNames;
 namespace Elastos {
 namespace Text {
 
-CAR_INTERFACE_IMPL_3(DateFormatSymbols, Object, IDateFormatSymbols, ICloneable, ISerializable)
+CAR_INTERFACE_IMPL(DateFormatSymbols, Object, IDateFormatSymbols, ICloneable, ISerializable)
 
 DateFormatSymbols::DateFormatSymbols()
 {

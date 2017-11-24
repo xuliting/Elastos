@@ -45,7 +45,7 @@ static AutoPtr<IBasicLineParser> InitDefault()
 }
 const AutoPtr<IBasicLineParser> BasicLineParser::DEFAULT = InitDefault();
 
-CAR_INTERFACE_IMPL_2(BasicLineParser, Object, IBasicLineParser, ILineParser)
+CAR_INTERFACE_IMPL(BasicLineParser, Object, IBasicLineParser, ILineParser)
 
 ECode BasicLineParser::ParseProtocolVersion(
     /* [in] */ const String& value,

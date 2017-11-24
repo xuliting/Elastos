@@ -29,7 +29,7 @@ namespace Utility {
 // CArrayDeque::DeqIterator
 //====================================================================
 
-CAR_INTERFACE_IMPL_4(CArrayDeque, AbstractCollection, IArrayDeque, IDeque, ICloneable, ISerializable)
+CAR_INTERFACE_IMPL(CArrayDeque, AbstractCollection, IArrayDeque, IDeque, ICloneable, ISerializable)
 
 CAR_OBJECT_IMPL(CArrayDeque)
 

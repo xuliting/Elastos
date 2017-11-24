@@ -30,7 +30,7 @@ namespace Apache {
 namespace Http {
 namespace Message {
 
-CAR_INTERFACE_IMPL_2(BasicHeaderElement, Object, IHeaderElement, ICloneable)
+CAR_INTERFACE_IMPL(BasicHeaderElement, Object, IHeaderElement, ICloneable)
 
 ECode BasicHeaderElement::constructor(
     /* [in] */ const String& name,

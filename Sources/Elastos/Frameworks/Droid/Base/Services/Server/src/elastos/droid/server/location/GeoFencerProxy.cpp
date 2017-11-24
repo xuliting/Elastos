@@ -62,7 +62,7 @@ ECode GeoFencerProxy::ServiceConnection::OnServiceDisconnected(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(GeoFencerProxy::GeoFenceListener, Object, IIGeoFenceListener, IBinder)
+CAR_INTERFACE_IMPL(GeoFencerProxy::GeoFenceListener, Object, IIGeoFenceListener, IBinder)
 
 ECode GeoFencerProxy::GeoFenceListener::constructor(
     /* [in] */ Handle64 host)

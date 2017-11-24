@@ -22,7 +22,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(KeySet, Object, IKeySet, IParcelable)
+CAR_INTERFACE_IMPL(KeySet, Object, IKeySet, IParcelable)
 
 ECode KeySet::constructor(
     /* [in] */ IBinder* token)

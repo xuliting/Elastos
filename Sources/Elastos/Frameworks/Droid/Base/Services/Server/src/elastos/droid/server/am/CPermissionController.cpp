@@ -27,7 +27,7 @@ namespace Droid {
 namespace Server {
 namespace Am {
 
-CAR_INTERFACE_IMPL_2(CPermissionController, Object, IPermissionController, IBinder)
+CAR_INTERFACE_IMPL(CPermissionController, Object, IPermissionController, IBinder)
 CAR_OBJECT_IMPL(CPermissionController)
 
 ECode CPermissionController::constructor(

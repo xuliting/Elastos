@@ -420,7 +420,7 @@ ECode WifiSettings::ViewOnClickListener::OnClick(
 //                  WifiSettings
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(WifiSettings, RestrictedSettingsFragment,
+CAR_INTERFACE_IMPL(WifiSettings, RestrictedSettingsFragment,
         IDialogInterfaceOnClickListener, IIndexable);
 
 WifiSettings::WifiSettings()

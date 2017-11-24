@@ -43,7 +43,7 @@ namespace Utility {
 AutoPtr<ISecureRandom> CUUID::sRng;
 Object CUUID::sRngLock;
 
-CAR_INTERFACE_IMPL_3(CUUID, Object, IUUID, IComparable, ISerializable)
+CAR_INTERFACE_IMPL(CUUID, Object, IUUID, IComparable, ISerializable)
 
 CAR_OBJECT_IMPL(CUUID)
 

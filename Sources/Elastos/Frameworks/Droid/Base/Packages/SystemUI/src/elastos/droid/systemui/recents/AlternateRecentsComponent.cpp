@@ -151,7 +151,7 @@ const String AlternateRecentsComponent::sRecentsActivity("Elastos.Droid.SystemUI
 AutoPtr<IBitmap> AlternateRecentsComponent::sLastScreenshot;
 AutoPtr<IRecentsComponentCallbacks> AlternateRecentsComponent::sRecentsComponentCallbacks;
 
-CAR_INTERFACE_IMPL_2(AlternateRecentsComponent, Object, IActivityOptionsOnAnimationStartedListener, \
+CAR_INTERFACE_IMPL(AlternateRecentsComponent, Object, IActivityOptionsOnAnimationStartedListener, \
     IAlternateRecentsComponent)
 
 AlternateRecentsComponent::AlternateRecentsComponent(

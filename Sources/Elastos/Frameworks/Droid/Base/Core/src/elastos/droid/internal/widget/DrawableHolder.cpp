@@ -47,7 +47,7 @@ const String DrawableHolder::TAG("DrawableHolder");
 
 const AutoPtr<IDecelerateInterpolator> DrawableHolder::EASE_OUT_INTERPOLATOR = CreateInterpolator();
 
-CAR_INTERFACE_IMPL_2(DrawableHolder, Object, IDrawableHolder, IAnimatorListener);
+CAR_INTERFACE_IMPL(DrawableHolder, Object, IDrawableHolder, IAnimatorListener);
 
 DrawableHolder::DrawableHolder()
     : mX(0.0f)

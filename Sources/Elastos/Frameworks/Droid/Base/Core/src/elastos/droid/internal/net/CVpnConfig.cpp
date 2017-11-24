@@ -58,7 +58,7 @@ namespace Droid {
 namespace Internal {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(CVpnConfig, Object, IVpnConfig, IParcelable)
+CAR_INTERFACE_IMPL(CVpnConfig, Object, IVpnConfig, IParcelable)
 
 CAR_OBJECT_IMPL(CVpnConfig)
 

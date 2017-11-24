@@ -25,7 +25,7 @@ namespace Droid {
 namespace Hardware {
 namespace Input {
 
-CAR_INTERFACE_IMPL_2(InputDeviceIdentifier, Object, IInputDeviceIdentifier, IParcelable)
+CAR_INTERFACE_IMPL(InputDeviceIdentifier, Object, IInputDeviceIdentifier, IParcelable)
 
 InputDeviceIdentifier::InputDeviceIdentifier()
     : mVendorId(0)

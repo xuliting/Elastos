@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIRotationWatcherNative::TAG("CIRotationWatcherNative");
 
-CAR_INTERFACE_IMPL_2(CIRotationWatcherNative, Object, IRotationWatcher, IBinder)
+CAR_INTERFACE_IMPL(CIRotationWatcherNative, Object, IRotationWatcher, IBinder)
 
 CAR_OBJECT_IMPL(CIRotationWatcherNative)
 

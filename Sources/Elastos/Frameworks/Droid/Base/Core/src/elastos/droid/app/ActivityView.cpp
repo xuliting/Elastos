@@ -156,7 +156,7 @@ ECode ActivityView::AllActivitiesCompleteRunnable::Run()
 // ActivityView::ActivityContainerCallback
 //=========================================================================
 
-CAR_INTERFACE_IMPL_2(ActivityView::ActivityContainerCallback, Object, IActivityContainerCallback, IBinder)
+CAR_INTERFACE_IMPL(ActivityView::ActivityContainerCallback, Object, IActivityContainerCallback, IBinder)
 
 ActivityView::ActivityContainerCallback::ActivityContainerCallback()
 {

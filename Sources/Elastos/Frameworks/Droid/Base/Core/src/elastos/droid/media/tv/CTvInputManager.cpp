@@ -215,7 +215,7 @@ ECode CTvInputManager::PostInputUpdatedRunnable::Run()
 // CTvInputManager::TvInputHardwareCallback
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CTvInputManager::TvInputClient, Object, IITvInputClient, IBinder)
+CAR_INTERFACE_IMPL(CTvInputManager::TvInputClient, Object, IITvInputClient, IBinder)
 
 ECode CTvInputManager::TvInputClient::OnSessionCreated(
     /* [in] */ const String& inputId,
@@ -442,7 +442,7 @@ ECode CTvInputManager::TvInputClient::ToString(
 // CTvInputManager::TvInputManagerCallback
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CTvInputManager::TvInputManagerCallback, Object, IITvInputManagerCallback, IBinder)
+CAR_INTERFACE_IMPL(CTvInputManager::TvInputManagerCallback, Object, IITvInputManagerCallback, IBinder)
 
 ECode CTvInputManager::TvInputManagerCallback::OnInputStateChanged(
     /* [in] */ const String& inputId,
@@ -533,7 +533,7 @@ ECode CTvInputManager::TvInputManagerCallback::ToString(
 // CTvInputManager::TvInputHardwareCallback
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CTvInputManager::TvInputHardwareCallback, Object, IITvInputHardwareCallback, IBinder)
+CAR_INTERFACE_IMPL(CTvInputManager::TvInputHardwareCallback, Object, IITvInputHardwareCallback, IBinder)
 
 ECode CTvInputManager::TvInputHardwareCallback::OnReleased()
 {

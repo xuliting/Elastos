@@ -32,7 +32,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(BaseNetworkStateTracker, Object, INetworkStateTracker, IBaseNetworkStateTracker)
+CAR_INTERFACE_IMPL(BaseNetworkStateTracker, Object, INetworkStateTracker, IBaseNetworkStateTracker)
 
 BaseNetworkStateTracker::BaseNetworkStateTracker()
     : mContext(NULL)

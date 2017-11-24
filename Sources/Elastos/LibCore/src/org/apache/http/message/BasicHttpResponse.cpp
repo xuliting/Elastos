@@ -27,7 +27,7 @@ namespace Apache {
 namespace Http {
 namespace Message {
 
-CAR_INTERFACE_IMPL_2(BasicHttpResponse, AbstractHttpMessage, IBasicHttpResponse, IHttpResponse)
+CAR_INTERFACE_IMPL(BasicHttpResponse, AbstractHttpMessage, IBasicHttpResponse, IHttpResponse)
 
 ECode BasicHttpResponse::Init(
     /* [in] */ IStatusLine* statusline,

@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace Ims {
 
-CAR_INTERFACE_IMPL_2(CImsCallForwardInfo, Object, IImsCallForwardInfo, IParcelable)
+CAR_INTERFACE_IMPL(CImsCallForwardInfo, Object, IImsCallForwardInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CImsCallForwardInfo)
 

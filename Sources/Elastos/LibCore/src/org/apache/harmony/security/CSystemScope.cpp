@@ -25,7 +25,7 @@ namespace Security {
 
 CAR_OBJECT_IMPL(CSystemScope)
 
-CAR_INTERFACE_IMPL_2(CSystemScope, Object, ISystemScope, IIdentityScope)
+CAR_INTERFACE_IMPL(CSystemScope, Object, ISystemScope, IIdentityScope)
 
 ECode CSystemScope::AddCertificate(
     /* [in] */ ICertificate * pCertificate)

@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace Text {
 
-CAR_INTERFACE_IMPL_2(CBoringLayoutMetrics, Object, IBoringLayoutMetrics, IPaintFontMetricsInt)
+CAR_INTERFACE_IMPL(CBoringLayoutMetrics, Object, IBoringLayoutMetrics, IPaintFontMetricsInt)
 
 CAR_OBJECT_IMPL(CBoringLayoutMetrics)
 

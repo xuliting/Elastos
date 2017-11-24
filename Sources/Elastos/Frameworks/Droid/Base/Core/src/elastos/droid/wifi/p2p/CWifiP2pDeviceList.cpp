@@ -28,7 +28,7 @@ namespace Droid {
 namespace Wifi {
 namespace P2p {
 
-CAR_INTERFACE_IMPL_2(CWifiP2pDeviceList, Object, IWifiP2pDeviceList, IParcelable)
+CAR_INTERFACE_IMPL(CWifiP2pDeviceList, Object, IWifiP2pDeviceList, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiP2pDeviceList)
 

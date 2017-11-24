@@ -55,7 +55,7 @@ const Boolean NtpTrustedTime::LOGD = FALSE;
 AutoPtr<NtpTrustedTime> NtpTrustedTime::sSingleton;
 Object NtpTrustedTime::mLock;
 
-CAR_INTERFACE_IMPL_2(NtpTrustedTime, Object, INtpTrustedTime, ITrustedTime)
+CAR_INTERFACE_IMPL(NtpTrustedTime, Object, INtpTrustedTime, ITrustedTime)
 
 NtpTrustedTime::NtpTrustedTime(
     /* [in] */ const String& server,

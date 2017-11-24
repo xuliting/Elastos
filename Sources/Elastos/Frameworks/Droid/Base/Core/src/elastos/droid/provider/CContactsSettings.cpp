@@ -34,7 +34,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsSettings)
 
-CAR_INTERFACE_IMPL_3(CContactsSettings, Singleton, IBaseColumns, IContactsSettings, IContactsSettingsColumns)
+CAR_INTERFACE_IMPL(CContactsSettings, Singleton, IBaseColumns, IContactsSettings, IContactsSettingsColumns)
 
 ECode CContactsSettings::constructor()
 {

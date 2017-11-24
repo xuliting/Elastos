@@ -55,7 +55,7 @@ static const String TAG("TaskStackView");
 //=======================================================
 // TaskStackView::Wrapper
 //=======================================================
-CAR_INTERFACE_IMPL_5(TaskStackView::Wrapper, Object, ITaskStackCallbacks, ITaskViewCallbacks,
+CAR_INTERFACE_IMPL(TaskStackView::Wrapper, Object, ITaskStackCallbacks, ITaskViewCallbacks,
     ITaskStackViewScrollerCallbacks, IViewPoolConsumer, IPackageCallbacks)
 
 TaskStackView::Wrapper::Wrapper(

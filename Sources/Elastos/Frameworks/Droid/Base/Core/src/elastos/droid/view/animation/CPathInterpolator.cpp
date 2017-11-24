@@ -41,7 +41,7 @@ const Float CPathInterpolator::PRECISION = 0.002f;
 
 CAR_OBJECT_IMPL(CPathInterpolator);
 
-CAR_INTERFACE_IMPL_3(CPathInterpolator, Object, IPathInterpolator, IInterpolator, ITimeInterpolator);
+CAR_INTERFACE_IMPL(CPathInterpolator, Object, IPathInterpolator, IInterpolator, ITimeInterpolator);
 
 CPathInterpolator::CPathInterpolator()
 {}

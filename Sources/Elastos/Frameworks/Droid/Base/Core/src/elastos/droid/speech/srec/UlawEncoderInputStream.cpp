@@ -31,7 +31,7 @@ const String UlawEncoderInputStream::TAG("UlawEncoderInputStream");
 const Int32 UlawEncoderInputStream::MAX_ULAW = 8192;
 const Int32 UlawEncoderInputStream::SCALE_BITS = 16;
 
-CAR_INTERFACE_IMPL_2(UlawEncoderInputStream, Object, IInputStream, IUlawEncoderInputStream);
+CAR_INTERFACE_IMPL(UlawEncoderInputStream, Object, IInputStream, IUlawEncoderInputStream);
 
 UlawEncoderInputStream::UlawEncoderInputStream()
 {}

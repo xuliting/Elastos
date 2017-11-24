@@ -83,7 +83,7 @@ ECode ExternalMediaFormatActivity::OnClickListener::OnClick(
 
 const Int32 ExternalMediaFormatActivity::POSITIVE_BUTTON = IDialogInterface::BUTTON_POSITIVE;
 
-CAR_INTERFACE_IMPL_2(ExternalMediaFormatActivity, AlertActivity, IExternalMediaFormatActivity,
+CAR_INTERFACE_IMPL(ExternalMediaFormatActivity, AlertActivity, IExternalMediaFormatActivity,
     IDialogInterfaceOnClickListener)
 
 ExternalMediaFormatActivity::ExternalMediaFormatActivity()

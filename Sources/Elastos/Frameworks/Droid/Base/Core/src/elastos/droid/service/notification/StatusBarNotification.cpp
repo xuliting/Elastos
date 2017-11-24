@@ -33,7 +33,7 @@ namespace Droid {
 namespace Service {
 namespace Notification {
 
-CAR_INTERFACE_IMPL_3(StatusBarNotification, Object, IStatusBarNotification, IParcelable, ICloneable)
+CAR_INTERFACE_IMPL(StatusBarNotification, Object, IStatusBarNotification, IParcelable, ICloneable)
 
 StatusBarNotification::StatusBarNotification()
     : mId(0)

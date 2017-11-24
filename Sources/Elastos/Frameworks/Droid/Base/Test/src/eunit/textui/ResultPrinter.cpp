@@ -29,7 +29,7 @@ using Eunit::Framework::EIID_ITestListener;
 namespace Eunit {
 namespace Textui {
 
-CAR_INTERFACE_IMPL_2(ResultPrinter, Object, ITestListener, IResultPrinter)
+CAR_INTERFACE_IMPL(ResultPrinter, Object, ITestListener, IResultPrinter)
 
 void ResultPrinter::Print(
     /* [in] */ ITestResult* result,

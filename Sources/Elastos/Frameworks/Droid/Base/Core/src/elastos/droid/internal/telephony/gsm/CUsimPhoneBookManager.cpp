@@ -93,7 +93,7 @@ const Int32 CUsimPhoneBookManager::ANR_EXTENSION_ID;
 const Int32 CUsimPhoneBookManager::ANR_ADN_SFI_ID;
 const Int32 CUsimPhoneBookManager::ANR_ADN_RECORD_IDENTIFIER_ID;
 
-CAR_INTERFACE_IMPL_2(CUsimPhoneBookManager, Handler, IUsimPhoneBookManager, IIccConstants)
+CAR_INTERFACE_IMPL(CUsimPhoneBookManager, Handler, IUsimPhoneBookManager, IIccConstants)
 
 CAR_OBJECT_IMPL(CUsimPhoneBookManager)
 

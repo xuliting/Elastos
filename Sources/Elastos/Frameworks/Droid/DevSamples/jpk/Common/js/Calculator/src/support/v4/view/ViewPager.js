@@ -83,7 +83,7 @@ ECode ViewPager::ItemInfoComparator::Compare(
 // ViewPager::MyInterpolator
 //=================================================================
 
-CAR_INTERFACE_IMPL_2(ViewPager::MyInterpolator, Object, IInterpolator, ITimeInterpolator)
+CAR_INTERFACE_IMPL(ViewPager::MyInterpolator, Object, IInterpolator, ITimeInterpolator)
 
 ECode ViewPager::MyInterpolator::GetInterpolation(
     /* [in] */ Float t,

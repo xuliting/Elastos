@@ -41,7 +41,7 @@ AutoPtr<IWorkSource> CWorkSource::sGoneWork;
 const String CWorkSource::TAG("WorkSource");
 const Boolean CWorkSource::DEBUG = FALSE;
 
-CAR_INTERFACE_IMPL_2(CWorkSource, Object, IWorkSource, IParcelable)
+CAR_INTERFACE_IMPL(CWorkSource, Object, IWorkSource, IParcelable)
 
 CAR_OBJECT_IMPL(CWorkSource)
 

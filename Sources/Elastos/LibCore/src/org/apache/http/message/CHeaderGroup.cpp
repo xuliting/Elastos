@@ -32,7 +32,7 @@ namespace Apache {
 namespace Http {
 namespace Message {
 
-CAR_INTERFACE_IMPL_2(CHeaderGroup, Object, IHeaderGroup, ICloneable)
+CAR_INTERFACE_IMPL(CHeaderGroup, Object, IHeaderGroup, ICloneable)
 
 CAR_OBJECT_IMPL(CHeaderGroup)
 

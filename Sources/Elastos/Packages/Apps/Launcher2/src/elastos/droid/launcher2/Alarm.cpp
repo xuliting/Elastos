@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Launcher2 {
 
-CAR_INTERFACE_IMPL_2(Alarm, Object, IAlarm, IRunnable);
+CAR_INTERFACE_IMPL(Alarm, Object, IAlarm, IRunnable);
 
 Alarm::Alarm()
     : mAlarmTriggerTime(0)

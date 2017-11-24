@@ -42,7 +42,7 @@ const Int32 CAccessibilityEvent::MAX_POOL_SIZE = 10;
 AutoPtr< Pools::SynchronizedPool<IAccessibilityEvent> > CAccessibilityEvent::sPool =
         new Pools::SynchronizedPool<IAccessibilityEvent>(MAX_POOL_SIZE);
 
-CAR_INTERFACE_IMPL_2(CAccessibilityEvent, AccessibilityRecord, IAccessibilityEvent, IParcelable)
+CAR_INTERFACE_IMPL(CAccessibilityEvent, AccessibilityRecord, IAccessibilityEvent, IParcelable)
 
 CAR_OBJECT_IMPL(CAccessibilityEvent)
 

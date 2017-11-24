@@ -71,7 +71,7 @@ const AutoPtr< ArrayOf<String> > CClipData::MIMETYPES_TEXT_INTENT = InitMimeType
 
 const String CClipData::TAG("CClipData");
 
-CAR_INTERFACE_IMPL_2(CClipData, Object, IClipData, IParcelable)
+CAR_INTERFACE_IMPL(CClipData, Object, IClipData, IParcelable)
 
 CAR_OBJECT_IMPL(CClipData)
 

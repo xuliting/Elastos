@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CFragmentManagerState, Object, IFragmentManagerState, IParcelable)
+CAR_INTERFACE_IMPL(CFragmentManagerState, Object, IFragmentManagerState, IParcelable)
 
 CAR_OBJECT_IMPL(CFragmentManagerState)
 

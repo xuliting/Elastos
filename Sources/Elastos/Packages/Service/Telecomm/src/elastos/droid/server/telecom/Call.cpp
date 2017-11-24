@@ -337,7 +337,7 @@ ECode Call::SubResponse::OnError(
 //=============================================================================
 // Call
 //=============================================================================
-CAR_INTERFACE_IMPL_2(Call, Object, ICreateConnectionResponse, ICall)
+CAR_INTERFACE_IMPL(Call, Object, ICreateConnectionResponse, ICall)
 
 const String Call::KEY_OEM_EXTRAS("OEMExtras");
 AutoPtr<ICallerInfoAsyncQueryOnQueryCompleteListener> Call::sCallerInfoQueryListener = new SubCallerInfoAsyncQueryOnQueryCompleteListener();

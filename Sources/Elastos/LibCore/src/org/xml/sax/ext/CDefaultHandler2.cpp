@@ -21,7 +21,7 @@ namespace Xml {
 namespace Sax {
 namespace Ext {
 
-CAR_INTERFACE_IMPL_3(CDefaultHandler2, DefaultHandler, ILexicalHandler, IDeclHandler, IEntityResolver2)
+CAR_INTERFACE_IMPL(CDefaultHandler2, DefaultHandler, ILexicalHandler, IDeclHandler, IEntityResolver2)
 
 CAR_OBJECT_IMPL(CDefaultHandler2)
 

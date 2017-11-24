@@ -238,7 +238,7 @@ void LayerDrawable::LayerState::InvalidateCache()
 //=====================================================================
 // LayerDrawable
 //=====================================================================
-CAR_INTERFACE_IMPL_2(LayerDrawable, Drawable, ILayerDrawable, IDrawableCallback);
+CAR_INTERFACE_IMPL(LayerDrawable, Drawable, ILayerDrawable, IDrawableCallback);
 LayerDrawable::LayerDrawable()
     : mOpacityOverride(IPixelFormat::UNKNOWN)
     , mMutated(FALSE)

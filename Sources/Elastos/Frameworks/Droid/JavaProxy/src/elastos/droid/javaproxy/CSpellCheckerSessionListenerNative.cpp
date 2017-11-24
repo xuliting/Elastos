@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CSpellCheckerSessionListenerNative::TAG("CSpellCheckerSessionListenerNative");
 
-CAR_INTERFACE_IMPL_2(CSpellCheckerSessionListenerNative, Object, IISpellCheckerSessionListener, IBinder)
+CAR_INTERFACE_IMPL(CSpellCheckerSessionListenerNative, Object, IISpellCheckerSessionListener, IBinder)
 
 CAR_OBJECT_IMPL(CSpellCheckerSessionListenerNative)
 

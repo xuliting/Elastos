@@ -79,7 +79,7 @@ namespace Media {
 //  RingtonePickerActivity::InnerListener
 //===========================================================
 
-CAR_INTERFACE_IMPL_3(RingtonePickerActivity::InnerListener, Object, \
+CAR_INTERFACE_IMPL(RingtonePickerActivity::InnerListener, Object, \
         IDialogInterfaceOnClickListener,
         IAdapterViewOnItemSelectedListener,
         IAlertControllerAlertParamsOnPrepareListViewListener)

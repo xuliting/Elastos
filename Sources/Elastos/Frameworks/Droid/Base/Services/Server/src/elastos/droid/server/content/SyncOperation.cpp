@@ -72,7 +72,7 @@ AutoPtr<ArrayOf<String> > InitREASON_NAMES()
 
 AutoPtr<ArrayOf<String> > SyncOperation::REASON_NAMES = InitREASON_NAMES();
 
-CAR_INTERFACE_IMPL_2(SyncOperation, Object, ISyncOperation, IComparable)
+CAR_INTERFACE_IMPL(SyncOperation, Object, ISyncOperation, IComparable)
 
 SyncOperation::SyncOperation(
     /* [in] */ IAccount* account,

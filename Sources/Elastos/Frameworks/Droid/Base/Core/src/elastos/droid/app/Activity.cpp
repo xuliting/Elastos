@@ -212,7 +212,7 @@ const String Activity::SAVED_DIALOGS_TAG("android:savedDialogs");
 const String Activity::SAVED_DIALOG_KEY_PREFIX("android:dialog_");
 const String Activity::SAVED_DIALOG_ARGS_KEY_PREFIX("android:dialog_args_");
 
-CAR_INTERFACE_IMPL_9(Activity, ContextThemeWrapper, IActivity, ILayoutInflaterFactory, \
+CAR_INTERFACE_IMPL(Activity, ContextThemeWrapper, IActivity, ILayoutInflaterFactory, \
     ILayoutInflaterFactory2, IWindowCallback, IKeyEventCallback, IViewOnCreateContextMenuListener, \
     IComponentCallbacks, IComponentCallbacks2, IOnWindowDismissedCallback)
 

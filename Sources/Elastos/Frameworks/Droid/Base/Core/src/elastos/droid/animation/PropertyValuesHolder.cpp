@@ -160,7 +160,7 @@ AutoPtr< ArrayOf<InterfaceID> > PropertyValuesHolder::DOUBLE_VARIANTS = Init_DOU
 PropertyValuesHolder::ClassMethodMap PropertyValuesHolder::sSetterPropertyMap;
 PropertyValuesHolder::ClassMethodMap PropertyValuesHolder::sGetterPropertyMap;
 
-CAR_INTERFACE_IMPL_2(PropertyValuesHolder, Object, IPropertyValuesHolder, ICloneable);
+CAR_INTERFACE_IMPL(PropertyValuesHolder, Object, IPropertyValuesHolder, ICloneable);
 
 PropertyValuesHolder::PropertyValuesHolder(
     /* [in] */ const String& propertyName)

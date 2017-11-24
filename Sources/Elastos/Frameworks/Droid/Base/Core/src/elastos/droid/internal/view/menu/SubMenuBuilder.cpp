@@ -24,7 +24,7 @@ namespace Internal {
 namespace View {
 namespace Menu {
 
-CAR_INTERFACE_IMPL_2(SubMenuBuilder, MenuBuilder, ISubMenuBuilder, ISubMenu)
+CAR_INTERFACE_IMPL(SubMenuBuilder, MenuBuilder, ISubMenuBuilder, ISubMenu)
 
 ECode SubMenuBuilder::constructor(
     /* [in] */ IContext* context,

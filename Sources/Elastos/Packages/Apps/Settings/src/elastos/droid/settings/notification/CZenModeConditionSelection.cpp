@@ -52,7 +52,7 @@ namespace Notification {
 //                  CZenModeConditionSelection::ConditionListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CZenModeConditionSelection::ConditionListener, Object, IIConditionListener, IBinder)
+CAR_INTERFACE_IMPL(CZenModeConditionSelection::ConditionListener, Object, IIConditionListener, IBinder)
 
 CZenModeConditionSelection::ConditionListener::ConditionListener()
 {}

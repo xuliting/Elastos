@@ -54,7 +54,7 @@ AutoPtr<IIAppWidgetService> AppWidgetHost::sService;
 //          AppWidgetHost::UpdateHandler
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(AppWidgetHost::Callbacks, Object, IIAppWidgetHost, IBinder);
+CAR_INTERFACE_IMPL(AppWidgetHost::Callbacks, Object, IIAppWidgetHost, IBinder);
 
 AppWidgetHost::Callbacks::Callbacks()
 {}

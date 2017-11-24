@@ -33,7 +33,7 @@ namespace Widget {
 //=====================================================================
 //                TimePicker::AbstractTimePickerDelegate
 //=====================================================================
-CAR_INTERFACE_IMPL_2(TimePicker::AbstractTimePickerDelegate, Object, ITimePickerDelegate, ITimePickerAbstractTimePickerDelegate)
+CAR_INTERFACE_IMPL(TimePicker::AbstractTimePickerDelegate, Object, ITimePickerDelegate, ITimePickerAbstractTimePickerDelegate)
 
 TimePicker::AbstractTimePickerDelegate::AbstractTimePickerDelegate()
     : mContext(NULL)

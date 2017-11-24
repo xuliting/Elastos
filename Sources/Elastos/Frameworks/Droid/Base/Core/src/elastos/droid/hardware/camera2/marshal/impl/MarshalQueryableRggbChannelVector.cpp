@@ -85,7 +85,7 @@ ECode MarshalQueryableRggbChannelVector::MarshalerRggbChannelVector::GetNativeSi
 
 const Int32 MarshalQueryableRggbChannelVector::SIZE = IMarshalHelpers::SIZEOF_FLOAT * IRggbChannelVector::COUNT;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableRggbChannelVector, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableRggbChannelVector, Object,
         IMarshalQueryableRggbChannelVector, IMarshalQueryable)
 
 ECode MarshalQueryableRggbChannelVector::CreateMarshaler(

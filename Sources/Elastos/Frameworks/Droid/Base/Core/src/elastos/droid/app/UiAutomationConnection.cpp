@@ -61,7 +61,7 @@ namespace App {
 const String UiAutomationConnection::TAG("UiAutomationConnection");
 const Int32 UiAutomationConnection::INITIAL_FROZEN_ROTATION_UNSPECIFIED = -1;
 
-CAR_INTERFACE_IMPL_2(UiAutomationConnection, Object, IIUiAutomationConnection, IBinder)
+CAR_INTERFACE_IMPL(UiAutomationConnection, Object, IIUiAutomationConnection, IBinder)
 
 UiAutomationConnection::UiAutomationConnection()
     : mInitialFrozenRotation(INITIAL_FROZEN_ROTATION_UNSPECIFIED)

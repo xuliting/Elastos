@@ -61,7 +61,7 @@ ECode CGlobalsWallpaperManagerCallback::MyHandler::HandleMessage(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CGlobalsWallpaperManagerCallback, Object, IIWallpaperManagerCallback, IBinder)
+CAR_INTERFACE_IMPL(CGlobalsWallpaperManagerCallback, Object, IIWallpaperManagerCallback, IBinder)
 
 CAR_OBJECT_IMPL(CGlobalsWallpaperManagerCallback)
 

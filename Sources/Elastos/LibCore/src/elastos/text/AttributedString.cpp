@@ -57,7 +57,7 @@ AttributedString::Range& AttributedString::Range::operator = (
 //========================================================================
 // AttributedString::AttributedIterator
 //========================================================================
-CAR_INTERFACE_IMPL_3(AttributedString::AttributedIterator, Object, IAttributedCharacterIterator, ICharacterIterator, ICloneable)
+CAR_INTERFACE_IMPL(AttributedString::AttributedIterator, Object, IAttributedCharacterIterator, ICharacterIterator, ICloneable)
 
 AttributedString::AttributedIterator::AttributedIterator(
     /* [in] */ AttributedString* attrString)

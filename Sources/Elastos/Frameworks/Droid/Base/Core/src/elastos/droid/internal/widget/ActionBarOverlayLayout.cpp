@@ -214,7 +214,7 @@ ECode ActionBarOverlayLayout::InnerIntProperty::Get(
 //                        ActionBarOverlayLayout
 //=====================================================================
 
-CAR_INTERFACE_IMPL_2(ActionBarOverlayLayout, ViewGroup, IDecorContentParent, IActionBarOverlayLayout)
+CAR_INTERFACE_IMPL(ActionBarOverlayLayout, ViewGroup, IDecorContentParent, IActionBarOverlayLayout)
 
 ActionBarOverlayLayout::ActionBarOverlayLayout()
     : mActionBarHeight(0)

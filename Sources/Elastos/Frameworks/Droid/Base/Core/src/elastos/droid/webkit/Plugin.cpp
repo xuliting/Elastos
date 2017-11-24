@@ -32,7 +32,7 @@ namespace Webkit {
 //                    Plugin::DefaultClickHandler
 //===============================================================
 
-CAR_INTERFACE_IMPL_2(Plugin::DefaultClickHandler, Object, IPreferencesClickHandler, IDialogInterfaceOnClickListener);
+CAR_INTERFACE_IMPL(Plugin::DefaultClickHandler, Object, IPreferencesClickHandler, IDialogInterfaceOnClickListener);
 
 ECode Plugin::DefaultClickHandler::HandleClickEvent(
     /* [in] */ IContext* context)

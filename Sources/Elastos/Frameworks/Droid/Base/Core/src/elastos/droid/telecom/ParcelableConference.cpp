@@ -29,7 +29,7 @@ namespace Telecom {
 //===============================================================
 // ParcelableConference::
 //===============================================================
-CAR_INTERFACE_IMPL_2(ParcelableConference, Object, IParcelableConference, IParcelable)
+CAR_INTERFACE_IMPL(ParcelableConference, Object, IParcelableConference, IParcelable)
 
 ECode ParcelableConference::constructor()
 {

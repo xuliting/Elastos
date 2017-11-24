@@ -24,7 +24,7 @@ namespace Droid {
 namespace Telephony {
 namespace Cdma {
 
-CAR_INTERFACE_IMPL_2(CCdmaSmsCbProgramData, Object, ICdmaSmsCbProgramData, IParcelable)
+CAR_INTERFACE_IMPL(CCdmaSmsCbProgramData, Object, ICdmaSmsCbProgramData, IParcelable)
 
 CAR_OBJECT_IMPL(CCdmaSmsCbProgramData)
 

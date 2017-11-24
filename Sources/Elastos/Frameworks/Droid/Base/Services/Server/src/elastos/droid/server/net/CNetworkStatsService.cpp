@@ -686,7 +686,7 @@ ECode CNetworkStatsService::NetworkStatsSettingsConfig::GetDeleteAgeMillis(
 //======================================================================
 CAR_OBJECT_IMPL(CNetworkStatsService)
 
-CAR_INTERFACE_IMPL_2(CNetworkStatsService, Object, IBinder, IINetworkStatsService)
+CAR_INTERFACE_IMPL(CNetworkStatsService, Object, IBinder, IINetworkStatsService)
 
 CNetworkStatsService::CNetworkStatsService()
     : mSystemReady(FALSE)

@@ -98,7 +98,7 @@ ECode MarshalQueryableStreamConfiguration::MarshalerStreamConfiguration::GetNati
 
 const Int32 MarshalQueryableStreamConfiguration::SIZE = IMarshalHelpers::SIZEOF_INT32 * 4;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableStreamConfiguration, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableStreamConfiguration, Object,
         IMarshalQueryableStreamConfiguration, IMarshalQueryable)
 
 ECode MarshalQueryableStreamConfiguration::CreateMarshaler(

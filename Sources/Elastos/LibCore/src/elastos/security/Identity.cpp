@@ -29,7 +29,7 @@ using Elastos::Utility::Objects;
 namespace Elastos {
 namespace Security {
 
-CAR_INTERFACE_IMPL_3(Identity, Object, IIdentity, IPrincipal, ISerializable)
+CAR_INTERFACE_IMPL(Identity, Object, IIdentity, IPrincipal, ISerializable)
 Identity::~Identity()
 {}
 

@@ -25,7 +25,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_2(RasterizerSpan, CharacterStyle, IRasterizerSpan, IUpdateAppearance)
+CAR_INTERFACE_IMPL(RasterizerSpan, CharacterStyle, IRasterizerSpan, IUpdateAppearance)
 
 RasterizerSpan::RasterizerSpan()
 {}

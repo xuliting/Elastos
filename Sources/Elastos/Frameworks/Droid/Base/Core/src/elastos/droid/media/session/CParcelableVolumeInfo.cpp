@@ -21,7 +21,7 @@ namespace Droid {
 namespace Media {
 namespace Session {
 
-CAR_INTERFACE_IMPL_2(CParcelableVolumeInfo, Object, IParcelableVolumeInfo, IParcelable)
+CAR_INTERFACE_IMPL(CParcelableVolumeInfo, Object, IParcelableVolumeInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CParcelableVolumeInfo)
 

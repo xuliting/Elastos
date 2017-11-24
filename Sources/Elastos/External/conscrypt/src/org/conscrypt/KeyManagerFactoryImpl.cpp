@@ -34,7 +34,7 @@ using Libcore::Utility::EmptyArray;
 namespace Org {
 namespace Conscrypt {
 
-CAR_INTERFACE_IMPL_2(KeyManagerFactoryImpl, Object,
+CAR_INTERFACE_IMPL(KeyManagerFactoryImpl, Object,
         IKeyManagerFactoryImpl, IKeyManagerFactorySpi)
 
 ECode KeyManagerFactoryImpl::constructor()

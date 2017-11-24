@@ -40,7 +40,7 @@ namespace Net {
 AutoPtr<ISocketImplFactory> Socket::sFactory;
 Object Socket::sLock;
 
-CAR_INTERFACE_IMPL_2(Socket, Object, ISocket, ICloseable)
+CAR_INTERFACE_IMPL(Socket, Object, ISocket, ICloseable)
 
 Socket::Socket()
     : mIsCreated(FALSE)

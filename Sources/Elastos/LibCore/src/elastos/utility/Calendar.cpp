@@ -61,7 +61,7 @@ const String Calendar::FIELD_NAMES[] = {String("ERA"), String("YEAR"), String("M
         String("HOUR_OF_DAY"), String("MINUTE"), String("SECOND"), String("MILLISECOND"),
         String("ZONE_OFFSET"), String("DST_OFFSET") };
 
-CAR_INTERFACE_IMPL_4(Calendar, Object, ICalendar, ISerializable, ICloneable, IComparable)
+CAR_INTERFACE_IMPL(Calendar, Object, ICalendar, ISerializable, ICloneable, IComparable)
 
 Calendar::Calendar()
     : mAreFieldsSet(FALSE)

@@ -26,7 +26,7 @@ namespace Security {
 namespace X501 {
 
 CAR_OBJECT_IMPL(CAttributeTypeAndValueComparator)
-CAR_INTERFACE_IMPL_2(CAttributeTypeAndValueComparator, Object, IComparator, ISerializable)
+CAR_INTERFACE_IMPL(CAttributeTypeAndValueComparator, Object, IComparator, ISerializable)
 
 ECode CAttributeTypeAndValueComparator::Compare(
     /* [in] */ IInterface * atav1,

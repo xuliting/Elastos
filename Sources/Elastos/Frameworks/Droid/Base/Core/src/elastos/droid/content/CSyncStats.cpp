@@ -24,7 +24,7 @@ namespace Elastos {
 namespace Droid {
 namespace Content {
 
-CAR_INTERFACE_IMPL_2(CSyncStats, Object, ISyncStats, IParcelable)
+CAR_INTERFACE_IMPL(CSyncStats, Object, ISyncStats, IParcelable)
 
 CAR_OBJECT_IMPL(CSyncStats)
 

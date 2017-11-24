@@ -131,7 +131,7 @@ ECode CDOMConfigurationImpl::InnerDOMStringList::Contains(
 //===================
 
 CAR_OBJECT_IMPL(CDOMConfigurationImpl);
-CAR_INTERFACE_IMPL_2(CDOMConfigurationImpl, Object, IDOMConfiguration, IDOMConfigurationImpl);
+CAR_INTERFACE_IMPL(CDOMConfigurationImpl, Object, IDOMConfiguration, IDOMConfigurationImpl);
 
 static AutoPtr<IMap> InitMap()
 {

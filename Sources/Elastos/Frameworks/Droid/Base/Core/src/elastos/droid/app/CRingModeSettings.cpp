@@ -32,7 +32,7 @@ const String CRingModeSettings::RING_MODE_NORMAL("normal");
 const String CRingModeSettings::RING_MODE_VIBRATE("vibrate");
 const String CRingModeSettings::RING_MODE_MUTE("mute");
 
-CAR_INTERFACE_IMPL_2(CRingModeSettings, Object, IRingModeSettings, IParcelable)
+CAR_INTERFACE_IMPL(CRingModeSettings, Object, IRingModeSettings, IParcelable)
 
 CAR_OBJECT_IMPL(CRingModeSettings)
 

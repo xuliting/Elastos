@@ -47,7 +47,7 @@ namespace Telephony {
 //=====================================================================
 //                         CellBroadcastMessage
 //=====================================================================
-CAR_INTERFACE_IMPL_2(CellBroadcastMessage, Object, ICellBroadcastMessage, IParcelable);
+CAR_INTERFACE_IMPL(CellBroadcastMessage, Object, ICellBroadcastMessage, IParcelable);
 const String CellBroadcastMessage::SMS_CB_MESSAGE_EXTRA("com.android.cellbroadcastreceiver.SMS_CB_MESSAGE");
 
 CellBroadcastMessage::CellBroadcastMessage()

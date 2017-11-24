@@ -26,7 +26,7 @@ namespace Os {
 //===============================================================================
 //                  CCancellationSignal::Transport
 //===============================================================================
-CAR_INTERFACE_IMPL_2(CCancellationSignal::Transport, Object, IICancellationSignal, IBinder)
+CAR_INTERFACE_IMPL(CCancellationSignal::Transport, Object, IICancellationSignal, IBinder)
 
 ECode CCancellationSignal::Transport::constructor()
 {

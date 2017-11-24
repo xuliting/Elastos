@@ -321,7 +321,7 @@ ECode WallpaperChooserDialogFragment::WallpaperDrawable::SetColorFilter(
 }
 
 
-CAR_INTERFACE_IMPL_2(WallpaperChooserDialogFragment::InnerListener, Object,
+CAR_INTERFACE_IMPL(WallpaperChooserDialogFragment::InnerListener, Object,
     IAdapterViewOnItemSelectedListener, IAdapterViewOnItemClickListener);
 
 WallpaperChooserDialogFragment::InnerListener::InnerListener(

@@ -112,7 +112,7 @@ ECode LocalePicker::LocalArrayAdapter::GetView(
 
 const String LocalePicker::TAG("LocalePicker");
 
-CAR_INTERFACE_IMPL_2(LocalePicker::LocaleInfo, Object, ILocaleInfo, IComparable);
+CAR_INTERFACE_IMPL(LocalePicker::LocaleInfo, Object, ILocaleInfo, IComparable);
 
 static AutoPtr<ICollator> InitCollator()
 {

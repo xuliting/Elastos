@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Os {
 
-CAR_INTERFACE_IMPL_2(PatternMatcher, Object, IPatternMatcher, IParcelable)
+CAR_INTERFACE_IMPL(PatternMatcher, Object, IPatternMatcher, IParcelable)
 
 PatternMatcher::PatternMatcher()
     : mType(-1)

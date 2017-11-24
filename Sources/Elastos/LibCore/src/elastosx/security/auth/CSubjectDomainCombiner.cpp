@@ -24,7 +24,7 @@ namespace Auth {
 
 CAR_OBJECT_IMPL(CSubjectDomainCombiner)
 
-CAR_INTERFACE_IMPL_2(CSubjectDomainCombiner, Object, IDomainCombiner, ISubjectDomainCombiner)
+CAR_INTERFACE_IMPL(CSubjectDomainCombiner, Object, IDomainCombiner, ISubjectDomainCombiner)
 
 ECode CSubjectDomainCombiner::Combine(
     /* [in] */ ArrayOf<IProtectionDomain*> *current,

@@ -385,7 +385,7 @@ void CContentService::ObserverNode::CollectObserversLocked(
 //===================================================================================
 // CContentService
 //===================================================================================
-CAR_INTERFACE_IMPL_2(CContentService, Object, IIContentService, IBinder)
+CAR_INTERFACE_IMPL(CContentService, Object, IIContentService, IBinder)
 
 CAR_OBJECT_IMPL(CContentService)
 

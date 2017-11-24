@@ -129,7 +129,7 @@ ECode CallCardPresenter::UpdateCallTimeRunnable::Run()
 const String CallCardPresenter::TAG("CallCardPresenter");
 const Int64 CallCardPresenter::CALL_TIME_UPDATE_INTERVAL_MS;
 
-CAR_INTERFACE_IMPL_5(CallCardPresenter, Presenter
+CAR_INTERFACE_IMPL(CallCardPresenter, Presenter
         , ICallCardPresenter
         , IInCallStateListener
         , IIncomingCallListener

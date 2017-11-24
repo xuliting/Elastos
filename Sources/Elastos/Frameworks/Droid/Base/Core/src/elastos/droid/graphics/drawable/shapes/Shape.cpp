@@ -25,7 +25,7 @@ namespace Graphics {
 namespace Drawable {
 namespace Shapes {
 
-CAR_INTERFACE_IMPL_2(Shape, Object, IShape, ICloneable)
+CAR_INTERFACE_IMPL(Shape, Object, IShape, ICloneable)
 
 Shape::Shape()
     : mWidth(0)

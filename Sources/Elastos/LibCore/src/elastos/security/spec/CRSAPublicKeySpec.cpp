@@ -21,7 +21,7 @@ namespace Security {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CRSAPublicKeySpec)
-CAR_INTERFACE_IMPL_2(CRSAPublicKeySpec, Object, IRSAPublicKeySpec, IKeySpec)
+CAR_INTERFACE_IMPL(CRSAPublicKeySpec, Object, IRSAPublicKeySpec, IKeySpec)
 ECode CRSAPublicKeySpec::GetModulus(
     /* [out] */ IBigInteger **modulus)
 {

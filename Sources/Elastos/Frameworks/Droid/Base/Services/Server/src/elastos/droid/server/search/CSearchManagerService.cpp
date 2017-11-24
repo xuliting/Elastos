@@ -64,7 +64,7 @@ namespace Search {
 
 const String CSearchManagerService::TAG("CSearchManagerService");
 
-CAR_INTERFACE_IMPL_2(CSearchManagerService, Object, IISearchManager, IBinder);
+CAR_INTERFACE_IMPL(CSearchManagerService, Object, IISearchManager, IBinder);
 
 CAR_OBJECT_IMPL(CSearchManagerService);
 

@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Droid {
 namespace Os {
 
-CAR_INTERFACE_IMPL_2(CMessenger, Object, IMessenger, IParcelable)
+CAR_INTERFACE_IMPL(CMessenger, Object, IMessenger, IParcelable)
 
 CAR_OBJECT_IMPL(CMessenger)
 

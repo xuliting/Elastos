@@ -33,7 +33,7 @@ const Int32 ActionMenuItem::EXCLUSIVE      = 0x00000004;
 const Int32 ActionMenuItem::HIDDEN         = 0x00000008;
 const Int32 ActionMenuItem::ENABLED        = 0x00000010;
 
-CAR_INTERFACE_IMPL_2(ActionMenuItem, Object, IActionMenuItem, IMenuItem)
+CAR_INTERFACE_IMPL(ActionMenuItem, Object, IActionMenuItem, IMenuItem)
 
 ActionMenuItem::ActionMenuItem()
     : mId(0)

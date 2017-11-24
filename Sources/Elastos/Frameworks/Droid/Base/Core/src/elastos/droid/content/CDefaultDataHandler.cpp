@@ -36,7 +36,7 @@ const String CDefaultDataHandler::DEL("del");
 const String CDefaultDataHandler::SELECT("select");
 const String CDefaultDataHandler::ARG("arg");
 
-CAR_INTERFACE_IMPL_2(CDefaultDataHandler, Object, IContentInsertHandler, IContentHandler)
+CAR_INTERFACE_IMPL(CDefaultDataHandler, Object, IContentInsertHandler, IContentHandler)
 
 CAR_OBJECT_IMPL(CDefaultDataHandler)
 

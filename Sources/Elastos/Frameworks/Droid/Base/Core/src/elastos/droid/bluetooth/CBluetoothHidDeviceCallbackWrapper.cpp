@@ -24,7 +24,7 @@ namespace Bluetooth {
 
 CAR_OBJECT_IMPL(CBluetoothHidDeviceCallbackWrapper)
 
-CAR_INTERFACE_IMPL_2(CBluetoothHidDeviceCallbackWrapper, Object, IIBluetoothHidDeviceCallback, IBinder)
+CAR_INTERFACE_IMPL(CBluetoothHidDeviceCallbackWrapper, Object, IIBluetoothHidDeviceCallback, IBinder)
 
 CBluetoothHidDeviceCallbackWrapper::CBluetoothHidDeviceCallbackWrapper()
 {}

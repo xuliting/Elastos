@@ -800,7 +800,7 @@ const Int32 CameraMetadataNative::FACE_LANDMARK_SIZE = 6;
 
 Boolean CameraMetadataNative::initStaticBlock = RegisterAllMarshalers();
 
-CAR_INTERFACE_IMPL_2(CameraMetadataNative, Object, ICameraMetadataNative, IParcelable)
+CAR_INTERFACE_IMPL(CameraMetadataNative, Object, ICameraMetadataNative, IParcelable)
 
 CameraMetadataNative::CameraMetadataNative()
     : mMetadataPtr(0)

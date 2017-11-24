@@ -71,7 +71,7 @@ const Int32  MenuBuilder::sCategoryToOrder[6] = {
     0, /* SELECTED_ALTERNATIVE */
 };
 
-CAR_INTERFACE_IMPL_2(MenuBuilder, Object, IMenuBuilder, IMenu)
+CAR_INTERFACE_IMPL(MenuBuilder, Object, IMenuBuilder, IMenu)
 
 MenuBuilder::MenuBuilder()
     : mContext(NULL)

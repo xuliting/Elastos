@@ -303,7 +303,7 @@ ECode NotificationManagerService::SpamExecutorRunnable::Run()
 //                  NotificationManagerService::BinderService
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(NotificationManagerService::BinderService, Object, IINotificationManager, IBinder);
+CAR_INTERFACE_IMPL(NotificationManagerService::BinderService, Object, IINotificationManager, IBinder);
 
 NotificationManagerService::BinderService::BinderService()
 {}
@@ -1411,7 +1411,7 @@ Boolean NotificationManagerService::NotificationListeners::IsListenerPackage(
 //                  NotificationManagerService::StatusBarNotificationHolder
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(NotificationManagerService::StatusBarNotificationHolder, Object, IIStatusBarNotificationHolder, IBinder);
+CAR_INTERFACE_IMPL(NotificationManagerService::StatusBarNotificationHolder, Object, IIStatusBarNotificationHolder, IBinder);
 
 NotificationManagerService::StatusBarNotificationHolder::StatusBarNotificationHolder()
 {}

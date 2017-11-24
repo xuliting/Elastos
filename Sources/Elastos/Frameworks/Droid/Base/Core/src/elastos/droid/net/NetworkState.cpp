@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(NetworkState, Object, IParcelable, INetworkState)
+CAR_INTERFACE_IMPL(NetworkState, Object, IParcelable, INetworkState)
 
 ECode NetworkState::constructor()
 {

@@ -24,7 +24,7 @@ namespace Droid {
 namespace Server {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(CUserStopUserCallback, Object, IStopUserCallback, IBinder)
+CAR_INTERFACE_IMPL(CUserStopUserCallback, Object, IStopUserCallback, IBinder)
 
 CAR_OBJECT_IMPL(CUserStopUserCallback)
 

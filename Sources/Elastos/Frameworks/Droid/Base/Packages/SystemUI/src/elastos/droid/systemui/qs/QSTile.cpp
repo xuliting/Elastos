@@ -276,7 +276,7 @@ ECode QSTile::H::HandleMessage(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(QSTile, Object, IQSTile, IListenable);
+CAR_INTERFACE_IMPL(QSTile, Object, IQSTile, IListenable);
 
 QSTile::QSTile()
     : mAnnounceNextStateChange(FALSE)

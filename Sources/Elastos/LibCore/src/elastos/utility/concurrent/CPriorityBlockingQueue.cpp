@@ -42,7 +42,7 @@ Int32 CPriorityBlockingQueue::MAX_ARRAY_SIZE = Elastos::Core::Math::INT32_MAX_VA
 //===============================================================================
 // CPriorityBlockingQueue::
 //===============================================================================
-CAR_INTERFACE_IMPL_2(CPriorityBlockingQueue, AbstractQueue, IBlockingQueue, ISerializable)
+CAR_INTERFACE_IMPL(CPriorityBlockingQueue, AbstractQueue, IBlockingQueue, ISerializable)
 
 CAR_OBJECT_IMPL(CPriorityBlockingQueue)
 

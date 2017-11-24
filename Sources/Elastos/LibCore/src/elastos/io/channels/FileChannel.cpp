@@ -20,7 +20,7 @@ namespace Elastos {
 namespace IO {
 namespace Channels {
 
-CAR_INTERFACE_IMPL_4(FileChannel, AbstractInterruptibleChannel, IByteChannel, IScatteringByteChannel, IGatheringByteChannel, IFileChannel)
+CAR_INTERFACE_IMPL(FileChannel, AbstractInterruptibleChannel, IByteChannel, IScatteringByteChannel, IGatheringByteChannel, IFileChannel)
 
 FileChannel::FileChannel()
     : AbstractInterruptibleChannel()

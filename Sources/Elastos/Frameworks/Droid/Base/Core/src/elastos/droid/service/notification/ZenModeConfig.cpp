@@ -157,7 +157,7 @@ const String ZenModeConfig::COUNTDOWN_PATH("countdown");
 
 const String ZenModeConfig::DOWNTIME_PATH("downtime");
 
-CAR_INTERFACE_IMPL_2(ZenModeConfig, Object, IZenModeConfig, IParcelable)
+CAR_INTERFACE_IMPL(ZenModeConfig, Object, IZenModeConfig, IParcelable)
 
 ZenModeConfig::ZenModeConfig()
     : mAllowCalls(FALSE)

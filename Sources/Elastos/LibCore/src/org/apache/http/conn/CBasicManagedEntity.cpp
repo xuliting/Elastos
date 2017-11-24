@@ -26,7 +26,7 @@ namespace Apache {
 namespace Http {
 namespace Conn {
 
-CAR_INTERFACE_IMPL_2(CBasicManagedEntity, HttpEntityWrapper, IConnectionReleaseTrigger, IEofSensorWatcher)
+CAR_INTERFACE_IMPL(CBasicManagedEntity, HttpEntityWrapper, IConnectionReleaseTrigger, IEofSensorWatcher)
 
 CAR_OBJECT_IMPL(CBasicManagedEntity)
 

@@ -46,7 +46,7 @@ namespace Telecom {
 //===============================================================
 // ParcelableCall::
 //===============================================================
-CAR_INTERFACE_IMPL_2(ParcelableCall, Object, IParcelableCall, IParcelable)
+CAR_INTERFACE_IMPL(ParcelableCall, Object, IParcelableCall, IParcelable)
 
 ParcelableCall::ParcelableCall()
     : mId("")

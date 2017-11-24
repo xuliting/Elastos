@@ -49,7 +49,7 @@ const String CSpellCheckerSubtype::TAG("SpellCheckerSubtype");
 const String CSpellCheckerSubtype::EXTRA_VALUE_PAIR_SEPARATOR(",");
 const String CSpellCheckerSubtype::EXTRA_VALUE_KEY_VALUE_SEPARATOR("=");
 
-CAR_INTERFACE_IMPL_2(CSpellCheckerSubtype, Object, ISpellCheckerSubtype, IParcelable)
+CAR_INTERFACE_IMPL(CSpellCheckerSubtype, Object, ISpellCheckerSubtype, IParcelable)
 
 CAR_OBJECT_IMPL(CSpellCheckerSubtype)
 

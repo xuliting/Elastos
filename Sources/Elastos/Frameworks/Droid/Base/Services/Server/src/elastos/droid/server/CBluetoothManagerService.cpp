@@ -676,7 +676,7 @@ ECode CBluetoothManagerService::BluetoothHandler::HandleMessage(
 //========================================================================
 // CBluetoothManagerService::BluetoothCallback
 //========================================================================
-CAR_INTERFACE_IMPL_2(CBluetoothManagerService::BluetoothCallback, Object, IIBluetoothCallback, IBinder)
+CAR_INTERFACE_IMPL(CBluetoothManagerService::BluetoothCallback, Object, IIBluetoothCallback, IBinder)
 
 CBluetoothManagerService::BluetoothCallback::BluetoothCallback()
 {}
@@ -779,7 +779,7 @@ ECode CBluetoothManagerService::MyBroadcastReceiver::OnReceive(
 //====================================================================
 // CBluetoothManagerService
 //====================================================================
-CAR_INTERFACE_IMPL_2(CBluetoothManagerService, Object, IIBluetoothManager, IBinder)
+CAR_INTERFACE_IMPL(CBluetoothManagerService, Object, IIBluetoothManager, IBinder)
 
 CAR_OBJECT_IMPL(CBluetoothManagerService)
 

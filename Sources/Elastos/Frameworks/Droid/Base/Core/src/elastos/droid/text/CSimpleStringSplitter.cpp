@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Text {
 
-CAR_INTERFACE_IMPL_3(CSimpleStringSplitter, Object, ISimpleStringSplitter, IStringSplitter, IIterator)
+CAR_INTERFACE_IMPL(CSimpleStringSplitter, Object, ISimpleStringSplitter, IStringSplitter, IIterator)
 
 CAR_OBJECT_IMPL(CSimpleStringSplitter)
 

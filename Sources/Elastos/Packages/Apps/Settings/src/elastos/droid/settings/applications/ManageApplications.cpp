@@ -489,7 +489,7 @@ void ManageApplications::TabInfo::HandleRunningProcessesAvail()
 //                  ManageApplications::ApplicationsAdapter
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(ManageApplications::ApplicationsAdapter, BaseAdapter, IFilterable, IApplicationsStateCallbacks, IRecyclerListener)
+CAR_INTERFACE_IMPL(ManageApplications::ApplicationsAdapter, BaseAdapter, IFilterable, IApplicationsStateCallbacks, IRecyclerListener)
 
 ManageApplications::ApplicationsAdapter::ApplicationsAdapter(
     /* [in] */ ApplicationsState* state,
@@ -1197,7 +1197,7 @@ ECode ManageApplications::InitServiceConnection::OnServiceDisconnected(
 //                  ManageApplications
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(ManageApplications, Fragment, IManageApplicationsAppClickListener,
+CAR_INTERFACE_IMPL(ManageApplications, Fragment, IManageApplicationsAppClickListener,
         IDialogInterfaceOnClickListener, IAdapterViewOnItemSelectedListener)
 
 ManageApplications::ManageApplications()

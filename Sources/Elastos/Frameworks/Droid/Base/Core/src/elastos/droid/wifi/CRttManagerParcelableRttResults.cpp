@@ -20,7 +20,7 @@ namespace Elastos {
 namespace Droid {
 namespace Wifi {
 
-CAR_INTERFACE_IMPL_2(CRttManagerParcelableRttResults, Object, IParcelable, IRttManagerParcelableRttResults)
+CAR_INTERFACE_IMPL(CRttManagerParcelableRttResults, Object, IParcelable, IRttManagerParcelableRttResults)
 
 CAR_OBJECT_IMPL(CRttManagerParcelableRttResults)
 

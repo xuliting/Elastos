@@ -69,7 +69,7 @@ static AutoPtr<ICharSequence> CreateEmptyCs()
 
 AutoPtr<ICharSequence> SpannableStringBuilder::EMPTY_CS = CreateEmptyCs();
 
-CAR_INTERFACE_IMPL_8(SpannableStringBuilder, Object, ISpannableStringBuilder, ICharSequence, IGetChars, ISpannable, ISpanned, IEditable, IAppendable, IGraphicsOperations)
+CAR_INTERFACE_IMPL(SpannableStringBuilder, Object, ISpannableStringBuilder, ICharSequence, IGetChars, ISpannable, ISpanned, IEditable, IAppendable, IGraphicsOperations)
 
 SpannableStringBuilder::SpannableStringBuilder()
     : mGapStart(0)

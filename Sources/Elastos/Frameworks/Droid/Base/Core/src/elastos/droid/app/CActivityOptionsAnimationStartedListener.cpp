@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CActivityOptionsAnimationStartedListener, Object, IIRemoteCallback, IBinder)
+CAR_INTERFACE_IMPL(CActivityOptionsAnimationStartedListener, Object, IIRemoteCallback, IBinder)
 
 CAR_OBJECT_IMPL(CActivityOptionsAnimationStartedListener)
 

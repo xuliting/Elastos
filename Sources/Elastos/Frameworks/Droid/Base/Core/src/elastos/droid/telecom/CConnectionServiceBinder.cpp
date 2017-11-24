@@ -33,7 +33,7 @@ namespace Telecom {
 
 CAR_OBJECT_IMPL(CConnectionServiceBinder)
 
-CAR_INTERFACE_IMPL_2(CConnectionServiceBinder, Object, IIConnectionService, IBinder)
+CAR_INTERFACE_IMPL(CConnectionServiceBinder, Object, IIConnectionService, IBinder)
 
 ECode CConnectionServiceBinder::constructor(
     /* [in] */ IHandler* handler)

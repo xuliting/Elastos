@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIUserSwitchObserverNative::TAG("CIUserSwitchObserverNative");
 
-CAR_INTERFACE_IMPL_2(CIUserSwitchObserverNative, Object, IIUserSwitchObserver, IBinder)
+CAR_INTERFACE_IMPL(CIUserSwitchObserverNative, Object, IIUserSwitchObserver, IBinder)
 
 CAR_OBJECT_IMPL(CIUserSwitchObserverNative)
 

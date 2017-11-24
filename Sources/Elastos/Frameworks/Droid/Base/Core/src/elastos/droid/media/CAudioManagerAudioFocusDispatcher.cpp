@@ -28,7 +28,7 @@ namespace Elastos {
 namespace Droid {
 namespace Media {
 
-CAR_INTERFACE_IMPL_2(CAudioManagerAudioFocusDispatcher, Object, IIAudioFocusDispatcher, IBinder)
+CAR_INTERFACE_IMPL(CAudioManagerAudioFocusDispatcher, Object, IIAudioFocusDispatcher, IBinder)
 
 CAR_OBJECT_IMPL(CAudioManagerAudioFocusDispatcher)
 

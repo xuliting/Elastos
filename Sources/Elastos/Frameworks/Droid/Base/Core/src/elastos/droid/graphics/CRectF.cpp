@@ -31,7 +31,7 @@ namespace Droid {
 namespace Graphics {
 
 CAR_OBJECT_IMPL(CRectF);
-CAR_INTERFACE_IMPL_2(CRectF, Object, IRectF, IParcelable);
+CAR_INTERFACE_IMPL(CRectF, Object, IRectF, IParcelable);
 CRectF::CRectF()
     : mLeft(0.0f)
     , mTop(0.0f)

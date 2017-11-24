@@ -34,7 +34,7 @@ namespace Elastos {
 namespace Droid {
 namespace Preference {
 
-CAR_INTERFACE_IMPL_2(PreferenceGroup, Preference, IGenericInflaterParent, IPreferenceGroup)
+CAR_INTERFACE_IMPL(PreferenceGroup, Preference, IGenericInflaterParent, IPreferenceGroup)
 
 PreferenceGroup::PreferenceGroup()
     : mOrderingAsAdded(TRUE)

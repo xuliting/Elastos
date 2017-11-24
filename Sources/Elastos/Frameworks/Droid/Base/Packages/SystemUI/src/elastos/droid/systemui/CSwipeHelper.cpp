@@ -160,7 +160,7 @@ const Int32 CSwipeHelper::SNAP_ANIM_LEN = CSwipeHelper::SLOW_ANIMATIONS ? 1000 :
 
 CAR_OBJECT_IMPL(CSwipeHelper)
 
-CAR_INTERFACE_IMPL_2(CSwipeHelper, Object, ISwipeHelper, IGefingerpoken);
+CAR_INTERFACE_IMPL(CSwipeHelper, Object, ISwipeHelper, IGefingerpoken);
 
 CSwipeHelper::CSwipeHelper()
     : SWIPE_ESCAPE_VELOCITY(100.f)

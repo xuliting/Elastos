@@ -20,7 +20,7 @@ namespace Elastos {
 namespace Droid {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(GpsMeasurementsEvent, Object, IGpsMeasurementsEvent, IParcelable)
+CAR_INTERFACE_IMPL(GpsMeasurementsEvent, Object, IGpsMeasurementsEvent, IParcelable)
 
 GpsMeasurementsEvent::GpsMeasurementsEvent()
 {

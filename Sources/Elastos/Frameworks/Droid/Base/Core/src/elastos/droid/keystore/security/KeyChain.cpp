@@ -62,7 +62,7 @@ namespace Security {
 //=========================================================================
 //  KeyChain::AliasResponse
 //=========================================================================
-CAR_INTERFACE_IMPL_2(KeyChain::AliasResponse, Object, IIKeyChainAliasCallback, IBinder);
+CAR_INTERFACE_IMPL(KeyChain::AliasResponse, Object, IIKeyChainAliasCallback, IBinder);
 
 KeyChain::AliasResponse::AliasResponse(
     /* [in] */ IKeyChainAliasCallback* keyChainAliasResponse)
@@ -87,7 +87,7 @@ ECode KeyChain::AliasResponse::ToString(
 //=========================================================================
 //  KeyChain::KeyChainConnection
 //=========================================================================
-CAR_INTERFACE_IMPL_2(KeyChain::KeyChainConnection, Object, IKeyChainConnection, ICloseable);
+CAR_INTERFACE_IMPL(KeyChain::KeyChainConnection, Object, IKeyChainConnection, ICloseable);
 
 KeyChain::KeyChainConnection::KeyChainConnection(
     /* [in] */ IContext* context,

@@ -25,7 +25,7 @@ namespace Droid {
 namespace Hardware {
 namespace Soundtrigger {
 
-CAR_INTERFACE_IMPL_2(CSoundTriggerConfidenceLevel, Object, ISoundTriggerConfidenceLevel, IParcelable)
+CAR_INTERFACE_IMPL(CSoundTriggerConfidenceLevel, Object, ISoundTriggerConfidenceLevel, IParcelable)
 
 CAR_OBJECT_IMPL(CSoundTriggerConfidenceLevel)
 

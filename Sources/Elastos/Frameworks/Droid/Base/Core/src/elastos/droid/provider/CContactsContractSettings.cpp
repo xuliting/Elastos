@@ -26,7 +26,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractSettings)
 
-CAR_INTERFACE_IMPL_2(CContactsContractSettings, Singleton
+CAR_INTERFACE_IMPL(CContactsContractSettings, Singleton
     , IContactsContractSettings
     , IContactsContractSettingsColumns)
 

@@ -33,7 +33,7 @@ namespace Droid {
 namespace Internal {
 namespace App {
 
-CAR_INTERFACE_IMPL_4(RestrictionsPinActivity::LocalListener, Object, IViewOnClickListener,
+CAR_INTERFACE_IMPL(RestrictionsPinActivity::LocalListener, Object, IViewOnClickListener,
     ITextWatcher, INoCopySpan, IOnEditorActionListener)
 
 RestrictionsPinActivity::LocalListener::LocalListener(
@@ -95,7 +95,7 @@ ECode RestrictionsPinActivity::MyRunnable::Run()
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_5(RestrictionsPinActivity, AlertActivity, IRestrictionsPinActivity, IViewOnClickListener,
+CAR_INTERFACE_IMPL(RestrictionsPinActivity, AlertActivity, IRestrictionsPinActivity, IViewOnClickListener,
     ITextWatcher, INoCopySpan, IOnEditorActionListener)
 
 RestrictionsPinActivity::RestrictionsPinActivity()

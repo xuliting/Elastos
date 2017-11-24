@@ -443,7 +443,7 @@ ECode DialpadFragment::DialpadChooserAdapter::GetView(
 // DialpadFragment::InnerListener
 //=================================================================
 
-CAR_INTERFACE_IMPL_7(DialpadFragment::InnerListener, Object, IViewOnClickListener,
+CAR_INTERFACE_IMPL(DialpadFragment::InnerListener, Object, IViewOnClickListener,
         IViewOnLongClickListener, IViewOnKeyListener, IAdapterViewOnItemClickListener,
         IPopupMenuOnMenuItemClickListener, ITextWatcher, IDialpadKeyButtonOnPressedListener)
 

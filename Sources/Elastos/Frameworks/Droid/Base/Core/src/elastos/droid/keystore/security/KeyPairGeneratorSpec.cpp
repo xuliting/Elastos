@@ -175,7 +175,7 @@ ECode KeyPairGeneratorSpec::Builder::Build(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(KeyPairGeneratorSpec, Object, IKeyPairGeneratorSpec, IAlgorithmParameterSpec);
+CAR_INTERFACE_IMPL(KeyPairGeneratorSpec, Object, IKeyPairGeneratorSpec, IAlgorithmParameterSpec);
 /*
  * These must be kept in sync with system/security/keystore/defaults.h
  */

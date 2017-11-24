@@ -1618,7 +1618,7 @@ ECode CConcurrentHashMap::MapEntry::SetValue(
 //===============================================================================
 // CConcurrentHashMap::CollectionView::
 //===============================================================================
-CAR_INTERFACE_IMPL_3(CConcurrentHashMap::CollectionView, Object, ICollection, IIterable, ISerializable)
+CAR_INTERFACE_IMPL(CConcurrentHashMap::CollectionView, Object, ICollection, IIterable, ISerializable)
 
 String CConcurrentHashMap::CollectionView::mOomeMsg = String("Required array size too large");
 
@@ -1893,7 +1893,7 @@ ECode CConcurrentHashMap::BaseIterator::Remove()
 //===============================================================================
 // CConcurrentHashMap::KeyIterator
 //===============================================================================
-CAR_INTERFACE_IMPL_2(CConcurrentHashMap::KeyIterator, BaseIterator, IIterator, IEnumeration)
+CAR_INTERFACE_IMPL(CConcurrentHashMap::KeyIterator, BaseIterator, IIterator, IEnumeration)
 
 CConcurrentHashMap::KeyIterator::KeyIterator(
     /* [in] */ ArrayOf<Node*>* tab,
@@ -1948,7 +1948,7 @@ ECode CConcurrentHashMap::KeyIterator::Remove()
 //===============================================================================
 // CConcurrentHashMap::ValueIterator
 //===============================================================================
-CAR_INTERFACE_IMPL_2(CConcurrentHashMap::ValueIterator, BaseIterator, IIterator, IEnumeration)
+CAR_INTERFACE_IMPL(CConcurrentHashMap::ValueIterator, BaseIterator, IIterator, IEnumeration)
 
 CConcurrentHashMap::ValueIterator::ValueIterator(
     /* [in] */ ArrayOf<Node*>* tab,
@@ -2638,7 +2638,7 @@ Int32 CConcurrentHashMap::SEED_INCREMENT = 0x61c88647;
 pthread_key_t CConcurrentHashMap::sThreadCounterHashCode;
 const CConcurrentHashMap::StaticInitializer sInitializer;
 
-CAR_INTERFACE_IMPL_3(CConcurrentHashMap, AbstractMap, IConcurrentHashMap, IConcurrentMap, ISerializable)
+CAR_INTERFACE_IMPL(CConcurrentHashMap, AbstractMap, IConcurrentHashMap, IConcurrentMap, ISerializable)
 
 CAR_OBJECT_IMPL(CConcurrentHashMap)
 

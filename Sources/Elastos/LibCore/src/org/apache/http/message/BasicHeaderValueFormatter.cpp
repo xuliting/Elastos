@@ -35,7 +35,7 @@ static AutoPtr<IBasicHeaderValueFormatter> InitDefault()
 }
 const AutoPtr<IBasicHeaderValueFormatter> BasicHeaderValueFormatter::DEFAULT = InitDefault();
 
-CAR_INTERFACE_IMPL_2(BasicHeaderValueFormatter, Object, IBasicHeaderValueFormatter, IHeaderValueFormatter)
+CAR_INTERFACE_IMPL(BasicHeaderValueFormatter, Object, IBasicHeaderValueFormatter, IHeaderValueFormatter)
 
 ECode BasicHeaderValueFormatter::FormatElements(
     /* [in] */ ArrayOf<IHeaderElement*>* elems,

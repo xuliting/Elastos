@@ -128,7 +128,7 @@ MediaRouterUserRouteInfo::MediaRouterUserRouteInfo()
 MediaRouterUserRouteInfo::~MediaRouterUserRouteInfo()
 {}
 
-CAR_INTERFACE_IMPL_2(MediaRouterUserRouteInfo, Object, IMediaRouterUserRouteInfo, IMediaRouterRouteInfo)
+CAR_INTERFACE_IMPL(MediaRouterUserRouteInfo, Object, IMediaRouterUserRouteInfo, IMediaRouterRouteInfo)
 
 ECode MediaRouterUserRouteInfo::constructor(
     /* [in] */ IMediaRouterRouteCategory* category)

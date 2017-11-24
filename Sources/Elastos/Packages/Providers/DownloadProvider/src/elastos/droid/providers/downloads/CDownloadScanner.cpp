@@ -74,7 +74,7 @@ void CDownloadScanner::ScanRequest::Exec(
 //===============================================================
 CAR_OBJECT_IMPL(CDownloadScanner)
 
-CAR_INTERFACE_IMPL_2(CDownloadScanner, Object, IDownloadScanner, IMediaScannerConnectionClient)
+CAR_INTERFACE_IMPL(CDownloadScanner, Object, IDownloadScanner, IMediaScannerConnectionClient)
 
 ECode CDownloadScanner::constructor(
     /* [in] */ IContext* context)

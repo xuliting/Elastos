@@ -40,7 +40,7 @@ ECode RotationLockControllerImpl::LocalRotationPolicyListener::OnChange()
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(RotationLockControllerImpl, Object, IRotationLockController, IListenable);
+CAR_INTERFACE_IMPL(RotationLockControllerImpl, Object, IRotationLockController, IListenable);
 
 ECode RotationLockControllerImpl::constructor(
     /* [in] */ IContext* context)

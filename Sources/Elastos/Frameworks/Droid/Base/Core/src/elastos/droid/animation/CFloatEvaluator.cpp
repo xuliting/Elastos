@@ -26,7 +26,7 @@ namespace Droid {
 namespace Animation {
 
 CAR_OBJECT_IMPL(CFloatEvaluator)
-CAR_INTERFACE_IMPL_2(CFloatEvaluator, Object, IFloatEvaluator, ITypeEvaluator)
+CAR_INTERFACE_IMPL(CFloatEvaluator, Object, IFloatEvaluator, ITypeEvaluator)
 
 CFloatEvaluator::CFloatEvaluator()
 {}

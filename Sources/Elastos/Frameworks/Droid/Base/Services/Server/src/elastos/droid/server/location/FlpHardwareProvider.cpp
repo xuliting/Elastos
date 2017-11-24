@@ -55,7 +55,7 @@ namespace Location {
 // FlpHardwareProvider::FusedLocationHardwareService
 //====================================
 
-CAR_INTERFACE_IMPL_2(FlpHardwareProvider::FusedLocationHardwareService, Object, IIFusedLocationHardware, IBinder)
+CAR_INTERFACE_IMPL(FlpHardwareProvider::FusedLocationHardwareService, Object, IIFusedLocationHardware, IBinder)
 
 ECode FlpHardwareProvider::FusedLocationHardwareService::constructor(
     /* [in] */ IFlpHardwareProvider* host)
@@ -162,7 +162,7 @@ ECode FlpHardwareProvider::FusedLocationHardwareService::InjectDeviceContext(
 // FlpHardwareProvider::FusedGeofenceHardwareService
 //====================================
 
-CAR_INTERFACE_IMPL_2(FlpHardwareProvider::FusedGeofenceHardwareService, Object, IIFusedGeofenceHardware, IBinder)
+CAR_INTERFACE_IMPL(FlpHardwareProvider::FusedGeofenceHardwareService, Object, IIFusedGeofenceHardware, IBinder)
 
 ECode FlpHardwareProvider::FusedGeofenceHardwareService::constructor(
     /* [in] */ IFlpHardwareProvider* host)

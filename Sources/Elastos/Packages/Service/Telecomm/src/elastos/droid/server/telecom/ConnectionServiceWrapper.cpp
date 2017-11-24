@@ -60,7 +60,7 @@ namespace Telecom {
 //=============================================================================
 // ConnectionServiceWrapper::Adapter
 //=============================================================================
-CAR_INTERFACE_IMPL_2(ConnectionServiceWrapper::Adapter, Object, IIConnectionServiceAdapter, IBinder)
+CAR_INTERFACE_IMPL(ConnectionServiceWrapper::Adapter, Object, IIConnectionServiceAdapter, IBinder)
 
 ECode ConnectionServiceWrapper::Adapter::constructor(
     /* [in] */ IInterface* host)

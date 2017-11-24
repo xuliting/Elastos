@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CStreamSettings, Object, IStreamSettings, IParcelable)
+CAR_INTERFACE_IMPL(CStreamSettings, Object, IStreamSettings, IParcelable)
 
 CAR_OBJECT_IMPL(CStreamSettings)
 

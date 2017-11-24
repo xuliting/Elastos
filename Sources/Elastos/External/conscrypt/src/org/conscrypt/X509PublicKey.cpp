@@ -28,7 +28,7 @@ namespace Conscrypt {
 //=========================================
 Int64 X509PublicKey::mSerialVersionUID = -8610156854731664298L;
 
-CAR_INTERFACE_IMPL_2(X509PublicKey, Object, IPublicKey, IX509PublicKey)
+CAR_INTERFACE_IMPL(X509PublicKey, Object, IPublicKey, IX509PublicKey)
 
 ECode X509PublicKey::constructor(
     /* [in] */ String algorithm,

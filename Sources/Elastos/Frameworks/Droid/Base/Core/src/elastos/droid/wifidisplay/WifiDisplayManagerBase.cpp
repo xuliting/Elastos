@@ -32,7 +32,7 @@ namespace WifiDisplay {
 //==============================================================================
 //                  WifiDisplayManagerBase::WifiDisplayThread
 //==============================================================================
-CAR_INTERFACE_IMPL_2(WifiDisplayManagerBase::WifiDisplayThread, IWifiDisplayThread, IBinder)
+CAR_INTERFACE_IMPL(WifiDisplayManagerBase::WifiDisplayThread, IWifiDisplayThread, IBinder)
 
 WifiDisplayManagerBase::WifiDisplayThread::WifiDisplayThread(
     /* [in] */ WifiDisplayManagerBase* host)

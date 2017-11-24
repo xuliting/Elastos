@@ -24,7 +24,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_3(PskKeyManager, Object, IKeyManager, IPSKKeyManager, IPskKeyManager)
+CAR_INTERFACE_IMPL(PskKeyManager, Object, IKeyManager, IPSKKeyManager, IPskKeyManager)
 
 ECode PskKeyManager::ChooseServerKeyIdentityHint(
     /* [in] */ ISocket* socket,

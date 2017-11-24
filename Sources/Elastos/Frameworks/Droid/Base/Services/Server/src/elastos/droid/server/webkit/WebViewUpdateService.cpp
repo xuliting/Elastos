@@ -50,7 +50,7 @@ const Int32 WebViewUpdateService::WAIT_TIMEOUT_MS = 5000; // Same as KEY_DISPATC
 // WebViewUpdateService::BinderService
 //=======================================================================
 
-CAR_INTERFACE_IMPL_2(WebViewUpdateService::BinderService, Object, IIWebViewUpdateService, IBinder)
+CAR_INTERFACE_IMPL(WebViewUpdateService::BinderService, Object, IIWebViewUpdateService, IBinder)
 
 ECode WebViewUpdateService::BinderService::constructor(
     /* [in] */ ISystemService* webViewUpdateService)

@@ -27,7 +27,7 @@ namespace Cert {
 const String CLDAPCertStoreParameters::DEFAULT_LDAP_SERVER_NAME("localhost");
 
 CAR_OBJECT_IMPL(CLDAPCertStoreParameters)
-CAR_INTERFACE_IMPL_3(CLDAPCertStoreParameters, Object, ILDAPCertStoreParameters, ICertStoreParameters, ICloneable)
+CAR_INTERFACE_IMPL(CLDAPCertStoreParameters, Object, ILDAPCertStoreParameters, ICertStoreParameters, ICloneable)
 
 ECode CLDAPCertStoreParameters::Clone(
     /* [out] */ IInterface **object)

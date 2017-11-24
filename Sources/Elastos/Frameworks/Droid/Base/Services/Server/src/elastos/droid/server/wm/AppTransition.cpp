@@ -49,7 +49,7 @@ namespace Wm {
 //                  AppTransition::FadeInInterpolator
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(AppTransition::FadeInInterpolator, Object, IInterpolator, ITimeInterpolator)
+CAR_INTERFACE_IMPL(AppTransition::FadeInInterpolator, Object, IInterpolator, ITimeInterpolator)
 
 ECode AppTransition::FadeInInterpolator::GetInterpolation(
     /* [in] */ Float input,
@@ -79,7 +79,7 @@ ECode AppTransition::FadeInInterpolator:: HasNativeInterpolator(
 //                  AppTransition::FadeOutInterpolator
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(AppTransition::FadeOutInterpolator, Object, IInterpolator, ITimeInterpolator)
+CAR_INTERFACE_IMPL(AppTransition::FadeOutInterpolator, Object, IInterpolator, ITimeInterpolator)
 
 ECode AppTransition::FadeOutInterpolator::GetInterpolation(
     /* [in] */ Float input,

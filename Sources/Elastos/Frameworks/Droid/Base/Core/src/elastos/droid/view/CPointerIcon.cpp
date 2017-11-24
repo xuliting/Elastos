@@ -51,7 +51,7 @@ const Int32 CPointerIcon::STYLE_OEM_FIRST = 10000;
 const Int32 CPointerIcon::STYLE_DEFAULT = IPointerIcon::STYLE_ARROW;
 AutoPtr<IPointerIcon> CPointerIcon::gNullIcon = InitNullIcon();
 
-CAR_INTERFACE_IMPL_2(CPointerIcon, Object, IPointerIcon, IParcelable)
+CAR_INTERFACE_IMPL(CPointerIcon, Object, IPointerIcon, IParcelable)
 
 CAR_OBJECT_IMPL(CPointerIcon)
 

@@ -35,7 +35,7 @@ namespace Telephony {
 //=====================================================================
 //                            SmsCbEtwsInfo
 //=====================================================================
-CAR_INTERFACE_IMPL_2(SmsCbEtwsInfo, Object, ISmsCbEtwsInfo, IParcelable);
+CAR_INTERFACE_IMPL(SmsCbEtwsInfo, Object, ISmsCbEtwsInfo, IParcelable);
 
 SmsCbEtwsInfo::SmsCbEtwsInfo()
     : mWarningType(0)

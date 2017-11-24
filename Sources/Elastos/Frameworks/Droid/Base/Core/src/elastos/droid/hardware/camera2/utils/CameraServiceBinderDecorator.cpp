@@ -26,7 +26,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Utils {
 
-CAR_INTERFACE_IMPL_2(CameraServiceBinderDecorator::CameraServiceBinderDecoratorListener, Object,
+CAR_INTERFACE_IMPL(CameraServiceBinderDecorator::CameraServiceBinderDecoratorListener, Object,
         ICameraBinderDecoratorListener, IDecoratorListener)
 
 const String CameraServiceBinderDecorator::TAG("CameraServiceBinderDecorator");

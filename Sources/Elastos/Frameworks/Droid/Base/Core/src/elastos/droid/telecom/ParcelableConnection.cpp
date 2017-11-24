@@ -37,7 +37,7 @@ namespace Telecom {
 //===============================================================
 // ParcelableConnection::
 //===============================================================
-CAR_INTERFACE_IMPL_2(ParcelableConnection, Object, IParcelableConnection, IParcelable)
+CAR_INTERFACE_IMPL(ParcelableConnection, Object, IParcelableConnection, IParcelable)
 
 ParcelableConnection::ParcelableConnection()
     : mState(0)

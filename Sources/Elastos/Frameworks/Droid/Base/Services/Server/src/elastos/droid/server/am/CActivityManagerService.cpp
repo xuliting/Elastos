@@ -1002,7 +1002,7 @@ CAR_INTERFACE_IMPL(CActivityManagerService::AppDeathRecipient, Object, IProxyDea
 // CActivityManagerService::SwitchUserReceiver
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CActivityManagerService::BootCompletedReceiver, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CActivityManagerService::BootCompletedReceiver, Object, IIntentReceiver, IBinder)
 
 ECode CActivityManagerService::BootCompletedReceiver::constructor(
     /* [in] */ IIActivityManager* host)
@@ -1035,7 +1035,7 @@ ECode CActivityManagerService::BootCompletedReceiver::ToString(
 // CActivityManagerService::SwitchUserReceiver
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CActivityManagerService::SwitchUserReceiver, Object, IIntentReceiver, IBinder);
+CAR_INTERFACE_IMPL(CActivityManagerService::SwitchUserReceiver, Object, IIntentReceiver, IBinder);
 
 ECode CActivityManagerService::SwitchUserReceiver::constructor(
     /* [in] */ IIActivityManager* host,
@@ -1074,7 +1074,7 @@ ECode CActivityManagerService::SwitchUserReceiver::ToString(
 // CActivityManagerService::NeedStartReceiver
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CActivityManagerService::NeedStartReceiver, Object, IIntentReceiver, IBinder);
+CAR_INTERFACE_IMPL(CActivityManagerService::NeedStartReceiver, Object, IIntentReceiver, IBinder);
 
 ECode CActivityManagerService::NeedStartReceiver::constructor()
 {
@@ -1472,7 +1472,7 @@ ECode CActivityManagerService::RestartBroadcastReceiver::OnReceive(
 // CActivityManagerService::PreBootCompletedReceiver
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CActivityManagerService::PreBootCompletedReceiver, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CActivityManagerService::PreBootCompletedReceiver, Object, IIntentReceiver, IBinder)
 
 ECode CActivityManagerService::PreBootCompletedReceiver::constructor(
     /* [in] */ IHandler* handler,
@@ -1551,7 +1551,7 @@ CAR_INTERFACE_IMPL(CActivityManagerService::ErrorMsgButtonOnClickListener, Objec
 // CActivityManagerService::SystemReadyReceiver
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CActivityManagerService::SystemReadyReceiver, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CActivityManagerService::SystemReadyReceiver, Object, IIntentReceiver, IBinder)
 
 ECode CActivityManagerService::SystemReadyReceiver::constructor()
 {
@@ -1776,7 +1776,7 @@ ECode CActivityManagerService::StopUserLockedRunnable::Run()
 // CActivityManagerService::DispatchUserSwitchCallback
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CActivityManagerService::DispatchUserSwitchCallback, Object, IIRemoteCallback, IBinder)
+CAR_INTERFACE_IMPL(CActivityManagerService::DispatchUserSwitchCallback, Object, IIRemoteCallback, IBinder)
 
 ECode CActivityManagerService::DispatchUserSwitchCallback::constructor(
     /* [in] */ IIActivityManager* host,
@@ -2366,7 +2366,7 @@ AutoPtr<CActivityManagerService> CActivityManagerService::Lifecycle::GetService(
 // CActivityManagerService::ShutdownReceiver
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CActivityManagerService::ShutdownReceiver, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CActivityManagerService::ShutdownReceiver, Object, IIntentReceiver, IBinder)
 
 ECode CActivityManagerService::ShutdownReceiver::constructor(
     /* [in] */ IIActivityManager* host,
@@ -2400,7 +2400,7 @@ ECode CActivityManagerService::ShutdownReceiver::ToString(
 // CActivityManagerService::StoppingReceiver
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CActivityManagerService::StoppingReceiver, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CActivityManagerService::StoppingReceiver, Object, IIntentReceiver, IBinder)
 
 ECode CActivityManagerService::StoppingReceiver::constructor(
     /* [in] */ IIActivityManager* host,
@@ -2666,7 +2666,7 @@ ECode CActivityManagerService::AppTaskImpl::ToString(
 // CActivityManagerService
 //==============================================================================
 
-CAR_INTERFACE_IMPL_4(CActivityManagerService, Object, IIActivityManager,
+CAR_INTERFACE_IMPL(CActivityManagerService, Object, IIActivityManager,
     IWatchdogMonitor, IBatteryCallback, IBinder)
 
 CAR_OBJECT_IMPL(CActivityManagerService)

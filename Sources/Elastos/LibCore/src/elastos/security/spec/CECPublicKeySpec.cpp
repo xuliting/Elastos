@@ -22,7 +22,7 @@ namespace Security {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CECPublicKeySpec)
-CAR_INTERFACE_IMPL_2(CECPublicKeySpec, Object, IECPublicKeySpec, IKeySpec)
+CAR_INTERFACE_IMPL(CECPublicKeySpec, Object, IECPublicKeySpec, IKeySpec)
 ECode CECPublicKeySpec::GetParams(
     /* [out] */ IECParameterSpec **params)
 {

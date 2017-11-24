@@ -35,7 +35,7 @@ AutoPtr<ITouchCalibration> TouchCalibration::INIT_IDENTITY()
     return tc;
 }
 
-CAR_INTERFACE_IMPL_2(TouchCalibration, Object, ITouchCalibration, IParcelable)
+CAR_INTERFACE_IMPL(TouchCalibration, Object, ITouchCalibration, IParcelable)
 
 TouchCalibration::TouchCalibration()
     : mXScale(0)

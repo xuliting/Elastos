@@ -46,7 +46,7 @@ namespace Notification {
 //                  CZenModeAutomaticConditionSelection::ConditionListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CZenModeAutomaticConditionSelection::ConditionListener, Object, IIConditionListener, IBinder)
+CAR_INTERFACE_IMPL(CZenModeAutomaticConditionSelection::ConditionListener, Object, IIConditionListener, IBinder)
 
 CZenModeAutomaticConditionSelection::ConditionListener::ConditionListener()
 {}

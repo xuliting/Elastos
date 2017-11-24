@@ -32,7 +32,7 @@ namespace Xml {
 namespace Dom {
 
 CAR_OBJECT_IMPL(CCDATASectionImpl)
-CAR_INTERFACE_IMPL_2(CCDATASectionImpl, TextImpl, ICDATASection, ICDATASectionImpl);
+CAR_INTERFACE_IMPL(CCDATASectionImpl, TextImpl, ICDATASection, ICDATASectionImpl);
 
 CCDATASectionImpl::CCDATASectionImpl()
 {

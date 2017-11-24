@@ -39,7 +39,7 @@ namespace Conscrypt {
 //=========================================
 // OpenSSLSessionImpl::
 //=========================================
-CAR_INTERFACE_IMPL_2(OpenSSLSessionImpl, Object, ISSLSession, IOpenSSLSessionImpl)
+CAR_INTERFACE_IMPL(OpenSSLSessionImpl, Object, ISSLSession, IOpenSSLSessionImpl)
 
 OpenSSLSessionImpl::OpenSSLSessionImpl()
     : mLastAccessedTime(0)

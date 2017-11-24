@@ -37,7 +37,7 @@ namespace Widget {
 //========================================================================================
 AutoPtr<ArrayOf<Int32> > CheckedTextView::CHECKED_STATE_SET = ArrayOf<Int32>::Alloc(1);
 
-CAR_INTERFACE_IMPL_2(CheckedTextView, TextView, ICheckable, ICheckedTextView)
+CAR_INTERFACE_IMPL(CheckedTextView, TextView, ICheckable, ICheckedTextView)
 
 CheckedTextView::CheckedTextView()
     : mChecked(FALSE)

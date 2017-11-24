@@ -53,7 +53,7 @@ namespace Content {
 const String CContentProviderOperation::TAG("CContentProviderOperation");
 
 
-CAR_INTERFACE_IMPL_2(CContentProviderOperation, Object, IContentProviderOperation, IParcelable)
+CAR_INTERFACE_IMPL(CContentProviderOperation, Object, IContentProviderOperation, IParcelable)
 
 CAR_OBJECT_IMPL(CContentProviderOperation)
 

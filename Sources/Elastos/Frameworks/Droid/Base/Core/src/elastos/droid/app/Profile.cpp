@@ -62,7 +62,7 @@ namespace App {
 //========================================================================
 // Profile::ProfileTrigger
 //========================================================================
-CAR_INTERFACE_IMPL_2(Profile::ProfileTrigger, Object, IProfileTrigger, IParcelable)
+CAR_INTERFACE_IMPL(Profile::ProfileTrigger, Object, IProfileTrigger, IParcelable)
 
 Profile::ProfileTrigger::ProfileTrigger()
     : mType(0)
@@ -223,7 +223,7 @@ const Int32 Profile::CONDITIONAL_TYPE = 1;
 
 const Int32 Profile::TOGGLE_TYPE = 0;
 
-CAR_INTERFACE_IMPL_3(Profile, Object, IProfile, IParcelable, IComparable)
+CAR_INTERFACE_IMPL(Profile, Object, IProfile, IParcelable, IComparable)
 
 Profile::Profile()
     : mNameResId(0)

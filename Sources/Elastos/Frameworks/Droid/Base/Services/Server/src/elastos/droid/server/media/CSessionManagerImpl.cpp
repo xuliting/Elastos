@@ -85,7 +85,7 @@ CSessionManagerImpl::CSessionManagerImpl()
 {
 }
 
-CAR_INTERFACE_IMPL_2(CSessionManagerImpl, Object, IISessionManager, IBinder)
+CAR_INTERFACE_IMPL(CSessionManagerImpl, Object, IISessionManager, IBinder)
 
 CAR_OBJECT_IMPL(CSessionManagerImpl)
 

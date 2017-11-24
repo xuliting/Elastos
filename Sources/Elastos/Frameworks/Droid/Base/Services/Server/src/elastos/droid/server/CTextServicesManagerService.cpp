@@ -76,7 +76,7 @@ const Boolean CTextServicesManagerService::DBG = FALSE;
 //                  CTextServicesManagerService::TSMSUserSwitchObserver
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CTextServicesManagerService::TSMSUserSwitchObserver, Object, IIUserSwitchObserver, IBinder);
+CAR_INTERFACE_IMPL(CTextServicesManagerService::TSMSUserSwitchObserver, Object, IIUserSwitchObserver, IBinder);
 
 CTextServicesManagerService::TSMSUserSwitchObserver::TSMSUserSwitchObserver()
 {}
@@ -612,7 +612,7 @@ ECode CTextServicesManagerService::InternalDeathRecipient::ProxyDied()
 //                  CTextServicesManagerService
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(CTextServicesManagerService, Object, IITextServicesManager, IBinder)
+CAR_INTERFACE_IMPL(CTextServicesManagerService, Object, IITextServicesManager, IBinder)
 
 CAR_OBJECT_IMPL(CTextServicesManagerService)
 

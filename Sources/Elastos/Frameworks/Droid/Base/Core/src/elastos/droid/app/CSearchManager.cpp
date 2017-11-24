@@ -45,7 +45,7 @@ namespace Droid {
 namespace App {
 
 
-CAR_INTERFACE_IMPL_2(CSearchManager::InnerListener, Object, \
+CAR_INTERFACE_IMPL(CSearchManager::InnerListener, Object, \
     IDialogInterfaceOnDismissListener, IDialogInterfaceOnCancelListener)
 
 CSearchManager::InnerListener::InnerListener(

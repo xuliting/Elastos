@@ -45,7 +45,7 @@ namespace Style {
 
 const String SuggestionSpan::TAG("SuggestionSpan");
 
-CAR_INTERFACE_IMPL_3(SuggestionSpan, CharacterStyle, ISuggestionSpan, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(SuggestionSpan, CharacterStyle, ISuggestionSpan, IParcelableSpan, IParcelable)
 
 SuggestionSpan::SuggestionSpan()
 {}

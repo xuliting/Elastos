@@ -37,7 +37,7 @@ namespace DFObserver {
 
 static const String TAG("CDoorService");
 
-CAR_INTERFACE_IMPL_3(CDoorService, Object, IDoorService, IDoor, IBusObject)
+CAR_INTERFACE_IMPL(CDoorService, Object, IDoorService, IDoor, IBusObject)
 
 CAR_OBJECT_IMPL(CDoorService)
 

@@ -73,7 +73,7 @@ const Boolean BaseInputConnection::DEBUG = FALSE;
 const String BaseInputConnection::TAG("BaseInputConnection");
 const AutoPtr<IInterface> BaseInputConnection::COMPOSING = (IInterface*)(INoCopySpan*)(new BaseInputConnection::ComposingText());
 
-CAR_INTERFACE_IMPL_2(BaseInputConnection, Object, IBaseInputConnection, IInputConnection)
+CAR_INTERFACE_IMPL(BaseInputConnection, Object, IBaseInputConnection, IInputConnection)
 
 BaseInputConnection::BaseInputConnection()
     : mDummyMode(FALSE)

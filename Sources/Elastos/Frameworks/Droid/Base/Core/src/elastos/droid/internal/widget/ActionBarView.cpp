@@ -726,7 +726,7 @@ const Int32 ActionBarView::DISPLAY_RELAYOUT_MASK = IActionBar::DISPLAY_SHOW_HOME
         IActionBar::DISPLAY_TITLE_MULTIPLE_LINES;
 const Int32 ActionBarView::DEFAULT_CUSTOM_GRAVITY = IGravity::START | IGravity::CENTER_VERTICAL;
 
-CAR_INTERFACE_IMPL_2(ActionBarView, AbsActionBarView, IDecorToolbar, IActionBarView)
+CAR_INTERFACE_IMPL(ActionBarView, AbsActionBarView, IDecorToolbar, IActionBarView)
 
 ActionBarView::ActionBarView()
     : mNavigationMode(0)

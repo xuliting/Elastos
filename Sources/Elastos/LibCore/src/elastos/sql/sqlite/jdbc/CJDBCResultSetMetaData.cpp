@@ -25,7 +25,7 @@ namespace JDBC{
 
 CAR_OBJECT_IMPL(CJDBCResultSetMetaData)
 
-CAR_INTERFACE_IMPL_3(CJDBCResultSetMetaData, Object, IJDBCResultSetMetaData, IResultSetMetaData, IWrapper)
+CAR_INTERFACE_IMPL(CJDBCResultSetMetaData, Object, IJDBCResultSetMetaData, IResultSetMetaData, IWrapper)
 
 ECode CJDBCResultSetMetaData::GetCatalogName(
     /* [in] */ Int32 column,

@@ -63,7 +63,7 @@ const String CProfilePickerActivity::SAVE_CLICKED_POS("clicked_pos");
 
 CAR_OBJECT_IMPL(CProfilePickerActivity)
 
-CAR_INTERFACE_IMPL_2(CProfilePickerActivity, AlertActivity, IDialogInterfaceOnClickListener, IAlertControllerAlertParamsOnPrepareListViewListener)
+CAR_INTERFACE_IMPL(CProfilePickerActivity, AlertActivity, IDialogInterfaceOnClickListener, IAlertControllerAlertParamsOnPrepareListViewListener)
 
 CProfilePickerActivity::CProfilePickerActivity()
     : mNonePos(-1)

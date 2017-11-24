@@ -27,7 +27,7 @@ namespace Phone {
 
 const Float BounceInterpolator::SCALE_FACTOR = 7.5625f;
 
-CAR_INTERFACE_IMPL_3(BounceInterpolator, Object, IBounceInterpolator, IInterpolator, ITimeInterpolator);
+CAR_INTERFACE_IMPL(BounceInterpolator, Object, IBounceInterpolator, IInterpolator, ITimeInterpolator);
 
 ECode BounceInterpolator::constructor()
 {

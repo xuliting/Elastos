@@ -25,7 +25,7 @@ namespace Security {
 
 CAR_OBJECT_IMPL(CPrivateKeyImpl)
 
-CAR_INTERFACE_IMPL_2(CPrivateKeyImpl, Object, IPrivateKeyImpl, IPrivateKey)
+CAR_INTERFACE_IMPL(CPrivateKeyImpl, Object, IPrivateKeyImpl, IPrivateKey)
 
 ECode CPrivateKeyImpl::GetAlgorithm(
     /* [out] */ String * pAlgorithm)

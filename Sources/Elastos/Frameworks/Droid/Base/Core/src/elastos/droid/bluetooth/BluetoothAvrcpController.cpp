@@ -40,7 +40,7 @@ namespace Bluetooth {
 //=====================================================================
 //   BluetoothAvrcpController::BluetoothStateChangeCallbackStub
 //=====================================================================
-CAR_INTERFACE_IMPL_2(BluetoothAvrcpController::BluetoothStateChangeCallbackStub, Object, IIBluetoothStateChangeCallback, IBinder);
+CAR_INTERFACE_IMPL(BluetoothAvrcpController::BluetoothStateChangeCallbackStub, Object, IIBluetoothStateChangeCallback, IBinder);
 
 BluetoothAvrcpController::BluetoothStateChangeCallbackStub::BluetoothStateChangeCallbackStub()
 {
@@ -132,7 +132,7 @@ const String BluetoothAvrcpController::TAG("BluetoothAvrcpController");
 const Boolean BluetoothAvrcpController::DBG = TRUE;
 const Boolean BluetoothAvrcpController::VDBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(BluetoothAvrcpController, Object, IBluetoothAvrcpController, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothAvrcpController, Object, IBluetoothAvrcpController, IBluetoothProfile);
 
 BluetoothAvrcpController::BluetoothAvrcpController()
 {

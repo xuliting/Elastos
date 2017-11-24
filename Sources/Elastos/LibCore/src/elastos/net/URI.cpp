@@ -41,7 +41,7 @@ const AutoPtr<UriCodec> URI::FILE_AND_QUERY_ENCODER = new URI::PartEncoder(Strin
 const AutoPtr<UriCodec> URI::ALL_LEGAL_ENCODER = new URI::PartEncoder(String("?/[]@"));
 const AutoPtr<UriCodec> URI::ASCII_ONLY = new URI::ASCIIEncoder();
 
-CAR_INTERFACE_IMPL_3(URI, Object, IURI, ISerializable, IComparable)
+CAR_INTERFACE_IMPL(URI, Object, IURI, ISerializable, IComparable)
 
 URI::URI()
     : mPort(-1)

@@ -22,7 +22,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_5(IconMarginSpan, Object, IIconMarginSpan, ILeadingMarginSpan, IParagraphStyle, ILineHeightSpan, IWrapTogetherSpan)
+CAR_INTERFACE_IMPL(IconMarginSpan, Object, IIconMarginSpan, ILeadingMarginSpan, IParagraphStyle, ILineHeightSpan, IWrapTogetherSpan)
 
 IconMarginSpan::IconMarginSpan()
     : mPad(0)

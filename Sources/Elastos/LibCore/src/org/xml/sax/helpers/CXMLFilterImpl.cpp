@@ -22,7 +22,7 @@ namespace Xml {
 namespace Sax {
 namespace Helpers {
 
-CAR_INTERFACE_IMPL_6(CXMLFilterImpl, Object, IXMLReader, IXMLFilter, IEntityResolver, IDTDHandler, IContentHandler, IErrorHandler)
+CAR_INTERFACE_IMPL(CXMLFilterImpl, Object, IXMLReader, IXMLFilter, IEntityResolver, IDTDHandler, IContentHandler, IErrorHandler)
 CAR_OBJECT_IMPL(CXMLFilterImpl)
 
 ECode CXMLFilterImpl::GetFeature(

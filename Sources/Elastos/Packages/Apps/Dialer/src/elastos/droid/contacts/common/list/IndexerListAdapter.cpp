@@ -53,7 +53,7 @@ IndexerListAdapter::IndexerListAdapter()
     mPlacementCache = new Placement();
 }
 
-CAR_INTERFACE_IMPL_2(IndexerListAdapter, PinnedHeaderListAdapter, IIndexerListAdapter, ISectionIndexer)
+CAR_INTERFACE_IMPL(IndexerListAdapter, PinnedHeaderListAdapter, IIndexerListAdapter, ISectionIndexer)
 
 ECode IndexerListAdapter::constructor(
     /* [in] */ IContext* context)

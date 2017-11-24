@@ -21,7 +21,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_5(AlignmentSpanStandard, Object, IAlignmentSpanStandard, IAlignmentSpan, IParagraphStyle, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(AlignmentSpanStandard, Object, IAlignmentSpanStandard, IAlignmentSpan, IParagraphStyle, IParcelableSpan, IParcelable)
 
 AlignmentSpanStandard::AlignmentSpanStandard()
     : mAlignment(0)

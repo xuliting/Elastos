@@ -88,7 +88,7 @@ namespace Voice {
 // VoiceInteractionSession::MInteractor
 //=============================================
 
-CAR_INTERFACE_IMPL_2(VoiceInteractionSession::MInteractor, Object, IIVoiceInteractor, IBinder)
+CAR_INTERFACE_IMPL(VoiceInteractionSession::MInteractor, Object, IIVoiceInteractor, IBinder)
 
 VoiceInteractionSession::MInteractor::MInteractor(
     /* [in] */ VoiceInteractionSession* host)
@@ -239,7 +239,7 @@ ECode VoiceInteractionSession::MInteractor::SupportsCommands(
 // VoiceInteractionSession::MSession
 //=============================================
 
-CAR_INTERFACE_IMPL_2(VoiceInteractionSession::MSession, Object, IIVoiceInteractionSession, IBinder)
+CAR_INTERFACE_IMPL(VoiceInteractionSession::MSession, Object, IIVoiceInteractionSession, IBinder)
 
 VoiceInteractionSession::MSession::MSession(
     /* [in] */ VoiceInteractionSession* host)
@@ -287,7 +287,7 @@ ECode VoiceInteractionSession::MSession::Destroy()
 // VoiceInteractionSession::Request::MInterface
 //=============================================
 
-CAR_INTERFACE_IMPL_2(VoiceInteractionSession::Request::MInterface, Object, IIVoiceInteractorRequest, IBinder)
+CAR_INTERFACE_IMPL(VoiceInteractionSession::Request::MInterface, Object, IIVoiceInteractorRequest, IBinder)
 
 VoiceInteractionSession::Request::MInterface::MInterface(
     /* [in] */ Request* host)
@@ -464,7 +464,7 @@ ECode VoiceInteractionSession::Caller::constructor(
 // VoiceInteractionSession::MyCallbacks
 //=============================================
 
-CAR_INTERFACE_IMPL_2(VoiceInteractionSession::MyCallbacks, Object, IHandlerCallerCallback, ISoftInputWindowCallback)
+CAR_INTERFACE_IMPL(VoiceInteractionSession::MyCallbacks, Object, IHandlerCallerCallback, ISoftInputWindowCallback)
 
 VoiceInteractionSession::MyCallbacks::MyCallbacks(
     /* [in] */ VoiceInteractionSession* host)
@@ -728,7 +728,7 @@ const Int32 VoiceInteractionSession::MSG_TASK_FINISHED;
 const Int32 VoiceInteractionSession::MSG_CLOSE_SYSTEM_DIALOGS;
 const Int32 VoiceInteractionSession::MSG_DESTROY;
 
-CAR_INTERFACE_IMPL_2(VoiceInteractionSession, Object, IKeyEventCallback, IVoiceInteractionSession)
+CAR_INTERFACE_IMPL(VoiceInteractionSession, Object, IKeyEventCallback, IVoiceInteractionSession)
 
 VoiceInteractionSession::VoiceInteractionSession()
     : mTheme(0)

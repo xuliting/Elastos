@@ -36,7 +36,7 @@ namespace Utility {
 const String CJsonReader::sTRUE("true");
 const String CJsonReader::sFALSE("false");
 
-CAR_INTERFACE_IMPL_2(CJsonReader, Object, IJsonReader, ICloseable)
+CAR_INTERFACE_IMPL(CJsonReader, Object, IJsonReader, ICloseable)
 
 CAR_OBJECT_IMPL(CJsonReader)
 

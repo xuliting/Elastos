@@ -26,7 +26,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractCommonDataKindsCallable)
 
-CAR_INTERFACE_IMPL_3(CContactsContractCommonDataKindsCallable, Singleton
+CAR_INTERFACE_IMPL(CContactsContractCommonDataKindsCallable, Singleton
     , IContactsContractCommonDataKindsCallable
     , IContactsContractDataColumnsWithJoins
     , IContactsContractCommonDataKindsCommonColumns)

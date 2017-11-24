@@ -172,7 +172,7 @@ ECode PhoneAccount::Builder::Build(
 //===============================================================
 // PhoneAccount::
 //===============================================================
-CAR_INTERFACE_IMPL_2(PhoneAccount, Object, IPhoneAccount, IParcelable)
+CAR_INTERFACE_IMPL(PhoneAccount, Object, IPhoneAccount, IParcelable)
 
 PhoneAccount::PhoneAccount()
 {

@@ -33,7 +33,7 @@ using Elastos::Utility::Arrays;
 namespace Elastos {
 namespace IO {
 
-CAR_INTERFACE_IMPL_4(CharBuffer, Buffer, IComparable, ICharBuffer, ICharSequence, IReadable)
+CAR_INTERFACE_IMPL(CharBuffer, Buffer, IComparable, ICharBuffer, ICharSequence, IReadable)
 
 ECode CharBuffer::Allocate(
     /* [in] */ Int32 capacity,

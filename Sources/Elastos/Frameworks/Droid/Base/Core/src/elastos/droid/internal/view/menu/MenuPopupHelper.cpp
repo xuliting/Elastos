@@ -174,7 +174,7 @@ ECode MenuPopupHelper::MenuAdapter::NotifyDataSetChanged()
     return BaseAdapter::NotifyDataSetChanged();
 }
 
-CAR_INTERFACE_IMPL_3(MenuPopupHelper::MyListener, Object, IAdapterViewOnItemClickListener,
+CAR_INTERFACE_IMPL(MenuPopupHelper::MyListener, Object, IAdapterViewOnItemClickListener,
     IViewOnKeyListener, IPopupWindowOnDismissListener)
 
 ECode MenuPopupHelper::MyListener::OnItemClick(
@@ -217,7 +217,7 @@ ECode MenuPopupHelper::MyListener::OnViewDetachedFromWindow(
     return mOwner->OnViewDetachedFromWindow(v);
 }
 
-CAR_INTERFACE_IMPL_7(MenuPopupHelper, Object, IMenuPopupHelper, IAdapterViewOnItemClickListener, IOnGlobalLayoutListener,
+CAR_INTERFACE_IMPL(MenuPopupHelper, Object, IMenuPopupHelper, IAdapterViewOnItemClickListener, IOnGlobalLayoutListener,
     IViewOnKeyListener, IPopupWindowOnDismissListener, IViewOnAttachStateChangeListener, IMenuPresenter)
 
 MenuPopupHelper::MenuPopupHelper()

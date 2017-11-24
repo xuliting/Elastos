@@ -23,7 +23,7 @@ namespace Elastosx {
 namespace Net {
 namespace Ssl {
 
-CAR_INTERFACE_IMPL_2(CertPathTrustManagerParameters, Object, ICertPathTrustManagerParameters, IManagerFactoryParameters)
+CAR_INTERFACE_IMPL(CertPathTrustManagerParameters, Object, ICertPathTrustManagerParameters, IManagerFactoryParameters)
 
 ECode CertPathTrustManagerParameters::constructor(
     /* [in] */ ICertPathParameters* parameters)

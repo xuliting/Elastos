@@ -80,7 +80,7 @@ AutoPtr<IPattern> CWifiP2pDevice::mThreeTokenPattern
 AutoPtr<IPattern> CWifiP2pDevice::mFourTokenPattern
     = InitPattern(String("(?:[0-9a-f]{2}:){5}[0-9a-f]{2} p2p_dev_addr=((?:[0-9a-f]{2}:){5}[0-9a-f]{2}) wfd_dev_info=0x000006([0-9a-fA-F]{12})"));
 
-CAR_INTERFACE_IMPL_2(CWifiP2pDevice, Object, IWifiP2pDevice, IParcelable)
+CAR_INTERFACE_IMPL(CWifiP2pDevice, Object, IWifiP2pDevice, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiP2pDevice)
 

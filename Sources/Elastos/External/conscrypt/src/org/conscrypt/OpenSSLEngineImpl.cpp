@@ -41,7 +41,7 @@ using Elastosx::Net::Ssl::IX509ExtendedKeyManager;
 namespace Org {
 namespace Conscrypt {
 
-CAR_INTERFACE_IMPL_3(OpenSSLEngineImpl, SSLEngine, ISSLHandshakeCallbacks,
+CAR_INTERFACE_IMPL(OpenSSLEngineImpl, SSLEngine, ISSLHandshakeCallbacks,
         ISSLParametersImplAliasChooser, ISSLParametersImplPSKCallbacks)
 
 static AutoPtr<IOpenSSLBIOSource> InitNullSource()

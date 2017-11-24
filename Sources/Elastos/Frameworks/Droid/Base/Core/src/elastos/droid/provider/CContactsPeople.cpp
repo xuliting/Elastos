@@ -55,7 +55,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsPeople)
 
-CAR_INTERFACE_IMPL_6(CContactsPeople, Singleton
+CAR_INTERFACE_IMPL(CContactsPeople, Singleton
     , IContactsPeople
     , IBaseColumns
     , ISyncConstValue

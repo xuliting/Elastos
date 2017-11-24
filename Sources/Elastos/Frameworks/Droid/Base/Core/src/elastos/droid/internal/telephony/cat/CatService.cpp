@@ -104,7 +104,7 @@ RilMessage::RilMessage(
 //=====================================================================
 //                              CatService
 //=====================================================================
-CAR_INTERFACE_IMPL_2(CatService, Handler, IAppInterface, ICatService);
+CAR_INTERFACE_IMPL(CatService, Handler, IAppInterface, ICatService);
 
 const Int32 CatService::MSG_ID_SESSION_END;
 const Int32 CatService::MSG_ID_PROACTIVE_COMMAND;

@@ -90,7 +90,7 @@ void AnimationDrawable::AnimationState::GrowArray(
     mDurations = newDurations;
 }
 
-CAR_INTERFACE_IMPL_3(AnimationDrawable, DrawableContainer, IAnimationDrawable, IRunnable, IAnimatable);
+CAR_INTERFACE_IMPL(AnimationDrawable, DrawableContainer, IAnimationDrawable, IRunnable, IAnimatable);
 AnimationDrawable::AnimationDrawable()
     : mCurFrame(-1)
     , mRunning(FALSE)

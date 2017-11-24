@@ -36,7 +36,7 @@ namespace Media{
 //-------------------------------------------
 CAR_OBJECT_IMPL(CMyRingtonePlayer)
 
-CAR_INTERFACE_IMPL_2(CMyRingtonePlayer, Object, IIRingtonePlayer, IBinder);
+CAR_INTERFACE_IMPL(CMyRingtonePlayer, Object, IIRingtonePlayer, IBinder);
 
 ECode CMyRingtonePlayer::constructor(
     /* [in] */ ISystemUI* host)

@@ -111,7 +111,7 @@ ECode TrustAgentService::GTRunnable::Run()
 //TrustAgentService::TrustAgentServiceWrapper
 //=============================
 
-CAR_INTERFACE_IMPL_3(TrustAgentService::TrustAgentServiceWrapper, Object, ITrustAgentServiceWrapper, IITrustAgentService, IBinder)
+CAR_INTERFACE_IMPL(TrustAgentService::TrustAgentServiceWrapper, Object, ITrustAgentServiceWrapper, IITrustAgentService, IBinder)
 
 TrustAgentService::TrustAgentServiceWrapper::TrustAgentServiceWrapper()
 {

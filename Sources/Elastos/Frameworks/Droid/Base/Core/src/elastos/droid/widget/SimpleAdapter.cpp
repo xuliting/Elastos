@@ -132,7 +132,7 @@ ECode SimpleAdapter::SimpleFilter::PublishResults(
 //==============================================================================
 //                      SimpleAdapter::SimpleAdapter
 //==============================================================================
-CAR_INTERFACE_IMPL_2(SimpleAdapter, BaseAdapter, ISimpleAdapter, IFilterable);
+CAR_INTERFACE_IMPL(SimpleAdapter, BaseAdapter, ISimpleAdapter, IFilterable);
 SimpleAdapter::SimpleAdapter()
     : mResource(0)
     , mDropDownResource(0)

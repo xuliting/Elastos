@@ -49,7 +49,7 @@ const String DatagramSocket::TAG("DatagramSocket");
 AutoPtr<IDatagramSocketImplFactory> DatagramSocket::mFactory;
 Object DatagramSocket::sLock;
 
-CAR_INTERFACE_IMPL_2(DatagramSocket, Object, IDatagramSocket, ICloseable)
+CAR_INTERFACE_IMPL(DatagramSocket, Object, IDatagramSocket, ICloseable)
 
 DatagramSocket::DatagramSocket()
     : mPort(-1)

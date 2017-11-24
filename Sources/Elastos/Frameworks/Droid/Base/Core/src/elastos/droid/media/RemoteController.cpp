@@ -452,7 +452,7 @@ RemoteController::MetadataEditor::MetadataEditor(
     mApplied = FALSE;
 }
 
-CAR_INTERFACE_IMPL_2(RemoteController::MetadataEditor, Object, IMediaMetadataEditor, IRemoteControllerMetadataEditor)
+CAR_INTERFACE_IMPL(RemoteController::MetadataEditor, Object, IMediaMetadataEditor, IRemoteControllerMetadataEditor)
 
 ECode RemoteController::MetadataEditor::Apply()
 {

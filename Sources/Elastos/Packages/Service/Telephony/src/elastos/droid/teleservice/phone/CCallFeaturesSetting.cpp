@@ -454,7 +454,7 @@ static AutoPtr<ArrayOf<Int32> > initFORWARDING_SETTINGS_REASONS()
 
 AutoPtr<ArrayOf<Int32> > CCallFeaturesSetting::FORWARDING_SETTINGS_REASONS = initFORWARDING_SETTINGS_REASONS();
 
-CAR_INTERFACE_IMPL_3(CCallFeaturesSetting::InnerListener, Object, \
+CAR_INTERFACE_IMPL(CCallFeaturesSetting::InnerListener, Object, \
     IPreferenceOnPreferenceChangeListener, \
     IEditPhoneNumberPreferenceOnDialogClosedListener, \
     IEditPhoneNumberPreferenceGetDefaultNumberListener)
@@ -487,7 +487,7 @@ ECode CCallFeaturesSetting::InnerListener::OnGetDefaultNumber(
 }
 
 
-CAR_INTERFACE_IMPL_2(CCallFeaturesSetting, PreferenceActivity, ICallFeaturesSetting,
+CAR_INTERFACE_IMPL(CCallFeaturesSetting, PreferenceActivity, ICallFeaturesSetting,
         IDialogInterfaceOnClickListener)
 
 CAR_OBJECT_IMPL(CCallFeaturesSetting)

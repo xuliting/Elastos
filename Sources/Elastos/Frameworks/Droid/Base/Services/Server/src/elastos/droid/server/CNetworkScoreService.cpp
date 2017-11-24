@@ -67,7 +67,7 @@ namespace Server {
 
 CAR_OBJECT_IMPL(CNetworkScoreService)
 
-CAR_INTERFACE_IMPL_2(CNetworkScoreService, Object, IBinder, IINetworkScoreService)
+CAR_INTERFACE_IMPL(CNetworkScoreService, Object, IBinder, IINetworkScoreService)
 
 const String CNetworkScoreService::TAG("NetworkScoreService");
 

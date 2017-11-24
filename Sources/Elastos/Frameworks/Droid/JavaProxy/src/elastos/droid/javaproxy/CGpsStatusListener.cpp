@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CGpsStatusListener::TAG("CGpsStatusListener");
 
-CAR_INTERFACE_IMPL_2(CGpsStatusListener, Object, IIGpsStatusListener, IBinder)
+CAR_INTERFACE_IMPL(CGpsStatusListener, Object, IIGpsStatusListener, IBinder)
 
 CAR_OBJECT_IMPL(CGpsStatusListener)
 

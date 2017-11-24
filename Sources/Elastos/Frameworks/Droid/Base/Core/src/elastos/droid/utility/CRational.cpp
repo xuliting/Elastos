@@ -42,7 +42,7 @@ const AutoPtr<IRational> CRational::POSITIVE_INFINITY = CreateRational(1, 0);// 
 const AutoPtr<IRational> CRational::NEGATIVE_INFINITY = CreateRational(-1, 0);// = new Rational(-1, 0);
 const AutoPtr<IRational> CRational::ZERO = CreateRational(0, 1);// = new Rational(0, 1);
 
-CAR_INTERFACE_IMPL_3(CRational, Object, IRational, INumber, IComparable)
+CAR_INTERFACE_IMPL(CRational, Object, IRational, INumber, IComparable)
 
 CAR_OBJECT_IMPL(CRational)
 

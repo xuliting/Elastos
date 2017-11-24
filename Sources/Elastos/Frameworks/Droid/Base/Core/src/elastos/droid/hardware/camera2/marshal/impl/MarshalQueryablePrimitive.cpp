@@ -253,7 +253,7 @@ ECode MarshalQueryablePrimitive::MarshalerPrimitive::GetNativeSize(
     return MarshalHelpers::GetPrimitiveTypeSize(mNativeType, value);
 }
 
-CAR_INTERFACE_IMPL_2(MarshalQueryablePrimitive, Object,
+CAR_INTERFACE_IMPL(MarshalQueryablePrimitive, Object,
         IMarshalQueryablePrimitive, IMarshalQueryable)
 
 ECode MarshalQueryablePrimitive::CreateMarshaler(

@@ -41,7 +41,7 @@ const Int32 CPinnedHeaderListView::FADING;
 const Int32 CPinnedHeaderListView::DEFAULT_ANIMATION_DURATION;
 const Int32 CPinnedHeaderListView::DEFAULT_SMOOTH_SCROLL_DURATION;
 
-CAR_INTERFACE_IMPL_2(CPinnedHeaderListView::InnerListener, Object,
+CAR_INTERFACE_IMPL(CPinnedHeaderListView::InnerListener, Object,
     IAbsListViewOnScrollListener, IAdapterViewOnItemSelectedListener)
 
 CPinnedHeaderListView::InnerListener::InnerListener(

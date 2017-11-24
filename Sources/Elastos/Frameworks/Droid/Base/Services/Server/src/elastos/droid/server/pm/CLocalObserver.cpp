@@ -28,7 +28,7 @@ namespace Droid {
 namespace Server {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(CLocalObserver, Object, IIPackageInstallObserver2, IBinder)
+CAR_INTERFACE_IMPL(CLocalObserver, Object, IIPackageInstallObserver2, IBinder)
 
 CAR_OBJECT_IMPL(CLocalObserver)
 

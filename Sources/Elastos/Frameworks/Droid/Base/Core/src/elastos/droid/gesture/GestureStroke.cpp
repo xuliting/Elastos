@@ -35,7 +35,7 @@ namespace Elastos {
 namespace Droid {
 namespace Gesture {
 
-CAR_INTERFACE_IMPL_2(GestureStroke, Object, IGestureStroke, IGestureStrokeHelper);
+CAR_INTERFACE_IMPL(GestureStroke, Object, IGestureStroke, IGestureStrokeHelper);
 
 
 const Float GestureStroke::TOUCH_TOLERANCE = 3;

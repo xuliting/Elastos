@@ -154,7 +154,7 @@ ECode MarshalQueryableReprocessFormatsMap::MarshalerReprocessFormatsMap::Calcula
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableReprocessFormatsMap, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableReprocessFormatsMap, Object,
         IMarshalQueryableReprocessFormatsMap, IMarshalQueryable)
 
 ECode MarshalQueryableReprocessFormatsMap::CreateMarshaler(

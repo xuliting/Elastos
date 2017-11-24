@@ -29,7 +29,7 @@ namespace StatusBar {
 
 CAR_OBJECT_IMPL(CStatusBarIcon);
 
-CAR_INTERFACE_IMPL_2(CStatusBarIcon, Object, IStatusBarIcon, IParcelable);
+CAR_INTERFACE_IMPL(CStatusBarIcon, Object, IStatusBarIcon, IParcelable);
 
 CStatusBarIcon::CStatusBarIcon()
     : mIconId(0)

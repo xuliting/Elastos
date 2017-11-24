@@ -28,7 +28,7 @@ namespace Location {
 
 const String Geofence::TAG("Geofence");
 
-CAR_INTERFACE_IMPL_2(Geofence, Object, IGeofence, IParcelable)
+CAR_INTERFACE_IMPL(Geofence, Object, IGeofence, IParcelable)
 
 Geofence::Geofence()
     : mType(0)

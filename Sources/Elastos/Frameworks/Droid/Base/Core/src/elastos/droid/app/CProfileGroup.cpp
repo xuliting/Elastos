@@ -39,7 +39,7 @@ namespace App {
 
 const String CProfileGroup::TAG("CProfileGroup");
 
-CAR_INTERFACE_IMPL_2(CProfileGroup, Object, IProfileGroup, IParcelable)
+CAR_INTERFACE_IMPL(CProfileGroup, Object, IProfileGroup, IParcelable)
 
 CAR_OBJECT_IMPL(CProfileGroup)
 

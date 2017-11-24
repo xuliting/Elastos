@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace Database {
 
-CAR_INTERFACE_IMPL_3(CursorWrapper, Object, ICursorWrapper, ICursor, ICloseable)
+CAR_INTERFACE_IMPL(CursorWrapper, Object, ICursorWrapper, ICursor, ICloseable)
 
 ECode CursorWrapper::constructor(
     /* [in] */ ICursor* cursor)

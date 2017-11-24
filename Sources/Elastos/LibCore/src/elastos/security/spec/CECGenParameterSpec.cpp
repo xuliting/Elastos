@@ -21,7 +21,7 @@ namespace Security {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CECGenParameterSpec)
-CAR_INTERFACE_IMPL_2(CECGenParameterSpec, Object, IECGenParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(CECGenParameterSpec, Object, IECGenParameterSpec, IAlgorithmParameterSpec)
 ECode CECGenParameterSpec::GetName(
     /* [out] */ String *name)
 {

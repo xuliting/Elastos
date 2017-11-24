@@ -32,7 +32,7 @@ BufferedHeader::BufferedHeader()
     : mValuePos(-1)
 {}
 
-CAR_INTERFACE_IMPL_3(BufferedHeader, Object, IFormattedHeader, IHeader, ICloneable)
+CAR_INTERFACE_IMPL(BufferedHeader, Object, IFormattedHeader, IHeader, ICloneable)
 
 ECode BufferedHeader::Init(
     /* [in] */ ICharArrayBuffer* buffer)

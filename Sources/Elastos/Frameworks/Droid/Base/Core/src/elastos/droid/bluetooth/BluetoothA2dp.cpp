@@ -84,7 +84,7 @@ const String BluetoothA2dp::TAG("BluetoothA2dp");
 const Boolean BluetoothA2dp::DBG = TRUE;
 const Boolean BluetoothA2dp::VDBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(BluetoothA2dp, Object, IBluetoothA2dp, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothA2dp, Object, IBluetoothA2dp, IBluetoothProfile);
 
 BluetoothA2dp::BluetoothA2dp()
 {

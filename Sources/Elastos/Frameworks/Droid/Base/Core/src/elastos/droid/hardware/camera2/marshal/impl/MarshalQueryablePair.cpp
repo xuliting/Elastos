@@ -199,7 +199,7 @@ ECode MarshalQueryablePair::MarshalerPair::CalculateMarshalSize(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(MarshalQueryablePair, Object,
+CAR_INTERFACE_IMPL(MarshalQueryablePair, Object,
         IMarshalQueryablePair, IMarshalQueryable)
 
 ECode MarshalQueryablePair::CreateMarshaler(

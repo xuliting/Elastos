@@ -152,7 +152,7 @@ ECode CatCmdMessage::SetupEventListSettings::GetEventList(
 //=====================================================================
 //                            CatCmdMessage
 //=====================================================================
-CAR_INTERFACE_IMPL_2(CatCmdMessage, Object, ICatCmdMessage, IParcelable);
+CAR_INTERFACE_IMPL(CatCmdMessage, Object, ICatCmdMessage, IParcelable);
 
 const Int32 CatCmdMessage::REFRESH_NAA_INIT_AND_FULL_FILE_CHANGE;
 const Int32 CatCmdMessage::REFRESH_NAA_INIT_AND_FILE_CHANGE;

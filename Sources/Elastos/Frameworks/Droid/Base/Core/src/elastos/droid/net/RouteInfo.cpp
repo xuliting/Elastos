@@ -45,7 +45,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(RouteInfo, Object, IParcelable, IRouteInfo)
+CAR_INTERFACE_IMPL(RouteInfo, Object, IParcelable, IRouteInfo)
 
 RouteInfo::RouteInfo()
     : mType(0)

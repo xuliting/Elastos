@@ -24,7 +24,7 @@ namespace Internal {
 namespace StatusBar {
 
 CAR_OBJECT_IMPL(CStatusBarIconList);
-CAR_INTERFACE_IMPL_2(CStatusBarIconList, Object, IStatusBarIconList, IParcelable);
+CAR_INTERFACE_IMPL(CStatusBarIconList, Object, IStatusBarIconList, IParcelable);
 ECode CStatusBarIconList::constructor()
 {
     return NOERROR;

@@ -118,7 +118,7 @@ INIT_PROI_4 AutoPtr<IBigDecimal> CBigDecimal::TEN = CreateBigDecimal(10, 0);
 
 CAR_OBJECT_IMPL(CBigDecimal)
 
-CAR_INTERFACE_IMPL_3(CBigDecimal, Object, IBigDecimal, INumber, IComparable)
+CAR_INTERFACE_IMPL(CBigDecimal, Object, IBigDecimal, INumber, IComparable)
 
 CBigDecimal::CBigDecimal()
     : mBitLength(0)

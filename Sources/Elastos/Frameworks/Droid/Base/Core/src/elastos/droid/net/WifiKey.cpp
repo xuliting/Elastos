@@ -33,7 +33,7 @@ namespace Net {
 const AutoPtr<IPattern> WifiKey::SSID_PATTERN = InitPattern(String("(\".*\")|(0x[\\p{XDigit}]+)"));
 const AutoPtr<IPattern> WifiKey::BSSID_PATTERN = InitPattern(String("([\\p{XDigit}]{2}:){5}[\\p{XDigit}]{2}"));
 
-CAR_INTERFACE_IMPL_2(WifiKey, Object, IParcelable, IWifiKey)
+CAR_INTERFACE_IMPL(WifiKey, Object, IParcelable, IWifiKey)
 
 WifiKey::WifiKey()
 {}

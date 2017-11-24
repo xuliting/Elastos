@@ -42,7 +42,7 @@ TextTrackCue::TextTrackCue()
 TextTrackCue::~TextTrackCue()
 {}
 
-CAR_INTERFACE_IMPL_2(TextTrackCue, Object, ITextTrackCue, ISubtitleTrackCue)
+CAR_INTERFACE_IMPL(TextTrackCue, Object, ITextTrackCue, ISubtitleTrackCue)
 
 ECode TextTrackCue::constructor()
 {

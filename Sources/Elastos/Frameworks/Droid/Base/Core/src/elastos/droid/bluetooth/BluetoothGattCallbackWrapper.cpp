@@ -25,7 +25,7 @@ namespace Bluetooth {
 //=====================================================================
 //                     BluetoothGattCallbackWrapper
 //=====================================================================
-CAR_INTERFACE_IMPL_2(BluetoothGattCallbackWrapper, Object, IIBluetoothGattCallback, IBinder)
+CAR_INTERFACE_IMPL(BluetoothGattCallbackWrapper, Object, IIBluetoothGattCallback, IBinder)
 
 BluetoothGattCallbackWrapper::BluetoothGattCallbackWrapper()
 {

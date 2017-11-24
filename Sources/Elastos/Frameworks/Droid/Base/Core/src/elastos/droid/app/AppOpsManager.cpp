@@ -52,7 +52,7 @@ namespace App {
 // AppOpsManager::PackageOps
 //========================================================================
 
-CAR_INTERFACE_IMPL_2(AppOpsManager::PackageOps, Object, IAppOpsManagerPackageOps, IParcelable)
+CAR_INTERFACE_IMPL(AppOpsManager::PackageOps, Object, IAppOpsManagerPackageOps, IParcelable)
 
 AppOpsManager::PackageOps::PackageOps()
     : mUid(0)
@@ -146,7 +146,7 @@ ECode AppOpsManager::PackageOps::ToString(
 // AppOpsManager::OpEntry
 //========================================================================
 
-CAR_INTERFACE_IMPL_2(AppOpsManager::OpEntry, Object, IAppOpsManagerOpEntry, IParcelable)
+CAR_INTERFACE_IMPL(AppOpsManager::OpEntry, Object, IAppOpsManagerOpEntry, IParcelable)
 
 AppOpsManager::OpEntry::OpEntry()
     : mOp(0)
@@ -294,7 +294,7 @@ ECode AppOpsManager::OpEntry::ToString(
 //========================================================================
 // AppOpsManager::OnOpChangedInternalListener
 //========================================================================
-CAR_INTERFACE_IMPL_2(AppOpsManager::OnOpChangedInternalListener, Object, IAppOpsManagerOnOpChangedInternalListener, IAppOpsManagerOnOpChangedListener)
+CAR_INTERFACE_IMPL(AppOpsManager::OnOpChangedInternalListener, Object, IAppOpsManagerOnOpChangedInternalListener, IAppOpsManagerOnOpChangedListener)
 
 ECode AppOpsManager::OnOpChangedInternalListener::OnOpChanged(
     /* [in] */ const String& op,

@@ -289,7 +289,7 @@ Int32 ZenModePanel::Prefs::ClampNoneSelected(
 // ZenModePanel::ZenButtonsCallback
 //====================================================================
 
-CAR_INTERFACE_IMPL_2(ZenModePanel::ZenButtonsCallback, Object, \
+CAR_INTERFACE_IMPL(ZenModePanel::ZenButtonsCallback, Object, \
     ISegmentedButtonsCallback, IInteractionCallback)
 
 ZenModePanel::ZenButtonsCallback::ZenButtonsCallback(

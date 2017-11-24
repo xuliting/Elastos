@@ -28,7 +28,7 @@ namespace Style {
 const Int32 QuoteSpan::STRIPE_WIDTH = 2;
 const Int32 QuoteSpan::GAP_WIDTH = 2;
 
-CAR_INTERFACE_IMPL_5(QuoteSpan, Object, IQuoteSpan, ILeadingMarginSpan, IParcelableSpan, IParcelable, IParagraphStyle)
+CAR_INTERFACE_IMPL(QuoteSpan, Object, IQuoteSpan, ILeadingMarginSpan, IParcelableSpan, IParcelable, IParagraphStyle)
 
 QuoteSpan::QuoteSpan()
     : mColor(0xff0000ff)

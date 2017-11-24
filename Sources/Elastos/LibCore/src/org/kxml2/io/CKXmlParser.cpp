@@ -135,7 +135,7 @@ CKXmlParser::ContentSource::ContentSource(
     , mLimit(limit)
 {}
 
-CAR_INTERFACE_IMPL_3(CKXmlParser, Object, IKXmlParser, IXmlPullParser, ICloseable)
+CAR_INTERFACE_IMPL(CKXmlParser, Object, IKXmlParser, IXmlPullParser, ICloseable)
 CAR_OBJECT_IMPL(CKXmlParser)
 
 CKXmlParser::CKXmlParser()

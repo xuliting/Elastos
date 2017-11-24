@@ -35,7 +35,7 @@ namespace Telecom {
 //===============================================================
 // ConnectionServiceAdapter::
 //===============================================================
-CAR_INTERFACE_IMPL_2(ConnectionServiceAdapter, Object, IConnectionServiceAdapter, IProxyDeathRecipient)
+CAR_INTERFACE_IMPL(ConnectionServiceAdapter, Object, IConnectionServiceAdapter, IProxyDeathRecipient)
 
 ConnectionServiceAdapter::ConnectionServiceAdapter()
 {

@@ -25,7 +25,7 @@ using Elastos::IO::EIID_ISerializable;
 namespace Elastos {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(Random, Object, IRandom, ISerializable)
+CAR_INTERFACE_IMPL(Random, Object, IRandom, ISerializable)
 
 const Int64 Random::sMultiplier = 0x5deece66dLL;
 volatile Int64 Random::mSeedBase = 0;

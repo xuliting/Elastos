@@ -126,7 +126,7 @@ ECode SavedAccessPointsWifiSettings::MyBaseSearchIndexProvider::GetRawDataToInde
 //                  SavedAccessPointsWifiSettings
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(SavedAccessPointsWifiSettings, SettingsPreferenceFragment, IDialogInterfaceOnClickListener, IIndexable)
+CAR_INTERFACE_IMPL(SavedAccessPointsWifiSettings, SettingsPreferenceFragment, IDialogInterfaceOnClickListener, IIndexable)
 
 SavedAccessPointsWifiSettings::SavedAccessPointsWifiSettings()
 {}

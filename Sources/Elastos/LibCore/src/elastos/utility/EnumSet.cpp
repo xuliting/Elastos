@@ -52,7 +52,7 @@ IInterface* EnumSet::SerializationProxy::ReadResolve()
 /////////////////////////////////////////////////////////
 //                      EnumSet
 /////////////////////////////////////////////////////////
-CAR_INTERFACE_IMPL_3(EnumSet, AbstractSet, IEnumSet, ICloneable, ISerializable)
+CAR_INTERFACE_IMPL(EnumSet, AbstractSet, IEnumSet, ICloneable, ISerializable)
 
 const Int64 EnumSet::mSerialVersionUID = 1009687484059888093L;
 

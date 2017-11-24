@@ -24,7 +24,7 @@ namespace Telecom {
 //===============================================================
 // CameraCapabilities::
 //===============================================================
-CAR_INTERFACE_IMPL_2(CameraCapabilities, Object, ICameraCapabilities, IParcelable)
+CAR_INTERFACE_IMPL(CameraCapabilities, Object, ICameraCapabilities, IParcelable)
 
 ECode CameraCapabilities::constructor()
 {

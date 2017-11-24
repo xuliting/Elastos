@@ -26,7 +26,7 @@ namespace Tv {
 
 String CTvInputHardwareInfo::TAG("TvInputHardwareInfo");
 
-CAR_INTERFACE_IMPL_2(CTvInputHardwareInfo, Object, ITvInputHardwareInfo, IParcelable)
+CAR_INTERFACE_IMPL(CTvInputHardwareInfo, Object, ITvInputHardwareInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CTvInputHardwareInfo)
 

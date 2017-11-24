@@ -24,7 +24,7 @@ namespace Droid {
 namespace Hardware {
 namespace Usb {
 
-CAR_INTERFACE_IMPL_2(UsbAccessory, Object, IUsbAccessory, IParcelable);
+CAR_INTERFACE_IMPL(UsbAccessory, Object, IUsbAccessory, IParcelable);
 
 const String UsbAccessory::TAG("UsbAccessory");
 

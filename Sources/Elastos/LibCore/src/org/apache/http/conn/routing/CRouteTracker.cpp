@@ -34,7 +34,7 @@ CRouteTracker::CRouteTracker()
     , mSecure(FALSE)
 {}
 
-CAR_INTERFACE_IMPL_3(CRouteTracker, Object, IRouteTracker, IRouteInfo, ICloneable)
+CAR_INTERFACE_IMPL(CRouteTracker, Object, IRouteTracker, IRouteInfo, ICloneable)
 
 CAR_OBJECT_IMPL(CRouteTracker)
 

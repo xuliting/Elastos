@@ -26,7 +26,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CPBEKeySpec)
-CAR_INTERFACE_IMPL_2(CPBEKeySpec, Object, IPBEKeySpec, IKeySpec)
+CAR_INTERFACE_IMPL(CPBEKeySpec, Object, IPBEKeySpec, IKeySpec)
 
 CPBEKeySpec::CPBEKeySpec()
     : mIterationCount(0)

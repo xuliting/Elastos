@@ -1290,7 +1290,7 @@ const Int32 CMountService::MAX_UNMOUNT_RETRIES;
 const String CMountService::TAG_STORAGE_LIST("StorageList");
 const String CMountService::TAG_STORAGE("storage");
 
-CAR_INTERFACE_IMPL_4(CMountService, Object, IIMountService, IBinder, \
+CAR_INTERFACE_IMPL(CMountService, Object, IIMountService, IBinder, \
     INativeDaemonConnectorCallbacks, IWatchdogMonitor);
 
 CAR_OBJECT_IMPL(CMountService)

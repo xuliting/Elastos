@@ -68,7 +68,7 @@ AutoPtr<IINotificationManager> Toast::sService;
 //          Toast::TN
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(Toast::TN, Object, IITransientNotification, IBinder);
+CAR_INTERFACE_IMPL(Toast::TN, Object, IITransientNotification, IBinder);
 
 Toast::TN::TN()
     : mGravity(0)

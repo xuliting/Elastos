@@ -443,7 +443,7 @@ ECode NotificationListenerService::GetContext(
 // NotificationListenerService::INotificationListenerWrapper
 //====================================
 
-CAR_INTERFACE_IMPL_2(NotificationListenerService::INotificationListenerWrapper, Object, IINotificationListener, IBinder)
+CAR_INTERFACE_IMPL(NotificationListenerService::INotificationListenerWrapper, Object, IINotificationListener, IBinder)
 
 ECode NotificationListenerService::INotificationListenerWrapper::constructor(
     /* [in] */ INotificationListenerService* host)
@@ -633,7 +633,7 @@ void NotificationListenerService::Ranking::Populate(
 // NotificationListenerService::RankingMap
 //====================================
 
-CAR_INTERFACE_IMPL_2(NotificationListenerService::RankingMap, Object, IParcelable, INotificationListenerServiceRankingMap)
+CAR_INTERFACE_IMPL(NotificationListenerService::RankingMap, Object, IParcelable, INotificationListenerServiceRankingMap)
 
 NotificationListenerService::RankingMap::RankingMap()
 {

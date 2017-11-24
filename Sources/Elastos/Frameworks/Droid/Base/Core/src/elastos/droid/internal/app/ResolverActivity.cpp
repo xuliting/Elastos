@@ -732,7 +732,7 @@ ResolverActivity::ViewHolder::ViewHolder(
     mIcon = IImageView::Probe(tempView);
 }
 
-CAR_INTERFACE_IMPL_2(ResolverActivity::ItemLongClickListener, Object,
+CAR_INTERFACE_IMPL(ResolverActivity::ItemLongClickListener, Object,
     IAdapterViewOnItemLongClickListener, IAdapterViewOnItemClickListener)
 
 ECode ResolverActivity::ItemLongClickListener::OnItemLongClick(

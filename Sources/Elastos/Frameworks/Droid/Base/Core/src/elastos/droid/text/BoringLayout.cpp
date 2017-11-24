@@ -31,7 +31,7 @@ namespace Text {
 
 const Char32 BoringLayout::FIRST_RIGHT_TO_LEFT = 0x0590;//'\u0590';
 
-CAR_INTERFACE_IMPL_2(BoringLayout, Layout, IBoringLayout, ITextUtilsEllipsizeCallback)
+CAR_INTERFACE_IMPL(BoringLayout, Layout, IBoringLayout, ITextUtilsEllipsizeCallback)
 
 AutoPtr<IBoringLayout> BoringLayout::Make(
     /* [in] */ ICharSequence* source,

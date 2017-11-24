@@ -59,7 +59,7 @@ INIT_PROI_1 const AutoPtr< ArrayOf<HashMap::HashMapEntry*> > HashMap::EMPTY_TABL
 
 const Float HashMap::DEFAULT_LOAD_FACTOR;
 
-CAR_INTERFACE_IMPL_3(HashMap, AbstractMap, IHashMap, ICloneable, ISerializable)
+CAR_INTERFACE_IMPL(HashMap, AbstractMap, IHashMap, ICloneable, ISerializable)
 
 HashMap::HashMap()
     : mModCount(0)

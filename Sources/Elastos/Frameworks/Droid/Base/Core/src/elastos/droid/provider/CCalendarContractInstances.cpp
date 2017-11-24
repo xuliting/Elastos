@@ -41,7 +41,7 @@ const String CCalendarContractInstances::DEFAULT_SORT_ORDER = String("begin ASC"
 
 CAR_SINGLETON_IMPL(CCalendarContractInstances)
 
-CAR_INTERFACE_IMPL_4(CCalendarContractInstances, Singleton
+CAR_INTERFACE_IMPL(CCalendarContractInstances, Singleton
     , ICalendarContractInstances
     , IBaseColumns
     , ICalendarContractEventsColumns

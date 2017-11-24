@@ -23,7 +23,7 @@ using Elastos::Utility::Logging::Logger;
 namespace Elastos {
 namespace IO {
 
-CAR_INTERFACE_IMPL_3(OutputStream, Object, IOutputStream, ICloseable, IFlushable)
+CAR_INTERFACE_IMPL(OutputStream, Object, IOutputStream, ICloseable, IFlushable)
 
 OutputStream::OutputStream()
 {}

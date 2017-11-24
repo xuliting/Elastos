@@ -25,7 +25,7 @@ namespace Droid {
 namespace Content {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(PermissionGroupInfo, PackageItemInfo, IPermissionGroupInfo, IParcelable)
+CAR_INTERFACE_IMPL(PermissionGroupInfo, PackageItemInfo, IPermissionGroupInfo, IParcelable)
 
 PermissionGroupInfo::PermissionGroupInfo()
     : mDescriptionRes(0)

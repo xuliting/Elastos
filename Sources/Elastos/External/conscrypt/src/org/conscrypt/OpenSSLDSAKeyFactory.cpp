@@ -32,7 +32,7 @@ using Elastos::Utility::Logging::Logger;
 namespace Org {
 namespace Conscrypt {
 
-CAR_INTERFACE_IMPL_2(OpenSSLDSAKeyFactory, Object, IOpenSSLDSAKeyFactory, IKeyFactorySpi)
+CAR_INTERFACE_IMPL(OpenSSLDSAKeyFactory, Object, IOpenSSLDSAKeyFactory, IKeyFactorySpi)
 
 ECode OpenSSLDSAKeyFactory::constructor()
 {

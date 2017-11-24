@@ -30,7 +30,7 @@ namespace Droid {
 namespace View {
 
 CAR_OBJECT_IMPL(CWindowAnimationFrameStats);
-CAR_INTERFACE_IMPL_2(CWindowAnimationFrameStats, FrameStats, IWindowAnimationFrameStats, IParcelable);
+CAR_INTERFACE_IMPL(CWindowAnimationFrameStats, FrameStats, IWindowAnimationFrameStats, IParcelable);
 CWindowAnimationFrameStats::CWindowAnimationFrameStats()
 {
     /* do nothing */

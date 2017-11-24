@@ -27,7 +27,7 @@ namespace Database {
 // BulkCursorProxy
 //==================================================================================
 
-CAR_INTERFACE_IMPL_2(BulkCursorProxy, Object, IBulkCursorProxy, IBulkCursor)
+CAR_INTERFACE_IMPL(BulkCursorProxy, Object, IBulkCursorProxy, IBulkCursor)
 
 BulkCursorProxy::BulkCursorProxy(
     /* [in] */ IBinder* binder)
@@ -93,7 +93,7 @@ ECode BulkCursorProxy::Respond(
 // BulkCursorNative
 //==================================================================================
 
-CAR_INTERFACE_IMPL_2(BulkCursorNative, Object, IBulkCursor, IBinder)
+CAR_INTERFACE_IMPL(BulkCursorNative, Object, IBulkCursor, IBinder)
 
 AutoPtr<IBulkCursor> BulkCursorNative::AsInterface(
     /* [in] */ IBinder* binder)

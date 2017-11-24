@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(NetworkRequest, Object, IParcelable, INetworkRequest)
+CAR_INTERFACE_IMPL(NetworkRequest, Object, IParcelable, INetworkRequest)
 
 ECode NetworkRequest::constructor()
 {

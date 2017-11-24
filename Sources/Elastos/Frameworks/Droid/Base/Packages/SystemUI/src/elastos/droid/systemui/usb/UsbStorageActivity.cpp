@@ -235,7 +235,7 @@ ECode UsbStorageActivity::R6::Run()
 // UsbStorageActivity::DialogInterfaceListener
 //---------------------------------------------------------------------------------------------
 
-CAR_INTERFACE_IMPL_2(UsbStorageActivity::DialogInterfaceListener, Object,
+CAR_INTERFACE_IMPL(UsbStorageActivity::DialogInterfaceListener, Object,
     IDialogInterfaceOnCancelListener, IDialogInterfaceOnClickListener)
 
 UsbStorageActivity::DialogInterfaceListener::DialogInterfaceListener(
@@ -267,7 +267,7 @@ const Int32 UsbStorageActivity::DLG_CONFIRM_KILL_STORAGE_USERS;
 const Int32 UsbStorageActivity::DLG_ERROR_SHARING;
 const Boolean UsbStorageActivity::localLOGV = FALSE;
 
-CAR_INTERFACE_IMPL_3(UsbStorageActivity, Activity, IViewOnClickListener, IDialogInterfaceOnCancelListener, IUsbStorageActivity)
+CAR_INTERFACE_IMPL(UsbStorageActivity, Activity, IViewOnClickListener, IDialogInterfaceOnCancelListener, IUsbStorageActivity)
 
 UsbStorageActivity::UsbStorageActivity()
     : mDestroyed(FALSE)

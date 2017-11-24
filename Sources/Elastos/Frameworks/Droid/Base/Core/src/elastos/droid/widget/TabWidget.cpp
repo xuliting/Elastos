@@ -38,7 +38,7 @@ namespace Widget {
 //              TabWidget::TabListener
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(TabWidget::TabListener, Object, IViewOnClickListener, IViewOnFocusChangeListener)
+CAR_INTERFACE_IMPL(TabWidget::TabListener, Object, IViewOnClickListener, IViewOnFocusChangeListener)
 
 TabWidget::TabListener::TabListener(
     /* [in] */ Int32 tabIndex,

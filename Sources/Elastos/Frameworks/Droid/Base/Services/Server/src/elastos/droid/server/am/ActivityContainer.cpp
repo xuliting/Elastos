@@ -201,7 +201,7 @@ ECode VirtualActivityDisplay::ToString(
 //=====================================================================
 // ActivityContainer
 //=====================================================================
-CAR_INTERFACE_IMPL_2(ActivityContainer, Object, IIActivityContainer, IBinder)
+CAR_INTERFACE_IMPL(ActivityContainer, Object, IIActivityContainer, IBinder)
 
 const Int32 ActivityContainer::FORCE_NEW_TASK_FLAGS =
     IIntent::FLAG_ACTIVITY_NEW_TASK | IIntent::FLAG_ACTIVITY_MULTIPLE_TASK | IIntent::FLAG_ACTIVITY_NO_ANIMATION;

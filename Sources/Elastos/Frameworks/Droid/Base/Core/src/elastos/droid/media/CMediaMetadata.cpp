@@ -246,7 +246,7 @@ CMediaMetadata::StaticInitializer::StaticInitializer()
     EDITOR_KEY_MAPPING->Put(IMediaMetadataRetriever::METADATA_KEY_YEAR, cs);
 }
 
-CAR_INTERFACE_IMPL_2(CMediaMetadata, Object, IMediaMetadata, IParcelable)
+CAR_INTERFACE_IMPL(CMediaMetadata, Object, IMediaMetadata, IParcelable)
 
 CAR_OBJECT_IMPL(CMediaMetadata)
 

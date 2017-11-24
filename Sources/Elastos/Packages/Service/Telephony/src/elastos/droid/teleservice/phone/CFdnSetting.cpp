@@ -53,7 +53,7 @@ namespace Droid {
 namespace TeleService {
 namespace Phone {
 
-CAR_INTERFACE_IMPL_2(CFdnSetting::InnerListener, Object, \
+CAR_INTERFACE_IMPL(CFdnSetting::InnerListener, Object, \
     IEditPinPreferenceOnPinEnteredListener, \
     IDialogInterfaceOnCancelListener)
 

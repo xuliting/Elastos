@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CISyncStatusObserver::TAG("CISyncStatusObserver");
 
-CAR_INTERFACE_IMPL_2(CISyncStatusObserver, Object, IISyncStatusObserver, IBinder)
+CAR_INTERFACE_IMPL(CISyncStatusObserver, Object, IISyncStatusObserver, IBinder)
 
 CAR_OBJECT_IMPL(CISyncStatusObserver)
 

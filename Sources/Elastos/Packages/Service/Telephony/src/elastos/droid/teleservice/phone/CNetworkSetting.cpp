@@ -154,7 +154,7 @@ ECode CNetworkSetting::MyServiceConnection::OnServiceDisconnected(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CNetworkSetting::MyNetworkQueryServiceCallback, Object,
+CAR_INTERFACE_IMPL(CNetworkSetting::MyNetworkQueryServiceCallback, Object,
         IINetworkQueryServiceCallback, IBinder)
 
 ECode CNetworkSetting::MyNetworkQueryServiceCallback::constructor(
@@ -187,7 +187,7 @@ const String CNetworkSetting::LIST_NETWORKS_KEY("list_networks_key");
 const String CNetworkSetting::BUTTON_SRCH_NETWRKS_KEY("button_srch_netwrks_key");
 const String CNetworkSetting::BUTTON_AUTO_SELECT_KEY("button_auto_select_key");
 
-CAR_INTERFACE_IMPL_2(CNetworkSetting, PreferenceActivity, INetworkSetting, IDialogInterfaceOnCancelListener)
+CAR_INTERFACE_IMPL(CNetworkSetting, PreferenceActivity, INetworkSetting, IDialogInterfaceOnCancelListener)
 
 CAR_OBJECT_IMPL(CNetworkSetting)
 

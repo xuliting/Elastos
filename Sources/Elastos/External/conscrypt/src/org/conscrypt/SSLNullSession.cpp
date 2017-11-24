@@ -44,7 +44,7 @@ AutoPtr<ISSLNullSession> SSLNullSession::DefaultHolder::NULL_SESSION;// = new SS
 //=========================================
 // SSLNullSession::
 //=========================================
-CAR_INTERFACE_IMPL_3(SSLNullSession, Object, ISSLNullSession, ISSLSession, ICloneable)
+CAR_INTERFACE_IMPL(SSLNullSession, Object, ISSLNullSession, ISSLSession, ICloneable)
 
 AutoPtr<ISSLSession> SSLNullSession::GetNullSession()
 {

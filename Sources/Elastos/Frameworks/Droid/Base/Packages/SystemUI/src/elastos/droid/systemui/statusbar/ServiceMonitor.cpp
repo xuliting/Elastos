@@ -121,7 +121,7 @@ ECode ServiceMonitor::SettingObserver::OnChange(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(ServiceMonitor::SC, Object, IServiceConnection, IProxyDeathRecipient);
+CAR_INTERFACE_IMPL(ServiceMonitor::SC, Object, IServiceConnection, IProxyDeathRecipient);
 ServiceMonitor::SC::SC(
     /* [in] */ ServiceMonitor* host)
     : mHost(host)

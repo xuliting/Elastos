@@ -26,7 +26,7 @@ namespace Elastos {
 namespace Droid {
 namespace Location {
 
-CAR_INTERFACE_IMPL_2(Country, Object, ICountry, IParcelable)
+CAR_INTERFACE_IMPL(Country, Object, ICountry, IParcelable)
 
 Country::Country()
     : mSource(0)

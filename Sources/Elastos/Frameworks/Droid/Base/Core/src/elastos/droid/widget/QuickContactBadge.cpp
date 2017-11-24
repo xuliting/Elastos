@@ -192,7 +192,7 @@ ECode QuickContactBadge::QuickContactBadgeClickListener::OnClick(
     return mHost->OnClick(v);
 }
 
-CAR_INTERFACE_IMPL_2(QuickContactBadge, ImageView, IQuickContactBadge, IViewOnClickListener);
+CAR_INTERFACE_IMPL(QuickContactBadge, ImageView, IQuickContactBadge, IViewOnClickListener);
 ECode QuickContactBadge::constructor(
     /* [in] */ IContext* context)
 {

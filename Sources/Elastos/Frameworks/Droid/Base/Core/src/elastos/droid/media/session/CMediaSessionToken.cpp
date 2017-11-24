@@ -24,7 +24,7 @@ namespace Droid {
 namespace Media {
 namespace Session {
 
-CAR_INTERFACE_IMPL_2(CMediaSessionToken, Object, IMediaSessionToken, IParcelable)
+CAR_INTERFACE_IMPL(CMediaSessionToken, Object, IMediaSessionToken, IParcelable)
 
 CAR_OBJECT_IMPL(CMediaSessionToken)
 

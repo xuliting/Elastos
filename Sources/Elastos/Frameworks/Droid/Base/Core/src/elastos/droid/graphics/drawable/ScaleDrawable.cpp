@@ -98,7 +98,7 @@ Boolean ScaleDrawable::ScaleState::CanConstantState()
     return mCanConstantState;
 }
 
-CAR_INTERFACE_IMPL_2(ScaleDrawable, Drawable, IScaleDrawable, IDrawableCallback);
+CAR_INTERFACE_IMPL(ScaleDrawable, Drawable, IScaleDrawable, IDrawableCallback);
 
 ScaleDrawable::ScaleDrawable()
     : mMutated(FALSE)

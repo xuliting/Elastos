@@ -288,7 +288,7 @@ const Boolean Gallery::localLOGV = FALSE;
 const Int32 Gallery::SCROLL_TO_FLING_UNCERTAINTY_TIMEOUT = 250;
 const String Gallery::GALLERY_NAME("Gallery");
 
-CAR_INTERFACE_IMPL_2(Gallery, AbsSpinner, IGallery, IGestureDetectorOnGestureListener);
+CAR_INTERFACE_IMPL(Gallery, AbsSpinner, IGallery, IGestureDetectorOnGestureListener);
 
 Gallery::Gallery()
     : mSpacing(0)

@@ -24,7 +24,7 @@ namespace TextService {
 //========================================================================================
 //              CSentenceSuggestionsInfo::
 //========================================================================================
-CAR_INTERFACE_IMPL_2(CSentenceSuggestionsInfo, Object, ISentenceSuggestionsInfo, IParcelable)
+CAR_INTERFACE_IMPL(CSentenceSuggestionsInfo, Object, ISentenceSuggestionsInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CSentenceSuggestionsInfo)
 

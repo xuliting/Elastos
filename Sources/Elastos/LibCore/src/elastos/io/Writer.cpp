@@ -24,7 +24,7 @@ using Elastos::Core::EIID_IAppendable;
 namespace Elastos {
 namespace IO {
 
-CAR_INTERFACE_IMPL_4(Writer, Object, IWriter, IAppendable, ICloseable, IFlushable)
+CAR_INTERFACE_IMPL(Writer, Object, IWriter, IAppendable, ICloseable, IFlushable)
 
 Writer::Writer()
     : mLock(NULL)

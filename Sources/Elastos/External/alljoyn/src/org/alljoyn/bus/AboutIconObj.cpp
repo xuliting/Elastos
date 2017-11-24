@@ -26,7 +26,7 @@ namespace Bus {
 
 const Int16 AboutIconObj::VERSION;
 
-CAR_INTERFACE_IMPL_3(AboutIconObj, Object, IAboutIconObj, IIcon, IBusObject)
+CAR_INTERFACE_IMPL(AboutIconObj, Object, IAboutIconObj, IIcon, IBusObject)
 
 ECode AboutIconObj::constructor(
     /* [in] */ IBusAttachment* bus,

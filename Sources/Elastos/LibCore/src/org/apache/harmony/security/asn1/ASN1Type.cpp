@@ -70,7 +70,7 @@ ECode ASN1Type::constructor(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(ASN1Type, Object, IASN1Type, IASN1Constants)
+CAR_INTERFACE_IMPL(ASN1Type, Object, IASN1Type, IASN1Constants)
 
 ECode ASN1Type::Decode(
     /* [in] */ ArrayOf<Byte>* encoded,

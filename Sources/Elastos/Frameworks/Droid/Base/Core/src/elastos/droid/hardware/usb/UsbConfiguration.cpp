@@ -24,7 +24,7 @@ namespace Droid {
 namespace Hardware {
 namespace Usb {
 
-CAR_INTERFACE_IMPL_2(UsbConfiguration, Object, IUsbConfiguration, IParcelable);
+CAR_INTERFACE_IMPL(UsbConfiguration, Object, IUsbConfiguration, IParcelable);
 
 const Int32 UsbConfiguration::ATTR_SELF_POWERED = 1 << 6;
 const Int32 UsbConfiguration::ATTR_REMOTE_WAKEUP = 1 << 5;

@@ -25,7 +25,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_4(ForegroundColorSpan, CharacterStyle, IForegroundColorSpan, IUpdateAppearance, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(ForegroundColorSpan, CharacterStyle, IForegroundColorSpan, IUpdateAppearance, IParcelableSpan, IParcelable)
 
 ForegroundColorSpan::ForegroundColorSpan()
     : mColor(0)

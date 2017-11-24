@@ -103,7 +103,7 @@ ECode ContentProvider::OpenPipeAsyncTask::DoInBackground(
 //================================================================
 static const String TAG("ContentProvider");
 
-CAR_INTERFACE_IMPL_3(ContentProvider, Object, IContentProvider, IComponentCallbacks, IComponentCallbacks2)
+CAR_INTERFACE_IMPL(ContentProvider, Object, IContentProvider, IComponentCallbacks, IComponentCallbacks2)
 
 static void ThreadDestructor(void* st)
 {

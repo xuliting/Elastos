@@ -24,7 +24,7 @@ namespace Droid {
 namespace Commands {
 namespace Am {
 
-CAR_INTERFACE_IMPL_2(CInstrumentationWatcher, Object, IInstrumentationWatcher, IBinder);
+CAR_INTERFACE_IMPL(CInstrumentationWatcher, Object, IInstrumentationWatcher, IBinder);
 
 CAR_OBJECT_IMPL(CInstrumentationWatcher)
 

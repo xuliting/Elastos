@@ -31,7 +31,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(LinkAddress, Object, ILinkAddress, IParcelable)
+CAR_INTERFACE_IMPL(LinkAddress, Object, ILinkAddress, IParcelable)
 
 ECode LinkAddress::ScopeForUnicastAddress(
     /* [in] */ IInetAddress* addr,

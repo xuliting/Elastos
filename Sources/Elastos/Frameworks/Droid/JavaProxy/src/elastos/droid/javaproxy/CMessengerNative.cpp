@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CMessengerNative::TAG("CMessengerNative");
 
-CAR_INTERFACE_IMPL_2(CMessengerNative, Object, IIMessenger, IBinder)
+CAR_INTERFACE_IMPL(CMessengerNative, Object, IIMessenger, IBinder)
 
 CAR_OBJECT_IMPL(CMessengerNative)
 

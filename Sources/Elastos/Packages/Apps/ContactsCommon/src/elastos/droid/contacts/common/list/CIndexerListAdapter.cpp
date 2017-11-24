@@ -40,7 +40,7 @@ ECode CIndexerListAdapter::Placement::Invalidate()
 //=================================================================
 // CIndexerListAdapter
 //=================================================================
-CAR_INTERFACE_IMPL_2(CIndexerListAdapter, CPinnedHeaderListAdapter, IIndexerListAdapter, ISectionIndexer)
+CAR_INTERFACE_IMPL(CIndexerListAdapter, CPinnedHeaderListAdapter, IIndexerListAdapter, ISectionIndexer)
 
 CAR_OBJECT_IMPL(CIndexerListAdapter)
 

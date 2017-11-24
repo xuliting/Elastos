@@ -602,7 +602,7 @@ void CSynchronousQueue::TransferQueue::Clean(
 //===============================================================================
 // CSynchronousQueue::WaitQueue::
 //===============================================================================
-CAR_INTERFACE_IMPL_2(CSynchronousQueue::WaitQueue, Object, IWaitQueue, ISerializable)
+CAR_INTERFACE_IMPL(CSynchronousQueue::WaitQueue, Object, IWaitQueue, ISerializable)
 
 //===============================================================================
 // CSynchronousQueue::LifoWaitQueue::
@@ -672,7 +672,7 @@ Int32 CSynchronousQueue::mMaxUntimedSpins = mMaxTimedSpins * 16;
 
 Int64 CSynchronousQueue::mSpinForTimeoutThreshold = 1000L;
 
-CAR_INTERFACE_IMPL_3(CSynchronousQueue, AbstractQueue, ISynchronousQueue, IBlockingQueue, ISerializable)
+CAR_INTERFACE_IMPL(CSynchronousQueue, AbstractQueue, ISynchronousQueue, IBlockingQueue, ISerializable)
 
 CAR_OBJECT_IMPL(CSynchronousQueue)
 

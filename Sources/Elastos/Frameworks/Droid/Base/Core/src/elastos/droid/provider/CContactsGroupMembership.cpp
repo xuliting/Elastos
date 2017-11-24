@@ -25,7 +25,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsGroupMembership)
 
-CAR_INTERFACE_IMPL_3(CContactsGroupMembership, Singleton, IContactsGroupMembership, IBaseColumns, IContactsGroupsColumns)
+CAR_INTERFACE_IMPL(CContactsGroupMembership, Singleton, IContactsGroupMembership, IBaseColumns, IContactsGroupsColumns)
 
 ECode CContactsGroupMembership::constructor()
 {

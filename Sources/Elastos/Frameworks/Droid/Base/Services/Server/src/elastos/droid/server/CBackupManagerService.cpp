@@ -571,7 +571,7 @@ ECode CBackupManagerService::RunInitializeReceiver::OnReceive(
 //============================================================================
 // CBackupManagerService::ClearDataObserver
 //============================================================================
-CAR_INTERFACE_IMPL_2(CBackupManagerService::ClearDataObserver, IPackageDataObserver, IBinder);
+CAR_INTERFACE_IMPL(CBackupManagerService::ClearDataObserver, IPackageDataObserver, IBinder);
 
 CBackupManagerService::ClearDataObserver::ClearDataObserver(
     /* [in] */ CBackupManagerService* host)
@@ -2045,7 +2045,7 @@ ECode CBackupManagerService::PerformFullRestoreTask::RestoreFileRunnable::Run()
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CBackupManagerService::PerformFullRestoreTask::RestoreInstallObserver, IPackageInstallObserver, IBinder);
+CAR_INTERFACE_IMPL(CBackupManagerService::PerformFullRestoreTask::RestoreInstallObserver, IPackageInstallObserver, IBinder);
 
 CBackupManagerService::PerformFullRestoreTask::RestoreInstallObserver::RestoreInstallObserver()
 {
@@ -2095,7 +2095,7 @@ ECode CBackupManagerService::PerformFullRestoreTask::RestoreInstallObserver::Pac
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CBackupManagerService::PerformFullRestoreTask::RestoreDeleteObserver, IPackageDeleteObserver, IBinder);
+CAR_INTERFACE_IMPL(CBackupManagerService::PerformFullRestoreTask::RestoreDeleteObserver, IPackageDeleteObserver, IBinder);
 
 CBackupManagerService::PerformFullRestoreTask::RestoreDeleteObserver::RestoreDeleteObserver()
 {

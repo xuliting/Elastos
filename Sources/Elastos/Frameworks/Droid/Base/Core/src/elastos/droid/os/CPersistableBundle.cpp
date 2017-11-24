@@ -47,7 +47,7 @@ const AutoPtr<IPersistableBundle> CPersistableBundle::EMPTY = InitEMPTY();
 
 const String CPersistableBundle::TAG_PERSISTABLEMAP("pbundle_as_map");
 
-CAR_INTERFACE_IMPL_4(CPersistableBundle, BaseBundle, IPersistableBundle, ICloneable, IParcelable, IXmlUtilsWriteMapCallback)
+CAR_INTERFACE_IMPL(CPersistableBundle, BaseBundle, IPersistableBundle, ICloneable, IParcelable, IXmlUtilsWriteMapCallback)
 
 CAR_OBJECT_IMPL(CPersistableBundle)
 

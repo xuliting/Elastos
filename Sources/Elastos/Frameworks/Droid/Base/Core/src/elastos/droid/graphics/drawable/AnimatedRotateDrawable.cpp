@@ -115,7 +115,7 @@ Boolean AnimatedRotateDrawable::AnimatedRotateState::CanConstantState()
     return mCanConstantState;
 }
 
-CAR_INTERFACE_IMPL_4(AnimatedRotateDrawable, Drawable, IAnimatedRotateDrawable, IDrawableCallback, IRunnable, IAnimatable)
+CAR_INTERFACE_IMPL(AnimatedRotateDrawable, Drawable, IAnimatedRotateDrawable, IDrawableCallback, IRunnable, IAnimatable)
 AnimatedRotateDrawable::AnimatedRotateDrawable()
     : mMutated(FALSE)
     , mCurrentDegrees(0)

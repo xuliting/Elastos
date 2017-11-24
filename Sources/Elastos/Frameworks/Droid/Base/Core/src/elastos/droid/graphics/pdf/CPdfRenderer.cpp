@@ -55,7 +55,7 @@ namespace Pdf {
 const Int32 CPdfRenderer::Page::RENDER_MODE_FOR_DISPLAY = 1;
 const Int32 CPdfRenderer::Page::RENDER_MODE_FOR_PRINT = 2;
 
-CAR_INTERFACE_IMPL_2(CPdfRenderer::Page, Object, IPdfRendererPage, IAutoCloseable);
+CAR_INTERFACE_IMPL(CPdfRenderer::Page, Object, IPdfRendererPage, IAutoCloseable);
 
 CPdfRenderer::Page::Page()
     : mIndex(0)

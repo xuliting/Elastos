@@ -57,7 +57,7 @@ ECode MediaProjectionManagerService::AddCallbackDeathRecipient::ProxyDied()
 //                  MediaProjectionManagerService::MediaRouterCallback
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(MediaProjectionManagerService::MediaRouterCallback, Object, IMediaRouterCallback, IMediaRouterSimpleCallback)
+CAR_INTERFACE_IMPL(MediaProjectionManagerService::MediaRouterCallback, Object, IMediaRouterCallback, IMediaRouterSimpleCallback)
 
 ECode MediaProjectionManagerService::MediaRouterCallback::OnRouteSelected(
     /* [in] */ IMediaRouter* router,

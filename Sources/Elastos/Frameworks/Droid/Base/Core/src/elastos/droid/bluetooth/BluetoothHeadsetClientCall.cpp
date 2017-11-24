@@ -26,7 +26,7 @@ namespace Bluetooth {
 //=====================================================================
 //                      BluetoothHeadsetClientCall
 //=====================================================================
-CAR_INTERFACE_IMPL_2(BluetoothHeadsetClientCall, Object, IBluetoothHeadsetClientCall, IParcelable);
+CAR_INTERFACE_IMPL(BluetoothHeadsetClientCall, Object, IBluetoothHeadsetClientCall, IParcelable);
 
 BluetoothHeadsetClientCall::BluetoothHeadsetClientCall()
 {

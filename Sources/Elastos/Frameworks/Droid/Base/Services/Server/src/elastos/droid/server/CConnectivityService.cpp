@@ -1091,7 +1091,7 @@ ECode CConnectivityService::SettingsObserver::OnChange(
 // CConnectivityService
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CConnectivityService, Object, IIConnectivityManager, IBinder)
+CAR_INTERFACE_IMPL(CConnectivityService, Object, IIConnectivityManager, IBinder)
 
 CAR_OBJECT_IMPL(CConnectivityService)
 

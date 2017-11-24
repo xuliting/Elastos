@@ -22,7 +22,7 @@ namespace Xml {
 namespace Sax {
 namespace Helpers {
 
-CAR_INTERFACE_IMPL_2(AttributesImpl, Object, IAttributes, IAttributesImpl)
+CAR_INTERFACE_IMPL(AttributesImpl, Object, IAttributes, IAttributesImpl)
 
 AttributesImpl::AttributesImpl()
     : mLength(0)

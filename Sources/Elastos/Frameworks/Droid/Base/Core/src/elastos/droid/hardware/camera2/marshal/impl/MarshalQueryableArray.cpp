@@ -221,7 +221,7 @@ Int32 MarshalQueryableArray::MarshalerArray::CalculateElementMarshalSize(
 const String MarshalQueryableArray::TAG("MarshalQueryableArray");
 const Boolean MarshalQueryableArray::VERBOSE = FALSE;// Log.isLoggable(TAG, Log.VERBOSE);
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableArray, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableArray, Object,
         IMarshalQueryableArray, IMarshalQueryable)
 
 ECode MarshalQueryableArray::CreateMarshaler(

@@ -137,7 +137,7 @@ const Int32 CallLogActivity::TAB_INDEX_VOICEMAIL;
 const Int32 CallLogActivity::TAB_INDEX_COUNT_DEFAULT;
 const Int32 CallLogActivity::TAB_INDEX_COUNT_WITH_VOICEMAIL;
 
-CAR_INTERFACE_IMPL_2(CallLogActivity, AnalyticsActivity, ICallLogActivity, ICallLogQueryHandlerListener);
+CAR_INTERFACE_IMPL(CallLogActivity, AnalyticsActivity, ICallLogActivity, ICallLogQueryHandlerListener);
 
 CallLogActivity::CallLogActivity()
     : mSwitchToVoicemailTab(FALSE)

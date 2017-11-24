@@ -130,7 +130,7 @@ ECode UsageEvent::GetConfiguration(
 // UsageEvents
 //==================================================================
 
-CAR_INTERFACE_IMPL_2(UsageEvents, Object, IUsageEvents, IParcelable)
+CAR_INTERFACE_IMPL(UsageEvents, Object, IUsageEvents, IParcelable)
 
 UsageEvents::UsageEvents()
     : mEventCount(0)

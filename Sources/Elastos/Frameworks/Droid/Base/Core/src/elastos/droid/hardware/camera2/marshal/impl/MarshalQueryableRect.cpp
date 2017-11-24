@@ -89,7 +89,7 @@ ECode MarshalQueryableRect::MarshalerRect::GetNativeSize(
 
 const Int32 MarshalQueryableRect::SIZE = IMarshalHelpers::SIZEOF_INT32 * 4;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableRect, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableRect, Object,
         IMarshalQueryableRect, IMarshalQueryable)
 
 ECode MarshalQueryableRect::CreateMarshaler(

@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Content {
 
-CAR_INTERFACE_IMPL_4(CComponentName, Object, IComponentName, IParcelable, ICloneable, IComparable)
+CAR_INTERFACE_IMPL(CComponentName, Object, IComponentName, IParcelable, ICloneable, IComparable)
 
 CAR_OBJECT_IMPL(CComponentName)
 

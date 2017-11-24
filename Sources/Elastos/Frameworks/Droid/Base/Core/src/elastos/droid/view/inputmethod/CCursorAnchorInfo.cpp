@@ -183,7 +183,7 @@ ECode CCursorAnchorInfo::Builder::Reset()
 //========================================================================================
 const String CCursorAnchorInfo::TAG("CCursorAnchorInfo");
 
-CAR_INTERFACE_IMPL_2(CCursorAnchorInfo, Object, ICursorAnchorInfo, IParcelable)
+CAR_INTERFACE_IMPL(CCursorAnchorInfo, Object, ICursorAnchorInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CCursorAnchorInfo)
 

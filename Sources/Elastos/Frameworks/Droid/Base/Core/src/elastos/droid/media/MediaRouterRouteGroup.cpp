@@ -33,7 +33,7 @@ MediaRouterRouteGroup::MediaRouterRouteGroup()
 MediaRouterRouteGroup::~MediaRouterRouteGroup()
 {}
 
-CAR_INTERFACE_IMPL_2(MediaRouterRouteGroup, Object, IMediaRouterRouteGroup, IMediaRouterRouteInfo)//
+CAR_INTERFACE_IMPL(MediaRouterRouteGroup, Object, IMediaRouterRouteGroup, IMediaRouterRouteInfo)//
 
 ECode MediaRouterRouteGroup::constructor(
     /* [in] */ IMediaRouterRouteCategory* category)

@@ -35,7 +35,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(LocalSocket, Object, ILocalSocket, ICloseable)
+CAR_INTERFACE_IMPL(LocalSocket, Object, ILocalSocket, ICloseable)
 
 const Int32 LocalSocket::SOCKET_UNKNOWN = 0;
 

@@ -36,7 +36,7 @@ namespace Conscrypt {
 
 const Int64 OpenSSLDHPublicKey::serialVersionUID;
 
-CAR_INTERFACE_IMPL_6(OpenSSLDHPublicKey, Object, IOpenSSLDHPublicKey,
+CAR_INTERFACE_IMPL(OpenSSLDHPublicKey, Object, IOpenSSLDHPublicKey,
         IDHPublicKey, IDHKey, IKey, IPublicKey, IOpenSSLKeyHolder)
 
 OpenSSLDHPublicKey::OpenSSLDHPublicKey()

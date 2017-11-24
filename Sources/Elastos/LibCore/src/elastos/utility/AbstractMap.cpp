@@ -491,7 +491,7 @@ ECode AbstractMap::Clone(
 //==========================================================
 //       AbstractMap::SimpleImmutableEntry
 //==========================================================
-CAR_INTERFACE_IMPL_2(AbstractMap::SimpleImmutableEntry, Object, IMapEntry, ISerializable)
+CAR_INTERFACE_IMPL(AbstractMap::SimpleImmutableEntry, Object, IMapEntry, ISerializable)
 
 AbstractMap::SimpleImmutableEntry::SimpleImmutableEntry(
     /* [in] */ IInterface* theKey,
@@ -583,7 +583,7 @@ ECode AbstractMap::SimpleImmutableEntry::ToString(
 //==========================================================
 //       AbstractMap::SimpleEntry
 //==========================================================
-CAR_INTERFACE_IMPL_2(AbstractMap::SimpleEntry, Object, IMapEntry, ISerializable)
+CAR_INTERFACE_IMPL(AbstractMap::SimpleEntry, Object, IMapEntry, ISerializable)
 
 AbstractMap::SimpleEntry::SimpleEntry(
     /* [in] */ IInterface* theKey,

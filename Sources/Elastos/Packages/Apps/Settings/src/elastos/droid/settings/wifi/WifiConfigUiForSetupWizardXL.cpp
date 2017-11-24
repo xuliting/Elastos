@@ -83,7 +83,7 @@ ECode WifiConfigUiForSetupWizardXL::FocusRunnable::Run()
 //                  WifiConfigUiForSetupWizardXL
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(WifiConfigUiForSetupWizardXL, Object, IWifiConfigUiForSetupWizardXL, IWifiConfigUiBase)
+CAR_INTERFACE_IMPL(WifiConfigUiForSetupWizardXL, Object, IWifiConfigUiForSetupWizardXL, IWifiConfigUiBase)
 
 WifiConfigUiForSetupWizardXL::WifiConfigUiForSetupWizardXL(
     /* [in] */ IWifiSettingsForSetupWizardXL* activity,

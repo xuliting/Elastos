@@ -30,7 +30,7 @@ namespace Elastos {
 namespace Droid {
 namespace Widget{
 
-CAR_INTERFACE_IMPL_2(YearPickerView::InnerListener, Object, \
+CAR_INTERFACE_IMPL(YearPickerView::InnerListener, Object, \
     IAdapterViewOnItemClickListener, IOnDateChangedListener)
 
 YearPickerView::InnerListener::InnerListener(

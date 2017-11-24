@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIRestoreObserverNative::TAG("CIRestoreObserverNative");
 
-CAR_INTERFACE_IMPL_2(CIRestoreObserverNative, Object, IIRestoreObserver, IBinder)
+CAR_INTERFACE_IMPL(CIRestoreObserverNative, Object, IIRestoreObserver, IBinder)
 
 CAR_OBJECT_IMPL(CIRestoreObserverNative)
 

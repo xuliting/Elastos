@@ -23,7 +23,7 @@ namespace Bluetooth {
 
 CAR_OBJECT_IMPL(CBluetoothHidDeviceAppQosSettings)
 
-CAR_INTERFACE_IMPL_2(CBluetoothHidDeviceAppQosSettings, Object, IBluetoothHidDeviceAppQosSettings, IParcelable)
+CAR_INTERFACE_IMPL(CBluetoothHidDeviceAppQosSettings, Object, IBluetoothHidDeviceAppQosSettings, IParcelable)
 
 CBluetoothHidDeviceAppQosSettings::CBluetoothHidDeviceAppQosSettings()
     : mServiceType(0)

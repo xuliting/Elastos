@@ -27,7 +27,7 @@ namespace Style {
 // TabStopSpan
 //=====================================================================
 
-CAR_INTERFACE_IMPL_2(TabStopSpan, Object, ITabStopSpan, IParagraphStyle)
+CAR_INTERFACE_IMPL(TabStopSpan, Object, ITabStopSpan, IParagraphStyle)
 
 TabStopSpan::TabStopSpan()
 {}

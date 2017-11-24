@@ -394,7 +394,7 @@ const Float CNotificationStackScrollLayout::RUBBER_BAND_FACTOR_AFTER_EXPAND = 0.
 const Float CNotificationStackScrollLayout::RUBBER_BAND_FACTOR_ON_PANEL_EXPAND = 0.21f;
 const Int32 CNotificationStackScrollLayout::INVALID_POINTER = -1;
 
-CAR_INTERFACE_IMPL_4(CNotificationStackScrollLayout, ViewGroup, INotificationStackScrollLayout \
+CAR_INTERFACE_IMPL(CNotificationStackScrollLayout, ViewGroup, INotificationStackScrollLayout \
     , ISwipeHelperCallback, IExpandHelperCallback, IScrollAdapter)
 
 CAR_OBJECT_IMPL(CNotificationStackScrollLayout)

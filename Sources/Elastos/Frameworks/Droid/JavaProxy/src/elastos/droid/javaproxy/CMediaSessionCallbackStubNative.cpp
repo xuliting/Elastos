@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CMediaSessionCallbackStubNative::TAG("CMediaSessionCallbackStubNative");
 
-CAR_INTERFACE_IMPL_2(CMediaSessionCallbackStubNative, Object, IISessionCallback, IBinder)
+CAR_INTERFACE_IMPL(CMediaSessionCallbackStubNative, Object, IISessionCallback, IBinder)
 
 CAR_OBJECT_IMPL(CMediaSessionCallbackStubNative)
 

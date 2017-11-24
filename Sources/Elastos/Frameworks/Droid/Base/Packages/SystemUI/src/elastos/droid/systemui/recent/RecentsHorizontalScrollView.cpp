@@ -169,7 +169,7 @@ ECode RecentsHorizontalScrollView::AdapterDataSetObserver::OnInvalidated()
 const String RecentsHorizontalScrollView::TAG("RecentsHorizontalScrollView"); // = RecentsPanelView.TAG;
 const Boolean RecentsHorizontalScrollView::DEBUG = FALSE; // = RecentsPanelView.DEBUG;
 
-CAR_INTERFACE_IMPL_2(RecentsHorizontalScrollView, HorizontalScrollView, ISwipeHelperCallback, IRecentsScrollView)
+CAR_INTERFACE_IMPL(RecentsHorizontalScrollView, HorizontalScrollView, ISwipeHelperCallback, IRecentsScrollView)
 
 RecentsHorizontalScrollView::RecentsHorizontalScrollView()
     : mLastScrollPosition(0)

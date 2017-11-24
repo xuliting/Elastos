@@ -23,7 +23,7 @@ namespace Elastos {
 namespace HelloCar {
 
 // 实现某个 CAR 接口的类都需要使用 CAR_INTERFACE_IMPL/CAR_INTERFACE_IMPL
-CAR_INTERFACE_IMPL_2(Animal, Object, IAnimal, IComparable)
+CAR_INTERFACE_IMPL(Animal, Object, IAnimal, IComparable)
 
 // 使用成员初始化列表初始化成员变量
 Animal::Animal()

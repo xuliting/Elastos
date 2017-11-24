@@ -49,7 +49,7 @@ CallbackRunnable::CallbackRunnable(
 }
 
 //CAR_INTERFACE_IMPL(CallbackRunnable, Object, IRunnable);
-CAR_INTERFACE_IMPL_2(CallbackRunnable, Object, IRunnable, ICallbackRunnable);
+CAR_INTERFACE_IMPL(CallbackRunnable, Object, IRunnable, ICallbackRunnable);
 
 //CAR_OBJECT_IMPL(CallbackRunnable)
 

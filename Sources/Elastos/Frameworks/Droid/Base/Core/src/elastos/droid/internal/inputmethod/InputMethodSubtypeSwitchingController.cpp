@@ -55,7 +55,7 @@ namespace Droid {
 namespace Internal {
 namespace InputMethod {
 
-CAR_INTERFACE_IMPL_2(InputMethodSubtypeSwitchingController::ImeSubtypeListItem, Object,
+CAR_INTERFACE_IMPL(InputMethodSubtypeSwitchingController::ImeSubtypeListItem, Object,
     IImeSubtypeListItem, IComparable)
 
 InputMethodSubtypeSwitchingController::ImeSubtypeListItem::ImeSubtypeListItem(

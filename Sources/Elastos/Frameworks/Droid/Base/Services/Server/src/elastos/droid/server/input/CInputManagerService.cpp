@@ -206,7 +206,7 @@ ECode CInputManagerService::InputManagerHandler::HandleMessage(
 //==============================================================================
 //  CInputManagerService::InputFilterHost
 //==============================================================================
-CAR_INTERFACE_IMPL_2(CInputManagerService::InputFilterHost, Object, IIInputFilterHost, IBinder);
+CAR_INTERFACE_IMPL(CInputManagerService::InputFilterHost, Object, IIInputFilterHost, IBinder);
 
 CInputManagerService::InputFilterHost::InputFilterHost()
     : mDisconnected(FALSE)
@@ -259,7 +259,7 @@ ECode CInputManagerService::InputFilterHost::ToString(
 //==============================================================================
 //  CInputManagerService::ChainedInputFilterHost
 //==============================================================================
-CAR_INTERFACE_IMPL_2(CInputManagerService::ChainedInputFilterHost, Object, IIInputFilterHost, IBinder);
+CAR_INTERFACE_IMPL(CInputManagerService::ChainedInputFilterHost, Object, IIInputFilterHost, IBinder);
 
 CInputManagerService::ChainedInputFilterHost::ChainedInputFilterHost()
     : mDisconnected(FALSE)
@@ -752,7 +752,7 @@ const Int32 CInputManagerService::SW_JACK_PHYSICAL_INSERT_BIT;
 const Int32 CInputManagerService::SW_JACK_BITS;
 const Int32 CInputManagerService::SW_CAMERA_LENS_COVER_BIT;
 
-CAR_INTERFACE_IMPL_3(CInputManagerService, Object, IIInputManager, IWatchdogMonitor, IBinder);
+CAR_INTERFACE_IMPL(CInputManagerService, Object, IIInputManager, IWatchdogMonitor, IBinder);
 
 CAR_OBJECT_IMPL(CInputManagerService)
 

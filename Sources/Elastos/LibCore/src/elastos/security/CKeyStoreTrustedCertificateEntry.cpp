@@ -20,7 +20,7 @@ namespace Elastos {
 namespace Security {
 
 CAR_OBJECT_IMPL(CKeyStoreTrustedCertificateEntry)
-CAR_INTERFACE_IMPL_2(CKeyStoreTrustedCertificateEntry, Object, IKeyStoreTrustedCertificateEntry, IKeyStoreEntry)
+CAR_INTERFACE_IMPL(CKeyStoreTrustedCertificateEntry, Object, IKeyStoreTrustedCertificateEntry, IKeyStoreEntry)
 ECode CKeyStoreTrustedCertificateEntry::GetTrustedCertificate(
     /* [out] */ Elastos::Security::Cert::ICertificate **cert)
 {

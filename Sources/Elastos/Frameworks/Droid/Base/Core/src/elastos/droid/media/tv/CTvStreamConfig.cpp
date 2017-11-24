@@ -26,7 +26,7 @@ namespace Tv {
 
 String CTvStreamConfig::TAG("TvStreamConfig");
 
-CAR_INTERFACE_IMPL_2(CTvStreamConfig, Object, ITvStreamConfig, IParcelable)
+CAR_INTERFACE_IMPL(CTvStreamConfig, Object, ITvStreamConfig, IParcelable)
 
 CAR_OBJECT_IMPL(CTvStreamConfig)
 

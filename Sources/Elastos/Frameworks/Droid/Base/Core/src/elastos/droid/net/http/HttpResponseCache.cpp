@@ -41,7 +41,7 @@ namespace Droid {
 namespace Net {
 namespace Http {
 
-CAR_INTERFACE_IMPL_2(HttpResponseCache, ResponseCache, IHttpResponseCache, ICloseable)
+CAR_INTERFACE_IMPL(HttpResponseCache, ResponseCache, IHttpResponseCache, ICloseable)
 
 ECode HttpResponseCache::constructor(
     /* [in] */ Com::Squareup::Okhttp::IHttpResponseCache* delegate)

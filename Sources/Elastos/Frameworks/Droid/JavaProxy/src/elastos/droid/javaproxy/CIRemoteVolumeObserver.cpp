@@ -26,7 +26,7 @@ namespace JavaProxy {
 
 const String CIRemoteVolumeObserver::TAG("CIRemoteVolumeObserver");
 
-CAR_INTERFACE_IMPL_2(CIRemoteVolumeObserver, Object, IIRemoteVolumeObserver, IBinder)
+CAR_INTERFACE_IMPL(CIRemoteVolumeObserver, Object, IIRemoteVolumeObserver, IBinder)
 
 CAR_OBJECT_IMPL(CIRemoteVolumeObserver)
 

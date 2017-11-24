@@ -84,7 +84,7 @@ ECode CPriorityQueue::PriorityIterator::Remove()
 
 CAR_OBJECT_IMPL(CPriorityQueue)
 
-CAR_INTERFACE_IMPL_2(CPriorityQueue, AbstractQueue, IPriorityQueue, ISerializable)
+CAR_INTERFACE_IMPL(CPriorityQueue, AbstractQueue, IPriorityQueue, ISerializable)
 
 const Int64 CPriorityQueue::sSerialVersionUID;
 

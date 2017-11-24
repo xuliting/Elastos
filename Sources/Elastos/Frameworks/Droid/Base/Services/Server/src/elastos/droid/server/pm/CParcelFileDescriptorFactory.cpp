@@ -34,7 +34,7 @@ namespace Droid {
 namespace Server {
 namespace Pm {
 
-CAR_INTERFACE_IMPL_2(CParcelFileDescriptorFactory, Object, IIParcelFileDescriptorFactory, IBinder)
+CAR_INTERFACE_IMPL(CParcelFileDescriptorFactory, Object, IIParcelFileDescriptorFactory, IBinder)
 
 CAR_OBJECT_IMPL(CParcelFileDescriptorFactory)
 

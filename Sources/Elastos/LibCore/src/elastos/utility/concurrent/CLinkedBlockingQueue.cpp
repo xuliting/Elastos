@@ -108,7 +108,7 @@ ECode CLinkedBlockingQueue::Itr::Remove()
 //====================================================================
 // CLinkedBlockingQueue::
 //====================================================================
-CAR_INTERFACE_IMPL_2(CLinkedBlockingQueue, AbstractQueue, IBlockingQueue, ISerializable)
+CAR_INTERFACE_IMPL(CLinkedBlockingQueue, AbstractQueue, IBlockingQueue, ISerializable)
 
 CAR_OBJECT_IMPL(CLinkedBlockingQueue)
 

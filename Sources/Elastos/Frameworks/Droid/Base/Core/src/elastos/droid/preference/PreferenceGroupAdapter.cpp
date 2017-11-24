@@ -72,7 +72,7 @@ ECode PreferenceGroupAdapter::InnerListener::OnPreferenceHierarchyChange(
 // PreferenceGroupAdapter::PreferenceLayout
 //====================================================
 
-CAR_INTERFACE_IMPL_2(PreferenceGroupAdapter::PreferenceLayout, Object, IPreferenceLayout, IComparable)
+CAR_INTERFACE_IMPL(PreferenceGroupAdapter::PreferenceLayout, Object, IPreferenceLayout, IComparable)
 
 PreferenceGroupAdapter::PreferenceLayout::PreferenceLayout()
     : mResId(0)

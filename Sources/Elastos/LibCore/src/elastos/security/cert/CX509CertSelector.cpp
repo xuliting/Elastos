@@ -35,7 +35,7 @@ namespace Security {
 namespace Cert {
 
 CAR_OBJECT_IMPL(CX509CertSelector)
-CAR_INTERFACE_IMPL_3(CX509CertSelector, Object, IX509CertSelector, ICertSelector,ICloneable)
+CAR_INTERFACE_IMPL(CX509CertSelector, Object, IX509CertSelector, ICertSelector,ICloneable)
 CX509CertSelector::CX509CertSelector()
     : mMatchAllNames(TRUE)
     , mPathLen(-1)

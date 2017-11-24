@@ -78,7 +78,7 @@ const Int32 LocationManager::ListenerTransport::TYPE_STATUS_CHANGED;
 const Int32 LocationManager::ListenerTransport::TYPE_PROVIDER_ENABLED;
 const Int32 LocationManager::ListenerTransport::TYPE_PROVIDER_DISABLED;
 
-CAR_INTERFACE_IMPL_2(LocationManager::ListenerTransport, Object, IILocationListener, IBinder)
+CAR_INTERFACE_IMPL(LocationManager::ListenerTransport, Object, IILocationListener, IBinder)
 
 LocationManager::ListenerTransport::ListenerTransport()
 {
@@ -278,7 +278,7 @@ ECode LocationManager::GpsStatusListenerTransport::GpsHandler::HandleMessage(
 //LocationManager::GpsStatusListenerTransport
 //============================================
 
-CAR_INTERFACE_IMPL_2(LocationManager::GpsStatusListenerTransport, Object, IIGpsStatusListener, IBinder)
+CAR_INTERFACE_IMPL(LocationManager::GpsStatusListenerTransport, Object, IIGpsStatusListener, IBinder)
 
 LocationManager::GpsStatusListenerTransport::GpsStatusListenerTransport()
 {

@@ -28,7 +28,7 @@ namespace Telephony {
 //=====================================================================
 //                            SmsCbCmasInfo
 //=====================================================================
-CAR_INTERFACE_IMPL_2(SmsCbCmasInfo, Object, ISmsCbCmasInfo, IParcelable);
+CAR_INTERFACE_IMPL(SmsCbCmasInfo, Object, ISmsCbCmasInfo, IParcelable);
 
 SmsCbCmasInfo::SmsCbCmasInfo()
     : mMessageClass(0)

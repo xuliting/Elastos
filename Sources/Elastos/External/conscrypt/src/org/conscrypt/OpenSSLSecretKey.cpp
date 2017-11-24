@@ -35,7 +35,7 @@ namespace Conscrypt {
 //=========================================
 Int64 OpenSSLSecretKey::mSerialVersionUID = 1831053062911514589L;
 
-CAR_INTERFACE_IMPL_4(OpenSSLSecretKey, Object, IKey, ISecretKey, IOpenSSLSecretKey, IOpenSSLKeyHolder)
+CAR_INTERFACE_IMPL(OpenSSLSecretKey, Object, IKey, ISecretKey, IOpenSSLSecretKey, IOpenSSLKeyHolder)
 
 ECode OpenSSLSecretKey::constructor(
     /* [in] */ String algorithm,

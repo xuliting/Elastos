@@ -126,7 +126,7 @@ AlwaysOnHotwordDetector::Callback::Callback()
 // AlwaysOnHotwordDetector::SoundTriggerListener
 //================================
 
-CAR_INTERFACE_IMPL_2(AlwaysOnHotwordDetector::SoundTriggerListener, Object, IIRecognitionStatusCallback, IBinder)
+CAR_INTERFACE_IMPL(AlwaysOnHotwordDetector::SoundTriggerListener, Object, IIRecognitionStatusCallback, IBinder)
 
 AlwaysOnHotwordDetector::SoundTriggerListener::SoundTriggerListener()
 {

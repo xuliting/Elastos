@@ -50,7 +50,7 @@ AbstractClientConnAdapter::AbstractClientConnAdapter(
     mExecutionThread = Thread::GetCurrentThread();
 }
 
-CAR_INTERFACE_IMPL_5(AbstractClientConnAdapter, Object
+CAR_INTERFACE_IMPL(AbstractClientConnAdapter, Object
         , IManagedClientConnection
         , IHttpClientConnection
         , IHttpConnection

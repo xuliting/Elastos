@@ -31,7 +31,7 @@ namespace Telephony {
 //==============================================================
 const String UiccPhoneBookController::TAG("UiccPhoneBookController");
 
-CAR_INTERFACE_IMPL_2(UiccPhoneBookController, Object, IIIccPhoneBook, IUiccPhoneBookController)
+CAR_INTERFACE_IMPL(UiccPhoneBookController, Object, IIIccPhoneBook, IUiccPhoneBookController)
 
 ECode UiccPhoneBookController::constructor(
     /* [in] */ ArrayOf<IPhone*>* phone)

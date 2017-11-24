@@ -46,7 +46,7 @@ namespace Display {
 // VirtualDisplayAdapter::MediaProjectionCallback
 //===================================================================
 
-CAR_INTERFACE_IMPL_2(VirtualDisplayAdapter::MediaProjectionCallback, Object, IIMediaProjectionCallback, IBinder)
+CAR_INTERFACE_IMPL(VirtualDisplayAdapter::MediaProjectionCallback, Object, IIMediaProjectionCallback, IBinder)
 
 VirtualDisplayAdapter::MediaProjectionCallback::MediaProjectionCallback()
 {}

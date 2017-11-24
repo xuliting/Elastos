@@ -2994,7 +2994,7 @@ Boolean WebViewChromium::InternalAccessAdapter::Super_onHoverEvent(
 const String WebViewChromium::TAG("WebViewChromium");//WebViewChromium.class.getSimpleName());
 Boolean WebViewChromium::sRecordWholeDocumentEnabledByApi = FALSE;
 
-CAR_INTERFACE_IMPL_3(WebViewChromium, Object, IWebViewProvider, IWebViewProviderScrollDelegate, IWebViewProviderViewDelegate)
+CAR_INTERFACE_IMPL(WebViewChromium, Object, IWebViewProvider, IWebViewProviderScrollDelegate, IWebViewProviderViewDelegate)
 
 WebViewChromium::WebViewChromium(
     /* [in] */ IWebViewChromiumFactoryProvider* factory,

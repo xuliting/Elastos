@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIMediaRouterClientNative::TAG("CIMediaRouterClientNative");
 
-CAR_INTERFACE_IMPL_2(CIMediaRouterClientNative, Object, IIMediaRouterClient, IBinder)
+CAR_INTERFACE_IMPL(CIMediaRouterClientNative, Object, IIMediaRouterClient, IBinder)
 
 CAR_OBJECT_IMPL(CIMediaRouterClientNative)
 

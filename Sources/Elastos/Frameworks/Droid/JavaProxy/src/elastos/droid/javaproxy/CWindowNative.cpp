@@ -29,7 +29,7 @@ namespace JavaProxy {
 
 const String CWindowNative::TAG("CWindowNative");
 
-CAR_INTERFACE_IMPL_2(CWindowNative, Object, IIWindow, IBinder)
+CAR_INTERFACE_IMPL(CWindowNative, Object, IIWindow, IBinder)
 
 CAR_OBJECT_IMPL(CWindowNative)
 

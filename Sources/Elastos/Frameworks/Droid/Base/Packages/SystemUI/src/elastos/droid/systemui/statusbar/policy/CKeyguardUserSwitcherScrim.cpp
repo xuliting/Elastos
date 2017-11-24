@@ -41,7 +41,7 @@ const Float CKeyguardUserSwitcherScrim::OUTER_EXTENT = 2.5f;
 const Float CKeyguardUserSwitcherScrim::INNER_EXTENT = 0.75f;
 
 CAR_OBJECT_IMPL(CKeyguardUserSwitcherScrim)
-CAR_INTERFACE_IMPL_2(CKeyguardUserSwitcherScrim, Drawable, IKeyguardUserSwitcherScrim, IViewOnLayoutChangeListener);
+CAR_INTERFACE_IMPL(CKeyguardUserSwitcherScrim, Drawable, IKeyguardUserSwitcherScrim, IViewOnLayoutChangeListener);
 CKeyguardUserSwitcherScrim::CKeyguardUserSwitcherScrim()
     : mDarkColor(0)
     , mTop(0)

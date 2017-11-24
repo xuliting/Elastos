@@ -20,7 +20,7 @@
 namespace Elastos {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(DatagramSocketImpl, Object, IDatagramSocketImpl, ISocketOptions)
+CAR_INTERFACE_IMPL(DatagramSocketImpl, Object, IDatagramSocketImpl, ISocketOptions)
 
 DatagramSocketImpl::DatagramSocketImpl()
     : mLocalPort(-1)

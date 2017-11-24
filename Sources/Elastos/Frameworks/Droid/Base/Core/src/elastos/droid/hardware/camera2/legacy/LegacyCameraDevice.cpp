@@ -292,7 +292,7 @@ ECode LegacyCameraDevice::MyListener::OnCaptureResult(
     return mHost->mResultHandler->Post(myRun, &res);
 }
 
-CAR_INTERFACE_IMPL_2(LegacyCameraDevice, Object, ILegacyCameraDevice, ICloseable)
+CAR_INTERFACE_IMPL(LegacyCameraDevice, Object, ILegacyCameraDevice, ICloseable)
 
 const String LegacyCameraDevice::DEBUG_PROP("HAL1ShimLogging");
 const Boolean LegacyCameraDevice::DEBUG = FALSE;//Log.isLoggable(LegacyCameraDevice.DEBUG_PROP, Log.DEBUG);

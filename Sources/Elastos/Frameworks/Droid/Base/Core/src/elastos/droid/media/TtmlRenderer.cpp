@@ -71,7 +71,7 @@ TtmlRenderer::TtmlRenderer()
 TtmlRenderer::~TtmlRenderer()
 {}
 
-CAR_INTERFACE_IMPL_2(TtmlRenderer, Object, ITtmlRenderer, ISubtitleControllerRenderer)
+CAR_INTERFACE_IMPL(TtmlRenderer, Object, ITtmlRenderer, ISubtitleControllerRenderer)
 
 ECode TtmlRenderer::constructor(
     /* [in] */ IContext* context)
@@ -646,7 +646,7 @@ TtmlTrack::TtmlTrack(
 TtmlTrack::~TtmlTrack()
 {}
 
-CAR_INTERFACE_IMPL_3(TtmlTrack, Object, ITtmlNodeListener, ISubtitleTrack, IMediaTimeProviderOnMediaTimeListener)
+CAR_INTERFACE_IMPL(TtmlTrack, Object, ITtmlNodeListener, ISubtitleTrack, IMediaTimeProviderOnMediaTimeListener)
 
 ECode TtmlTrack::GetRenderingWidget(
     /* [out] */ ISubtitleTrackRenderingWidget** result)
@@ -863,7 +863,7 @@ TtmlRenderingWidget::TtmlRenderingWidget(
 TtmlRenderingWidget::~TtmlRenderingWidget()
 {}
 
-CAR_INTERFACE_IMPL_7(TtmlRenderingWidget, Object, ISubtitleTrackRenderingWidget, ITtmlRenderingWidget,
+CAR_INTERFACE_IMPL(TtmlRenderingWidget, Object, ISubtitleTrackRenderingWidget, ITtmlRenderingWidget,
     ILinearLayout, IViewGroup, IViewParent, IViewManager, IView/*,*/
 /*    IDrawableCallback, IKeyEventCallback, IAccessibilityEventSource*/)
 

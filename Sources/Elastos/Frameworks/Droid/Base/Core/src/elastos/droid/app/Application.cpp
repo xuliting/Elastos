@@ -30,7 +30,7 @@ namespace App {
 
 static const String TAG("Application");
 
-CAR_INTERFACE_IMPL_3(Application, ContextWrapper, IApplication, IComponentCallbacks, IComponentCallbacks2)
+CAR_INTERFACE_IMPL(Application, ContextWrapper, IApplication, IComponentCallbacks, IComponentCallbacks2)
 
 Application::Application()
 {}

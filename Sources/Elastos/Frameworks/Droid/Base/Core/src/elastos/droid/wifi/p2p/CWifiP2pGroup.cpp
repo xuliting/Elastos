@@ -49,7 +49,7 @@ static AutoPtr<IPattern> InitPattern()
 
 AutoPtr<IPattern> CWifiP2pGroup::mGroupStartedPattern = InitPattern();
 
-CAR_INTERFACE_IMPL_2(CWifiP2pGroup, Object, IWifiP2pGroup, IParcelable)
+CAR_INTERFACE_IMPL(CWifiP2pGroup, Object, IWifiP2pGroup, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiP2pGroup)
 

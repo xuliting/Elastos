@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CAppWidgetHostCallbacksNative::TAG("CAppWidgetHostCallbacksNative");
 
-CAR_INTERFACE_IMPL_2(CAppWidgetHostCallbacksNative, Object, IIAppWidgetHost, IBinder)
+CAR_INTERFACE_IMPL(CAppWidgetHostCallbacksNative, Object, IIAppWidgetHost, IBinder)
 
 CAR_OBJECT_IMPL(CAppWidgetHostCallbacksNative)
 

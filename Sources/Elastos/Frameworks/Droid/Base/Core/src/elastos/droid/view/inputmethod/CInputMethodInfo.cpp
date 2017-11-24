@@ -57,7 +57,7 @@ namespace InputMethod {
 //========================================================================================
 const String CInputMethodInfo::TAG("InputMethodInfo");
 
-CAR_INTERFACE_IMPL_2(CInputMethodInfo, Object, IInputMethodInfo, IParcelable)
+CAR_INTERFACE_IMPL(CInputMethodInfo, Object, IInputMethodInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CInputMethodInfo)
 

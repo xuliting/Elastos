@@ -48,7 +48,7 @@ const String CTransferPipe::TAG("CTransferPipe");
 const Boolean CTransferPipe::DEBUG;
 const Int64 CTransferPipe::DEFAULT_TIMEOUT;
 
-CAR_INTERFACE_IMPL_2(CTransferPipe, Object, ITransferPipe, IRunnable)
+CAR_INTERFACE_IMPL(CTransferPipe, Object, ITransferPipe, IRunnable)
 
 CAR_OBJECT_IMPL(CTransferPipe)
 

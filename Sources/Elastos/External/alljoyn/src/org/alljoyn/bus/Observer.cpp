@@ -116,7 +116,7 @@ ECode Observer::ObjectId::CompareTo(
 //============================================================================
 // Observer
 //============================================================================
-CAR_INTERFACE_IMPL_2(Observer, Object, IObserver, ICloseable)
+CAR_INTERFACE_IMPL(Observer, Object, IObserver, ICloseable)
 
 Observer::Observer()
     : mHandle(0)

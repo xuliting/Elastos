@@ -110,7 +110,7 @@ const Float Scroller::ViscousFluidInterpolator::VISCOUS_FLUID_NORMALIZE
 const Float Scroller::ViscousFluidInterpolator::VISCOUS_FLUID_OFFSET
         = 1.0f - VISCOUS_FLUID_NORMALIZE * Scroller::ViscousFluidInterpolator::ViscousFluid(1.0f);
 
-CAR_INTERFACE_IMPL_2(Scroller::ViscousFluidInterpolator, Object, IInterpolator, ITimeInterpolator);
+CAR_INTERFACE_IMPL(Scroller::ViscousFluidInterpolator, Object, IInterpolator, ITimeInterpolator);
 
 Float Scroller::ViscousFluidInterpolator::ViscousFluid(
     /* [in] */ Float x)

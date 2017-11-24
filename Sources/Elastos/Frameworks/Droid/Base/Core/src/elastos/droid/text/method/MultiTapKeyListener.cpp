@@ -105,7 +105,7 @@ const Int32 MultiTapKeyListener::CAPITALIZELENGTH = 4;
 
 AutoPtr<ArrayOf<IMultiTapKeyListener*> > MultiTapKeyListener::sInstance = ArrayOf<IMultiTapKeyListener*>::Alloc(MultiTapKeyListener::CAPITALIZELENGTH * 2);
 
-CAR_INTERFACE_IMPL_3(MultiTapKeyListener, BaseKeyListener, IMultiTapKeyListener, ISpanWatcher, INoCopySpan)
+CAR_INTERFACE_IMPL(MultiTapKeyListener, BaseKeyListener, IMultiTapKeyListener, ISpanWatcher, INoCopySpan)
 
 MultiTapKeyListener::MultiTapKeyListener()
     : mAutoText(FALSE)

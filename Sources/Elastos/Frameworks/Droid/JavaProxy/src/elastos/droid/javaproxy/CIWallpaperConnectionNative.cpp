@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIWallpaperConnectionNative::TAG("CIWallpaperConnectionNative");
 
-CAR_INTERFACE_IMPL_2(CIWallpaperConnectionNative, Object, IIWallpaperConnection, IBinder)
+CAR_INTERFACE_IMPL(CIWallpaperConnectionNative, Object, IIWallpaperConnection, IBinder)
 
 CAR_OBJECT_IMPL(CIWallpaperConnectionNative)
 

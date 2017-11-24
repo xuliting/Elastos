@@ -24,7 +24,7 @@ using Elastos::Core::CString;
 namespace Eunit {
 namespace Framework {
 
-CAR_INTERFACE_IMPL_2(TestCase, Object, ITest, ITestCase)
+CAR_INTERFACE_IMPL(TestCase, Object, ITest, ITestCase)
 
 TestCase::TestCase()
 {}

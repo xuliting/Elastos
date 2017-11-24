@@ -29,7 +29,7 @@ namespace Security {
 namespace X509 {
 
 CAR_OBJECT_IMPL(CX509PublicKey)
-CAR_INTERFACE_IMPL_4(CX509PublicKey, Object, IX509PublicKey, IPublicKey, IKey, ISerializable)
+CAR_INTERFACE_IMPL(CX509PublicKey, Object, IX509PublicKey, IPublicKey, IKey, ISerializable)
 
 ECode CX509PublicKey::GetAlgorithm(
     /* [out] */ String* pAlgorithm)

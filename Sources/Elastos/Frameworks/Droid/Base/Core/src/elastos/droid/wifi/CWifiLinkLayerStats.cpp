@@ -26,7 +26,7 @@ namespace Wifi {
 
 const String CWifiLinkLayerStats::TAG("WifiLinkLayerStats");
 
-CAR_INTERFACE_IMPL_2(CWifiLinkLayerStats, Object, IWifiLinkLayerStats, IParcelable)
+CAR_INTERFACE_IMPL(CWifiLinkLayerStats, Object, IWifiLinkLayerStats, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiLinkLayerStats)
 

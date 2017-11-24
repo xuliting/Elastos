@@ -44,7 +44,7 @@ const Int16 GpsClock::HAS_BIAS_UNCERTAINTY = 1 << 4;
 const Int16 GpsClock::HAS_DRIFT = 1 << 5;
 const Int16 GpsClock::HAS_DRIFT_UNCERTAINTY = 1 << 6;
 
-CAR_INTERFACE_IMPL_2(GpsClock, Object, IGpsClock, IParcelable)
+CAR_INTERFACE_IMPL(GpsClock, Object, IGpsClock, IParcelable)
 
 GpsClock::GpsClock()
 {

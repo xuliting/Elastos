@@ -28,7 +28,7 @@ using Elastos::Utility::Arrays;
 namespace Elastos {
 namespace IO {
 
-CAR_INTERFACE_IMPL_2(Int32Buffer, Object, IInt32Buffer, IBuffer)
+CAR_INTERFACE_IMPL(Int32Buffer, Object, IInt32Buffer, IBuffer)
 
 Int32Buffer::Int32Buffer()
 {}

@@ -29,7 +29,7 @@ const Int32 CDataTruncation::THE_ERROR_CODE = 0;
 
 CAR_OBJECT_IMPL(CDataTruncation)
 
-CAR_INTERFACE_IMPL_3(CDataTruncation, Object, IDataTruncation, ISQLWarning, ISerializable)
+CAR_INTERFACE_IMPL(CDataTruncation, Object, IDataTruncation, ISQLWarning, ISerializable)
 
 CDataTruncation::CDataTruncation()
     : mIndex(0)

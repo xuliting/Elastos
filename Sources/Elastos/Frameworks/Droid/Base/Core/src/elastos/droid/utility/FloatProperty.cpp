@@ -30,7 +30,7 @@ namespace Elastos {
 namespace Droid {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_2(FloatProperty, Object, IFloatProperty, IProperty)
+CAR_INTERFACE_IMPL(FloatProperty, Object, IFloatProperty, IProperty)
 
 FloatProperty::FloatProperty(
     /* [in] */ const String& name)

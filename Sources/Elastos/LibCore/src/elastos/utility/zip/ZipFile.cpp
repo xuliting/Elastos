@@ -280,7 +280,7 @@ ECode ZipFile::Enumeration::GetNextElement(
 // ZipFile::
 //====================================================================
 
-CAR_INTERFACE_IMPL_2(ZipFile, Object, IZipFile, ICloseable)
+CAR_INTERFACE_IMPL(ZipFile, Object, IZipFile, ICloseable)
 
 ZipFile::ZipFile()
 {

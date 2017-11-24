@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CPackageInstallObserverNative::TAG("CPackageInstallObserverNative");
 
-CAR_INTERFACE_IMPL_2(CPackageInstallObserverNative, Object, IIPackageInstallObserver, IBinder)
+CAR_INTERFACE_IMPL(CPackageInstallObserverNative, Object, IIPackageInstallObserver, IBinder)
 
 CAR_OBJECT_IMPL(CPackageInstallObserverNative)
 

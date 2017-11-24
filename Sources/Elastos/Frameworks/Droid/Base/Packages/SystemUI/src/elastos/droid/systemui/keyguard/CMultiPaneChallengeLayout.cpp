@@ -163,7 +163,7 @@ const String CMultiPaneChallengeLayout::TAG("MultiPaneChallengeLayout");
 
 CAR_OBJECT_IMPL(CMultiPaneChallengeLayout)
 
-CAR_INTERFACE_IMPL_2(CMultiPaneChallengeLayout, ViewGroup, IChallengeLayout,
+CAR_INTERFACE_IMPL(CMultiPaneChallengeLayout, ViewGroup, IChallengeLayout,
         IMultiPaneChallengeLayout)
 
 CMultiPaneChallengeLayout::CMultiPaneChallengeLayout()

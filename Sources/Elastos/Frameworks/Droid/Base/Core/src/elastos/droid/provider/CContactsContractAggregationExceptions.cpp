@@ -26,7 +26,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractAggregationExceptions)
 
-CAR_INTERFACE_IMPL_2(CContactsContractAggregationExceptions, Singleton
+CAR_INTERFACE_IMPL(CContactsContractAggregationExceptions, Singleton
     , IContactsContractAggregationExceptions
     , IBaseColumns)
 

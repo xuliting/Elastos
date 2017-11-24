@@ -89,7 +89,7 @@ const Int64 CRemoteControlClient::POSITION_DRIFT_MAX_MS = 500;
 //    CRemoteControlClient::MetadataEditor
 //----------------------------------------
 
-CAR_INTERFACE_IMPL_2(CRemoteControlClient::MetadataEditor, Object, IRemoteControlClientMetadataEditor, IMediaMetadataEditor);
+CAR_INTERFACE_IMPL(CRemoteControlClient::MetadataEditor, Object, IRemoteControlClientMetadataEditor, IMediaMetadataEditor);
 
 CRemoteControlClient::MetadataEditor::MetadataEditor(
     /* [in] */ CRemoteControlClient* owner)

@@ -92,7 +92,7 @@ CResampleInputStream::~CResampleInputStream()
 
 CAR_OBJECT_IMPL(CResampleInputStream)
 
-CAR_INTERFACE_IMPL_2(CResampleInputStream, Object, IInputStream, ICloseable)
+CAR_INTERFACE_IMPL(CResampleInputStream, Object, IInputStream, ICloseable)
 
 ECode CResampleInputStream::Available(
     /* [out] */ Int32 * number)

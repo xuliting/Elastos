@@ -96,7 +96,7 @@ ECode ChooseTypeAndAccountActivity::AdapterViewOnItemClickListener::OnItemClick(
 //===============================================================
 // ChooseTypeAndAccountActivity::
 //===============================================================
-CAR_INTERFACE_IMPL_2(ChooseTypeAndAccountActivity, Activity, IChooseTypeAndAccountActivity, IAccountManagerCallback)
+CAR_INTERFACE_IMPL(ChooseTypeAndAccountActivity, Activity, IChooseTypeAndAccountActivity, IAccountManagerCallback)
 
 ChooseTypeAndAccountActivity::ChooseTypeAndAccountActivity()
     : mSelectedAddNewAccount(FALSE)

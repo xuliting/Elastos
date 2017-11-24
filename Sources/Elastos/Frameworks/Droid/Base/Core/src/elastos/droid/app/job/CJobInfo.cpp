@@ -33,7 +33,7 @@ namespace Job {
 //========================================================================
 // CJobInfo
 //========================================================================
-CAR_INTERFACE_IMPL_2(CJobInfo, Object, IJobInfo, IParcelable)
+CAR_INTERFACE_IMPL(CJobInfo, Object, IJobInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CJobInfo)
 

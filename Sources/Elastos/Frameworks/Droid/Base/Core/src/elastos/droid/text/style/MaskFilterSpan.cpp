@@ -25,7 +25,7 @@ namespace Droid {
 namespace Text {
 namespace Style {
 
-CAR_INTERFACE_IMPL_2(MaskFilterSpan, CharacterStyle, IMaskFilterSpan, IUpdateAppearance)
+CAR_INTERFACE_IMPL(MaskFilterSpan, CharacterStyle, IMaskFilterSpan, IUpdateAppearance)
 
 MaskFilterSpan::MaskFilterSpan()
 {}

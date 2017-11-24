@@ -95,7 +95,7 @@ ECode BluetoothPhoneService::MainThreadRequest::SetResult(
 //=============================================================================
 // BluetoothPhoneService::SubIBluetoothHeadsetPhone
 //=============================================================================
-CAR_INTERFACE_IMPL_2(BluetoothPhoneService::SubIBluetoothHeadsetPhone, Object, IBinder, IIBluetoothHeadsetPhone)
+CAR_INTERFACE_IMPL(BluetoothPhoneService::SubIBluetoothHeadsetPhone, Object, IBinder, IIBluetoothHeadsetPhone)
 
 ECode BluetoothPhoneService::SubIBluetoothHeadsetPhone::constructor(
     /* [in] */ IInterface* host)

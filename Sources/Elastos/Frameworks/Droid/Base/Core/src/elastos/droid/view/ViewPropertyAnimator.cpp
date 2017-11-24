@@ -54,7 +54,7 @@ const Int32 ViewPropertyAnimator::TRANSFORM_MASK;
 //=====================================================================
 //         ViewPropertyAnimator::AnimatorEventListener
 //=====================================================================
-CAR_INTERFACE_IMPL_2(ViewPropertyAnimator::AnimatorEventListener, Object, \
+CAR_INTERFACE_IMPL(ViewPropertyAnimator::AnimatorEventListener, Object, \
     IAnimatorUpdateListener, IAnimatorListener)
 
 ViewPropertyAnimator::AnimatorEventListener::AnimatorEventListener(

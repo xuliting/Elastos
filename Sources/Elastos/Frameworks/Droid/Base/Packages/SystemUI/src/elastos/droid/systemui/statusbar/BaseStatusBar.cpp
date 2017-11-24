@@ -881,7 +881,7 @@ ECode BaseStatusBar::KeyguardHostViewOnDismissAction::OnDismiss(
 //==============================================================================
 // BaseStatusBar::NotificationClicker
 //==============================================================================
-CAR_INTERFACE_IMPL_2(BaseStatusBar::NotificationClicker, Object, IViewOnClickListener, INotificationClicker)
+CAR_INTERFACE_IMPL(BaseStatusBar::NotificationClicker, Object, IViewOnClickListener, INotificationClicker)
 
 BaseStatusBar::NotificationClicker::NotificationClicker(
     /* [in] */ IPendingIntent* intent,
@@ -1108,7 +1108,7 @@ ECode BaseStatusBar::BaseAnimatorListenerAdapter::OnAnimationEnd(
 //==============================================================================
 //                  BaseStatusBar
 //==============================================================================
-CAR_INTERFACE_IMPL_5(BaseStatusBar, SystemUI, IBaseStatusBar, ICommandQueueCallbacks, \
+CAR_INTERFACE_IMPL(BaseStatusBar, SystemUI, IBaseStatusBar, ICommandQueueCallbacks, \
     IRecentsComponentCallbacks, IExpansionLogger, INotificationEnvironment);
 
 BaseStatusBar::BaseStatusBar()

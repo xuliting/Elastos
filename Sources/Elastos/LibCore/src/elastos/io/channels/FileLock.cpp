@@ -20,7 +20,7 @@ namespace Elastos {
 namespace IO {
 namespace Channels {
 
-CAR_INTERFACE_IMPL_2(FileLock, Object, ICloseable, IFileLock)
+CAR_INTERFACE_IMPL(FileLock, Object, ICloseable, IFileLock)
 
 FileLock::FileLock(
     /* [in] */ IFileChannel* channel,

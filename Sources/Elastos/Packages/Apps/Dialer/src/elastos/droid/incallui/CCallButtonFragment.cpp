@@ -61,7 +61,7 @@ ECode CCallButtonFragment::InnerListener::OnClick(
     return mHost->OnClick(view);
 }
 
-CAR_INTERFACE_IMPL_2(CCallButtonFragment::AudioModePopupMenuListener, Object,
+CAR_INTERFACE_IMPL(CCallButtonFragment::AudioModePopupMenuListener, Object,
     IPopupMenuOnMenuItemClickListener, IPopupMenuOnDismissListener);
 
 CCallButtonFragment::AudioModePopupMenuListener::AudioModePopupMenuListener(
@@ -82,7 +82,7 @@ ECode CCallButtonFragment::AudioModePopupMenuListener::OnDismiss(
     return mHost->OnDismiss(popupMenu);
 }
 
-CAR_INTERFACE_IMPL_2(CCallButtonFragment::OverflowPopupMenuListener, Object,
+CAR_INTERFACE_IMPL(CCallButtonFragment::OverflowPopupMenuListener, Object,
     IPopupMenuOnMenuItemClickListener, IPopupMenuOnDismissListener);
 
 ECode CCallButtonFragment::OverflowPopupMenuListener::OnMenuItemClick(
@@ -136,7 +136,7 @@ ECode CCallButtonFragment::OverflowPopupMenuListener::OnDismiss(
 const Int32 CCallButtonFragment::HIDDEN = 0;
 const Int32 CCallButtonFragment::VISIBLE = 255;
 
-CAR_INTERFACE_IMPL_5(CCallButtonFragment, BaseFragment,
+CAR_INTERFACE_IMPL(CCallButtonFragment, BaseFragment,
         IViewOnClickListener, ICompoundButtonOnCheckedChangeListener, IUi, ICallButtonUi, ICallButtonFragment);
 
 CAR_OBJECT_IMPL(CCallButtonFragment);

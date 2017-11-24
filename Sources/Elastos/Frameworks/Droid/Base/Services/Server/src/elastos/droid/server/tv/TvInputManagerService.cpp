@@ -125,7 +125,7 @@ namespace Tv {
 //=============================================================================
 // TvInputManagerService::BinderService
 //=============================================================================
-CAR_INTERFACE_IMPL_2(TvInputManagerService::BinderService, Object, IITvInputManager, IBinder)
+CAR_INTERFACE_IMPL(TvInputManagerService::BinderService, Object, IITvInputManager, IBinder)
 
 TvInputManagerService::BinderService::BinderService(
     /* [in] */ TvInputManagerService* host)
@@ -1907,7 +1907,7 @@ ECode TvInputManagerService::InputServiceConnection::OnServiceDisconnected(
 //=============================================================================
 // TvInputManagerService::ServiceCallback
 //=============================================================================
-CAR_INTERFACE_IMPL_2(TvInputManagerService::ServiceCallback, Object, IITvInputServiceCallback, IBinder)
+CAR_INTERFACE_IMPL(TvInputManagerService::ServiceCallback, Object, IITvInputServiceCallback, IBinder)
 
 TvInputManagerService::ServiceCallback::ServiceCallback(
     /* [in] */ TvInputManagerService* host)
@@ -2029,7 +2029,7 @@ ECode TvInputManagerService::ServiceCallback::ToString(
 //=============================================================================
 // TvInputManagerService::SessionCallback
 //=============================================================================
-CAR_INTERFACE_IMPL_2(TvInputManagerService::SessionCallback, Object, IBinder, IITvInputServiceCallback)
+CAR_INTERFACE_IMPL(TvInputManagerService::SessionCallback, Object, IBinder, IITvInputServiceCallback)
 
 TvInputManagerService::SessionCallback::SessionCallback(
     /* [in] */ TvInputManagerService* host)

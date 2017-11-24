@@ -23,7 +23,7 @@ using Elastos::Core::AutoLock;
 namespace Elastos {
 namespace Core {
 
-CAR_INTERFACE_IMPL_2(ThreadGroup, Object, IThreadGroup, IThreadUncaughtExceptionHandler)
+CAR_INTERFACE_IMPL(ThreadGroup, Object, IThreadGroup, IThreadUncaughtExceptionHandler)
 
 ThreadGroup::ThreadGroup()
     : mNumThreads(0)

@@ -235,7 +235,7 @@ ECode CStatusBarManagerService::UpdateUiVisibilityRunnable::Run()
 //==================================================================================
 //              CStatusBarManagerService
 //==================================================================================
-CAR_INTERFACE_IMPL_2(CStatusBarManagerService, Object, IIStatusBarService, IBinder)
+CAR_INTERFACE_IMPL(CStatusBarManagerService, Object, IIStatusBarService, IBinder)
 
 CAR_OBJECT_IMPL(CStatusBarManagerService)
 

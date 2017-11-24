@@ -26,7 +26,7 @@ using Libcore::IO::CStreams;
 namespace Elastos {
 namespace IO {
 
-CAR_INTERFACE_IMPL_2(InputStream, Object, IInputStream, ICloseable)
+CAR_INTERFACE_IMPL(InputStream, Object, IInputStream, ICloseable)
 
 InputStream::InputStream()
 {

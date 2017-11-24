@@ -54,7 +54,7 @@ namespace Elastos {
 namespace Droid {
 namespace Wifi {
 
-CAR_INTERFACE_IMPL_2(CWifiEnterpriseConfig, Object, IParcelable, IWifiEnterpriseConfig)
+CAR_INTERFACE_IMPL(CWifiEnterpriseConfig, Object, IParcelable, IWifiEnterpriseConfig)
 
 CAR_OBJECT_IMPL(CWifiEnterpriseConfig)
 

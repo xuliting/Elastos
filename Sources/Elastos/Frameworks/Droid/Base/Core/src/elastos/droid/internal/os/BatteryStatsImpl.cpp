@@ -411,7 +411,7 @@ void BatteryStatsImpl::TimeBase::WriteToParcel(
 // BatteryStatsImpl::Counter
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(BatteryStatsImpl::Counter, Object, IBatteryStatsCounter, ITimeBaseObs)
+CAR_INTERFACE_IMPL(BatteryStatsImpl::Counter, Object, IBatteryStatsCounter, ITimeBaseObs)
 
 BatteryStatsImpl::Counter::Counter(
     /* [in] */ TimeBase* timeBase,
@@ -587,7 +587,7 @@ void BatteryStatsImpl::SamplingCounter::AddCountAtomic(
 // BatteryStatsImpl::Int64SamplingCounter
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(BatteryStatsImpl::Int64SamplingCounter, Object, IBatteryStatsInt64Counter, ITimeBaseObs)
+CAR_INTERFACE_IMPL(BatteryStatsImpl::Int64SamplingCounter, Object, IBatteryStatsInt64Counter, ITimeBaseObs)
 
 BatteryStatsImpl::Int64SamplingCounter::Int64SamplingCounter(
     /* [in] */ TimeBase* timeBase,
@@ -723,7 +723,7 @@ void BatteryStatsImpl::Int64SamplingCounter::ReadSummaryFromParcelLocked(
 // BatteryStatsImpl::Timer
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(BatteryStatsImpl::Timer, Object, IBatteryStatsTimer, ITimeBaseObs)
+CAR_INTERFACE_IMPL(BatteryStatsImpl::Timer, Object, IBatteryStatsTimer, ITimeBaseObs)
 
 BatteryStatsImpl::Timer::Timer()
     : mType(0)
@@ -1766,7 +1766,7 @@ ECode BatteryStatsImpl::Uid::Sensor::GetSensorTime(
 // BatteryStatsImpl::Uid::Proc
 //==============================================================================
 
-CAR_INTERFACE_IMPL_3(BatteryStatsImpl::Uid::Proc, Object, IBatteryStatsImplUidProc, IBatteryStatsUidProc, ITimeBaseObs)
+CAR_INTERFACE_IMPL(BatteryStatsImpl::Uid::Proc, Object, IBatteryStatsImplUidProc, IBatteryStatsUidProc, ITimeBaseObs)
 
 BatteryStatsImpl::Uid::Proc::Proc(
     /* [in] */ const String& name,
@@ -2152,7 +2152,7 @@ ECode BatteryStatsImpl::Uid::Proc::GetTimeAtCpuSpeedStep(
 // BatteryStatsImpl::Uid::Pkg::Serv
 //==============================================================================
 
-CAR_INTERFACE_IMPL_3(BatteryStatsImpl::Uid::Pkg::Serv, Object, IBatteryStatsUidPkgServ, IBatteryStatsImplUidPkgServ, ITimeBaseObs)
+CAR_INTERFACE_IMPL(BatteryStatsImpl::Uid::Pkg::Serv, Object, IBatteryStatsUidPkgServ, IBatteryStatsImplUidPkgServ, ITimeBaseObs)
 
 BatteryStatsImpl::Uid::Pkg::Serv::Serv()
     : mStartTime(0)
@@ -2374,7 +2374,7 @@ ECode BatteryStatsImpl::Uid::Pkg::Serv::GetStarts(
 // BatteryStatsImpl::Uid::Pkg
 //==============================================================================
 
-CAR_INTERFACE_IMPL_3(BatteryStatsImpl::Uid::Pkg, Object, IBatteryStatsUidPkg, IBatteryStatsImplUidPkg, ITimeBaseObs)
+CAR_INTERFACE_IMPL(BatteryStatsImpl::Uid::Pkg, Object, IBatteryStatsUidPkg, IBatteryStatsImplUidPkg, ITimeBaseObs)
 
 BatteryStatsImpl::Uid::Pkg::Pkg(
     /* [in] */ BatteryStatsImpl* host)
@@ -4371,7 +4371,7 @@ const Int32 BatteryStatsImpl::NET_UPDATE_MOBILE;
 const Int32 BatteryStatsImpl::NET_UPDATE_WIFI;
 const Int32 BatteryStatsImpl::NET_UPDATE_ALL;
 
-CAR_INTERFACE_IMPL_2(BatteryStatsImpl, BatteryStats, IBatteryStatsImpl, IParcelable)
+CAR_INTERFACE_IMPL(BatteryStatsImpl, BatteryStats, IBatteryStatsImpl, IParcelable)
 
 BatteryStatsImpl::BatteryStatsImpl()
     : mDistributeWakelockCpu(FALSE)

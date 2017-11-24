@@ -28,7 +28,7 @@ namespace Apache {
 namespace Http {
 namespace Message {
 
-CAR_INTERFACE_IMPL_2(BasicHeader, Object, IHeader, ICloneable)
+CAR_INTERFACE_IMPL(BasicHeader, Object, IHeader, ICloneable)
 
 ECode BasicHeader::Init(
     /* [in] */ const String& name,

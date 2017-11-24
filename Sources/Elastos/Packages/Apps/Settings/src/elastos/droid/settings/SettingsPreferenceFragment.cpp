@@ -278,7 +278,7 @@ ECode SettingsPreferenceFragment::RunnableInHighlightPreference2::Run()
 //                  SettingsPreferenceFragment
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(SettingsPreferenceFragment, PreferenceFragment,
+CAR_INTERFACE_IMPL(SettingsPreferenceFragment, PreferenceFragment,
         ISettingsPreferenceFragment, IDialogCreatable);
 
 SettingsPreferenceFragment::SettingsPreferenceFragment()

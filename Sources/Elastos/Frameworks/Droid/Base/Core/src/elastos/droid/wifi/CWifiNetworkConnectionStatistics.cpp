@@ -25,7 +25,7 @@ namespace Wifi {
 
 const String CWifiNetworkConnectionStatistics::TAG("CWifiNetworkConnnectionStatistics");
 
-CAR_INTERFACE_IMPL_2(CWifiNetworkConnectionStatistics, Object, IWifiNetworkConnectionStatistics, IParcelable)
+CAR_INTERFACE_IMPL(CWifiNetworkConnectionStatistics, Object, IWifiNetworkConnectionStatistics, IParcelable)
 
 CAR_OBJECT_IMPL(CWifiNetworkConnectionStatistics)
 

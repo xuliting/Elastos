@@ -61,7 +61,7 @@ namespace Cat {
 ////                                 Item
 ////=====================================================================
 //const AutoPtr<IParcelable> AutoPtr< ::Creator<Item> > Item::CREATOR = new InnerParcelableCreator(this);
-CAR_INTERFACE_IMPL_2(Item, Object, IItem, IParcelable);
+CAR_INTERFACE_IMPL(Item, Object, IItem, IParcelable);
 
 Item::Item()
 {

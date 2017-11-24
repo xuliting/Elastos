@@ -41,7 +41,7 @@ namespace Content {
 namespace Browser {
 namespace Input {
 
-CAR_INTERFACE_IMPL_3(DateTimePickerDialog::InnerListener, Object,
+CAR_INTERFACE_IMPL(DateTimePickerDialog::InnerListener, Object,
     IDialogInterfaceOnClickListener, IDatePickerOnDateChangedListener,
     ITimePickerOnTimeChangedListener);
 

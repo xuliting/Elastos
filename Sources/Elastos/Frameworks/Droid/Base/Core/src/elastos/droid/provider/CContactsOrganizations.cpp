@@ -32,7 +32,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsOrganizations)
 
-CAR_INTERFACE_IMPL_3(CContactsOrganizations, Singleton, IContactsOrganizations, IBaseColumns, IContactsOrganizationColumns)
+CAR_INTERFACE_IMPL(CContactsOrganizations, Singleton, IContactsOrganizations, IBaseColumns, IContactsOrganizationColumns)
 
 ECode CContactsOrganizations::constructor()
 {

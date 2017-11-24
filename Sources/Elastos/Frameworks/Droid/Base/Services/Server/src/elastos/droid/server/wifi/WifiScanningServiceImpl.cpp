@@ -348,7 +348,7 @@ ECode WifiScanningServiceImpl::WifiScanningStateMachine::PausedState::ProcessMes
 //          WifiScanningServiceImpl::WifiScanningStateMachine
 //=====================================================================
 
-CAR_INTERFACE_IMPL_3(WifiScanningServiceImpl::WifiScanningStateMachine,
+CAR_INTERFACE_IMPL(WifiScanningServiceImpl::WifiScanningStateMachine,
         StateMachine,
         IWifiNativeScanEventHandler,
         IWifiNativeHotlistEventHandler,
@@ -1959,7 +1959,7 @@ const Int32 WifiScanningServiceImpl::CMD_DRIVER_UNLOADED;
 const Int32 WifiScanningServiceImpl::CMD_SCAN_PAUSED;
 const Int32 WifiScanningServiceImpl::CMD_SCAN_RESTARTED;
 
-CAR_INTERFACE_IMPL_2(WifiScanningServiceImpl, Object, IIWifiScanner, IBinder);
+CAR_INTERFACE_IMPL(WifiScanningServiceImpl, Object, IIWifiScanner, IBinder);
 
 WifiScanningServiceImpl::WifiScanningServiceImpl()
 {

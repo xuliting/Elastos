@@ -21,7 +21,7 @@ namespace Elastos {
 namespace Droid {
 namespace Database {
 
-CAR_INTERFACE_IMPL_2(CrossProcessCursorWrapper, CursorWrapper, ICrossProcessCursorWrapper, ICrossProcessCursor)
+CAR_INTERFACE_IMPL(CrossProcessCursorWrapper, CursorWrapper, ICrossProcessCursorWrapper, ICrossProcessCursor)
 
 ECode CrossProcessCursorWrapper::FillWindow(
     /* [in] */ Int32 position,

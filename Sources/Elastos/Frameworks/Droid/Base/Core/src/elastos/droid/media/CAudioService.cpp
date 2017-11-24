@@ -3040,7 +3040,7 @@ ECode CAudioService::BluetoothProfileServiceListener::OnServiceDisconnected(
 //  CAudioService
 //==============================================================================
 
-CAR_INTERFACE_IMPL_3(CAudioService, Object, IAudioService, IIAudioService, IBinder)
+CAR_INTERFACE_IMPL(CAudioService, Object, IAudioService, IIAudioService, IBinder)
 
 CAR_OBJECT_IMPL(CAudioService)
 

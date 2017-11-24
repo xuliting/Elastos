@@ -27,7 +27,7 @@ namespace Location {
 
 const String GpsNavigationMessageEvent::TAG("GpsNavigationMessageEvent");
 
-CAR_INTERFACE_IMPL_2(GpsNavigationMessageEvent, Object, IGpsNavigationMessageEvent, IParcelable)
+CAR_INTERFACE_IMPL(GpsNavigationMessageEvent, Object, IGpsNavigationMessageEvent, IParcelable)
 
 GpsNavigationMessageEvent::GpsNavigationMessageEvent()
 {

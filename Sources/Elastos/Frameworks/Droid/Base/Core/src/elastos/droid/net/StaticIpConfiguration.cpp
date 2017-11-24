@@ -40,7 +40,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(StaticIpConfiguration, Object, IParcelable, IStaticIpConfiguration)
+CAR_INTERFACE_IMPL(StaticIpConfiguration, Object, IParcelable, IStaticIpConfiguration)
 
 ECode StaticIpConfiguration::constructor()
 {

@@ -112,7 +112,7 @@ ECode DateTimeSettings::InitBroadcastReceiver::OnReceive(
 //                  DateTimeSettings
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(DateTimeSettings, SettingsPreferenceFragment,
+CAR_INTERFACE_IMPL(DateTimeSettings, SettingsPreferenceFragment,
         ISharedPreferencesOnSharedPreferenceChangeListener,
         ITimePickerDialogOnTimeSetListener, IDatePickerDialogOnDateSetListener);
 

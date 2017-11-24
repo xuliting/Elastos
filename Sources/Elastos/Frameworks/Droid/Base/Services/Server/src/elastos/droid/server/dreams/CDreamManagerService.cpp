@@ -124,7 +124,7 @@ ECode CDreamManagerService::SystemPropertiesChangedRunnable::Run()
 // CDreamManagerService::BinderService
 //============================================================================
 
-CAR_INTERFACE_IMPL_2(CDreamManagerService::BinderService, Object, IIDreamManager, IBinder);
+CAR_INTERFACE_IMPL(CDreamManagerService::BinderService, Object, IIDreamManager, IBinder);
 
 CDreamManagerService::BinderService::BinderService()
 {}

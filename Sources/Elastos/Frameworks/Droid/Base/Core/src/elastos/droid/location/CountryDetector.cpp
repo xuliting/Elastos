@@ -50,7 +50,7 @@ ECode CountryDetector::CountryDetectorListenerTransport::CountryDetectorListener
 //CountryDetector::CountryDetectorListenerTransport
 //===================================
 
-CAR_INTERFACE_IMPL_2(CountryDetector::CountryDetectorListenerTransport, Object, ICountryDetectorListenerTransport, IICountryListener)
+CAR_INTERFACE_IMPL(CountryDetector::CountryDetectorListenerTransport, Object, ICountryDetectorListenerTransport, IICountryListener)
 
 CountryDetector::CountryDetectorListenerTransport::CountryDetectorListenerTransport(
     /* [in] */ ICountryListener* listener,

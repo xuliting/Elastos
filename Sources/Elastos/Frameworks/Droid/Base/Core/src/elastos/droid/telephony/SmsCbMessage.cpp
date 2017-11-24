@@ -28,7 +28,7 @@ namespace Telephony {
 //=====================================================================
 //                             SmsCbMessage
 //=====================================================================
-CAR_INTERFACE_IMPL_2(SmsCbMessage, Object, ISmsCbMessage, IParcelable);
+CAR_INTERFACE_IMPL(SmsCbMessage, Object, ISmsCbMessage, IParcelable);
 
 const String SmsCbMessage::LOGTAG("SMSCB");
 

@@ -54,7 +54,7 @@ const String KeyboardLayoutDialogFragment::KEY_INPUT_DEVICE_IDENTIFIER("inputDev
 //                  KeyboardLayoutDialogFragment::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(KeyboardLayoutDialogFragment::InnerListener, Object, IInputDeviceListener, ILoaderManagerLoaderCallbacks)
+CAR_INTERFACE_IMPL(KeyboardLayoutDialogFragment::InnerListener, Object, IInputDeviceListener, ILoaderManagerLoaderCallbacks)
 
 KeyboardLayoutDialogFragment::InnerListener::InnerListener(
     /* [in] */ KeyboardLayoutDialogFragment* host)

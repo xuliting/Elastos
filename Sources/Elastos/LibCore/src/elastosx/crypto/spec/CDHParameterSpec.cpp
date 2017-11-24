@@ -21,7 +21,7 @@ namespace Crypto {
 namespace Spec {
 
 CAR_OBJECT_IMPL(CDHParameterSpec)
-CAR_INTERFACE_IMPL_2(CDHParameterSpec, Object, IDHParameterSpec, IAlgorithmParameterSpec)
+CAR_INTERFACE_IMPL(CDHParameterSpec, Object, IDHParameterSpec, IAlgorithmParameterSpec)
 
 CDHParameterSpec::CDHParameterSpec()
     : mL(0)

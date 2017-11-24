@@ -111,7 +111,7 @@ ECode EntropyMixer::MyBroadcastReceiver::OnReceive(
 //============================================================
 // EntropyMixer
 //============================================================
-CAR_INTERFACE_IMPL_2(EntropyMixer, Object, IEntropyMixer, IBinder)
+CAR_INTERFACE_IMPL(EntropyMixer, Object, IEntropyMixer, IBinder)
 
 ECode EntropyMixer::constructor(
     /* [in] */ IContext* context)

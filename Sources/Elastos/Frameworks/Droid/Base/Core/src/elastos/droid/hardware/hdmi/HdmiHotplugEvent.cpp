@@ -21,7 +21,7 @@ namespace Droid {
 namespace Hardware {
 namespace Hdmi {
 
-CAR_INTERFACE_IMPL_2(HdmiHotplugEvent, Object, IHdmiHotplugEvent, IParcelable)
+CAR_INTERFACE_IMPL(HdmiHotplugEvent, Object, IHdmiHotplugEvent, IParcelable)
 
 HdmiHotplugEvent::HdmiHotplugEvent()
     : mPort(0)

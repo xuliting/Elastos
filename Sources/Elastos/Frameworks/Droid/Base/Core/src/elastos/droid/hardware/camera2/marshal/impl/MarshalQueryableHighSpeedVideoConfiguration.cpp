@@ -99,7 +99,7 @@ ECode MarshalQueryableHighSpeedVideoConfiguration::MarshalerHighSpeedVideoConfig
 
 const Int32 MarshalQueryableHighSpeedVideoConfiguration::SIZE = IMarshalHelpers::SIZEOF_INT32 * 4;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableHighSpeedVideoConfiguration, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableHighSpeedVideoConfiguration, Object,
         IMarshalQueryableHighSpeedVideoConfiguration, IMarshalQueryable)
 
 ECode MarshalQueryableHighSpeedVideoConfiguration::CreateMarshaler(

@@ -35,7 +35,7 @@ namespace Animation {
 
 CAR_OBJECT_IMPL(CBounceInterpolator);
 
-CAR_INTERFACE_IMPL_4(CBounceInterpolator, Object, IBounceInterpolator,
+CAR_INTERFACE_IMPL(CBounceInterpolator, Object, IBounceInterpolator,
         INativeInterpolatorFactory, IInterpolator, ITimeInterpolator);
 
 CBounceInterpolator::CBounceInterpolator()

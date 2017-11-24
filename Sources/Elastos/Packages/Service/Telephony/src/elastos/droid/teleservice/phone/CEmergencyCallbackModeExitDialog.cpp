@@ -269,7 +269,7 @@ ECode CEmergencyCallbackModeExitDialog::MyBroadcastReceiver::OnReceive(
 
 const String CEmergencyCallbackModeExitDialog::TAG("EmergencyCallbackMode");
 
-CAR_INTERFACE_IMPL_2(CEmergencyCallbackModeExitDialog, Activity, IEmergencyCallbackModeExitDialog,
+CAR_INTERFACE_IMPL(CEmergencyCallbackModeExitDialog, Activity, IEmergencyCallbackModeExitDialog,
         IDialogInterfaceOnDismissListener)
 
 CAR_OBJECT_IMPL(CEmergencyCallbackModeExitDialog)

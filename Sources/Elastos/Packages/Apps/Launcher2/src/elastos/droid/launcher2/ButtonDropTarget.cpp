@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Launcher2 {
 
-CAR_INTERFACE_IMPL_3(ButtonDropTarget, TextView, IButtonDropTarget,
+CAR_INTERFACE_IMPL(ButtonDropTarget, TextView, IButtonDropTarget,
         IDropTarget, IDragControllerDragListener);
 
 ButtonDropTarget::ButtonDropTarget()

@@ -80,7 +80,7 @@ const String BluetoothHeadset::TAG("BluetoothHeadset");
 const Boolean BluetoothHeadset::DBG = TRUE;
 const Boolean BluetoothHeadset::VDBG = FALSE;
 
-CAR_INTERFACE_IMPL_2(BluetoothHeadset, Object, IBluetoothHeadset, IBluetoothProfile);
+CAR_INTERFACE_IMPL(BluetoothHeadset, Object, IBluetoothHeadset, IBluetoothProfile);
 
 BluetoothHeadset::BluetoothHeadset()
 {

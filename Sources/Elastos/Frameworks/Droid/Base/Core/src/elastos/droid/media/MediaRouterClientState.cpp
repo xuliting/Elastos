@@ -35,7 +35,7 @@ MediaRouterClientState::RouteInfo::RouteInfo()
 MediaRouterClientState::RouteInfo::~RouteInfo()
 {}
 
-CAR_INTERFACE_IMPL_2(MediaRouterClientState::RouteInfo, Object, IMediaRouterClientStateRouteInfo, IParcelable)
+CAR_INTERFACE_IMPL(MediaRouterClientState::RouteInfo, Object, IMediaRouterClientStateRouteInfo, IParcelable)
 
 ECode MediaRouterClientState::RouteInfo::constructor()
 {
@@ -345,7 +345,7 @@ MediaRouterClientState::MediaRouterClientState()
 MediaRouterClientState::~MediaRouterClientState()
 {}
 
-CAR_INTERFACE_IMPL_2(MediaRouterClientState, Object, IMediaRouterClientState, IParcelable)
+CAR_INTERFACE_IMPL(MediaRouterClientState, Object, IMediaRouterClientState, IParcelable)
 
 ECode MediaRouterClientState::constructor()
 {

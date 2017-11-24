@@ -32,7 +32,7 @@ namespace Apache {
 namespace Http {
 namespace Auth {
 
-CAR_INTERFACE_IMPL_2(CBasicUserPrincipal, Object, IBasicUserPrincipal, IPrincipal)
+CAR_INTERFACE_IMPL(CBasicUserPrincipal, Object, IBasicUserPrincipal, IPrincipal)
 
 CAR_OBJECT_IMPL(CBasicUserPrincipal)
 

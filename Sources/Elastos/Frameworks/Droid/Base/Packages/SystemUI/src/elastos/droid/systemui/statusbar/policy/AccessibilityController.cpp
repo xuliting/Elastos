@@ -30,7 +30,7 @@ namespace SystemUI {
 namespace StatusBar {
 namespace Policy {
 
-CAR_INTERFACE_IMPL_3(AccessibilityController, Object, IAccessibilityController \
+CAR_INTERFACE_IMPL(AccessibilityController, Object, IAccessibilityController \
     , IAccessibilityManagerAccessibilityStateChangeListener
     , IAccessibilityManagerTouchExplorationStateChangeListener);
 AccessibilityController::AccessibilityController(

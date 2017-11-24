@@ -34,7 +34,7 @@ namespace Telephony {
 
 const String PhoneSubInfoController::TAG("PhoneSubInfoController");
 
-CAR_INTERFACE_IMPL_2(PhoneSubInfoController, Object, IIPhoneSubInfo, IPhoneSubInfoController)
+CAR_INTERFACE_IMPL(PhoneSubInfoController, Object, IIPhoneSubInfo, IPhoneSubInfoController)
 
 ECode PhoneSubInfoController::constructor(
     /* [in] */ ArrayOf<IPhone*>* phone)

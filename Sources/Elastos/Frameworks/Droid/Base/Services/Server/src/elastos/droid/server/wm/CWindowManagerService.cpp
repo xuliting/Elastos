@@ -294,7 +294,7 @@ CWindowManagerService::MyAppOpsManagerOnOpChangedListener::MyAppOpsManagerOnOpCh
     : mHost(host)
 {}
 
-CAR_INTERFACE_IMPL_2(CWindowManagerService::MyAppOpsManagerOnOpChangedListener, Object,
+CAR_INTERFACE_IMPL(CWindowManagerService::MyAppOpsManagerOnOpChangedListener, Object,
         IAppOpsManagerOnOpChangedListener , IAppOpsManagerOnOpChangedInternalListener)
 
 ECode CWindowManagerService::MyAppOpsManagerOnOpChangedListener::OnOpChanged(
@@ -844,7 +844,7 @@ static List< AutoPtr<WindowState> >::Iterator Find(
     return it;
 }
 
-CAR_INTERFACE_IMPL_4(CWindowManagerService, Object, IIWindowManager, \
+CAR_INTERFACE_IMPL(CWindowManagerService, Object, IIWindowManager, \
     IWindowManagerPolicyWindowManagerFuncs, IWatchdogMonitor, IBinder)
 
 CAR_OBJECT_IMPL(CWindowManagerService)

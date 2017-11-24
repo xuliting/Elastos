@@ -87,7 +87,7 @@ ECode MarshalQueryableBlackLevelPattern::MarshalerBlackLevelPattern::GetNativeSi
 
 const Int32 MarshalQueryableBlackLevelPattern::SIZE = IMarshalHelpers::SIZEOF_INT32 * IBlackLevelPattern::COUNT;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableBlackLevelPattern, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableBlackLevelPattern, Object,
         IMarshalQueryableBlackLevelPattern, IMarshalQueryable)
 
 ECode MarshalQueryableBlackLevelPattern::CreateMarshaler(

@@ -24,7 +24,7 @@ namespace Elastos {
 namespace Droid {
 namespace Bluetooth {
 
-CAR_INTERFACE_IMPL_2(CBluetoothHealthAppConfiguration, Object, IBluetoothHealthAppConfiguration, IParcelable);
+CAR_INTERFACE_IMPL(CBluetoothHealthAppConfiguration, Object, IBluetoothHealthAppConfiguration, IParcelable);
 
 CAR_OBJECT_IMPL(CBluetoothHealthAppConfiguration);
 

@@ -255,7 +255,7 @@ const String WebViewChromiumFactoryProvider::CHROMIUM_PREFS_NAME("WebViewChromiu
 const String WebViewChromiumFactoryProvider::VERSION_CODE_PREF("lastVersionCodeUsed");
 const String WebViewChromiumFactoryProvider::COMMAND_LINE_FILE("/data/local/tmp/webview-command-line");
 
-CAR_INTERFACE_IMPL_2(WebViewChromiumFactoryProvider, Object, IWebViewFactoryProvider, IWebViewChromiumFactoryProvider)
+CAR_INTERFACE_IMPL(WebViewChromiumFactoryProvider, Object, IWebViewFactoryProvider, IWebViewChromiumFactoryProvider)
 
 WebViewChromiumFactoryProvider::WebViewChromiumFactoryProvider()
     : mStarted(FALSE)

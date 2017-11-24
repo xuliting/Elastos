@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIApplicationTokenNative::TAG("CIApplicationTokenNative");
 
-CAR_INTERFACE_IMPL_2(CIApplicationTokenNative, Object, IApplicationToken, IBinder)
+CAR_INTERFACE_IMPL(CIApplicationTokenNative, Object, IApplicationToken, IBinder)
 
 CAR_OBJECT_IMPL(CIApplicationTokenNative)
 

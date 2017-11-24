@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Text {
 
-CAR_INTERFACE_IMPL_2(CLengthFilter, Object, ILengthFilter, IInputFilter)
+CAR_INTERFACE_IMPL(CLengthFilter, Object, ILengthFilter, IInputFilter)
 
 CAR_OBJECT_IMPL(CLengthFilter)
 

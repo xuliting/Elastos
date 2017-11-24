@@ -121,7 +121,7 @@ const String CProcessStatsService::STATE_FILE_SUFFIX(".bin"); // Suffix to use f
 const String CProcessStatsService::STATE_FILE_CHECKIN_SUFFIX(".ci"); // State files that have checked in.
 Int64 CProcessStatsService::WRITE_PERIOD = 30*60*1000;      // Write file every 30 minutes or so.
 
-CAR_INTERFACE_IMPL_2(CProcessStatsService, Object, IIProcessStats, IBinder)
+CAR_INTERFACE_IMPL(CProcessStatsService, Object, IIProcessStats, IBinder)
 CAR_OBJECT_IMPL(CProcessStatsService)
 
 CProcessStatsService::CProcessStatsService()

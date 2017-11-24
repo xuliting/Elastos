@@ -52,7 +52,7 @@ Int32 CursorWindow::sCursorWindowSize = -1;
 HashMap<Int64, Int32> CursorWindow::sWindowToPidMap;
 Object CursorWindow::sWindowToPidMapLock;
 
-CAR_INTERFACE_IMPL_2(CursorWindow, SQLiteClosable, ICursorWindow, IParcelable)
+CAR_INTERFACE_IMPL(CursorWindow, SQLiteClosable, ICursorWindow, IParcelable)
 
 Int32 CursorWindow::GetCursorWindowSize()
 {

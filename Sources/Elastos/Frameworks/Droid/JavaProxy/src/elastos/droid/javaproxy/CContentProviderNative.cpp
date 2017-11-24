@@ -41,7 +41,7 @@ namespace JavaProxy {
 
 const String CContentProviderNative::TAG("CContentProviderNative");
 
-CAR_INTERFACE_IMPL_2(CContentProviderNative, Object, IIContentProvider, IBinder)
+CAR_INTERFACE_IMPL(CContentProviderNative, Object, IIContentProvider, IBinder)
 
 CAR_OBJECT_IMPL(CContentProviderNative)
 

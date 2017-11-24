@@ -1121,7 +1121,7 @@ void ViewGroup::ViewLocationHolder::Clear()
     mLocation->Set(0, 0, 0, 0);
 }
 
-CAR_INTERFACE_IMPL_3(ViewGroup, View, IViewGroup, IViewParent, IViewManager)
+CAR_INTERFACE_IMPL(ViewGroup, View, IViewGroup, IViewParent, IViewManager)
 
 ViewGroup::ViewGroup()
     : mGroupFlags(0)

@@ -180,7 +180,7 @@ ECode CConcurrentLinkedQueue::Itr::Remove()
 //====================================================================
 // CConcurrentLinkedQueue::
 //====================================================================
-CAR_INTERFACE_IMPL_2(CConcurrentLinkedQueue, AbstractQueue, IConcurrentLinkedQueue, ISerializable)
+CAR_INTERFACE_IMPL(CConcurrentLinkedQueue, AbstractQueue, IConcurrentLinkedQueue, ISerializable)
 
 CAR_OBJECT_IMPL(CConcurrentLinkedQueue)
 

@@ -217,7 +217,7 @@ ECode ParcelFileDescriptor::ListenerBridge::Run()
 //==================================================================
 // ParcelFileDescriptor
 //==================================================================
-CAR_INTERFACE_IMPL_3(ParcelFileDescriptor, Object, IParcelFileDescriptor, IParcelable, ICloseable)
+CAR_INTERFACE_IMPL(ParcelFileDescriptor, Object, IParcelFileDescriptor, IParcelable, ICloseable)
 
 ParcelFileDescriptor::ParcelFileDescriptor()
     : mClosed(FALSE)

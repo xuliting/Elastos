@@ -48,7 +48,7 @@ HttpRequestBase::HttpRequestBase()
     mAbortLock = ILock::Probe(l);
 }
 
-CAR_INTERFACE_IMPL_4(HttpRequestBase, AbstractHttpMessage, IHttpRequest, IHttpUriRequest, IAbortableHttpRequest, ICloneable)
+CAR_INTERFACE_IMPL(HttpRequestBase, AbstractHttpMessage, IHttpRequest, IHttpUriRequest, IAbortableHttpRequest, ICloneable)
 
 ECode HttpRequestBase::GetProtocolVersion(
     /* [out] */ IProtocolVersion** ver)

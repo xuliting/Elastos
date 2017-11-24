@@ -26,7 +26,7 @@ namespace Apache {
 namespace Http {
 namespace Protocol {
 
-CAR_INTERFACE_IMPL_2(HttpRequestHandlerRegistry, Object, IHttpRequestHandlerRegistry, IHttpRequestHandlerResolver)
+CAR_INTERFACE_IMPL(HttpRequestHandlerRegistry, Object, IHttpRequestHandlerRegistry, IHttpRequestHandlerResolver)
 
 ECode HttpRequestHandlerRegistry::Init()
 {

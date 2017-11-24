@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIActivityContainerCallbackNative::TAG("CIActivityContainerCallbackNative");
 
-CAR_INTERFACE_IMPL_2(CIActivityContainerCallbackNative, Object, IActivityContainerCallback, IBinder)
+CAR_INTERFACE_IMPL(CIActivityContainerCallbackNative, Object, IActivityContainerCallback, IBinder)
 
 CAR_OBJECT_IMPL(CIActivityContainerCallbackNative)
 

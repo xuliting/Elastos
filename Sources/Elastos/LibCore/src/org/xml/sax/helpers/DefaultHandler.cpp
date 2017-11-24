@@ -21,7 +21,7 @@ namespace Xml {
 namespace Sax {
 namespace Helpers {
 
-CAR_INTERFACE_IMPL_4(DefaultHandler, Object, IEntityResolver, IDTDHandler, IContentHandler, IErrorHandler)
+CAR_INTERFACE_IMPL(DefaultHandler, Object, IEntityResolver, IDTDHandler, IContentHandler, IErrorHandler)
 
 ECode DefaultHandler::ResolveEntity(
     /* [in] */ const String& publicId,

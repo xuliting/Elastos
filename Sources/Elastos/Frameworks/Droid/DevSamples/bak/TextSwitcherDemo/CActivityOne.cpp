@@ -20,7 +20,7 @@ namespace Droid {
 namespace DevSamples {
 namespace TextSwitcherDemo {
 
-CAR_INTERFACE_IMPL_2(MyListener, IViewOnClickListener, IViewFactory)
+CAR_INTERFACE_IMPL(MyListener, IViewOnClickListener, IViewFactory)
 
 MyListener::MyListener(
     /* [in] */ CActivityOne* host)

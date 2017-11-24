@@ -29,7 +29,7 @@ using Elastos::IO::EIID_ISerializable;
 namespace Elastos {
 namespace Utility {
 
-CAR_INTERFACE_IMPL_3(CBitSet, Object, IBitSet, ISerializable, ICloneable)
+CAR_INTERFACE_IMPL(CBitSet, Object, IBitSet, ISerializable, ICloneable)
 CAR_OBJECT_IMPL(CBitSet)
 
 const Int64 CBitSet::ALL_ONES;

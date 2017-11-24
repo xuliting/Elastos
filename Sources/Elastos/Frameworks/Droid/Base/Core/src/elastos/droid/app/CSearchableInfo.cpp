@@ -61,7 +61,7 @@ const Int32 CSearchableInfo::VOICE_SEARCH_SHOW_BUTTON;
 const Int32 CSearchableInfo::VOICE_SEARCH_LAUNCH_WEB_SEARCH;
 const Int32 CSearchableInfo::VOICE_SEARCH_LAUNCH_RECOGNIZER;
 
-CAR_INTERFACE_IMPL_2(CSearchableInfo, Object, ISearchableInfo, IParcelable)
+CAR_INTERFACE_IMPL(CSearchableInfo, Object, ISearchableInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CSearchableInfo)
 

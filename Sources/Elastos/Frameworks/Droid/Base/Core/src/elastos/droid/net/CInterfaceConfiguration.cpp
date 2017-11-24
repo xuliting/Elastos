@@ -33,7 +33,7 @@ namespace Net {
 
 CAR_OBJECT_IMPL(CInterfaceConfiguration)
 
-CAR_INTERFACE_IMPL_2(CInterfaceConfiguration, Object, IParcelable, IInterfaceConfiguration)
+CAR_INTERFACE_IMPL(CInterfaceConfiguration, Object, IParcelable, IInterfaceConfiguration)
 
 const String CInterfaceConfiguration::FLAG_UP("up");
 const String CInterfaceConfiguration::FLAG_DOWN("down");

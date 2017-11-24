@@ -101,7 +101,7 @@ ECode CompoundButton::CompoundButtonSavedState::ToString(
 //          CompoundButton
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(CompoundButton, Button, ICompoundButton, ICheckable)
+CAR_INTERFACE_IMPL(CompoundButton, Button, ICompoundButton, ICheckable)
 
 CompoundButton::CompoundButton()
     : mChecked(FALSE)

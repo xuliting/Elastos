@@ -27,7 +27,7 @@ namespace Animation {
 //==============================================================================
 //                  Keyframe
 //==============================================================================
-CAR_INTERFACE_IMPL_2(Keyframe, Object, IKeyframe, ICloneable);
+CAR_INTERFACE_IMPL(Keyframe, Object, IKeyframe, ICloneable);
 
 Keyframe::Keyframe()
     : mHasValue(FALSE)

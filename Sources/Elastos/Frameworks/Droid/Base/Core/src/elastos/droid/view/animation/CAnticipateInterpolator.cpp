@@ -38,7 +38,7 @@ namespace Animation {
 
 CAR_OBJECT_IMPL(CAnticipateInterpolator);
 
-CAR_INTERFACE_IMPL_4(CAnticipateInterpolator, Object, IAnticipateInterpolator,
+CAR_INTERFACE_IMPL(CAnticipateInterpolator, Object, IAnticipateInterpolator,
         INativeInterpolatorFactory, IInterpolator, ITimeInterpolator);
 
 CAnticipateInterpolator::CAnticipateInterpolator()

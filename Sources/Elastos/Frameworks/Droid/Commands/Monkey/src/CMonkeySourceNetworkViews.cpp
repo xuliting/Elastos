@@ -105,7 +105,7 @@ ECode CMonkeySourceNetworkViews::Setup()
         return klass;
     }*/
 
-CAR_INTERFACE_IMPL_2(CMonkeySourceNetworkViews::ListViewsCommand, IMonkeyCommand,
+CAR_INTERFACE_IMPL(CMonkeySourceNetworkViews::ListViewsCommand, IMonkeyCommand,
     IListViewsCommand);
 
 ECode CMonkeySourceNetworkViews::ListViewsCommand::TranslateCommand(
@@ -171,7 +171,7 @@ ECode CMonkeySourceNetworkViews::ListViewsCommand::TranslateCommand(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CMonkeySourceNetworkViews::QueryViewCommand, IMonkeyCommand,
+CAR_INTERFACE_IMPL(CMonkeySourceNetworkViews::QueryViewCommand, IMonkeyCommand,
     IQueryViewCommand);
 
 ECode CMonkeySourceNetworkViews::QueryViewCommand::TranslateCommand(
@@ -251,7 +251,7 @@ ECode CMonkeySourceNetworkViews::QueryViewCommand::TranslateCommand(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CMonkeySourceNetworkViews::GetRootViewCommand, IMonkeyCommand,
+CAR_INTERFACE_IMPL(CMonkeySourceNetworkViews::GetRootViewCommand, IMonkeyCommand,
     IGetRootViewCommand);
 
 ECode CMonkeySourceNetworkViews::GetRootViewCommand::TranslateCommand(
@@ -276,7 +276,7 @@ ECode CMonkeySourceNetworkViews::GetRootViewCommand::TranslateCommand(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(CMonkeySourceNetworkViews::GetViewsWithTextCommand, IMonkeyCommand,
+CAR_INTERFACE_IMPL(CMonkeySourceNetworkViews::GetViewsWithTextCommand, IMonkeyCommand,
     IGetViewsWithTextCommand);
 
 ECode CMonkeySourceNetworkViews::GetViewsWithTextCommand::TranslateCommand(

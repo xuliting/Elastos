@@ -20,7 +20,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(NetworkMisc, Object, IParcelable, INetworkMisc)
+CAR_INTERFACE_IMPL(NetworkMisc, Object, IParcelable, INetworkMisc)
 
 NetworkMisc::NetworkMisc()
     : mAllowBypass(FALSE)

@@ -26,7 +26,7 @@ namespace JavaProxy {
 
 const String CIRemoteControlDisplay::TAG("CIRemoteControlDisplay");
 
-CAR_INTERFACE_IMPL_3(CIRemoteControlDisplay, Object, IIRemoteControlDisplay, IJavaNativeProxy, IBinder)
+CAR_INTERFACE_IMPL(CIRemoteControlDisplay, Object, IIRemoteControlDisplay, IJavaNativeProxy, IBinder)
 
 CAR_OBJECT_IMPL(CIRemoteControlDisplay)
 

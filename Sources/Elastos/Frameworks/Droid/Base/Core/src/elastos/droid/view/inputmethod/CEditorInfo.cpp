@@ -37,7 +37,7 @@ namespace InputMethod {
 //========================================================================================
 //              CEditorInfo::
 //========================================================================================
-CAR_INTERFACE_IMPL_3(CEditorInfo, Object, IEditorInfo, IInputType, IParcelable)
+CAR_INTERFACE_IMPL(CEditorInfo, Object, IEditorInfo, IInputType, IParcelable)
 
 CAR_OBJECT_IMPL(CEditorInfo)
 

@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIPackageMoveObserverNative::TAG("CIPackageMoveObserverNative");
 
-CAR_INTERFACE_IMPL_2(CIPackageMoveObserverNative, Object, IIPackageMoveObserver, IBinder)
+CAR_INTERFACE_IMPL(CIPackageMoveObserverNative, Object, IIPackageMoveObserver, IBinder)
 
 CAR_OBJECT_IMPL(CIPackageMoveObserverNative)
 

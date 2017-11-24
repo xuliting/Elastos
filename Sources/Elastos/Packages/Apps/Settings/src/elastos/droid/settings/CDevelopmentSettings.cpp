@@ -105,7 +105,7 @@ namespace Settings {
 //                  CDevelopmentSettings::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(CDevelopmentSettings::InnerListener, Object, IDialogInterfaceOnDismissListener,
+CAR_INTERFACE_IMPL(CDevelopmentSettings::InnerListener, Object, IDialogInterfaceOnDismissListener,
         IPreferenceOnPreferenceChangeListener, ISwitchBarOnSwitchChangeListener)
 
 CDevelopmentSettings::InnerListener::InnerListener(
@@ -342,7 +342,7 @@ AutoPtr<IIndexableSearchIndexProvider> CDevelopmentSettings::GetSEARCH_INDEX_DAT
     return SEARCH_INDEX_DATA_PROVIDER;
 }
 
-CAR_INTERFACE_IMPL_2(CDevelopmentSettings, SettingsPreferenceFragment, IDialogInterfaceOnClickListener, IIndexable)
+CAR_INTERFACE_IMPL(CDevelopmentSettings, SettingsPreferenceFragment, IDialogInterfaceOnClickListener, IIndexable)
 
 CAR_OBJECT_IMPL(CDevelopmentSettings)
 

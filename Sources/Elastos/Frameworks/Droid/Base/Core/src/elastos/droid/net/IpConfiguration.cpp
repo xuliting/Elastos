@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(IpConfiguration, Object, IIpConfiguration, IParcelable)
+CAR_INTERFACE_IMPL(IpConfiguration, Object, IIpConfiguration, IParcelable)
 
 const String IpConfiguration::TAG("IpConfiguration");
 

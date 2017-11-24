@@ -160,7 +160,7 @@ CPackageInstallerSession::CPackageInstallerSession()
     mHandlerCallback = (IHandlerCallback*)new MyHandlerCallBack(this);
 }
 
-CAR_INTERFACE_IMPL_2(CPackageInstallerSession, Object, IIPackageInstallerSession, IBinder)
+CAR_INTERFACE_IMPL(CPackageInstallerSession, Object, IIPackageInstallerSession, IBinder)
 
 CAR_OBJECT_IMPL(CPackageInstallerSession)
 

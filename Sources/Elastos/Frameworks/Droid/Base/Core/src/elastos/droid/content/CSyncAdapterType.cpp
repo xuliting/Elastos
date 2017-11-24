@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace Content {
 
-CAR_INTERFACE_IMPL_2(CSyncAdapterType, Object, ISyncAdapterType, IParcelable)
+CAR_INTERFACE_IMPL(CSyncAdapterType, Object, ISyncAdapterType, IParcelable)
 
 CAR_OBJECT_IMPL(CSyncAdapterType)
 

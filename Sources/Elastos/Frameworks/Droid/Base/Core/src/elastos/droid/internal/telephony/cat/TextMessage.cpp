@@ -65,7 +65,7 @@ namespace Cat {
 //                             TextMessage
 //=====================================================================
 //const AutoPtr<IParcelable> AutoPtr< ::Creator<TextMessage> > TextMessage::CREATOR = new InnerParcelableCreator(this);
-CAR_INTERFACE_IMPL_2(TextMessage, Object, ITextMessage, IParcelable);
+CAR_INTERFACE_IMPL(TextMessage, Object, ITextMessage, IParcelable);
 
 TextMessage::TextMessage()
 {

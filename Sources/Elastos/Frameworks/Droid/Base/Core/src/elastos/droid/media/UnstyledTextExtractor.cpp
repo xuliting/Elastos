@@ -32,7 +32,7 @@ UnstyledTextExtractor::UnstyledTextExtractor()
 UnstyledTextExtractor::~UnstyledTextExtractor()
 {}
 
-CAR_INTERFACE_IMPL_2(UnstyledTextExtractor, Object, IUnstyledTextExtractor, ITokenizerOnTokenListener)
+CAR_INTERFACE_IMPL(UnstyledTextExtractor, Object, IUnstyledTextExtractor, ITokenizerOnTokenListener)
 
 ECode UnstyledTextExtractor::constructor()
 {

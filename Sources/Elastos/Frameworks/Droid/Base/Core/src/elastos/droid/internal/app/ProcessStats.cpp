@@ -2195,7 +2195,7 @@ Int32 ProcessStats::OFFSET_INDEX_MASK = 0xffff;
 const Int32 ProcessStats::LONGS_SIZE;
 const AutoPtr<ArrayOf<Int32> > ProcessStats::BAD_TABLE = ArrayOf<Int32>::Alloc(0);
 
-CAR_INTERFACE_IMPL_2(ProcessStats, Object, IProcessStats, IParcelable)
+CAR_INTERFACE_IMPL(ProcessStats, Object, IProcessStats, IParcelable)
 
 ProcessStats::ProcessStats()
     : mFlags(0)

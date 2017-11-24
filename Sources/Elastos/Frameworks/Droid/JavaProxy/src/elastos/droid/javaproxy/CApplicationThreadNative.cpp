@@ -36,7 +36,7 @@ const String CApplicationThreadNative::TAG("CApplicationThreadNative");
 HashMap<AutoPtr<IBinder>, jobject> CApplicationThreadNative::sTokenMap;
 HashMap<AutoPtr<IBinder>, jobject> CApplicationThreadNative::sServiceTokenMap;
 
-CAR_INTERFACE_IMPL_2(CApplicationThreadNative, Object, IApplicationThread, IBinder)
+CAR_INTERFACE_IMPL(CApplicationThreadNative, Object, IApplicationThread, IBinder)
 
 CAR_OBJECT_IMPL(CApplicationThreadNative)
 

@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CIConditionListenerNative::TAG("CIConditionListenerNative");
 
-CAR_INTERFACE_IMPL_2(CIConditionListenerNative, Object, IIConditionListener, IBinder)
+CAR_INTERFACE_IMPL(CIConditionListenerNative, Object, IIConditionListener, IBinder)
 
 CAR_OBJECT_IMPL(CIConditionListenerNative)
 

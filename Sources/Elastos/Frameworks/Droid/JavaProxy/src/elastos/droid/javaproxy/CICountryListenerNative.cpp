@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CICountryListenerNative::TAG("CICountryListenerNative");
 
-CAR_INTERFACE_IMPL_2(CICountryListenerNative, Object, IICountryListener, IBinder)
+CAR_INTERFACE_IMPL(CICountryListenerNative, Object, IICountryListener, IBinder)
 
 CAR_OBJECT_IMPL(CICountryListenerNative)
 

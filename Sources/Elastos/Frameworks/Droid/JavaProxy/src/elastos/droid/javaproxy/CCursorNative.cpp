@@ -33,7 +33,7 @@ const String CCursorNative::TAG("CCursorNative");
 HashMap<IContentObserver*, jobject> CCursorNative::mContentObserverMap;
 HashMap<IDataSetObserver*, jobject> CCursorNative::mDataSetObserverMap;
 
-CAR_INTERFACE_IMPL_3(CCursorNative, Object, ICursor, ICloseable, IBinder)
+CAR_INTERFACE_IMPL(CCursorNative, Object, ICursor, ICloseable, IBinder)
 
 CAR_OBJECT_IMPL(CCursorNative)
 

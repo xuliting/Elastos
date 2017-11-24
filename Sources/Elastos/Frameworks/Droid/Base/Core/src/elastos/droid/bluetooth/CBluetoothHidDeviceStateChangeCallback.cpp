@@ -27,7 +27,7 @@ namespace Bluetooth {
 
 CAR_OBJECT_IMPL(CBluetoothHidDeviceStateChangeCallback)
 
-CAR_INTERFACE_IMPL_2(CBluetoothHidDeviceStateChangeCallback,Object, IIBluetoothStateChangeCallback, IBinder)
+CAR_INTERFACE_IMPL(CBluetoothHidDeviceStateChangeCallback,Object, IIBluetoothStateChangeCallback, IBinder)
 
 CBluetoothHidDeviceStateChangeCallback::CBluetoothHidDeviceStateChangeCallback()
 {}

@@ -39,7 +39,7 @@ const Int32 AnimatorSet::Dependency::AFTER = 1;
 //==============================================================================
 //                  AnimatorSet::DependencyListener
 //==============================================================================
-CAR_INTERFACE_IMPL_2(AnimatorSet::DependencyListener, Object, IDependencyListener, IAnimatorListener);
+CAR_INTERFACE_IMPL(AnimatorSet::DependencyListener, Object, IDependencyListener, IAnimatorListener);
 
 AnimatorSet::DependencyListener::DependencyListener(
     /* [in] */ AnimatorSet* animatorset,
@@ -113,7 +113,7 @@ void AnimatorSet::DependencyListener::StartIfReady(
 //==============================================================================
 //                  AnimatorSet::AnimatorSetListener
 //==============================================================================
-CAR_INTERFACE_IMPL_2(AnimatorSet::AnimatorSetListener, Object, IAnimatorSetListener, IAnimatorListener);
+CAR_INTERFACE_IMPL(AnimatorSet::AnimatorSetListener, Object, IAnimatorSetListener, IAnimatorListener);
 
 ECode AnimatorSet::AnimatorSetListener::constructor(
     /* [in] */ AnimatorSet* animatorSet)

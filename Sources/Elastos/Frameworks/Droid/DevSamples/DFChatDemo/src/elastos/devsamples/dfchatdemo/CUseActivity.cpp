@@ -98,7 +98,7 @@ ECode CUseActivity::MyHandler::HandleMessage(
 //========================================================
 // CUseActivity::InnerListener
 //========================================================
-CAR_INTERFACE_IMPL_2(CUseActivity::InnerListener, Object, IOnEditorActionListener, IViewOnClickListener)
+CAR_INTERFACE_IMPL(CUseActivity::InnerListener, Object, IOnEditorActionListener, IViewOnClickListener)
 
 CUseActivity::InnerListener::InnerListener(
     /* [in] */ CUseActivity* host)

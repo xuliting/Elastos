@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Droid {
 namespace Ims {
 
-CAR_INTERFACE_IMPL_2(CImsConferenceState, Object, IImsConferenceState, IParcelable)
+CAR_INTERFACE_IMPL(CImsConferenceState, Object, IImsConferenceState, IParcelable)
 
 CAR_OBJECT_IMPL(CImsConferenceState)
 

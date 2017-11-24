@@ -37,7 +37,7 @@ const String CParserAdapter::NAMESPACES("http://xml.org/sax/features/mNamespaces
 const String CParserAdapter::NAMESPACE_PREFIXES("http://xml.org/sax/features/namespace-mPrefixes");
 const String CParserAdapter::XMLNS_URIs("http://xml.org/sax/features/xmlns-mUris");
 
-CAR_INTERFACE_IMPL_2(CParserAdapter, Object, IXMLReader, IDocumentHandler)
+CAR_INTERFACE_IMPL(CParserAdapter, Object, IXMLReader, IDocumentHandler)
 CAR_OBJECT_IMPL(CParserAdapter)
 
 CParserAdapter::CParserAdapter()

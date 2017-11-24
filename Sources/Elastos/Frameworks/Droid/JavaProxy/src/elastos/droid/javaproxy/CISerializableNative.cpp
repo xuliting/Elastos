@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CISerializableNative::TAG("CISerializableNative");
 
-CAR_INTERFACE_IMPL_3(CISerializableNative, Object, ISerializable, IParcelable, IBinder)
+CAR_INTERFACE_IMPL(CISerializableNative, Object, ISerializable, IParcelable, IBinder)
 
 CAR_OBJECT_IMPL(CISerializableNative)
 

@@ -41,7 +41,7 @@ namespace Internal {
 namespace View {
 namespace Menu {
 
-CAR_INTERFACE_IMPL_2(ActionMenu, Object, IActionMenu, IMenu)
+CAR_INTERFACE_IMPL(ActionMenu, Object, IActionMenu, IMenu)
 
 ActionMenu::ActionMenu()
     : mContext(NULL)

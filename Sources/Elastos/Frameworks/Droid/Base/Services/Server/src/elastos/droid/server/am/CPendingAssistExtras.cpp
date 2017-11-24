@@ -29,7 +29,7 @@ namespace Droid {
 namespace Server {
 namespace Am {
 
-CAR_INTERFACE_IMPL_2(CPendingAssistExtras, Object, IBinder, IRunnable)
+CAR_INTERFACE_IMPL(CPendingAssistExtras, Object, IBinder, IRunnable)
 CAR_OBJECT_IMPL(CPendingAssistExtras)
 
 CPendingAssistExtras::CPendingAssistExtras()

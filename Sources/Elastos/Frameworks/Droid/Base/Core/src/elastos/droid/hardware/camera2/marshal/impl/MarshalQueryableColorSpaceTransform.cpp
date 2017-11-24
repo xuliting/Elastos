@@ -88,7 +88,7 @@ const Int32 MarshalQueryableColorSpaceTransform::ELEMENTS_INT32 =
 
 const Int32 MarshalQueryableColorSpaceTransform::SIZE = IMarshalHelpers::SIZEOF_INT32 * ELEMENTS_INT32;
 
-CAR_INTERFACE_IMPL_2(MarshalQueryableColorSpaceTransform, Object,
+CAR_INTERFACE_IMPL(MarshalQueryableColorSpaceTransform, Object,
         IMarshalQueryableColorSpaceTransform, IMarshalQueryable)
 
 ECode MarshalQueryableColorSpaceTransform::CreateMarshaler(

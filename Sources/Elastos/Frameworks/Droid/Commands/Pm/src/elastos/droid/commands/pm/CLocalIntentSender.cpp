@@ -32,7 +32,7 @@ namespace Pm {
 
 CAR_OBJECT_IMPL(CLocalIntentSender)
 
-CAR_INTERFACE_IMPL_2(CLocalIntentSender, Object, IIIntentSender, IBinder);
+CAR_INTERFACE_IMPL(CLocalIntentSender, Object, IIIntentSender, IBinder);
 
 ECode CLocalIntentSender::constructor(
     /* [in] */ ISynchronousQueue* result)

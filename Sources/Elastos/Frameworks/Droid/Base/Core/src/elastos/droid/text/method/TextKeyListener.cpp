@@ -178,7 +178,7 @@ const Int32 TextKeyListener::SHOW_PASSWORD = 8;
 const Int32 TextKeyListener::CAPITALIZELENGTH = 4;
 AutoPtr<ArrayOf<ITextKeyListener*> > TextKeyListener::sInstance = ArrayOf<ITextKeyListener*>::Alloc(CAPITALIZELENGTH * 2);
 
-CAR_INTERFACE_IMPL_3(TextKeyListener, BaseKeyListener, ITextKeyListener, ISpanWatcher, INoCopySpan)
+CAR_INTERFACE_IMPL(TextKeyListener, BaseKeyListener, ITextKeyListener, ISpanWatcher, INoCopySpan)
 
 TextKeyListener::TextKeyListener()
 {}

@@ -123,7 +123,7 @@ ECode CClient::MyArrayAdapter::Add(
 //=======================================================================
 // CClient::InnerListener
 //=======================================================================
-CAR_INTERFACE_IMPL_2(CClient::InnerListener, Object, \
+CAR_INTERFACE_IMPL(CClient::InnerListener, Object, \
     IAdapterViewOnItemClickListener, IAdapterViewOnItemLongClickListener)
 
 CClient::InnerListener::InnerListener(

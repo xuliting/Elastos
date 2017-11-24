@@ -28,7 +28,7 @@ namespace JavaProxy {
 
 const String CTextServicesSessionListenerNative::TAG("CTextServicesSessionListenerNative");
 
-CAR_INTERFACE_IMPL_2(CTextServicesSessionListenerNative, Object, IITextServicesSessionListener, IBinder)
+CAR_INTERFACE_IMPL(CTextServicesSessionListenerNative, Object, IITextServicesSessionListener, IBinder)
 
 CAR_OBJECT_IMPL(CTextServicesSessionListenerNative)
 

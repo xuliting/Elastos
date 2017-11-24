@@ -26,7 +26,7 @@ namespace Pinyin {
 
 CAR_OBJECT_IMPL(CIPinyinDecoderService);
 
-CAR_INTERFACE_IMPL_2(CIPinyinDecoderService, Service, IIPinyinDecoderService, IBinder);
+CAR_INTERFACE_IMPL(CIPinyinDecoderService, Service, IIPinyinDecoderService, IBinder);
 
 ECode CIPinyinDecoderService::constructor(
     /* [in] */ IService* host)

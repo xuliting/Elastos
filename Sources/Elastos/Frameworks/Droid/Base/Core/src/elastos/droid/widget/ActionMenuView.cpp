@@ -249,7 +249,7 @@ ECode ActionMenuView::ActionMenuPresenterCallback::OnOpenSubMenu(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_3(ActionMenuView, LinearLayout, IActionMenuView, IMenuView, IMenuBuilderItemInvoker)
+CAR_INTERFACE_IMPL(ActionMenuView, LinearLayout, IActionMenuView, IMenuView, IMenuBuilderItemInvoker)
 
 ActionMenuView::ActionMenuView()
     : mMenu(NULL)

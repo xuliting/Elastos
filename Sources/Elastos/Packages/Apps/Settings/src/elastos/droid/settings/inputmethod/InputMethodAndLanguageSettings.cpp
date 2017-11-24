@@ -124,7 +124,7 @@ AutoPtr<IIndexableSearchIndexProvider> InputMethodAndLanguageSettings::GetSEARCH
 //                  InputMethodAndLanguageSettings::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(InputMethodAndLanguageSettings::InnerListener, Object,
+CAR_INTERFACE_IMPL(InputMethodAndLanguageSettings::InnerListener, Object,
         IPreferenceOnPreferenceChangeListener, IInputDeviceListener)
 
 InputMethodAndLanguageSettings::InnerListener::InnerListener(
@@ -586,7 +586,7 @@ ECode InputMethodAndLanguageSettings::Comparator::Compare(
 //                  InputMethodAndLanguageSettings
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(InputMethodAndLanguageSettings, SettingsPreferenceFragment,
+CAR_INTERFACE_IMPL(InputMethodAndLanguageSettings, SettingsPreferenceFragment,
         IOnSetupKeyboardLayoutsListener, IIndexable, IOnSavePreferenceListener)
 
 InputMethodAndLanguageSettings::InputMethodAndLanguageSettings()

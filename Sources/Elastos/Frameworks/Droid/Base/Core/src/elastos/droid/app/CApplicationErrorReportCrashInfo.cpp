@@ -24,7 +24,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CApplicationErrorReportCrashInfo, Object, IApplicationErrorReportCrashInfo, IParcelable)
+CAR_INTERFACE_IMPL(CApplicationErrorReportCrashInfo, Object, IApplicationErrorReportCrashInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CApplicationErrorReportCrashInfo)
 

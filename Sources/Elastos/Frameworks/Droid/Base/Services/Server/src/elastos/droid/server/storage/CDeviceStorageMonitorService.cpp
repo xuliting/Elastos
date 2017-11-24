@@ -74,7 +74,7 @@ namespace Storage {
 //===============================================================================
 //                  CDeviceStorageMonitorService::CachePackageDataObserver
 //===============================================================================
-CAR_INTERFACE_IMPL_2(CDeviceStorageMonitorService::CachePackageDataObserver, Object, IIPackageDataObserver, IBinder)
+CAR_INTERFACE_IMPL(CDeviceStorageMonitorService::CachePackageDataObserver, Object, IIPackageDataObserver, IBinder)
 
 ECode CDeviceStorageMonitorService::CachePackageDataObserver::constructor(
     /* [in] */ ISystemService* host)

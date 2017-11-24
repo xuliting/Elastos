@@ -25,7 +25,7 @@ namespace Droid {
 namespace Hardware {
 namespace Hdmi {
 
-CAR_INTERFACE_IMPL_2(HdmiPlaybackClient::MyCallback, Object,
+CAR_INTERFACE_IMPL(HdmiPlaybackClient::MyCallback, Object,
         IIHdmiControlCallback, IBinder)
 
 HdmiPlaybackClient::MyCallback::MyCallback(
@@ -49,7 +49,7 @@ ECode HdmiPlaybackClient::MyCallback::ToString(
     return NOERROR;
 }
 
-CAR_INTERFACE_IMPL_2(HdmiPlaybackClient::MyCallback2, Object,
+CAR_INTERFACE_IMPL(HdmiPlaybackClient::MyCallback2, Object,
         IIHdmiControlCallback, IBinder)
 
 HdmiPlaybackClient::MyCallback2::MyCallback2(

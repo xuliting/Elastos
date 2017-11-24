@@ -27,7 +27,7 @@ namespace Hardware {
 namespace Camera2 {
 namespace Dispatch {
 
-CAR_INTERFACE_IMPL_2(BroadcastDispatcher, Object, IBroadcastDispatcher, IDispatchable)
+CAR_INTERFACE_IMPL(BroadcastDispatcher, Object, IBroadcastDispatcher, IDispatchable)
 
 BroadcastDispatcher::BroadcastDispatcher()
 {

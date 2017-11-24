@@ -28,7 +28,7 @@ namespace Droid {
 namespace Content {
 namespace Res {
 
-CAR_INTERFACE_IMPL_2(CObbInfo, Object, IObbInfo, IParcelable)
+CAR_INTERFACE_IMPL(CObbInfo, Object, IObbInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CObbInfo)
 

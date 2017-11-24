@@ -24,7 +24,7 @@ namespace Droid {
 namespace Text {
 
 /*****************************LoginFilter*****************************/
-CAR_INTERFACE_IMPL_2(LoginFilter, Object, ILoginFilter, IInputFilter)
+CAR_INTERFACE_IMPL(LoginFilter, Object, ILoginFilter, IInputFilter)
 
 LoginFilter::LoginFilter()
     : mAppendInvalid(FALSE)

@@ -25,7 +25,7 @@ namespace Elastos {
 namespace DevSamples {
 namespace ServiceDemo {
 
-CAR_INTERFACE_IMPL_2(CGetSystemTimeService, Object, IGetSystemTimeService, IBinder)
+CAR_INTERFACE_IMPL(CGetSystemTimeService, Object, IGetSystemTimeService, IBinder)
 
 CAR_OBJECT_IMPL(CGetSystemTimeService)
 

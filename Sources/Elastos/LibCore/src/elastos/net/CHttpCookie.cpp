@@ -324,7 +324,7 @@ static AutoPtr< HashSet<String> > InitRESERVED_NAMES()
 
 AutoPtr< HashSet<String> > CHttpCookie::RESERVED_NAMES = InitRESERVED_NAMES();
 
-CAR_INTERFACE_IMPL_2(CHttpCookie, Object, IHttpCookie, ICloneable)
+CAR_INTERFACE_IMPL(CHttpCookie, Object, IHttpCookie, ICloneable)
 
 CAR_OBJECT_IMPL(CHttpCookie)
 

@@ -25,7 +25,7 @@ namespace Ims {
 
 const String CImsStreamMediaProfile::TAG("CImsStreamMediaProfile");
 
-CAR_INTERFACE_IMPL_2(CImsStreamMediaProfile, Object, IImsStreamMediaProfile, IParcelable)
+CAR_INTERFACE_IMPL(CImsStreamMediaProfile, Object, IImsStreamMediaProfile, IParcelable)
 
 CAR_OBJECT_IMPL(CImsStreamMediaProfile)
 

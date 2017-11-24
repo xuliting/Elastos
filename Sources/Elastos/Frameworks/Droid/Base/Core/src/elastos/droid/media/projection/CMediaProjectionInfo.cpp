@@ -25,7 +25,7 @@ namespace Droid {
 namespace Media {
 namespace Projection {
 
-CAR_INTERFACE_IMPL_2(CMediaProjectionInfo, Object, IMediaProjectionInfo, IParcelable)
+CAR_INTERFACE_IMPL(CMediaProjectionInfo, Object, IMediaProjectionInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CMediaProjectionInfo)
 

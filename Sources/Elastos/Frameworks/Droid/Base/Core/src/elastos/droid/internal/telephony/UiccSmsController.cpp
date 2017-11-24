@@ -154,7 +154,7 @@ const String UiccSmsController::LOGTAG("RIL_UiccSmsController");
 
 const Int32 UiccSmsController::WAKE_LOCK_TIMEOUT = 5000;
 
-CAR_INTERFACE_IMPL_2(UiccSmsController, Object, IISms, IUiccSmsController)
+CAR_INTERFACE_IMPL(UiccSmsController, Object, IISms, IUiccSmsController)
 
 UiccSmsController::UiccSmsController()
 {

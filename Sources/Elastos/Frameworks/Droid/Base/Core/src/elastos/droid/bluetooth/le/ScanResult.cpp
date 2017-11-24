@@ -31,7 +31,7 @@ namespace LE {
 //=====================================================================
 //                              ScanResult
 //=====================================================================
-CAR_INTERFACE_IMPL_2(ScanResult, Object, IScanResult, IParcelable);
+CAR_INTERFACE_IMPL(ScanResult, Object, IScanResult, IParcelable);
 
 ScanResult::ScanResult()
 {

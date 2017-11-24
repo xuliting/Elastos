@@ -26,7 +26,7 @@ namespace Droid {
 namespace Net {
 namespace Http {
 
-CAR_INTERFACE_IMPL_2(DelegatingSSLSession, Object, ISSLSession, IDelegatingSSLSession)
+CAR_INTERFACE_IMPL(DelegatingSSLSession, Object, ISSLSession, IDelegatingSSLSession)
 
 ECode DelegatingSSLSession::constructor()
 {

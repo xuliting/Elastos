@@ -72,7 +72,7 @@ const Int32 CSpellCheckerSessionListenerImpl::TASK_GET_SUGGESTIONS_MULTIPLE = 2;
 const Int32 CSpellCheckerSessionListenerImpl::TASK_CLOSE = 3;
 const Int32 CSpellCheckerSessionListenerImpl::TASK_GET_SUGGESTIONS_MULTIPLE_FOR_SENTENCE = 4;
 
-CAR_INTERFACE_IMPL_2(CSpellCheckerSessionListenerImpl, Object, ISpellCheckerSessionListenerImpl, ISpellCheckerSessionListener)
+CAR_INTERFACE_IMPL(CSpellCheckerSessionListenerImpl, Object, ISpellCheckerSessionListenerImpl, ISpellCheckerSessionListener)
 
 CAR_OBJECT_IMPL(CSpellCheckerSessionListenerImpl)
 

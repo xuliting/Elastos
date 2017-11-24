@@ -25,7 +25,7 @@ namespace Droid {
 namespace Media {
 namespace Browse {
 
-CAR_INTERFACE_IMPL_2(CMediaBrowserMediaItem, Object, IMediaBrowserMediaItem, IParcelable)
+CAR_INTERFACE_IMPL(CMediaBrowserMediaItem, Object, IMediaBrowserMediaItem, IParcelable)
 
 CAR_OBJECT_IMPL(CMediaBrowserMediaItem)
 

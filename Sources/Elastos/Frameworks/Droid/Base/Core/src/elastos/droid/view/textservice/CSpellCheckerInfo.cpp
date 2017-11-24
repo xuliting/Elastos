@@ -55,7 +55,7 @@ namespace TextService {
 //========================================================================================
 //              CSpellCheckerInfo::
 //========================================================================================
-CAR_INTERFACE_IMPL_2(CSpellCheckerInfo, Object, ISpellCheckerInfo, IParcelable)
+CAR_INTERFACE_IMPL(CSpellCheckerInfo, Object, ISpellCheckerInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CSpellCheckerInfo)
 

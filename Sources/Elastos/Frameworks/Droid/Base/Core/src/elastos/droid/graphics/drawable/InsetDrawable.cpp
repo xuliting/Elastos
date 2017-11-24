@@ -111,7 +111,7 @@ Boolean InsetDrawable::InsetState::CanConstantState()
     return mCanConstantState;
 }
 
-CAR_INTERFACE_IMPL_2(InsetDrawable, Drawable, IInsetDrawable, IDrawableCallback);
+CAR_INTERFACE_IMPL(InsetDrawable, Drawable, IInsetDrawable, IDrawableCallback);
 
 InsetDrawable::InsetDrawable()
     : mMutated(FALSE)

@@ -149,7 +149,7 @@ AutoPtr<Animation::Description> Animation::Description::ParseValue(
 }
 
 /* Animation */
-CAR_INTERFACE_IMPL_2(Animation, Object, IAnimation, ICloneable);
+CAR_INTERFACE_IMPL(Animation, Object, IAnimation, ICloneable);
 
 Animation::Animation()
     : mEnded(FALSE)

@@ -31,7 +31,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(NetworkCapabilities, Object, IParcelable, INetworkCapabilities)
+CAR_INTERFACE_IMPL(NetworkCapabilities, Object, IParcelable, INetworkCapabilities)
 
 const String NetworkCapabilities::TAG("NetworkCapabilities");
 const Boolean NetworkCapabilities::DBG = FALSE;

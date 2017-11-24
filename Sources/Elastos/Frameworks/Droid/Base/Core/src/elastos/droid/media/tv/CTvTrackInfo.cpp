@@ -22,7 +22,7 @@ namespace Droid {
 namespace Media {
 namespace Tv {
 
-CAR_INTERFACE_IMPL_2(CTvTrackInfo, Object, ITvTrackInfo, IParcelable)
+CAR_INTERFACE_IMPL(CTvTrackInfo, Object, ITvTrackInfo, IParcelable)
 
 CAR_OBJECT_IMPL(CTvTrackInfo)
 

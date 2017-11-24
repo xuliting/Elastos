@@ -45,7 +45,7 @@ AutoPtr<IPasswordTransformationMethod> CPasswordTransformationMethod::sInstance;
 Char32 CPasswordTransformationMethod::DOT = 0x2022;
 
 /*****************************CPasswordTransformationMethod::PasswordCharSequence*****************************/
-CAR_INTERFACE_IMPL_2(CPasswordTransformationMethod::PasswordCharSequence, Object, IGetChars, ICharSequence)
+CAR_INTERFACE_IMPL(CPasswordTransformationMethod::PasswordCharSequence, Object, IGetChars, ICharSequence)
 
 CPasswordTransformationMethod::PasswordCharSequence::PasswordCharSequence()
 {}
@@ -190,7 +190,7 @@ ECode CPasswordTransformationMethod::PasswordCharSequence::GetChars(
 CPasswordTransformationMethod::Visible::Visible()
 {}
 
-CAR_INTERFACE_IMPL_4(CPasswordTransformationMethod::Visible, Handler, IUpdateLayout, \
+CAR_INTERFACE_IMPL(CPasswordTransformationMethod::Visible, Handler, IUpdateLayout, \
     IUpdateAppearance, IRunnable, IPasswordTransformationMethodVisible)
 
 ECode CPasswordTransformationMethod::Visible::constructor(
@@ -214,7 +214,7 @@ ECode CPasswordTransformationMethod::Visible::Run()
 CPasswordTransformationMethod::ViewReference::ViewReference()
 {}
 
-CAR_INTERFACE_IMPL_2(CPasswordTransformationMethod::ViewReference, Object, IWeakReference, INoCopySpan)
+CAR_INTERFACE_IMPL(CPasswordTransformationMethod::ViewReference, Object, IWeakReference, INoCopySpan)
 
 ECode CPasswordTransformationMethod::ViewReference::constructor(
     /* [in] */ IView* v)
@@ -223,7 +223,7 @@ ECode CPasswordTransformationMethod::ViewReference::constructor(
 }
 
 /*****************************CPasswordTransformationMethod*****************************/
-CAR_INTERFACE_IMPL_4(CPasswordTransformationMethod, Object, IPasswordTransformationMethod, \
+CAR_INTERFACE_IMPL(CPasswordTransformationMethod, Object, IPasswordTransformationMethod, \
     ITransformationMethod, ITextWatcher, INoCopySpan)
 
 CAR_OBJECT_IMPL(CPasswordTransformationMethod)

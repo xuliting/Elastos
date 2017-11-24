@@ -61,7 +61,7 @@ const Int32 KeyguardViewStateManager::SCREEN_ON_HINT_DURATION = 1000;
 const Int32 KeyguardViewStateManager::SCREEN_ON_RING_HINT_DELAY = 300;
 const Boolean KeyguardViewStateManager::SHOW_INITIAL_PAGE_HINTS = FALSE;
 
-CAR_INTERFACE_IMPL_3(KeyguardViewStateManager, Object, IKeyguardViewStateManager,
+CAR_INTERFACE_IMPL(KeyguardViewStateManager, Object, IKeyguardViewStateManager,
         ISlidingChallengeLayoutOnChallengeScrolledListener,
         IChallengeLayoutOnBouncerStateChangedListener)
 

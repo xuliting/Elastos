@@ -330,7 +330,7 @@ ECode NetworkStatsHistoryParcelUtils::WriteLongArray(
 //=============================================================
 // NetworkStatsHistory
 //=============================================================
-CAR_INTERFACE_IMPL_2(NetworkStatsHistory, Object, IParcelable, INetworkStatsHistory)
+CAR_INTERFACE_IMPL(NetworkStatsHistory, Object, IParcelable, INetworkStatsHistory)
 
 const Int32 NetworkStatsHistory::VERSION_INIT = 1;
 const Int32 NetworkStatsHistory::VERSION_ADD_PACKETS = 2;

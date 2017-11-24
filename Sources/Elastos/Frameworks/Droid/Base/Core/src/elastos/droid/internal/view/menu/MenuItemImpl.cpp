@@ -78,7 +78,7 @@ String MenuItemImpl::sEnterShortcutLabel;
 String MenuItemImpl::sDeleteShortcutLabel;
 String MenuItemImpl::sSpaceShortcutLabel;
 
-CAR_INTERFACE_IMPL_2(MenuItemImpl, Object, IMenuItemImpl, IMenuItem)
+CAR_INTERFACE_IMPL(MenuItemImpl, Object, IMenuItemImpl, IMenuItem)
 
 MenuItemImpl::MenuItemImpl()
     : mId(0)

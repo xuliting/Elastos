@@ -25,7 +25,7 @@ namespace IO {
 
 CAR_OBJECT_IMPL(CFilePermission)
 
-CAR_INTERFACE_IMPL_3(CFilePermission, Object, IFilePermission, IPermission, IGuard)
+CAR_INTERFACE_IMPL(CFilePermission, Object, IFilePermission, IPermission, IGuard)
 
 ECode CFilePermission::constructor(
     /* [in] */ const String& path,

@@ -149,7 +149,7 @@ AutoPtr<IAudioManager> ShutdownThread::sAudioManager;
 //          ShutdownThread::MountShutdownObserver
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(ShutdownThread::MountShutdownObserver, Object, IIMountShutdownObserver, IBinder);
+CAR_INTERFACE_IMPL(ShutdownThread::MountShutdownObserver, Object, IIMountShutdownObserver, IBinder);
 
 ShutdownThread::MountShutdownObserver::MountShutdownObserver()
 {}

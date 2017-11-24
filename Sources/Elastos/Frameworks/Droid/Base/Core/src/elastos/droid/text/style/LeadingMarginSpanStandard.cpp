@@ -22,7 +22,7 @@ namespace Text {
 namespace Style {
 
 
-CAR_INTERFACE_IMPL_5(LeadingMarginSpanStandard, Object, ILeadingMarginSpanStandard, ILeadingMarginSpan, IParagraphStyle, IParcelableSpan, IParcelable)
+CAR_INTERFACE_IMPL(LeadingMarginSpanStandard, Object, ILeadingMarginSpanStandard, ILeadingMarginSpan, IParagraphStyle, IParcelableSpan, IParcelable)
 
 LeadingMarginSpanStandard::LeadingMarginSpanStandard()
     : mFirst(0)

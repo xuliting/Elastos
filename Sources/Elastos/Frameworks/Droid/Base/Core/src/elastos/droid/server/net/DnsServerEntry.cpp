@@ -23,7 +23,7 @@ namespace Droid {
 namespace Server {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(DnsServerEntry, Object, IComparable, IDnsServerEntry)
+CAR_INTERFACE_IMPL(DnsServerEntry, Object, IComparable, IDnsServerEntry)
 
 DnsServerEntry::DnsServerEntry()
 {

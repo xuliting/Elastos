@@ -39,7 +39,7 @@ namespace Wifi {
 namespace P2p {
 namespace Nsd {
 
-CAR_INTERFACE_IMPL_2(WifiP2pServiceResponse, Object, IWifiP2pServiceResponse, IParcelable)
+CAR_INTERFACE_IMPL(WifiP2pServiceResponse, Object, IWifiP2pServiceResponse, IParcelable)
 
 WifiP2pServiceResponse::WifiP2pServiceResponse()
     : mServiceType(0)

@@ -87,7 +87,7 @@ public:
     sp<NativeGraphicBuffer> buffer;
 };
 
-CAR_INTERFACE_IMPL_2(GraphicBuffer, Object, IGraphicBuffer, IParcelable)
+CAR_INTERFACE_IMPL(GraphicBuffer, Object, IGraphicBuffer, IParcelable)
 
 GraphicBuffer::GraphicBuffer()
     : mWidth(0)

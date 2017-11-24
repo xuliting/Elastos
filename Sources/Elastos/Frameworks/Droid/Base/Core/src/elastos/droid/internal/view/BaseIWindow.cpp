@@ -25,7 +25,7 @@ namespace Elastos {
 namespace Droid {
 namespace Internal {
 namespace View {
-CAR_INTERFACE_IMPL_3(BaseIWindow, Object, IBaseIWindow, IIWindow, IBinder)
+CAR_INTERFACE_IMPL(BaseIWindow, Object, IBaseIWindow, IIWindow, IBinder)
 
 ECode BaseIWindow::SetSession(
     /* [in] */ IWindowSession* session)

@@ -149,7 +149,7 @@ ECode RecentsView::LaunchRunnable::Run()
 // RecentsView
 //--------------------------------------------------------------
 
-CAR_INTERFACE_IMPL_3(RecentsView, FrameLayout, IRecentsView, ITaskStackViewCallbacks, IPackageCallbacks)
+CAR_INTERFACE_IMPL(RecentsView, FrameLayout, IRecentsView, ITaskStackViewCallbacks, IPackageCallbacks)
 
 RecentsView::RecentsView()
     : mAlreadyLaunchingTask(FALSE)

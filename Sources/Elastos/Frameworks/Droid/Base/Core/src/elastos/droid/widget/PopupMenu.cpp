@@ -37,7 +37,7 @@ namespace Widget {
 //          PopupMenu::MyCallback
 //==============================================================================
 
-CAR_INTERFACE_IMPL_2(PopupMenu::MyCallback, Object, IMenuBuilderCallback, IMenuPresenterCallback)
+CAR_INTERFACE_IMPL(PopupMenu::MyCallback, Object, IMenuBuilderCallback, IMenuPresenterCallback)
 
 ECode PopupMenu::MyCallback::OnMenuItemSelected(
     /* [in] */ IMenuBuilder* menu,

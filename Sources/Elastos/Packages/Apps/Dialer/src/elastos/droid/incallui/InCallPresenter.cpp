@@ -143,7 +143,7 @@ ECode InCallPresenter::CallListener::OnConferenceableCallsChanged(
 const String InCallPresenter::EXTRA_FIRST_TIME_SHOWN("com.android.incallui.intent.extra.FIRST_TIME_SHOWN");
 AutoPtr<InCallPresenter> InCallPresenter::sInCallPresenter;
 
-CAR_INTERFACE_IMPL_2(InCallPresenter, Object, ICallListListener, IInCallPhoneListener)
+CAR_INTERFACE_IMPL(InCallPresenter, Object, ICallListListener, IInCallPhoneListener)
 
 InCallPresenter::InCallPresenter()
     : mInCallState(InCallState_NO_CALLS)

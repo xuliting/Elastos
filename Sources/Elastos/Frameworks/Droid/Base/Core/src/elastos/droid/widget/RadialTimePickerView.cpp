@@ -290,7 +290,7 @@ Int32 RadialTimePickerView::SnapOnly30s(
     return degrees;
 }
 
-CAR_INTERFACE_IMPL_2(RadialTimePickerView, View, IRadialTimePickerView, IViewOnTouchListener)
+CAR_INTERFACE_IMPL(RadialTimePickerView, View, IRadialTimePickerView, IViewOnTouchListener)
 
 RadialTimePickerView::RadialTimePickerView()
     : mIs24HourMode(FALSE)

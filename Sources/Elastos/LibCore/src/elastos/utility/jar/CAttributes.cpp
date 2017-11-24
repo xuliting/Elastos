@@ -27,7 +27,7 @@ namespace Elastos {
 namespace Utility {
 namespace Jar {
 
-CAR_INTERFACE_IMPL_3(CAttributes, Object, IAttributes, IMap, ICloneable)
+CAR_INTERFACE_IMPL(CAttributes, Object, IAttributes, IMap, ICloneable)
 
 CAR_OBJECT_IMPL(CAttributes)
 

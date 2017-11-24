@@ -39,7 +39,7 @@ Int32 CCandidatesContainer::ARROW_ALPHA_ENABLED = 0xff;
 Int32 CCandidatesContainer::ARROW_ALPHA_DISABLED = 0x40;
 Int32 CCandidatesContainer::ANIMATION_TIME = 200;
 
-CAR_INTERFACE_IMPL_2(CCandidatesContainer::InnerListener, Object, \
+CAR_INTERFACE_IMPL(CCandidatesContainer::InnerListener, Object, \
     IViewOnTouchListener, IAnimationAnimationListener)
 
 CCandidatesContainer::InnerListener::InnerListener(
@@ -75,7 +75,7 @@ ECode CCandidatesContainer::InnerListener::OnAnimationStart(
 
 CAR_OBJECT_IMPL(CCandidatesContainer);
 
-CAR_INTERFACE_IMPL_2(CCandidatesContainer, RelativeLayout, ICandidatesContainer, IArrowUpdater);
+CAR_INTERFACE_IMPL(CCandidatesContainer, RelativeLayout, ICandidatesContainer, IArrowUpdater);
 
 CCandidatesContainer::CCandidatesContainer()
     : mXOffsetForFlipper(0)

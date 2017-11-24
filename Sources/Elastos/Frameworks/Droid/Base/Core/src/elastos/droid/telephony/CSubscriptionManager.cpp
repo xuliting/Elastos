@@ -24,7 +24,7 @@ namespace Elastos {
 namespace Droid {
 namespace Telephony {
 
-CAR_INTERFACE_IMPL_2(CSubscriptionManager, Singleton, ISubscriptionManager, IBaseColumns)
+CAR_INTERFACE_IMPL(CSubscriptionManager, Singleton, ISubscriptionManager, IBaseColumns)
 
 CAR_SINGLETON_IMPL(CSubscriptionManager)
 

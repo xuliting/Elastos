@@ -37,7 +37,7 @@ ECode CPendingIntentFinishedDispatcher::MyRunnable::Run()
     return ec;
 }
 
-CAR_INTERFACE_IMPL_2(CPendingIntentFinishedDispatcher, Object, IIntentReceiver, IBinder)
+CAR_INTERFACE_IMPL(CPendingIntentFinishedDispatcher, Object, IIntentReceiver, IBinder)
 
 CAR_OBJECT_IMPL(CPendingIntentFinishedDispatcher)
 

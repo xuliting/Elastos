@@ -91,7 +91,7 @@ ECode CIInputMethodWrapper::InputMethodSessionCallbackWrapper::SessionCreated(
 }
 
 CAR_OBJECT_IMPL(CIInputMethodWrapper);
-CAR_INTERFACE_IMPL_3(CIInputMethodWrapper, Object, IIInputMethod, IBinder, IHandlerCallerCallback);
+CAR_INTERFACE_IMPL(CIInputMethodWrapper, Object, IIInputMethod, IBinder, IHandlerCallerCallback);
 ECode CIInputMethodWrapper::constructor(
     /* [in] */ IAbstractInputMethodService* context,
     /* [in] */ IInputMethod* inputMethod)

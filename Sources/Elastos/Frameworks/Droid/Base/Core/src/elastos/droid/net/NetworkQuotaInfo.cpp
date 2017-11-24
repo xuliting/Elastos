@@ -20,7 +20,7 @@ namespace Elastos {
 namespace Droid {
 namespace Net {
 
-CAR_INTERFACE_IMPL_2(NetworkQuotaInfo, Object, IParcelable, INetworkQuotaInfo)
+CAR_INTERFACE_IMPL(NetworkQuotaInfo, Object, IParcelable, INetworkQuotaInfo)
 
 ECode NetworkQuotaInfo::constructor()
 {

@@ -30,7 +30,7 @@ namespace Provider {
 
 CAR_SINGLETON_IMPL(CContactsContractCommonDataKindsPhone)
 
-CAR_INTERFACE_IMPL_3(CContactsContractCommonDataKindsPhone, Singleton
+CAR_INTERFACE_IMPL(CContactsContractCommonDataKindsPhone, Singleton
     , IContactsContractCommonDataKindsPhone
     , IContactsContractDataColumnsWithJoins
     , IContactsContractCommonDataKindsCommonColumns)

@@ -383,7 +383,7 @@ const Boolean SearchView::DBG = FALSE;
 const String SearchView::IME_OPTION_NO_MICROPHONE("nm");
 const String SearchView::SEARCHVIEW_NAME = String("CSearchView");
 
-CAR_INTERFACE_IMPL_2(SearchView, LinearLayout, ISearchView, ICollapsibleActionView);
+CAR_INTERFACE_IMPL(SearchView, LinearLayout, ISearchView, ICollapsibleActionView);
 SearchView::SearchView()
     : mSearchIconResId(0)
     , mSuggestionRowLayout(0)

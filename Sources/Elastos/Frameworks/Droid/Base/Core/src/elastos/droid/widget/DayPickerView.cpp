@@ -48,7 +48,7 @@ namespace Widget {
 //=====================================================================
 //                  DayPickerView::InnerListener
 //=====================================================================
-CAR_INTERFACE_IMPL_2(DayPickerView::InnerListener, Object, \
+CAR_INTERFACE_IMPL(DayPickerView::InnerListener, Object, \
     IAbsListViewOnScrollListener, IOnDateChangedListener)
 
 DayPickerView::InnerListener::InnerListener(

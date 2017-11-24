@@ -294,7 +294,7 @@ ECode MediaBrowserService::PerformLoadChildrenResult::OnResultSent(
 //       MediaBrowserService
 //==========================================================
 
-CAR_INTERFACE_IMPL_2(MediaBrowserService::ServiceBinder, Object, IIMediaBrowserService, IBinder)
+CAR_INTERFACE_IMPL(MediaBrowserService::ServiceBinder, Object, IIMediaBrowserService, IBinder)
 
 MediaBrowserService::ServiceBinder::ServiceBinder(
     /* [in] */ MediaBrowserService *mediaBrowserService)

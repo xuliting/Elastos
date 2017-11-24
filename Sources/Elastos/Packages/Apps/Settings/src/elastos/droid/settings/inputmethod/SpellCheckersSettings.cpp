@@ -53,7 +53,7 @@ const Int32 SpellCheckersSettings::ITEM_ID_USE_SYSTEM_LANGUAGE = 0;
 //                  SpellCheckersSettings::InnerListener
 //===============================================================================
 
-CAR_INTERFACE_IMPL_2(SpellCheckersSettings::InnerListener, Object, ISwitchBarOnSwitchChangeListener, IPreferenceOnPreferenceClickListener)
+CAR_INTERFACE_IMPL(SpellCheckersSettings::InnerListener, Object, ISwitchBarOnSwitchChangeListener, IPreferenceOnPreferenceClickListener)
 
 SpellCheckersSettings::InnerListener::InnerListener(
     /* [in] */ SpellCheckersSettings* host)

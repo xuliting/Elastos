@@ -34,7 +34,7 @@ ECode CameraDevice::StateCallback::OnClosed(
 
 CAR_INTERFACE_IMPL(CameraDevice::StateListener, StateCallback, ICameraDeviceStateListener)
 
-CAR_INTERFACE_IMPL_2(CameraDevice, Object, ICameraDevice, ICloseable)
+CAR_INTERFACE_IMPL(CameraDevice, Object, ICameraDevice, ICloseable)
 
 } // namespace Camera2
 } // namespace Hardware

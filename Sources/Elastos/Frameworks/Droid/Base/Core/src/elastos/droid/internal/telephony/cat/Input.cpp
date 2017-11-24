@@ -61,7 +61,7 @@ namespace Cat {
 ////                                Input
 ////=====================================================================
 //const AutoPtr<IParcelable> AutoPtr< ::Creator<Input> > Input::CREATOR = new InnerParcelableCreator(this);
-CAR_INTERFACE_IMPL_2(Input, Object, IInput, IParcelable);
+CAR_INTERFACE_IMPL(Input, Object, IInput, IParcelable);
 
 Input::Input()
 {

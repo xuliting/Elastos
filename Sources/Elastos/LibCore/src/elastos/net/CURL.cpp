@@ -48,7 +48,7 @@ HashMap<String, AutoPtr<IURLStreamHandler> > CURL::sStreamHandlers;
 AutoPtr<IURLStreamHandlerFactory> CURL::sStreamHandlerFactory;
 Object CURL::sLock;
 
-CAR_INTERFACE_IMPL_2(CURL, Object, IURL, ISerializable)
+CAR_INTERFACE_IMPL(CURL, Object, IURL, ISerializable)
 
 CAR_OBJECT_IMPL(CURL)
 

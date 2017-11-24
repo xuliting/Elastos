@@ -57,7 +57,7 @@ namespace PackageInstaller {
 //=====================================================================
 //             CUninstallAppProgress::PackageDeleteObserver
 //=====================================================================
-CAR_INTERFACE_IMPL_2(CUninstallAppProgress::PackageDeleteObserver, Object, IIPackageDeleteObserver, IBinder)
+CAR_INTERFACE_IMPL(CUninstallAppProgress::PackageDeleteObserver, Object, IIPackageDeleteObserver, IBinder)
 
 CAR_OBJECT_IMPL(CPackageDeleteObserver)
 
@@ -306,7 +306,7 @@ ECode CUninstallAppProgress::InnerOnClickListener::OnClick(
 //=====================================================================
 const Int32 CUninstallAppProgress::UNINSTALL_COMPLETE;
 
-CAR_INTERFACE_IMPL_2(CUninstallAppProgress, Activity, IViewOnClickListener, IUninstallAppProgress)
+CAR_INTERFACE_IMPL(CUninstallAppProgress, Activity, IViewOnClickListener, IUninstallAppProgress)
 
 CAR_OBJECT_IMPL(CUninstallAppProgress)
 

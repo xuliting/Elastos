@@ -36,7 +36,7 @@ namespace Nsd {
 
 const Byte DnsSdTxtRecord::mSeperator = '=';
 
-CAR_INTERFACE_IMPL_2(DnsSdTxtRecord, Object, IParcelable, IDnsSdTxtRecord)
+CAR_INTERFACE_IMPL(DnsSdTxtRecord, Object, IParcelable, IDnsSdTxtRecord)
 
 ECode DnsSdTxtRecord::constructor()
 {

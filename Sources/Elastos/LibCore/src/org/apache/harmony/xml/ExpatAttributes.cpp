@@ -26,7 +26,7 @@ namespace Apache {
 namespace Harmony {
 namespace Xml {
 
-CAR_INTERFACE_IMPL_2(ExpatAttributes, Object, IExpatAttributes, IAttributes)
+CAR_INTERFACE_IMPL(ExpatAttributes, Object, IExpatAttributes, IAttributes)
 const String ExpatAttributes::CDATA("CDATA");
 
 ECode ExpatAttributes::GetURI(

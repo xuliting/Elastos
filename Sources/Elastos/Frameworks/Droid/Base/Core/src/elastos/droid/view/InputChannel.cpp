@@ -38,7 +38,7 @@ namespace Elastos {
 namespace Droid {
 namespace View {
 
-CAR_INTERFACE_IMPL_2(InputChannel, Object, IInputChannel, IParcelable)
+CAR_INTERFACE_IMPL(InputChannel, Object, IInputChannel, IParcelable)
 
 typedef void (*InputChannelObjDisposeCallback)(
     /* [in] */ IInputChannel* inputChannelObj,

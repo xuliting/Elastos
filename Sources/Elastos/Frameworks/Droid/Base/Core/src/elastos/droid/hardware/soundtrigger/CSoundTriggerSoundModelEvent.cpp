@@ -27,7 +27,7 @@ namespace Droid {
 namespace Hardware {
 namespace Soundtrigger {
 
-CAR_INTERFACE_IMPL_2(CSoundTriggerSoundModelEvent, Object, ISoundTriggerSoundModelEvent, IParcelable)
+CAR_INTERFACE_IMPL(CSoundTriggerSoundModelEvent, Object, ISoundTriggerSoundModelEvent, IParcelable)
 
 CAR_OBJECT_IMPL(CSoundTriggerSoundModelEvent)
 

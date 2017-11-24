@@ -323,7 +323,7 @@ RequestQueue::InnerSub_BroadcastReceiver::InnerSub_BroadcastReceiver(
 //===============================================
 const Int32 RequestQueue::CONNECTION_COUNT = 4;
 
-CAR_INTERFACE_IMPL_2(RequestQueue, Object, IRequestQueue, IRequestFeeder)
+CAR_INTERFACE_IMPL(RequestQueue, Object, IRequestQueue, IRequestFeeder)
 
 ECode RequestQueue::constructor(
     /* [in] */ IContext* context)

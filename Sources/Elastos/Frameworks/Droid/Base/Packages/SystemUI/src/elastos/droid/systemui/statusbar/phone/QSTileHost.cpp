@@ -133,7 +133,7 @@ void QSTileHost::UserTracker::OnUserSwitched(
     mHost->mObserver->Register();
 }
 
-CAR_INTERFACE_IMPL_2(QSTileHost, Object, IPhoneQSTileHost, IQSTileHost);
+CAR_INTERFACE_IMPL(QSTileHost, Object, IPhoneQSTileHost, IQSTileHost);
 
 ECode QSTileHost::constructor(
     /* [in] */ IContext* context,

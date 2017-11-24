@@ -31,7 +31,7 @@ namespace Elastos {
 namespace Droid {
 namespace View {
 
-CAR_INTERFACE_IMPL_2(AbsSavedState, Object, IAbsSavedState, IParcelable)
+CAR_INTERFACE_IMPL(AbsSavedState, Object, IAbsSavedState, IParcelable)
 
 const AutoPtr<IAbsSavedState> AbsSavedState::EMPTY_STATE;
 

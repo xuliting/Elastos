@@ -57,7 +57,7 @@ static AutoPtr<IAccelerateInterpolator> InitAccelerateInterpolator()
 AutoPtr<IAccelerateInterpolator> CSearchDropTargetBar::sAccelerateInterpolator =
         InitAccelerateInterpolator();
 
-CAR_INTERFACE_IMPL_2(CSearchDropTargetBar, FrameLayout, ISearchDropTargetBar, IDragControllerDragListener);
+CAR_INTERFACE_IMPL(CSearchDropTargetBar, FrameLayout, ISearchDropTargetBar, IDragControllerDragListener);
 
 CAR_OBJECT_IMPL(CSearchDropTargetBar);
 

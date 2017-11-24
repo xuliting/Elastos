@@ -22,7 +22,7 @@ namespace Elastos {
 namespace Droid {
 namespace Text {
 
-CAR_INTERFACE_IMPL_5(CSpannableString, SpannableStringInternal, ISpannableString, ICharSequence, IGetChars, ISpannable, ISpanned)
+CAR_INTERFACE_IMPL(CSpannableString, SpannableStringInternal, ISpannableString, ICharSequence, IGetChars, ISpannable, ISpanned)
 
 CAR_OBJECT_IMPL(CSpannableString)
 

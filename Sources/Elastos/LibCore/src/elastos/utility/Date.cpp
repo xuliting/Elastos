@@ -54,7 +54,7 @@ namespace Utility{
 
 Int32 Date::CREATION_YEAR = -1;
 
-CAR_INTERFACE_IMPL_4(Date, Object, IDate, ISerializable, ICloneable, IComparable)
+CAR_INTERFACE_IMPL(Date, Object, IDate, ISerializable, ICloneable, IComparable)
 
 Int32 Date::GetCreationYear()
 {

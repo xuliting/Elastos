@@ -54,7 +54,7 @@ ECode PhoneWindowRotationWatcher::InnerRunnable1::Run()
 //                  PhoneWindowRotationWatcher
 //===============================================================================
 
-CAR_INTERFACE_IMPL_3(PhoneWindowRotationWatcher, Object, IBinder, IPhoneWindowRotationWatcher, IRotationWatcher)
+CAR_INTERFACE_IMPL(PhoneWindowRotationWatcher, Object, IBinder, IPhoneWindowRotationWatcher, IRotationWatcher)
 
 PhoneWindowRotationWatcher::PhoneWindowRotationWatcher()
     : mIsWatching(FALSE)

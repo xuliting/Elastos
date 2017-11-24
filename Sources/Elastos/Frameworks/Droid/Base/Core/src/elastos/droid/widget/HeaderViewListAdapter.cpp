@@ -31,7 +31,7 @@ AutoPtr<IArrayList> InitEMPTY_INFO_LIST()
 AutoPtr<IArrayList> HeaderViewListAdapter::EMPTY_INFO_LIST = InitEMPTY_INFO_LIST();
 
 
-CAR_INTERFACE_IMPL_5(HeaderViewListAdapter, Object, IHeaderViewListAdapter, \
+CAR_INTERFACE_IMPL(HeaderViewListAdapter, Object, IHeaderViewListAdapter, \
     IWrapperListAdapter, IListAdapter, IAdapter, IFilterable);
 
 HeaderViewListAdapter::HeaderViewListAdapter()

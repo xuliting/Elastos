@@ -23,7 +23,7 @@ namespace Elastos {
 namespace Droid {
 namespace App {
 
-CAR_INTERFACE_IMPL_2(CPackageInstallObserver2, Object, IIPackageInstallObserver2, IBinder)
+CAR_INTERFACE_IMPL(CPackageInstallObserver2, Object, IIPackageInstallObserver2, IBinder)
 
 CAR_OBJECT_IMPL(CPackageInstallObserver2)
 
