@@ -99,7 +99,7 @@ public:
     CARAPI GetZoneStrings(
         /* [out, callee] */ ArrayOf<IArrayOf*> ** zoneStrings);
 
-//    @Override
+    // @Override
     CARAPI GetHashCode(
         /* [out] */ Int32* hash);
 

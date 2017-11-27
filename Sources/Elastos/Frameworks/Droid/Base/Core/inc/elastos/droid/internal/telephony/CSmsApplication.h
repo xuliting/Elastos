@@ -239,17 +239,17 @@ public:
         /* [out] */ Boolean* result);
 
 private:
-    static Int32 GetIncomingUserId(
+    static CARAPI_(Int32) GetIncomingUserId(
         /* [in] */ IContext* context);
 
-    static AutoPtr<ICollection> GetApplicationCollectionInternal(
+    static CARAPI_(AutoPtr<ICollection>) GetApplicationCollectionInternal(
         /* [in] */ IContext* context,
         /* [in] */ Int32 userId);
     /**
      * Checks to see if we have a valid installed SMS application for the specified package name
      * @return Data for the specified package name or null if there isn't one
      */
-    static AutoPtr<SmsApplicationData> GetApplicationForPackage(
+    static CARAPI_(AutoPtr<SmsApplicationData>) GetApplicationForPackage(
         /* [in] */ ICollection* applications,
         /* [in] */ const String& packageName);
 
@@ -262,17 +262,17 @@ private:
      * (3) The currently configured highest priority broadcast receiver
      * (4) Null
      */
-    static AutoPtr<SmsApplicationData> GetApplication(
+    static CARAPI_(AutoPtr<SmsApplicationData>) GetApplication(
         /* [in] */ IContext* context,
         /* [in] */ Boolean updateIfNeeded,
         /* [in] */ Int32 userId);
 
-    static void SetDefaultApplicationInternal(
+    static CARAPI_(void) SetDefaultApplicationInternal(
         /* [in] */ const String& packageName,
         /* [in] */ IContext* context,
         /* [in] */ Int32 userId);
 
-    static void ConfigurePreferredActivity(
+    static CARAPI_(void) ConfigurePreferredActivity(
         /* [in] */ IPackageManager* packageManager,
         /* [in] */ IComponentName* componentName,
         /* [in] */ Int32 userId);
@@ -280,11 +280,12 @@ private:
     /**
      * Updates the ACTION_SENDTO activity to the specified component for the specified scheme.
      */
-    static void ReplacePreferredActivity(
+    static CARAPI_(void) ReplacePreferredActivity(
         /* [in] */ IPackageManager* packageManager,
         /* [in] */ IComponentName* componentName,
         /* [in] */ Int32 userId,
         /* [in] */ const String& scheme);
+
 public:
     static const String LOGTAG;
 

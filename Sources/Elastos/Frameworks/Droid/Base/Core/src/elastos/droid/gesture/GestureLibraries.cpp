@@ -225,7 +225,7 @@ ECode GestureLibraries::FileGestureLibrary::GetGestures(
     return GestureLibrary::GetGestures(entryName, gestures);
 }
 
-CARAPI GestureLibraries::FileGestureLibrary::GetLearner(
+ECode GestureLibraries::FileGestureLibrary::GetLearner(
     /* [out] */ ILearner** learner)
 {
     return GestureLibrary::GetLearner(learner);
@@ -353,7 +353,7 @@ ECode GestureLibraries::ResourceGestureLibrary::GetGestures(
     return GestureLibrary::GetGestures(entryName, gestures);
 }
 
-CARAPI GestureLibraries::ResourceGestureLibrary::GetLearner(
+ECode GestureLibraries::ResourceGestureLibrary::GetLearner(
     /* [out] */ ILearner** learner)
 {
     return GestureLibrary::GetLearner(learner);

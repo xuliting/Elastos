@@ -300,7 +300,7 @@ public:
 
     CARAPI_(Boolean) IsShowing();
 
-    virtual CARAPI constructor();
+    CARAPI constructor();
 
 protected:
     CARAPI MeasureContent();

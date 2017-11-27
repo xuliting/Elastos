@@ -42,7 +42,7 @@ public:
 
     CAR_SINGLETON_DECL()
 
-    ECode FromTemplate(
+    CARAPI FromTemplate(
         /* [in] */ IStorageVolume* temp,
         /* [in] */ IFile* path,
         /* [in] */ IUserHandle* owner,

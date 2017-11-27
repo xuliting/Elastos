@@ -40,14 +40,14 @@ public:
 
     CDataTruncation();
 
-    CARAPI  constructor(
+    CARAPI constructor(
         /* [in] */ Int32 index,
         /* [in] */ Boolean parameter,
         /* [in] */ Boolean read,
         /* [in] */ Int32 dataSize,
         /* [in] */ Int32 transferSize);
 
-    CARAPI  constructor(
+    CARAPI constructor(
         /* [in] */ Int32 index,
         /* [in] */ Boolean parameter,
         /* [in] */ Boolean read,
@@ -55,19 +55,19 @@ public:
         /* [in] */ Int32 transferSize,
         /* [in] */ IThrowable * cause);
 
-    CARAPI  GetDataSize(
+    CARAPI GetDataSize(
         /* [out] */ Int32* size);
 
-    CARAPI  GetIndex(
+    CARAPI GetIndex(
         /* [out] */ Int32* index);
 
-    CARAPI  GetParameter(
+    CARAPI GetParameter(
         /* [out] */ Boolean* isPara);
 
-    CARAPI  GetRead(
+    CARAPI GetRead(
         /* [out] */ Boolean* isRead);
 
-    CARAPI  GetTransferSize(
+    CARAPI GetTransferSize(
         /* [out] */ Int32* size);
 
     CARAPI GetNextWarning(
@@ -77,7 +77,6 @@ public:
         /* [in] */ ISQLWarning * w);
 
 private:
-
     Int32 mIndex;
 
     Int32 mDataSize;

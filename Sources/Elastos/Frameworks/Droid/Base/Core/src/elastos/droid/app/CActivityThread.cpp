@@ -1694,7 +1694,8 @@ ECode CActivityThread::InstallSystemApplicationInfo(
     /* [in] */ IApplicationInfo* info,
     /* [in] */ IClassLoader* classLoader)
 {
-    {    AutoLock syncLock(this);
+    {    
+        AutoLock syncLock(this);
         AutoPtr<IContextImpl> ctx;
         GetSystemContext((IContextImpl**)&ctx);
         CContextImpl* cctx = (CContextImpl*)ctx.Get();

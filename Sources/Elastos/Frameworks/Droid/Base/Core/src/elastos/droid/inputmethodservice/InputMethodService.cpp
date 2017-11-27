@@ -2019,9 +2019,8 @@ ECode InputMethodService::SendDefaultEditorAction(
     AutoPtr<IEditorInfo> ei;
     GetCurrentInputEditorInfo((IEditorInfo**)&ei);
     Int32 imeOptions;
-    ei->GetImeOptions(&imeOptions);
     if (ei != NULL &&
-        (!fromEnterKey || (imeOptions & IEditorInfo::IME_FLAG_NO_ENTER_ACTION) == 0) &&
+        (!fromEnterKey || (ei->GetImeOptions(&imeOptions), (imeOptions & IEditorInfo::IME_FLAG_NO_ENTER_ACTION) == 0)) &&
         (imeOptions & IEditorInfo::IME_MASK_ACTION) != IEditorInfo::IME_ACTION_NONE) {
         // If the enter key was pressed, and the editor has a default
         // action associated with pressing enter, then send it that

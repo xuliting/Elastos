@@ -72,6 +72,7 @@ class SocketTaggerInner
 {
 public:
     using SocketTagger::Tag;
+
     using SocketTagger::Untag;
 
     CARAPI Tag(

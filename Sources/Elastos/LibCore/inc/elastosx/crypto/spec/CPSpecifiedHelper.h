@@ -38,7 +38,7 @@ public:
      * The instance of <code>PSpecified</code> with the default value
      * <code>byte[0]</code> for <code>P</code>
      */
-    ECode GetDEFAULT(
+    CARAPI GetDEFAULT(
         /* [out] */ IPSpecified** result);
 };
 

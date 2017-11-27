@@ -411,7 +411,8 @@ ECode UiAutomation::SetRotation(
     VALIDATE_NOT_NULL(result)
     *result = FALSE;
 
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
     }
     switch (rotation) {
@@ -448,7 +449,8 @@ ECode UiAutomation::ExecuteAndWaitForEvent(
     *result = NULL;
 
     // Acquire the lock and prepare for receiving events.
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
         mEventQueue->Clear();
         // Prepare to wait for an event.
@@ -465,7 +467,8 @@ ECode UiAutomation::ExecuteAndWaitForEvent(
     command->Run();
 
     // Acquire the lock and wait for the event.
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         // try {
             // Wait for the event.
             Int64 startTimeMillis = SystemClock::GetUptimeMillis();
@@ -515,7 +518,8 @@ ECode UiAutomation::WaitForIdle(
     /* [in] */ Int64 idleTimeoutMillis,
     /* [in] */ Int64 globalTimeoutMillis)
 {
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
 
         Int64 startTimeMillis = SystemClock::GetUptimeMillis();
@@ -556,7 +560,8 @@ ECode UiAutomation::TakeScreenshot(
     VALIDATE_NOT_NULL(result)
     *result = NULL;
 
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
     }
     AutoPtr<IDisplay> display;
@@ -639,7 +644,8 @@ ECode UiAutomation::TakeScreenshot(
 ECode UiAutomation::SetRunAsMonkey(
     /* [in] */ Boolean enable)
 {
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
     }
     // try {
@@ -660,7 +666,8 @@ ECode UiAutomation::ClearWindowContentFrameStats(
     VALIDATE_NOT_NULL(result)
     *result = FALSE;
 
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
     }
     // try {
@@ -685,7 +692,8 @@ ECode UiAutomation::GetWindowContentFrameStats(
     VALIDATE_NOT_NULL(stats)
     *stats = NULL;
 
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
     }
     // try {
@@ -702,7 +710,8 @@ ECode UiAutomation::GetWindowContentFrameStats(
 
 ECode UiAutomation::ClearWindowAnimationFrameStats()
 {
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
     }
     //try {
@@ -724,7 +733,8 @@ ECode UiAutomation::GetWindowAnimationFrameStats(
     VALIDATE_NOT_NULL(stats)
     *stats = NULL;
 
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
     }
     // try {
@@ -747,7 +757,8 @@ ECode UiAutomation::ExecuteShellCommand(
     VALIDATE_NOT_NULL(pfd)
     *pfd = NULL;
 
-    {    AutoLock syncLock(mLock);
+    {    
+        AutoLock syncLock(mLock);
         FAIL_RETURN(ThrowIfNotConnectedLocked())
     }
 

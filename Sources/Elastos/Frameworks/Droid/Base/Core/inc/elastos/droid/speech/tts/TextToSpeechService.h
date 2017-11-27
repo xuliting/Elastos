@@ -118,7 +118,6 @@ private:
     /**
      * Synthesizer thread. This thread is used to run {@link SynthHandler}.
      */
-    //private class
     class SynthThread
         : public Object
 //        , public HandlerThread
@@ -171,7 +170,7 @@ private:
             /* [in] */ Int32 callerPid,
             /* [in] */ TextToSpeechService* ttss);
 
-        AutoPtr<IInterface> GetCallerIdentity();
+        CARAPI_(AutoPtr<IInterface>) GetCallerIdentity();
 
         CARAPI GetCallerUid(
             /* [out] */ Int32* ret);
@@ -183,7 +182,7 @@ private:
          * Checker whether the item is valid. If this method returns false, the item should not
          * be played.
          */
-        virtual Boolean IsValid() = 0;
+        virtual CARAPI_(Boolean) IsValid() = 0;
 
         /**
          * Plays the speech item. Blocks until playback is finished.
@@ -191,10 +190,9 @@ private:
          *
          * Only called on the synthesis thread.
          */
-        //public
         CARAPI Play();
 
-        virtual void PlayImpl() = 0;
+        virtual CARAPI_(void) PlayImpl() = 0;
 
         /**
          * Stops the speech item.
@@ -202,10 +200,9 @@ private:
          *
          * Can be called on multiple threads,  but not on the synthesis thread.
          */
-        //public
         CARAPI Stop();
 
-        virtual void StopImpl() = 0;
+        virtual CARAPI_(void) StopImpl() = 0;
 
         //protected synchronized
         CARAPI_(Boolean) IsStopped();
@@ -254,19 +251,19 @@ public:
         CARAPI DispatchOnError(
             /* [in] */ Int32 errorCode);
 
-        String GetUtteranceId();
+        CARAPI_(String) GetUtteranceId();
 
-        String GetStringParam(
+        CARAPI_(String) GetStringParam(
             /* [in] */ IBundle* params,
             /* [in] */ const String& key,
             /* [in] */ const String& defaultValue);
 
-        Int32 GetIntParam(
+        CARAPI_(Int32) GetIntParam(
             /* [in] */ IBundle* params,
             /* [in] */ const String& key,
             /* [in] */ Int32 defaultValue);
 
-        Float GetFloatParam(
+        CARAPI_(Float) GetFloatParam(
             /* [in] */ IBundle* params,
             /* [in] */ const String& key,
             /* [in] */ Float defaultValue);
@@ -290,15 +287,15 @@ public:
             /* [in] */ const String& utteranceId,
             /* [in] */ TextToSpeechService* ttss);
 
-        Boolean HasLanguage();
+        CARAPI_(Boolean) HasLanguage();
 
-        Int32 GetSpeechRate();
+        CARAPI_(Int32) GetSpeechRate();
 
-        Int32 GetPitch();
+        CARAPI_(Int32) GetPitch();
 
-        String GetUtteranceId();
+        CARAPI_(String) GetUtteranceId();
 
-        AudioOutputParams* GetAudioParams();
+        CARAPI_(AutoPtr<AudioOutputParams>) GetAudioParams();
 
     protected:
         IBundle* mParams;
@@ -319,32 +316,32 @@ public:
             /* [in] */ const String& utteranceId,
             /* [in] */ TextToSpeechService* ttss);
 
-        ICharSequence* GetText();
+        CARAPI_(AutoPtr<ICharSequence>) GetText();
 
-        Boolean HasLanguage();
+        CARAPI_(Boolean) HasLanguage();
 
-        Boolean IsValid();
+        CARAPI_(Boolean) IsValid();
 
-        void PlayImpl();
+        CARAPI_(void) PlayImpl();
 
-        AbstractSynthesisCallback* CreateSynthesisCallback();
+        CARAPI_(AutoPtr<AbstractSynthesisCallback>) CreateSynthesisCallback();
 
-        void SetRequestParams(
+        CARAPI_(void) SetRequestParams(
             /* [in] */ ISynthesisRequest* request);
 
-        void StopImpl();
+        CARAPI_(void) StopImpl();
 
-        String GetCountry();
+        CARAPI_(String) GetCountry();
 
-        String GetVariant();
+        CARAPI_(String) GetVariant();
 
-        String GetLanguage();
+        CARAPI_(String) GetLanguage();
 
-        String GetVoiceName();
+        CARAPI_(String) GetVoiceName();
 
-        Int32 GetSpeechRate();
+        CARAPI_(Int32) GetSpeechRate();
 
-        Int32 GetPitch();
+        CARAPI_(Int32) GetPitch();
 
     private:
         // Never null.
@@ -373,9 +370,9 @@ private:
             /* [in] */ IFileOutputStream* fileOutputStream,
             /* [in] */ TextToSpeechService* ttss);
 
-        AbstractSynthesisCallback* createSynthesisCallback();
+        CARAPI_(AutoPtr<AbstractSynthesisCallback>) createSynthesisCallback();
 
-        void PlayImpl();
+        CARAPI_(void) PlayImpl();
 
     private:
         AutoPtr<IFileOutputStream> mFileOutputStream;
@@ -398,15 +395,15 @@ private:
             /* [in] */ IURI* uri,
             /* [in] */ TextToSpeechService* ttss);
 
-        Boolean IsValid();
+        CARAPI_(Boolean) IsValid();
 
-        void PlayImpl();
+        CARAPI_(void) PlayImpl();
 
-        void StopImpl();
+        CARAPI_(void) StopImpl();
 
-        String GetUtteranceId();
+        CARAPI_(String) GetUtteranceId();
 
-        AudioOutputParams* GetAudioParams();
+        CARAPI_(AutoPtr<AudioOutputParams>) GetAudioParams();
     };
 
 private:
@@ -426,13 +423,13 @@ private:
             /* [in] */ Int64 duration,
             /* [in] */ TextToSpeechService* ttss);
 
-        Boolean IsValid();
+        CARAPI_(Boolean) IsValid();
 
-        void PlayImpl();
+        CARAPI_(void) PlayImpl();
 
-        void StopImpl();
+        CARAPI_(void) StopImpl();
 
-        String GetUtteranceId();
+        CARAPI_(String) GetUtteranceId();
     };
 
 private:
@@ -457,11 +454,11 @@ private:
             /* [in] */ const String& country,
             /* [in] */ const String& variant);
 
-        Boolean isValid();
+        CARAPI_(Boolean) isValid();
 
-        void playImpl();
+        CARAPI_(void) playImpl();
 
-        void stopImpl();
+        CARAPI_(void) stopImpl();
     };
 
 private:
@@ -481,11 +478,11 @@ private:
             /* [in] */ Int32 callerPid,
             /* [in] */ const String& voiceName);
 
-        Boolean isValid();
+        CARAPI_(Boolean) isValid();
 
-        void playImpl();
+        CARAPI_(void) playImpl();
 
-        void stopImpl();
+        CARAPI_(void) stopImpl();
     };
 
 private:
@@ -499,10 +496,12 @@ private:
         {
         public:
             CARAPI Run();
+
         public:
             RunnableSynthHandlerEnqueueSpeechItem(
                 /* [in] */ SynthHandler* sh,
                 /* [in] */ SpeechItem* si);
+
         private:
             AutoPtr<SynthHandler> mSh;
             AutoPtr<SpeechItem> mSi;
@@ -513,16 +512,13 @@ private:
             /* [in] */ IMessage* message);
 
     public:
-        //public
         SynthHandler(
             /* [in] */ ILooper* looper,
             /* [in] */ TextToSpeechService* ttss);
 
     public:
-        //public
         CARAPI_(Boolean) IsSpeaking();
 
-        //public
         CARAPI_(void) Quit();
 
         /**
@@ -530,7 +526,6 @@ private:
          *
          * Called on a service binder thread.
          */
-        //public
         CARAPI_(Int32) EnqueueSpeechItem(
             /* [in] */ Int32 queueMode,
             /* [in] */ SpeechItem* speechItem);
@@ -541,11 +536,9 @@ private:
          *
          * Called on a service binder thread.
          */
-        //public
         CARAPI_(Int32) StopForApp(
             /* [in] */ IInterface* callerIdentity);
 
-        //public
         CARAPI_(Int32) StopAll();
 
     private:
@@ -561,7 +554,6 @@ private:
             /* [in] */ IInterface* callerIdentity);
 
     private:
-        //private
         AutoPtr<SpeechItem> mCurrentSpeechItem;// = NULL;
         Object mLock;
         AutoPtr<TextToSpeechService> mTtss;
@@ -673,13 +665,12 @@ private:
             /* [in] */ TextToSpeechService* ttss);
 
     private:
-        //private
-        String Intern(
+        CARAPI_(String) Intern(
             /* [in] */ const String& in);
 
-        //private
-        Boolean CheckNonNull(
+        CARAPI_(Boolean) CheckNonNull(
             /* [in] */ ArrayOf<IInterface*>* args);
+
     private:
         AutoPtr<TextToSpeechService> mTtss;
     };
@@ -709,6 +700,7 @@ private:
             /* [in] */ const String& utteranceId,
             /* [in] */ Int32 errorCode);
 
+        //@Override
         CARAPI_(void) OnCallbackDied(
             /* [in] */ IITextToSpeechCallback* callback,
             /* [in] */ IInterface* cookie);
@@ -721,8 +713,7 @@ private:
             /* [in] */ TextToSpeechService* ttss);
 
     private:
-        //private
-        AutoPtr<IITextToSpeechCallback> GetCallbackFor(
+        CARAPI_(AutoPtr<IITextToSpeechCallback>) GetCallbackFor(
             /* [in] */ IInterface* caller);
 
     private:
@@ -743,11 +734,9 @@ public:
 
 public:
     //@Override
-    //public
     CARAPI OnCreate();
 
     //@Override
-    //public
     CARAPI OnDestroy();
 
 public:
@@ -939,45 +928,32 @@ protected:
         /* [in] */ const String& variant);
 
 private:
-    //private
     CARAPI_(Int32) GetExpectedLanguageAvailableStatus(
         /* [in] */ ILocale* locale);
 
-    //private
     CARAPI_(Int32) GetDefaultSpeechRate();
 
-    //private
     CARAPI_(AutoPtr< ArrayOf<String> >) GetSettingsLocale();
 
-    //private
     CARAPI_(Int32) GetSecureSettingInt(
         /* [in] */ const String& name,
         /* [in] */ Int32 defaultValue);
 
 private:
-    //private
     static const Boolean DBG;           // = FALSE;
-    //private
     static const String TAG;            // = "TextToSpeechService";
 
-    //private
     static const Int32 MAX_SPEECH_ITEM_CHAR_LENGTH;     // = 4000;
-    //private
     static const String SYNTH_THREAD_NAME;              // = "SynthThread";
 
-    //private
     AutoPtr<SynthHandler> mSynthHandler;
     // A thread and it's associated handler for playing back any audio
     // associated with this TTS engine. Will handle all requests except synthesis
     // to file requests, which occur on the synthesis thread.
-    //private
     AutoPtr<AudioPlaybackHandler> mAudioPlaybackHandler;
-    //private
     AutoPtr<ITtsEngines> mEngineHelper;
 
-    //private
     AutoPtr<CallbackMap> mCallbacks;
-    //private
     String mPackageName;
 
     /**

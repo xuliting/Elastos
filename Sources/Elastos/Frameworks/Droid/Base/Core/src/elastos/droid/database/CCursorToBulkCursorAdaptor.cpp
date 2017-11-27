@@ -229,7 +229,6 @@ ECode CCursorToBulkCursorAdaptor::GetWindow(
     // }
     *result = window;
     REFCOUNT_ADD(*result)
-
     return NOERROR;
 }
 

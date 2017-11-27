@@ -152,7 +152,7 @@ public:
      *
      * @hide
      */
-    static AutoPtr<IUtteranceProgressListener> From(
+    static CARAPI_(AutoPtr<IUtteranceProgressListener>) From(
         /* [in] */ ITextToSpeechOnUtteranceCompletedListener* listener);
 };
 

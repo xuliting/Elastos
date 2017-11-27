@@ -219,8 +219,8 @@ _ETL_NAMESPACE_END
         /* [out] */ InterfaceID* iid);
 #endif
 
-#ifndef CAR_INTERFACE_IMPL
-#define CAR_INTERFACE_IMPL(ClassName, SupperClassName, InterfaceName)       \
+#ifndef CAR_INTERFACE_IMPL_1
+#define CAR_INTERFACE_IMPL_1(ClassName, SupperClassName, InterfaceName)       \
                                                            \
     UInt32 ClassName::AddRef()                             \
     {                                                      \
@@ -258,8 +258,8 @@ _ETL_NAMESPACE_END
     }
 #endif
 
-#ifndef CAR_INTERFACE_IMPL_LIGHT
-#define CAR_INTERFACE_IMPL_LIGHT(ClassName, SupperClassName, InterfaceName) \
+#ifndef CAR_INTERFACE_IMPL_LIGHT_1
+#define CAR_INTERFACE_IMPL_LIGHT_1(ClassName, SupperClassName, InterfaceName) \
     UInt32 ClassName::AddRef()                             \
     {                                                      \
         return ElLightRefBase::AddRef();                   \
@@ -1181,6 +1181,19 @@ _ETL_NAMESPACE_END
         return NOERROR;                                                                 \
     }
 #endif
+
+#define CAR_MACRO_CONCATENATE(arg1, arg2)   arg1##arg2
+#define CAR_MACRO_NARG(...) CAR_MACRO_NARG_(__VA_ARGS__, CAR_MACRO_RSEQ_N())
+#define CAR_MACRO_NARG_(...) CAR_MACRO_ARG_N(__VA_ARGS__)
+#define CAR_MACRO_ARG_N(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, N, ...) N
+#define CAR_MACRO_RSEQ_N() 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+
+#define CAR_INTERFACE_IMPL_(N, ClassName, SupperClassName, ...) CAR_MACRO_CONCATENATE(CAR_INTERFACE_IMPL_, N)(ClassName, SupperClassName, __VA_ARGS__)
+#define CAR_INTERFACE_IMPL(ClassName, SupperClassName, ...) CAR_INTERFACE_IMPL_(CAR_MACRO_NARG(__VA_ARGS__), ClassName, SupperClassName, __VA_ARGS__)
+
+#define CAR_INTERFACE_IMPL_LIGHT_(N, ClassName, SupperClassName, ...) CAR_MACRO_CONCATENATE(CAR_INTERFACE_IMPL_LIGHT_, N)(ClassName, SupperClassName, __VA_ARGS__)
+#define CAR_INTERFACE_IMPL_LIGHT(ClassName, SupperClassName, ...) CAR_INTERFACE_IMPL_LIGHT_(CAR_MACRO_NARG(__VA_ARGS__), ClassName, SupperClassName, __VA_ARGS__)
+
 
 // Car object decls and impls
 //

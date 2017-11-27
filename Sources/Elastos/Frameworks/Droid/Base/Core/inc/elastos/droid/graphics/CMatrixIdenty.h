@@ -35,7 +35,7 @@ class CMatrixIdenty : public Matrix {
     friend class CPath;
 
 public:
-    void Oops();
+    CARAPI_(void) Oops();
 
     virtual CARAPI Set(
         /* [in] */ IMatrix* src);

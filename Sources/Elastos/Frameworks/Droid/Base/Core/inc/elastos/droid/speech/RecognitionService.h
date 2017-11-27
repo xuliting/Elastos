@@ -46,7 +46,6 @@ public:
      * {@link RecognitionService#onStartListening(Intent, Callback)} method. Recognizers may call
      * these methods on any thread.
      */
-    //public
     class RecognitionServiceCallback
         : public Object
         , public IRecognitionServiceCallback

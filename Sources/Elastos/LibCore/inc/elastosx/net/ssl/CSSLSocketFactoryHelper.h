@@ -39,7 +39,7 @@ public:
      *
      * @return the default ssl socket factory instance.
      */
-    ECode GetDefault(
+    CARAPI GetDefault(
         /* [out] */ ISocketFactory** factory);
 };
 
