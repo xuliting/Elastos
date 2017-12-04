@@ -35,6 +35,7 @@ INCLUDES += $(MAKEDIR)/../../inc/elastos/math
 INCLUDES += $(MAKEDIR)/../../inc/elastos/net
 INCLUDES += $(MAKEDIR)/../../inc/elastos/security
 INCLUDES += $(MAKEDIR)/../../inc/elastos/security/cert
+INCLUDES += $(MAKEDIR)/../../inc/elastos/security/spec
 INCLUDES += $(MAKEDIR)/../../inc/elastos/sql
 INCLUDES += $(MAKEDIR)/../../inc/elastos/sql/sqlite
 INCLUDES += $(MAKEDIR)/../../inc/elastos/sql/sqlite/jdbc

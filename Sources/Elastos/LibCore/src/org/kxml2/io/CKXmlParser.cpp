@@ -1298,7 +1298,7 @@ ECode CKXmlParser::ParseStartTag(
                     ATTRIBUTE, &temp));
             (*mAttributes)[i + 3] = temp;
 
-            if (delimiter != ' ' && PeekCharacter() == delimiter) {
+            if (delimiter != ' ' && (Char32)PeekCharacter() == delimiter) {
                 mPosition++; // end quote
             }
         }

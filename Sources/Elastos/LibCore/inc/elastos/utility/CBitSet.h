@@ -354,7 +354,7 @@ private:
     /**
      * Ensures that our long[] can hold at least 64 * desiredLongCount bits.
      */
-    CARAPI_(void) EnsureCapacity(
+    CARAPI EnsureCapacity(
         /* [in] */ Int32 desiredInt64Count);
 
     CARAPI CheckIndex(

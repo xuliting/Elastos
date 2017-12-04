@@ -32,8 +32,10 @@
 #include "Arrays.h"
 #include "EmptyArray.h"
 #include "CArrayOf.h"
+#include <elastos/core/CoreUtils.h>
 
 using Elastos::Core::IArrayOf;
+using Elastos::Core::CoreUtils;
 using Elastos::Core::CArrayOf;
 using Elastos::Core::ICharSequence;
 using Elastos::Core::Character;
@@ -338,8 +340,8 @@ ECode MessageFormat::HandleArgumentField(
 {
     if (fields != NULL) {
         AutoPtr<FieldContainer> fc = new FieldContainer(begin, end,
-            (IAttributedCharacterIteratorAttribute*)MessageFormatField::ARGUMENT.Get(),
-            (IInterface*)argIndex);
+            IAttributedCharacterIteratorAttribute::Probe(MessageFormatField::ARGUMENT),
+            CoreUtils::Convert(argIndex));
         fields->PushBack(fc);
     }
     else if (position != NULL) {

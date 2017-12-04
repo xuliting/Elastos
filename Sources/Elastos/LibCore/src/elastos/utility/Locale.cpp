@@ -1016,7 +1016,6 @@ String Locale::ToNewString(
     return result.ToString();
 }
 
-
 ECode Locale::WriteObject(
     /* [in] */ IObjectOutputStream* stream)
 {

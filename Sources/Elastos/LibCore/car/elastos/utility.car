@@ -1058,9 +1058,9 @@ module
          * @param csn
          *            the name of the charset for the {@code Formatter}.
          * @throws FileNotFoundException
-         *             if the filename does not denote a normal and writable file,
-         *             or if a new file cannot be created, or if any error arises when
-         *             opening or creating the file.
+         *            if the filename does not denote a normal and writable file,
+         *            or if a new file cannot be created, or if any error arises when
+         *            opening or creating the file.
          * @throws UnsupportedEncodingException
          *             if the charset with the specified name is not supported.
          */
@@ -1115,7 +1115,7 @@ module
         constructor(
             [in] IFile* file);
 
-        /*
+        /**
          * Constructs a {@code Formatter} with the given charset,
          * and whose output is written to the specified {@code File}.
          *
@@ -1135,7 +1135,7 @@ module
          *             creating the {@code File}.
          * @throws UnsupportedEncodingException
          *             if the charset with the specified name is not supported.
-
+         */
         constructor(
             [in] IFile* file,
             [in] String csn);

@@ -51,7 +51,7 @@ ECode AbstractList::SimpleListIterator::HasNext(
     VALIDATE_NOT_NULL(result);
     Int32 size;
     mOwner->GetSize(&size);
-    *result = mPos + 1 < size;
+    *result = ((mPos + 1) < size);
     return NOERROR;
 }
 
@@ -59,10 +59,13 @@ ECode AbstractList::SimpleListIterator::GetNext(
     /* [out] */ IInterface** object)
 {
     VALIDATE_NOT_NULL(object);
-    if (mExpectedModeCount== mOwner->mModCount) {
+    if (mExpectedModeCount == mOwner->mModCount) {
         // try {
         ECode ec = mOwner->Get(mPos + 1, object);
-        if (FAILED(ec)) return E_NO_SUCH_ELEMENT_EXCEPTION;
+        if (FAILED(ec)) {
+            return E_NO_SUCH_ELEMENT_EXCEPTION;
+        }
+
         mLastPosition = ++mPos;
         return NOERROR;
         // } catch (IndexOutOfBoundsException e) {
@@ -85,7 +88,9 @@ ECode AbstractList::SimpleListIterator::Remove()
     // try {
     AutoPtr<IInterface> object;
     ECode ec = mOwner->Remove(mLastPosition, (IInterface**)&object);
-    if (FAILED(ec)) return E_CONCURRENT_MODIFICATION_EXCEPTION;
+    if (FAILED(ec)) {
+        return E_CONCURRENT_MODIFICATION_EXCEPTION;
+    }
     // } catch (IndexOutOfBoundsException e) {
         // throw new ConcurrentModificationException();
     // }
@@ -94,6 +99,7 @@ ECode AbstractList::SimpleListIterator::Remove()
     if (mPos == mLastPosition) {
         mPos--;
     }
+
     mLastPosition = -1;
     return NOERROR;
 }
@@ -150,7 +156,7 @@ ECode AbstractList::FullListIterator::HasPrevious(
     /* [out] */ Boolean* result)
 {
     VALIDATE_NOT_NULL(result);
-    *result = mPos >= 0;
+    *result = (mPos >= 0);
     return NOERROR;
 }
 
@@ -268,7 +274,7 @@ ECode SubAbstractList::SubAbstractListIterator::HasNext(
     VALIDATE_NOT_NULL(result);
     Int32 index;
     mIterator->GetNextIndex(&index);
-    *result = index < mEnd;
+    *result = (index < mEnd);
     return NOERROR;
 }
 
@@ -278,7 +284,7 @@ ECode SubAbstractList::SubAbstractListIterator::HasPrevious(
     VALIDATE_NOT_NULL(result);
     Int32 previousindex;
     mIterator->GetPreviousIndex(&previousindex);
-    *result = previousindex >= mStart;
+    *result = (previousindex >= mStart);
     return NOERROR;
 }
 
@@ -594,16 +600,19 @@ ECode AbstractList::AddAll(
     /* [out] */ Boolean* result)
 {
     VALIDATE_NOT_NULL(result);
-    *result = FALSE;
     VALIDATE_NOT_NULL(collection);
+    *result = FALSE;
+
     AutoPtr<IIterator> it;
     (IIterable::Probe(collection))->GetIterator((IIterator**)&it);
+
     Boolean hasnext = FALSE;
-    while ((it->HasNext(&hasnext), hasnext)) {
+    while (it->HasNext(&hasnext), hasnext) {
         AutoPtr<IInterface> nextobject;
         it->GetNext((IInterface**)&nextobject);
         FAIL_RETURN(Add(location++, nextobject));
     }
+
     Boolean flag = FALSE;
     collection->IsEmpty(&flag);
     *result = !flag;
@@ -665,8 +674,9 @@ ECode AbstractList::Equals(
     (IIterable::Probe(this))->GetIterator((IIterator**)&it1);
     AutoPtr<IIterator> it2;
     (IIterable::Probe(list))->GetIterator((IIterator**)&it2);
+
     Boolean hasnext = FALSE;
-    while ((it1->HasNext(&hasnext), hasnext)) {
+    while (it1->HasNext(&hasnext), hasnext) {
         AutoPtr<IInterface> e1;
         it1->GetNext((IInterface**)&e1);
         AutoPtr<IInterface> e2;
@@ -687,8 +697,9 @@ ECode AbstractList::GetHashCode(
     *result = 1;
     AutoPtr<IIterator> it;
     GetIterator((IIterator**)&it);
+
     Boolean hasnext = FALSE;
-    while ((it->HasNext(&hasnext), hasnext)) {
+    while (it->HasNext(&hasnext), hasnext) {
         AutoPtr<IInterface> object;
         it->GetNext((IInterface**)&object);
         if (object == NULL) {
@@ -709,9 +720,10 @@ ECode AbstractList::IndexOf(
     VALIDATE_NOT_NULL(result);
     AutoPtr<IListIterator> it;
     GetListIterator((IListIterator**)&it);
+
     Boolean hasnext = FALSE;
     if (object != NULL) {
-        while (((IIterator::Probe(it))->HasNext(&hasnext), hasnext)) {
+        while ((IIterator::Probe(it))->HasNext(&hasnext), hasnext) {
             AutoPtr<IInterface> nextobject;
             (IIterator::Probe(it))->GetNext((IInterface**)&nextobject);
             if (Object::Equals(object, nextobject)) {
@@ -722,7 +734,7 @@ ECode AbstractList::IndexOf(
             }
         }
     } else {
-        while (((IIterator::Probe(it))->HasNext(&hasnext), hasnext)) {
+        while ((IIterator::Probe(it))->HasNext(&hasnext), hasnext) {
             AutoPtr<IInterface> nextobject;
             (IIterator::Probe(it))->GetNext((IInterface**)&nextobject);
             if (nextobject == NULL) {
@@ -752,9 +764,10 @@ ECode AbstractList::LastIndexOf(
     GetSize(&size);
     AutoPtr<IListIterator> it;
     GetListIterator(size, (IListIterator**)&it);
+
     Boolean hasprevious = FALSE;
     if (object != NULL) {
-        while((it->HasPrevious(&hasprevious), hasprevious)) {
+        while (it->HasPrevious(&hasprevious), hasprevious) {
             AutoPtr<IInterface> previousobject;
             it->GetPrevious((IInterface**)&previousobject);
             if (Object::Equals(object, previousobject)) {
@@ -885,6 +898,8 @@ ECode AbstractList::GetSubList(
     /* [out] */ IList** list)
 {
     VALIDATE_NOT_NULL(list);
+    *list = NULL;
+
     Int32 size;
     GetSize(&size);
     if (start >= 0 && end <= size) {

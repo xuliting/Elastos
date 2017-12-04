@@ -1193,7 +1193,7 @@ public:
             /* [in] */ PInterface value,
             /* [out] */ PInterface* oldValue);
 
-        CARAPI  PutAll(
+        CARAPI PutAll(
             /* [in] */ IMap* map);
 
         CARAPI Remove(

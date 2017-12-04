@@ -45,7 +45,7 @@ ECode CAttributeListImpl::GetName(
 {
     VALIDATE_NOT_NULL(name);
 
-    if (i < 0 || i >= mNames.GetSize()) {
+    if (i < 0 || i >= (Int32)(mNames.GetSize())) {
         *name = NULL;
     }
 
@@ -60,7 +60,7 @@ ECode CAttributeListImpl::GetType(
 {
     VALIDATE_NOT_NULL(type);
 
-    if (i < 0 || i >= mTypes.GetSize()) {
+    if (i < 0 || i >= (Int32)(mTypes.GetSize())) {
         *type = NULL;
     }
 
@@ -75,7 +75,7 @@ ECode CAttributeListImpl::GetValue(
 {
     VALIDATE_NOT_NULL(value);
 
-    if (i < 0 || i >= mValues.GetSize()) {
+    if (i < 0 || i >= (Int32)(mValues.GetSize())) {
         *value = NULL;
     }
 

@@ -95,7 +95,12 @@ ECode CBitSet::Clone(
     /* [out] */ IInterface** object)
 {
     VALIDATE_NOT_NULL(object)
+
     AutoPtr< ArrayOf<Int64> > cloneBits = mBits->Clone();
+    if (cloneBits == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     AutoPtr<IBitSet> bs;
     CBitSet::New(cloneBits, (IBitSet**)&bs);
     *object = bs.Get();
@@ -108,21 +113,24 @@ ECode CBitSet::Equals(
     /* [out] */ Boolean* result)
 {
     VALIDATE_NOT_NULL(result)
+    VALIDATE_NOT_NULL(o)
 
-    if (IBitSet::Probe(o) == NULL) {
+    CBitSet *pCBitSet = (CBitSet*)IBitSet::Probe(o);
+
+    if (pCBitSet == NULL) {
         *result = FALSE;
         return NOERROR;
     }
-    if (this == (CBitSet*)IBitSet::Probe(o)) {
+    if (this == pCBitSet) {
         *result = TRUE;
         return NOERROR;
     }
-    if (mInt64Count != ((CBitSet *)IBitSet::Probe(o))->mInt64Count) {
+    if (mInt64Count != pCBitSet->mInt64Count) {
         *result = FALSE;
         return NOERROR;
     }
     for (Int32 i = 0; i < mInt64Count; ++i) {
-        if ((*mBits)[i] != (*((CBitSet *)IBitSet::Probe(o))->mBits)[i]) {
+        if ((*mBits)[i] != (*(pCBitSet->mBits))[i]) {
             *result = FALSE;
             return NOERROR;
         }
@@ -131,18 +139,27 @@ ECode CBitSet::Equals(
     return NOERROR;
 }
 
-void CBitSet::EnsureCapacity(
+/**
+ * Ensures that our long[] can hold at least 64 * desiredLongCount bits.
+ */
+ECode CBitSet::EnsureCapacity(
     /* [in] */ Int32 desiredInt64Count)
 {
     if (desiredInt64Count <= mBits->GetLength()) {
-        return;
+        return NOERROR;
     }
     Int32 newLength = Elastos::Core::Math::Max(desiredInt64Count, mBits->GetLength() * 2);
     AutoPtr< ArrayOf<Int64> > newBits = ArrayOf<Int64>::Alloc(newLength);
+    if (newBits == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     newBits->Copy(mBits, mInt64Count);
     mBits = newBits;
     // 'longCount' is unchanged by this operation: the long[] is larger,
     // but you're not yet using any more of it.
+
+    return NOERROR;
 }
 
 ECode CBitSet::GetHashCode(
@@ -189,9 +206,10 @@ ECode CBitSet::Set(
     /* [in] */ Int32 index)
 {
     FAIL_RETURN(CheckIndex(index));
+
     Int32 arrayIndex = index / 64;
     if (arrayIndex >= mBits->GetLength()) {
-        EnsureCapacity(arrayIndex + 1);
+        FAIL_RETURN(EnsureCapacity(arrayIndex + 1));
     }
     (*mBits)[arrayIndex] |= (1LL << (index & 0x3F));
     mInt64Count = Elastos::Core::Math::Max(mInt64Count, arrayIndex + 1);
@@ -225,9 +243,10 @@ ECode CBitSet::Flip(
     /* [in] */ Int32 index)
 {
     FAIL_RETURN(CheckIndex(index));
+
     Int32 arrayIndex = index / 64;
     if (arrayIndex >= mBits->GetLength()) {
-        EnsureCapacity(arrayIndex + 1);
+        FAIL_RETURN(EnsureCapacity(arrayIndex + 1));
     }
     (*mBits)[arrayIndex] ^= (1LL << (index & 0x3F));
     mInt64Count = Elastos::Core::Math::Max(mInt64Count, arrayIndex + 1);
@@ -285,7 +304,7 @@ ECode CBitSet::Get(
     Int32 firstArrayIndex = fromIndex / 64;
     Int32 lastArrayIndex = (toIndex - 1) / 64;
     Int64 lowMask = ALL_ONES << (fromIndex & 0x3F);
-    Int64 highMask = (UInt64)ALL_ONES >> (-toIndex & 0x3F);
+    Int64 highMask = (UInt64)ALL_ONES >> (-(toIndex & 0x3F));
 
     if (firstArrayIndex == lastArrayIndex) {
         Int64 result = (*mBits)[firstArrayIndex] & (lowMask & highMask);
@@ -294,11 +313,18 @@ ECode CBitSet::Get(
             return CBitSet::New(0, bs);
         }
         AutoPtr< ArrayOf<Int64> > arr = ArrayOf<Int64>::Alloc(1);
+        if (arr == NULL) {
+            return E_NULL_POINTER_EXCEPTION;
+        }
+
         (*arr)[0] = result;
         return CBitSet::New(arr, bs);
     }
 
     AutoPtr< ArrayOf<Int64> > newBits = ArrayOf<Int64>::Alloc(lastArrayIndex - firstArrayIndex + 1);
+    if (newBits == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
 
     // first fill in the first and last indexes in the new BitSet
     (*newBits)[0] = (*mBits)[firstArrayIndex] & lowMask;
@@ -321,7 +347,7 @@ ECode CBitSet::Get(
             // apply the last x bits of newBits[i+1] to the current
             // element
             if (i != newBits->GetLength() - 1) {
-                (*newBits)[i] |= (*newBits)[i + 1] << (-numBitsToShift & 0x3F);
+                (*newBits)[i] |= (*newBits)[i + 1] << (-(numBitsToShift & 0x3F));
             }
             if ((*newBits)[i] != 0) {
                 actualLen = i + 1;
@@ -400,7 +426,7 @@ ECode CBitSet::Set(
     Int32 firstArrayIndex = fromIndex / 64;
     Int32 lastArrayIndex = (toIndex - 1) / 64;
     if (lastArrayIndex >= mBits->GetLength()) {
-        EnsureCapacity(lastArrayIndex + 1);
+        FAIL_RETURN(EnsureCapacity(lastArrayIndex + 1));
     }
 
     Int64 lowMask = ALL_ONES << (fromIndex & 0x3F);
@@ -432,6 +458,7 @@ ECode CBitSet::Clear(
     /* [in] */ Int32 toIndex)
 {
     FAIL_RETURN(CheckRange(fromIndex, toIndex));
+
     if (fromIndex == toIndex || mInt64Count == 0) {
         return NOERROR;
     }
@@ -446,7 +473,7 @@ ECode CBitSet::Clear(
     Int32 lastArrayIndex = (toIndex - 1) / 64;
 
     Int64 lowMask = ALL_ONES << (fromIndex & 0x3F);
-    Int64 highMask = (UInt64)ALL_ONES >> (-toIndex & 0x3F);
+    Int64 highMask = (UInt64)ALL_ONES >> (-(toIndex & 0x3F));
     if (firstArrayIndex == lastArrayIndex) {
         (*mBits)[firstArrayIndex] &= ~(lowMask & highMask);
     }
@@ -480,7 +507,7 @@ ECode CBitSet::Flip(
     Int32 firstArrayIndex = fromIndex / 64;
     Int32 lastArrayIndex = (toIndex - 1) / 64;
     if (lastArrayIndex >= mBits->GetLength()) {
-        EnsureCapacity(lastArrayIndex + 1);
+        FAIL_RETURN(EnsureCapacity(lastArrayIndex + 1));
     }
 
     Int64 lowMask = ALL_ONES << (fromIndex & 0x3F);
@@ -508,10 +535,8 @@ ECode CBitSet::Intersects(
     /* [in] */ IBitSet* bs,
     /* [out] */ Boolean* result)
 {
+    VALIDATE_NOT_NULL(bs)
     VALIDATE_NOT_NULL(result);
-    if (bs == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
 
     AutoPtr< ArrayOf<Int64> > bsBits = ((CBitSet*)bs)->mBits;
     Int32 length = Elastos::Core::Math::Min(mInt64Count, ((CBitSet*)bs)->mInt64Count);
@@ -531,9 +556,7 @@ ECode CBitSet::Intersects(
 ECode CBitSet::And(
     /* [in] */ IBitSet* bs)
 {
-    if (bs == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+    VALIDATE_NOT_NULL(bs)
 
     CBitSet* bsObj = (CBitSet*)bs;
     Int32 minSize = Elastos::Core::Math::Min(mInt64Count, bsObj->mInt64Count);
@@ -553,9 +576,7 @@ ECode CBitSet::And(
 ECode CBitSet::AndNot(
     /* [in] */ IBitSet* bs)
 {
-    if (bs == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+    VALIDATE_NOT_NULL(bs)
 
     CBitSet* bsObj = (CBitSet*)bs;
     Int32 minSize = Elastos::Core::Math::Min(mInt64Count, bsObj->mInt64Count);
@@ -572,14 +593,12 @@ ECode CBitSet::AndNot(
 ECode CBitSet::Or(
     /* [in] */ IBitSet* bs)
 {
-    if (bs == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+    VALIDATE_NOT_NULL(bs)
 
     CBitSet* bsObj = (CBitSet*)bs;
     Int32 minSize = Elastos::Core::Math::Min(mInt64Count, bsObj->mInt64Count);
     Int32 maxSize = Elastos::Core::Math::Max(mInt64Count, bsObj->mInt64Count);
-    EnsureCapacity(maxSize);
+    FAIL_RETURN(EnsureCapacity(maxSize));
     for (Int32 i = 0; i < minSize; ++i) {
         (*mBits)[i] |= (*bsObj->mBits)[i];
     }
@@ -596,14 +615,12 @@ ECode CBitSet::Or(
 ECode CBitSet::Xor(
     /* [in] */ IBitSet* bs)
 {
-    if (bs == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+    VALIDATE_NOT_NULL(bs)
 
     CBitSet* bsObj = (CBitSet*)bs;
     Int32 minSize = Elastos::Core::Math::Min(mInt64Count, bsObj->mInt64Count);
     Int32 maxSize = Elastos::Core::Math::Max(mInt64Count, bsObj->mInt64Count);
-    EnsureCapacity(maxSize);
+    FAIL_RETURN(EnsureCapacity(maxSize));
     for (Int32 i = 0; i < minSize; ++i) {
         (*mBits)[i] ^= (*bsObj->mBits)[i];
     }
@@ -624,8 +641,9 @@ ECode CBitSet::GetSize(
     /* [out] */ Int32* size)
 {
     VALIDATE_NOT_NULL(size);
-       *size = mBits->GetLength() * 64;
-       return NOERROR;
+
+    *size = mBits->GetLength() * 64;
+    return NOERROR;
 }
 
 /**
@@ -636,6 +654,7 @@ ECode CBitSet::GetLength(
     /* [out] */ Int32* len)
 {
     VALIDATE_NOT_NULL(len);
+
     if (mInt64Count == 0) {
         *len = 0;
         return NOERROR;
@@ -656,6 +675,7 @@ ECode CBitSet::NextSetBit(
 {
     VALIDATE_NOT_NULL(next);
     FAIL_RETURN(CheckIndex(index));
+
     Int32 arrayIndex = index / 64;
     if (arrayIndex >= mInt64Count) {
         *next = -1;
@@ -667,7 +687,7 @@ ECode CBitSet::NextSetBit(
                 Elastos::Core::Math::NumberOfTrailingZeros((*mBits)[arrayIndex] & mask);
         return NOERROR;
     }
-    while (++arrayIndex < mInt64Count && (*mBits)[arrayIndex] == 0) {
+    while ((++arrayIndex < mInt64Count) && ((*mBits)[arrayIndex] == 0)) {
     }
     if (arrayIndex == mInt64Count) {
         *next = -1;
@@ -727,10 +747,18 @@ ECode CBitSet::PreviousSetBit(
         return NOERROR;
     }
     FAIL_RETURN(CheckIndex(index));
-    // TODO: optimize this.
     for (Int32 i = index; i >= 0; --i) {
         Boolean value;
-        if (Get(i, &value), value) {
+
+        Int32 arrayIndex = index / 64;
+        if (arrayIndex >= mInt64Count) {
+            value = FALSE;
+        }
+        else {
+            value = (((*mBits)[arrayIndex] & (1LL << (index & 0x3F))) != 0);
+        }
+
+        if (value) {
             *previous = i;
             return NOERROR;
         }
@@ -758,7 +786,16 @@ ECode CBitSet::PreviousClearBit(
     // TODO: optimize this.
     for (Int32 i = index; i >= 0; --i) {
         Boolean value;
-        if (Get(i, &value), !value) {
+
+        Int32 arrayIndex = index / 64;
+        if (arrayIndex >= mInt64Count) {
+            value = FALSE;
+        }
+        else {
+            value = (((*mBits)[arrayIndex] & (1LL << (index & 0x3F))) != 0);
+        }
+
+        if (!value) {
             *previous = i;
             return NOERROR;
         }
@@ -897,6 +934,10 @@ ECode CBitSet::ToInt64Array(
 {
     VALIDATE_NOT_NULL(int64Arr);
     AutoPtr< ArrayOf<Int64> > arr = ArrayOf<Int64>::Alloc(mInt64Count);
+    if (arr == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     arr->Copy(mBits, mInt64Count);
     *int64Arr = arr;
     REFCOUNT_ADD(*int64Arr);
@@ -913,9 +954,14 @@ ECode CBitSet::ToByteArray(
     /* [out, callee] */ ArrayOf<Byte>** byteArr)
 {
     VALIDATE_NOT_NULL(byteArr);
+
     Int32 bitCount;
     GetLength(&bitCount);
     AutoPtr< ArrayOf<Byte> > result = ArrayOf<Byte>::Alloc((bitCount + 7) / 8);
+    if (result == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     for (Int32 i = 0; i < result->GetLength(); ++i) {
         Int32 lowBit = 8 * i;
         Int32 arrayIndex = lowBit / 64;

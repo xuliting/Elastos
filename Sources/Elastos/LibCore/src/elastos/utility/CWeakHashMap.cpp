@@ -17,7 +17,6 @@
 #include "CWeakHashMap.h"
 #include "CArrayList.h"
 
-
 namespace Elastos {
 namespace Utility {
 

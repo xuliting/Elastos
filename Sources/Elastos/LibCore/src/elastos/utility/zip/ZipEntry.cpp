@@ -39,16 +39,16 @@ namespace Zip {
 CAR_INTERFACE_IMPL(ZipEntry, Object, IZipEntry, ICloneable)
 
 ZipEntry::ZipEntry()
-    : mCrc(-1)
-    , mCompressedSize(-1)
-    , mSize(-1)
+    : mCrc(-1LL)
+    , mCompressedSize(-1LL)
+    , mSize(-1LL)
     , mCompressionMethod(-1)
     , mTime(-1)
     , mModDate(-1)
     , mExtra(NULL)
     , mNameLength(-1)
-    , mLocalHeaderRelOffset(-1)
-    , mDataOffset(-1)
+    , mLocalHeaderRelOffset(-1LL)
+    , mDataOffset(-1LL)
 {}
 
 ZipEntry::~ZipEntry()

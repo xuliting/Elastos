@@ -346,6 +346,13 @@ ECode CPriorityQueue::GetIterator(
     return NOERROR;
 }
 
+AutoPtr< ArrayOf<IInterface*> > CPriorityQueue::NewElementArray(
+    /* [in] */ Int32 capacity)
+{
+    AutoPtr< ArrayOf<IInterface*> > outres = ArrayOf<IInterface*>::Alloc(capacity);
+    return outres;
+}
+
 ECode CPriorityQueue::ReadObject(
     /* [in] */ IObjectInputStream* in)
 {
@@ -358,13 +365,6 @@ ECode CPriorityQueue::ReadObject(
         // mElements[i] = (E) in.readObject();
     }
     return NOERROR;
-}
-
-AutoPtr< ArrayOf<IInterface*> > CPriorityQueue::NewElementArray(
-    /* [in] */ Int32 capacity)
-{
-    AutoPtr< ArrayOf<IInterface*> > outres = ArrayOf<IInterface*>::Alloc(capacity);
-    return outres;
 }
 
 ECode CPriorityQueue::WriteObject(

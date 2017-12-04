@@ -524,36 +524,36 @@ ECode CJDBCResultSet::GetObject(
     AutoPtr<ArrayOf<String> > rd = tr->mRows[mRow];
     lastg = (*rd)[colIndex - 1];
     assert(0 && "TODO error");
-    AutoPtr<IInterface> temp = (IInterface *)&lastg;
-    AutoPtr<ITableResultX > arr = (ITableResultX * )tr->Probe(EIID_ITableResultX);
+    AutoPtr<IInterface> temp = (IInterface*)&lastg;
+    AutoPtr<ITableResultX> arr = (ITableResultX*)tr->Probe(EIID_ITableResultX);
     if (arr) {
-            switch ((*((CTableResultX *)tr.Get())->sql_type)[colIndex - 1]) {
-                case ITypes::SMALLINT:
-                    temp = InternalGetShort(colIndex);
-                    break;
-                case ITypes::INTEGER:
-                    temp = InternalGetInt(colIndex);
-                    break;
-                case ITypes::DOUBLE:
-                    temp = InternalGetDouble(colIndex);
-                    break;
-                case ITypes::FLOAT:
-                    temp = InternalGetFloat(colIndex);
-                    break;
-                case ITypes::BIGINT:
-                    temp = InternalGetLong(colIndex);
-                    break;
-                case ITypes::BINARY:
-                case ITypes::VARBINARY:
-                case ITypes::LONGVARBINARY:
-                    temp = NULL;
-                    assert(0 && "TODO error");
-                    // GetBytes(colIndex,(ArrayOf<Byte> **)temp);
+        switch ((*((CTableResultX*)tr.Get())->sql_type)[colIndex - 1]) {
+            case ITypes::SMALLINT:
+                temp = TO_IINTERFACE(InternalGetShort(colIndex));
                 break;
-                case ITypes::SQL_NULL:
-                    temp = NULL;
-                    break;
-                /* defaults to String below */
+            case ITypes::INTEGER:
+                temp = TO_IINTERFACE(InternalGetInt(colIndex));
+                break;
+            case ITypes::DOUBLE:
+                temp = TO_IINTERFACE(InternalGetDouble(colIndex));
+                break;
+            case ITypes::FLOAT:
+                temp = TO_IINTERFACE(InternalGetFloat(colIndex));
+                break;
+            case ITypes::BIGINT:
+                temp = TO_IINTERFACE(InternalGetLong(colIndex));
+                break;
+            case ITypes::BINARY:
+            case ITypes::VARBINARY:
+            case ITypes::LONGVARBINARY:
+                temp = NULL;
+                assert(0 && "TODO error");
+                // GetBytes(colIndex,(ArrayOf<Byte> **)temp);
+            break;
+            case ITypes::SQL_NULL:
+                temp = NULL;
+                break;
+            /* defaults to String below */
         }
     }
 

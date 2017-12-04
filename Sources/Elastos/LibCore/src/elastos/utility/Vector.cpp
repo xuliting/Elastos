@@ -873,7 +873,8 @@ ECode Vector::ToArray(
 CARAPI Vector::ToString(
     /* [out] */ String* result)
 {
-    {    AutoLock syncLock(this);
+    {
+        AutoLock syncLock(this);
         if (mElementCount == 0) {
             *result = String("[]");
             return NOERROR;
@@ -906,7 +907,8 @@ CARAPI Vector::ToString(
 
 ECode Vector::TrimToSize()
 {
-    {    AutoLock syncLock(this);
+    {    
+        AutoLock syncLock(this);
         if (mElementData->GetLength() != mElementCount) {
             Grow(mElementCount);
         }
@@ -917,7 +919,8 @@ ECode Vector::TrimToSize()
 ECode Vector::WriteObject(
     /* [in] */ IObjectOutputStream* stream)
 {
-    {    AutoLock syncLock(this);
+    {
+        AutoLock syncLock(this);
         stream->DefaultWriteObject();
     }
 

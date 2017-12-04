@@ -138,7 +138,7 @@ ECode Collections::CopiesList::Contains(
     VALIDATE_NOT_NULL(result)
     *result = FALSE;
     if (mElement == NULL) {
-        *result = object == NULL;
+        *result = (object == NULL);
     }
     else {
         *result = Object::Equals(mElement, object);
@@ -881,7 +881,7 @@ ECode Collections::SingletonSet::Contains(
     VALIDATE_NOT_NULL(result)
     *result = FALSE;
     if (mElement == NULL) {
-        *result = object == NULL;
+        *result = (object == NULL);
     }
     else {
         *result = Object::Equals(mElement, object);
@@ -1002,7 +1002,7 @@ ECode Collections::_SingletonList::Contains(
 {
     VALIDATE_NOT_NULL(result)
     if (mElement == NULL) {
-        *result = object == NULL;
+        *result = (object == NULL);
     }
     else {
         *result = Object::Equals(mElement, object);
@@ -1229,6 +1229,9 @@ ECode Collections::_SingletonMap::MySet::Iterator::GetNext(
 
     mHasNext = FALSE;
     AutoPtr<IMapEntry> p = new MyMapEntry(mOwner->mOwner->mK, mOwner->mOwner->mV);
+    if (p == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
     *object = IMapEntry::Probe(p);
     REFCOUNT_ADD(*object)
     return NOERROR;
@@ -1270,10 +1273,11 @@ ECode Collections::_SingletonMap::MySet::Contains(
         AutoPtr<IInterface> key, value;
         entry->GetKey((IInterface**)&key);
         entry->GetValue((IInterface**)&value);
+
         Boolean a, b;
         mOwner->ContainsKey(key, &a);
         mOwner->ContainsValue(value, &b);
-        *result = a && b;
+        *result = (a && b);
         return NOERROR;
     }
     *result = FALSE;
@@ -1293,6 +1297,10 @@ ECode Collections::_SingletonMap::MySet::GetIterator(
 {
     VALIDATE_NOT_NULL(it)
     *it = new Iterator(this);
+    if (*it == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     REFCOUNT_ADD(*it)
     return NOERROR;
 }
@@ -1395,7 +1403,7 @@ ECode Collections::_SingletonMap::ContainsKey(
 {
     VALIDATE_NOT_NULL(result)
     if (mK == NULL) {
-        *result = key == NULL;
+        *result = (key == NULL);
     }
     else {
         *result = Object::Equals(mK, key);
@@ -1409,7 +1417,7 @@ ECode Collections::_SingletonMap::ContainsValue(
 {
     VALIDATE_NOT_NULL(result)
     if (mV == NULL) {
-        *result = value == NULL;
+        *result = (value == NULL);
     }
     else {
         *result = Object::Equals(mV, value);
@@ -1832,6 +1840,7 @@ ECode Collections::_SynchronizedList::Add(
 {
     {
         AutoLock syncLock(mLock);
+
         mList->Add(location, object);
     }
     return NOERROR;
@@ -1852,6 +1861,7 @@ ECode Collections::_SynchronizedList::AddAll(
     VALIDATE_NOT_NULL(modified);
     {
         AutoLock syncLock(mLock);
+
         mList->AddAll(location, collection, modified);
     }
     return NOERROR;
@@ -1872,6 +1882,7 @@ ECode Collections::_SynchronizedList::Equals(
     VALIDATE_NOT_NULL(result);
     {
         AutoLock syncLock(mLock);
+
         mList->Equals(object, result);
     }
     return NOERROR;
@@ -1884,6 +1895,7 @@ ECode Collections::_SynchronizedList::Get(
     VALIDATE_NOT_NULL(object);
     {
         AutoLock syncLock(mLock);
+
         mList->Get(location, object);
     }
     return NOERROR;
@@ -1895,6 +1907,7 @@ ECode Collections::_SynchronizedList::GetHashCode(
     VALIDATE_NOT_NULL(hashCode);
     {
         AutoLock syncLock(mLock);
+
         mList->GetHashCode(hashCode);
     }
     return NOERROR;
@@ -1909,6 +1922,7 @@ ECode Collections::_SynchronizedList::IndexOf(
     AutoPtr<ArrayOf<IInterface*> > array;
     {
         AutoLock syncLock(mLock);
+
         mList->GetSize(&size);
         array = ArrayOf<IInterface*>::Alloc(size);
         mList->ToArray((ArrayOf<IInterface*>**)&array);
@@ -1942,6 +1956,7 @@ ECode Collections::_SynchronizedList::LastIndexOf(
     AutoPtr<ArrayOf<IInterface*> > array;
     {
         AutoLock syncLock(mLock);
+
         mList->GetSize(&size);
         array = ArrayOf<IInterface*>::Alloc(size);
         mList->ToArray((ArrayOf<IInterface*>**)&array);
@@ -1972,6 +1987,7 @@ ECode Collections::_SynchronizedList::GetListIterator(
     VALIDATE_NOT_NULL(it);
     {
         AutoLock syncLock(mLock);
+
         mList->GetListIterator(it);
     }
     return NOERROR;
@@ -1984,6 +2000,7 @@ ECode Collections::_SynchronizedList::GetListIterator(
     VALIDATE_NOT_NULL(it);
     {
         AutoLock syncLock(mLock);
+
         mList->GetListIterator(location, it);
     }
     return NOERROR;
@@ -1996,6 +2013,7 @@ ECode Collections::_SynchronizedList::Remove(
     VALIDATE_NOT_NULL(object);
     {
         AutoLock syncLock(mLock);
+
         mList->Remove(location, object);
     }
     return NOERROR;
@@ -2016,6 +2034,7 @@ ECode Collections::_SynchronizedList::Set(
     VALIDATE_NOT_NULL(prevObject);
     {
         AutoLock syncLock(mLock);
+
         mList->Set(location, object, prevObject);
     }
     return NOERROR;
@@ -2036,6 +2055,7 @@ ECode Collections::_SynchronizedList::GetSubList(
 {
     {
         AutoLock syncLock(mLock);
+
         AutoPtr<IList> sub;
         mList->GetSubList(start, end, (IList**)&sub);
         AutoPtr<IList> res = new _SynchronizedList(sub, mLock);
@@ -2233,6 +2253,7 @@ ECode Collections::_SynchronizedMap::ContainsValue(
     VALIDATE_NOT_NULL(result);
     {
         AutoLock syncLock(mLock);
+
         mM->ContainsValue(value, result);
     }
     return NOERROR;
@@ -2247,6 +2268,9 @@ ECode Collections::_SynchronizedMap::GetEntrySet(
         AutoPtr<ISet> entry;
         mM->GetEntrySet((ISet**)&entry);
         AutoPtr<ISet> res = new _SynchronizedSet(entry, mLock);
+        if (res == NULL)
+            return E_NULL_POINTER_EXCEPTION;
+
         *entries = res;
         REFCOUNT_ADD(*entries)
     }
@@ -2260,6 +2284,7 @@ ECode Collections::_SynchronizedMap::Equals(
     VALIDATE_NOT_NULL(result);
     {
         AutoLock syncLock(mLock);
+
         mM->Equals(object, result);
     }
     return NOERROR;
@@ -2272,6 +2297,7 @@ ECode Collections::_SynchronizedMap::Get(
     VALIDATE_NOT_NULL(value);
     {
         AutoLock syncLock(mLock);
+
         mM->Get(key, value);
     }
     return NOERROR;
@@ -2283,6 +2309,7 @@ ECode Collections::_SynchronizedMap::GetHashCode(
     VALIDATE_NOT_NULL(hashCode);
     {
         AutoLock syncLock(mLock);
+
         mM->GetHashCode(hashCode);
     }
     return NOERROR;
@@ -2294,6 +2321,7 @@ ECode Collections::_SynchronizedMap::IsEmpty(
     VALIDATE_NOT_NULL(result);
     {
         AutoLock syncLock(mLock);
+
         mM->IsEmpty(result);
     }
     return NOERROR;
@@ -2305,6 +2333,7 @@ ECode Collections::_SynchronizedMap::GetKeySet(
     VALIDATE_NOT_NULL(keySet);
     {
         AutoLock syncLock(mLock);
+
         AutoPtr<ISet> key;
         mM->GetKeySet((ISet**)&key);
         *keySet = new _SynchronizedSet(key, mLock);
@@ -2320,6 +2349,7 @@ ECode Collections::_SynchronizedMap::Put(
 {
     {
         AutoLock syncLock(mLock);
+
         mM->Put(key, value, oldValue);
     }
     return NOERROR;
@@ -2338,6 +2368,7 @@ ECode Collections::_SynchronizedMap::PutAll(
 {
     {
         AutoLock syncLock(mLock);
+
         mM->PutAll(map);
     }
     return NOERROR;
@@ -2350,6 +2381,7 @@ ECode Collections::_SynchronizedMap::Remove(
     VALIDATE_NOT_NULL(value);
     {
         AutoLock syncLock(mLock);
+
         mM->Remove(key, value);
     }
     return NOERROR;
@@ -2368,6 +2400,7 @@ ECode Collections::_SynchronizedMap::GetSize(
     VALIDATE_NOT_NULL(size);
     {
         AutoLock syncLock(mLock);
+
         mM->GetSize(size);
     }
     return NOERROR;
@@ -2379,6 +2412,7 @@ ECode Collections::_SynchronizedMap::GetValues(
     VALIDATE_NOT_NULL(value);
     {
         AutoLock syncLock(mLock);
+
         AutoPtr<ICollection> v;
         mM->GetValues((ICollection**)&v);
         AutoPtr<ICollection> res = new _SynchronizedCollection(v, mLock);
@@ -2393,6 +2427,7 @@ ECode Collections::_SynchronizedMap::ToString(
 {
     {
         AutoLock syncLock(mLock);
+
         AutoPtr<IObject> iObj = IObject::Probe(mM);
         if (iObj != NULL) {
             return iObj->ToString(str);
@@ -2437,6 +2472,7 @@ ECode Collections::_SynchronizedSet::Equals(
     VALIDATE_NOT_NULL(result);
     {
         AutoLock syncLock(mLock);
+
         mC->Equals(object, result);
     }
     return NOERROR;
@@ -2448,6 +2484,7 @@ ECode Collections::_SynchronizedSet::GetHashCode(
     VALIDATE_NOT_NULL(hashCode);
     {
         AutoLock syncLock(mLock);
+
         mC->GetHashCode(hashCode);
     }
     return NOERROR;
@@ -2604,6 +2641,7 @@ ECode Collections::_SynchronizedSortedMap::GetComparator(
     VALIDATE_NOT_NULL(comp);
     {
         AutoLock syncLock(mLock);
+
         mSm->GetComparator(comp);
     }
     return NOERROR;
@@ -2615,6 +2653,7 @@ ECode Collections::_SynchronizedSortedMap::GetFirstKey(
     VALIDATE_NOT_NULL(outface);
     {
         AutoLock syncLock(mLock);
+
         mSm->GetFirstKey(outface);
     }
     return NOERROR;
@@ -2627,9 +2666,13 @@ ECode Collections::_SynchronizedSortedMap::GetHeadMap(
     VALIDATE_NOT_NULL(sortmap);
     {
         AutoLock syncLock(mLock);
+
         AutoPtr<ISortedMap> map;
         mSm->GetHeadMap(endKey, (ISortedMap**)&map);
         AutoPtr<ISortedMap> res = new _SynchronizedSortedMap(map, mLock);
+        if (res == NULL)
+            return E_NULL_POINTER_EXCEPTION;
+
         *sortmap = res;
         REFCOUNT_ADD(*sortmap)
     }
@@ -2642,6 +2685,7 @@ ECode Collections::_SynchronizedSortedMap::GetLastKey(
     VALIDATE_NOT_NULL(outface);
     {
         AutoLock syncLock(mLock);
+
         mSm->GetLastKey(outface);
     }
     return NOERROR;
@@ -2655,9 +2699,13 @@ ECode Collections::_SynchronizedSortedMap::GetSubMap(
     VALIDATE_NOT_NULL(sortmap);
     {
         AutoLock syncLock(mLock);
+
         AutoPtr<ISortedMap> map;
         mSm->GetSubMap(startKey, endKey, (ISortedMap**)&map);
         AutoPtr<ISortedMap> res = new _SynchronizedSortedMap(map, mLock);
+        if (res == NULL)
+            return E_NULL_POINTER_EXCEPTION;
+
         *sortmap = res;
         REFCOUNT_ADD(*sortmap)
     }
@@ -2671,9 +2719,13 @@ ECode Collections::_SynchronizedSortedMap::GetTailMap(
     VALIDATE_NOT_NULL(sortmap);
     {
         AutoLock syncLock(mLock);
+
         AutoPtr<ISortedMap> map;
         mSm->GetTailMap(startKey, (ISortedMap**)&map);
         AutoPtr<ISortedMap> res = new _SynchronizedSortedMap(map, mLock);
+        if (res == NULL)
+            return E_NULL_POINTER_EXCEPTION;
+
         *sortmap = res;
         REFCOUNT_ADD(*sortmap)
     }
@@ -2821,6 +2873,7 @@ ECode Collections::_SynchronizedSortedSet::GetComparator(
     VALIDATE_NOT_NULL(outcom);
     {
         AutoLock syncLock(mLock);
+
         mSs->GetComparator(outcom);
     }
     return NOERROR;
@@ -2832,6 +2885,7 @@ ECode Collections::_SynchronizedSortedSet::GetFirst(
     VALIDATE_NOT_NULL(outface);
     {
         AutoLock syncLock(mLock);
+
         mSs->GetFirst(outface);
     }
     return NOERROR;
@@ -2844,9 +2898,13 @@ ECode Collections::_SynchronizedSortedSet::GetHeadSet(
     VALIDATE_NOT_NULL(outsort);
     {
         AutoLock syncLock(mLock);
+
         AutoPtr<ISortedSet> sort;
         mSs->GetHeadSet(end, (ISortedSet**)&sort);
         AutoPtr<ISortedSet> res = new _SynchronizedSortedSet(sort, mLock);
+        if (res == NULL)
+            return E_NULL_POINTER_EXCEPTION;
+
         *outsort = res;
         REFCOUNT_ADD(*outsort)
     }
@@ -2859,6 +2917,7 @@ ECode Collections::_SynchronizedSortedSet::GetLast(
     VALIDATE_NOT_NULL(outface);
     {
         AutoLock syncLock(mLock);
+
         mSs->GetFirst(outface);
     }
     return NOERROR;
@@ -2875,6 +2934,9 @@ ECode Collections::_SynchronizedSortedSet::GetSubSet(
         AutoPtr<ISortedSet> set;
         mSs->GetSubSet(start, end, (ISortedSet**)&set);
         AutoPtr<ISortedSet> res = new _SynchronizedSortedSet(set, mLock);
+        if (res == NULL)
+            return E_NULL_POINTER_EXCEPTION;
+
         *outsort = res;
         REFCOUNT_ADD(*outsort)
     }
@@ -2890,6 +2952,9 @@ ECode Collections::_SynchronizedSortedSet::GetTailSet(
         AutoPtr<ISortedSet> set;
         mSs->GetTailSet(start, (ISortedSet**)&set);
         AutoPtr<ISortedSet> res = new _SynchronizedSortedSet(set, mLock);
+        if (res == NULL)
+            return E_NULL_POINTER_EXCEPTION;
+
         *outsort = res;
         REFCOUNT_ADD(*outsort)
     }
@@ -3134,6 +3199,9 @@ ECode Collections::_UnmodifiableCollection::GetIterator(
 {
     VALIDATE_NOT_NULL(it);
     AutoPtr<IIterator> res = new Iterator(this);
+    if (res == NULL)
+        return E_NULL_POINTER_EXCEPTION;
+
     *it = res;
     REFCOUNT_ADD(*it)
     return NOERROR;
@@ -3249,6 +3317,9 @@ ECode Collections::UnmodifiableRandomAccessList::GetSubList(
     AutoPtr<IList> l;
     mList->GetSubList(start, end, (IList**)&l);
     AutoPtr<IList> res = new UnmodifiableRandomAccessList(l);
+    if (res == NULL)
+        return E_NULL_POINTER_EXCEPTION;
+
     *subList = res;
     REFCOUNT_ADD(*subList)
     return NOERROR;
@@ -3257,6 +3328,9 @@ ECode Collections::UnmodifiableRandomAccessList::GetSubList(
 AutoPtr<IInterface> Collections::UnmodifiableRandomAccessList::WriteReplace()
 {
     AutoPtr<_UnmodifiableList> res = new _UnmodifiableList(mList);
+    if (res == NULL)
+        return NULL;
+
     return res->Probe(EIID_IInterface);
 }
 
@@ -3467,6 +3541,9 @@ ECode Collections::_UnmodifiableList::GetSubList(
     AutoPtr<IList> sub;
     mList->GetSubList(start, end, (IList**)&sub);
     AutoPtr<IList> res = new _UnmodifiableList(sub);
+    if (res == NULL)
+        return E_NULL_POINTER_EXCEPTION;
+
     *subList = res;
     REFCOUNT_ADD(*subList)
     return NOERROR;
@@ -3562,6 +3639,9 @@ AutoPtr<IInterface> Collections::_UnmodifiableList::ReadResolve()
 {
     if (IRandomAccess::Probe(mList) != NULL ) {
         AutoPtr<UnmodifiableRandomAccessList> res = new UnmodifiableRandomAccessList(mList);
+        if (res == NULL)
+            return NULL;
+
         return res->Probe(EIID_IInterface);
     }
     return TO_IINTERFACE(this);
@@ -3675,6 +3755,9 @@ ECode Collections::_UnmodifiableMap::UnmodifiableEntrySet::Iterator::GetNext(
     AutoPtr<IInterface> o;
     mIterator->GetNext((IInterface**)&o);
     AutoPtr<IMapEntry> res = new UnmodifiableMapEntry(IMapEntry::Probe(o));
+    if (res == NULL)
+        return E_NULL_POINTER_EXCEPTION;
+
     *object = res;
     REFCOUNT_ADD(*object)
     return NOERROR;
@@ -3711,6 +3794,9 @@ ECode Collections::_UnmodifiableMap::UnmodifiableEntrySet::GetIterator(
 {
     VALIDATE_NOT_NULL(result);
     AutoPtr<IIterator> res = new Iterator(this);
+    if (res == NULL)
+        return E_NULL_POINTER_EXCEPTION;
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -3723,6 +3809,9 @@ ECode Collections::_UnmodifiableMap::UnmodifiableEntrySet::ToArray(
     Int32 length;
     mC->GetSize(&length);
     AutoPtr<ArrayOf<IInterface*> > result = ArrayOf<IInterface*>::Alloc(length);
+    if (result == NULL)
+        return E_NULL_POINTER_EXCEPTION;
+
     AutoPtr<IIterator> it;
     GetIterator((IIterator**)&it);
     for (Int32 i = length; --i >= 0;) {
@@ -3740,10 +3829,14 @@ ECode Collections::_UnmodifiableMap::UnmodifiableEntrySet::ToArray(
     VALIDATE_NOT_NULL(outArray);
     Int32 size, index = 0;
     mC->GetSize(&size);
+
     AutoPtr<IIterator> it;
     GetIterator((IIterator**)&it);
+
     if (size > inArray->GetLength()) {
         inArray = ArrayOf<IInterface*>::Alloc(size);
+        if (inArray == NULL)
+            return E_NULL_POINTER_EXCEPTION;
     }
     while (index < size) {
         AutoPtr<IInterface> o;
@@ -3797,6 +3890,9 @@ ECode Collections::_UnmodifiableMap::GetEntrySet(
     AutoPtr<ISet> set;
     mM->GetEntrySet((ISet**)&set);
     AutoPtr<ISet> res = new UnmodifiableEntrySet(set);
+    if (res == NULL)
+        return E_NULL_POINTER_EXCEPTION;
+
     *entries = res;
     REFCOUNT_ADD(*entries)
     return NOERROR;
@@ -3839,6 +3935,9 @@ ECode Collections::_UnmodifiableMap::GetKeySet(
     AutoPtr<ISet> set;
     mM->GetKeySet((ISet**)&set);
     AutoPtr<ISet> res = new _UnmodifiableSet(set);
+    if (res == NULL)
+        return E_NULL_POINTER_EXCEPTION;
+
     *keySet = res;
     REFCOUNT_ADD(*keySet)
     return NOERROR;
@@ -3892,6 +3991,9 @@ ECode Collections::_UnmodifiableMap::GetValues(
     AutoPtr<ICollection> v;
     mM->GetValues((ICollection**)&v);
     AutoPtr<ICollection> res = new _UnmodifiableCollection(v);
+    if (res == NULL)
+        return E_NULL_POINTER_EXCEPTION;
+
     *value = res;
     REFCOUNT_ADD(*value)
     return NOERROR;
@@ -4537,12 +4639,15 @@ ECode Collections::BinarySearch(
     ICollection* collection = ICollection::Probe(list);
     if (IRandomAccess::Probe(list) == NULL) {
         AutoPtr<IListIterator> lit;
+
         list->GetListIterator((IListIterator**)&lit);
         IIterator* it = IIterator::Probe(lit);
+
         Boolean b;
         while ((it->HasNext(&b), b)) {
             Int32 result;
             AutoPtr<IInterface> o;
+
             it->GetNext((IInterface**)&o);
             comparator->Compare(o, object, &result);
             result = -result;
@@ -4567,6 +4672,7 @@ ECode Collections::BinarySearch(
     high = mid - 1;
     while (low <= high) {
         mid = (UInt32(low + high)) >> 1;
+
         AutoPtr<IInterface> o;
         list->Get(mid, (IInterface**)&o);
         comparator->Compare(o, object, &result);
@@ -4582,7 +4688,7 @@ ECode Collections::BinarySearch(
             high = mid - 1;
         }
     }
-    *index = -mid - (result < 0 ? 1 : 2);
+    *index = -mid - ((result < 0) ? 1 : 2);
     return NOERROR;
 }
 
@@ -4590,7 +4696,6 @@ ECode Collections::Copy(
     /* [in] */ IList* destination,
     /* [in] */ IList* source)
 {
-    ECode ec = 0;
     Int32 sizeDes, sizeSrc;
     if (destination == NULL || source == NULL) {
         return E_NULL_POINTER_EXCEPTION;
@@ -4600,15 +4705,17 @@ ECode Collections::Copy(
     if (sizeDes < sizeSrc) {
         return E_ARRAY_INDEX_OUT_OF_BOUNDS_EXCEPTION;
     }
+
     AutoPtr<IIterator> srcIt;
     (IIterable::Probe(source))->GetIterator((IIterator**)&srcIt);
     AutoPtr<IListIterator> destIt;
     destination->GetListIterator((IListIterator**)&destIt);
+
     Boolean b;
-    while ((srcIt->HasNext(&b), b)) {
+    while (srcIt->HasNext(&b), b) {
         AutoPtr<IInterface> o1;
-        ec = (IIterator::Probe(destIt))->GetNext((IInterface**)&o1);
-        if (ec != NOERROR) {
+        ECode ec = (IIterator::Probe(destIt))->GetNext((IInterface**)&o1);
+        if (FAILED(ec)) {
             return E_ARRAY_INDEX_OUT_OF_BOUNDS_EXCEPTION;
         }
         AutoPtr<IInterface> o2;
@@ -4623,8 +4730,13 @@ ECode Collections::Enumeration(
     /* [out] */ IEnumeration** result)
 {
     VALIDATE_NOT_NULL(result);
+
     AutoPtr<ICollection> c = collection;
     AutoPtr<IEnumeration> res = new _Enumeration2(c);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -4634,12 +4746,15 @@ ECode Collections::Fill(
     /* [in] */ IList* list,
     /* [in] */ IInterface* object)
 {
+    VALIDATE_NOT_NULL(list);
+
     AutoPtr<IListIterator> lit;
-    if (list == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
     list->GetListIterator((IListIterator**)&lit);
     IIterator* it = IIterator::Probe(lit);
+    if (it == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     Boolean b;
     while (it->HasNext(&b), b) {
         AutoPtr<IInterface> o;
@@ -4653,19 +4768,27 @@ ECode Collections::Max(
     /* [in] */ ICollection* collection,
     /* [out] */ IInterface** result)
 {
+    VALIDATE_NOT_NULL(collection);
     VALIDATE_NOT_NULL(result);
+
     AutoPtr<IIterator> it;
-    if (collection == NULL) {
-        return E_NO_SUCH_ELEMENT_EXCEPTION;
-    }
     (IIterable::Probe(collection))->GetIterator((IIterator**)&it);
+    if (it == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     AutoPtr<IInterface> max;
     it->GetNext((IInterface**)&max);
     Boolean b;
-    while ((it->HasNext(&b), b)) {
+    while (it->HasNext(&b), b) {
         AutoPtr<IInterface> next;
         it->GetNext((IInterface**)&next);
+
         AutoPtr<IComparable> res = IComparable::Probe(max);
+        if (res == NULL) {
+            return E_NULL_POINTER_EXCEPTION;
+        }
+
         Int32 val;
         FAIL_RETURN(res->CompareTo(next, &val));
         if (val < 0) {
@@ -4682,20 +4805,23 @@ ECode Collections::Max(
     /* [in] */ IComparator* comparator,
     /* [out] */ IInterface** result)
 {
+    VALIDATE_NOT_NULL(collection);
     VALIDATE_NOT_NULL(result);
+
     if (comparator == NULL) {
         return Max(collection, result);
     }
 
     AutoPtr<IIterator> it;
-    if (collection == NULL) {
-        return E_NO_SUCH_ELEMENT_EXCEPTION;
-    }
     (IIterable::Probe(collection))->GetIterator((IIterator**)&it);
+    if (it == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     AutoPtr<IInterface> max;
     it->GetNext((IInterface**)&max);
     Boolean b;
-    while ((it->HasNext(&b), b)) {
+    while (it->HasNext(&b), b) {
         AutoPtr<IInterface> next;
         it->GetNext((IInterface**)&next);
         Int32 res;
@@ -4712,21 +4838,29 @@ ECode Collections::Min(
     /* [in] */ ICollection* collection,
     /* [out] */ IInterface** result)
 {
+    VALIDATE_NOT_NULL(collection);
     VALIDATE_NOT_NULL(result);
+
     AutoPtr<IIterator> it;
-    if (collection == NULL) {
-        return E_NO_SUCH_ELEMENT_EXCEPTION;
-    }
     (IIterable::Probe(collection))->GetIterator((IIterator**)&it);
+    if (it == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     AutoPtr<IInterface> min;
     it->GetNext((IInterface**)&min);
     Boolean b;
-    while ((it->HasNext(&b), b)) {
+    while (it->HasNext(&b), b) {
         AutoPtr<IInterface> next;
         it->GetNext((IInterface**)&next);
+
         AutoPtr<IComparable> com = IComparable::Probe(min);
+        if (com == NULL) {
+            return E_NULL_POINTER_EXCEPTION;
+        }
+
         Int32 res;
-        FAIL_RETURN((com->CompareTo(next, &res)));
+        FAIL_RETURN(com->CompareTo(next, &res));
         if (res > 0) {
             min = next;
         }
@@ -4741,20 +4875,23 @@ ECode Collections::Min(
     /* [in] */ IComparator* comparator,
     /* [out] */ IInterface** result)
 {
+    VALIDATE_NOT_NULL(collection);
     VALIDATE_NOT_NULL(result);
+
     if (comparator == NULL) {
         return Min(collection, result);
     }
 
     AutoPtr<IIterator> it;
-    if (collection == NULL) {
-        return E_NO_SUCH_ELEMENT_EXCEPTION;
-    }
     (IIterable::Probe(collection))->GetIterator((IIterator**)&it);
+    if (it == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     AutoPtr<IInterface> min;
     it->GetNext((IInterface**)&min);
     Boolean b;
-    while ((it->HasNext(&b), b)) {
+    while (it->HasNext(&b), b) {
         AutoPtr<IInterface> next;
         it->GetNext((IInterface**)&next);
         Int32 num = 0;
@@ -4774,7 +4911,12 @@ ECode Collections::NCopies(
     /* [out] */ IList** result)
 {
     VALIDATE_NOT_NULL(result);
+
     AutoPtr<CopiesList> res = new CopiesList();
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     FAIL_RETURN(res->constructor(length, object));
     *result = res;
     REFCOUNT_ADD(*result)
@@ -4784,14 +4926,18 @@ ECode Collections::NCopies(
 ECode Collections::Reverse(
     /* [in] */ IList* list)
 {
-    if (list == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+    VALIDATE_NOT_NULL(list);
+
     Int32 size;
     list->GetSize(&size);
     AutoPtr<IListIterator> front;
     list->GetListIterator((IListIterator**)&front);
+
     IIterator* frontIt = IIterator::Probe(front);
+    if (frontIt == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     AutoPtr<IListIterator> back;
     list->GetListIterator(size, (IListIterator**)&back);
     for (Int32 i = 0; i < size / 2; i++) {
@@ -4819,9 +4965,11 @@ ECode Collections::ReverseOrder(
     /* [out] */ IComparator** result)
 {
     VALIDATE_NOT_NULL(result);
+
     if (c == NULL) {
         return ReverseOrder(result);
     }
+
     AutoPtr<IReverseComparator2> p = IReverseComparator2::Probe(c);
     if (p != NULL) {
         *result = ((ReverseComparator2*)p.Get())->mCmp;
@@ -4830,6 +4978,10 @@ ECode Collections::ReverseOrder(
     }
 
     AutoPtr<ReverseComparator2> res = new ReverseComparator2(c);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -4895,7 +5047,12 @@ ECode Collections::Singleton(
     /* [out] */ ISet** result)
 {
     VALIDATE_NOT_NULL(result);
+
     AutoPtr<ISet> res = new SingletonSet(object);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -4906,7 +5063,12 @@ ECode Collections::SingletonList(
     /* [out] */ IList** result)
 {
     VALIDATE_NOT_NULL(result);
+
     AutoPtr<IList> res = new _SingletonList(object);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -4918,7 +5080,12 @@ ECode Collections::SingletonMap(
     /* [out] */ IMap** result)
 {
     VALIDATE_NOT_NULL(result);
+
     AutoPtr<IMap> res = new _SingletonMap(key, value);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -4927,18 +5094,22 @@ ECode Collections::SingletonMap(
 ECode Collections::Sort(
     /* [in] */ IList* list)
 {
-    if (list == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+    VALIDATE_NOT_NULL(list);
+
     AutoPtr<ArrayOf<IInterface*> > array;
-    list->ToArray((ArrayOf<IInterface*>**)&array);
-    Arrays::Sort(array.Get());
+    FAIL_RETURN(list->ToArray((ArrayOf<IInterface*>**)&array));
+    FAIL_RETURN(Arrays::Sort(array.Get()));
+
     Int32 i = 0;
     AutoPtr<IListIterator> lit;
     list->GetListIterator((IListIterator**)&lit);
     IIterator* it = IIterator::Probe(lit);
+    if (it == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     Boolean b;
-    while ((it->HasNext(&b), b)) {
+    while (it->HasNext(&b), b) {
         AutoPtr<IInterface> o;
         it->GetNext((IInterface**)&o);
         lit->Set((*array)[i++]);
@@ -4950,21 +5121,31 @@ ECode Collections::Sort(
     /* [in] */ IList* list,
     /* [in] */ IComparator* comparator)
 {
+    VALIDATE_NOT_NULL(list);
+    VALIDATE_NOT_NULL(comparator);
+
     Int32 num;
-    if (list == NULL || comparator == NULL) {
+    list->GetSize(&num);
+
+    AutoPtr<ArrayOf<IInterface*> > arr = ArrayOf<IInterface*>::Alloc(num);
+    if (arr == NULL) {
         return E_NULL_POINTER_EXCEPTION;
     }
-    list->GetSize(&num);
-    AutoPtr<ArrayOf<IInterface*> > arr = ArrayOf<IInterface*>::Alloc(num);
+
     AutoPtr<ArrayOf<IInterface*> > array;
-    list->ToArray(arr, (ArrayOf<IInterface*>**)&array);
-    Arrays::Sort(array, comparator);
+    FAIL_RETURN(list->ToArray(arr, (ArrayOf<IInterface*>**)&array));
+    FAIL_RETURN(Arrays::Sort(array, comparator));
+
     AutoPtr<IListIterator> lit;
     list->GetListIterator((IListIterator**)&lit);
     IIterator* it = IIterator::Probe(lit);
+    if (it == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     Boolean b;
     Int32 i = 0;
-    while ((it->HasNext(&b), b)) {
+    while (it->HasNext(&b), b) {
         AutoPtr<IInterface> o;
         it->GetNext((IInterface**)&o);
         lit->Set((*array)[i++]);
@@ -4977,9 +5158,8 @@ ECode Collections::Swap(
     /* [in] */ Int32 index1,
     /* [in] */ Int32 index2)
 {
-    if (list == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+    VALIDATE_NOT_NULL(list);
+
     Int32 size;
     list->GetSize(&size);
     if (index1 < 0 || index1 >= size || index2 < 0 || index2 >= size) {
@@ -4991,6 +5171,7 @@ ECode Collections::Swap(
     AutoPtr<IList> rawList = list;
     AutoPtr<IInterface> o;
     rawList->Get(index2, (IInterface**)&o);
+
     AutoPtr<IInterface> old, old2;
     rawList->Set(index1, o, (IInterface**)&old);
     rawList->Set(index2, old, (IInterface**)&old2);
@@ -5003,10 +5184,11 @@ ECode Collections::ReplaceAll(
     /* [in] */ IInterface* obj2,
     /* [out] */ Boolean* result)
 {
+    VALIDATE_NOT_NULL(list);
+    VALIDATE_NOT_NULL(obj);
+    VALIDATE_NOT_NULL(obj2);
     VALIDATE_NOT_NULL(result);
-    if (list == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+
     Int32 index;
     Boolean found = FALSE;
     while ((list->IndexOf(obj, &index), index) > -1) {
@@ -5022,9 +5204,9 @@ ECode Collections::Rotate(
     /* [in] */ IList* lst,
     /* [in] */ Int32 dist)
 {
-    if (lst == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+    VALIDATE_NOT_NULL(lst);
+    VALIDATE_NOT_NULL(dist);
+
     AutoPtr<IList> list = lst;
     Int32 size;
     list->GetSize(&size);
@@ -5055,6 +5237,7 @@ ECode Collections::Rotate(
         Int32 index = 0, beginIndex = 0;
         for (Int32 i = 0; i < size; i++) {
             index = (index + normdist) % size;
+
             AutoPtr<IInterface> temp2;
             list->Set(index, temp, (IInterface**)&temp2);
             temp = temp2;
@@ -5068,12 +5251,12 @@ ECode Collections::Rotate(
     else {
         Int32 divideIndex = (size - normdist) % size;
         AutoPtr<IList> sublist1;
-        list->GetSubList(0, divideIndex, (IList**)&sublist1);
         AutoPtr<IList> sublist2;
-        list->GetSubList(divideIndex, size, (IList**)&sublist2);
-        Reverse(sublist1);
-        Reverse(sublist2);
-        Reverse(list);
+        FAIL_RETURN(list->GetSubList(0, divideIndex, (IList**)&sublist1));
+        FAIL_RETURN(list->GetSubList(divideIndex, size, (IList**)&sublist2));
+        FAIL_RETURN(Reverse(sublist1));
+        FAIL_RETURN(Reverse(sublist2));
+        FAIL_RETURN(Reverse(list));
     }
     return NOERROR;
 }
@@ -5083,10 +5266,10 @@ ECode Collections::IndexOfSubList(
     /* [in] */ IList* sublist,
     /* [out] */ Int32* result)
 {
+    VALIDATE_NOT_NULL(list);
+    VALIDATE_NOT_NULL(sublist);
     VALIDATE_NOT_NULL(result);
-    if (list == NULL || sublist == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+
     Int32 size, sublistSize;
     list->GetSize(&size);
     (ICollection::Probe(sublist))->GetSize(&sublistSize);
@@ -5111,20 +5294,21 @@ ECode Collections::IndexOfSubList(
         return NOERROR;
     }
 
-    while (index < size && (size - index >= sublistSize)) {
+    while ((index < size) && ((size - index) >= sublistSize)) {
         AutoPtr<IListIterator> listIt;
-        list->GetListIterator(index, (IListIterator**)&listIt);
+        FAIL_RETURN(list->GetListIterator(index, (IListIterator**)&listIt));
         IIterator* lit = IIterator::Probe(listIt);
 
         AutoPtr<IInterface> o;
         lit->GetNext((IInterface**)&o);
-        if ((firstObj == NULL) ? o == NULL : Object::Equals(firstObj, o)) {
+        if ((firstObj == NULL) ? (o == NULL) : Object::Equals(firstObj, o)) {
 
             // iterate through the elements in sublist to see
             // if they are included in the same order in the list
             AutoPtr<IListIterator> sublistIt;
-            sublist->GetListIterator(1, (IListIterator**)&sublistIt);
+            FAIL_RETURN(sublist->GetListIterator(1, (IListIterator**)&sublistIt));
             IIterator* subLit = IIterator::Probe(sublistIt);
+
             Boolean difFound = FALSE, subHasNext, listHasNext;
             while ((subLit->HasNext(&subHasNext), subHasNext)) {
                 AutoPtr<IInterface> element;
@@ -5135,7 +5319,7 @@ ECode Collections::IndexOfSubList(
                 }
                 AutoPtr<IInterface> o;
                 lit->GetNext((IInterface**)&o);
-                if ((element == NULL) ? o != NULL : !Object::Equals(element, o)) {
+                if ((element == NULL) ? (o != NULL) : !Object::Equals(element, o)) {
                     difFound = TRUE;
                     break;
                 }
@@ -5161,10 +5345,10 @@ ECode Collections::LastIndexOfSubList(
     /* [in] */ IList* sublist,
     /* [out] */ Int32* result)
 {
+    VALIDATE_NOT_NULL(list);
+    VALIDATE_NOT_NULL(sublist);
     VALIDATE_NOT_NULL(result);
-    if (list == NULL || sublist == NULL) {
-        return E_NULL_POINTER_EXCEPTION;
-    }
+
     Int32 sublistSize, size;
     (ICollection::Probe(sublist))->GetSize(&sublistSize);
     list->GetSize(&size);
@@ -5195,7 +5379,8 @@ ECode Collections::LastIndexOfSubList(
             // iterate through the elements in sublist to see
             // if they are included in the same order in the list
             AutoPtr<IListIterator> sublistIt;
-            sublist->GetListIterator(sublistSize - 1, (IListIterator**)&sublistIt);
+            FAIL_RETURN(sublist->GetListIterator(sublistSize - 1, (IListIterator**)&sublistIt));
+
             Boolean difFound = FALSE;
             Boolean subPrevious, listPrevious;
             while ((sublistIt->HasPrevious(&subPrevious), subPrevious)) {
@@ -5208,7 +5393,7 @@ ECode Collections::LastIndexOfSubList(
 
                 AutoPtr<IInterface> o;
                 listIt->GetPrevious((IInterface**)&o);
-                if ((element == NULL) ? o != NULL : !Object::Equals(element, o)) {
+                if ((element == NULL) ? (o != NULL) : !Object::Equals(element, o)) {
                     difFound = TRUE;
                     break;
                 }
@@ -5234,9 +5419,10 @@ ECode Collections::List(
 {
     VALIDATE_NOT_NULL(result);
     AutoPtr<IArrayList> list;
-    CArrayList::New((IArrayList**)&list);
+    FAIL_RETURN(CArrayList::New((IArrayList**)&list));
+
     Boolean b;
-    while ((enumeration->HasMoreElements(&b), b)) {
+    while (enumeration->HasMoreElements(&b), b) {
         AutoPtr<IInterface> o;
         enumeration->GetNextElement((IInterface**)&o);
         Boolean modified;
@@ -5256,6 +5442,10 @@ ECode Collections::SynchronizedCollection(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<ICollection> res = new _SynchronizedCollection(collection);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5271,11 +5461,19 @@ ECode Collections::SynchronizedList(
     }
     if (IRandomAccess::Probe(list) != NULL) {
         AutoPtr<IList> res = new SynchronizedRandomAccessList(list);
+        if (res == NULL) {
+            return E_NULL_POINTER_EXCEPTION;
+        }
+
         *result = res;
         REFCOUNT_ADD(*result)
         return NOERROR;
     }
     AutoPtr<IList> res = new _SynchronizedList(list);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5290,6 +5488,10 @@ ECode Collections::SynchronizedMap(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<IMap> res = new _SynchronizedMap(map);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5304,6 +5506,10 @@ ECode Collections::SynchronizedSet(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<ISet> res = new _SynchronizedSet(set);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5318,6 +5524,10 @@ ECode Collections::SynchronizedSortedMap(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<ISortedMap> res = new _SynchronizedSortedMap(map);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5332,6 +5542,10 @@ ECode Collections::SynchronizedSortedSet(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<ISortedSet> res = new _SynchronizedSortedSet(set);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5346,6 +5560,10 @@ ECode Collections::UnmodifiableCollection(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<ICollection> res = new _UnmodifiableCollection(collection);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5363,11 +5581,19 @@ ECode Collections::UnmodifiableList(
     }
     if (IRandomAccess::Probe(list) != NULL) {
         AutoPtr<IList> res = new UnmodifiableRandomAccessList(list);
+        if (res == NULL) {
+            return E_NULL_POINTER_EXCEPTION;
+        }
+
         *result = res;
         REFCOUNT_ADD(*result)
         return NOERROR;
     }
     AutoPtr<IList> res = new _UnmodifiableList(list);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5384,6 +5610,10 @@ ECode Collections::UnmodifiableMap(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<IMap> res = new _UnmodifiableMap(map);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5400,6 +5630,10 @@ ECode Collections::UnmodifiableSet(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<ISet> res = new _UnmodifiableSet(set);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5416,6 +5650,10 @@ ECode Collections::UnmodifiableSortedMap(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<ISortedMap> res = new _UnmodifiableSortedMap(map);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5432,6 +5670,10 @@ ECode Collections::UnmodifiableSortedSet(
         return E_NULL_POINTER_EXCEPTION;
     }
     AutoPtr<ISortedSet> res = new _UnmodifiableSortedSet(set);
+    if (res == NULL) {
+        return E_NULL_POINTER_EXCEPTION;
+    }
+
     *result = res;
     REFCOUNT_ADD(*result)
     return NOERROR;
@@ -5459,7 +5701,7 @@ ECode Collections::Frequency(
     while ((itr->HasNext(&b), b)) {
         AutoPtr<IInterface> e;
         itr->GetNext((IInterface**)&e);
-        if ((o == NULL) ? e == NULL : Object::Equals(o, e)) {
+        if ((o == NULL) ? (e == NULL) : Object::Equals(o, e)) {
             num++;
         }
     }

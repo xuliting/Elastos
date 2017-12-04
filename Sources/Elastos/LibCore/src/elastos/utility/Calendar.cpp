@@ -119,8 +119,10 @@ ECode Calendar::constructor(
     localeDataHelper->Get(locale, (ILocaleData**)&localeData);
 
     AutoPtr<IInteger32> ifdw, imdifw;
-    localeData->GetFirstDayOfWeek((IInteger32**)&ifdw);
-    localeData->GetMinimalDaysInFirstWeek((IInteger32**)&imdifw);
+    if (localeData != NULL) {
+        localeData->GetFirstDayOfWeek((IInteger32**)&ifdw);
+        localeData->GetMinimalDaysInFirstWeek((IInteger32**)&imdifw);
+    }
     Int32 fdw = 0, mdifw = 0;
     if (ifdw) {
         ifdw->GetValue(&fdw);

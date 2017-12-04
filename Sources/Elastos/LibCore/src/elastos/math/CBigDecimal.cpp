@@ -463,7 +463,7 @@ ECode CBigDecimal::ValueOf(
     VALIDATE_NOT_NULL(result);
 
     if ((unscaledVal >= 0) && (unscaledVal < BI_SCALED_BY_ZERO_LENGTH)) {
-        *result = (*BI_SCALED_BY_ZERO)[unscaledVal];
+        *result = (*BI_SCALED_BY_ZERO)[(Int32)unscaledVal];
         REFCOUNT_ADD(*result);
         return NOERROR;
     }

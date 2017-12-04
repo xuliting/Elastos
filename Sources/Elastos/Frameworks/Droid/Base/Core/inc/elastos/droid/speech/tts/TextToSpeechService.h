@@ -295,7 +295,7 @@ public:
 
         CARAPI_(String) GetUtteranceId();
 
-        CARAPI_(AutoPtr<AudioOutputParams>) GetAudioParams();
+        CARAPI_(AudioOutputParams*) GetAudioParams();
 
     protected:
         IBundle* mParams;
@@ -316,7 +316,7 @@ public:
             /* [in] */ const String& utteranceId,
             /* [in] */ TextToSpeechService* ttss);
 
-        CARAPI_(AutoPtr<ICharSequence>) GetText();
+        CARAPI_(ICharSequence*) GetText();
 
         CARAPI_(Boolean) HasLanguage();
 
@@ -324,7 +324,7 @@ public:
 
         CARAPI_(void) PlayImpl();
 
-        CARAPI_(AutoPtr<AbstractSynthesisCallback>) CreateSynthesisCallback();
+        CARAPI_(AbstractSynthesisCallback*) CreateSynthesisCallback();
 
         CARAPI_(void) SetRequestParams(
             /* [in] */ ISynthesisRequest* request);
@@ -370,7 +370,7 @@ private:
             /* [in] */ IFileOutputStream* fileOutputStream,
             /* [in] */ TextToSpeechService* ttss);
 
-        CARAPI_(AutoPtr<AbstractSynthesisCallback>) createSynthesisCallback();
+        CARAPI_(AbstractSynthesisCallback*) createSynthesisCallback();
 
         CARAPI_(void) PlayImpl();
 
@@ -403,7 +403,7 @@ private:
 
         CARAPI_(String) GetUtteranceId();
 
-        CARAPI_(AutoPtr<AudioOutputParams>) GetAudioParams();
+        CARAPI_(AudioOutputParams*) GetAudioParams();
     };
 
 private:

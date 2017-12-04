@@ -94,6 +94,7 @@ public:
         InterfaceScoreRule(
             /* [in] */ const String& prefix,
             /* [in] */ Byte score);
+
     public:
         const String mPrefix;
         const Byte mScore;
@@ -142,6 +143,7 @@ private:
             /* [in] */ IIntent* intent);
 
         TO_STRING_IMPL("CCommonTimeManagementService::ConnectivityMangerObserver: ")
+
     private:
         CCommonTimeManagementService* mHost;
     };
